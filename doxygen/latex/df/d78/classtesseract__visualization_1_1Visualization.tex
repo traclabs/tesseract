@@ -32,7 +32,9 @@ virtual \mbox{\hyperlink{classtesseract__visualization_1_1Visualization_af803aa9
 \mbox{\hyperlink{classtesseract__visualization_1_1Visualization}{Visualization}} \& \mbox{\hyperlink{classtesseract__visualization_1_1Visualization_adc4668f28bd65b0b52d7ca0228c2bbcb}{operator=}} (\mbox{\hyperlink{classtesseract__visualization_1_1Visualization}{Visualization}} \&\&)=default
 \item 
 virtual void \mbox{\hyperlink{classtesseract__visualization_1_1Visualization_a046e29ee7c767d892606799f0ee760dc}{plot\+Trajectory}} (const std\+::vector$<$ std\+::string $>$ \&joint\+\_\+names, const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__common_a431ff65777ee0bed71e7671390638244}{tesseract\+\_\+common\+::\+Traj\+Array}} $>$ \&traj)=0
-\begin{DoxyCompactList}\small\item\em Plot a trajectory. \end{DoxyCompactList}\item 
+\item 
+virtual void \mbox{\hyperlink{classtesseract__visualization_1_1Visualization_aef97dbd45de01fffebcfac1e069b7e4d}{plot\+Trajectory}} (const \mbox{\hyperlink{structtesseract__common_1_1JointTrajectory}{tesseract\+\_\+common\+::\+Joint\+Trajectory}} \&traj)=0
+\begin{DoxyCompactList}\small\item\em Plot a Joint\+Trajectory. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classtesseract__visualization_1_1Visualization_a0ed913e72765135ac4313ac9fa5347ac}{plot\+Contact\+Results}} (const std\+::vector$<$ std\+::string $>$ \&link\+\_\+names, const \mbox{\hyperlink{namespacetesseract__collision_a96d77f62b7c26962d1090f0a2f00419b}{tesseract\+\_\+collision\+::\+Contact\+Result\+Vector}} \&dist\+\_\+results, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&safety\+\_\+distances)=0
 \begin{DoxyCompactList}\small\item\em Plot the collision results data. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classtesseract__visualization_1_1Visualization_a42153345a684e7dfc181c78ce59cc3ef}{plot\+Arrow}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector3d $>$ \&pt1, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector3d $>$ \&pt2, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector4d $>$ \&rgba, double scale)=0
@@ -173,16 +175,31 @@ Plot the collision results data.
 \mbox{\Hypertarget{classtesseract__visualization_1_1Visualization_a046e29ee7c767d892606799f0ee760dc}\label{classtesseract__visualization_1_1Visualization_a046e29ee7c767d892606799f0ee760dc}} 
 \index{tesseract\_visualization::Visualization@{tesseract\_visualization::Visualization}!plotTrajectory@{plotTrajectory}}
 \index{plotTrajectory@{plotTrajectory}!tesseract\_visualization::Visualization@{tesseract\_visualization::Visualization}}
-\doxysubsubsection{\texorpdfstring{plotTrajectory()}{plotTrajectory()}}
+\doxysubsubsection{\texorpdfstring{plotTrajectory()}{plotTrajectory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual void tesseract\+\_\+visualization\+::\+Visualization\+::plot\+Trajectory (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{joint\+\_\+names,  }\item[{const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__common_a431ff65777ee0bed71e7671390638244}{tesseract\+\_\+common\+::\+Traj\+Array}} $>$ \&}]{traj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]Plot a trajectory using joint\+\_\+names and a Traj\+Array \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+names} & Joint Names \\
+\hline
+{\em traj} & Rows are timesteps. Columns correspond to joint\+\_\+names \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtesseract__visualization_1_1Visualization_aef97dbd45de01fffebcfac1e069b7e4d}\label{classtesseract__visualization_1_1Visualization_aef97dbd45de01fffebcfac1e069b7e4d}} 
+\index{tesseract\_visualization::Visualization@{tesseract\_visualization::Visualization}!plotTrajectory@{plotTrajectory}}
+\index{plotTrajectory@{plotTrajectory}!tesseract\_visualization::Visualization@{tesseract\_visualization::Visualization}}
+\doxysubsubsection{\texorpdfstring{plotTrajectory()}{plotTrajectory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void tesseract\+\_\+visualization\+::\+Visualization\+::plot\+Trajectory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__common_1_1JointTrajectory}{tesseract\+\_\+common\+::\+Joint\+Trajectory}} \&}]{traj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
-Plot a trajectory. 
+
+Plot a Joint\+Trajectory. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em traj} & \\
+{\em trajectory} & Joint\+Trajectory to be plotted \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classtesseract__visualization_1_1Visualization_a3c82492636d57cc7b5e85befc787a3ac}\label{classtesseract__visualization_1_1Visualization_a3c82492636d57cc7b5e85befc787a3ac}} 

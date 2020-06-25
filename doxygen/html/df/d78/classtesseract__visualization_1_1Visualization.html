@@ -105,8 +105,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc4668f28bd65b0b52d7ca0228c2bbcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d78/classtesseract__visualization_1_1Visualization.html">Visualization</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d78/classtesseract__visualization_1_1Visualization.html#adc4668f28bd65b0b52d7ca0228c2bbcb">operator=</a> (<a class="el" href="../../df/d78/classtesseract__visualization_1_1Visualization.html">Visualization</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:adc4668f28bd65b0b52d7ca0228c2bbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a046e29ee7c767d892606799f0ee760dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d78/classtesseract__visualization_1_1Visualization.html#a046e29ee7c767d892606799f0ee760dc">plotTrajectory</a> (const std::vector&lt; std::string &gt; &amp;joint_names, const Eigen::Ref&lt; const <a class="el" href="../../df/da9/namespacetesseract__common.html#a431ff65777ee0bed71e7671390638244">tesseract_common::TrajArray</a> &gt; &amp;traj)=0</td></tr>
-<tr class="memdesc:a046e29ee7c767d892606799f0ee760dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot a trajectory.  <a href="../../df/d78/classtesseract__visualization_1_1Visualization.html#a046e29ee7c767d892606799f0ee760dc">More...</a><br /></td></tr>
 <tr class="separator:a046e29ee7c767d892606799f0ee760dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef97dbd45de01fffebcfac1e069b7e4d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d78/classtesseract__visualization_1_1Visualization.html#aef97dbd45de01fffebcfac1e069b7e4d">plotTrajectory</a> (const <a class="el" href="../../d5/d28/structtesseract__common_1_1JointTrajectory.html">tesseract_common::JointTrajectory</a> &amp;traj)=0</td></tr>
+<tr class="memdesc:aef97dbd45de01fffebcfac1e069b7e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot a JointTrajectory.  <a href="../../df/d78/classtesseract__visualization_1_1Visualization.html#aef97dbd45de01fffebcfac1e069b7e4d">More...</a><br /></td></tr>
+<tr class="separator:aef97dbd45de01fffebcfac1e069b7e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ed913e72765135ac4313ac9fa5347ac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d78/classtesseract__visualization_1_1Visualization.html#a0ed913e72765135ac4313ac9fa5347ac">plotContactResults</a> (const std::vector&lt; std::string &gt; &amp;link_names, const <a class="el" href="../../d4/d79/namespacetesseract__collision.html#a96d77f62b7c26962d1090f0a2f00419b">tesseract_collision::ContactResultVector</a> &amp;dist_results, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;safety_distances)=0</td></tr>
 <tr class="memdesc:a0ed913e72765135ac4313ac9fa5347ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot the collision results data.  <a href="../../df/d78/classtesseract__visualization_1_1Visualization.html#a0ed913e72765135ac4313ac9fa5347ac">More...</a><br /></td></tr>
 <tr class="separator:a0ed913e72765135ac4313ac9fa5347ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,7 +496,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a046e29ee7c767d892606799f0ee760dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a046e29ee7c767d892606799f0ee760dc">&#9670;&nbsp;</a></span>plotTrajectory()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a046e29ee7c767d892606799f0ee760dc">&#9670;&nbsp;</a></span>plotTrajectory() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -526,11 +528,45 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Plot a trajectory. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Plot a trajectory using joint_names and a TrajArray </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">traj</td><td></td></tr>
+    <tr><td class="paramname">joint_names</td><td>Joint Names </td></tr>
+    <tr><td class="paramname">traj</td><td>Rows are timesteps. Columns correspond to joint_names </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef97dbd45de01fffebcfac1e069b7e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef97dbd45de01fffebcfac1e069b7e4d">&#9670;&nbsp;</a></span>plotTrajectory() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void tesseract_visualization::Visualization::plotTrajectory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d28/structtesseract__common_1_1JointTrajectory.html">tesseract_common::JointTrajectory</a> &amp;&#160;</td>
+          <td class="paramname"><em>traj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plot a JointTrajectory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trajectory</td><td>JointTrajectory to be plotted </td></tr>
   </table>
   </dd>
 </dl>
@@ -570,7 +606,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 25 2020 19:16:10 for Tesseract by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 25 2020 20:10:48 for Tesseract by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>
