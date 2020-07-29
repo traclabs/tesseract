@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1595455422563,
+  "lastUpdate": 1596037591334,
   "repoUrl": "https://github.com/ros-industrial-consortium/tesseract",
   "entries": {
     "C++ Benchmark": [
@@ -4104,6 +4104,2058 @@ window.BENCHMARK_DATA = {
             "value": 56041.52589999102,
             "unit": "ns/iter",
             "extra": "iterations: 10000\ncpu: 56040.358900003186 ns\nthreads: undefined"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "levi.armstrong@gmail.com",
+            "name": "Levi Armstrong",
+            "username": "Levi-Armstrong"
+          },
+          "committer": {
+            "email": "levi.armstrong@gmail.com",
+            "name": "Levi Armstrong",
+            "username": "Levi-Armstrong"
+          },
+          "distinct": true,
+          "id": "db15d01d8274436bdaecde735583f02cf5f68cf5",
+          "message": "Address requested changes",
+          "timestamp": "2020-07-29T09:53:46-05:00",
+          "tree_id": "fb5c897d8cab05489981f700ebd3e63b7e309b62",
+          "url": "https://github.com/ros-industrial-consortium/tesseract/commit/db15d01d8274436bdaecde735583f02cf5f68cf5"
+        },
+        "date": 1596037590309,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_0/real_time",
+            "value": 83.92181169240472,
+            "unit": "us/iter",
+            "extra": "iterations: 7971\ncpu: 83.91485936519885 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_2/real_time",
+            "value": 85.99081767390413,
+            "unit": "us/iter",
+            "extra": "iterations: 7876\ncpu: 85.95170721178262 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_4/real_time",
+            "value": 85.61428596382093,
+            "unit": "us/iter",
+            "extra": "iterations: 8015\ncpu: 85.60633087960076 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_8/real_time",
+            "value": 84.51147004332805,
+            "unit": "us/iter",
+            "extra": "iterations: 8312\ncpu: 84.50257964388832 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_16/real_time",
+            "value": 91.03954760641327,
+            "unit": "us/iter",
+            "extra": "iterations: 7520\ncpu: 91.01585106382979 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_32/real_time",
+            "value": 115.9262632096546,
+            "unit": "us/iter",
+            "extra": "iterations: 6094\ncpu: 115.91686773875936 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_64/real_time",
+            "value": 162.1467934472781,
+            "unit": "us/iter",
+            "extra": "iterations: 4212\ncpu: 162.08585612535606 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_128/real_time",
+            "value": 273.93993524890277,
+            "unit": "us/iter",
+            "extra": "iterations: 2471\ncpu: 273.923078915419 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_256/real_time",
+            "value": 566.3766434518066,
+            "unit": "us/iter",
+            "extra": "iterations: 1321\ncpu: 566.2479333838 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CLONE_BulletDiscreteSimpleManager_ACTIVE_OBJ_512/real_time",
+            "value": 1583.253583892705,
+            "unit": "us/iter",
+            "extra": "iterations: 447\ncpu: 1583.11087248322 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_BOX_BOX/real_time",
+            "value": 4.829577140549781,
+            "unit": "us/iter",
+            "extra": "iterations: 146084\ncpu: 4.828070589523843 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_BOX_CONE/real_time",
+            "value": 6.94210965456131,
+            "unit": "us/iter",
+            "extra": "iterations: 100771\ncpu: 6.941692173343532 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_BOX_SPHERE/real_time",
+            "value": 40.24067603997377,
+            "unit": "us/iter",
+            "extra": "iterations: 17212\ncpu: 40.22654055310243 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_BOX_CAPSULE/real_time",
+            "value": 22.63163466866613,
+            "unit": "us/iter",
+            "extra": "iterations: 30679\ncpu: 22.629493823136368 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_BOX_CYLINDER/real_time",
+            "value": 5.148672408899071,
+            "unit": "us/iter",
+            "extra": "iterations: 133920\ncpu: 5.1480003509558045 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CONE_BOX/real_time",
+            "value": 6.9544870704881,
+            "unit": "us/iter",
+            "extra": "iterations: 101860\ncpu: 6.95325274887101 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CONE_CONE/real_time",
+            "value": 5.048103394750016,
+            "unit": "us/iter",
+            "extra": "iterations: 123691\ncpu: 5.048129289924083 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CONE_SPHERE/real_time",
+            "value": 68.07936251443726,
+            "unit": "us/iter",
+            "extra": "iterations: 10372\ncpu: 68.06318858465092 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CONE_CAPSULE/real_time",
+            "value": 68.0386307543535,
+            "unit": "us/iter",
+            "extra": "iterations: 10340\ncpu: 68.02634003868457 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CONE_CYLINDER/real_time",
+            "value": 5.537506315032356,
+            "unit": "us/iter",
+            "extra": "iterations: 126761\ncpu: 5.5371477268244895 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_SPHERE_BOX/real_time",
+            "value": 41.70624793093116,
+            "unit": "us/iter",
+            "extra": "iterations: 16795\ncpu: 41.70276439416499 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_SPHERE_CONE/real_time",
+            "value": 66.67175797333985,
+            "unit": "us/iter",
+            "extra": "iterations: 10441\ncpu: 66.66750972129108 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_SPHERE_SPHERE/real_time",
+            "value": 0.5815038516599166,
+            "unit": "us/iter",
+            "extra": "iterations: 1195199\ncpu: 0.5814092749408262 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_SPHERE_CAPSULE/real_time",
+            "value": 0.6168948392616591,
+            "unit": "us/iter",
+            "extra": "iterations: 1124374\ncpu: 0.6168427987484596 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_SPHERE_CYLINDER/real_time",
+            "value": 12.704777062984975,
+            "unit": "us/iter",
+            "extra": "iterations: 54872\ncpu: 12.702269098993982 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CAPSULE_BOX/real_time",
+            "value": 25.165699360259815,
+            "unit": "us/iter",
+            "extra": "iterations: 27355\ncpu: 25.162396307804734 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CAPSULE_CONE/real_time",
+            "value": 68.6221016421947,
+            "unit": "us/iter",
+            "extra": "iterations: 10291\ncpu: 68.61790652026059 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CAPSULE_SPHERE/real_time",
+            "value": 0.6228880690684983,
+            "unit": "us/iter",
+            "extra": "iterations: 1144018\ncpu: 0.622747716382083 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CAPSULE_CAPSULE/real_time",
+            "value": 0.6114614963319196,
+            "unit": "us/iter",
+            "extra": "iterations: 1132035\ncpu: 0.6113958367011633 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CAPSULE_CYLINDER/real_time",
+            "value": 71.56809506123035,
+            "unit": "us/iter",
+            "extra": "iterations: 9962\ncpu: 71.55193475205786 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CYLINDER_BOX/real_time",
+            "value": 5.8095178448690215,
+            "unit": "us/iter",
+            "extra": "iterations: 120735\ncpu: 5.809192578788253 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CYLINDER_CONE/real_time",
+            "value": 5.566744994663157,
+            "unit": "us/iter",
+            "extra": "iterations: 126515\ncpu: 5.565877658775633 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CYLINDER_SPHERE/real_time",
+            "value": 13.93683835418196,
+            "unit": "us/iter",
+            "extra": "iterations: 51087\ncpu: 13.929730381506092 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CYLINDER_CAPSULE/real_time",
+            "value": 69.80509063922965,
+            "unit": "us/iter",
+            "extra": "iterations: 10106\ncpu: 69.80002275875741 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_ALL_CYLINDER_CYLINDER/real_time",
+            "value": 4.636317156379821,
+            "unit": "us/iter",
+            "extra": "iterations: 149781\ncpu: 4.634975684499379 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_BOX_BOX/real_time",
+            "value": 4.603381398536113,
+            "unit": "us/iter",
+            "extra": "iterations: 148784\ncpu: 4.6033992431982105 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_BOX_CONE/real_time",
+            "value": 6.83302857733569,
+            "unit": "us/iter",
+            "extra": "iterations: 101549\ncpu: 6.831470974603337 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_BOX_SPHERE/real_time",
+            "value": 40.23961197764604,
+            "unit": "us/iter",
+            "extra": "iterations: 17182\ncpu: 40.23362961238526 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_BOX_CAPSULE/real_time",
+            "value": 22.18852012511219,
+            "unit": "us/iter",
+            "extra": "iterations: 31652\ncpu: 22.183139043346582 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_BOX_CYLINDER/real_time",
+            "value": 5.058646615678887,
+            "unit": "us/iter",
+            "extra": "iterations: 139644\ncpu: 5.058327847956246 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CONE_BOX/real_time",
+            "value": 6.87760164258752,
+            "unit": "us/iter",
+            "extra": "iterations: 101060\ncpu: 6.877004235107868 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CONE_CONE/real_time",
+            "value": 4.923461117796328,
+            "unit": "us/iter",
+            "extra": "iterations: 137145\ncpu: 4.922260527179268 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CONE_SPHERE/real_time",
+            "value": 68.51637607820346,
+            "unit": "us/iter",
+            "extra": "iterations: 10434\ncpu: 68.50424899367385 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CONE_CAPSULE/real_time",
+            "value": 68.054312548405,
+            "unit": "us/iter",
+            "extra": "iterations: 10328\ncpu: 68.0279995158789 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CONE_CYLINDER/real_time",
+            "value": 5.441386657832394,
+            "unit": "us/iter",
+            "extra": "iterations: 128315\ncpu: 5.440990351868426 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_SPHERE_BOX/real_time",
+            "value": 41.243032335812096,
+            "unit": "us/iter",
+            "extra": "iterations: 17009\ncpu: 41.229101240519526 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_SPHERE_CONE/real_time",
+            "value": 66.48912232273624,
+            "unit": "us/iter",
+            "extra": "iterations: 10505\ncpu: 66.47684026653941 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_SPHERE_SPHERE/real_time",
+            "value": 0.5547999421156706,
+            "unit": "us/iter",
+            "extra": "iterations: 1226585\ncpu: 0.5547194315925895 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_SPHERE_CAPSULE/real_time",
+            "value": 0.5681208943862907,
+            "unit": "us/iter",
+            "extra": "iterations: 1233829\ncpu: 0.5678776726758749 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_SPHERE_CYLINDER/real_time",
+            "value": 12.661655709068544,
+            "unit": "us/iter",
+            "extra": "iterations: 55517\ncpu: 12.66077259217891 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CAPSULE_BOX/real_time",
+            "value": 24.98014397429557,
+            "unit": "us/iter",
+            "extra": "iterations: 28005\ncpu: 24.974041314051092 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CAPSULE_CONE/real_time",
+            "value": 68.66260796504832,
+            "unit": "us/iter",
+            "extra": "iterations: 10295\ncpu: 68.65529558037824 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CAPSULE_SPHERE/real_time",
+            "value": 0.5750432944459045,
+            "unit": "us/iter",
+            "extra": "iterations: 1216253\ncpu: 0.5749591154143101 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CAPSULE_CAPSULE/real_time",
+            "value": 0.572723514666496,
+            "unit": "us/iter",
+            "extra": "iterations: 1227906\ncpu: 0.5723403583010394 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CAPSULE_CYLINDER/real_time",
+            "value": 72.62316293318607,
+            "unit": "us/iter",
+            "extra": "iterations: 9955\ncpu: 72.61565976896 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CYLINDER_BOX/real_time",
+            "value": 5.694666843417647,
+            "unit": "us/iter",
+            "extra": "iterations: 120697\ncpu: 5.692577214015274 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CYLINDER_CONE/real_time",
+            "value": 5.520035756265463,
+            "unit": "us/iter",
+            "extra": "iterations: 127614\ncpu: 5.519534494647903 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CYLINDER_SPHERE/real_time",
+            "value": 13.725656599133151,
+            "unit": "us/iter",
+            "extra": "iterations: 50393\ncpu: 13.723162383664443 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CYLINDER_CAPSULE/real_time",
+            "value": 70.12737453782319,
+            "unit": "us/iter",
+            "extra": "iterations: 10007\ncpu: 70.10803267712576 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_FIRST_CYLINDER_CYLINDER/real_time",
+            "value": 4.5524925328990955,
+            "unit": "us/iter",
+            "extra": "iterations: 152201\ncpu: 4.551831637111431 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_BOX_BOX/real_time",
+            "value": 4.740190441832856,
+            "unit": "us/iter",
+            "extra": "iterations: 151075\ncpu: 4.739604236306469 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_BOX_CONE/real_time",
+            "value": 6.96285239703186,
+            "unit": "us/iter",
+            "extra": "iterations: 101292\ncpu: 6.961408640366454 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_BOX_SPHERE/real_time",
+            "value": 40.439596800772364,
+            "unit": "us/iter",
+            "extra": "iterations: 17004\ncpu: 40.43614531874853 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_BOX_CAPSULE/real_time",
+            "value": 22.48912269484664,
+            "unit": "us/iter",
+            "extra": "iterations: 31126\ncpu: 22.48614637280732 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_BOX_CYLINDER/real_time",
+            "value": 5.139515126055948,
+            "unit": "us/iter",
+            "extra": "iterations: 135693\ncpu: 5.137275629546091 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CONE_BOX/real_time",
+            "value": 6.8808340144605795,
+            "unit": "us/iter",
+            "extra": "iterations: 97388\ncpu: 6.879959029859912 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CONE_CONE/real_time",
+            "value": 5.076989845620127,
+            "unit": "us/iter",
+            "extra": "iterations: 135705\ncpu: 5.062063556980209 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CONE_SPHERE/real_time",
+            "value": 68.06469410246963,
+            "unit": "us/iter",
+            "extra": "iterations: 10072\ncpu: 68.05075804209686 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CONE_CAPSULE/real_time",
+            "value": 67.71061286910063,
+            "unit": "us/iter",
+            "extra": "iterations: 10397\ncpu: 67.70468154275301 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CONE_CYLINDER/real_time",
+            "value": 5.488228809064593,
+            "unit": "us/iter",
+            "extra": "iterations: 124440\ncpu: 5.486048609771805 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_SPHERE_BOX/real_time",
+            "value": 41.73034163614139,
+            "unit": "us/iter",
+            "extra": "iterations: 16661\ncpu: 41.720164876057915 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_SPHERE_CONE/real_time",
+            "value": 66.47395512093317,
+            "unit": "us/iter",
+            "extra": "iterations: 10584\ncpu: 66.44383909674993 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_SPHERE_SPHERE/real_time",
+            "value": 0.586263463573884,
+            "unit": "us/iter",
+            "extra": "iterations: 1195095\ncpu: 0.5862160221572372 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_SPHERE_CAPSULE/real_time",
+            "value": 0.6211105034945344,
+            "unit": "us/iter",
+            "extra": "iterations: 1144362\ncpu: 0.6209848055073466 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_SPHERE_CYLINDER/real_time",
+            "value": 12.594469358211493,
+            "unit": "us/iter",
+            "extra": "iterations: 55953\ncpu: 12.591562400586275 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_BOX/real_time",
+            "value": 25.053917311913615,
+            "unit": "us/iter",
+            "extra": "iterations: 27767\ncpu: 25.050165952389456 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_CONE/real_time",
+            "value": 68.90040233884856,
+            "unit": "us/iter",
+            "extra": "iterations: 10347\ncpu: 68.8768241036052 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_SPHERE/real_time",
+            "value": 0.6136262389597154,
+            "unit": "us/iter",
+            "extra": "iterations: 1113535\ncpu: 0.613550531415715 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_CAPSULE/real_time",
+            "value": 0.6115366140187045,
+            "unit": "us/iter",
+            "extra": "iterations: 1137242\ncpu: 0.6113590036245656 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_CYLINDER/real_time",
+            "value": 70.72562874620989,
+            "unit": "us/iter",
+            "extra": "iterations: 9810\ncpu: 70.70954587155904 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_BOX/real_time",
+            "value": 5.778248327533955,
+            "unit": "us/iter",
+            "extra": "iterations: 123321\ncpu: 5.777487110873238 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_CONE/real_time",
+            "value": 5.553891364613556,
+            "unit": "us/iter",
+            "extra": "iterations: 125889\ncpu: 5.5520427678351565 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_SPHERE/real_time",
+            "value": 13.901580630185633,
+            "unit": "us/iter",
+            "extra": "iterations: 49541\ncpu: 13.899649199652956 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_CAPSULE/real_time",
+            "value": 70.3717248611995,
+            "unit": "us/iter",
+            "extra": "iterations: 9726\ncpu: 70.35331739666978 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_CYLINDER/real_time",
+            "value": 4.6365243624522305,
+            "unit": "us/iter",
+            "extra": "iterations: 152694\ncpu: 4.635666647019458 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_BOX_BOX/real_time",
+            "value": 4.6390100028547385,
+            "unit": "us/iter",
+            "extra": "iterations: 150557\ncpu: 4.637494869052948 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_BOX_CONE/real_time",
+            "value": 6.88260767218998,
+            "unit": "us/iter",
+            "extra": "iterations: 102083\ncpu: 6.882090240294684 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_BOX_SPHERE/real_time",
+            "value": 40.375066523234445,
+            "unit": "us/iter",
+            "extra": "iterations: 17197\ncpu: 40.36486561609565 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_BOX_CAPSULE/real_time",
+            "value": 22.376359519007305,
+            "unit": "us/iter",
+            "extra": "iterations: 30271\ncpu: 22.3698668362457 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_BOX_CYLINDER/real_time",
+            "value": 5.243798743773457,
+            "unit": "us/iter",
+            "extra": "iterations: 134530\ncpu: 5.242788344607181 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CONE_BOX/real_time",
+            "value": 6.839098198244601,
+            "unit": "us/iter",
+            "extra": "iterations: 91855\ncpu: 6.837051766370873 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CONE_CONE/real_time",
+            "value": 5.039500920018807,
+            "unit": "us/iter",
+            "extra": "iterations: 136954\ncpu: 5.039541466477855 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CONE_SPHERE/real_time",
+            "value": 68.10443762180837,
+            "unit": "us/iter",
+            "extra": "iterations: 10260\ncpu: 68.08679239766029 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CONE_CAPSULE/real_time",
+            "value": 67.9937674327183,
+            "unit": "us/iter",
+            "extra": "iterations: 10139\ncpu: 67.98689643949166 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CONE_CYLINDER/real_time",
+            "value": 5.534776300170203,
+            "unit": "us/iter",
+            "extra": "iterations: 128060\ncpu: 5.534020724660376 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_SPHERE_BOX/real_time",
+            "value": 41.52806344501095,
+            "unit": "us/iter",
+            "extra": "iterations: 16534\ncpu: 41.5218097858959 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_SPHERE_CONE/real_time",
+            "value": 66.89803687164019,
+            "unit": "us/iter",
+            "extra": "iterations: 10523\ncpu: 66.88952523044824 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_SPHERE_SPHERE/real_time",
+            "value": 0.584756584433947,
+            "unit": "us/iter",
+            "extra": "iterations: 1199040\ncpu: 0.5845983653589556 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_SPHERE_CAPSULE/real_time",
+            "value": 0.6174241481679317,
+            "unit": "us/iter",
+            "extra": "iterations: 1127804\ncpu: 0.6173209928320884 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_SPHERE_CYLINDER/real_time",
+            "value": 12.701223909024996,
+            "unit": "us/iter",
+            "extra": "iterations: 52499\ncpu: 12.697875616678205 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CAPSULE_BOX/real_time",
+            "value": 25.315635915686627,
+            "unit": "us/iter",
+            "extra": "iterations: 27804\ncpu: 25.31333351316345 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CAPSULE_CONE/real_time",
+            "value": 68.48787265116046,
+            "unit": "us/iter",
+            "extra": "iterations: 10271\ncpu: 68.47453928536623 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CAPSULE_SPHERE/real_time",
+            "value": 0.6173730968464333,
+            "unit": "us/iter",
+            "extra": "iterations: 1149211\ncpu: 0.6171232523879342 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CAPSULE_CAPSULE/real_time",
+            "value": 0.6183381764394174,
+            "unit": "us/iter",
+            "extra": "iterations: 1137149\ncpu: 0.618267888376986 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CAPSULE_CYLINDER/real_time",
+            "value": 70.66870292758786,
+            "unit": "us/iter",
+            "extra": "iterations: 9974\ncpu: 70.64708873069985 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CYLINDER_BOX/real_time",
+            "value": 5.7898848517914585,
+            "unit": "us/iter",
+            "extra": "iterations: 117301\ncpu: 5.788828057731793 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CYLINDER_CONE/real_time",
+            "value": 5.576700972531926,
+            "unit": "us/iter",
+            "extra": "iterations: 125343\ncpu: 5.5758077036611216 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CYLINDER_SPHERE/real_time",
+            "value": 13.917752276938552,
+            "unit": "us/iter",
+            "extra": "iterations: 49628\ncpu: 13.914024240348034 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CYLINDER_CAPSULE/real_time",
+            "value": 69.81976890339652,
+            "unit": "us/iter",
+            "extra": "iterations: 10104\ncpu: 69.80858590657184 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_0_BulletDiscreteSimpleManager_LIMITED_CYLINDER_CYLINDER/real_time",
+            "value": 4.565472329101599,
+            "unit": "us/iter",
+            "extra": "iterations: 152561\ncpu: 4.58196413893465 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_BOX_BOX/real_time",
+            "value": 4.853509949802555,
+            "unit": "us/iter",
+            "extra": "iterations: 145028\ncpu: 4.8531711117853265 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_BOX_CONE/real_time",
+            "value": 8.146842332791614,
+            "unit": "us/iter",
+            "extra": "iterations: 85357\ncpu: 8.144625139121649 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_BOX_SPHERE/real_time",
+            "value": 1.460793535486343,
+            "unit": "us/iter",
+            "extra": "iterations: 485110\ncpu: 1.460642472841192 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_BOX_CAPSULE/real_time",
+            "value": 1.6454703402053255,
+            "unit": "us/iter",
+            "extra": "iterations: 433297\ncpu: 1.6449902814928055 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_BOX_CYLINDER/real_time",
+            "value": 7.564102611174151,
+            "unit": "us/iter",
+            "extra": "iterations: 90419\ncpu: 7.563536734535944 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CONE_BOX/real_time",
+            "value": 8.527992224175296,
+            "unit": "us/iter",
+            "extra": "iterations: 82435\ncpu: 8.52731268271983 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CONE_CONE/real_time",
+            "value": 42.28858223366461,
+            "unit": "us/iter",
+            "extra": "iterations: 16672\ncpu: 42.28126025671707 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CONE_SPHERE/real_time",
+            "value": 4.249429016453476,
+            "unit": "us/iter",
+            "extra": "iterations: 163714\ncpu: 4.248076535910203 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CONE_CAPSULE/real_time",
+            "value": 20.52218051717437,
+            "unit": "us/iter",
+            "extra": "iterations: 34379\ncpu: 20.520632071904434 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CONE_CYLINDER/real_time",
+            "value": 22.91097279810061,
+            "unit": "us/iter",
+            "extra": "iterations: 31064\ncpu: 22.904391546484938 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_SPHERE_BOX/real_time",
+            "value": 1.5795949846882018,
+            "unit": "us/iter",
+            "extra": "iterations: 446393\ncpu: 1.579429836489369 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_SPHERE_CONE/real_time",
+            "value": 3.9629753350811527,
+            "unit": "us/iter",
+            "extra": "iterations: 180702\ncpu: 3.9619782459519226 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_SPHERE_SPHERE/real_time",
+            "value": 0.8027807192566511,
+            "unit": "us/iter",
+            "extra": "iterations: 889613\ncpu: 0.8025528774871744 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_SPHERE_CAPSULE/real_time",
+            "value": 0.8290170220975951,
+            "unit": "us/iter",
+            "extra": "iterations: 839732\ncpu: 0.8289680338488996 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_SPHERE_CYLINDER/real_time",
+            "value": 25.33068047209051,
+            "unit": "us/iter",
+            "extra": "iterations: 27791\ncpu: 25.32290547299478 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CAPSULE_BOX/real_time",
+            "value": 1.753304628485554,
+            "unit": "us/iter",
+            "extra": "iterations: 402313\ncpu: 1.7530877128007112 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CAPSULE_CONE/real_time",
+            "value": 20.45843427797008,
+            "unit": "us/iter",
+            "extra": "iterations: 34722\ncpu: 20.398523184148466 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CAPSULE_SPHERE/real_time",
+            "value": 0.8398309350718215,
+            "unit": "us/iter",
+            "extra": "iterations: 820247\ncpu: 0.8397767038465269 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CAPSULE_CAPSULE/real_time",
+            "value": 0.8484127231468445,
+            "unit": "us/iter",
+            "extra": "iterations: 834259\ncpu: 0.8481619197395592 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CAPSULE_CYLINDER/real_time",
+            "value": 26.661348600601098,
+            "unit": "us/iter",
+            "extra": "iterations: 26833\ncpu: 26.655187232139223 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CYLINDER_BOX/real_time",
+            "value": 8.571695129420391,
+            "unit": "us/iter",
+            "extra": "iterations: 80011\ncpu: 8.57056613465647 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CYLINDER_CONE/real_time",
+            "value": 22.484960195974626,
+            "unit": "us/iter",
+            "extra": "iterations: 31228\ncpu: 22.479939765595137 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CYLINDER_SPHERE/real_time",
+            "value": 29.310956259748092,
+            "unit": "us/iter",
+            "extra": "iterations: 24394\ncpu: 29.30957477248477 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CYLINDER_CAPSULE/real_time",
+            "value": 27.17119745198755,
+            "unit": "us/iter",
+            "extra": "iterations: 25667\ncpu: 27.16559734289175 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_ALL_CYLINDER_CYLINDER/real_time",
+            "value": 5.792468308827117,
+            "unit": "us/iter",
+            "extra": "iterations: 119639\ncpu: 5.792157841506577 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_BOX_BOX/real_time",
+            "value": 4.9567061340039595,
+            "unit": "us/iter",
+            "extra": "iterations: 142354\ncpu: 4.955449611531792 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_BOX_CONE/real_time",
+            "value": 8.21966204112639,
+            "unit": "us/iter",
+            "extra": "iterations: 87197\ncpu: 8.219223115474122 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_BOX_SPHERE/real_time",
+            "value": 1.4288636211445775,
+            "unit": "us/iter",
+            "extra": "iterations: 486835\ncpu: 1.4283075805971306 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_BOX_CAPSULE/real_time",
+            "value": 1.6022368542518357,
+            "unit": "us/iter",
+            "extra": "iterations: 435445\ncpu: 1.6021108865643146 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_BOX_CYLINDER/real_time",
+            "value": 7.44294668926596,
+            "unit": "us/iter",
+            "extra": "iterations: 94390\ncpu: 7.440111738531647 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CONE_BOX/real_time",
+            "value": 8.472533653273747,
+            "unit": "us/iter",
+            "extra": "iterations: 83766\ncpu: 8.471809505049805 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CONE_CONE/real_time",
+            "value": 42.123429131952044,
+            "unit": "us/iter",
+            "extra": "iterations: 16566\ncpu: 42.11585482313226 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CONE_SPHERE/real_time",
+            "value": 4.226908259330587,
+            "unit": "us/iter",
+            "extra": "iterations: 164638\ncpu: 4.226551014954045 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CONE_CAPSULE/real_time",
+            "value": 20.34306438267586,
+            "unit": "us/iter",
+            "extra": "iterations: 34326\ncpu: 20.339100536036884 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CONE_CYLINDER/real_time",
+            "value": 22.63955197690748,
+            "unit": "us/iter",
+            "extra": "iterations: 30831\ncpu: 22.63646686776314 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_SPHERE_BOX/real_time",
+            "value": 1.537711147657645,
+            "unit": "us/iter",
+            "extra": "iterations: 458473\ncpu: 1.5374046083411916 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_SPHERE_CONE/real_time",
+            "value": 3.880312705813616,
+            "unit": "us/iter",
+            "extra": "iterations: 180988\ncpu: 3.8795887185890297 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_SPHERE_SPHERE/real_time",
+            "value": 0.7862969447330551,
+            "unit": "us/iter",
+            "extra": "iterations: 907253\ncpu: 0.7861969505749877 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_SPHERE_CAPSULE/real_time",
+            "value": 0.804953320463315,
+            "unit": "us/iter",
+            "extra": "iterations: 854700\ncpu: 0.8048235603135842 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_SPHERE_CYLINDER/real_time",
+            "value": 25.48355235088102,
+            "unit": "us/iter",
+            "extra": "iterations: 27564\ncpu: 25.480274125671386 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CAPSULE_BOX/real_time",
+            "value": 1.720533467948699,
+            "unit": "us/iter",
+            "extra": "iterations: 408077\ncpu: 1.7199753183835744 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CAPSULE_CONE/real_time",
+            "value": 20.319612367114622,
+            "unit": "us/iter",
+            "extra": "iterations: 34899\ncpu: 20.315746898191765 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CAPSULE_SPHERE/real_time",
+            "value": 0.8185293150899403,
+            "unit": "us/iter",
+            "extra": "iterations: 854901\ncpu: 0.8183114278729136 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CAPSULE_CAPSULE/real_time",
+            "value": 0.8216318449662832,
+            "unit": "us/iter",
+            "extra": "iterations: 861436\ncpu: 0.8215621531953474 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CAPSULE_CYLINDER/real_time",
+            "value": 26.28104865859499,
+            "unit": "us/iter",
+            "extra": "iterations: 26614\ncpu: 26.27548910348004 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CYLINDER_BOX/real_time",
+            "value": 8.42400944743252,
+            "unit": "us/iter",
+            "extra": "iterations: 84044\ncpu: 8.422564811289352 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CYLINDER_CONE/real_time",
+            "value": 22.43160040529663,
+            "unit": "us/iter",
+            "extra": "iterations: 31089\ncpu: 22.426701791630403 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CYLINDER_SPHERE/real_time",
+            "value": 28.860739752538837,
+            "unit": "us/iter",
+            "extra": "iterations: 23762\ncpu: 28.855729357797838 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CYLINDER_CAPSULE/real_time",
+            "value": 27.452038188027267,
+            "unit": "us/iter",
+            "extra": "iterations: 25453\ncpu: 27.4500355950184 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_FIRST_CYLINDER_CYLINDER/real_time",
+            "value": 5.78521051733319,
+            "unit": "us/iter",
+            "extra": "iterations: 117159\ncpu: 5.78378134842393 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_BOX_BOX/real_time",
+            "value": 5.01638187254794,
+            "unit": "us/iter",
+            "extra": "iterations: 138795\ncpu: 5.016308980871002 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_BOX_CONE/real_time",
+            "value": 8.247931909418908,
+            "unit": "us/iter",
+            "extra": "iterations: 85445\ncpu: 8.245679946164357 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_BOX_SPHERE/real_time",
+            "value": 1.442597274288547,
+            "unit": "us/iter",
+            "extra": "iterations: 488166\ncpu: 1.4423801391329842 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_BOX_CAPSULE/real_time",
+            "value": 1.6245882990400917,
+            "unit": "us/iter",
+            "extra": "iterations: 433708\ncpu: 1.6243800598559415 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_BOX_CYLINDER/real_time",
+            "value": 7.6532155913615165,
+            "unit": "us/iter",
+            "extra": "iterations: 92346\ncpu: 7.651008901305754 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CONE_BOX/real_time",
+            "value": 8.670180545622694,
+            "unit": "us/iter",
+            "extra": "iterations: 82511\ncpu: 8.668990364920976 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CONE_CONE/real_time",
+            "value": 42.554470153792536,
+            "unit": "us/iter",
+            "extra": "iterations: 16518\ncpu: 42.54269766315499 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CONE_SPHERE/real_time",
+            "value": 4.280368016048176,
+            "unit": "us/iter",
+            "extra": "iterations: 164001\ncpu: 4.280080456826447 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CONE_CAPSULE/real_time",
+            "value": 20.43488563264519,
+            "unit": "us/iter",
+            "extra": "iterations: 34293\ncpu: 20.430803370950706 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CONE_CYLINDER/real_time",
+            "value": 22.616856284697125,
+            "unit": "us/iter",
+            "extra": "iterations: 30797\ncpu: 22.61487982595638 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_SPHERE_BOX/real_time",
+            "value": 1.5672120716748617,
+            "unit": "us/iter",
+            "extra": "iterations: 444114\ncpu: 1.5666988250763945 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_SPHERE_CONE/real_time",
+            "value": 3.8945626873492563,
+            "unit": "us/iter",
+            "extra": "iterations: 175474\ncpu: 3.893983319466025 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_SPHERE_SPHERE/real_time",
+            "value": 0.793000202695334,
+            "unit": "us/iter",
+            "extra": "iterations: 878165\ncpu: 0.8016397852339827 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_SPHERE_CAPSULE/real_time",
+            "value": 0.8254275123083394,
+            "unit": "us/iter",
+            "extra": "iterations: 848413\ncpu: 0.8252929304478029 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_SPHERE_CYLINDER/real_time",
+            "value": 25.438322834934375,
+            "unit": "us/iter",
+            "extra": "iterations: 27274\ncpu: 25.430264647649064 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_BOX/real_time",
+            "value": 1.7388795700515995,
+            "unit": "us/iter",
+            "extra": "iterations: 405165\ncpu: 1.7387728505670677 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_CONE/real_time",
+            "value": 20.32968309716194,
+            "unit": "us/iter",
+            "extra": "iterations: 34509\ncpu: 20.32563632675521 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_SPHERE/real_time",
+            "value": 0.8356175237883241,
+            "unit": "us/iter",
+            "extra": "iterations: 842957\ncpu: 0.8354217890117555 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_CAPSULE/real_time",
+            "value": 0.8632397933439635,
+            "unit": "us/iter",
+            "extra": "iterations: 810623\ncpu: 0.8631833342996892 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_CYLINDER/real_time",
+            "value": 26.400918473973757,
+            "unit": "us/iter",
+            "extra": "iterations: 26605\ncpu: 26.392088103740008 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_BOX/real_time",
+            "value": 8.599268732949847,
+            "unit": "us/iter",
+            "extra": "iterations: 80660\ncpu: 8.59902222910981 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_CONE/real_time",
+            "value": 22.50419194038292,
+            "unit": "us/iter",
+            "extra": "iterations: 30994\ncpu: 22.499914789959675 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_SPHERE/real_time",
+            "value": 28.985984605203722,
+            "unit": "us/iter",
+            "extra": "iterations: 24164\ncpu: 28.981493833802638 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_CAPSULE/real_time",
+            "value": 27.440456896210858,
+            "unit": "us/iter",
+            "extra": "iterations: 25601\ncpu: 27.43112171399531 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_CYLINDER/real_time",
+            "value": 5.934486213195109,
+            "unit": "us/iter",
+            "extra": "iterations: 120949\ncpu: 5.934150253412629 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_BOX_BOX/real_time",
+            "value": 5.135347959999308,
+            "unit": "us/iter",
+            "extra": "iterations: 100000\ncpu: 5.13412159000012 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_BOX_CONE/real_time",
+            "value": 8.118326142299484,
+            "unit": "us/iter",
+            "extra": "iterations: 85245\ncpu: 8.116173065868985 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_BOX_SPHERE/real_time",
+            "value": 1.4630467843967583,
+            "unit": "us/iter",
+            "extra": "iterations: 485461\ncpu: 1.4630229863984932 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_BOX_CAPSULE/real_time",
+            "value": 1.6276049389890554,
+            "unit": "us/iter",
+            "extra": "iterations: 430493\ncpu: 1.627264494428451 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_BOX_CYLINDER/real_time",
+            "value": 7.602655411589327,
+            "unit": "us/iter",
+            "extra": "iterations: 90685\ncpu: 7.602144775872698 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CONE_BOX/real_time",
+            "value": 8.559432392796714,
+            "unit": "us/iter",
+            "extra": "iterations: 81833\ncpu: 8.55866530617224 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CONE_CONE/real_time",
+            "value": 42.19926883022049,
+            "unit": "us/iter",
+            "extra": "iterations: 16516\ncpu: 42.16401162509177 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CONE_SPHERE/real_time",
+            "value": 4.2674174578859345,
+            "unit": "us/iter",
+            "extra": "iterations: 163777\ncpu: 4.265188726133793 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CONE_CAPSULE/real_time",
+            "value": 20.34040804178984,
+            "unit": "us/iter",
+            "extra": "iterations: 34271\ncpu: 20.333823903592208 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CONE_CYLINDER/real_time",
+            "value": 22.829373826048545,
+            "unit": "us/iter",
+            "extra": "iterations: 30985\ncpu: 22.817540906890233 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_SPHERE_BOX/real_time",
+            "value": 1.5804578437440024,
+            "unit": "us/iter",
+            "extra": "iterations: 444335\ncpu: 1.5798875015472278 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_SPHERE_CONE/real_time",
+            "value": 3.912971295094043,
+            "unit": "us/iter",
+            "extra": "iterations: 177879\ncpu: 3.911826140241447 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_SPHERE_SPHERE/real_time",
+            "value": 0.798451493173482,
+            "unit": "us/iter",
+            "extra": "iterations: 885597\ncpu: 0.7984022642352936 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_SPHERE_CAPSULE/real_time",
+            "value": 0.8308050437836757,
+            "unit": "us/iter",
+            "extra": "iterations: 836039\ncpu: 0.8308083797526307 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_SPHERE_CYLINDER/real_time",
+            "value": 25.738552909288824,
+            "unit": "us/iter",
+            "extra": "iterations: 27670\ncpu: 25.734626996748176 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CAPSULE_BOX/real_time",
+            "value": 1.7303594002385931,
+            "unit": "us/iter",
+            "extra": "iterations: 398091\ncpu: 1.7301306861999424 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CAPSULE_CONE/real_time",
+            "value": 20.51682781456827,
+            "unit": "us/iter",
+            "extra": "iterations: 33522\ncpu: 20.50897297297231 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CAPSULE_SPHERE/real_time",
+            "value": 0.8350227113817418,
+            "unit": "us/iter",
+            "extra": "iterations: 833811\ncpu: 0.8349125413313324 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CAPSULE_CAPSULE/real_time",
+            "value": 0.8474755509988813,
+            "unit": "us/iter",
+            "extra": "iterations: 832897\ncpu: 0.847310863167981 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CAPSULE_CYLINDER/real_time",
+            "value": 26.466676968710235,
+            "unit": "us/iter",
+            "extra": "iterations: 26629\ncpu: 26.46312880693966 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CYLINDER_BOX/real_time",
+            "value": 8.578188067914697,
+            "unit": "us/iter",
+            "extra": "iterations: 79567\ncpu: 8.574716339688502 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CYLINDER_CONE/real_time",
+            "value": 22.807993396650847,
+            "unit": "us/iter",
+            "extra": "iterations: 30742\ncpu: 22.795680176955944 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CYLINDER_SPHERE/real_time",
+            "value": 29.199090587696475,
+            "unit": "us/iter",
+            "extra": "iterations: 24043\ncpu: 28.954552510086554 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CYLINDER_CAPSULE/real_time",
+            "value": 27.587962689762865,
+            "unit": "us/iter",
+            "extra": "iterations: 25757\ncpu: 27.574337772255596 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_1_BulletDiscreteSimpleManager_LIMITED_CYLINDER_CYLINDER/real_time",
+            "value": 5.847877420862808,
+            "unit": "us/iter",
+            "extra": "iterations: 119792\ncpu: 5.845818009549791 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_BOX_BOX/real_time",
+            "value": 0.22490464122157955,
+            "unit": "us/iter",
+            "extra": "iterations: 3122303\ncpu: 0.224775755588095 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_BOX_CONE/real_time",
+            "value": 3.0232081182372226,
+            "unit": "us/iter",
+            "extra": "iterations: 221994\ncpu: 3.0224551564456887 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_BOX_SPHERE/real_time",
+            "value": 1.2510568465617722,
+            "unit": "us/iter",
+            "extra": "iterations: 562180\ncpu: 1.2501210590914085 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_BOX_CAPSULE/real_time",
+            "value": 1.399887347130018,
+            "unit": "us/iter",
+            "extra": "iterations: 502961\ncpu: 1.3991064297231688 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_BOX_CYLINDER/real_time",
+            "value": 2.2966389646936305,
+            "unit": "us/iter",
+            "extra": "iterations: 305610\ncpu: 2.2954725597984695 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CONE_BOX/real_time",
+            "value": 3.6803981334444678,
+            "unit": "us/iter",
+            "extra": "iterations: 189547\ncpu: 3.67952891367306 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CONE_CONE/real_time",
+            "value": 3.597204167710007,
+            "unit": "us/iter",
+            "extra": "iterations: 195599\ncpu: 3.594969544834093 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CONE_SPHERE/real_time",
+            "value": 2.5699609241675643,
+            "unit": "us/iter",
+            "extra": "iterations: 270730\ncpu: 2.568687991726029 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CONE_CAPSULE/real_time",
+            "value": 4.258474281443761,
+            "unit": "us/iter",
+            "extra": "iterations: 164531\ncpu: 4.256481009657799 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CONE_CYLINDER/real_time",
+            "value": 5.489245557287596,
+            "unit": "us/iter",
+            "extra": "iterations: 128919\ncpu: 5.486933911991389 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_SPHERE_BOX/real_time",
+            "value": 1.338354317814689,
+            "unit": "us/iter",
+            "extra": "iterations: 517843\ncpu: 1.3378047303912808 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_SPHERE_CONE/real_time",
+            "value": 2.193147334286089,
+            "unit": "us/iter",
+            "extra": "iterations: 319783\ncpu: 2.1922920386637137 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_SPHERE_SPHERE/real_time",
+            "value": 0.7960313529491003,
+            "unit": "us/iter",
+            "extra": "iterations: 886966\ncpu: 0.7955802003684385 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_SPHERE_CAPSULE/real_time",
+            "value": 0.8242009316419098,
+            "unit": "us/iter",
+            "extra": "iterations: 857411\ncpu: 0.8238587666825123 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_SPHERE_CYLINDER/real_time",
+            "value": 3.2719397543785522,
+            "unit": "us/iter",
+            "extra": "iterations: 209592\ncpu: 3.270598748998129 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CAPSULE_BOX/real_time",
+            "value": 1.495380036348637,
+            "unit": "us/iter",
+            "extra": "iterations: 463853\ncpu: 1.494769944357339 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CAPSULE_CONE/real_time",
+            "value": 3.800074124239739,
+            "unit": "us/iter",
+            "extra": "iterations: 183840\ncpu: 3.798359383159232 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CAPSULE_SPHERE/real_time",
+            "value": 0.8397993400060348,
+            "unit": "us/iter",
+            "extra": "iterations: 844553\ncpu: 0.839429545570245 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CAPSULE_CAPSULE/real_time",
+            "value": 0.8287416626003801,
+            "unit": "us/iter",
+            "extra": "iterations: 850415\ncpu: 0.8283982149891435 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CAPSULE_CYLINDER/real_time",
+            "value": 2.16585186042508,
+            "unit": "us/iter",
+            "extra": "iterations: 328312\ncpu: 2.1643764193816013 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CYLINDER_BOX/real_time",
+            "value": 1.9048129740253168,
+            "unit": "us/iter",
+            "extra": "iterations: 367596\ncpu: 1.904105830857806 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CYLINDER_CONE/real_time",
+            "value": 5.125766947751592,
+            "unit": "us/iter",
+            "extra": "iterations: 136257\ncpu: 5.124583500297234 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CYLINDER_SPHERE/real_time",
+            "value": 3.345160413927625,
+            "unit": "us/iter",
+            "extra": "iterations: 207669\ncpu: 3.3446991462374545 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CYLINDER_CAPSULE/real_time",
+            "value": 2.154870652289692,
+            "unit": "us/iter",
+            "extra": "iterations: 328765\ncpu: 2.154730336258469 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_ALL_CYLINDER_CYLINDER/real_time",
+            "value": 2.7830197333638145,
+            "unit": "us/iter",
+            "extra": "iterations: 251655\ncpu: 2.7826101051041188 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_BOX_BOX/real_time",
+            "value": 0.21918240354591892,
+            "unit": "us/iter",
+            "extra": "iterations: 3189779\ncpu: 0.21913796316296458 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_BOX_CONE/real_time",
+            "value": 3.057410179785278,
+            "unit": "us/iter",
+            "extra": "iterations: 228885\ncpu: 3.057217567774123 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_BOX_SPHERE/real_time",
+            "value": 1.2280243820277401,
+            "unit": "us/iter",
+            "extra": "iterations: 569969\ncpu: 1.2279296821405967 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_BOX_CAPSULE/real_time",
+            "value": 1.3866183523432947,
+            "unit": "us/iter",
+            "extra": "iterations: 513602\ncpu: 1.3862526800908523 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_BOX_CYLINDER/real_time",
+            "value": 2.290489101711728,
+            "unit": "us/iter",
+            "extra": "iterations: 311058\ncpu: 2.290358412257506 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CONE_BOX/real_time",
+            "value": 3.6686218173087086,
+            "unit": "us/iter",
+            "extra": "iterations: 187420\ncpu: 3.6677992956995036 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CONE_CONE/real_time",
+            "value": 3.599604204066567,
+            "unit": "us/iter",
+            "extra": "iterations: 197190\ncpu: 3.5996229119122773 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CONE_SPHERE/real_time",
+            "value": 2.555094742727853,
+            "unit": "us/iter",
+            "extra": "iterations: 278966\ncpu: 2.554538657040681 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CONE_CAPSULE/real_time",
+            "value": 4.236166406801558,
+            "unit": "us/iter",
+            "extra": "iterations: 166111\ncpu: 4.235553075955285 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CONE_CYLINDER/real_time",
+            "value": 5.4686548941170905,
+            "unit": "us/iter",
+            "extra": "iterations: 128491\ncpu: 5.467191149574609 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_SPHERE_BOX/real_time",
+            "value": 1.3353327029819335,
+            "unit": "us/iter",
+            "extra": "iterations: 522460\ncpu: 1.3234786414271298 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_SPHERE_CONE/real_time",
+            "value": 2.198242467464443,
+            "unit": "us/iter",
+            "extra": "iterations: 321107\ncpu: 2.19738915065697 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_SPHERE_SPHERE/real_time",
+            "value": 0.7777895559501606,
+            "unit": "us/iter",
+            "extra": "iterations: 912960\ncpu: 0.7777453908166871 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_SPHERE_CAPSULE/real_time",
+            "value": 0.8030103902102875,
+            "unit": "us/iter",
+            "extra": "iterations: 883524\ncpu: 0.8026695754727681 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_SPHERE_CYLINDER/real_time",
+            "value": 3.274476780577813,
+            "unit": "us/iter",
+            "extra": "iterations: 213765\ncpu: 3.2734977943067993 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CAPSULE_BOX/real_time",
+            "value": 1.4808171957404301,
+            "unit": "us/iter",
+            "extra": "iterations: 468523\ncpu: 1.4804637958007998 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CAPSULE_CONE/real_time",
+            "value": 3.8207061813465995,
+            "unit": "us/iter",
+            "extra": "iterations: 185720\ncpu: 3.8185178763729537 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CAPSULE_SPHERE/real_time",
+            "value": 0.8133468935660662,
+            "unit": "us/iter",
+            "extra": "iterations: 868520\ncpu: 0.8131979724128512 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CAPSULE_CAPSULE/real_time",
+            "value": 0.8136653443874299,
+            "unit": "us/iter",
+            "extra": "iterations: 860383\ncpu: 0.8134166516539856 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CAPSULE_CYLINDER/real_time",
+            "value": 2.1165079320546396,
+            "unit": "us/iter",
+            "extra": "iterations: 327910\ncpu: 2.1164764844012316 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CYLINDER_BOX/real_time",
+            "value": 1.8910007392698744,
+            "unit": "us/iter",
+            "extra": "iterations: 369283\ncpu: 1.8904087678014143 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CYLINDER_CONE/real_time",
+            "value": 5.131990478240664,
+            "unit": "us/iter",
+            "extra": "iterations: 134534\ncpu: 5.131656919440323 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CYLINDER_SPHERE/real_time",
+            "value": 3.3397669989328795,
+            "unit": "us/iter",
+            "extra": "iterations: 210072\ncpu: 3.3387844405727636 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CYLINDER_CAPSULE/real_time",
+            "value": 2.1295860390500487,
+            "unit": "us/iter",
+            "extra": "iterations: 327270\ncpu: 2.1296058453264832 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_FIRST_CYLINDER_CYLINDER/real_time",
+            "value": 2.7797182225140356,
+            "unit": "us/iter",
+            "extra": "iterations: 253324\ncpu: 2.7789753319858326 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_BOX_BOX/real_time",
+            "value": 0.21833673375415696,
+            "unit": "us/iter",
+            "extra": "iterations: 3159707\ncpu: 0.218303616442916 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_BOX_CONE/real_time",
+            "value": 3.0517040157225583,
+            "unit": "us/iter",
+            "extra": "iterations: 228975\ncpu: 3.0505183229610773 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_BOX_SPHERE/real_time",
+            "value": 1.2596270106748972,
+            "unit": "us/iter",
+            "extra": "iterations: 559638\ncpu: 1.2595443197210083 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_BOX_CAPSULE/real_time",
+            "value": 1.4161418011704328,
+            "unit": "us/iter",
+            "extra": "iterations: 475391\ncpu: 1.4159171692354369 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_BOX_CYLINDER/real_time",
+            "value": 2.2970823233845046,
+            "unit": "us/iter",
+            "extra": "iterations: 303316\ncpu: 2.296730268103174 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CONE_BOX/real_time",
+            "value": 3.71649381596932,
+            "unit": "us/iter",
+            "extra": "iterations: 190814\ncpu: 3.715807655622787 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CONE_CONE/real_time",
+            "value": 3.5974543897340623,
+            "unit": "us/iter",
+            "extra": "iterations: 194989\ncpu: 3.597220458589878 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CONE_SPHERE/real_time",
+            "value": 2.5882421223702714,
+            "unit": "us/iter",
+            "extra": "iterations: 270735\ncpu: 2.587473669824735 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CONE_CAPSULE/real_time",
+            "value": 4.26832888682651,
+            "unit": "us/iter",
+            "extra": "iterations: 163874\ncpu: 4.267669874415703 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CONE_CYLINDER/real_time",
+            "value": 5.535882892849892,
+            "unit": "us/iter",
+            "extra": "iterations: 128344\ncpu: 5.534106175590645 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_SPHERE_BOX/real_time",
+            "value": 1.3687539263595043,
+            "unit": "us/iter",
+            "extra": "iterations: 490658\ncpu: 1.3685356480481439 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_SPHERE_CONE/real_time",
+            "value": 2.2067822572501306,
+            "unit": "us/iter",
+            "extra": "iterations: 316580\ncpu: 2.2066021542738063 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_SPHERE_SPHERE/real_time",
+            "value": 0.8112190864551518,
+            "unit": "us/iter",
+            "extra": "iterations: 870565\ncpu: 0.8109003520702016 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_SPHERE_CAPSULE/real_time",
+            "value": 0.8451739569453849,
+            "unit": "us/iter",
+            "extra": "iterations: 838834\ncpu: 0.8450329326183745 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_SPHERE_CYLINDER/real_time",
+            "value": 3.3020841963688325,
+            "unit": "us/iter",
+            "extra": "iterations: 210401\ncpu: 3.300907201011462 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_BOX/real_time",
+            "value": 1.5689129049609476,
+            "unit": "us/iter",
+            "extra": "iterations: 444457\ncpu: 1.5684182384347467 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_CONE/real_time",
+            "value": 3.8320505272786143,
+            "unit": "us/iter",
+            "extra": "iterations: 181308\ncpu: 3.8292573962539143 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_SPHERE/real_time",
+            "value": 0.8629615024241595,
+            "unit": "us/iter",
+            "extra": "iterations: 817532\ncpu: 0.8626423088025879 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_CAPSULE/real_time",
+            "value": 0.8812793843396534,
+            "unit": "us/iter",
+            "extra": "iterations: 794139\ncpu: 0.8809988528456647 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CAPSULE_CYLINDER/real_time",
+            "value": 2.177951695293532,
+            "unit": "us/iter",
+            "extra": "iterations: 319679\ncpu: 2.1773804222360766 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_BOX/real_time",
+            "value": 1.9169053164063876,
+            "unit": "us/iter",
+            "extra": "iterations: 362745\ncpu: 1.9158494920673799 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_CONE/real_time",
+            "value": 5.155229582198575,
+            "unit": "us/iter",
+            "extra": "iterations: 137123\ncpu: 5.151465261115819 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_SPHERE/real_time",
+            "value": 3.390080034612742,
+            "unit": "us/iter",
+            "extra": "iterations: 198764\ncpu: 3.389805221267492 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_CAPSULE/real_time",
+            "value": 2.162616362341216,
+            "unit": "us/iter",
+            "extra": "iterations: 324379\ncpu: 2.1620379617669894 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_CLOSEST_CYLINDER_CYLINDER/real_time",
+            "value": 2.834629576663132,
+            "unit": "us/iter",
+            "extra": "iterations: 246140\ncpu: 2.834585638254574 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_BOX_BOX/real_time",
+            "value": 0.21999583453818072,
+            "unit": "us/iter",
+            "extra": "iterations: 3164115\ncpu: 0.21992413518472023 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_BOX_CONE/real_time",
+            "value": 3.0518060360796437,
+            "unit": "us/iter",
+            "extra": "iterations: 229553\ncpu: 3.051270869908217 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_BOX_SPHERE/real_time",
+            "value": 1.2590722931259901,
+            "unit": "us/iter",
+            "extra": "iterations: 555447\ncpu: 1.2585484519674892 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_BOX_CAPSULE/real_time",
+            "value": 1.3881362524774938,
+            "unit": "us/iter",
+            "extra": "iterations: 504189\ncpu: 1.3880516829998668 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_BOX_CYLINDER/real_time",
+            "value": 2.330410853832287,
+            "unit": "us/iter",
+            "extra": "iterations: 304814\ncpu: 2.3296726889185186 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CONE_BOX/real_time",
+            "value": 3.719845729496968,
+            "unit": "us/iter",
+            "extra": "iterations: 186711\ncpu: 3.7186666988019996 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CONE_CONE/real_time",
+            "value": 3.5976910034526446,
+            "unit": "us/iter",
+            "extra": "iterations: 193452\ncpu: 3.5963313741908873 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CONE_SPHERE/real_time",
+            "value": 2.5587858242378987,
+            "unit": "us/iter",
+            "extra": "iterations: 273495\ncpu: 2.5585700798918896 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CONE_CAPSULE/real_time",
+            "value": 4.242208213112319,
+            "unit": "us/iter",
+            "extra": "iterations: 163933\ncpu: 4.240919827002755 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CONE_CYLINDER/real_time",
+            "value": 5.551407711213913,
+            "unit": "us/iter",
+            "extra": "iterations: 120448\ncpu: 5.550806605339662 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_SPHERE_BOX/real_time",
+            "value": 1.3281149135121606,
+            "unit": "us/iter",
+            "extra": "iterations: 521688\ncpu: 1.3276825363052394 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_SPHERE_CONE/real_time",
+            "value": 2.238222233667793,
+            "unit": "us/iter",
+            "extra": "iterations: 300913\ncpu: 2.1943151010425637 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_SPHERE_SPHERE/real_time",
+            "value": 0.7971646006804523,
+            "unit": "us/iter",
+            "extra": "iterations: 882226\ncpu: 0.7967617979973234 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_SPHERE_CAPSULE/real_time",
+            "value": 0.8293804451735004,
+            "unit": "us/iter",
+            "extra": "iterations: 853600\ncpu: 0.8290581419869407 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_SPHERE_CYLINDER/real_time",
+            "value": 3.2795224891880306,
+            "unit": "us/iter",
+            "extra": "iterations: 212969\ncpu: 3.279057646887529 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CAPSULE_BOX/real_time",
+            "value": 1.495718848619131,
+            "unit": "us/iter",
+            "extra": "iterations: 462957\ncpu: 1.4952843849428215 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CAPSULE_CONE/real_time",
+            "value": 3.86073655321974,
+            "unit": "us/iter",
+            "extra": "iterations: 182553\ncpu: 3.8602808335114394 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CAPSULE_SPHERE/real_time",
+            "value": 0.8293938465652096,
+            "unit": "us/iter",
+            "extra": "iterations: 845804\ncpu: 0.8292424225944185 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CAPSULE_CAPSULE/real_time",
+            "value": 0.8285947243930192,
+            "unit": "us/iter",
+            "extra": "iterations: 833724\ncpu: 0.8285468296462769 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CAPSULE_CYLINDER/real_time",
+            "value": 2.1385877043297232,
+            "unit": "us/iter",
+            "extra": "iterations: 317624\ncpu: 2.1380529399541253 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CYLINDER_BOX/real_time",
+            "value": 1.8977505476112042,
+            "unit": "us/iter",
+            "extra": "iterations: 372071\ncpu: 1.8977277912012345 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CYLINDER_CONE/real_time",
+            "value": 5.082866912331063,
+            "unit": "us/iter",
+            "extra": "iterations: 137586\ncpu: 5.082289767854249 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CYLINDER_SPHERE/real_time",
+            "value": 3.3971370201697666,
+            "unit": "us/iter",
+            "extra": "iterations: 207079\ncpu: 3.3967115158949746 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CYLINDER_CAPSULE/real_time",
+            "value": 2.2050745886919407,
+            "unit": "us/iter",
+            "extra": "iterations: 315517\ncpu: 2.2047110837132804 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_CONTACT_TEST_2_BulletDiscreteSimpleManager_LIMITED_CYLINDER_CYLINDER/real_time",
+            "value": 2.8099651006554076,
+            "unit": "us/iter",
+            "extra": "iterations: 247827\ncpu: 2.8099883830252033 us\nthreads: undefined"
+          },
+          {
+            "name": "BM_SELECT_RANDOM_OBJECT/real_time",
+            "value": 12.062435965407241,
+            "unit": "ns/iter",
+            "extra": "iterations: 57739301\ncpu: 12.061680985711806 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_SINGLE_BulletDiscreteSimpleManager_ACTIVE_OBJ_2/real_time",
+            "value": 50.728918100003284,
+            "unit": "ns/iter",
+            "extra": "iterations: 10000000\ncpu: 50.71788559999959 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_SINGLE_BulletDiscreteSimpleManager_ACTIVE_OBJ_4/real_time",
+            "value": 57.50331653332459,
+            "unit": "ns/iter",
+            "extra": "iterations: 12303359\ncpu: 57.49996216480534 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_SINGLE_BulletDiscreteSimpleManager_ACTIVE_OBJ_8/real_time",
+            "value": 66.86747685693778,
+            "unit": "ns/iter",
+            "extra": "iterations: 10591833\ncpu: 66.84643281290538 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_SINGLE_BulletDiscreteSimpleManager_ACTIVE_OBJ_16/real_time",
+            "value": 76.49862879763539,
+            "unit": "ns/iter",
+            "extra": "iterations: 8564746\ncpu: 76.48615977636697 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_SINGLE_BulletDiscreteSimpleManager_ACTIVE_OBJ_32/real_time",
+            "value": 84.49294188727855,
+            "unit": "ns/iter",
+            "extra": "iterations: 8303707\ncpu: 84.4887822992775 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_SINGLE_BulletDiscreteSimpleManager_ACTIVE_OBJ_64/real_time",
+            "value": 98.8441645848124,
+            "unit": "ns/iter",
+            "extra": "iterations: 6983342\ncpu: 98.82174236919627 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_SINGLE_BulletDiscreteSimpleManager_ACTIVE_OBJ_128/real_time",
+            "value": 112.82758938658337,
+            "unit": "ns/iter",
+            "extra": "iterations: 6170670\ncpu: 112.81822281859091 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_SINGLE_BulletDiscreteSimpleManager_ACTIVE_OBJ_256/real_time",
+            "value": 133.17097594449254,
+            "unit": "ns/iter",
+            "extra": "iterations: 5317403\ncpu: 133.156030490826 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_SINGLE_BulletDiscreteSimpleManager_ACTIVE_OBJ_512/real_time",
+            "value": 151.73873346392884,
+            "unit": "ns/iter",
+            "extra": "iterations: 4649011\ncpu: 151.72628565515382 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_VECTOR_BulletDiscreteSimpleManager_ACTIVE_OBJ_2/real_time",
+            "value": 64.66648742979089,
+            "unit": "ns/iter",
+            "extra": "iterations: 10851561\ncpu: 64.65688143853319 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_VECTOR_BulletDiscreteSimpleManager_ACTIVE_OBJ_4/real_time",
+            "value": 71.40603757052968,
+            "unit": "ns/iter",
+            "extra": "iterations: 9761476\ncpu: 71.38357734014934 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_VECTOR_BulletDiscreteSimpleManager_ACTIVE_OBJ_8/real_time",
+            "value": 80.66962190142483,
+            "unit": "ns/iter",
+            "extra": "iterations: 8695643\ncpu: 80.66322743471015 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_VECTOR_BulletDiscreteSimpleManager_ACTIVE_OBJ_16/real_time",
+            "value": 90.11804160970273,
+            "unit": "ns/iter",
+            "extra": "iterations: 7720320\ncpu: 90.09722187681135 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_VECTOR_BulletDiscreteSimpleManager_ACTIVE_OBJ_32/real_time",
+            "value": 100.71675658291839,
+            "unit": "ns/iter",
+            "extra": "iterations: 7027835\ncpu: 100.71730810412666 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_VECTOR_BulletDiscreteSimpleManager_ACTIVE_OBJ_64/real_time",
+            "value": 111.92428799208797,
+            "unit": "ns/iter",
+            "extra": "iterations: 6147017\ncpu: 111.91088880996273 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_VECTOR_BulletDiscreteSimpleManager_ACTIVE_OBJ_128/real_time",
+            "value": 128.31369604517482,
+            "unit": "ns/iter",
+            "extra": "iterations: 5525084\ncpu: 128.2813229626883 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_VECTOR_BulletDiscreteSimpleManager_ACTIVE_OBJ_256/real_time",
+            "value": 140.2095582491601,
+            "unit": "ns/iter",
+            "extra": "iterations: 5037659\ncpu: 140.2106738467187 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_VECTOR_BulletDiscreteSimpleManager_ACTIVE_OBJ_512/real_time",
+            "value": 160.38152391885657,
+            "unit": "ns/iter",
+            "extra": "iterations: 4445066\ncpu: 160.32303389871225 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_MAP_BulletDiscreteSimpleManager_ACTIVE_OBJ_2/real_time",
+            "value": 112.585768950341,
+            "unit": "ns/iter",
+            "extra": "iterations: 6178448\ncpu: 112.58393402355918 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_MAP_BulletDiscreteSimpleManager_ACTIVE_OBJ_4/real_time",
+            "value": 197.54718271969216,
+            "unit": "ns/iter",
+            "extra": "iterations: 3522635\ncpu: 197.53510823572853 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_MAP_BulletDiscreteSimpleManager_ACTIVE_OBJ_8/real_time",
+            "value": 379.05513538275727,
+            "unit": "ns/iter",
+            "extra": "iterations: 1828481\ncpu: 379.00926780206066 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_MAP_BulletDiscreteSimpleManager_ACTIVE_OBJ_16/real_time",
+            "value": 805.1237228165568,
+            "unit": "ns/iter",
+            "extra": "iterations: 907270\ncpu: 805.0099694688962 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_MAP_BulletDiscreteSimpleManager_ACTIVE_OBJ_32/real_time",
+            "value": 1740.563702899084,
+            "unit": "ns/iter",
+            "extra": "iterations: 403608\ncpu: 1740.5776892430824 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_MAP_BulletDiscreteSimpleManager_ACTIVE_OBJ_64/real_time",
+            "value": 3803.4567360108663,
+            "unit": "ns/iter",
+            "extra": "iterations: 184345\ncpu: 3802.64033741057 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_MAP_BulletDiscreteSimpleManager_ACTIVE_OBJ_128/real_time",
+            "value": 9530.883168344675,
+            "unit": "ns/iter",
+            "extra": "iterations: 73439\ncpu: 9528.883917264464 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_MAP_BulletDiscreteSimpleManager_ACTIVE_OBJ_256/real_time",
+            "value": 26220.20000746622,
+            "unit": "ns/iter",
+            "extra": "iterations: 26769\ncpu: 26217.385968844843 ns\nthreads: undefined"
+          },
+          {
+            "name": "BM_SET_COLLISION_OBJECTS_TRANSFORM_MAP_BulletDiscreteSimpleManager_ACTIVE_OBJ_512/real_time",
+            "value": 72108.45780000454,
+            "unit": "ns/iter",
+            "extra": "iterations: 10000\ncpu: 72092.18520000036 ns\nthreads: undefined"
           }
         ]
       }
