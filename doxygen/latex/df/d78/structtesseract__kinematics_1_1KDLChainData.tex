@@ -9,6 +9,16 @@ The \mbox{\hyperlink{structtesseract__kinematics_1_1KDLChainData}{K\+D\+L\+Chain
 
 {\ttfamily \#include $<$kdl\+\_\+utils.\+h$>$}
 
+
+
+Collaboration diagram for tesseract\+\_\+kinematics\+::K\+D\+L\+Chain\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d58/structtesseract__kinematics_1_1KDLChainData__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,7 +36,7 @@ std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{structtesseract__kinematics_
 \item 
 std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{structtesseract__kinematics_1_1KDLChainData_a8a06ec0d9894a11365034807e52be7ed}{active\+\_\+link\+\_\+list}}
 \item 
-Eigen\+::\+Matrix\+X2d \mbox{\hyperlink{structtesseract__kinematics_1_1KDLChainData_a52bb5952a03faecbeee7beca838f2ef4}{joint\+\_\+limits}}
+\mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \mbox{\hyperlink{structtesseract__kinematics_1_1KDLChainData_abf8849e5bfa5c150c124e9787e2aabb1}{limits}}
 \item 
 std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{structtesseract__kinematics_1_1KDLChainData_a7f54eb0a5b65c26ed684c5bf9d9173c7}{segment\+\_\+index}}
 \item 
@@ -58,13 +68,7 @@ Link name of first link in the kinematic chain \mbox{\Hypertarget{structtesserac
 \doxysubsubsection{\texorpdfstring{chains}{chains}}
 {\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$std\+::string, std\+::string$>$ $>$ tesseract\+\_\+kinematics\+::\+K\+D\+L\+Chain\+Data\+::chains}
 
-The chains used to create the object \mbox{\Hypertarget{structtesseract__kinematics_1_1KDLChainData_a52bb5952a03faecbeee7beca838f2ef4}\label{structtesseract__kinematics_1_1KDLChainData_a52bb5952a03faecbeee7beca838f2ef4}} 
-\index{tesseract\_kinematics::KDLChainData@{tesseract\_kinematics::KDLChainData}!joint\_limits@{joint\_limits}}
-\index{joint\_limits@{joint\_limits}!tesseract\_kinematics::KDLChainData@{tesseract\_kinematics::KDLChainData}}
-\doxysubsubsection{\texorpdfstring{joint\_limits}{joint\_limits}}
-{\footnotesize\ttfamily Eigen\+::\+Matrix\+X2d tesseract\+\_\+kinematics\+::\+K\+D\+L\+Chain\+Data\+::joint\+\_\+limits}
-
-Joint limits \mbox{\Hypertarget{structtesseract__kinematics_1_1KDLChainData_a28cbc4ef6b6c833f26e32c4e1acecb48}\label{structtesseract__kinematics_1_1KDLChainData_a28cbc4ef6b6c833f26e32c4e1acecb48}} 
+The chains used to create the object \mbox{\Hypertarget{structtesseract__kinematics_1_1KDLChainData_a28cbc4ef6b6c833f26e32c4e1acecb48}\label{structtesseract__kinematics_1_1KDLChainData_a28cbc4ef6b6c833f26e32c4e1acecb48}} 
 \index{tesseract\_kinematics::KDLChainData@{tesseract\_kinematics::KDLChainData}!joint\_list@{joint\_list}}
 \index{joint\_list@{joint\_list}!tesseract\_kinematics::KDLChainData@{tesseract\_kinematics::KDLChainData}}
 \doxysubsubsection{\texorpdfstring{joint\_list}{joint\_list}}
@@ -76,7 +80,13 @@ List of joint names \mbox{\Hypertarget{structtesseract__kinematics_1_1KDLChainDa
 \doxysubsubsection{\texorpdfstring{kdl\_tree}{kdl\_tree}}
 {\footnotesize\ttfamily K\+D\+L\+::\+Tree tesseract\+\_\+kinematics\+::\+K\+D\+L\+Chain\+Data\+::kdl\+\_\+tree}
 
-K\+DL tree object \mbox{\Hypertarget{structtesseract__kinematics_1_1KDLChainData_af22e77c6eee5aa714216918bb3f85158}\label{structtesseract__kinematics_1_1KDLChainData_af22e77c6eee5aa714216918bb3f85158}} 
+K\+DL tree object \mbox{\Hypertarget{structtesseract__kinematics_1_1KDLChainData_abf8849e5bfa5c150c124e9787e2aabb1}\label{structtesseract__kinematics_1_1KDLChainData_abf8849e5bfa5c150c124e9787e2aabb1}} 
+\index{tesseract\_kinematics::KDLChainData@{tesseract\_kinematics::KDLChainData}!limits@{limits}}
+\index{limits@{limits}!tesseract\_kinematics::KDLChainData@{tesseract\_kinematics::KDLChainData}}
+\doxysubsubsection{\texorpdfstring{limits}{limits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} tesseract\+\_\+kinematics\+::\+K\+D\+L\+Chain\+Data\+::limits}
+
+Joint limits, velocity limits, and acceleration limits \mbox{\Hypertarget{structtesseract__kinematics_1_1KDLChainData_af22e77c6eee5aa714216918bb3f85158}\label{structtesseract__kinematics_1_1KDLChainData_af22e77c6eee5aa714216918bb3f85158}} 
 \index{tesseract\_kinematics::KDLChainData@{tesseract\_kinematics::KDLChainData}!link\_list@{link\_list}}
 \index{link\_list@{link\_list}!tesseract\_kinematics::KDLChainData@{tesseract\_kinematics::KDLChainData}}
 \doxysubsubsection{\texorpdfstring{link\_list}{link\_list}}

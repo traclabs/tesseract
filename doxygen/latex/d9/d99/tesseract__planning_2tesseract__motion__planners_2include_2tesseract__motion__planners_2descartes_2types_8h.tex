@@ -8,16 +8,37 @@ Tesseract descartes types.
 {\ttfamily \#include $<$tesseract\+\_\+common/macros.\+h$>$}\newline
 {\ttfamily \#include $<$Eigen/\+Geometry$>$}\newline
 {\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$descartes\+\_\+light/interface/edge\+\_\+evaluator.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+motion\+\_\+planners/descartes/descartes\+\_\+vertex\+\_\+evaluator.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+motion\+\_\+planners/descartes/descartes\+\_\+problem.\+h$>$}\newline
+Include dependency graph for types.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d4d/tesseract__planning_2tesseract__motion__planners_2include_2tesseract__motion__planners_2descartes_2types_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d40/tesseract__planning_2tesseract__motion__planners_2include_2tesseract__motion__planners_2descartes_2types_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \mbox{\hyperlink{namespacetesseract__motion__planners}{tesseract\+\_\+motion\+\_\+planners}}
+ \mbox{\hyperlink{namespacetesseract__planning}{tesseract\+\_\+planning}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename Float\+Type $>$ }\\using \mbox{\hyperlink{namespacetesseract__motion__planners_a4d02cbfe203e253555b7e89c743fe333}{tesseract\+\_\+motion\+\_\+planners\+::\+Descartes\+Is\+Valid\+Fn}} = std\+::function$<$ bool(const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix$<$ Float\+Type, Eigen\+::\+Dynamic, 1 $>$ $>$ \&)$>$
-\begin{DoxyCompactList}\small\item\em This is used for passing a function to tesseract descartes samplers that filters out invalid solutions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\footnotesize template$<$typename Float\+Type $>$ }\\using \mbox{\hyperlink{namespacetesseract__planning_a5695d4f3c1952cbf576d7e323a1f01fc}{tesseract\+\_\+planning\+::\+Descartes\+Vertex\+Evaluator\+Allocator\+Fn}} = std\+::function$<$ typename Descartes\+Vertex\+Evaluator$<$ Float\+Type $>$\+::Ptr(const Descartes\+Problem$<$ Float\+Type $>$ \&)$>$
+\begin{DoxyCompactList}\small\item\em This is used for tesseract descartes samplers that filters out invalid solutions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Float\+Type $>$ }\\using \mbox{\hyperlink{namespacetesseract__planning_a13fa370562d132fa22c6d8faf4392b97}{tesseract\+\_\+planning\+::\+Descartes\+Edge\+Evaluator\+Allocator\+Fn}} = std\+::function$<$ typename descartes\+\_\+light\+::\+Edge\+Evaluator$<$ Float\+Type $>$\+::Ptr(const Descartes\+Problem$<$ Float\+Type $>$ \&)$>$
+\begin{DoxyCompactList}\small\item\em This is used to create edge evaluator within tesseract, to allow thread safe creation of descartes edge evaluators. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -33,7 +54,7 @@ April 18, 2018
 T\+O\+DO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000104}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000153}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}

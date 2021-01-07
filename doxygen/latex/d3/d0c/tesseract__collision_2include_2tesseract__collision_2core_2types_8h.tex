@@ -11,11 +11,28 @@ Tesseracts Collision Common Types.
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$memory$>$}\newline
 {\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
 {\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
 {\ttfamily \#include $<$functional$>$}\newline
 {\ttfamily \#include $<$boost/bind.\+hpp$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+geometry/geometries.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+common/types.\+h$>$}\newline
+Include dependency graph for types.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d54/tesseract__collision_2include_2tesseract__collision_2core_2types_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d7f/tesseract__collision_2include_2tesseract__collision_2core_2types_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -23,8 +40,12 @@ struct \mbox{\hyperlink{structtesseract__collision_1_1ContactResult}{tesseract\+
 \item 
 struct \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{tesseract\+\_\+collision\+::\+Contact\+Request}}
 \begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}} struct. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{tesseract\+\_\+collision\+::\+Collision\+Margin\+Data}}
+\begin{DoxyCompactList}\small\item\em Stores information about how the margins allowed between collision objects. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__collision_1_1ContactTestData}{tesseract\+\_\+collision\+::\+Contact\+Test\+Data}}
-\begin{DoxyCompactList}\small\item\em This data is intended only to be used internal to the collision checkers as a container and should not be externally used by other libraries or packages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This data is intended only to be used internal to the collision checkers as a container and should not be externally used by other libraries or packages. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig}{tesseract\+\_\+collision\+::\+Collision\+Check\+Config}}
+\begin{DoxyCompactList}\small\item\em This is a high level structure containing common information that collision checking utilities need. The goal of this config is to allow all collision checking utilities and planners to use the same datastructure. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -61,7 +82,16 @@ enum \mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935
 \mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80ca5fb1f955b45e38e31789286a1790398d}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type\+::\+A\+LL}} = 2, 
 \mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80cad9e0d83abd8b9bb4c1998be68831922c}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type\+::\+L\+I\+M\+I\+T\+ED}} = 3
  \}
-\end{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41ac}{tesseract\+\_\+collision\+::\+Collision\+Evaluator\+Type}} \{ \newline
+\mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41acab50339a10e1de285ac99d4c3990b8693}{tesseract\+\_\+collision\+::\+Collision\+Evaluator\+Type\+::\+N\+O\+NE}}, 
+\mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41aca947436f2927405d3b5997a9ffbaee5c1}{tesseract\+\_\+collision\+::\+Collision\+Evaluator\+Type\+::\+D\+I\+S\+C\+R\+E\+TE}}, 
+\mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41aca4afe53b9adb97f1374fa3e05dd7a1be1}{tesseract\+\_\+collision\+::\+Collision\+Evaluator\+Type\+::\+L\+V\+S\+\_\+\+D\+I\+S\+C\+R\+E\+TE}}, 
+\mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41acab1fa9dd3af034b3ef4291579aa673c07}{tesseract\+\_\+collision\+::\+Collision\+Evaluator\+Type\+::\+C\+O\+N\+T\+I\+N\+U\+O\+US}}, 
+\newline
+\mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41acab8bde735baca78a8b98c00e1a0a50239}{tesseract\+\_\+collision\+::\+Collision\+Evaluator\+Type\+::\+L\+V\+S\+\_\+\+C\+O\+N\+T\+I\+N\+U\+O\+US}}
+ \}
+\begin{DoxyCompactList}\small\item\em High level descriptor used in planners and utilities to specify what kind of collision check is desired. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -91,7 +121,7 @@ January 18, 2018
 T\+O\+DO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000017}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000012}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}

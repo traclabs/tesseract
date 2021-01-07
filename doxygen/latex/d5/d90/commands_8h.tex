@@ -5,10 +5,30 @@
 This contains classes for recording operations applied to the environment for tracking changes. This is mainly support distributed systems to keep multiple instances up-\/to-\/date.  
 
 
+{\ttfamily \#include $<$tesseract\+\_\+common/macros.\+h$>$}\newline
 {\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$Eigen/\+Geometry$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/joint.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/link.\+h$>$}\newline
-{\ttfamily \#include $<$Eigen/\+Geometry$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/graph.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/kinematics\+\_\+information.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+collision/core/types.\+h$>$}\newline
+Include dependency graph for commands.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d1b/commands_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d92/commands_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,6 +57,20 @@ class \mbox{\hyperlink{classtesseract__environment_1_1AddAllowedCollisionCommand
 class \mbox{\hyperlink{classtesseract__environment_1_1RemoveAllowedCollisionCommand}{tesseract\+\_\+environment\+::\+Remove\+Allowed\+Collision\+Command}}
 \item 
 class \mbox{\hyperlink{classtesseract__environment_1_1RemoveAllowedCollisionLinkCommand}{tesseract\+\_\+environment\+::\+Remove\+Allowed\+Collision\+Link\+Command}}
+\item 
+class \mbox{\hyperlink{classtesseract__environment_1_1AddSceneGraphCommand}{tesseract\+\_\+environment\+::\+Add\+Scene\+Graph\+Command}}
+\item 
+class \mbox{\hyperlink{classtesseract__environment_1_1AddKinematicsInformationCommand}{tesseract\+\_\+environment\+::\+Add\+Kinematics\+Information\+Command}}
+\item 
+class \mbox{\hyperlink{classtesseract__environment_1_1ChangeJointPositionLimitsCommand}{tesseract\+\_\+environment\+::\+Change\+Joint\+Position\+Limits\+Command}}
+\item 
+class \mbox{\hyperlink{classtesseract__environment_1_1ChangeJointVelocityLimitsCommand}{tesseract\+\_\+environment\+::\+Change\+Joint\+Velocity\+Limits\+Command}}
+\item 
+class \mbox{\hyperlink{classtesseract__environment_1_1ChangeJointAccelerationLimitsCommand}{tesseract\+\_\+environment\+::\+Change\+Joint\+Acceleration\+Limits\+Command}}
+\item 
+class \mbox{\hyperlink{classtesseract__environment_1_1ChangeDefaultContactMarginCommand}{tesseract\+\_\+environment\+::\+Change\+Default\+Contact\+Margin\+Command}}
+\item 
+class \mbox{\hyperlink{classtesseract__environment_1_1ChangePairContactMarginCommand}{tesseract\+\_\+environment\+::\+Change\+Pair\+Contact\+Margin\+Command}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
@@ -65,7 +99,16 @@ enum \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24db
 \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029aaa5732dcc51c06b4e9af6373e937e4a1}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+C\+H\+A\+N\+G\+E\+\_\+\+L\+I\+N\+K\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+TY}} = 8, 
 \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029ab2889e5decae30347cb29cdeb282d664}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+A\+D\+D\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+C\+O\+L\+L\+I\+S\+I\+ON}} = 9, 
 \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a6944181c71015e5537d5271cb1c432f3}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+C\+O\+L\+L\+I\+S\+I\+ON}} = 10, 
-\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029ac40ca000ef4f65a27cf7998ef4f020a0}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+L\+I\+NK}} = 11
+\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029ac40ca000ef4f65a27cf7998ef4f020a0}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+L\+I\+NK}} = 11, 
+\newline
+\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029abad512ee301f85596f24ccb211411856}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+A\+D\+D\+\_\+\+S\+C\+E\+N\+E\+\_\+\+G\+R\+A\+PH}} = 12, 
+\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a45b7ca4cbdf3997ccbb8e81e45c25c0f}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+C\+H\+A\+N\+G\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+L\+I\+M\+I\+TS}} = 13, 
+\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029aea4ee03591d62742fc798bd6d07914dd}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+C\+H\+A\+N\+G\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+L\+I\+M\+I\+TS}} = 14, 
+\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a0e622edebb918e58a2e50f37f48ec6be}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+C\+H\+A\+N\+G\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+O\+N\+\_\+\+L\+I\+M\+I\+TS}} = 15, 
+\newline
+\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a6f820e76663d877e0103c6aea1616b1b}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+A\+D\+D\+\_\+\+K\+I\+N\+E\+M\+A\+T\+I\+C\+S\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}} = 16, 
+\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a57762920e9d0b5db119a64c74ecb0bea}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+C\+H\+A\+N\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+A\+C\+T\+\_\+\+M\+A\+R\+G\+IN}} = 17, 
+\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a330b999d14606191ac7b92db4c782632}{tesseract\+\_\+environment\+::\+Command\+Type\+::\+C\+H\+A\+N\+G\+E\+\_\+\+P\+A\+I\+R\+\_\+\+C\+O\+N\+T\+A\+C\+T\+\_\+\+M\+A\+R\+G\+IN}} = 18
  \}
 \end{DoxyCompactItemize}
 
@@ -83,7 +126,7 @@ Dec 18, 2017
 T\+O\+DO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000036}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000034}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}

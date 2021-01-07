@@ -1,0 +1,9 @@
+<map id="tesseract_planning::TaskflowContainer" name="tesseract_planning::TaskflowContainer">
+<area shape="rect" id="node1" title="Taskflow Container." alt="" coords="644,64,779,105"/>
+<area shape="rect" id="node7" title=" " alt="" coords="891,64,1092,105"/>
+<area shape="rect" id="node2" title=" " alt="" coords="352,5,531,47"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="111,13,247,39"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,13,44,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="368,71,515,98"/>
+<area shape="rect" id="node6" title=" " alt="" coords="379,123,504,164"/>
+</map>

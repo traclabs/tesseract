@@ -5,12 +5,10 @@
 Tesseract R\+OS Descartes planner.  
 
 
-{\ttfamily \#include $<$tesseract/tesseract.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+collision/core/discrete\+\_\+contact\+\_\+manager.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+collision/core/continuous\+\_\+contact\+\_\+manager.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+environment/core/environment.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+environment/core/utils.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+motion\+\_\+planners/core/waypoint.\+h$>$}\newline
 {\ttfamily \#include $<$descartes\+\_\+light/descartes\+\_\+light.\+h$>$}\newline
 {\ttfamily \#include $<$descartes\+\_\+light/interface/position\+\_\+sampler.\+h$>$}\newline
 {\ttfamily \#include $<$descartes\+\_\+samplers/samplers/railed\+\_\+cartesian\+\_\+point\+\_\+sampler.\+h$>$}\newline
@@ -18,14 +16,34 @@ Tesseract R\+OS Descartes planner.
 {\ttfamily \#include $<$descartes\+\_\+samplers/samplers/axial\+\_\+symmetric\+\_\+sampler.\+h$>$}\newline
 {\ttfamily \#include $<$descartes\+\_\+samplers/samplers/cartesian\+\_\+point\+\_\+sampler.\+h$>$}\newline
 {\ttfamily \#include $<$descartes\+\_\+samplers/samplers/fixed\+\_\+joint\+\_\+pose\+\_\+sampler.\+h$>$}\newline
-{\ttfamily \#include $<$descartes\+\_\+samplers/evaluators/distance\+\_\+edge\+\_\+evaluator.\+h$>$}\newline
+{\ttfamily \#include $<$descartes\+\_\+samplers/evaluators/timing\+\_\+edge\+\_\+evaluator.\+h$>$}\newline
 {\ttfamily \#include $<$boost/date\+\_\+time/posix\+\_\+time/posix\+\_\+time.\+hpp$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+motion\+\_\+planners/descartes/descartes\+\_\+motion\+\_\+planner.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+motion\+\_\+planners/descartes/profile/descartes\+\_\+default\+\_\+plan\+\_\+profile.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+motion\+\_\+planners/core/utils.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+command\+\_\+language/command\+\_\+language.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+command\+\_\+language/utils/utils.\+h$>$}\newline
+Include dependency graph for descartes\+\_\+motion\+\_\+planner.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d0c/descartes__motion__planner_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d9/d74/descartes__motion__planner_8hpp__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \mbox{\hyperlink{namespacetesseract__motion__planners}{tesseract\+\_\+motion\+\_\+planners}}
+ \mbox{\hyperlink{namespacetesseract__planning}{tesseract\+\_\+planning}}
 \end{DoxyCompactItemize}
 
 
@@ -42,7 +60,7 @@ April 18, 2018
 T\+O\+DO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000099}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000145}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}

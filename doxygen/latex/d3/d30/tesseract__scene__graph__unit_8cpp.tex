@@ -5,11 +5,21 @@
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+geometry/geometries.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+common/utils.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/graph.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/utils.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/resource\+\_\+locator.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/srdf\+\_\+model.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/parser/kdl\+\_\+parser.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/srdf/group\+\_\+opw\+\_\+kinematics.\+h$>$}\newline
+Include dependency graph for tesseract\+\_\+scene\+\_\+graph\+\_\+unit.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d4c/tesseract__scene__graph__unit_8cpp__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,6 +30,8 @@
 std\+::string \mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_ad43b67aac2fb3de014c67c88f9dc4db9}{locate\+Resource}} (const std\+::string \&url)
 \item 
 \mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_ae1314498e206b5db37511f4fe5975369}{T\+E\+ST}} (Tesseract\+Scene\+Graph\+Unit, Load\+S\+R\+D\+F\+Unit)
+\item 
+\mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_aa525569ea5a227c4370e9eef989dad77}{T\+E\+ST}} (Tesseract\+Scene\+Graph\+Unit, Load\+S\+R\+D\+F\+O\+P\+W\+Kinematics\+Unit)
 \item 
 void \mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_ab521a063eaad959fdb335c324a9190a5}{print\+K\+D\+L\+Tree}} (const K\+D\+L\+::\+Segment\+Map\+::const\+\_\+iterator \&link, const std\+::string \&prefix)
 \item 
@@ -32,6 +44,14 @@ void \mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_ab521a063eaad959fdb335c
 \mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_ac4e72e9499488683964573b110137619}{T\+E\+ST}} (Tesseract\+Scene\+Graph\+Unit, Test\+Change\+Joint\+Origin)
 \item 
 \mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_ad5dcb53c9c220e317fb5b88d14eb5385}{T\+E\+ST}} (Tesseract\+Scene\+Graph\+Unit, Tesseract\+S\+R\+D\+F\+Model\+Unit)
+\item 
+\mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_a696bf8956c9bb8d3ba9857986002005d}{T\+E\+ST}} (Tesseract\+Scene\+Graph\+Unit, Tesseract\+Scene\+Graph\+Insert\+Empty\+Unit)
+\item 
+\mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_a6ce9e56b578f0c8e3e3bc2e489162721}{T\+E\+ST}} (Tesseract\+Scene\+Graph\+Unit, Tesseract\+Scene\+Graph\+Insert\+Without\+Joint\+No\+Prefix\+Unit)
+\item 
+\mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_adbceaa60796014955efe020ebf577f67}{T\+E\+ST}} (Tesseract\+Scene\+Graph\+Unit, Tesseract\+Scene\+Graph\+Insert\+Without\+Joint\+With\+Prefix\+Unit)
+\item 
+\mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_aac72c99d105aeb860f18e8676e2714c4}{T\+E\+ST}} (Tesseract\+Scene\+Graph\+Unit, Tesseract\+Scene\+Graph\+Insert\+With\+Joint\+With\+Prefix\+Unit)
 \item 
 int \mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
 \end{DoxyCompactItemize}
@@ -71,31 +91,61 @@ int \mbox{\hyperlink{tesseract__scene__graph__unit_8cpp_a3c04138a5bfe5d72780bb7e
 \mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_ae4694677d00bf35a718aa480deaa908a}\label{tesseract__scene__graph__unit_8cpp_ae4694677d00bf35a718aa480deaa908a}} 
 \index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Load\+K\+D\+L\+Unit}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_aa525569ea5a227c4370e9eef989dad77}\label{tesseract__scene__graph__unit_8cpp_aa525569ea5a227c4370e9eef989dad77}} 
+\index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Load\+S\+R\+D\+F\+O\+P\+W\+Kinematics\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_ae1314498e206b5db37511f4fe5975369}\label{tesseract__scene__graph__unit_8cpp_ae1314498e206b5db37511f4fe5975369}} 
 \index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Load\+S\+R\+D\+F\+Unit}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_a696bf8956c9bb8d3ba9857986002005d}\label{tesseract__scene__graph__unit_8cpp_a696bf8956c9bb8d3ba9857986002005d}} 
+\index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Tesseract\+Scene\+Graph\+Insert\+Empty\+Unit}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_aac72c99d105aeb860f18e8676e2714c4}\label{tesseract__scene__graph__unit_8cpp_aac72c99d105aeb860f18e8676e2714c4}} 
+\index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Tesseract\+Scene\+Graph\+Insert\+With\+Joint\+With\+Prefix\+Unit}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_a6ce9e56b578f0c8e3e3bc2e489162721}\label{tesseract__scene__graph__unit_8cpp_a6ce9e56b578f0c8e3e3bc2e489162721}} 
+\index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Tesseract\+Scene\+Graph\+Insert\+Without\+Joint\+No\+Prefix\+Unit}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_adbceaa60796014955efe020ebf577f67}\label{tesseract__scene__graph__unit_8cpp_adbceaa60796014955efe020ebf577f67}} 
+\index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Tesseract\+Scene\+Graph\+Insert\+Without\+Joint\+With\+Prefix\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_a4c43e7a7c4e66ac0cf88bdd5ce1425ff}\label{tesseract__scene__graph__unit_8cpp_a4c43e7a7c4e66ac0cf88bdd5ce1425ff}} 
 \index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Tesseract\+Scene\+Graph\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_ad5dcb53c9c220e317fb5b88d14eb5385}\label{tesseract__scene__graph__unit_8cpp_ad5dcb53c9c220e317fb5b88d14eb5385}} 
 \index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Tesseract\+S\+R\+D\+F\+Model\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_a1a00e68e0d0c7de20c0796296065be70}\label{tesseract__scene__graph__unit_8cpp_a1a00e68e0d0c7de20c0796296065be70}} 
 \index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Test\+Allowed\+Collision\+Matrix}]{ }\end{DoxyParamCaption})}
 
 
@@ -105,6 +155,6 @@ Testing Allowed\+Collision\+Matrix.
 \mbox{\Hypertarget{tesseract__scene__graph__unit_8cpp_ac4e72e9499488683964573b110137619}\label{tesseract__scene__graph__unit_8cpp_ac4e72e9499488683964573b110137619}} 
 \index{tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_unit.cpp@{tesseract\_scene\_graph\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+Unit}]{,  }\item[{Test\+Change\+Joint\+Origin}]{ }\end{DoxyParamCaption})}
 

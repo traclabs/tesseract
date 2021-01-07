@@ -6,10 +6,28 @@ Tesseract R\+OS Bullet environment utility function.
 
 
 {\ttfamily \#include $<$tesseract\+\_\+common/macros.\+h$>$}\newline
+{\ttfamily \#include $<$Bullet\+Collision/\+Collision\+Shapes/bt\+Collision\+Shape.\+h$>$}\newline
+{\ttfamily \#include $<$Bullet\+Collision/\+Collision\+Dispatch/bt\+Manifold\+Result.\+h$>$}\newline
 {\ttfamily \#include $<$bt\+Bullet\+Collision\+Common.\+h$>$}\newline
 {\ttfamily \#include $<$console\+\_\+bridge/console.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+collision/core/types.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+collision/core/common.\+h$>$}\newline
+Include dependency graph for bullet\+\_\+utils.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d58/bullet__utils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d32/bullet__utils_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -85,7 +103,7 @@ void \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bul
 \begin{DoxyCompactList}\small\item\em Calculate the continuous contact data for casted collision shape. \end{DoxyCompactList}\item 
 bt\+Scalar \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_afe5c2394544085ab600b5d8ff5d49508}{tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::add\+Cast\+Single\+Result}} (bt\+Manifold\+Point \&cp, const bt\+Collision\+Object\+Wrapper $\ast$col\+Obj0\+Wrap, int, const bt\+Collision\+Object\+Wrapper $\ast$col\+Obj1\+Wrap, int, Contact\+Test\+Data \&collisions)
 \item 
-bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_abfa9253935cb3a2b628f1a8cdecf0694}{tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::create\+Shape\+Primitive}} (const Collision\+Shape\+Const\+Ptr \&geom, Collision\+Object\+Wrapper $\ast$cow, int shape\+\_\+index)
+std\+::shared\+\_\+ptr$<$ bt\+Collision\+Shape $>$ \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_adb87ec9db8f5ae1e636887a432379af4}{tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::create\+Shape\+Primitive}} (const Collision\+Shape\+Const\+Ptr \&geom, Collision\+Object\+Wrapper $\ast$cow, int shape\+\_\+index)
 \begin{DoxyCompactList}\small\item\em Create a bullet collision shape from tesseract collision shape. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_aee49da084e6dd86cc7e384434c6a06f8}{tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::update\+Collision\+Object\+Filters}} (const std\+::vector$<$ std\+::string $>$ \&active, const C\+O\+W\+::\+Ptr \&cow)
 \begin{DoxyCompactList}\small\item\em Update a collision objects filters. \end{DoxyCompactList}\item 
@@ -133,7 +151,7 @@ Dec 18, 2017
 T\+O\+DO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000010}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000005}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}

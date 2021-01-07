@@ -4,10 +4,24 @@
 
 {\ttfamily \#include $<$kdl\+\_\+state\+\_\+solver.\+h$>$}
 
-Inheritance diagram for tesseract\+\_\+environment\+::K\+D\+L\+State\+Solver\+:\begin{figure}[H]
+
+
+Inheritance diagram for tesseract\+\_\+environment\+::K\+D\+L\+State\+Solver\+:
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{d5/d87/classtesseract__environment_1_1KDLStateSolver}
+\includegraphics[width=196pt]{dd/d62/classtesseract__environment_1_1KDLStateSolver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tesseract\+\_\+environment\+::K\+D\+L\+State\+Solver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d69/classtesseract__environment_1_1KDLStateSolver__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Types}
@@ -52,8 +66,8 @@ void \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_ab14ade8ff24
 \begin{DoxyCompactList}\small\item\em Get the current state of the environment. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_a78bab04647b84e87fa576d23777cb0fd}{get\+Random\+State}} () const override
 \begin{DoxyCompactList}\small\item\em Get the random state of the environment. \end{DoxyCompactList}\item 
-const Eigen\+::\+Matrix\+X2d \& \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_a2c48773c0fd965540736209b0fbddcd2}{get\+Limits}} () const override
-\begin{DoxyCompactList}\small\item\em Getter for joint\+\_\+limits\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \& \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_adf9af771490f9277acd5a283110c115f}{get\+Limits}} () const override
+\begin{DoxyCompactList}\small\item\em Getter for kinematic limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -82,7 +96,7 @@ std\+::unordered\+\_\+map$<$ std\+::string, unsigned int $>$ \mbox{\hyperlink{cl
 \item 
 K\+D\+L\+::\+Jnt\+Array \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_aea25306cdd1df764c6967717f70dd35e}{kdl\+\_\+jnt\+\_\+array\+\_\+}}
 \item 
-Eigen\+::\+Matrix\+X2d \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_ac96a5c1332c04f65847e1aa3f219c0a8}{joint\+\_\+limits\+\_\+}}
+\mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_a2d8c5adc07206c4cd4428ebd60e1fc77}{limits\+\_\+}}
 \item 
 std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_ad3a76a39897af9fc61460a5882fbb961}{joint\+\_\+names\+\_\+}}
 \end{DoxyCompactItemize}
@@ -184,22 +198,22 @@ Get the current state of the environment.
 
 Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a403f2c5b7b8fd3c85a2f04719ce64eed}{tesseract\+\_\+environment\+::\+State\+Solver}}.
 
-\mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_a2c48773c0fd965540736209b0fbddcd2}\label{classtesseract__environment_1_1KDLStateSolver_a2c48773c0fd965540736209b0fbddcd2}} 
+\mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_adf9af771490f9277acd5a283110c115f}\label{classtesseract__environment_1_1KDLStateSolver_adf9af771490f9277acd5a283110c115f}} 
 \index{tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}!getLimits@{getLimits}}
 \index{getLimits@{getLimits}!tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}}
 \doxysubsubsection{\texorpdfstring{getLimits()}{getLimits()}}
-{\footnotesize\ttfamily const Eigen\+::\+Matrix\+X2d \& tesseract\+\_\+environment\+::\+K\+D\+L\+State\+Solver\+::get\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \& tesseract\+\_\+environment\+::\+K\+D\+L\+State\+Solver\+::get\+Limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Getter for joint\+\_\+limits\+\_\+. 
+Getter for kinematic limits. 
 
 \begin{DoxyReturn}{Returns}
-Matrix of joint limits 
+The kinematic limits 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a1978de013e354a44e3e352d0f6e5f182}{tesseract\+\_\+environment\+::\+State\+Solver}}.
+Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_ab3a86d112f60f8d5ccb8f299429c9128}{tesseract\+\_\+environment\+::\+State\+Solver}}.
 
 \mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_a78bab04647b84e87fa576d23777cb0fd}\label{classtesseract__environment_1_1KDLStateSolver_a78bab04647b84e87fa576d23777cb0fd}} 
 \index{tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}!getRandomState@{getRandomState}}
@@ -365,13 +379,7 @@ Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a631569ca
 \doxysubsubsection{\texorpdfstring{current\_state\_}{current\_state\_}}
 {\footnotesize\ttfamily \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} tesseract\+\_\+environment\+::\+K\+D\+L\+State\+Solver\+::current\+\_\+state\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-Current state of the environment \mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_ac96a5c1332c04f65847e1aa3f219c0a8}\label{classtesseract__environment_1_1KDLStateSolver_ac96a5c1332c04f65847e1aa3f219c0a8}} 
-\index{tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}!joint\_limits\_@{joint\_limits\_}}
-\index{joint\_limits\_@{joint\_limits\_}!tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}}
-\doxysubsubsection{\texorpdfstring{joint\_limits\_}{joint\_limits\_}}
-{\footnotesize\ttfamily Eigen\+::\+Matrix\+X2d tesseract\+\_\+environment\+::\+K\+D\+L\+State\+Solver\+::joint\+\_\+limits\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
-
-The joint limits \mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_ad3a76a39897af9fc61460a5882fbb961}\label{classtesseract__environment_1_1KDLStateSolver_ad3a76a39897af9fc61460a5882fbb961}} 
+Current state of the environment \mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_ad3a76a39897af9fc61460a5882fbb961}\label{classtesseract__environment_1_1KDLStateSolver_ad3a76a39897af9fc61460a5882fbb961}} 
 \index{tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}!joint\_names\_@{joint\_names\_}}
 \index{joint\_names\_@{joint\_names\_}!tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}}
 \doxysubsubsection{\texorpdfstring{joint\_names\_}{joint\_names\_}}
@@ -395,7 +403,13 @@ The kdl joint array \mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSo
 \doxysubsubsection{\texorpdfstring{kdl\_tree\_}{kdl\_tree\_}}
 {\footnotesize\ttfamily K\+D\+L\+::\+Tree tesseract\+\_\+environment\+::\+K\+D\+L\+State\+Solver\+::kdl\+\_\+tree\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-K\+DL tree object \mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_ac71f831e27b418525d83851f4a435612}\label{classtesseract__environment_1_1KDLStateSolver_ac71f831e27b418525d83851f4a435612}} 
+K\+DL tree object \mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_a2d8c5adc07206c4cd4428ebd60e1fc77}\label{classtesseract__environment_1_1KDLStateSolver_a2d8c5adc07206c4cd4428ebd60e1fc77}} 
+\index{tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}!limits\_@{limits\_}}
+\index{limits\_@{limits\_}!tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}}
+\doxysubsubsection{\texorpdfstring{limits\_}{limits\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} tesseract\+\_\+environment\+::\+K\+D\+L\+State\+Solver\+::limits\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+The kinematic limits \mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_ac71f831e27b418525d83851f4a435612}\label{classtesseract__environment_1_1KDLStateSolver_ac71f831e27b418525d83851f4a435612}} 
 \index{tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}!scene\_graph\_@{scene\_graph\_}}
 \index{scene\_graph\_@{scene\_graph\_}!tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}}
 \doxysubsubsection{\texorpdfstring{scene\_graph\_}{scene\_graph\_}}

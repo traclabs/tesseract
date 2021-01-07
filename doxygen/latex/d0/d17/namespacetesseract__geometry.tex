@@ -17,6 +17,10 @@ class \mbox{\hyperlink{classtesseract__geometry_1_1Geometry}{Geometry}}
 \item 
 class \mbox{\hyperlink{classtesseract__geometry_1_1Mesh}{Mesh}}
 \item 
+class \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\+Material}}
+\begin{DoxyCompactList}\small\item\em Represents material information extracted from a mesh file. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classtesseract__geometry_1_1MeshTexture}{Mesh\+Texture}}
+\begin{DoxyCompactList}\small\item\em Represents a texture and UV coordinates extracted from a mesh file. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__geometry_1_1Octree}{Octree}}
 \item 
 class \mbox{\hyperlink{classtesseract__geometry_1_1Plane}{Plane}}
@@ -53,20 +57,16 @@ enum \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb5
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-static std\+::vector$<$ \mbox{\hyperlink{classtesseract__geometry_1_1Mesh_afc301af0c59b2d87d45f046859de431f}{tesseract\+\_\+geometry\+::\+Mesh\+::\+Ptr}} $>$ \mbox{\hyperlink{namespacetesseract__geometry_ae76d6226bdfabf0105f77b752f8c5792}{create\+Mesh\+From\+Bytes}} (const std\+::string \&url, const uint8\+\_\+t $\ast$bytes, size\+\_\+t bytes\+\_\+len, Eigen\+::\+Vector3d scale=Eigen\+::\+Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false)
+{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \mbox{\hyperlink{namespacetesseract__geometry_a24986eb36c9781b611dfa3348354c980}{extract\+Mesh\+Data}} (const ai\+Scene $\ast$scene, const ai\+Node $\ast$node, const ai\+Matrix4x4 \&parent\+\_\+transform, const Eigen\+::\+Vector3d \&scale, \mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}} resource, bool normals, bool vertex\+\_\+colors, bool material\+\_\+and\+\_\+texture)
 \item 
-static std\+::vector$<$ \mbox{\hyperlink{classtesseract__geometry_1_1SDFMesh_a3a25630031ffb011ac7c2c35cd89d688}{tesseract\+\_\+geometry\+::\+S\+D\+F\+Mesh\+::\+Ptr}} $>$ \mbox{\hyperlink{namespacetesseract__geometry_a9008a80cc9b512969cd489d7afaa1205}{create\+S\+D\+F\+Mesh\+From\+Bytes}} (const std\+::string \&url, const uint8\+\_\+t $\ast$bytes, size\+\_\+t bytes\+\_\+len, Eigen\+::\+Vector3d scale=Eigen\+::\+Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false)
-\item 
-static std\+::vector$<$ \mbox{\hyperlink{classtesseract__geometry_1_1ConvexMesh_aecd145c5f75117ff7a3bab1fb921e4c0}{tesseract\+\_\+geometry\+::\+Convex\+Mesh\+::\+Ptr}} $>$ \mbox{\hyperlink{namespacetesseract__geometry_a5e9fed6ad94d9a9679b0ff007d22e3f8}{create\+Convex\+Mesh\+From\+Bytes}} (const std\+::string \&url, const uint8\+\_\+t $\ast$bytes, size\+\_\+t bytes\+\_\+len, Eigen\+::\+Vector3d scale=Eigen\+::\+Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false)
-\item 
-{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \mbox{\hyperlink{namespacetesseract__geometry_a5eedebf33318d863912dd2fddb3ff25d}{extract\+Mesh\+Data}} (const ai\+Scene $\ast$scene, const ai\+Node $\ast$node, const ai\+Matrix4x4 \&parent\+\_\+transform, const Eigen\+::\+Vector3d \&scale, \mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}} resource)
-\item 
-{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \mbox{\hyperlink{namespacetesseract__geometry_a50302af5196a8a0dbaf7d9443e069b3b}{create\+Mesh\+From\+Asset}} (const ai\+Scene $\ast$scene, const Eigen\+::\+Vector3d \&scale, \mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}} resource)
+{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \mbox{\hyperlink{namespacetesseract__geometry_a0c0060eed1989b39565981e6742a3aa2}{create\+Mesh\+From\+Asset}} (const ai\+Scene $\ast$scene, const Eigen\+::\+Vector3d \&scale, \mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}} resource, bool normals, bool vertex\+\_\+colors, bool material\+\_\+and\+\_\+texture)
 \begin{DoxyCompactList}\small\item\em Create list of meshes from the assimp scene. \end{DoxyCompactList}\item 
-{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \mbox{\hyperlink{namespacetesseract__geometry_a3f4e01e08202e6a7fecf7aa9e04d3174}{create\+Mesh\+From\+Path}} (const std\+::string \&path, Eigen\+::\+Vector3d scale=Eigen\+::\+Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false)
+{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \mbox{\hyperlink{namespacetesseract__geometry_a6eb14091f9adce45929f5fddece2d7f7}{create\+Mesh\+From\+Path}} (const std\+::string \&path, Eigen\+::\+Vector3d scale=Eigen\+::\+Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false, bool normals=false, bool vertex\+\_\+colors=false, bool material\+\_\+and\+\_\+texture=false)
 \begin{DoxyCompactList}\small\item\em Create a mesh using assimp from file path. \end{DoxyCompactList}\item 
-{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \mbox{\hyperlink{namespacetesseract__geometry_adeb074f54a4c799f05492fc1945945a9}{create\+Mesh\+From\+Resource}} (\mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}} resource, Eigen\+::\+Vector3d scale=Eigen\+::\+Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false)
+{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \mbox{\hyperlink{namespacetesseract__geometry_a5b7ae1c48794bcb9bb4de99e332094ab}{create\+Mesh\+From\+Resource}} (\mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}} resource, Eigen\+::\+Vector3d scale=Eigen\+::\+Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false, bool normals=false, bool vertex\+\_\+colors=false, bool material\+\_\+and\+\_\+texture=false)
 \begin{DoxyCompactList}\small\item\em Create a mesh using assimp from resource. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\static std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \mbox{\hyperlink{namespacetesseract__geometry_adc3bc34e93aaa227ba3bd81d09b5be77}{create\+Mesh\+From\+Bytes}} (const std\+::string \&url, const uint8\+\_\+t $\ast$bytes, size\+\_\+t bytes\+\_\+len, Eigen\+::\+Vector3d scale=Eigen\+::\+Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false, bool normals=false, bool vertex\+\_\+colors=false, bool material\+\_\+and\+\_\+texture=false)
+\begin{DoxyCompactList}\small\item\em Create a mesh from byte array. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__geometry_a926633f75e5dd249555d157fc32ea8d2}{is\+Identical}} (const \mbox{\hyperlink{classtesseract__geometry_1_1Geometry}{Geometry}} \&geom1, const \mbox{\hyperlink{classtesseract__geometry_1_1Geometry}{Geometry}} \&geom2)
 \begin{DoxyCompactList}\small\item\em Check if two Geometries are identical. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
@@ -143,18 +143,12 @@ O\+C\+T\+R\+EE&\\
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespacetesseract__geometry_a5e9fed6ad94d9a9679b0ff007d22e3f8}\label{namespacetesseract__geometry_a5e9fed6ad94d9a9679b0ff007d22e3f8}} 
-\index{tesseract\_geometry@{tesseract\_geometry}!createConvexMeshFromBytes@{createConvexMeshFromBytes}}
-\index{createConvexMeshFromBytes@{createConvexMeshFromBytes}!tesseract\_geometry@{tesseract\_geometry}}
-\doxysubsubsection{\texorpdfstring{createConvexMeshFromBytes()}{createConvexMeshFromBytes()}}
-{\footnotesize\ttfamily static std\+::vector$<$\mbox{\hyperlink{classtesseract__geometry_1_1ConvexMesh_aecd145c5f75117ff7a3bab1fb921e4c0}{tesseract\+\_\+geometry\+::\+Convex\+Mesh\+::\+Ptr}}$>$ tesseract\+\_\+geometry\+::create\+Convex\+Mesh\+From\+Bytes (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{url,  }\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{size\+\_\+t}]{bytes\+\_\+len,  }\item[{Eigen\+::\+Vector3d}]{scale = {\ttfamily Eigen\+:\+:Vector3d(1,~1,~1)},  }\item[{bool}]{triangulate = {\ttfamily false},  }\item[{bool}]{flatten = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\mbox{\Hypertarget{namespacetesseract__geometry_a50302af5196a8a0dbaf7d9443e069b3b}\label{namespacetesseract__geometry_a50302af5196a8a0dbaf7d9443e069b3b}} 
+\mbox{\Hypertarget{namespacetesseract__geometry_a0c0060eed1989b39565981e6742a3aa2}\label{namespacetesseract__geometry_a0c0060eed1989b39565981e6742a3aa2}} 
 \index{tesseract\_geometry@{tesseract\_geometry}!createMeshFromAsset@{createMeshFromAsset}}
 \index{createMeshFromAsset@{createMeshFromAsset}!tesseract\_geometry@{tesseract\_geometry}}
 \doxysubsubsection{\texorpdfstring{createMeshFromAsset()}{createMeshFromAsset()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-std\+::vector$<$std\+::shared\+\_\+ptr$<$T$>$ $>$ tesseract\+\_\+geometry\+::create\+Mesh\+From\+Asset (\begin{DoxyParamCaption}\item[{const ai\+Scene $\ast$}]{scene,  }\item[{const Eigen\+::\+Vector3d \&}]{scale,  }\item[{\mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}}}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+std\+::vector$<$std\+::shared\+\_\+ptr$<$T$>$ $>$ tesseract\+\_\+geometry\+::create\+Mesh\+From\+Asset (\begin{DoxyParamCaption}\item[{const ai\+Scene $\ast$}]{scene,  }\item[{const Eigen\+::\+Vector3d \&}]{scale,  }\item[{\mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}}}]{resource,  }\item[{bool}]{normals,  }\item[{bool}]{vertex\+\_\+colors,  }\item[{bool}]{material\+\_\+and\+\_\+texture }\end{DoxyParamCaption})}
 
 
 
@@ -168,22 +162,57 @@ Create list of meshes from the assimp scene.
 \hline
 {\em resource} & The mesh resource that generated the scene \\
 \hline
+{\em normals} & If true, loads mesh normals \\
+\hline
+{\em vertex\+\_\+colors} & If true, loads mesh vertex colors \\
+\hline
+{\em material\+\_\+and\+\_\+texture} & If true, loads mesh materials and textures \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A list of tesseract meshes 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacetesseract__geometry_ae76d6226bdfabf0105f77b752f8c5792}\label{namespacetesseract__geometry_ae76d6226bdfabf0105f77b752f8c5792}} 
+\mbox{\Hypertarget{namespacetesseract__geometry_adc3bc34e93aaa227ba3bd81d09b5be77}\label{namespacetesseract__geometry_adc3bc34e93aaa227ba3bd81d09b5be77}} 
 \index{tesseract\_geometry@{tesseract\_geometry}!createMeshFromBytes@{createMeshFromBytes}}
 \index{createMeshFromBytes@{createMeshFromBytes}!tesseract\_geometry@{tesseract\_geometry}}
 \doxysubsubsection{\texorpdfstring{createMeshFromBytes()}{createMeshFromBytes()}}
-{\footnotesize\ttfamily static std\+::vector$<$\mbox{\hyperlink{classtesseract__geometry_1_1Mesh_afc301af0c59b2d87d45f046859de431f}{tesseract\+\_\+geometry\+::\+Mesh\+::\+Ptr}}$>$ tesseract\+\_\+geometry\+::create\+Mesh\+From\+Bytes (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{url,  }\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{size\+\_\+t}]{bytes\+\_\+len,  }\item[{Eigen\+::\+Vector3d}]{scale = {\ttfamily Eigen\+:\+:Vector3d(1,~1,~1)},  }\item[{bool}]{triangulate = {\ttfamily false},  }\item[{bool}]{flatten = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static std\+::vector$<$std\+::shared\+\_\+ptr$<$T$>$ $>$ tesseract\+\_\+geometry\+::create\+Mesh\+From\+Bytes (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{url,  }\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{size\+\_\+t}]{bytes\+\_\+len,  }\item[{Eigen\+::\+Vector3d}]{scale = {\ttfamily Eigen\+:\+:Vector3d(1,~1,~1)},  }\item[{bool}]{triangulate = {\ttfamily false},  }\item[{bool}]{flatten = {\ttfamily false},  }\item[{bool}]{normals = {\ttfamily false},  }\item[{bool}]{vertex\+\_\+colors = {\ttfamily false},  }\item[{bool}]{material\+\_\+and\+\_\+texture = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{namespacetesseract__geometry_a3f4e01e08202e6a7fecf7aa9e04d3174}\label{namespacetesseract__geometry_a3f4e01e08202e6a7fecf7aa9e04d3174}} 
+
+
+Create a mesh from byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL of source resource \\
+\hline
+{\em bytes} & Byte array \\
+\hline
+{\em bytes\+\_\+len} & The length of bytes \\
+\hline
+{\em scale} & Perform an axis scaling \\
+\hline
+{\em trianglulate} & If true the mesh will be trianglulated. This should be done for visual meshes. In the case of collision meshes do not triangulate convex hull meshes. \\
+\hline
+{\em flatten} & If true all meshes will be condensed into a single mesh. This should only be used for visual meshes, do not flatten collision meshes. \\
+\hline
+{\em normals} & If true, loads mesh normals \\
+\hline
+{\em vertex\+\_\+colors} & If true, loads mesh vertex colors \\
+\hline
+{\em material\+\_\+and\+\_\+texture} & If true, loads mesh materials and textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__geometry_a6eb14091f9adce45929f5fddece2d7f7}\label{namespacetesseract__geometry_a6eb14091f9adce45929f5fddece2d7f7}} 
 \index{tesseract\_geometry@{tesseract\_geometry}!createMeshFromPath@{createMeshFromPath}}
 \index{createMeshFromPath@{createMeshFromPath}!tesseract\_geometry@{tesseract\_geometry}}
 \doxysubsubsection{\texorpdfstring{createMeshFromPath()}{createMeshFromPath()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-std\+::vector$<$std\+::shared\+\_\+ptr$<$T$>$ $>$ tesseract\+\_\+geometry\+::create\+Mesh\+From\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{Eigen\+::\+Vector3d}]{scale = {\ttfamily Eigen\+:\+:Vector3d(1,~1,~1)},  }\item[{bool}]{triangulate = {\ttfamily false},  }\item[{bool}]{flatten = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+std\+::vector$<$std\+::shared\+\_\+ptr$<$T$>$ $>$ tesseract\+\_\+geometry\+::create\+Mesh\+From\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{Eigen\+::\+Vector3d}]{scale = {\ttfamily Eigen\+:\+:Vector3d(1,~1,~1)},  }\item[{bool}]{triangulate = {\ttfamily false},  }\item[{bool}]{flatten = {\ttfamily false},  }\item[{bool}]{normals = {\ttfamily false},  }\item[{bool}]{vertex\+\_\+colors = {\ttfamily false},  }\item[{bool}]{material\+\_\+and\+\_\+texture = {\ttfamily false} }\end{DoxyParamCaption})}
 
 
 
@@ -199,16 +228,22 @@ Create a mesh using assimp from file path.
 \hline
 {\em flatten} & If true all meshes will be condensed into a single mesh. This should only be used for visual meshes, do not flatten collision meshes. \\
 \hline
+{\em normals} & If true, loads mesh normals \\
+\hline
+{\em vertex\+\_\+colors} & If true, loads mesh vertex colors \\
+\hline
+{\em material\+\_\+and\+\_\+texture} & If true, loads mesh materials and textures \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacetesseract__geometry_adeb074f54a4c799f05492fc1945945a9}\label{namespacetesseract__geometry_adeb074f54a4c799f05492fc1945945a9}} 
+\mbox{\Hypertarget{namespacetesseract__geometry_a5b7ae1c48794bcb9bb4de99e332094ab}\label{namespacetesseract__geometry_a5b7ae1c48794bcb9bb4de99e332094ab}} 
 \index{tesseract\_geometry@{tesseract\_geometry}!createMeshFromResource@{createMeshFromResource}}
 \index{createMeshFromResource@{createMeshFromResource}!tesseract\_geometry@{tesseract\_geometry}}
 \doxysubsubsection{\texorpdfstring{createMeshFromResource()}{createMeshFromResource()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-std\+::vector$<$std\+::shared\+\_\+ptr$<$T$>$ $>$ tesseract\+\_\+geometry\+::create\+Mesh\+From\+Resource (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}}}]{resource,  }\item[{Eigen\+::\+Vector3d}]{scale = {\ttfamily Eigen\+:\+:Vector3d(1,~1,~1)},  }\item[{bool}]{triangulate = {\ttfamily false},  }\item[{bool}]{flatten = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+std\+::vector$<$std\+::shared\+\_\+ptr$<$T$>$ $>$ tesseract\+\_\+geometry\+::create\+Mesh\+From\+Resource (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}}}]{resource,  }\item[{Eigen\+::\+Vector3d}]{scale = {\ttfamily Eigen\+:\+:Vector3d(1,~1,~1)},  }\item[{bool}]{triangulate = {\ttfamily false},  }\item[{bool}]{flatten = {\ttfamily false},  }\item[{bool}]{normals = {\ttfamily false},  }\item[{bool}]{vertex\+\_\+colors = {\ttfamily false},  }\item[{bool}]{material\+\_\+and\+\_\+texture = {\ttfamily false} }\end{DoxyParamCaption})}
 
 
 
@@ -224,22 +259,22 @@ Create a mesh using assimp from resource.
 \hline
 {\em flatten} & If true all meshes will be condensed into a single mesh. This should only be used for visual meshes, do not flatten collision meshes. \\
 \hline
+{\em normals} & If true, loads mesh normals \\
+\hline
+{\em vertex\+\_\+colors} & If true, loads mesh vertex colors \\
+\hline
+{\em material\+\_\+and\+\_\+texture} & If true, loads mesh materials and textures \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacetesseract__geometry_a9008a80cc9b512969cd489d7afaa1205}\label{namespacetesseract__geometry_a9008a80cc9b512969cd489d7afaa1205}} 
-\index{tesseract\_geometry@{tesseract\_geometry}!createSDFMeshFromBytes@{createSDFMeshFromBytes}}
-\index{createSDFMeshFromBytes@{createSDFMeshFromBytes}!tesseract\_geometry@{tesseract\_geometry}}
-\doxysubsubsection{\texorpdfstring{createSDFMeshFromBytes()}{createSDFMeshFromBytes()}}
-{\footnotesize\ttfamily static std\+::vector$<$\mbox{\hyperlink{classtesseract__geometry_1_1SDFMesh_a3a25630031ffb011ac7c2c35cd89d688}{tesseract\+\_\+geometry\+::\+S\+D\+F\+Mesh\+::\+Ptr}}$>$ tesseract\+\_\+geometry\+::create\+S\+D\+F\+Mesh\+From\+Bytes (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{url,  }\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{size\+\_\+t}]{bytes\+\_\+len,  }\item[{Eigen\+::\+Vector3d}]{scale = {\ttfamily Eigen\+:\+:Vector3d(1,~1,~1)},  }\item[{bool}]{triangulate = {\ttfamily false},  }\item[{bool}]{flatten = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\mbox{\Hypertarget{namespacetesseract__geometry_a5eedebf33318d863912dd2fddb3ff25d}\label{namespacetesseract__geometry_a5eedebf33318d863912dd2fddb3ff25d}} 
+\mbox{\Hypertarget{namespacetesseract__geometry_a24986eb36c9781b611dfa3348354c980}\label{namespacetesseract__geometry_a24986eb36c9781b611dfa3348354c980}} 
 \index{tesseract\_geometry@{tesseract\_geometry}!extractMeshData@{extractMeshData}}
 \index{extractMeshData@{extractMeshData}!tesseract\_geometry@{tesseract\_geometry}}
 \doxysubsubsection{\texorpdfstring{extractMeshData()}{extractMeshData()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-std\+::vector$<$std\+::shared\+\_\+ptr$<$T$>$ $>$ tesseract\+\_\+geometry\+::extract\+Mesh\+Data (\begin{DoxyParamCaption}\item[{const ai\+Scene $\ast$}]{scene,  }\item[{const ai\+Node $\ast$}]{node,  }\item[{const ai\+Matrix4x4 \&}]{parent\+\_\+transform,  }\item[{const Eigen\+::\+Vector3d \&}]{scale,  }\item[{\mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}}}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+std\+::vector$<$std\+::shared\+\_\+ptr$<$T$>$ $>$ tesseract\+\_\+geometry\+::extract\+Mesh\+Data (\begin{DoxyParamCaption}\item[{const ai\+Scene $\ast$}]{scene,  }\item[{const ai\+Node $\ast$}]{node,  }\item[{const ai\+Matrix4x4 \&}]{parent\+\_\+transform,  }\item[{const Eigen\+::\+Vector3d \&}]{scale,  }\item[{\mbox{\hyperlink{classtesseract__common_1_1Resource_acdba916fa227bef4391c469581844dc6}{tesseract\+\_\+common\+::\+Resource\+::\+Ptr}}}]{resource,  }\item[{bool}]{normals,  }\item[{bool}]{vertex\+\_\+colors,  }\item[{bool}]{material\+\_\+and\+\_\+texture }\end{DoxyParamCaption})}
 
 The template type must have a constructor as follows Constructor(std\+::shared\+\_\+ptr$<$tesseract\+\_\+geometry\+::\+Vector\+Vector3d$>$ vertices, std\+::shared\+\_\+ptr$<$std\+::vector$<$int$>$$>$ faces, int face\+\_\+count) \mbox{\Hypertarget{namespacetesseract__geometry_a926633f75e5dd249555d157fc32ea8d2}\label{namespacetesseract__geometry_a926633f75e5dd249555d157fc32ea8d2}} 
 \index{tesseract\_geometry@{tesseract\_geometry}!isIdentical@{isIdentical}}
