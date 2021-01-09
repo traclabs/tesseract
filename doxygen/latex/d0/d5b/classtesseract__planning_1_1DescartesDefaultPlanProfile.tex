@@ -46,13 +46,13 @@ using \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile_a
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile}{Descartes\+Default\+Plan\+Profile}} \& \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile_a23e99b3ecc0c41754e0917b9faa458cb}{operator=}} (\mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile}{Descartes\+Default\+Plan\+Profile}} \&\&) noexcept=default
 \item 
-\mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile_a8bbf9dd170dfc5da44f4117d74ca7a6a}{Descartes\+Default\+Plan\+Profile}} (const tinyxml2\+::\+X\+M\+L\+Element \&xml\+\_\+element)
+\mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile_a8bbf9dd170dfc5da44f4117d74ca7a6a}{Descartes\+Default\+Plan\+Profile}} (const tinyxml2\+::\+XMLElement \&xml\+\_\+element)
 \item 
 void \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile_ac4c3eeddb7672846dd1cc6c84a63c650}{apply}} (\mbox{\hyperlink{structtesseract__planning_1_1DescartesProblem}{Descartes\+Problem}}$<$ Float\+Type $>$ \&prob, const Eigen\+::\+Isometry3d \&cartesian\+\_\+waypoint, const \mbox{\hyperlink{classtesseract__planning_1_1Instruction}{Instruction}} \&parent\+\_\+instruction, const \mbox{\hyperlink{namespacetesseract__planning_aa96fe6a7234303baeef3b4a8afcedfc4}{Manipulator\+Info}} \&manip\+\_\+info, const std\+::vector$<$ std\+::string $>$ \&active\+\_\+links, int index) const override
 \item 
 void \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile_a0eb7be1d29dc1a9b60438c2d180c32c2}{apply}} (\mbox{\hyperlink{structtesseract__planning_1_1DescartesProblem}{Descartes\+Problem}}$<$ Float\+Type $>$ \&prob, const Eigen\+::\+Vector\+Xd \&joint\+\_\+waypoint, const \mbox{\hyperlink{classtesseract__planning_1_1Instruction}{Instruction}} \&parent\+\_\+instruction, const \mbox{\hyperlink{namespacetesseract__planning_aa96fe6a7234303baeef3b4a8afcedfc4}{Manipulator\+Info}} \&manip\+\_\+info, const std\+::vector$<$ std\+::string $>$ \&active\+\_\+links, int index) const override
 \item 
-tinyxml2\+::\+X\+M\+L\+Element $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile_ab0ef1a785193fd3a1b91dba16e547462}{to\+X\+ML}} (tinyxml2\+::\+X\+M\+L\+Document \&doc) const override
+tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile_ab0ef1a785193fd3a1b91dba16e547462}{to\+XML}} (tinyxml2\+::\+XMLDocument \&doc) const override
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -132,18 +132,18 @@ using \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile}{
 \index{DescartesDefaultPlanProfile@{DescartesDefaultPlanProfile}!tesseract\_planning::DescartesDefaultPlanProfile$<$ FloatType $>$@{tesseract\_planning::DescartesDefaultPlanProfile$<$ FloatType $>$}}
 \doxysubsubsection{\texorpdfstring{DescartesDefaultPlanProfile()}{DescartesDefaultPlanProfile()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-\mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile}{tesseract\+\_\+planning\+::\+Descartes\+Default\+Plan\+Profile}}$<$ Float\+Type $>$\+::\mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile}{Descartes\+Default\+Plan\+Profile}} (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
+\mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile}{tesseract\+\_\+planning\+::\+Descartes\+Default\+Plan\+Profile}}$<$ Float\+Type $>$\+::\mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile}{Descartes\+Default\+Plan\+Profile}} (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]Update X\+ML \end{DoxyRefDesc}
-
-
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Update X\+ML \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]Update XML \end{DoxyRefDesc}
 
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]Update X\+ML \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Update XML \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]Update XML \end{DoxyRefDesc}
 
 
 \doxysubsection{Member Function Documentation}
@@ -188,10 +188,10 @@ Implements \mbox{\hyperlink{classtesseract__planning_1_1DescartesPlanProfile_a9a
 \index{toXML@{toXML}!tesseract\_planning::DescartesDefaultPlanProfile$<$ FloatType $>$@{tesseract\_planning::DescartesDefaultPlanProfile$<$ FloatType $>$}}
 \doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
 {\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-tinyxml2\+::\+X\+M\+L\+Element $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile}{tesseract\+\_\+planning\+::\+Descartes\+Default\+Plan\+Profile}}$<$ Float\+Type $>$\+::to\+X\+ML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+X\+M\+L\+Document \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1DescartesDefaultPlanProfile}{tesseract\+\_\+planning\+::\+Descartes\+Default\+Plan\+Profile}}$<$ Float\+Type $>$\+::to\+XML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+XMLDocument \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]Update X\+ML \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]Update XML \end{DoxyRefDesc}
 
 
 Implements \mbox{\hyperlink{classtesseract__planning_1_1DescartesPlanProfile_afae1499852e2ab905d28a659d32892c9}{tesseract\+\_\+planning\+::\+Descartes\+Plan\+Profile$<$ Float\+Type $>$}}.

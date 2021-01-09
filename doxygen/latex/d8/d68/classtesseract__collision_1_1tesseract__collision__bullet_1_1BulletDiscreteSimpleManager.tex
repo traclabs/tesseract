@@ -2,7 +2,7 @@
 \label{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager}\index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 
 
-A simple implementaiton of a bullet manager which does not use B\+HV.  
+A simple implementaiton of a bullet manager which does not use BHV.  
 
 
 
@@ -93,7 +93,7 @@ void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_
 \begin{DoxyCompactList}\small\item\em Get the active function for determining if two links are allowed to be in collision. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a780c30bf546aa65d91ba0d509c232c11}{contact\+Test}} (\mbox{\hyperlink{namespacetesseract__collision_a1eeace4cc41027dbde8e7dbeb77ca7cf}{Contact\+Result\+Map}} \&collisions, const \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}} \&request) override
 \begin{DoxyCompactList}\small\item\em Perform a contact test for all objects based. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a8664db72c57eec793f7bab5d18b4dde8}{add\+Collision\+Object}} (\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{C\+O\+W\+::\+Ptr}} cow)
+void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a8664db72c57eec793f7bab5d18b4dde8}{add\+Collision\+Object}} (\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}} cow)
 \begin{DoxyCompactList}\small\item\em A a bullet collision object to the manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -122,14 +122,14 @@ bt\+Dispatcher\+Info \mbox{\hyperlink{classtesseract__collision_1_1tesseract__co
 \begin{DoxyCompactList}\small\item\em The bullet collision configuration. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_a6bdaed18a18bda60c2af7da1a2202bef}{Link2\+Cow}} \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_aef7defa102c8c8dd61ef92d19cd97557}{link2cow\+\_\+}}
 \begin{DoxyCompactList}\small\item\em A map of all (static and active) collision objects being managed. \end{DoxyCompactList}\item 
-std\+::vector$<$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{C\+O\+W\+::\+Ptr}} $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a11243497edd4e91c3ddde90073996452}{cows\+\_\+}}
+std\+::vector$<$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}} $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a11243497edd4e91c3ddde90073996452}{cows\+\_\+}}
 \begin{DoxyCompactList}\small\item\em A vector of collision objects (active followed by static) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__collision_1_1ContactTestData}{Contact\+Test\+Data}} \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a703e9a9848bc914fcf14c5862f66ef12}{contact\+\_\+test\+\_\+data\+\_\+}}
 \begin{DoxyCompactList}\small\item\em This is used when contact\+Test is called. It is also added as a user point to the collsion objects so it can be used to exit collision checking for compound shapes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A simple implementaiton of a bullet manager which does not use B\+HV. 
+A simple implementaiton of a bullet manager which does not use BHV. 
 
 \doxysubsection{Member Typedef Documentation}
 \mbox{\Hypertarget{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_adbb026b651eb73146cbdc3b0b228a3ab}\label{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_adbb026b651eb73146cbdc3b0b228a3ab}} 
@@ -206,7 +206,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!addCollisionObject@{addCollisionObject}}
 \index{addCollisionObject@{addCollisionObject}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{addCollisionObject()}{addCollisionObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::add\+Collision\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{C\+O\+W\+::\+Ptr}}}]{cow }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::add\+Collision\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}}}]{cow }\end{DoxyParamCaption})}
 
 
 
@@ -681,7 +681,7 @@ This is used when contact\+Test is called. It is also added as a user point to t
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!cows\_@{cows\_}}
 \index{cows\_@{cows\_}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{cows\_}{cows\_}}
-{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{C\+O\+W\+::\+Ptr}}$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::cows\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}}$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::cows\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

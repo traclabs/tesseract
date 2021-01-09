@@ -1,11 +1,11 @@
 <map id="tesseract_planning::OMPLPlannerConfigurator" name="tesseract_planning::OMPLPlannerConfigurator">
 <area shape="rect" id="node1" title=" " alt="" coords="5,431,184,472"/>
-<area shape="rect" id="node2" href="$d0/d31/structtesseract__planning_1_1BiTRRTConfigurator.html" title=" " alt="" coords="248,5,391,47"/>
-<area shape="rect" id="node3" href="$d1/df5/structtesseract__planning_1_1BKPIECE1Configurator.html" title=" " alt="" coords="239,71,399,112"/>
+<area shape="rect" id="node2" href="$d1/df5/structtesseract__planning_1_1BKPIECE1Configurator.html" title=" " alt="" coords="239,5,399,47"/>
+<area shape="rect" id="node3" href="$d0/d31/structtesseract__planning_1_1BiTRRTConfigurator.html" title=" " alt="" coords="248,71,391,112"/>
 <area shape="rect" id="node4" href="$de/d93/structtesseract__planning_1_1ESTConfigurator.html" title=" " alt="" coords="254,136,385,177"/>
 <area shape="rect" id="node5" href="$dc/d9a/structtesseract__planning_1_1KPIECE1Configurator.html" title=" " alt="" coords="244,201,395,243"/>
-<area shape="rect" id="node6" href="$d1/d46/structtesseract__planning_1_1LazyPRMstarConfigurator.html" title=" " alt="" coords="232,267,407,308"/>
-<area shape="rect" id="node7" href="$db/db3/structtesseract__planning_1_1LBKPIECE1Configurator.html" title=" " alt="" coords="235,332,403,373"/>
+<area shape="rect" id="node6" href="$db/db3/structtesseract__planning_1_1LBKPIECE1Configurator.html" title=" " alt="" coords="235,267,403,308"/>
+<area shape="rect" id="node7" href="$d1/d46/structtesseract__planning_1_1LazyPRMstarConfigurator.html" title=" " alt="" coords="232,332,407,373"/>
 <area shape="rect" id="node8" href="$d1/d02/structtesseract__planning_1_1PRMConfigurator.html" title=" " alt="" coords="254,397,385,439"/>
 <area shape="rect" id="node9" href="$d2/d59/structtesseract__planning_1_1PRMstarConfigurator.html" title=" " alt="" coords="245,463,393,504"/>
 <area shape="rect" id="node10" href="$d1/d02/structtesseract__planning_1_1RRTConfigurator.html" title=" " alt="" coords="254,528,385,569"/>

@@ -1,5 +1,5 @@
-\hypertarget{composite__instruction_8h}{}\doxysection{tesseract/tesseract\+\_\+planning/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/composite\+\_\+instruction.h File Reference}
-\label{composite__instruction_8h}\index{tesseract/tesseract\_planning/tesseract\_command\_language/include/tesseract\_command\_language/composite\_instruction.h@{tesseract/tesseract\_planning/tesseract\_command\_language/include/tesseract\_command\_language/composite\_instruction.h}}
+\hypertarget{composite__instruction_8h}{}\doxysection{tesseract/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/composite\+\_\+instruction.h File Reference}
+\label{composite__instruction_8h}\index{tesseract/tesseract\_command\_language/include/tesseract\_command\_language/composite\_instruction.h@{tesseract/tesseract\_command\_language/include/tesseract\_command\_language/composite\_instruction.h}}
 {\ttfamily \#include $<$tesseract\+\_\+common/macros.\+h$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
@@ -38,9 +38,9 @@ class \mbox{\hyperlink{classtesseract__planning_1_1CompositeInstruction}{tessera
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{namespacetesseract__planning_a181d9233cb2a71d0ed0c23c55205f98d}{tesseract\+\_\+planning\+::\+Composite\+Instruction\+Order}} \{ \mbox{\hyperlink{namespacetesseract__planning_a181d9233cb2a71d0ed0c23c55205f98daabc458a817b34b4750413b587f536ac0}{tesseract\+\_\+planning\+::\+Composite\+Instruction\+Order\+::\+O\+R\+D\+E\+R\+ED}}, 
-\mbox{\hyperlink{namespacetesseract__planning_a181d9233cb2a71d0ed0c23c55205f98da6caf8ac543ee5994b1ab98021bba1173}{tesseract\+\_\+planning\+::\+Composite\+Instruction\+Order\+::\+U\+N\+O\+R\+D\+E\+R\+ED}}, 
-\mbox{\hyperlink{namespacetesseract__planning_a181d9233cb2a71d0ed0c23c55205f98da2aa1bd8a5f345edb7d934e2925962f43}{tesseract\+\_\+planning\+::\+Composite\+Instruction\+Order\+::\+O\+R\+D\+E\+R\+E\+D\+\_\+\+A\+N\+D\+\_\+\+R\+E\+V\+E\+R\+A\+B\+LE}}
+enum class \mbox{\hyperlink{namespacetesseract__planning_a181d9233cb2a71d0ed0c23c55205f98d}{tesseract\+\_\+planning\+::\+Composite\+Instruction\+Order}} \{ \mbox{\hyperlink{namespacetesseract__planning_a181d9233cb2a71d0ed0c23c55205f98daabc458a817b34b4750413b587f536ac0}{tesseract\+\_\+planning\+::\+ORDERED}}
+, \mbox{\hyperlink{namespacetesseract__planning_a181d9233cb2a71d0ed0c23c55205f98da6caf8ac543ee5994b1ab98021bba1173}{tesseract\+\_\+planning\+::\+UNORDERED}}
+, \mbox{\hyperlink{namespacetesseract__planning_a181d9233cb2a71d0ed0c23c55205f98da2aa1bd8a5f345edb7d934e2925962f43}{tesseract\+\_\+planning\+::\+ORDERED\+\_\+\+AND\+\_\+\+REVERABLE}}
  \}
 \end{DoxyCompactItemize}
 
@@ -53,10 +53,10 @@ Levi Armstrong
 June 15, 2020 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-T\+O\+DO 
+TODO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000092}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000028}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}
@@ -66,8 +66,8 @@ Copyright (c) 2020, Southwest Research Institute
 Software License Agreement (Apache License) 
 \end{DoxyParagraph}
 \begin{DoxyParagraph}{}
-Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}} 
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}} 
 \end{DoxyParagraph}
 \begin{DoxyParagraph}{}
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
 \end{DoxyParagraph}

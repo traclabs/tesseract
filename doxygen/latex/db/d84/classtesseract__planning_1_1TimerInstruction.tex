@@ -44,7 +44,7 @@ int \mbox{\hyperlink{classtesseract__planning_1_1TimerInstruction_a9681082716b5e
 \begin{DoxyCompactList}\small\item\em Get the timer IO. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__planning_1_1TimerInstruction_a762405f2f3c9f9a4cbefaebdec13bb0b}{set\+Timer\+IO}} (int io)
 \begin{DoxyCompactList}\small\item\em Set the timer IO. \end{DoxyCompactList}\item 
-tinyxml2\+::\+X\+M\+L\+Element $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1TimerInstruction_a524b8b93af0f6001f98930bf75170de9}{to\+X\+ML}} (tinyxml2\+::\+X\+M\+L\+Document \&doc) const
+tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1TimerInstruction_a524b8b93af0f6001f98930bf75170de9}{to\+XML}} (tinyxml2\+::\+XMLDocument \&doc) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -64,8 +64,8 @@ This instruction indicates that a timer should be started and when the time expi
 
 
 \begin{DoxyItemize}
-\item D\+I\+G\+I\+T\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+H\+I\+GH \+: The digital output will be set to high(1) when the timer expires
-\item D\+I\+G\+I\+T\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+L\+OW \+: The digital output will be set to low(0) when the timer expires 
+\item DIGITAL\+\_\+\+OUTPUT\+\_\+\+HIGH \+: The digital output will be set to high(1) when the timer expires
+\item DIGITAL\+\_\+\+OUTPUT\+\_\+\+LOW \+: The digital output will be set to low(0) when the timer expires 
 \end{DoxyItemize}
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -190,7 +190,7 @@ Set the timer type.
 \index{tesseract\_planning::TimerInstruction@{tesseract\_planning::TimerInstruction}!toXML@{toXML}}
 \index{toXML@{toXML}!tesseract\_planning::TimerInstruction@{tesseract\_planning::TimerInstruction}}
 \doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Element$\ast$ tesseract\+\_\+planning\+::\+Timer\+Instruction\+::to\+X\+ML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+X\+M\+L\+Document \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLElement$\ast$ tesseract\+\_\+planning\+::\+Timer\+Instruction\+::to\+XML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+XMLDocument \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -227,4 +227,4 @@ The description of the instruction.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-tesseract/tesseract\+\_\+planning/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/\mbox{\hyperlink{timer__instruction_8h}{timer\+\_\+instruction.\+h}}\end{DoxyCompactItemize}
+tesseract/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/\mbox{\hyperlink{timer__instruction_8h}{timer\+\_\+instruction.\+h}}\end{DoxyCompactItemize}

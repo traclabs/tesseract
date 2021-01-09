@@ -38,7 +38,7 @@ using \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a23
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a2accc539da7d8decffb8391cd5c0313f}{$\sim$\+Traj\+Opt\+Default\+Plan\+Profile}} () override=default
 \item 
-\mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a004047ff48de46a1a7baaa76dea170f1}{Traj\+Opt\+Default\+Plan\+Profile}} (const tinyxml2\+::\+X\+M\+L\+Element \&xml\+\_\+element)
+\mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a004047ff48de46a1a7baaa76dea170f1}{Traj\+Opt\+Default\+Plan\+Profile}} (const tinyxml2\+::\+XMLElement \&xml\+\_\+element)
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a4c7ac083835e02933c0fbbcecfc48a10}{Traj\+Opt\+Default\+Plan\+Profile}} (const \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile}{Traj\+Opt\+Default\+Plan\+Profile}} \&)=default
 \item 
@@ -52,7 +52,7 @@ void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_af95
 \item 
 void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a96cd97680a68b30503fbb5a74ede58f6}{apply}} (trajopt\+::\+Problem\+Construction\+Info \&pci, const \mbox{\hyperlink{classtesseract__planning_1_1JointWaypoint}{Joint\+Waypoint}} \&joint\+\_\+waypoint, const \mbox{\hyperlink{classtesseract__planning_1_1Instruction}{Instruction}} \&parent\+\_\+instruction, const \mbox{\hyperlink{namespacetesseract__planning_aa96fe6a7234303baeef3b4a8afcedfc4}{Manipulator\+Info}} \&manip\+\_\+info, const std\+::vector$<$ std\+::string $>$ \&active\+\_\+links, int index) const override
 \item 
-tinyxml2\+::\+X\+M\+L\+Element $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a0c5a03c12d0ed6bd343ba68273e9a864}{to\+X\+ML}} (tinyxml2\+::\+X\+M\+L\+Document \&doc) const override
+tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a0c5a03c12d0ed6bd343ba68273e9a864}{to\+XML}} (tinyxml2\+::\+XMLDocument \&doc) const override
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -61,7 +61,7 @@ Eigen\+::\+Vector\+Xd \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaul
 \item 
 Eigen\+::\+Vector\+Xd \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a6fc8f3b34ba3f71fa7c2fdaa2774a061}{joint\+\_\+coeff}} \{ Eigen\+::\+Vector\+Xd\+::\+Constant(1, 1, 5) \}
 \item 
-trajopt\+::\+Term\+Type \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a48daf9014c6891b36fd8287cbf853966}{term\+\_\+type}} \{ trajopt\+::\+Term\+Type\+::\+T\+T\+\_\+\+C\+NT \}
+trajopt\+::\+Term\+Type \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a48daf9014c6891b36fd8287cbf853966}{term\+\_\+type}} \{ trajopt\+::\+Term\+Type\+::\+TT\+\_\+\+CNT \}
 \item 
 std\+::vector$<$ std\+::tuple$<$ sco\+::\+Vector\+Of\+Vector\+::func, sco\+::\+Matrix\+Of\+Vector\+::func, sco\+::\+Constraint\+Type, Eigen\+::\+Vector\+Xd $>$ $>$ \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_acddd48359f54c21512de89bd51861d6b}{constraint\+\_\+error\+\_\+functions}}
 \begin{DoxyCompactList}\small\item\em Error function that is set as a constraint for each timestep. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -106,7 +106,7 @@ void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a7a9
 \index{tesseract\_planning::TrajOptDefaultPlanProfile@{tesseract\_planning::TrajOptDefaultPlanProfile}!TrajOptDefaultPlanProfile@{TrajOptDefaultPlanProfile}}
 \index{TrajOptDefaultPlanProfile@{TrajOptDefaultPlanProfile}!tesseract\_planning::TrajOptDefaultPlanProfile@{tesseract\_planning::TrajOptDefaultPlanProfile}}
 \doxysubsubsection{\texorpdfstring{TrajOptDefaultPlanProfile()}{TrajOptDefaultPlanProfile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Plan\+Profile\+::\+Traj\+Opt\+Default\+Plan\+Profile (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Plan\+Profile\+::\+Traj\+Opt\+Default\+Plan\+Profile (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a4c7ac083835e02933c0fbbcecfc48a10}\label{classtesseract__planning_1_1TrajOptDefaultPlanProfile_a4c7ac083835e02933c0fbbcecfc48a10}} 
 \index{tesseract\_planning::TrajOptDefaultPlanProfile@{tesseract\_planning::TrajOptDefaultPlanProfile}!TrajOptDefaultPlanProfile@{TrajOptDefaultPlanProfile}}
@@ -171,7 +171,7 @@ Implements \mbox{\hyperlink{classtesseract__planning_1_1TrajOptPlanProfile_ac7f0
 \index{tesseract\_planning::TrajOptDefaultPlanProfile@{tesseract\_planning::TrajOptDefaultPlanProfile}!toXML@{toXML}}
 \index{toXML@{toXML}!tesseract\_planning::TrajOptDefaultPlanProfile@{tesseract\_planning::TrajOptDefaultPlanProfile}}
 \doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Element $\ast$ tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Plan\+Profile\+::to\+X\+ML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+X\+M\+L\+Document \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLElement $\ast$ tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Plan\+Profile\+::to\+XML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+XMLDocument \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -214,7 +214,7 @@ Coefficients/\+Weights \mbox{\Hypertarget{classtesseract__planning_1_1TrajOptDef
 \index{tesseract\_planning::TrajOptDefaultPlanProfile@{tesseract\_planning::TrajOptDefaultPlanProfile}!term\_type@{term\_type}}
 \index{term\_type@{term\_type}!tesseract\_planning::TrajOptDefaultPlanProfile@{tesseract\_planning::TrajOptDefaultPlanProfile}}
 \doxysubsubsection{\texorpdfstring{term\_type}{term\_type}}
-{\footnotesize\ttfamily trajopt\+::\+Term\+Type tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Plan\+Profile\+::term\+\_\+type \{ trajopt\+::\+Term\+Type\+::\+T\+T\+\_\+\+C\+NT \}}
+{\footnotesize\ttfamily trajopt\+::\+Term\+Type tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Plan\+Profile\+::term\+\_\+type \{ trajopt\+::\+Term\+Type\+::\+TT\+\_\+\+CNT \}}
 
 
 

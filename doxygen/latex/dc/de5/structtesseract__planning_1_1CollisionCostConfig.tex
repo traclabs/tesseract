@@ -14,9 +14,9 @@ Config settings for collision cost terms.
 \item 
 \mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_a4e559dd58adf8a7cca8c1984ba73bdfd}{Collision\+Cost\+Config}} ()=default
 \item 
-\mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_ada5bbeb998f67bf7fdcffd5d797fe022}{Collision\+Cost\+Config}} (const tinyxml2\+::\+X\+M\+L\+Element \&xml\+\_\+element)
+\mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_ada5bbeb998f67bf7fdcffd5d797fe022}{Collision\+Cost\+Config}} (const tinyxml2\+::\+XMLElement \&xml\+\_\+element)
 \item 
-tinyxml2\+::\+X\+M\+L\+Element $\ast$ \mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_aaffa2b3d96eb63a19e13957328c76b5a}{to\+X\+ML}} (tinyxml2\+::\+X\+M\+L\+Document \&doc) const
+tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_aaffa2b3d96eb63a19e13957328c76b5a}{to\+XML}} (tinyxml2\+::\+XMLDocument \&doc) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -25,7 +25,7 @@ bool \mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_a35d0062c
 \begin{DoxyCompactList}\small\item\em If true, a collision cost term will be added to the problem. Default\+: true. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_a7aad0f203aff0e2457471598012101b0}{use\+\_\+weighted\+\_\+sum}} = false
 \begin{DoxyCompactList}\small\item\em Use the weighted sum for each link pair. This reduces the number equations added to the problem If set to true, it is recommended to start with the coeff set to one. \end{DoxyCompactList}\item 
-trajopt\+::\+Collision\+Evaluator\+Type \mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_a1219691b8aea784d903ceb5130cf2dba}{type}} = trajopt\+::\+Collision\+Evaluator\+Type\+::\+D\+I\+S\+C\+R\+E\+T\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+O\+US
+trajopt\+::\+Collision\+Evaluator\+Type \mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_a1219691b8aea784d903ceb5130cf2dba}{type}} = trajopt\+::\+Collision\+Evaluator\+Type\+::\+DISCRETE\+\_\+\+CONTINUOUS
 \begin{DoxyCompactList}\small\item\em The evaluator type that will be used for collision checking. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig_a8a016f55ec3c25712678d45e39bd1b63}{safety\+\_\+margin}} = 0.\+025
 \begin{DoxyCompactList}\small\item\em Max distance in which collision costs will be evaluated. \end{DoxyCompactList}\item 
@@ -49,7 +49,7 @@ Config settings for collision cost terms.
 \index{tesseract\_planning::CollisionCostConfig@{tesseract\_planning::CollisionCostConfig}!CollisionCostConfig@{CollisionCostConfig}}
 \index{CollisionCostConfig@{CollisionCostConfig}!tesseract\_planning::CollisionCostConfig@{tesseract\_planning::CollisionCostConfig}}
 \doxysubsubsection{\texorpdfstring{CollisionCostConfig()}{CollisionCostConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+Collision\+Cost\+Config\+::\+Collision\+Cost\+Config (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+Collision\+Cost\+Config\+::\+Collision\+Cost\+Config (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
 
 
 
@@ -58,7 +58,7 @@ Config settings for collision cost terms.
 \index{tesseract\_planning::CollisionCostConfig@{tesseract\_planning::CollisionCostConfig}!toXML@{toXML}}
 \index{toXML@{toXML}!tesseract\_planning::CollisionCostConfig@{tesseract\_planning::CollisionCostConfig}}
 \doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Element $\ast$ tesseract\+\_\+planning\+::\+Collision\+Cost\+Config\+::to\+X\+ML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+X\+M\+L\+Document \&}]{doc }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLElement $\ast$ tesseract\+\_\+planning\+::\+Collision\+Cost\+Config\+::to\+XML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+XMLDocument \&}]{doc }\end{DoxyParamCaption}) const}
 
 
 
@@ -107,7 +107,7 @@ Distance beyond buffer\+\_\+margin in which collision optimization will be evalu
 \index{tesseract\_planning::CollisionCostConfig@{tesseract\_planning::CollisionCostConfig}!type@{type}}
 \index{type@{type}!tesseract\_planning::CollisionCostConfig@{tesseract\_planning::CollisionCostConfig}}
 \doxysubsubsection{\texorpdfstring{type}{type}}
-{\footnotesize\ttfamily trajopt\+::\+Collision\+Evaluator\+Type tesseract\+\_\+planning\+::\+Collision\+Cost\+Config\+::type = trajopt\+::\+Collision\+Evaluator\+Type\+::\+D\+I\+S\+C\+R\+E\+T\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+O\+US}
+{\footnotesize\ttfamily trajopt\+::\+Collision\+Evaluator\+Type tesseract\+\_\+planning\+::\+Collision\+Cost\+Config\+::type = trajopt\+::\+Collision\+Evaluator\+Type\+::\+DISCRETE\+\_\+\+CONTINUOUS}
 
 
 

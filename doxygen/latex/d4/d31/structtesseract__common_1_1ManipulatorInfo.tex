@@ -22,17 +22,17 @@ Collaboration diagram for tesseract\+\_\+common\+::Manipulator\+Info\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_ae3a5fb1060b979532c639ed77d38d9eb}{Manipulator\+Info}} ()=default
+EIGEN\+\_\+\+MAKE\+\_\+\+ALIGNED\+\_\+\+OPERATOR\+\_\+\+NEW \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_ae3a5fb1060b979532c639ed77d38d9eb}{Manipulator\+Info}} ()=default
 \item 
 \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_afd0bfa5fb44531b699bb135f71a4b62b}{Manipulator\+Info}} (std\+::string \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_a01a307e8b4b478b5129294157ad344fd}{manipulator}})
 \item 
-\mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_aa28c7a1e0c281d2e3ae3dee514b3b4b2}{Manipulator\+Info}} (const tinyxml2\+::\+X\+M\+L\+Element \&xml\+\_\+element)
+\mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_aa28c7a1e0c281d2e3ae3dee514b3b4b2}{Manipulator\+Info}} (const tinyxml2\+::\+XMLElement \&xml\+\_\+element)
 \item 
 \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo}{Manipulator\+Info}} \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_afcf7745a4e3ea769fef1122af8cc1fb1}{get\+Combined}} (const \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo}{Manipulator\+Info}} \&manip\+\_\+info\+\_\+override) const
 \begin{DoxyCompactList}\small\item\em If the provided manipulator information member is not empty it will override this and return a new manipualtor information with the combined results. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_a7e57927da4742bb782eeacbe803e556d}{empty}} () const
 \begin{DoxyCompactList}\small\item\em Check if any data is current being stored. \end{DoxyCompactList}\item 
-tinyxml2\+::\+X\+M\+L\+Element $\ast$ \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_ae578d6281a7a48a12e973a434dfa5648}{to\+X\+ML}} (tinyxml2\+::\+X\+M\+L\+Document \&doc) const
+tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_ae578d6281a7a48a12e973a434dfa5648}{to\+XML}} (tinyxml2\+::\+XMLDocument \&doc) const
 \item 
 bool \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo_a9c2c47999e664503a4f5b99787d86b57}{operator==}} (const \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo}{Manipulator\+Info}} \&other) const
 \end{DoxyCompactItemize}
@@ -57,7 +57,7 @@ Contains information about a robot manipulator.
 \index{tesseract\_common::ManipulatorInfo@{tesseract\_common::ManipulatorInfo}!ManipulatorInfo@{ManipulatorInfo}}
 \index{ManipulatorInfo@{ManipulatorInfo}!tesseract\_common::ManipulatorInfo@{tesseract\_common::ManipulatorInfo}}
 \doxysubsubsection{\texorpdfstring{ManipulatorInfo()}{ManipulatorInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW tesseract\+\_\+common\+::\+Manipulator\+Info\+::\+Manipulator\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily EIGEN\+\_\+\+MAKE\+\_\+\+ALIGNED\+\_\+\+OPERATOR\+\_\+\+NEW tesseract\+\_\+common\+::\+Manipulator\+Info\+::\+Manipulator\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 \mbox{\Hypertarget{structtesseract__common_1_1ManipulatorInfo_afd0bfa5fb44531b699bb135f71a4b62b}\label{structtesseract__common_1_1ManipulatorInfo_afd0bfa5fb44531b699bb135f71a4b62b}} 
 \index{tesseract\_common::ManipulatorInfo@{tesseract\_common::ManipulatorInfo}!ManipulatorInfo@{ManipulatorInfo}}
@@ -69,7 +69,7 @@ Contains information about a robot manipulator.
 \index{tesseract\_common::ManipulatorInfo@{tesseract\_common::ManipulatorInfo}!ManipulatorInfo@{ManipulatorInfo}}
 \index{ManipulatorInfo@{ManipulatorInfo}!tesseract\_common::ManipulatorInfo@{tesseract\_common::ManipulatorInfo}}
 \doxysubsubsection{\texorpdfstring{ManipulatorInfo()}{ManipulatorInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily tesseract\+\_\+common\+::\+Manipulator\+Info\+::\+Manipulator\+Info (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily tesseract\+\_\+common\+::\+Manipulator\+Info\+::\+Manipulator\+Info (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
 
 
 
@@ -115,7 +115,7 @@ The combined manipulator information
 \index{tesseract\_common::ManipulatorInfo@{tesseract\_common::ManipulatorInfo}!toXML@{toXML}}
 \index{toXML@{toXML}!tesseract\_common::ManipulatorInfo@{tesseract\_common::ManipulatorInfo}}
 \doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Element $\ast$ tesseract\+\_\+common\+::\+Manipulator\+Info\+::to\+X\+ML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+X\+M\+L\+Document \&}]{doc }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLElement $\ast$ tesseract\+\_\+common\+::\+Manipulator\+Info\+::to\+XML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+XMLDocument \&}]{doc }\end{DoxyParamCaption}) const}
 
 
 

@@ -3,6 +3,8 @@
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \mbox{\hyperlink{classtesseract__geometry_1_1Geometry}{Geometry}}
+\item 
 class \mbox{\hyperlink{classtesseract__geometry_1_1Box}{Box}}
 \item 
 class \mbox{\hyperlink{classtesseract__geometry_1_1Capsule}{Capsule}}
@@ -12,8 +14,6 @@ class \mbox{\hyperlink{classtesseract__geometry_1_1Cone}{Cone}}
 class \mbox{\hyperlink{classtesseract__geometry_1_1ConvexMesh}{Convex\+Mesh}}
 \item 
 class \mbox{\hyperlink{classtesseract__geometry_1_1Cylinder}{Cylinder}}
-\item 
-class \mbox{\hyperlink{classtesseract__geometry_1_1Geometry}{Geometry}}
 \item 
 class \mbox{\hyperlink{classtesseract__geometry_1_1Mesh}{Mesh}}
 \item 
@@ -25,7 +25,7 @@ class \mbox{\hyperlink{classtesseract__geometry_1_1Octree}{Octree}}
 \item 
 class \mbox{\hyperlink{classtesseract__geometry_1_1Plane}{Plane}}
 \item 
-class \mbox{\hyperlink{classtesseract__geometry_1_1SDFMesh}{S\+D\+F\+Mesh}}
+class \mbox{\hyperlink{classtesseract__geometry_1_1SDFMesh}{SDFMesh}}
 \item 
 class \mbox{\hyperlink{classtesseract__geometry_1_1Sphere}{Sphere}}
 \end{DoxyCompactItemize}
@@ -40,18 +40,18 @@ using \mbox{\hyperlink{namespacetesseract__geometry_ae9f8615eaa9a2c7ac430e54ab5e
 \begin{DoxyCompactItemize}
 \item 
 enum \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feb}{Geometry\+Type}} \{ \newline
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febafb20b649d5d1c5441b986a717b632ee3}{S\+P\+H\+E\+RE}}, 
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba7981168389c1e2bece204752fb30023d}{C\+Y\+L\+I\+N\+D\+ER}}, 
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba0d9f34b1d722a71a18f611f7b63cc37b}{C\+A\+P\+S\+U\+LE}}, 
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba27c4f4ab45a9be529e93017bb9b29bed}{C\+O\+NE}}, 
-\newline
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba0d73a200cb122841ab0db4cf1e22be90}{B\+OX}}, 
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba67f39b6bb359d38675adb7dfab65fdb6}{P\+L\+A\+NE}}, 
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febad452813d26ea6530df4492e3ad9f230c}{M\+E\+SH}}, 
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febae0e321886bf5c6aa4c17eafccecf8ac5}{C\+O\+N\+V\+E\+X\+\_\+\+M\+E\+SH}}, 
-\newline
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febaa9adc2ee7a511e5eb8ce7e2ad63ae3d3}{S\+D\+F\+\_\+\+M\+E\+SH}}, 
-\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febaa7b8033ed9f31f599bdc33da2b5b8d83}{O\+C\+T\+R\+EE}}
+\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febafb20b649d5d1c5441b986a717b632ee3}{SPHERE}}
+, \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba7981168389c1e2bece204752fb30023d}{CYLINDER}}
+, \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba0d9f34b1d722a71a18f611f7b63cc37b}{CAPSULE}}
+, \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba27c4f4ab45a9be529e93017bb9b29bed}{CONE}}
+, \newline
+\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba0d73a200cb122841ab0db4cf1e22be90}{BOX}}
+, \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba67f39b6bb359d38675adb7dfab65fdb6}{PLANE}}
+, \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febad452813d26ea6530df4492e3ad9f230c}{MESH}}
+, \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febae0e321886bf5c6aa4c17eafccecf8ac5}{CONVEX\+\_\+\+MESH}}
+, \newline
+\mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febaa9adc2ee7a511e5eb8ce7e2ad63ae3d3}{SDF\+\_\+\+MESH}}
+, \mbox{\hyperlink{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febaa7b8033ed9f31f599bdc33da2b5b8d83}{OCTREE}}
  \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
@@ -100,43 +100,43 @@ static const std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespacetesser
 
 \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{SPHERE@{SPHERE}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!SPHERE@{SPHERE}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febafb20b649d5d1c5441b986a717b632ee3}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febafb20b649d5d1c5441b986a717b632ee3}} 
-S\+P\+H\+E\+RE&\\
+SPHERE&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{CYLINDER@{CYLINDER}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!CYLINDER@{CYLINDER}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba7981168389c1e2bece204752fb30023d}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba7981168389c1e2bece204752fb30023d}} 
-C\+Y\+L\+I\+N\+D\+ER&\\
+CYLINDER&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{CAPSULE@{CAPSULE}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!CAPSULE@{CAPSULE}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba0d9f34b1d722a71a18f611f7b63cc37b}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba0d9f34b1d722a71a18f611f7b63cc37b}} 
-C\+A\+P\+S\+U\+LE&\\
+CAPSULE&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{CONE@{CONE}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!CONE@{CONE}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba27c4f4ab45a9be529e93017bb9b29bed}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba27c4f4ab45a9be529e93017bb9b29bed}} 
-C\+O\+NE&\\
+CONE&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{BOX@{BOX}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!BOX@{BOX}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba0d73a200cb122841ab0db4cf1e22be90}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba0d73a200cb122841ab0db4cf1e22be90}} 
-B\+OX&\\
+BOX&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{PLANE@{PLANE}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!PLANE@{PLANE}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba67f39b6bb359d38675adb7dfab65fdb6}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56feba67f39b6bb359d38675adb7dfab65fdb6}} 
-P\+L\+A\+NE&\\
+PLANE&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{MESH@{MESH}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!MESH@{MESH}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febad452813d26ea6530df4492e3ad9f230c}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febad452813d26ea6530df4492e3ad9f230c}} 
-M\+E\+SH&\\
+MESH&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{CONVEX\_MESH@{CONVEX\_MESH}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!CONVEX\_MESH@{CONVEX\_MESH}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febae0e321886bf5c6aa4c17eafccecf8ac5}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febae0e321886bf5c6aa4c17eafccecf8ac5}} 
-C\+O\+N\+V\+E\+X\+\_\+\+M\+E\+SH&\\
+CONVEX\+\_\+\+MESH&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{SDF\_MESH@{SDF\_MESH}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!SDF\_MESH@{SDF\_MESH}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febaa9adc2ee7a511e5eb8ce7e2ad63ae3d3}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febaa9adc2ee7a511e5eb8ce7e2ad63ae3d3}} 
-S\+D\+F\+\_\+\+M\+E\+SH&\\
+SDF\+\_\+\+MESH&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{OCTREE@{OCTREE}!tesseract\_geometry@{tesseract\_geometry}}\index{tesseract\_geometry@{tesseract\_geometry}!OCTREE@{OCTREE}}}\mbox{\Hypertarget{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febaa7b8033ed9f31f599bdc33da2b5b8d83}\label{namespacetesseract__geometry_a7543d6c1dc8947a3274abdd21fb56febaa7b8033ed9f31f599bdc33da2b5b8d83}} 
-O\+C\+T\+R\+EE&\\
+OCTREE&\\
 \hline
 
 \end{DoxyEnumFields}
@@ -185,7 +185,7 @@ Create a mesh from byte array.
 
 
 \begin{DoxyParams}{Parameters}
-{\em url} & The U\+RL of source resource \\
+{\em url} & The URL of source resource \\
 \hline
 {\em bytes} & Byte array \\
 \hline

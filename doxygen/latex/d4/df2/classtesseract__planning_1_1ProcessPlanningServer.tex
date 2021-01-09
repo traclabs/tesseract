@@ -43,7 +43,7 @@ virtual \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_aa3d9
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer}{Process\+Planning\+Server}} \& \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_a1178d4363732eb47c88ce1fc3d8b49e9}{operator=}} (\mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer}{Process\+Planning\+Server}} \&\&)=default
 \item 
-void \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_aeb6dc48a6d26f9e04f1e2573485ad35d}{register\+Process\+Planner}} (const std\+::string \&name, \mbox{\hyperlink{classtesseract__planning_1_1TaskflowGenerator_a12a647db36094c3b2084e60bec0ad268}{Taskflow\+Generator\+::\+U\+Ptr}} generator)
+void \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_aeb6dc48a6d26f9e04f1e2573485ad35d}{register\+Process\+Planner}} (const std\+::string \&name, \mbox{\hyperlink{classtesseract__planning_1_1TaskflowGenerator_a12a647db36094c3b2084e60bec0ad268}{Taskflow\+Generator\+::\+UPtr}} generator)
 \begin{DoxyCompactList}\small\item\em Register a process planner with the planning server. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_a26a046655f7cdf7476ea7545f902b939}{load\+Default\+Process\+Planners}} ()
 \begin{DoxyCompactList}\small\item\em Load default process planners. \end{DoxyCompactList}\item 
@@ -72,9 +72,9 @@ void \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_a1b47d65
 \item 
 std\+::shared\+\_\+ptr$<$ tf\+::\+Executor $>$ \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_acc2fa854c5cfb08fe24ce0d169f018aa}{executor\+\_\+}}
 \item 
-std\+::shared\+\_\+ptr$<$ tf\+::\+T\+F\+Prof\+Observer $>$ \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_a97fabee9a832bc34caecf3f8d962aee1}{profile\+\_\+observer\+\_\+}}
+std\+::shared\+\_\+ptr$<$ tf\+::\+TFProf\+Observer $>$ \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_a97fabee9a832bc34caecf3f8d962aee1}{profile\+\_\+observer\+\_\+}}
 \item 
-std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classtesseract__planning_1_1TaskflowGenerator_a12a647db36094c3b2084e60bec0ad268}{Taskflow\+Generator\+::\+U\+Ptr}} $>$ \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_a4473171d5be06464c461e76eeabbf4ba}{process\+\_\+planners\+\_\+}}
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classtesseract__planning_1_1TaskflowGenerator_a12a647db36094c3b2084e60bec0ad268}{Taskflow\+Generator\+::\+UPtr}} $>$ \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_a4473171d5be06464c461e76eeabbf4ba}{process\+\_\+planners\+\_\+}}
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1ProfileDictionary_a6ca9e4457bcf32d459ca8d89121a963d}{Profile\+Dictionary\+::\+Ptr}} \mbox{\hyperlink{classtesseract__planning_1_1ProcessPlanningServer_aa1471d06301e3721bbe65e65387c72fb}{profiles\+\_\+}} \{ std\+::make\+\_\+shared$<$\mbox{\hyperlink{classtesseract__planning_1_1ProfileDictionary}{Profile\+Dictionary}}$>$() \}
 \end{DoxyCompactItemize}
@@ -265,7 +265,7 @@ This is not called automatically, so user but call this to load default planners
 \index{tesseract\_planning::ProcessPlanningServer@{tesseract\_planning::ProcessPlanningServer}!registerProcessPlanner@{registerProcessPlanner}}
 \index{registerProcessPlanner@{registerProcessPlanner}!tesseract\_planning::ProcessPlanningServer@{tesseract\_planning::ProcessPlanningServer}}
 \doxysubsubsection{\texorpdfstring{registerProcessPlanner()}{registerProcessPlanner()}}
-{\footnotesize\ttfamily void tesseract\+\_\+planning\+::\+Process\+Planning\+Server\+::register\+Process\+Planner (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classtesseract__planning_1_1TaskflowGenerator_a12a647db36094c3b2084e60bec0ad268}{Taskflow\+Generator\+::\+U\+Ptr}}}]{generator }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void tesseract\+\_\+planning\+::\+Process\+Planning\+Server\+::register\+Process\+Planner (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classtesseract__planning_1_1TaskflowGenerator_a12a647db36094c3b2084e60bec0ad268}{Taskflow\+Generator\+::\+UPtr}}}]{generator }\end{DoxyParamCaption})}
 
 
 
@@ -343,13 +343,13 @@ Wait for all process currently being executed to finish before returning.
 \index{tesseract\_planning::ProcessPlanningServer@{tesseract\_planning::ProcessPlanningServer}!process\_planners\_@{process\_planners\_}}
 \index{process\_planners\_@{process\_planners\_}!tesseract\_planning::ProcessPlanningServer@{tesseract\_planning::ProcessPlanningServer}}
 \doxysubsubsection{\texorpdfstring{process\_planners\_}{process\_planners\_}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{classtesseract__planning_1_1TaskflowGenerator_a12a647db36094c3b2084e60bec0ad268}{Taskflow\+Generator\+::\+U\+Ptr}}$>$ tesseract\+\_\+planning\+::\+Process\+Planning\+Server\+::process\+\_\+planners\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{classtesseract__planning_1_1TaskflowGenerator_a12a647db36094c3b2084e60bec0ad268}{Taskflow\+Generator\+::\+UPtr}}$>$ tesseract\+\_\+planning\+::\+Process\+Planning\+Server\+::process\+\_\+planners\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classtesseract__planning_1_1ProcessPlanningServer_a97fabee9a832bc34caecf3f8d962aee1}\label{classtesseract__planning_1_1ProcessPlanningServer_a97fabee9a832bc34caecf3f8d962aee1}} 
 \index{tesseract\_planning::ProcessPlanningServer@{tesseract\_planning::ProcessPlanningServer}!profile\_observer\_@{profile\_observer\_}}
 \index{profile\_observer\_@{profile\_observer\_}!tesseract\_planning::ProcessPlanningServer@{tesseract\_planning::ProcessPlanningServer}}
 \doxysubsubsection{\texorpdfstring{profile\_observer\_}{profile\_observer\_}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$tf\+::\+T\+F\+Prof\+Observer$>$ tesseract\+\_\+planning\+::\+Process\+Planning\+Server\+::profile\+\_\+observer\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$tf\+::\+TFProf\+Observer$>$ tesseract\+\_\+planning\+::\+Process\+Planning\+Server\+::profile\+\_\+observer\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classtesseract__planning_1_1ProcessPlanningServer_aa1471d06301e3721bbe65e65387c72fb}\label{classtesseract__planning_1_1ProcessPlanningServer_aa1471d06301e3721bbe65e65387c72fb}} 
 \index{tesseract\_planning::ProcessPlanningServer@{tesseract\_planning::ProcessPlanningServer}!profiles\_@{profiles\_}}

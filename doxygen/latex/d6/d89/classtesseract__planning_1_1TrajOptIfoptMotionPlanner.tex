@@ -42,7 +42,7 @@ Collaboration diagram for tesseract\+\_\+planning\+::Traj\+Opt\+Ifopt\+Motion\+P
 const std\+::string \& \mbox{\hyperlink{classtesseract__planning_1_1TrajOptIfoptMotionPlanner_a33ade95277cfdcecae3aad41f3dd3048}{get\+Name}} () const override
 \begin{DoxyCompactList}\small\item\em Get the name of this planner. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtesseract__common_1_1StatusCode}{tesseract\+\_\+common\+::\+Status\+Code}} \mbox{\hyperlink{classtesseract__planning_1_1TrajOptIfoptMotionPlanner_aa86732e70ee5102815d15b896927e14d}{solve}} (const \mbox{\hyperlink{structtesseract__planning_1_1PlannerRequest}{Planner\+Request}} \&request, \mbox{\hyperlink{structtesseract__planning_1_1PlannerResponse}{Planner\+Response}} \&response, bool verbose=false) const override
-\begin{DoxyCompactList}\small\item\em Sets up the opimizer and solves a S\+QP problem read from json with no callbacks and dafault parameterss. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets up the opimizer and solves a SQP problem read from json with no callbacks and dafault parameterss. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__planning_1_1TrajOptIfoptMotionPlanner_ae8cb7f5559e708edbf60e8be77b2cca3}{check\+User\+Input}} (const \mbox{\hyperlink{structtesseract__planning_1_1PlannerRequest}{Planner\+Request}} \&request) const
 \item 
 bool \mbox{\hyperlink{classtesseract__planning_1_1TrajOptIfoptMotionPlanner_ad8b5ef60c1c201b78186f231749df74d}{terminate}} () override
@@ -58,7 +58,7 @@ void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptIfoptMotionPlanner_a67f
 \begin{DoxyCompactList}\small\item\em The available composite profiles. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacetesseract__planning_a1e9bf5e3f3e5c2fc319a1c0c5718313b}{Traj\+Opt\+Ifopt\+Plan\+Profile\+Map}} \mbox{\hyperlink{classtesseract__planning_1_1TrajOptIfoptMotionPlanner_a7393f3967856a1f09162b1e18a4c1d1e}{plan\+\_\+profiles}}
 \begin{DoxyCompactList}\small\item\em The available plan profiles. \end{DoxyCompactList}\item 
-std\+::vector$<$ trajopt\+\_\+sqp\+::\+S\+Q\+P\+Callback\+::\+Ptr $>$ \mbox{\hyperlink{classtesseract__planning_1_1TrajOptIfoptMotionPlanner_aa8c103e093c4dcb6ee452f4db4a5b79c}{callbacks}}
+std\+::vector$<$ trajopt\+\_\+sqp\+::\+SQPCallback\+::\+Ptr $>$ \mbox{\hyperlink{classtesseract__planning_1_1TrajOptIfoptMotionPlanner_aa8c103e093c4dcb6ee452f4db4a5b79c}{callbacks}}
 \begin{DoxyCompactList}\small\item\em Optimization parameters to be used (Optional) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -156,7 +156,7 @@ Implements \mbox{\hyperlink{classtesseract__planning_1_1MotionPlanner_a5b397e6b0
 
 
 
-Sets up the opimizer and solves a S\+QP problem read from json with no callbacks and dafault parameterss. 
+Sets up the opimizer and solves a SQP problem read from json with no callbacks and dafault parameterss. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -171,7 +171,7 @@ Sets up the opimizer and solves a S\+QP problem read from json with no callbacks
 true if optimization complete 
 \end{DoxyReturn}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000044}{Todo}}]Enable solver selection (e.\+g. I\+P\+O\+PT) \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000044}{Todo}}]Enable solver selection (e.\+g. IPOPT) \end{DoxyRefDesc}
 
 
 \begin{DoxyRefDesc}{Todo}
@@ -201,7 +201,7 @@ Implements \mbox{\hyperlink{classtesseract__planning_1_1MotionPlanner_a44afac056
 \index{tesseract\_planning::TrajOptIfoptMotionPlanner@{tesseract\_planning::TrajOptIfoptMotionPlanner}!callbacks@{callbacks}}
 \index{callbacks@{callbacks}!tesseract\_planning::TrajOptIfoptMotionPlanner@{tesseract\_planning::TrajOptIfoptMotionPlanner}}
 \doxysubsubsection{\texorpdfstring{callbacks}{callbacks}}
-{\footnotesize\ttfamily std\+::vector$<$trajopt\+\_\+sqp\+::\+S\+Q\+P\+Callback\+::\+Ptr$>$ tesseract\+\_\+planning\+::\+Traj\+Opt\+Ifopt\+Motion\+Planner\+::callbacks}
+{\footnotesize\ttfamily std\+::vector$<$trajopt\+\_\+sqp\+::\+SQPCallback\+::\+Ptr$>$ tesseract\+\_\+planning\+::\+Traj\+Opt\+Ifopt\+Motion\+Planner\+::callbacks}
 
 
 

@@ -56,7 +56,7 @@ using \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlanner_a82aaf5bc
 const std\+::string \& \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlanner_a592c0a96be9938a36801ad6d0fa18eb8}{get\+Name}} () const override
 \begin{DoxyCompactList}\small\item\em Get the name of this planner. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtesseract__common_1_1StatusCode}{tesseract\+\_\+common\+::\+Status\+Code}} \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlanner_ad11f91679e5a495d0b37c460f52ef5b4}{solve}} (const \mbox{\hyperlink{structtesseract__planning_1_1PlannerRequest}{Planner\+Request}} \&request, \mbox{\hyperlink{structtesseract__planning_1_1PlannerResponse}{Planner\+Response}} \&response, bool verbose=false) const override
-\begin{DoxyCompactList}\small\item\em Sets up the opimizer and solves a S\+QP problem read from json with no callbacks and dafault parameterss. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets up the opimizer and solves a SQP problem read from json with no callbacks and dafault parameterss. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlanner_a068d301a747b8e9f3a0786d4a8ee1c48}{check\+User\+Input}} (const \mbox{\hyperlink{structtesseract__planning_1_1PlannerRequest}{Planner\+Request}} \&request) const
 \item 
 bool \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlanner_a13a6df1d08a2fa9507cf4b9983e55d17}{terminate}} () override
@@ -82,7 +82,7 @@ void \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlanner_a61c68448a
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlanner_a04d7d2166e6a5712b6e09fdec45d2227}{name\+\_\+}} \{ \char`\"{}S\+I\+M\+P\+L\+E\+\_\+\+P\+L\+A\+N\+N\+ER\char`\"{} \}
+std\+::string \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlanner_a04d7d2166e6a5712b6e09fdec45d2227}{name\+\_\+}} \{ \char`\"{}SIMPLE\+\_\+\+PLANNER\char`\"{} \}
 \item 
 std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlannerStatusCategory}{Simple\+Motion\+Planner\+Status\+Category}} $>$ \mbox{\hyperlink{classtesseract__planning_1_1SimpleMotionPlanner_ac7474b5c7478761fdc6c07d4208c4999}{status\+\_\+category\+\_\+}}
 \end{DoxyCompactItemize}
@@ -228,7 +228,7 @@ The planners status codes.
 
 
 
-Sets up the opimizer and solves a S\+QP problem read from json with no callbacks and dafault parameterss. 
+Sets up the opimizer and solves a SQP problem read from json with no callbacks and dafault parameterss. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -277,7 +277,7 @@ Composite instruction is a way to namespace or organize your planning problem. T
 \index{tesseract\_planning::SimpleMotionPlanner@{tesseract\_planning::SimpleMotionPlanner}!name\_@{name\_}}
 \index{name\_@{name\_}!tesseract\_planning::SimpleMotionPlanner@{tesseract\_planning::SimpleMotionPlanner}}
 \doxysubsubsection{\texorpdfstring{name\_}{name\_}}
-{\footnotesize\ttfamily std\+::string tesseract\+\_\+planning\+::\+Simple\+Motion\+Planner\+::name\+\_\+ \{ \char`\"{}S\+I\+M\+P\+L\+E\+\_\+\+P\+L\+A\+N\+N\+ER\char`\"{} \}\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily std\+::string tesseract\+\_\+planning\+::\+Simple\+Motion\+Planner\+::name\+\_\+ \{ \char`\"{}SIMPLE\+\_\+\+PLANNER\char`\"{} \}\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classtesseract__planning_1_1SimpleMotionPlanner_a2a91657b4ded8c734b99a9e4a1ac7ba9}\label{classtesseract__planning_1_1SimpleMotionPlanner_a2a91657b4ded8c734b99a9e4a1ac7ba9}} 
 \index{tesseract\_planning::SimpleMotionPlanner@{tesseract\_planning::SimpleMotionPlanner}!plan\_profiles@{plan\_profiles}}

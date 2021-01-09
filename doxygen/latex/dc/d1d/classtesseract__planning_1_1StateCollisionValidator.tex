@@ -16,7 +16,7 @@ Inheritance diagram for tesseract\+\_\+planning\+::State\+Collision\+Validator\+
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=199pt]{d6/d51/classtesseract__planning_1_1StateCollisionValidator__inherit__graph}
+\includegraphics[width=202pt]{d6/d51/classtesseract__planning_1_1StateCollisionValidator__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -32,7 +32,7 @@ Collaboration diagram for tesseract\+\_\+planning\+::State\+Collision\+Validator
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classtesseract__planning_1_1StateCollisionValidator_a050f0e7ea3f43886cafcf75007d59ff3}{State\+Collision\+Validator}} (const ompl\+::base\+::\+Space\+Information\+Ptr \&space\+\_\+info, \mbox{\hyperlink{classtesseract__environment_1_1Environment_a9d9ecedaebeea1d7ba45be7670fbcd77}{tesseract\+\_\+environment\+::\+Environment\+::\+Const\+Ptr}} env, \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_a2c99fff4d4596e15bfdc4f72ec3b7406}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics\+::\+Const\+Ptr}} kin, const \mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{tesseract\+\_\+collision\+::\+Collision\+Margin\+Data}} \&collision\+\_\+margin\+\_\+data, \mbox{\hyperlink{namespacetesseract__planning_abb4bcd86c07988cf075625fde644e497}{O\+M\+P\+L\+State\+Extractor}} extractor)
+\mbox{\hyperlink{classtesseract__planning_1_1StateCollisionValidator_a050f0e7ea3f43886cafcf75007d59ff3}{State\+Collision\+Validator}} (const ompl\+::base\+::\+Space\+Information\+Ptr \&space\+\_\+info, \mbox{\hyperlink{classtesseract__environment_1_1Environment_a9d9ecedaebeea1d7ba45be7670fbcd77}{tesseract\+\_\+environment\+::\+Environment\+::\+Const\+Ptr}} env, \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_a2c99fff4d4596e15bfdc4f72ec3b7406}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics\+::\+Const\+Ptr}} kin, const \mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{tesseract\+\_\+collision\+::\+Collision\+Margin\+Data}} \&collision\+\_\+margin\+\_\+data, \mbox{\hyperlink{namespacetesseract__planning_abb4bcd86c07988cf075625fde644e497}{OMPLState\+Extractor}} extractor)
 \item 
 bool \mbox{\hyperlink{classtesseract__planning_1_1StateCollisionValidator_ab25ae0da3293bf3d3310fc677e7b6c5a}{is\+Valid}} (const ompl\+::base\+::\+State $\ast$state) const override
 \end{DoxyCompactItemize}
@@ -51,7 +51,7 @@ std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__planning_1_1
 \begin{DoxyCompactList}\small\item\em A list of active links. \end{DoxyCompactList}\item 
 std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__planning_1_1StateCollisionValidator_a77eb25f8720b5fc953747f2183a7366e}{joints\+\_\+}}
 \begin{DoxyCompactList}\small\item\em A list of active joints. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespacetesseract__planning_abb4bcd86c07988cf075625fde644e497}{O\+M\+P\+L\+State\+Extractor}} \mbox{\hyperlink{classtesseract__planning_1_1StateCollisionValidator_a5e88ed387b88754f07bc11a665d4318c}{extractor\+\_\+}}
+\mbox{\hyperlink{namespacetesseract__planning_abb4bcd86c07988cf075625fde644e497}{OMPLState\+Extractor}} \mbox{\hyperlink{classtesseract__planning_1_1StateCollisionValidator_a5e88ed387b88754f07bc11a665d4318c}{extractor\+\_\+}}
 \item 
 std\+::mutex \mbox{\hyperlink{classtesseract__planning_1_1StateCollisionValidator_a836087fe204cc5141ef8f418dfb9af86}{mutex\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Contact manager caching mutex. \end{DoxyCompactList}\item 
@@ -69,7 +69,7 @@ Continuous collision check between two states.
 \index{tesseract\_planning::StateCollisionValidator@{tesseract\_planning::StateCollisionValidator}!StateCollisionValidator@{StateCollisionValidator}}
 \index{StateCollisionValidator@{StateCollisionValidator}!tesseract\_planning::StateCollisionValidator@{tesseract\_planning::StateCollisionValidator}}
 \doxysubsubsection{\texorpdfstring{StateCollisionValidator()}{StateCollisionValidator()}}
-{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+State\+Collision\+Validator\+::\+State\+Collision\+Validator (\begin{DoxyParamCaption}\item[{const ompl\+::base\+::\+Space\+Information\+Ptr \&}]{space\+\_\+info,  }\item[{\mbox{\hyperlink{classtesseract__environment_1_1Environment_a9d9ecedaebeea1d7ba45be7670fbcd77}{tesseract\+\_\+environment\+::\+Environment\+::\+Const\+Ptr}}}]{env,  }\item[{\mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_a2c99fff4d4596e15bfdc4f72ec3b7406}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics\+::\+Const\+Ptr}}}]{kin,  }\item[{const \mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{tesseract\+\_\+collision\+::\+Collision\+Margin\+Data}} \&}]{collision\+\_\+margin\+\_\+data,  }\item[{\mbox{\hyperlink{namespacetesseract__planning_abb4bcd86c07988cf075625fde644e497}{O\+M\+P\+L\+State\+Extractor}}}]{extractor }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+State\+Collision\+Validator\+::\+State\+Collision\+Validator (\begin{DoxyParamCaption}\item[{const ompl\+::base\+::\+Space\+Information\+Ptr \&}]{space\+\_\+info,  }\item[{\mbox{\hyperlink{classtesseract__environment_1_1Environment_a9d9ecedaebeea1d7ba45be7670fbcd77}{tesseract\+\_\+environment\+::\+Environment\+::\+Const\+Ptr}}}]{env,  }\item[{\mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_a2c99fff4d4596e15bfdc4f72ec3b7406}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics\+::\+Const\+Ptr}}}]{kin,  }\item[{const \mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{tesseract\+\_\+collision\+::\+Collision\+Margin\+Data}} \&}]{collision\+\_\+margin\+\_\+data,  }\item[{\mbox{\hyperlink{namespacetesseract__planning_abb4bcd86c07988cf075625fde644e497}{OMPLState\+Extractor}}}]{extractor }\end{DoxyParamCaption})}
 
 
 
@@ -117,9 +117,9 @@ The tesseract state solver \mbox{\Hypertarget{classtesseract__planning_1_1StateC
 \index{tesseract\_planning::StateCollisionValidator@{tesseract\_planning::StateCollisionValidator}!extractor\_@{extractor\_}}
 \index{extractor\_@{extractor\_}!tesseract\_planning::StateCollisionValidator@{tesseract\_planning::StateCollisionValidator}}
 \doxysubsubsection{\texorpdfstring{extractor\_}{extractor\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__planning_abb4bcd86c07988cf075625fde644e497}{O\+M\+P\+L\+State\+Extractor}} tesseract\+\_\+planning\+::\+State\+Collision\+Validator\+::extractor\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__planning_abb4bcd86c07988cf075625fde644e497}{OMPLState\+Extractor}} tesseract\+\_\+planning\+::\+State\+Collision\+Validator\+::extractor\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-@bried This will extract an Eigen\+::\+Vector\+Xd from the O\+M\+PL State \mbox{\Hypertarget{classtesseract__planning_1_1StateCollisionValidator_a77eb25f8720b5fc953747f2183a7366e}\label{classtesseract__planning_1_1StateCollisionValidator_a77eb25f8720b5fc953747f2183a7366e}} 
+@bried This will extract an Eigen\+::\+Vector\+Xd from the OMPL State \mbox{\Hypertarget{classtesseract__planning_1_1StateCollisionValidator_a77eb25f8720b5fc953747f2183a7366e}\label{classtesseract__planning_1_1StateCollisionValidator_a77eb25f8720b5fc953747f2183a7366e}} 
 \index{tesseract\_planning::StateCollisionValidator@{tesseract\_planning::StateCollisionValidator}!joints\_@{joints\_}}
 \index{joints\_@{joints\_}!tesseract\_planning::StateCollisionValidator@{tesseract\_planning::StateCollisionValidator}}
 \doxysubsubsection{\texorpdfstring{joints\_}{joints\_}}

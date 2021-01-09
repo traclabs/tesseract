@@ -22,7 +22,7 @@ Collaboration diagram for tesseract\+\_\+common\+::Tool\+Center\+Point\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_a7b7d64737d302a587d44e765eee61ca3}{Tool\+Center\+Point}} ()=default
+EIGEN\+\_\+\+MAKE\+\_\+\+ALIGNED\+\_\+\+OPERATOR\+\_\+\+NEW \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_a7b7d64737d302a587d44e765eee61ca3}{Tool\+Center\+Point}} ()=default
 \item 
 \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_ae08d0dffe947abf069c90a02ad47bcc4}{Tool\+Center\+Point}} (const std\+::string \&name, bool external=false)
 \begin{DoxyCompactList}\small\item\em Tool Center Point Defined by name. \end{DoxyCompactList}\item 
@@ -56,7 +56,7 @@ std\+::string \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_a54146c
 Eigen\+::\+Isometry3d \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_a63a9146826d1b93736bb155dac2f5c1c}{transform\+\_\+}}
 \item 
 bool \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_a090a3fff3a757612e1adc33dfa3d159e}{external\+\_\+}} \{ false \}
-\begin{DoxyCompactList}\small\item\em The external T\+CP is used when the robot is holding the part versus the tool. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em The external TCP is used when the robot is holding the part versus the tool. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_aff21e2a7af841ce0da176244bf41ad45}{external\+\_\+frame\+\_\+}}
 \begin{DoxyCompactList}\small\item\em If an external tcp was defined as an Isometry then an external can be provided. If empty assumed relative to world. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -69,7 +69,7 @@ Manipulator Info Tool Center Point Definition.
 \index{tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}!ToolCenterPoint@{ToolCenterPoint}}
 \index{ToolCenterPoint@{ToolCenterPoint}!tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}}
 \doxysubsubsection{\texorpdfstring{ToolCenterPoint()}{ToolCenterPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW tesseract\+\_\+common\+::\+Tool\+Center\+Point\+::\+Tool\+Center\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily EIGEN\+\_\+\+MAKE\+\_\+\+ALIGNED\+\_\+\+OPERATOR\+\_\+\+NEW tesseract\+\_\+common\+::\+Tool\+Center\+Point\+::\+Tool\+Center\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 \mbox{\Hypertarget{classtesseract__common_1_1ToolCenterPoint_ae08d0dffe947abf069c90a02ad47bcc4}\label{classtesseract__common_1_1ToolCenterPoint_ae08d0dffe947abf069c90a02ad47bcc4}} 
 \index{tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}!ToolCenterPoint@{ToolCenterPoint}}
@@ -85,7 +85,7 @@ Tool Center Point Defined by name.
 \begin{DoxyParams}{Parameters}
 {\em name} & The tool center point name \\
 \hline
-{\em external} & The external T\+CP is used when the robot is holding the part versus the tool. \\
+{\em external} & The external TCP is used when the robot is holding the part versus the tool. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
@@ -105,7 +105,7 @@ Tool Center Point Defined by transform.
 \begin{DoxyParams}{Parameters}
 {\em transform} & The tool center point transform \\
 \hline
-{\em external} & The external T\+CP is used when the robot is holding the part versus the tool. \\
+{\em external} & The external TCP is used when the robot is holding the part versus the tool. \\
 \hline
 {\em external\+\_\+frame} & If empty assumed relative to world, otherwise the provided tcp is relative to this link. \\
 \hline
@@ -175,8 +175,8 @@ Transform
 
 Check if tool center point is and external tcp which mean it is not defined. 
 
-The external T\+CP is used when the robot is holding the part versus the tool. External should also be set to true when your kinematic object includes a robot and positioner, where the positioner has the tool and the robot is holding the part. Basically anytime the tool is not attached to the tip link of the kinematic chain. \begin{DoxyReturn}{Returns}
-True if and external T\+CP, otherwise the false 
+The external TCP is used when the robot is holding the part versus the tool. External should also be set to true when your kinematic object includes a robot and positioner, where the positioner has the tool and the robot is holding the part. Basically anytime the tool is not attached to the tip link of the kinematic chain. \begin{DoxyReturn}{Returns}
+True if and external TCP, otherwise the false 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__common_1_1ToolCenterPoint_ab930baa1aaa0319cb5930a4ae42407ca}\label{classtesseract__common_1_1ToolCenterPoint_ab930baa1aaa0319cb5930a4ae42407ca}} 
 \index{tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}!isString@{isString}}
@@ -238,7 +238,7 @@ Set the external property.
 
 
 
-The external T\+CP is used when the robot is holding the part versus the tool. 
+The external TCP is used when the robot is holding the part versus the tool. 
 
 External should also be set to true when your kinematic object includes a robot and positioner, where the positioner has the tool and the robot is holding the part. Basically anytime the tool is not attached to the tip link of the kinematic chain. \mbox{\Hypertarget{classtesseract__common_1_1ToolCenterPoint_aff21e2a7af841ce0da176244bf41ad45}\label{classtesseract__common_1_1ToolCenterPoint_aff21e2a7af841ce0da176244bf41ad45}} 
 \index{tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}!external\_frame\_@{external\_frame\_}}

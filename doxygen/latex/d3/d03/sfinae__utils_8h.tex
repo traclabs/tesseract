@@ -40,17 +40,17 @@ struct \mbox{\hyperlink{structtesseract__common_1_1has__member}{tesseract\+\_\+c
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{sfinae__utils_8h_ab4fc7d2cccbb97d55e21010335cb36e2}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+C\+H\+E\+CK}}(member)
+\#define \mbox{\hyperlink{sfinae__utils_8h_ab4fc7d2cccbb97d55e21010335cb36e2}{CREATE\+\_\+\+MEMBER\+\_\+\+CHECK}}(member)
 \begin{DoxyCompactList}\small\item\em Check for member x in a given class. Could be var, func, class, union, or enum\+: \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{sfinae__utils_8h_a96dcf3342ffbb45c8cce82a85b91efc0}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+I\+N\+V\+O\+C\+A\+B\+L\+E\+\_\+\+C\+H\+E\+CK}}(func\+\_\+name, ...)
+\#define \mbox{\hyperlink{sfinae__utils_8h_a96dcf3342ffbb45c8cce82a85b91efc0}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+INVOCABLE\+\_\+\+CHECK}}(func\+\_\+name, ...)
 \begin{DoxyCompactList}\small\item\em Check if a member function is invocable with the provided input types. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{sfinae__utils_8h_aed711533dcaf344ba098e7f2128c3655}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+H\+E\+CK}}(func\+\_\+name,  return\+\_\+type, ...)
+\#define \mbox{\hyperlink{sfinae__utils_8h_aed711533dcaf344ba098e7f2128c3655}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+RETURN\+\_\+\+TYPE\+\_\+\+CHECK}}(func\+\_\+name,  return\+\_\+type, ...)
 \begin{DoxyCompactList}\small\item\em Check if a member function has a given return type with input parameters. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{sfinae__utils_8h_ae42782198c5d4bc38afda33ad12cddcb}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+A\+R\+G\+S\+\_\+\+C\+H\+E\+CK}}(func\+\_\+name,  return\+\_\+type)
+\#define \mbox{\hyperlink{sfinae__utils_8h_ae42782198c5d4bc38afda33ad12cddcb}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+RETURN\+\_\+\+TYPE\+\_\+\+NOARGS\+\_\+\+CHECK}}(func\+\_\+name,  return\+\_\+type)
 \begin{DoxyCompactList}\small\item\em Check if a member function has a given return type that takes no arguments. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{sfinae__utils_8h_ae4346ab46e4c15e532c077c4ce735873}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+C\+H\+E\+CK}}(func\+\_\+name,  return\+\_\+type, ...)
+\#define \mbox{\hyperlink{sfinae__utils_8h_ae4346ab46e4c15e532c077c4ce735873}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+SIGNATURE\+\_\+\+CHECK}}(func\+\_\+name,  return\+\_\+type, ...)
 \begin{DoxyCompactList}\small\item\em Check if a member function has a given return type. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{sfinae__utils_8h_adb3d1d45a0c6ead71dda4be85bcc508c}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+N\+O\+A\+R\+G\+S\+\_\+\+C\+H\+E\+CK}}(func\+\_\+name,  return\+\_\+type)
+\#define \mbox{\hyperlink{sfinae__utils_8h_adb3d1d45a0c6ead71dda4be85bcc508c}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+SIGNATURE\+\_\+\+NOARGS\+\_\+\+CHECK}}(func\+\_\+name,  return\+\_\+type)
 \begin{DoxyCompactList}\small\item\em Check if a member function has a given return type that takes no arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -59,7 +59,7 @@ struct \mbox{\hyperlink{structtesseract__common_1_1has__member}{tesseract\+\_\+c
 \index{sfinae\_utils.h@{sfinae\_utils.h}!CREATE\_MEMBER\_CHECK@{CREATE\_MEMBER\_CHECK}}
 \index{CREATE\_MEMBER\_CHECK@{CREATE\_MEMBER\_CHECK}!sfinae\_utils.h@{sfinae\_utils.h}}
 \doxysubsubsection{\texorpdfstring{CREATE\_MEMBER\_CHECK}{CREATE\_MEMBER\_CHECK}}
-{\footnotesize\ttfamily \#define C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{member }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+MEMBER\+\_\+\+CHECK(\begin{DoxyParamCaption}\item[{}]{member }\end{DoxyParamCaption})}
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
@@ -91,7 +91,7 @@ struct \mbox{\hyperlink{structtesseract__common_1_1has__member}{tesseract\+\_\+c
 
 Check for member x in a given class. Could be var, func, class, union, or enum\+: 
 
-\mbox{\hyperlink{sfinae__utils_8h_ab4fc7d2cccbb97d55e21010335cb36e2}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+C\+H\+E\+C\+K(x)}}; bool has\+\_\+x = has\+\_\+member\+\_\+x$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+x$>$\+::value;
+\mbox{\hyperlink{sfinae__utils_8h_ab4fc7d2cccbb97d55e21010335cb36e2}{CREATE\+\_\+\+MEMBER\+\_\+\+CHECK(x)}}; bool has\+\_\+x = has\+\_\+member\+\_\+x$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+x$>$\+::value;
 
 \begin{DoxyNote}{Note}
 Also useful to add static assert in constructor to provide useful message static\+\_\+assert(has\+\_\+member\+\_\+x$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+x$>$\+::value, \char`\"{}\+Class does not have member function \textquotesingle{}x\textquotesingle{}\char`\"{}); 
@@ -100,7 +100,7 @@ Also useful to add static assert in constructor to provide useful message static
 \index{sfinae\_utils.h@{sfinae\_utils.h}!CREATE\_MEMBER\_FUNC\_INVOCABLE\_CHECK@{CREATE\_MEMBER\_FUNC\_INVOCABLE\_CHECK}}
 \index{CREATE\_MEMBER\_FUNC\_INVOCABLE\_CHECK@{CREATE\_MEMBER\_FUNC\_INVOCABLE\_CHECK}!sfinae\_utils.h@{sfinae\_utils.h}}
 \doxysubsubsection{\texorpdfstring{CREATE\_MEMBER\_FUNC\_INVOCABLE\_CHECK}{CREATE\_MEMBER\_FUNC\_INVOCABLE\_CHECK}}
-{\footnotesize\ttfamily \#define C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+I\+N\+V\+O\+C\+A\+B\+L\+E\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+INVOCABLE\+\_\+\+CHECK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
@@ -123,11 +123,11 @@ Also useful to add static assert in constructor to provide useful message static
 
 Check if a member function is invocable with the provided input types. 
 
-Check if the class has a function named add which takes two double as arguments \mbox{\hyperlink{sfinae__utils_8h_a96dcf3342ffbb45c8cce82a85b91efc0}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+I\+N\+V\+O\+C\+A\+B\+L\+E\+\_\+\+C\+H\+E\+C\+K(add, double, double)}} bool has\+\_\+add\+\_\+invocable = has\+\_\+member\+\_\+func\+\_\+invocable\+\_\+add$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+add\+\_\+invocable$>$\+::value; \mbox{\Hypertarget{sfinae__utils_8h_aed711533dcaf344ba098e7f2128c3655}\label{sfinae__utils_8h_aed711533dcaf344ba098e7f2128c3655}} 
+Check if the class has a function named add which takes two double as arguments \mbox{\hyperlink{sfinae__utils_8h_a96dcf3342ffbb45c8cce82a85b91efc0}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+INVOCABLE\+\_\+\+CHECK(add, double, double)}} bool has\+\_\+add\+\_\+invocable = has\+\_\+member\+\_\+func\+\_\+invocable\+\_\+add$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+add\+\_\+invocable$>$\+::value; \mbox{\Hypertarget{sfinae__utils_8h_aed711533dcaf344ba098e7f2128c3655}\label{sfinae__utils_8h_aed711533dcaf344ba098e7f2128c3655}} 
 \index{sfinae\_utils.h@{sfinae\_utils.h}!CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_CHECK@{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_CHECK}}
 \index{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_CHECK@{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_CHECK}!sfinae\_utils.h@{sfinae\_utils.h}}
 \doxysubsubsection{\texorpdfstring{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_CHECK}{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_CHECK}}
-{\footnotesize\ttfamily \#define C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{return\+\_\+type,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+RETURN\+\_\+\+TYPE\+\_\+\+CHECK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{return\+\_\+type,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
@@ -151,11 +151,11 @@ Check if the class has a function named add which takes two double as arguments 
 
 Check if a member function has a given return type with input parameters. 
 
-Check if the class has a function named add with return type followed function parameters \mbox{\hyperlink{sfinae__utils_8h_aed711533dcaf344ba098e7f2128c3655}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+H\+E\+C\+K(add, double, double, double)}} bool has\+\_\+add\+\_\+return\+\_\+type = has\+\_\+member\+\_\+func\+\_\+return\+\_\+type\+\_\+add$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+add\+\_\+return\+\_\+type$>$\+::value; \mbox{\Hypertarget{sfinae__utils_8h_ae42782198c5d4bc38afda33ad12cddcb}\label{sfinae__utils_8h_ae42782198c5d4bc38afda33ad12cddcb}} 
+Check if the class has a function named add with return type followed function parameters \mbox{\hyperlink{sfinae__utils_8h_aed711533dcaf344ba098e7f2128c3655}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+RETURN\+\_\+\+TYPE\+\_\+\+CHECK(add, double, double, double)}} bool has\+\_\+add\+\_\+return\+\_\+type = has\+\_\+member\+\_\+func\+\_\+return\+\_\+type\+\_\+add$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+add\+\_\+return\+\_\+type$>$\+::value; \mbox{\Hypertarget{sfinae__utils_8h_ae42782198c5d4bc38afda33ad12cddcb}\label{sfinae__utils_8h_ae42782198c5d4bc38afda33ad12cddcb}} 
 \index{sfinae\_utils.h@{sfinae\_utils.h}!CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_NOARGS\_CHECK@{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_NOARGS\_CHECK}}
 \index{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_NOARGS\_CHECK@{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_NOARGS\_CHECK}!sfinae\_utils.h@{sfinae\_utils.h}}
 \doxysubsubsection{\texorpdfstring{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_NOARGS\_CHECK}{CREATE\_MEMBER\_FUNC\_RETURN\_TYPE\_NOARGS\_CHECK}}
-{\footnotesize\ttfamily \#define C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+A\+R\+G\+S\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{return\+\_\+type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+RETURN\+\_\+\+TYPE\+\_\+\+NOARGS\+\_\+\+CHECK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{return\+\_\+type }\end{DoxyParamCaption})}
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
@@ -180,11 +180,11 @@ Check if the class has a function named add with return type followed function p
 
 Check if a member function has a given return type that takes no arguments. 
 
-Check if the class has a function named add with return type \mbox{\hyperlink{sfinae__utils_8h_ae42782198c5d4bc38afda33ad12cddcb}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+A\+R\+G\+S\+\_\+\+C\+H\+E\+C\+K(update, bool)}} bool has\+\_\+update\+\_\+return\+\_\+type = has\+\_\+member\+\_\+func\+\_\+return\+\_\+type\+\_\+update$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+update\+\_\+return\+\_\+type$>$\+::value; \mbox{\Hypertarget{sfinae__utils_8h_ae4346ab46e4c15e532c077c4ce735873}\label{sfinae__utils_8h_ae4346ab46e4c15e532c077c4ce735873}} 
+Check if the class has a function named add with return type \mbox{\hyperlink{sfinae__utils_8h_ae42782198c5d4bc38afda33ad12cddcb}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+RETURN\+\_\+\+TYPE\+\_\+\+NOARGS\+\_\+\+CHECK(update, bool)}} bool has\+\_\+update\+\_\+return\+\_\+type = has\+\_\+member\+\_\+func\+\_\+return\+\_\+type\+\_\+update$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+update\+\_\+return\+\_\+type$>$\+::value; \mbox{\Hypertarget{sfinae__utils_8h_ae4346ab46e4c15e532c077c4ce735873}\label{sfinae__utils_8h_ae4346ab46e4c15e532c077c4ce735873}} 
 \index{sfinae\_utils.h@{sfinae\_utils.h}!CREATE\_MEMBER\_FUNC\_SIGNATURE\_CHECK@{CREATE\_MEMBER\_FUNC\_SIGNATURE\_CHECK}}
 \index{CREATE\_MEMBER\_FUNC\_SIGNATURE\_CHECK@{CREATE\_MEMBER\_FUNC\_SIGNATURE\_CHECK}!sfinae\_utils.h@{sfinae\_utils.h}}
 \doxysubsubsection{\texorpdfstring{CREATE\_MEMBER\_FUNC\_SIGNATURE\_CHECK}{CREATE\_MEMBER\_FUNC\_SIGNATURE\_CHECK}}
-{\footnotesize\ttfamily \#define C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{return\+\_\+type,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+SIGNATURE\+\_\+\+CHECK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{return\+\_\+type,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
@@ -210,11 +210,11 @@ Check if the class has a function named add with return type \mbox{\hyperlink{sf
 
 Check if a member function has a given return type. 
 
-Check if the class has a function named add with return type followed function parameters \mbox{\hyperlink{sfinae__utils_8h_ae4346ab46e4c15e532c077c4ce735873}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+C\+H\+E\+C\+K(add, double, double, double)}} bool has\+\_\+add\+\_\+signature = has\+\_\+member\+\_\+func\+\_\+signature\+\_\+add$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+add\+\_\+signature$>$\+::value; \mbox{\Hypertarget{sfinae__utils_8h_adb3d1d45a0c6ead71dda4be85bcc508c}\label{sfinae__utils_8h_adb3d1d45a0c6ead71dda4be85bcc508c}} 
+Check if the class has a function named add with return type followed function parameters \mbox{\hyperlink{sfinae__utils_8h_ae4346ab46e4c15e532c077c4ce735873}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+SIGNATURE\+\_\+\+CHECK(add, double, double, double)}} bool has\+\_\+add\+\_\+signature = has\+\_\+member\+\_\+func\+\_\+signature\+\_\+add$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+add\+\_\+signature$>$\+::value; \mbox{\Hypertarget{sfinae__utils_8h_adb3d1d45a0c6ead71dda4be85bcc508c}\label{sfinae__utils_8h_adb3d1d45a0c6ead71dda4be85bcc508c}} 
 \index{sfinae\_utils.h@{sfinae\_utils.h}!CREATE\_MEMBER\_FUNC\_SIGNATURE\_NOARGS\_CHECK@{CREATE\_MEMBER\_FUNC\_SIGNATURE\_NOARGS\_CHECK}}
 \index{CREATE\_MEMBER\_FUNC\_SIGNATURE\_NOARGS\_CHECK@{CREATE\_MEMBER\_FUNC\_SIGNATURE\_NOARGS\_CHECK}!sfinae\_utils.h@{sfinae\_utils.h}}
 \doxysubsubsection{\texorpdfstring{CREATE\_MEMBER\_FUNC\_SIGNATURE\_NOARGS\_CHECK}{CREATE\_MEMBER\_FUNC\_SIGNATURE\_NOARGS\_CHECK}}
-{\footnotesize\ttfamily \#define C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+N\+O\+A\+R\+G\+S\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{return\+\_\+type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+SIGNATURE\+\_\+\+NOARGS\+\_\+\+CHECK(\begin{DoxyParamCaption}\item[{}]{func\+\_\+name,  }\item[{}]{return\+\_\+type }\end{DoxyParamCaption})}
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
@@ -240,4 +240,4 @@ Check if the class has a function named add with return type followed function p
 
 Check if a member function has a given return type that takes no arguments. 
 
-Check if the class has a function named add with return type \mbox{\hyperlink{sfinae__utils_8h_adb3d1d45a0c6ead71dda4be85bcc508c}{C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+N\+C\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+N\+O\+A\+R\+G\+S\+\_\+\+C\+H\+E\+C\+K(add, double)}} bool has\+\_\+add\+\_\+signature = has\+\_\+member\+\_\+func\+\_\+signature\+\_\+add$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+add\+\_\+signature$>$\+::value; 
+Check if the class has a function named add with return type \mbox{\hyperlink{sfinae__utils_8h_adb3d1d45a0c6ead71dda4be85bcc508c}{CREATE\+\_\+\+MEMBER\+\_\+\+FUNC\+\_\+\+SIGNATURE\+\_\+\+NOARGS\+\_\+\+CHECK(add, double)}} bool has\+\_\+add\+\_\+signature = has\+\_\+member\+\_\+func\+\_\+signature\+\_\+add$<$class\+\_\+to\+\_\+check\+\_\+for\+\_\+add\+\_\+signature$>$\+::value; 

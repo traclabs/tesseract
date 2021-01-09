@@ -22,7 +22,7 @@ Collaboration diagram for tesseract\+\_\+collision\+::Collision\+Check\+Config\+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_ace6df418a14118d344749e6dfe94d072}{Collision\+Check\+Config}} (double default\+\_\+margin=0, \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}} request=\mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}}(), \mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41ac}{Collision\+Evaluator\+Type}} \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_a8302b712dd4f9f4daa469f0d1e8badcb}{type}}=Collision\+Evaluator\+Type\+::\+D\+I\+S\+C\+R\+E\+TE, double \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_a72a070a64802f499869bb995242f9065}{longest\+\_\+valid\+\_\+segment\+\_\+length}}=0.\+005)
+\mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_ace6df418a14118d344749e6dfe94d072}{Collision\+Check\+Config}} (double default\+\_\+margin=0, \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}} request=\mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}}(), \mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41ac}{Collision\+Evaluator\+Type}} \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_a8302b712dd4f9f4daa469f0d1e8badcb}{type}}=\mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41aca947436f2927405d3b5997a9ffbaee5c1}{Collision\+Evaluator\+Type\+::\+DISCRETE}}, double \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_a72a070a64802f499869bb995242f9065}{longest\+\_\+valid\+\_\+segment\+\_\+length}}=0.\+005)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -30,9 +30,9 @@ Collaboration diagram for tesseract\+\_\+collision\+::Collision\+Check\+Config\+
 \mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_a396d3bbd4a21240e02929b431867f67f}{collision\+\_\+margin\+\_\+data}}
 \begin{DoxyCompactList}\small\item\em Stores information about how the margins allowed between collision objects. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}} \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_a4a97e5373546778882e201190c0367ae}{contact\+\_\+request}}
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}} that will be used for this check. Default test type\+: F\+I\+R\+ST. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}} that will be used for this check. Default test type\+: FIRST. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41ac}{Collision\+Evaluator\+Type}} \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_a8302b712dd4f9f4daa469f0d1e8badcb}{type}}
-\begin{DoxyCompactList}\small\item\em Specifies the type of collision check to be performed. Default\+: D\+I\+S\+C\+R\+E\+TE. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Specifies the type of collision check to be performed. Default\+: DISCRETE. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig_a72a070a64802f499869bb995242f9065}{longest\+\_\+valid\+\_\+segment\+\_\+length}} \{ 0.\+005 \}
 \begin{DoxyCompactList}\small\item\em Longest valid segment to use if type supports lvs. Default\+: 0.\+005. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -45,7 +45,7 @@ This is a high level structure containing common information that collision chec
 \index{tesseract\_collision::CollisionCheckConfig@{tesseract\_collision::CollisionCheckConfig}!CollisionCheckConfig@{CollisionCheckConfig}}
 \index{CollisionCheckConfig@{CollisionCheckConfig}!tesseract\_collision::CollisionCheckConfig@{tesseract\_collision::CollisionCheckConfig}}
 \doxysubsubsection{\texorpdfstring{CollisionCheckConfig()}{CollisionCheckConfig()}}
-{\footnotesize\ttfamily tesseract\+\_\+collision\+::\+Collision\+Check\+Config\+::\+Collision\+Check\+Config (\begin{DoxyParamCaption}\item[{double}]{default\+\_\+margin = {\ttfamily 0},  }\item[{\mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}}}]{request = {\ttfamily \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}}()},  }\item[{\mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41ac}{Collision\+Evaluator\+Type}}}]{type = {\ttfamily CollisionEvaluatorType\+:\+:DISCRETE},  }\item[{double}]{longest\+\_\+valid\+\_\+segment\+\_\+length = {\ttfamily 0.005} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tesseract\+\_\+collision\+::\+Collision\+Check\+Config\+::\+Collision\+Check\+Config (\begin{DoxyParamCaption}\item[{double}]{default\+\_\+margin = {\ttfamily 0},  }\item[{\mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}}}]{request = {\ttfamily \mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}}()},  }\item[{\mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41ac}{Collision\+Evaluator\+Type}}}]{type = {\ttfamily \mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed1ba1aec41aca947436f2927405d3b5997a9ffbaee5c1}{Collision\+Evaluator\+Type\+::\+DISCRETE}}},  }\item[{double}]{longest\+\_\+valid\+\_\+segment\+\_\+length = {\ttfamily 0.005} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -68,7 +68,7 @@ Stores information about how the margins allowed between collision objects.
 
 
 
-\mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}} that will be used for this check. Default test type\+: F\+I\+R\+ST. 
+\mbox{\hyperlink{structtesseract__collision_1_1ContactRequest}{Contact\+Request}} that will be used for this check. Default test type\+: FIRST. 
 
 \mbox{\Hypertarget{structtesseract__collision_1_1CollisionCheckConfig_a72a070a64802f499869bb995242f9065}\label{structtesseract__collision_1_1CollisionCheckConfig_a72a070a64802f499869bb995242f9065}} 
 \index{tesseract\_collision::CollisionCheckConfig@{tesseract\_collision::CollisionCheckConfig}!longest\_valid\_segment\_length@{longest\_valid\_segment\_length}}
@@ -88,7 +88,7 @@ Longest valid segment to use if type supports lvs. Default\+: 0.\+005.
 
 
 
-Specifies the type of collision check to be performed. Default\+: D\+I\+S\+C\+R\+E\+TE. 
+Specifies the type of collision check to be performed. Default\+: DISCRETE. 
 
 
 

@@ -3,38 +3,38 @@
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{structtesseract__common_1_1ambiguate}{ambiguate}}
-\item 
-class \mbox{\hyperlink{classtesseract__common_1_1BytesResource}{Bytes\+Resource}}
-\item 
 class \mbox{\hyperlink{classtesseract__common_1_1CloneCache}{Clone\+Cache}}
 \begin{DoxyCompactList}\small\item\em Used to create a cache of objects. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classtesseract__common_1_1GeneralStatusCategory}{General\+Status\+Category}}
+class \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}}
+\begin{DoxyCompactList}\small\item\em Manipulator Info Tool Center Point Definition. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo}{Manipulator\+Info}}
+\begin{DoxyCompactList}\small\item\em Contains information about a robot manipulator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classtesseract__common_1_1Resource}{Resource}}
+\begin{DoxyCompactList}\small\item\em Represents resource data available from a file or url. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classtesseract__common_1_1BytesResource}{Bytes\+Resource}}
+\item 
+struct \mbox{\hyperlink{structtesseract__common_1_1ambiguate}{ambiguate}}
 \item 
 struct \mbox{\hyperlink{structtesseract__common_1_1got__type}{got\+\_\+type}}
 \item 
 struct \mbox{\hyperlink{structtesseract__common_1_1got__type_3_01A_01_4}{got\+\_\+type$<$ A $>$}}
 \item 
+struct \mbox{\hyperlink{structtesseract__common_1_1sig__check}{sig\+\_\+check}}
+\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1has__member}{has\+\_\+member}}
+\item 
+class \mbox{\hyperlink{classtesseract__common_1_1StatusCategory}{Status\+Category}}
+\item 
+class \mbox{\hyperlink{classtesseract__common_1_1GeneralStatusCategory}{General\+Status\+Category}}
+\item 
+class \mbox{\hyperlink{classtesseract__common_1_1StatusCode}{Status\+Code}}
+\item 
+struct \mbox{\hyperlink{structtesseract__common_1_1PairHash}{Pair\+Hash}}
 \item 
 struct \mbox{\hyperlink{structtesseract__common_1_1JointTrajectory}{Joint\+Trajectory}}
 \begin{DoxyCompactList}\small\item\em Represents a joint trajectory. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}}
-\begin{DoxyCompactList}\small\item\em Store kinematic limits. \end{DoxyCompactList}\item 
-struct \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo}{Manipulator\+Info}}
-\begin{DoxyCompactList}\small\item\em Contains information about a robot manipulator. \end{DoxyCompactList}\item 
-struct \mbox{\hyperlink{structtesseract__common_1_1PairHash}{Pair\+Hash}}
-\item 
-class \mbox{\hyperlink{classtesseract__common_1_1Resource}{Resource}}
-\begin{DoxyCompactList}\small\item\em Represents resource data available from a file or url. \end{DoxyCompactList}\item 
-struct \mbox{\hyperlink{structtesseract__common_1_1sig__check}{sig\+\_\+check}}
-\item 
-class \mbox{\hyperlink{classtesseract__common_1_1StatusCategory}{Status\+Category}}
-\item 
-class \mbox{\hyperlink{classtesseract__common_1_1StatusCode}{Status\+Code}}
-\item 
-class \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}}
-\begin{DoxyCompactList}\small\item\em Manipulator Info Tool Center Point Definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Store kinematic limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
@@ -83,19 +83,19 @@ bool \mbox{\hyperlink{namespacetesseract__common_aaedf0e7043da047ab5a970a5669cf5
 \begin{DoxyCompactList}\small\item\em Check if two vector of strings are identical. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{namespacetesseract__common_a1077809c98ad8bf5262e426cff6e63a3}{get\+Timestamp\+String}} ()
 \begin{DoxyCompactList}\small\item\em Get Timestamp string. \end{DoxyCompactList}\item 
-tinyxml2\+::\+X\+M\+L\+Error \mbox{\hyperlink{namespacetesseract__common_ae1a3ebd3610dce6d24cc7569606fd9ab}{Query\+String\+Value}} (const tinyxml2\+::\+X\+M\+L\+Element $\ast$xml\+\_\+element, std\+::string \&value)
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ae1a3ebd3610dce6d24cc7569606fd9ab}{Query\+String\+Value}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, std\+::string \&value)
 \begin{DoxyCompactList}\small\item\em Query a string value from xml element. \end{DoxyCompactList}\item 
-tinyxml2\+::\+X\+M\+L\+Error \mbox{\hyperlink{namespacetesseract__common_ab95676b5418063a1d7c84fbba4ff1fe0}{Query\+String\+Text}} (const tinyxml2\+::\+X\+M\+L\+Element $\ast$xml\+\_\+element, std\+::string \&text)
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ab95676b5418063a1d7c84fbba4ff1fe0}{Query\+String\+Text}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, std\+::string \&text)
 \begin{DoxyCompactList}\small\item\em Query a string Text from xml element. \end{DoxyCompactList}\item 
-tinyxml2\+::\+X\+M\+L\+Error \mbox{\hyperlink{namespacetesseract__common_ad3e6914a612484e89bf86c60198b6cdc}{Query\+String\+Value}} (const tinyxml2\+::\+X\+M\+L\+Attribute $\ast$xml\+\_\+attribute, std\+::string \&value)
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ad3e6914a612484e89bf86c60198b6cdc}{Query\+String\+Value}} (const tinyxml2\+::\+XMLAttribute $\ast$xml\+\_\+attribute, std\+::string \&value)
 \begin{DoxyCompactList}\small\item\em Query a string value from xml attribute. \end{DoxyCompactList}\item 
-tinyxml2\+::\+X\+M\+L\+Error \mbox{\hyperlink{namespacetesseract__common_a22a4a1b896230ca84cce7aae2e21673a}{Query\+String\+Attribute}} (const tinyxml2\+::\+X\+M\+L\+Element $\ast$xml\+\_\+element, const char $\ast$name, std\+::string \&value)
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_a22a4a1b896230ca84cce7aae2e21673a}{Query\+String\+Attribute}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, std\+::string \&value)
 \begin{DoxyCompactList}\small\item\em Query a string attribute from an xml element. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{namespacetesseract__common_aadfa4845aecc119ae62b37e59c6ee168}{String\+Attribute}} (const tinyxml2\+::\+X\+M\+L\+Element $\ast$xml\+\_\+element, const char $\ast$name, std\+::string default\+\_\+value)
+std\+::string \mbox{\hyperlink{namespacetesseract__common_aadfa4845aecc119ae62b37e59c6ee168}{String\+Attribute}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, std\+::string default\+\_\+value)
 \begin{DoxyCompactList}\small\item\em Get string attribute if exist. If it does not exist it returns the default value. \end{DoxyCompactList}\item 
-tinyxml2\+::\+X\+M\+L\+Error \mbox{\hyperlink{namespacetesseract__common_a609734264f8b63f5c7815871c40b231f}{Query\+String\+Attribute\+Required}} (const tinyxml2\+::\+X\+M\+L\+Element $\ast$xml\+\_\+element, const char $\ast$name, std\+::string \&value)
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_a609734264f8b63f5c7815871c40b231f}{Query\+String\+Attribute\+Required}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, std\+::string \&value)
 \begin{DoxyCompactList}\small\item\em Query a string attribute from an xml element and print error log. \end{DoxyCompactList}\item 
-tinyxml2\+::\+X\+M\+L\+Error \mbox{\hyperlink{namespacetesseract__common_ab5ec94b62bea51b6e40598e0f8e7a6c3}{Query\+Double\+Attribute\+Required}} (const tinyxml2\+::\+X\+M\+L\+Element $\ast$xml\+\_\+element, const char $\ast$name, double \&value)
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ab5ec94b62bea51b6e40598e0f8e7a6c3}{Query\+Double\+Attribute\+Required}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, double \&value)
 \begin{DoxyCompactList}\small\item\em Query a double attribute from an xml element and print error log. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__common_a1ce86f1e809df1ac04fef0b5cf396fe2}{almost\+Equal\+Relative\+And\+Abs}} (double a, double b, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
 \begin{DoxyCompactList}\small\item\em Check if two double are relatively equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -323,13 +323,13 @@ Link\+Names\+Pair a lexicographically sorted pair of strings
 \index{tesseract\_common@{tesseract\_common}!QueryDoubleAttributeRequired@{QueryDoubleAttributeRequired}}
 \index{QueryDoubleAttributeRequired@{QueryDoubleAttributeRequired}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryDoubleAttributeRequired()}{QueryDoubleAttributeRequired()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Error tesseract\+\_\+common\+::\+Query\+Double\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{double \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+Double\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{double \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Query a double attribute from an xml element and print error log. 
 
-This is the same Query\+Double\+Attribute but it will print out error messages for the failure conditions so the user only needs to check for the tinyxml2\+::\+X\+M\+L\+\_\+\+S\+U\+C\+C\+E\+SS since it is a required attribute.
+This is the same Query\+Double\+Attribute but it will print out error messages for the failure conditions so the user only needs to check for the tinyxml2\+::\+XML\+\_\+\+SUCCESS since it is a required attribute.
 
 
 \begin{DoxyParams}{Parameters}
@@ -341,13 +341,13 @@ This is the same Query\+Double\+Attribute but it will print out error messages f
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-tinyxml2\+::\+X\+M\+L\+\_\+\+S\+U\+C\+C\+E\+SS if successful, otherwise returns tinyxml2\+::\+X\+M\+L\+\_\+\+N\+O\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE or tinyxml2\+::\+X\+M\+L\+\_\+\+W\+R\+O\+N\+G\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+T\+Y\+PE 
+tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+XML\+\_\+\+NO\+\_\+\+ATTRIBUTE or tinyxml2\+::\+XML\+\_\+\+WRONG\+\_\+\+ATTRIBUTE\+\_\+\+TYPE 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_a22a4a1b896230ca84cce7aae2e21673a}\label{namespacetesseract__common_a22a4a1b896230ca84cce7aae2e21673a}} 
 \index{tesseract\_common@{tesseract\_common}!QueryStringAttribute@{QueryStringAttribute}}
 \index{QueryStringAttribute@{QueryStringAttribute}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringAttribute()}{QueryStringAttribute()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Error tesseract\+\_\+common\+::\+Query\+String\+Attribute (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Attribute (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -363,19 +363,19 @@ Query a string attribute from an xml element.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-tinyxml2\+::\+X\+M\+L\+\_\+\+S\+U\+C\+C\+E\+SS if successful, otherwise returns tinyxml2\+::\+X\+M\+L\+\_\+\+N\+O\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE or tinyxml2\+::\+X\+M\+L\+\_\+\+W\+R\+O\+N\+G\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+T\+Y\+PE 
+tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+XML\+\_\+\+NO\+\_\+\+ATTRIBUTE or tinyxml2\+::\+XML\+\_\+\+WRONG\+\_\+\+ATTRIBUTE\+\_\+\+TYPE 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_a609734264f8b63f5c7815871c40b231f}\label{namespacetesseract__common_a609734264f8b63f5c7815871c40b231f}} 
 \index{tesseract\_common@{tesseract\_common}!QueryStringAttributeRequired@{QueryStringAttributeRequired}}
 \index{QueryStringAttributeRequired@{QueryStringAttributeRequired}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringAttributeRequired()}{QueryStringAttributeRequired()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Error tesseract\+\_\+common\+::\+Query\+String\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Query a string attribute from an xml element and print error log. 
 
-This is the same Query\+String\+Attribute but it will print out error messages for the failure conditions so the user only needs to check for the tinyxml2\+::\+X\+M\+L\+\_\+\+S\+U\+C\+C\+E\+SS since it is a required attribute.
+This is the same Query\+String\+Attribute but it will print out error messages for the failure conditions so the user only needs to check for the tinyxml2\+::\+XML\+\_\+\+SUCCESS since it is a required attribute.
 
 
 \begin{DoxyParams}{Parameters}
@@ -387,13 +387,13 @@ This is the same Query\+String\+Attribute but it will print out error messages f
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-tinyxml2\+::\+X\+M\+L\+\_\+\+S\+U\+C\+C\+E\+SS if successful, otherwise returns tinyxml2\+::\+X\+M\+L\+\_\+\+N\+O\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE or tinyxml2\+::\+X\+M\+L\+\_\+\+W\+R\+O\+N\+G\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+T\+Y\+PE 
+tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+XML\+\_\+\+NO\+\_\+\+ATTRIBUTE or tinyxml2\+::\+XML\+\_\+\+WRONG\+\_\+\+ATTRIBUTE\+\_\+\+TYPE 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_ab95676b5418063a1d7c84fbba4ff1fe0}\label{namespacetesseract__common_ab95676b5418063a1d7c84fbba4ff1fe0}} 
 \index{tesseract\_common@{tesseract\_common}!QueryStringText@{QueryStringText}}
 \index{QueryStringText@{QueryStringText}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringText()}{QueryStringText()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Error tesseract\+\_\+common\+::\+Query\+String\+Text (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element $\ast$}]{xml\+\_\+element,  }\item[{std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Text (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -407,13 +407,13 @@ Query a string Text from xml element.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-tinyxml2\+::\+X\+M\+L\+\_\+\+S\+U\+C\+C\+E\+SS if successful, otherwise returns tinyxml2\+::\+X\+M\+L\+\_\+\+N\+O\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE 
+tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+XML\+\_\+\+NO\+\_\+\+ATTRIBUTE 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_ad3e6914a612484e89bf86c60198b6cdc}\label{namespacetesseract__common_ad3e6914a612484e89bf86c60198b6cdc}} 
 \index{tesseract\_common@{tesseract\_common}!QueryStringValue@{QueryStringValue}}
 \index{QueryStringValue@{QueryStringValue}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringValue()}{QueryStringValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Error tesseract\+\_\+common\+::\+Query\+String\+Value (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Attribute $\ast$}]{xml\+\_\+attribute,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Value (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLAttribute $\ast$}]{xml\+\_\+attribute,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -427,13 +427,13 @@ Query a string value from xml attribute.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-tinyxml2\+::\+X\+M\+L\+\_\+\+S\+U\+C\+C\+E\+SS if successful, otherwise returns tinyxml2\+::\+X\+M\+L\+\_\+\+W\+R\+O\+N\+G\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+T\+Y\+PE 
+tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+XML\+\_\+\+WRONG\+\_\+\+ATTRIBUTE\+\_\+\+TYPE 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_ae1a3ebd3610dce6d24cc7569606fd9ab}\label{namespacetesseract__common_ae1a3ebd3610dce6d24cc7569606fd9ab}} 
 \index{tesseract\_common@{tesseract\_common}!QueryStringValue@{QueryStringValue}}
 \index{QueryStringValue@{QueryStringValue}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringValue()}{QueryStringValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Error tesseract\+\_\+common\+::\+Query\+String\+Value (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element $\ast$}]{xml\+\_\+element,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Value (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -447,7 +447,7 @@ Query a string value from xml element.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-tinyxml2\+::\+X\+M\+L\+\_\+\+S\+U\+C\+C\+E\+SS if successful, otherwise returns tinyxml2\+::\+X\+M\+L\+\_\+\+N\+O\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE 
+tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+XML\+\_\+\+NO\+\_\+\+ATTRIBUTE 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_aa86a4f0e5ca9d2b1f5abc3f34735d85b}\label{namespacetesseract__common_aa86a4f0e5ca9d2b1f5abc3f34735d85b}} 
 \index{tesseract\_common@{tesseract\_common}!rtrim@{rtrim}}
@@ -468,7 +468,7 @@ Right trim string.
 \index{tesseract\_common@{tesseract\_common}!StringAttribute@{StringAttribute}}
 \index{StringAttribute@{StringAttribute}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{StringAttribute()}{StringAttribute()}}
-{\footnotesize\ttfamily std\+::string tesseract\+\_\+common\+::\+String\+Attribute (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string}]{default\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::string tesseract\+\_\+common\+::\+String\+Attribute (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string}]{default\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

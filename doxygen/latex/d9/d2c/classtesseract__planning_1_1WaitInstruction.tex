@@ -46,7 +46,7 @@ int \mbox{\hyperlink{classtesseract__planning_1_1WaitInstruction_ab094872c5d2ed0
 \begin{DoxyCompactList}\small\item\em Get the wait IO. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__planning_1_1WaitInstruction_a848e03066886574ee8f8fb6347343240}{set\+Wait\+IO}} (int io)
 \begin{DoxyCompactList}\small\item\em Set the wait IO. \end{DoxyCompactList}\item 
-tinyxml2\+::\+X\+M\+L\+Element $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1WaitInstruction_a3d4c1a1de09c9649c54420a8d8e81694}{to\+X\+ML}} (tinyxml2\+::\+X\+M\+L\+Document \&doc) const
+tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1WaitInstruction_a3d4c1a1de09c9649c54420a8d8e81694}{to\+XML}} (tinyxml2\+::\+XMLDocument \&doc) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -68,11 +68,11 @@ The instruction has several modes of operation.
 
 
 \begin{DoxyItemize}
-\item T\+I\+ME \+: This will wait for a specified number of seconds and then continue
-\item D\+I\+G\+I\+T\+A\+L\+\_\+\+I\+N\+P\+U\+T\+\_\+\+H\+I\+GH \+: This will wait for a digital input to go high(1) then continue
-\item D\+I\+G\+I\+T\+A\+L\+\_\+\+I\+N\+P\+U\+T\+\_\+\+L\+OW \+: This will wait for a digital input to go low(0) then continue
-\item D\+I\+G\+I\+T\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+H\+I\+GH \+: This will wait for a digital output to go high(1) then continue
-\item D\+I\+G\+I\+T\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+L\+OW \+: This will wait for a digital output to go low(0) then continue 
+\item TIME \+: This will wait for a specified number of seconds and then continue
+\item DIGITAL\+\_\+\+INPUT\+\_\+\+HIGH \+: This will wait for a digital input to go high(1) then continue
+\item DIGITAL\+\_\+\+INPUT\+\_\+\+LOW \+: This will wait for a digital input to go low(0) then continue
+\item DIGITAL\+\_\+\+OUTPUT\+\_\+\+HIGH \+: This will wait for a digital output to go high(1) then continue
+\item DIGITAL\+\_\+\+OUTPUT\+\_\+\+LOW \+: This will wait for a digital output to go low(0) then continue 
 \end{DoxyItemize}
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -203,7 +203,7 @@ Set the wait type.
 \index{tesseract\_planning::WaitInstruction@{tesseract\_planning::WaitInstruction}!toXML@{toXML}}
 \index{toXML@{toXML}!tesseract\_planning::WaitInstruction@{tesseract\_planning::WaitInstruction}}
 \doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Element$\ast$ tesseract\+\_\+planning\+::\+Wait\+Instruction\+::to\+X\+ML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+X\+M\+L\+Document \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLElement$\ast$ tesseract\+\_\+planning\+::\+Wait\+Instruction\+::to\+XML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+XMLDocument \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -240,4 +240,4 @@ The description of the instruction.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-tesseract/tesseract\+\_\+planning/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/\mbox{\hyperlink{wait__instruction_8h}{wait\+\_\+instruction.\+h}}\end{DoxyCompactItemize}
+tesseract/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/\mbox{\hyperlink{wait__instruction_8h}{wait\+\_\+instruction.\+h}}\end{DoxyCompactItemize}

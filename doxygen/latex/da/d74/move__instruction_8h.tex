@@ -1,5 +1,5 @@
-\hypertarget{move__instruction_8h}{}\doxysection{tesseract/tesseract\+\_\+planning/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/move\+\_\+instruction.h File Reference}
-\label{move__instruction_8h}\index{tesseract/tesseract\_planning/tesseract\_command\_language/include/tesseract\_command\_language/move\_instruction.h@{tesseract/tesseract\_planning/tesseract\_command\_language/include/tesseract\_command\_language/move\_instruction.h}}
+\hypertarget{move__instruction_8h}{}\doxysection{tesseract/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/move\+\_\+instruction.h File Reference}
+\label{move__instruction_8h}\index{tesseract/tesseract\_command\_language/include/tesseract\_command\_language/move\_instruction.h@{tesseract/tesseract\_command\_language/include/tesseract\_command\_language/move\_instruction.h}}
 {\ttfamily \#include $<$tesseract\+\_\+common/macros.\+h$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$Eigen/\+Geometry$>$}\newline
@@ -36,10 +36,10 @@ class \mbox{\hyperlink{classtesseract__planning_1_1MoveInstruction}{tesseract\+\
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7ac}{tesseract\+\_\+planning\+::\+Move\+Instruction\+Type}} \+: int \{ \mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7acaaac544aacc3615aada24897a215f5046}{tesseract\+\_\+planning\+::\+Move\+Instruction\+Type\+::\+L\+I\+N\+E\+AR}} = 0, 
-\mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7aca7527bb744a3edda4e08b7323f4bb5ffd}{tesseract\+\_\+planning\+::\+Move\+Instruction\+Type\+::\+F\+R\+E\+E\+S\+P\+A\+CE}} = 1, 
-\mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7aca93c8d295bb538cdb3302604512828d68}{tesseract\+\_\+planning\+::\+Move\+Instruction\+Type\+::\+C\+I\+R\+C\+U\+L\+AR}} = 2, 
-\mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7acab078ffd28db767c502ac367053f6e0ac}{tesseract\+\_\+planning\+::\+Move\+Instruction\+Type\+::\+S\+T\+A\+RT}} = 3
+enum class \mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7ac}{tesseract\+\_\+planning\+::\+Move\+Instruction\+Type}} \+: int \{ \mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7acaaac544aacc3615aada24897a215f5046}{tesseract\+\_\+planning\+::\+LINEAR}} = 0
+, \mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7aca7527bb744a3edda4e08b7323f4bb5ffd}{tesseract\+\_\+planning\+::\+FREESPACE}} = 1
+, \mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7aca93c8d295bb538cdb3302604512828d68}{tesseract\+\_\+planning\+::\+CIRCULAR}} = 2
+, \mbox{\hyperlink{namespacetesseract__planning_acdeb2344747f1fe9d0825bf09e0da7acab078ffd28db767c502ac367053f6e0ac}{tesseract\+\_\+planning\+::\+START}} = 3
  \}
 \end{DoxyCompactItemize}
 
@@ -52,10 +52,10 @@ Levi Armstrong
 June 15, 2020 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-T\+O\+DO 
+TODO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000098}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000034}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}
@@ -65,8 +65,8 @@ Copyright (c) 2020, Southwest Research Institute
 Software License Agreement (Apache License) 
 \end{DoxyParagraph}
 \begin{DoxyParagraph}{}
-Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}} 
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}} 
 \end{DoxyParagraph}
 \begin{DoxyParagraph}{}
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
 \end{DoxyParagraph}

@@ -38,7 +38,7 @@ using \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfil
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a46ba7f7c40dee014d9eea0949a27713b}{$\sim$\+Traj\+Opt\+Default\+Composite\+Profile}} () override=default
 \item 
-\mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_afae434fedbf6085aaaab851037fc5cfa}{Traj\+Opt\+Default\+Composite\+Profile}} (const tinyxml2\+::\+X\+M\+L\+Element \&xml\+\_\+element)
+\mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_afae434fedbf6085aaaab851037fc5cfa}{Traj\+Opt\+Default\+Composite\+Profile}} (const tinyxml2\+::\+XMLElement \&xml\+\_\+element)
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a79a5c9d0c32f9dc286da6668c53933c1}{Traj\+Opt\+Default\+Composite\+Profile}} (const \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile}{Traj\+Opt\+Default\+Composite\+Profile}} \&)=default
 \item 
@@ -50,13 +50,13 @@ using \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfil
 \item 
 void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_acfdfb5236adaab9887fc2b58b6a47006}{apply}} (trajopt\+::\+Problem\+Construction\+Info \&pci, int start\+\_\+index, int end\+\_\+index, const \mbox{\hyperlink{namespacetesseract__planning_aa96fe6a7234303baeef3b4a8afcedfc4}{Manipulator\+Info}} \&manip\+\_\+info, const std\+::vector$<$ std\+::string $>$ \&active\+\_\+links, const std\+::vector$<$ int $>$ \&fixed\+\_\+indices) const override
 \item 
-tinyxml2\+::\+X\+M\+L\+Element $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a1afc056c77858f3679e7f60d39e0dcb9}{to\+X\+ML}} (tinyxml2\+::\+X\+M\+L\+Document \&doc) const override
+tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a1afc056c77858f3679e7f60d39e0dcb9}{to\+XML}} (tinyxml2\+::\+XMLDocument \&doc) const override
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80c}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type}} \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_ab6aa8ce19ffec6fdd5e944ad0443d168}{contact\+\_\+test\+\_\+type}} = \mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80ca5fb1f955b45e38e31789286a1790398d}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type\+::\+A\+LL}}
-\begin{DoxyCompactList}\small\item\em The type of contact test to perform\+: F\+I\+R\+ST, C\+L\+O\+S\+E\+ST, A\+LL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80c}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type}} \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_ab6aa8ce19ffec6fdd5e944ad0443d168}{contact\+\_\+test\+\_\+type}} = \mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80ca5fb1f955b45e38e31789286a1790398d}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type\+::\+ALL}}
+\begin{DoxyCompactList}\small\item\em The type of contact test to perform\+: FIRST, CLOSEST, ALL. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__planning_1_1CollisionCostConfig}{Collision\+Cost\+Config}} \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a37a5b0cbb87e7810f70a018fe1d9fd6b}{collision\+\_\+cost\+\_\+config}}
 \begin{DoxyCompactList}\small\item\em Configuration info for collisions that are modeled as costs. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__planning_1_1CollisionConstraintConfig}{Collision\+Constraint\+Config}} \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a004c5cdec890e6a34fef3b7fcfb2869b}{collision\+\_\+constraint\+\_\+config}}
@@ -102,7 +102,7 @@ void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile
 \item 
 void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_ad6ee85e63bcf4e50b4dc833cdd203804}{add\+Avoid\+Singularity}} (trajopt\+::\+Problem\+Construction\+Info \&pci, int start\+\_\+index, int end\+\_\+index, const std\+::string \&link, const std\+::vector$<$ int $>$ \&fixed\+\_\+indices) const
 \item 
-void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_ae2fadb016aaf975ecd2c964a5bd9aac5}{smooth\+Motion\+Terms}} (const tinyxml2\+::\+X\+M\+L\+Element \&xml\+\_\+element, bool \&enabled, Eigen\+::\+Vector\+Xd \&coeff, std\+::size\+\_\+t \&length)
+void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_ae2fadb016aaf975ecd2c964a5bd9aac5}{smooth\+Motion\+Terms}} (const tinyxml2\+::\+XMLElement \&xml\+\_\+element, bool \&enabled, Eigen\+::\+Vector\+Xd \&coeff, std\+::size\+\_\+t \&length)
 \end{DoxyCompactItemize}
 
 
@@ -138,7 +138,7 @@ void \mbox{\hyperlink{classtesseract__planning_1_1TrajOptDefaultCompositeProfile
 \index{tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}!TrajOptDefaultCompositeProfile@{TrajOptDefaultCompositeProfile}}
 \index{TrajOptDefaultCompositeProfile@{TrajOptDefaultCompositeProfile}!tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}}
 \doxysubsubsection{\texorpdfstring{TrajOptDefaultCompositeProfile()}{TrajOptDefaultCompositeProfile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Composite\+Profile\+::\+Traj\+Opt\+Default\+Composite\+Profile (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Composite\+Profile\+::\+Traj\+Opt\+Default\+Composite\+Profile (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a79a5c9d0c32f9dc286da6668c53933c1}\label{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a79a5c9d0c32f9dc286da6668c53933c1}} 
 \index{tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}!TrajOptDefaultCompositeProfile@{TrajOptDefaultCompositeProfile}}
@@ -223,13 +223,13 @@ Implements \mbox{\hyperlink{classtesseract__planning_1_1TrajOptCompositeProfile_
 \index{tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}!smoothMotionTerms@{smoothMotionTerms}}
 \index{smoothMotionTerms@{smoothMotionTerms}!tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}}
 \doxysubsubsection{\texorpdfstring{smoothMotionTerms()}{smoothMotionTerms()}}
-{\footnotesize\ttfamily void tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Composite\+Profile\+::smooth\+Motion\+Terms (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element \&}]{xml\+\_\+element,  }\item[{bool \&}]{enabled,  }\item[{Eigen\+::\+Vector\+Xd \&}]{coeff,  }\item[{std\+::size\+\_\+t \&}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily void tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Composite\+Profile\+::smooth\+Motion\+Terms (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \&}]{xml\+\_\+element,  }\item[{bool \&}]{enabled,  }\item[{Eigen\+::\+Vector\+Xd \&}]{coeff,  }\item[{std\+::size\+\_\+t \&}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a1afc056c77858f3679e7f60d39e0dcb9}\label{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_a1afc056c77858f3679e7f60d39e0dcb9}} 
 \index{tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}!toXML@{toXML}}
 \index{toXML@{toXML}!tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}}
 \doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Element $\ast$ tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Composite\+Profile\+::to\+X\+ML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+X\+M\+L\+Document \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLElement $\ast$ tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Composite\+Profile\+::to\+XML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+XMLDocument \&}]{doc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -292,11 +292,11 @@ Configuration info for collisions that are modeled as costs.
 \index{tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}!contact\_test\_type@{contact\_test\_type}}
 \index{contact\_test\_type@{contact\_test\_type}!tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}}
 \doxysubsubsection{\texorpdfstring{contact\_test\_type}{contact\_test\_type}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80c}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type}} tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Composite\+Profile\+::contact\+\_\+test\+\_\+type = \mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80ca5fb1f955b45e38e31789286a1790398d}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type\+::\+A\+LL}}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80c}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type}} tesseract\+\_\+planning\+::\+Traj\+Opt\+Default\+Composite\+Profile\+::contact\+\_\+test\+\_\+type = \mbox{\hyperlink{namespacetesseract__collision_ac3da4f46ae16e86ba4f1dfd2935eb80ca5fb1f955b45e38e31789286a1790398d}{tesseract\+\_\+collision\+::\+Contact\+Test\+Type\+::\+ALL}}}
 
 
 
-The type of contact test to perform\+: F\+I\+R\+ST, C\+L\+O\+S\+E\+ST, A\+LL. 
+The type of contact test to perform\+: FIRST, CLOSEST, ALL. 
 
 \mbox{\Hypertarget{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_adfa3a1db05d20b87089f6f994ee5e202}\label{classtesseract__planning_1_1TrajOptDefaultCompositeProfile_adfa3a1db05d20b87089f6f994ee5e202}} 
 \index{tesseract\_planning::TrajOptDefaultCompositeProfile@{tesseract\_planning::TrajOptDefaultCompositeProfile}!jerk\_coeff@{jerk\_coeff}}

@@ -42,7 +42,7 @@ Collaboration diagram for tesseract\+\_\+planning\+::Descartes\+Motion\+Planner$
 const std\+::string \& \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner_ad424282e611add853a8fc23b9c98422a}{get\+Name}} () const override
 \begin{DoxyCompactList}\small\item\em Get the name of this planner. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtesseract__common_1_1StatusCode}{tesseract\+\_\+common\+::\+Status\+Code}} \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner_aa608f79fb4516b7ae901c78d4f77adcb}{solve}} (const \mbox{\hyperlink{structtesseract__planning_1_1PlannerRequest}{Planner\+Request}} \&request, \mbox{\hyperlink{structtesseract__planning_1_1PlannerResponse}{Planner\+Response}} \&response, bool verbose=false) const override
-\begin{DoxyCompactList}\small\item\em Sets up the opimizer and solves a S\+QP problem read from json with no callbacks and dafault parameterss. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets up the opimizer and solves a SQP problem read from json with no callbacks and dafault parameterss. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner_a2efeee49747eca2399ff5103e29924eb}{check\+User\+Input}} (const \mbox{\hyperlink{structtesseract__planning_1_1PlannerRequest}{Planner\+Request}} \&request)
 \item 
 bool \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner_a0bb1f4ff5c88060f87c72dcdda8417c3}{terminate}} () override
@@ -61,7 +61,7 @@ void \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner_afec3c9
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner_ab0a92589aafb9c14410140c098c24e98}{name\+\_\+}} \{ \char`\"{}D\+E\+S\+C\+A\+R\+T\+ES\char`\"{} \}
+std\+::string \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner_ab0a92589aafb9c14410140c098c24e98}{name\+\_\+}} \{ \char`\"{}DESCARTES\char`\"{} \}
 \begin{DoxyCompactList}\small\item\em The planners status codes. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlannerStatusCategory}{Descartes\+Motion\+Planner\+Status\+Category}} $>$ \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner_a3cffbe2fda98f2acd853cd8371857881}{status\+\_\+category\+\_\+}}
 \end{DoxyCompactItemize}
@@ -179,7 +179,7 @@ Implements \mbox{\hyperlink{classtesseract__planning_1_1MotionPlanner_a5b397e6b0
 
 
 
-Sets up the opimizer and solves a S\+QP problem read from json with no callbacks and dafault parameterss. 
+Sets up the opimizer and solves a SQP problem read from json with no callbacks and dafault parameterss. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -220,7 +220,7 @@ Implements \mbox{\hyperlink{classtesseract__planning_1_1MotionPlanner_a44afac056
 \index{name\_@{name\_}!tesseract\_planning::DescartesMotionPlanner$<$ FloatType $>$@{tesseract\_planning::DescartesMotionPlanner$<$ FloatType $>$}}
 \doxysubsubsection{\texorpdfstring{name\_}{name\_}}
 {\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-std\+::string \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner}{tesseract\+\_\+planning\+::\+Descartes\+Motion\+Planner}}$<$ Float\+Type $>$\+::name\+\_\+ \{ \char`\"{}D\+E\+S\+C\+A\+R\+T\+ES\char`\"{} \}\hspace{0.3cm}{\ttfamily [private]}}
+std\+::string \mbox{\hyperlink{classtesseract__planning_1_1DescartesMotionPlanner}{tesseract\+\_\+planning\+::\+Descartes\+Motion\+Planner}}$<$ Float\+Type $>$\+::name\+\_\+ \{ \char`\"{}DESCARTES\char`\"{} \}\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

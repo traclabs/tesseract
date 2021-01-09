@@ -24,9 +24,9 @@ using \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial_a40e28bff7129cc4
 Eigen\+::\+Vector4d \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial_a61235b03fa1e0c15e779b07f532e14ef}{get\+Base\+Color\+Factor}} () const
 \begin{DoxyCompactList}\small\item\em Get the base color of the mesh. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial_abb187c0e82382354171e44a4d1fdfc6b}{get\+Metallic\+Factor}} () const
-\begin{DoxyCompactList}\small\item\em Get the Metallic Factor of the mesh (P\+BR parameter) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get the Metallic Factor of the mesh (PBR parameter) \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial_a737f31dab85d6a222f54035719ce6923}{get\+Roughness\+Factor}} () const
-\begin{DoxyCompactList}\small\item\em Get the Roughness Factor of the mesh (P\+BR parameter) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get the Roughness Factor of the mesh (PBR parameter) \end{DoxyCompactList}\item 
 Eigen\+::\+Vector4d \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial_aba4bcd1f12b66557a0ef20f4b2fd6120}{get\+Emissive\+Factor}} () const
 \begin{DoxyCompactList}\small\item\em Get the emissive factor of the mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
@@ -45,9 +45,9 @@ Eigen\+::\+Vector4d \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial_ad
 \doxysubsection{Detailed Description}
 Represents material information extracted from a mesh file. 
 
-\mbox{\hyperlink{classtesseract__geometry_1_1Mesh}{Mesh}} files contain material information. The mesh parser will extract the material information and store it in a \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\+Material}} instance. The \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\+Material}} class uses a subset P\+BR Metallic workflow, as specified in the gl\+TF 2.\+0 file format standard. The four parameters supported are base\+Color\+Factor, metallic\+Factor, roughness\+Factor, and emmisive\+Factor. (The \mbox{\hyperlink{classtesseract__geometry_1_1MeshTexture}{Mesh\+Texture}} class stores diffuse textures that can be used for decals and fiducial marks, and is stored separately from \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\+Material}}.) These four parameters and \mbox{\hyperlink{classtesseract__geometry_1_1MeshTexture}{Mesh\+Texture}} should be enough to display \char`\"{}\+C\+A\+D quality\char`\"{} renderings in visualizers. The full mesh file should be used when higher quality rendering is required.
+\mbox{\hyperlink{classtesseract__geometry_1_1Mesh}{Mesh}} files contain material information. The mesh parser will extract the material information and store it in a \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\+Material}} instance. The \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\+Material}} class uses a subset PBR Metallic workflow, as specified in the gl\+TF 2.\+0 file format standard. The four parameters supported are base\+Color\+Factor, metallic\+Factor, roughness\+Factor, and emmisive\+Factor. (The \mbox{\hyperlink{classtesseract__geometry_1_1MeshTexture}{Mesh\+Texture}} class stores diffuse textures that can be used for decals and fiducial marks, and is stored separately from \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\+Material}}.) These four parameters and \mbox{\hyperlink{classtesseract__geometry_1_1MeshTexture}{Mesh\+Texture}} should be enough to display \char`\"{}\+CAD quality\char`\"{} renderings in visualizers. The full mesh file should be used when higher quality rendering is required.
 
-The \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\+Material}} favors P\+BR materials extracted from gl\+TF 2.\+0 files. C\+O\+L\+L\+A\+DA does not support P\+BR. Only \char`\"{}\+Diffuse\char`\"{} and \char`\"{}\+Emissive\char`\"{} are read. \char`\"{}\+Specular\char`\"{} and \char`\"{}\+Ambient\char`\"{} are ignored. 
+The \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\+Material}} favors PBR materials extracted from gl\+TF 2.\+0 files. COLLADA does not support PBR. Only \char`\"{}\+Diffuse\char`\"{} and \char`\"{}\+Emissive\char`\"{} are read. \char`\"{}\+Specular\char`\"{} and \char`\"{}\+Ambient\char`\"{} are ignored. 
 
 \doxysubsection{Member Typedef Documentation}
 \mbox{\Hypertarget{classtesseract__geometry_1_1MeshMaterial_a40e28bff7129cc427bee736136b13e72}\label{classtesseract__geometry_1_1MeshMaterial_a40e28bff7129cc427bee736136b13e72}} 
@@ -79,9 +79,9 @@ Construct a new \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\
 \begin{DoxyParams}{Parameters}
 {\em base\+Color\+Factor} & The base color of the mesh \\
 \hline
-{\em metallic\+Factor} & The metallic factor parameter (P\+BR parameter) \\
+{\em metallic\+Factor} & The metallic factor parameter (PBR parameter) \\
 \hline
-{\em roughness\+Factor} & The roughness factor parameter (P\+BR parameter) \\
+{\em roughness\+Factor} & The roughness factor parameter (PBR parameter) \\
 \hline
 {\em emissive\+Factor} & The emissivity of the mesh \\
 \hline
@@ -100,7 +100,7 @@ Construct a new \mbox{\hyperlink{classtesseract__geometry_1_1MeshMaterial}{Mesh\
 Get the base color of the mesh. 
 
 \begin{DoxyReturn}{Returns}
-The base color in R\+G\+BA 
+The base color in RGBA 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__geometry_1_1MeshMaterial_aba4bcd1f12b66557a0ef20f4b2fd6120}\label{classtesseract__geometry_1_1MeshMaterial_aba4bcd1f12b66557a0ef20f4b2fd6120}} 
 \index{tesseract\_geometry::MeshMaterial@{tesseract\_geometry::MeshMaterial}!getEmissiveFactor@{getEmissiveFactor}}
@@ -115,7 +115,7 @@ Get the emissive factor of the mesh.
 \char`\"{}\+Emissive factor\char`\"{} is used to make the mesh \char`\"{}glow\char`\"{}. How this is interpreted depends on the rendering engine.
 
 \begin{DoxyReturn}{Returns}
-The emissive factor in R\+G\+BA 
+The emissive factor in RGBA 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__geometry_1_1MeshMaterial_abb187c0e82382354171e44a4d1fdfc6b}\label{classtesseract__geometry_1_1MeshMaterial_abb187c0e82382354171e44a4d1fdfc6b}} 
 \index{tesseract\_geometry::MeshMaterial@{tesseract\_geometry::MeshMaterial}!getMetallicFactor@{getMetallicFactor}}
@@ -125,7 +125,7 @@ The emissive factor in R\+G\+BA
 
 
 
-Get the Metallic Factor of the mesh (P\+BR parameter) 
+Get the Metallic Factor of the mesh (PBR parameter) 
 
 \begin{DoxyReturn}{Returns}
 The metallic factor, between 0 and 1 
@@ -138,7 +138,7 @@ The metallic factor, between 0 and 1
 
 
 
-Get the Roughness Factor of the mesh (P\+BR parameter) 
+Get the Roughness Factor of the mesh (PBR parameter) 
 
 \begin{DoxyReturn}{Returns}
 The roughness factor, between 0 and 1 

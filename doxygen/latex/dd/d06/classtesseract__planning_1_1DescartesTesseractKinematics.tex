@@ -51,9 +51,9 @@ int \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics_af
 \begin{DoxyCompactList}\small\item\em Returns the number of joints in the kinematics object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics_ab2218a8fcce72693e60fd29ddfa2cde4}{analyze\+IK}} (const Eigen\+::\+Transform$<$ Float\+Type, 3, Eigen\+::\+Isometry $>$ \&p) const override
 \begin{DoxyCompactList}\small\item\em Analyzes the effect of the is\+Valid\+Fn and redundant solutions on the number of returned solutions and prints the results. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics_afff51223f4f3284e0da847f3b89e4509}{set\+I\+K\+Seed}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix$<$ Float\+Type, Eigen\+::\+Dynamic, 1 $>$ $>$ \&seed)
+void \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics_afff51223f4f3284e0da847f3b89e4509}{set\+IKSeed}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix$<$ Float\+Type, Eigen\+::\+Dynamic, 1 $>$ $>$ \&seed)
 \begin{DoxyCompactList}\small\item\em Sets the seed used by inverse kinematics. Must be length \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics_afbed49b3f710b11e85442494a2be47a1}{dof()}}. Default\+: Eigen\+::\+Vector\+Xd\+::\+Zero(dof()) \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics_a82a16f9907f822297c7fdbef4d1d0350}{set\+I\+K\+Seed}} (const std\+::vector$<$ Float\+Type $>$ \&seed)
+void \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics_a82a16f9907f822297c7fdbef4d1d0350}{set\+IKSeed}} (const std\+::vector$<$ Float\+Type $>$ \&seed)
 \begin{DoxyCompactList}\small\item\em Sets the seed used by inverse kinematics. Must be length \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics_afbed49b3f710b11e85442494a2be47a1}{dof()}}. Default\+: Eigen\+::\+Vector\+Xd\+::\+Zero(dof()) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -198,7 +198,7 @@ Note\+: This currenlty only supports single solutions \mbox{\Hypertarget{classte
 \index{setIKSeed@{setIKSeed}!tesseract\_planning::DescartesTesseractKinematics$<$ FloatType $>$@{tesseract\_planning::DescartesTesseractKinematics$<$ FloatType $>$}}
 \doxysubsubsection{\texorpdfstring{setIKSeed()}{setIKSeed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-void \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics}{tesseract\+\_\+planning\+::\+Descartes\+Tesseract\+Kinematics}}$<$ Float\+Type $>$\+::set\+I\+K\+Seed (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix$<$ Float\+Type, Eigen\+::\+Dynamic, 1 $>$ $>$ \&}]{seed }\end{DoxyParamCaption})}
+void \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics}{tesseract\+\_\+planning\+::\+Descartes\+Tesseract\+Kinematics}}$<$ Float\+Type $>$\+::set\+IKSeed (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix$<$ Float\+Type, Eigen\+::\+Dynamic, 1 $>$ $>$ \&}]{seed }\end{DoxyParamCaption})}
 
 
 
@@ -209,7 +209,7 @@ Sets the seed used by inverse kinematics. Must be length \mbox{\hyperlink{classt
 \index{setIKSeed@{setIKSeed}!tesseract\_planning::DescartesTesseractKinematics$<$ FloatType $>$@{tesseract\_planning::DescartesTesseractKinematics$<$ FloatType $>$}}
 \doxysubsubsection{\texorpdfstring{setIKSeed()}{setIKSeed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-void \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics}{tesseract\+\_\+planning\+::\+Descartes\+Tesseract\+Kinematics}}$<$ Float\+Type $>$\+::set\+I\+K\+Seed (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ Float\+Type $>$ \&}]{seed }\end{DoxyParamCaption})}
+void \mbox{\hyperlink{classtesseract__planning_1_1DescartesTesseractKinematics}{tesseract\+\_\+planning\+::\+Descartes\+Tesseract\+Kinematics}}$<$ Float\+Type $>$\+::set\+IKSeed (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ Float\+Type $>$ \&}]{seed }\end{DoxyParamCaption})}
 
 
 

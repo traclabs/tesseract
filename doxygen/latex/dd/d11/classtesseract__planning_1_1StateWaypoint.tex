@@ -21,13 +21,13 @@ Collaboration diagram for tesseract\+\_\+planning\+::State\+Waypoint\+:
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_ae34355c716d6361d523d5f65f6f0c863}{State\+Waypoint}} (std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a159a6134a1f67e289c8a873723179c8c}{joint\+\_\+names}}, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&\mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a6a208e3ad21571572840a43c56c5ef9e}{position}})
 \item 
-\mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a05e6de560d5e73b088a1d18ca3c8fce3}{State\+Waypoint}} (const tinyxml2\+::\+X\+M\+L\+Element \&xml\+\_\+element)
+\mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a05e6de560d5e73b088a1d18ca3c8fce3}{State\+Waypoint}} (const tinyxml2\+::\+XMLElement \&xml\+\_\+element)
 \item 
 int \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_ab8f6cf32d14f0c58dbe0f7a2aa77be91}{get\+Type}} () const
 \item 
 void \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_ac5b46e5a167bac155b369661e5e29859}{print}} (const std\+::string \&prefix=\char`\"{}\char`\"{}) const
 \item 
-tinyxml2\+::\+X\+M\+L\+Element $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a87d77fdfd070ae62d934cc504f879d51}{to\+X\+ML}} (tinyxml2\+::\+X\+M\+L\+Document \&doc) const
+tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a87d77fdfd070ae62d934cc504f879d51}{to\+XML}} (tinyxml2\+::\+XMLDocument \&doc) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -63,7 +63,7 @@ double \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_aa9186b586787a
 \index{tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}!StateWaypoint@{StateWaypoint}}
 \index{StateWaypoint@{StateWaypoint}!tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}}
 \doxysubsubsection{\texorpdfstring{StateWaypoint()}{StateWaypoint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+State\+Waypoint\+::\+State\+Waypoint (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+X\+M\+L\+Element \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+State\+Waypoint\+::\+State\+Waypoint (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \&}]{xml\+\_\+element }\end{DoxyParamCaption})}
 
 
 
@@ -84,7 +84,7 @@ double \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_aa9186b586787a
 \index{tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}!toXML@{toXML}}
 \index{toXML@{toXML}!tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}}
 \doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
-{\footnotesize\ttfamily tinyxml2\+::\+X\+M\+L\+Element $\ast$ tesseract\+\_\+planning\+::\+State\+Waypoint\+::to\+X\+ML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+X\+M\+L\+Document \&}]{doc }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLElement $\ast$ tesseract\+\_\+planning\+::\+State\+Waypoint\+::to\+XML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+XMLDocument \&}]{doc }\end{DoxyParamCaption}) const}
 
 
 
@@ -153,5 +153,5 @@ The velocity at the waypoint.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-tesseract/tesseract\+\_\+planning/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/\mbox{\hyperlink{state__waypoint_8h}{state\+\_\+waypoint.\+h}}\item 
-tesseract/tesseract\+\_\+planning/tesseract\+\_\+command\+\_\+language/src/\mbox{\hyperlink{state__waypoint_8cpp}{state\+\_\+waypoint.\+cpp}}\end{DoxyCompactItemize}
+tesseract/tesseract\+\_\+command\+\_\+language/include/tesseract\+\_\+command\+\_\+language/\mbox{\hyperlink{state__waypoint_8h}{state\+\_\+waypoint.\+h}}\item 
+tesseract/tesseract\+\_\+command\+\_\+language/src/\mbox{\hyperlink{state__waypoint_8cpp}{state\+\_\+waypoint.\+cpp}}\end{DoxyCompactItemize}

@@ -17,15 +17,15 @@ Collaboration diagram for tesseract\+\_\+planning\+::Fix\+State\+Collision\+Prof
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9}{Settings}} \{ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9abb03441eb46f5ceb12559eabc4b3f223}{Settings\+::\+S\+T\+A\+R\+T\+\_\+\+O\+N\+LY}}, 
-\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9af450a15955e3c2958a698f3724efa3c9}{Settings\+::\+E\+N\+D\+\_\+\+O\+N\+LY}}, 
-\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a5fb1f955b45e38e31789286a1790398d}{Settings\+::\+A\+LL}}, 
-\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a055c1a591abb0e8cd86dc969727bcc0b}{Settings\+::\+D\+I\+S\+A\+B\+L\+ED}}
+enum class \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9}{Settings}} \{ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9abb03441eb46f5ceb12559eabc4b3f223}{START\+\_\+\+ONLY}}
+, \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9af450a15955e3c2958a698f3724efa3c9}{END\+\_\+\+ONLY}}
+, \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a5fb1f955b45e38e31789286a1790398d}{ALL}}
+, \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a055c1a591abb0e8cd86dc969727bcc0b}{DISABLED}}
  \}
 \item 
-enum \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770}{Correction\+Method}} \{ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ab50339a10e1de285ac99d4c3990b8693}{Correction\+Method\+::\+N\+O\+NE}}, 
-\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770a43cddd04e52e5565a51dd6d59225d685}{Correction\+Method\+::\+T\+R\+A\+J\+O\+PT}}, 
-\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ae49d22a187a81766494a4fb8fb49d1c0}{Correction\+Method\+::\+R\+A\+N\+D\+O\+M\+\_\+\+S\+A\+M\+P\+L\+ER}}
+enum class \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770}{Correction\+Method}} \{ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ab50339a10e1de285ac99d4c3990b8693}{NONE}}
+, \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770a43cddd04e52e5565a51dd6d59225d685}{TRAJOPT}}
+, \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ae49d22a187a81766494a4fb8fb49d1c0}{RANDOM\+\_\+\+SAMPLER}}
  \}
 \begin{DoxyCompactList}\small\item\em Used to specify method used to correct states in collision. \end{DoxyCompactList}\item 
 using \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a709319d1ca9dbe3c19a61d0421471b66}{Ptr}} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile}{Fix\+State\+Collision\+Profile}} $>$
@@ -35,7 +35,7 @@ using \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_ae4
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a8b700364aa7ee70af35c7ef4d13a5476}{Fix\+State\+Collision\+Profile}} (\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9}{Settings}} \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a74ee9efead831c5585df06033cd7ca0f}{mode}}=\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a5fb1f955b45e38e31789286a1790398d}{Settings\+::\+A\+LL}})
+\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a8b700364aa7ee70af35c7ef4d13a5476}{Fix\+State\+Collision\+Profile}} (\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9}{Settings}} \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a74ee9efead831c5585df06033cd7ca0f}{mode}}=\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a5fb1f955b45e38e31789286a1790398d}{Settings\+::\+ALL}})
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -43,7 +43,7 @@ using \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_ae4
 \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9}{Settings}} \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a74ee9efead831c5585df06033cd7ca0f}{mode}}
 \begin{DoxyCompactList}\small\item\em Sets which terms will be corrected ~\newline
  \end{DoxyCompactList}\item 
-std\+::vector$<$ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770}{Correction\+Method}} $>$ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_adb84c4e0c627a9930741ddbc62d38b1b}{correction\+\_\+workflow}} \{ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770a43cddd04e52e5565a51dd6d59225d685}{Correction\+Method\+::\+T\+R\+A\+J\+O\+PT}}, \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ae49d22a187a81766494a4fb8fb49d1c0}{Correction\+Method\+::\+R\+A\+N\+D\+O\+M\+\_\+\+S\+A\+M\+P\+L\+ER}} \}
+std\+::vector$<$ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770}{Correction\+Method}} $>$ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_adb84c4e0c627a9930741ddbc62d38b1b}{correction\+\_\+workflow}} \{ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770a43cddd04e52e5565a51dd6d59225d685}{Correction\+Method\+::\+TRAJOPT}}, \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ae49d22a187a81766494a4fb8fb49d1c0}{Correction\+Method\+::\+RANDOM\+\_\+\+SAMPLER}} \}
 \begin{DoxyCompactList}\small\item\em Order that correction methods will be applied. These will be attempted in order until one succeeds or all have been tried. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_abcf3e0fc78b4d136549c3e41ec74920a}{jiggle\+\_\+factor}} \{ 0.\+02 \}
 \begin{DoxyCompactList}\small\item\em Percent of the total joint range that a joint will be allowed to be adjusted. \end{DoxyCompactList}\item 
@@ -81,15 +81,15 @@ Used to specify method used to correct states in collision.
 
 \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}}\index{tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}!NONE@{NONE}}}\mbox{\Hypertarget{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ab50339a10e1de285ac99d4c3990b8693}\label{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ab50339a10e1de285ac99d4c3990b8693}} 
-N\+O\+NE&\\
+NONE&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{TRAJOPT@{TRAJOPT}!tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}}\index{tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}!TRAJOPT@{TRAJOPT}}}\mbox{\Hypertarget{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770a43cddd04e52e5565a51dd6d59225d685}\label{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770a43cddd04e52e5565a51dd6d59225d685}} 
-T\+R\+A\+J\+O\+PT&\\
+TRAJOPT&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{RANDOM\_SAMPLER@{RANDOM\_SAMPLER}!tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}}\index{tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}!RANDOM\_SAMPLER@{RANDOM\_SAMPLER}}}\mbox{\Hypertarget{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ae49d22a187a81766494a4fb8fb49d1c0}\label{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ae49d22a187a81766494a4fb8fb49d1c0}} 
-R\+A\+N\+D\+O\+M\+\_\+\+S\+A\+M\+P\+L\+ER&\\
+RANDOM\+\_\+\+SAMPLER&\\
 \hline
 
 \end{DoxyEnumFields}
@@ -101,19 +101,19 @@ R\+A\+N\+D\+O\+M\+\_\+\+S\+A\+M\+P\+L\+ER&\\
 
 \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{START\_ONLY@{START\_ONLY}!tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}}\index{tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}!START\_ONLY@{START\_ONLY}}}\mbox{\Hypertarget{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9abb03441eb46f5ceb12559eabc4b3f223}\label{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9abb03441eb46f5ceb12559eabc4b3f223}} 
-S\+T\+A\+R\+T\+\_\+\+O\+N\+LY&\\
+START\+\_\+\+ONLY&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{END\_ONLY@{END\_ONLY}!tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}}\index{tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}!END\_ONLY@{END\_ONLY}}}\mbox{\Hypertarget{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9af450a15955e3c2958a698f3724efa3c9}\label{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9af450a15955e3c2958a698f3724efa3c9}} 
-E\+N\+D\+\_\+\+O\+N\+LY&\\
+END\+\_\+\+ONLY&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{ALL@{ALL}!tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}}\index{tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}!ALL@{ALL}}}\mbox{\Hypertarget{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a5fb1f955b45e38e31789286a1790398d}\label{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a5fb1f955b45e38e31789286a1790398d}} 
-A\+LL&\\
+ALL&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{DISABLED@{DISABLED}!tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}}\index{tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}!DISABLED@{DISABLED}}}\mbox{\Hypertarget{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a055c1a591abb0e8cd86dc969727bcc0b}\label{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a055c1a591abb0e8cd86dc969727bcc0b}} 
-D\+I\+S\+A\+B\+L\+ED&\\
+DISABLED&\\
 \hline
 
 \end{DoxyEnumFields}
@@ -124,7 +124,7 @@ D\+I\+S\+A\+B\+L\+ED&\\
 \index{tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}!FixStateCollisionProfile@{FixStateCollisionProfile}}
 \index{FixStateCollisionProfile@{FixStateCollisionProfile}!tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}}
 \doxysubsubsection{\texorpdfstring{FixStateCollisionProfile()}{FixStateCollisionProfile()}}
-{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+Fix\+State\+Collision\+Profile\+::\+Fix\+State\+Collision\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9}{Settings}}}]{mode = {\ttfamily \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a5fb1f955b45e38e31789286a1790398d}{Settings\+::\+A\+LL}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tesseract\+\_\+planning\+::\+Fix\+State\+Collision\+Profile\+::\+Fix\+State\+Collision\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9}{Settings}}}]{mode = {\ttfamily \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a976575acddb9598ca7f42f5e5dd132e9a5fb1f955b45e38e31789286a1790398d}{Settings\+::\+ALL}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -143,7 +143,7 @@ Safety margin applied to collision costs/cnts when using trajopt to correct coll
 \index{tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}!correction\_workflow@{correction\_workflow}}
 \index{correction\_workflow@{correction\_workflow}!tesseract\_planning::FixStateCollisionProfile@{tesseract\_planning::FixStateCollisionProfile}}
 \doxysubsubsection{\texorpdfstring{correction\_workflow}{correction\_workflow}}
-{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770}{Correction\+Method}}$>$ tesseract\+\_\+planning\+::\+Fix\+State\+Collision\+Profile\+::correction\+\_\+workflow \{ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770a43cddd04e52e5565a51dd6d59225d685}{Correction\+Method\+::\+T\+R\+A\+J\+O\+PT}}, \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ae49d22a187a81766494a4fb8fb49d1c0}{Correction\+Method\+::\+R\+A\+N\+D\+O\+M\+\_\+\+S\+A\+M\+P\+L\+ER}} \}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770}{Correction\+Method}}$>$ tesseract\+\_\+planning\+::\+Fix\+State\+Collision\+Profile\+::correction\+\_\+workflow \{ \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770a43cddd04e52e5565a51dd6d59225d685}{Correction\+Method\+::\+TRAJOPT}}, \mbox{\hyperlink{structtesseract__planning_1_1FixStateCollisionProfile_a616b958914a7cfbc44c21810cac79770ae49d22a187a81766494a4fb8fb49d1c0}{Correction\+Method\+::\+RANDOM\+\_\+\+SAMPLER}} \}}
 
 
 
