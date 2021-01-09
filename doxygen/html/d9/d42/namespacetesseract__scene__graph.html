@@ -243,6 +243,9 @@ Functions</h2></td></tr>
 <tr class="separator:a8b26068340c752f3fec9f5bd3b582923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9604bca3f04f34c450aee0cc4ab32bf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#a9604bca3f04f34c450aee0cc4ab32bf2">processSRDFAllowedCollisions</a> (<a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">SceneGraph</a> &amp;scene_graph, const <a class="el" href="../../de/d87/classtesseract__scene__graph_1_1SRDFModel.html">tesseract_scene_graph::SRDFModel</a> &amp;srdf_model)</td></tr>
 <tr class="separator:a9604bca3f04f34c450aee0cc4ab32bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2abd4b3afef22a092ab25d0104a22e4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#ac2abd4b3afef22a092ab25d0104a22e4">getAllowedCollisions</a> (const std::vector&lt; std::string &gt; &amp;link_names, const <a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#a40a7b2e03fe5365f09dd8c309b6bcffb">AllowedCollisionEntries</a> &amp;acm_entries, bool remove_duplicates=true)</td></tr>
+<tr class="memdesc:ac2abd4b3afef22a092ab25d0104a22e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets allowed collisions for a set of link names.  <a href="../../d9/d42/namespacetesseract__scene__graph.html#ac2abd4b3afef22a092ab25d0104a22e4">More...</a><br /></td></tr>
+<tr class="separator:ac2abd4b3afef22a092ab25d0104a22e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -737,6 +740,59 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A KDL <a class="el" href="../../d6/d5f/classtesseract__scene__graph_1_1Joint.html">Joint</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac2abd4b3afef22a092ab25d0104a22e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2abd4b3afef22a092ab25d0104a22e4">&#9670;&nbsp;</a></span>getAllowedCollisions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; tesseract_scene_graph::getAllowedCollisions </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>link_names</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#a40a7b2e03fe5365f09dd8c309b6bcffb">AllowedCollisionEntries</a> &amp;&#160;</td>
+          <td class="paramname"><em>acm_entries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>remove_duplicates</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets allowed collisions for a set of link names. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">link_names</td><td>Vector of link names for which we want the allowed collisions </td></tr>
+    <tr><td class="paramname">acm_entries</td><td>Entries in the ACM. Get this with <a class="el" href="../../d5/df3/classtesseract__scene__graph_1_1AllowedCollisionMatrix.html#af336e45edd84667323ef31dd04415c7a" title="Get all of the entries in the allowed collision matrix.">AllowedCollisionMatrix::getAllAllowedCollisions()</a> </td></tr>
+    <tr><td class="paramname">remove_duplicates</td><td>If true, duplicates will be removed. Default: true </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>vector of links that are allowed to collide with links given </dd></dl>
 
 </div>
 </div>
@@ -1297,7 +1353,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 9 2021 17:04:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+Generated on Sat Jan 9 2021 21:32:05 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
 </small></address>
 </body>
 </html>

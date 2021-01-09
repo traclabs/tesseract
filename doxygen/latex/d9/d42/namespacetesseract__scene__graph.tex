@@ -145,7 +145,9 @@ bool \mbox{\hyperlink{namespacetesseract__scene__graph_a7132480e5402ba4a3c44d4dc
 std\+::tuple$<$ \mbox{\hyperlink{namespacetesseract__scene__graph_a32f5566007ca12430e9ea9da77a83205}{Group\+Names}}, \mbox{\hyperlink{namespacetesseract__scene__graph_a3abd6411aec87a44d780401c2cb30cf9}{Chain\+Groups}}, \mbox{\hyperlink{namespacetesseract__scene__graph_a242ffd70ca004aa3b080ce297aff77d4}{Joint\+Groups}}, \mbox{\hyperlink{namespacetesseract__scene__graph_ab616c56edf955298f1d2c550edb9548f}{Link\+Groups}} $>$ \mbox{\hyperlink{namespacetesseract__scene__graph_a8b26068340c752f3fec9f5bd3b582923}{parse\+Groups}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const tinyxml2\+::\+XMLElement $\ast$srdf\+\_\+xml, const std\+::array$<$ int, 3 $>$ \&)
 \begin{DoxyCompactList}\small\item\em Parse groups from srdf xml element. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacetesseract__scene__graph_a9604bca3f04f34c450aee0cc4ab32bf2}{process\+SRDFAllowed\+Collisions}} (\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{Scene\+Graph}} \&scene\+\_\+graph, const \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel}{tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel}} \&srdf\+\_\+model)
-\end{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespacetesseract__scene__graph_ac2abd4b3afef22a092ab25d0104a22e4}{get\+Allowed\+Collisions}} (const std\+::vector$<$ std\+::string $>$ \&link\+\_\+names, const \mbox{\hyperlink{namespacetesseract__scene__graph_a40a7b2e03fe5365f09dd8c309b6bcffb}{Allowed\+Collision\+Entries}} \&acm\+\_\+entries, bool remove\+\_\+duplicates=true)
+\begin{DoxyCompactList}\small\item\em Gets allowed collisions for a set of link names. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -414,6 +416,28 @@ Convert Tesseract \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint}{Joint}
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A KDL \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint}{Joint}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__scene__graph_ac2abd4b3afef22a092ab25d0104a22e4}\label{namespacetesseract__scene__graph_ac2abd4b3afef22a092ab25d0104a22e4}} 
+\index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!getAllowedCollisions@{getAllowedCollisions}}
+\index{getAllowedCollisions@{getAllowedCollisions}!tesseract\_scene\_graph@{tesseract\_scene\_graph}}
+\doxysubsubsection{\texorpdfstring{getAllowedCollisions()}{getAllowedCollisions()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ tesseract\+\_\+scene\+\_\+graph\+::get\+Allowed\+Collisions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{link\+\_\+names,  }\item[{const \mbox{\hyperlink{namespacetesseract__scene__graph_a40a7b2e03fe5365f09dd8c309b6bcffb}{Allowed\+Collision\+Entries}} \&}]{acm\+\_\+entries,  }\item[{bool}]{remove\+\_\+duplicates = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets allowed collisions for a set of link names. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em link\+\_\+names} & Vector of link names for which we want the allowed collisions \\
+\hline
+{\em acm\+\_\+entries} & Entries in the ACM. Get this with \mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix_af336e45edd84667323ef31dd04415c7a}{Allowed\+Collision\+Matrix\+::get\+All\+Allowed\+Collisions()}} \\
+\hline
+{\em remove\+\_\+duplicates} & If true, duplicates will be removed. Default\+: true \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of links that are allowed to collide with links given 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__scene__graph_a889d2454755511e4d1878c948a3f7942}\label{namespacetesseract__scene__graph_a889d2454755511e4d1878c948a3f7942}} 
 \index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!operator$<$$<$@{operator$<$$<$}}
