@@ -1,5 +1,5 @@
-<map id="tesseract/tesseract_urdf/include/tesseract_urdf/point_cloud.h" name="tesseract/tesseract_urdf/include/tesseract_urdf/point_cloud.h">
-<area shape="rect" id="node1" title="Parse PCL point cloud to octree from xml string." alt="" coords="1063,5,1218,61"/>
+<map id="tesseract_urdf/include/tesseract_urdf/point_cloud.h" name="tesseract_urdf/include/tesseract_urdf/point_cloud.h">
+<area shape="rect" id="node1" title="Parse PCL point cloud to octree from xml string." alt="" coords="1065,5,1216,61"/>
 <area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="1560,556,1751,583"/>
 <area shape="rect" id="node3" href="$dc/d00/status__code_8h.html" title="A status code class." alt="" coords="1241,199,1414,240"/>
 <area shape="rect" id="node8" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="509,474,679,501"/>

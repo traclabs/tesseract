@@ -1,4 +1,4 @@
-<map id="tesseract/tesseract_geometry/include/tesseract_geometry/geometries.h" name="tesseract/tesseract_geometry/include/tesseract_geometry/geometries.h">
+<map id="tesseract_geometry/include/tesseract_geometry/geometries.h" name="tesseract_geometry/include/tesseract_geometry/geometries.h">
 <area shape="rect" id="node1" title="Tesseract Geometries." alt="" coords="877,5,1062,61"/>
 <area shape="rect" id="node2" href="$df/d9e/tesseract__geometry_2include_2tesseract__geometry_2impl_2box_8h.html" title="Tesseract Box Geometry." alt="" coords="91,199,227,240"/>
 <area shape="rect" id="node7" href="$d8/db6/tesseract__geometry_2include_2tesseract__geometry_2impl_2sphere_8h.html" title="Tesseract Sphere Geometry." alt="" coords="251,199,387,240"/>

@@ -1,4 +1,4 @@
-<map id="tesseract/tesseract_collision/include/tesseract_collision/fcl/fcl_utils.h" name="tesseract/tesseract_collision/include/tesseract_collision/fcl/fcl_utils.h">
+<map id="tesseract_collision/include/tesseract_collision/fcl/fcl_utils.h" name="tesseract_collision/include/tesseract_collision/fcl/fcl_utils.h">
 <area shape="rect" id="node1" title="Tesseract ROS FCL Utility Functions." alt="" coords="2217,5,2396,61"/>
 <area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="523,578,714,605"/>
 <area shape="rect" id="node3" title=" " alt="" coords="2420,109,2599,151"/>

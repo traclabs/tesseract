@@ -1,4 +1,4 @@
-<map id="tesseract/tesseract_urdf/include/tesseract_urdf/convex_mesh.h" name="tesseract/tesseract_urdf/include/tesseract_urdf/convex_mesh.h">
+<map id="tesseract_urdf/include/tesseract_urdf/convex_mesh.h" name="tesseract_urdf/include/tesseract_urdf/convex_mesh.h">
 <area shape="rect" id="node1" title="Parse convex_mesh from xml string." alt="" coords="2738,5,2893,61"/>
 <area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="3617,556,3808,583"/>
 <area shape="rect" id="node3" href="$dc/d00/status__code_8h.html" title="A status code class." alt="" coords="4003,377,4177,419"/>

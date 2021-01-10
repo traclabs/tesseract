@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tesseract: tesseract/tesseract_command_language/include/tesseract_command_language/joint_waypoint.h Source File</title>
+<title>Tesseract: tesseract_command_language/include/tesseract_command_language/joint_waypoint.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_6b44a1ca50ad2bc02f9b4fddf8f40355.html">tesseract</a></li><li class="navelem"><a class="el" href="../../dir_79f93b11458aede2b9c457eb5d0d6786.html">tesseract_command_language</a></li><li class="navelem"><a class="el" href="../../dir_d811d44892c17126fca77ce9eb613e88.html">include</a></li><li class="navelem"><a class="el" href="../../dir_cf36dcfd71760b677854a7676dc8dcc7.html">tesseract_command_language</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_fa47c2fa9b13a12fc195f1b83854b816.html">tesseract_command_language</a></li><li class="navelem"><a class="el" href="../../dir_2b031ec1caa2ca366acbfc90a3bdbe33.html">include</a></li><li class="navelem"><a class="el" href="../../dir_01b616d47187535601161b70f3827efe.html">tesseract_command_language</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -147,7 +147,7 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#af987b5263695643d809b0d111a275f99">   97</a></span>&#160;  tinyxml2::XMLElement* <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#af987b5263695643d809b0d111a275f99">toXML</a>(tinyxml2::XMLDocument&amp; doc)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    Eigen::IOFormat <a class="code" href="../../dd/d38/tesseract__command__language_2src_2serialize_8cpp.html#afa65c4cb2053e7f1184e483ef552151c">eigen_format</a>(Eigen::StreamPrecision, Eigen::DontAlignCols, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    Eigen::IOFormat <a class="code" href="../../d8/d11/serialize_8cpp.html#afa65c4cb2053e7f1184e483ef552151c">eigen_format</a>(Eigen::StreamPrecision, Eigen::DontAlignCols, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    tinyxml2::XMLElement* xml_waypoint = doc.NewElement(<span class="stringliteral">&quot;Waypoint&quot;</span>);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    xml_waypoint-&gt;SetAttribute(<span class="stringliteral">&quot;type&quot;</span>, std::to_string(<a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#af6bb0a0570f0b079347adc373461cdc7">getType</a>()).c_str());</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
@@ -164,7 +164,7 @@ $(function() {
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    xml_joint_waypoint-&gt;InsertEndChild(xml_joint_names);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::stringstream position_string;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    position_string &lt;&lt; <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a5c68db2a587e0863d6668de170e88587">waypoint</a>.format(<a class="code" href="../../dd/d38/tesseract__command__language_2src_2serialize_8cpp.html#afa65c4cb2053e7f1184e483ef552151c">eigen_format</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    position_string &lt;&lt; <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a5c68db2a587e0863d6668de170e88587">waypoint</a>.format(<a class="code" href="../../d8/d11/serialize_8cpp.html#afa65c4cb2053e7f1184e483ef552151c">eigen_format</a>);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    tinyxml2::XMLElement* xml_joint_position = doc.NewElement(<span class="stringliteral">&quot;Position&quot;</span>);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    xml_joint_position-&gt;SetText(position_string.str().c_str());</div>
@@ -369,13 +369,13 @@ $(function() {
 <div class="ttc" id="anamespacetesseract__common_html_ab95676b5418063a1d7c84fbba4ff1fe0"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#ab95676b5418063a1d7c84fbba4ff1fe0">tesseract_common::QueryStringText</a></div><div class="ttdeci">tinyxml2::XMLError QueryStringText(const tinyxml2::XMLElement *xml_element, std::string &amp;text)</div><div class="ttdoc">Query a string Text from xml element.</div><div class="ttdef"><b>Definition:</b> utils.h:217</div></div>
 <div class="ttc" id="anamespacetesseract__planning_html"><div class="ttname"><a href="../../d9/dcd/namespacetesseract__planning.html">tesseract_planning</a></div><div class="ttdef"><b>Definition:</b> cartesian_waypoint.h:41</div></div>
 <div class="ttc" id="anamespacetesseract__planning_html_a4dc98c0138d35a000f6d6c275192b30babbff404565b92c7fb482703b27957bcb"><div class="ttname"><a href="../../d9/dcd/namespacetesseract__planning.html#a4dc98c0138d35a000f6d6c275192b30babbff404565b92c7fb482703b27957bcb">tesseract_planning::WaypointType::JOINT_WAYPOINT</a></div><div class="ttdeci">@ JOINT_WAYPOINT</div></div>
-<div class="ttc" id="atesseract__command__language_2src_2serialize_8cpp_html_afa65c4cb2053e7f1184e483ef552151c"><div class="ttname"><a href="../../dd/d38/tesseract__command__language_2src_2serialize_8cpp.html#afa65c4cb2053e7f1184e483ef552151c">eigen_format</a></div><div class="ttdeci">static const Eigen::IOFormat eigen_format(Eigen::StreamPrecision, Eigen::DontAlignCols, &quot; &quot;, &quot; &quot;)</div></div>
+<div class="ttc" id="aserialize_8cpp_html_afa65c4cb2053e7f1184e483ef552151c"><div class="ttname"><a href="../../d8/d11/serialize_8cpp.html#afa65c4cb2053e7f1184e483ef552151c">eigen_format</a></div><div class="ttdeci">static const Eigen::IOFormat eigen_format(Eigen::StreamPrecision, Eigen::DontAlignCols, &quot; &quot;, &quot; &quot;)</div></div>
 <div class="ttc" id="atesseract__common_2include_2tesseract__common_2utils_8h_html"><div class="ttname"><a href="../../dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html">utils.h</a></div><div class="ttdoc">Common Tesseract Utility Functions.</div></div>
 <div class="ttc" id="awaypoint__type_8h_html"><div class="ttname"><a href="../../de/d3d/waypoint__type_8h.html">waypoint_type.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 10 2021 02:00:07 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+Generated on Sun Jan 10 2021 19:50:54 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
 </small></address>
 </body>
 </html>

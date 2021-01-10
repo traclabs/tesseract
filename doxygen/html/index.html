@@ -98,24 +98,31 @@ Tesseract Setup Wizard and Visualization Tools</h1>
 Tesseract Core Packages</h1>
 <ul>
 <li><b>tesseract</b> – This is the main class that manages the major component Environment, Forward Kinematics, Inverse Kinematics and loading from various data.</li>
+<li><b>tesseract_command_language</b> – This package contains a generic command language to support motion and process planning similar to industrial teach pendants</li>
 <li><b><a class="el" href="d4/d79/namespacetesseract__collision.html">tesseract_collision</a></b> – This package contains a common interface for collision checking prividing several implementation of a Bullet collision library and FCL collision library. It includes both continuous and discrete collision checking for convex-convex, convex-concave and concave-concave shapes.</li>
 <li><b><a class="el" href="df/da9/namespacetesseract__common.html">tesseract_common</a></b> – This package contains common functionality needed by the majority of the packages.</li>
 <li><b><a class="el" href="d2/d5f/namespacetesseract__environment.html">tesseract_environment</a></b> – This package contains the Tesseract Environment which provides functionality to add,remove,move and modify links and joint. It also manages adding object to the contact managers and provides the ability.</li>
 <li><b><a class="el" href="d0/d17/namespacetesseract__geometry.html">tesseract_geometry</a></b> – This package contains geometry types used by Tesseract including primitive shapes, mesh, convex hull mesh, octomap and signed distance field.</li>
 <li><b><a class="el" href="d8/d4e/namespacetesseract__kinematics.html">tesseract_kinematics</a></b> – This package contains a common interface for Forward and Inverse kinematics for Chains, Trees and Graphs including implementation using KDL and OPW Kinematics.</li>
-<li><b>tesseract_motion_planners</b> – This package contains a common interface for Motion Planners and includes implementation for OMPL, TrajOpt and Descartes.</li>
 <li><b><a class="el" href="d9/d42/namespacetesseract__scene__graph.html" title="Main namespace.">tesseract_scene_graph</a></b> – This package contains the scene graph which is the data structure used to manage the connectivity of objects in the environment. It inherits from boost graph and provides addition functionality for adding,removing and modifying Links and Joints along with search implementation.</li>
 <li><b>tesseract_support</b> – This package contains support data used for unit tests and examples throughout Tesseract.</li>
 <li><b><a class="el" href="d8/de5/namespacetesseract__visualization.html">tesseract_visualization</a></b> – This package contains visualization utilities and libraries.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
+Related Repositories</h1>
+<ul>
+<li><a href="https://github.com/ros-industrial-consortium/tesseract_planning">Tesseract Planning</a></li>
+<li><a href="https://github.com/ros-industrial-consortium/tesseract_python">Tesseract Python</a></li>
+<li><a href="https://github.com/ros-industrial-consortium/tesseract_ros">Tesseract ROS</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Documentation</h1>
 <ul>
 <li><a href="https://ros-industrial-tesseract.rtfd.io">Wiki</a></li>
 <li><a href="https://ros-industrial-consortium.github.io/tesseract/">Doxygen</a></li>
 <li><a href="https://ros-industrial-consortium.github.io/tesseract/dev/bench">Benchmark</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Evolution</h1>
 <p><a href="https://www.youtube.com/watch?v=rxlzlsSBxAY"><img src="gh_pages/_static/tesseract_evolution.png" alt="Tesseract Evolution Video" class="inline"/></a></p>
 <p>How to create:</p>
@@ -123,30 +130,30 @@ Evolution</h1>
 <li>Create Video: <code>gource -1280x720 -seconds-per-day 0.2 --auto-skip-seconds 0.2 --disable-bloom -background d0d3d4 --hide filenames,mouse,progress -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4</code></li>
 <li>Create Gif: <code>ffmpeg -i gource.mp4 -r 10 -vf "scale=800:-1,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" tesseract_evolution.gif</code></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 TODO's</h1>
 <p>Warning: These packages are under heavy development and are subject to change.</p>
 <p>See <a href="https://github.com/ros-industrial-consortium/tesseract/issues/66">issue #66</a></p>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 Build Instructions</h1>
 <p>1) Clone repository into your workspace 2) Clone the repositories in the dependencies.rosinstall file using wstool or some other method (e.g. manually git cloning them) 3) Build the workspace using catkin tools, colcon, or a similar tool</p>
 <p>NOTE: To speed up clean build you may want to add tesseract_ext to an extended workspace.</p>
 <p>NOTE: Install TaskFlow from <a href="https://launchpad.net/~ros-industrial/+archive/ubuntu/ppa">ROS-Industrial PPA</a>.</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 Building with Clang-Tidy Enabled</h2>
 <p>Must pass the -DTESSERACT_ENABLE_CLANG_TIDY=ON to cmake when building. This is automatically enabled if cmake argument -DTESSERACT_ENABLE_TESTING_ALL=ON is passed.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Building Tesseract Tests</h2>
 <p>Must pass the -DTESSERACT_ENABLE_TESTING=ON to cmake when wanting to build tests. This is automatically enabled if cmake argument -DTESSERACT_ENABLE_TESTING_ALL=ON is passed.</p>
 <p>NOTE: If you are building using catkin tools, use <code>catkin build --force-cmake -DTESSERACT_ENABLE_TESTING=ON</code>.</p>
-<h3><a class="anchor" id="autotoc_md9"></a>
+<h3><a class="anchor" id="autotoc_md10"></a>
 Running Tesseract Tests</h3>
-<p>Tesseract packages use ctest because it is ROS agnostic, so to run the test call <code>catkin test --no-deps <a class="el" href="d4/d79/namespacetesseract__collision.html">tesseract_collision</a> <a class="el" href="df/da9/namespacetesseract__common.html">tesseract_common</a> <a class="el" href="d2/d5f/namespacetesseract__environment.html">tesseract_environment</a> <a class="el" href="d0/d17/namespacetesseract__geometry.html">tesseract_geometry</a> <a class="el" href="d8/d4e/namespacetesseract__kinematics.html">tesseract_kinematics</a> tesseract_motion_planners tesseract_process_managers <a class="el" href="d9/d42/namespacetesseract__scene__graph.html" title="Main namespace.">tesseract_scene_graph</a> <a class="el" href="d5/d8c/namespacetesseract__urdf.html">tesseract_urdf</a> tesseract_python</code></p>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<p>Tesseract packages use ctest because it is ROS agnostic, so to run the test call <code>catkin test --no-deps <a class="el" href="d4/d79/namespacetesseract__collision.html">tesseract_collision</a> <a class="el" href="df/da9/namespacetesseract__common.html">tesseract_common</a> <a class="el" href="d2/d5f/namespacetesseract__environment.html">tesseract_environment</a> <a class="el" href="d0/d17/namespacetesseract__geometry.html">tesseract_geometry</a> <a class="el" href="d8/d4e/namespacetesseract__kinematics.html">tesseract_kinematics</a> <a class="el" href="d9/d42/namespacetesseract__scene__graph.html" title="Main namespace.">tesseract_scene_graph</a> <a class="el" href="d5/d8c/namespacetesseract__urdf.html">tesseract_urdf</a> tesseract_command_language</code></p>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Building Tesseract Code Coverage</h2>
 <p>Must pass the -DTESSERACT_ENABLE_CODE_COVERAGE=ON to cmake when wanting to build code coverage. The code coverage report is located in each individuals build directory inside a ccov/all-merged folder. Open the index.html file to see the packages code coverage report.</p>
 <p>NOTE: Must be a clean build when generating a code coverage report. Also must build in debug.</p>
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md12"></a>
 Exclude Code From Code Coverage</h3>
 <ul>
 <li>LCOV_EXCL_LINE<ul>
@@ -163,7 +170,7 @@ Exclude Code From Code Coverage</h3>
 </li>
 </ul>
 <p>.. NOTE: You can replace <b>LCOV</b> above with <b>GCOV</b> or <b>GCOVR</b>.</p>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Quality Tools Leverage</h1>
 <p>Tesseract currently leverages Compiler Warnigs, Clang Tidy and Code Coverage. All warnings produced by Compiler and Clang Tidy are treated as errors during CI builds.</p>
 <ul>
@@ -209,12 +216,12 @@ Quality Tools Leverage</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Build Branch Sphinx Documentation</h1>
 <div class="fragment"><div class="line">cd gh_pages</div>
 <div class="line">sphinx-build . output</div>
 </div><!-- fragment --><p> Now open gh_pages/output/index.rst and remove <em>output</em> directory before commiting changes.</p>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Debugging Windows Build</h1>
 <ul>
 <li>Search Directories CI<ul>
@@ -231,7 +238,7 @@ Debugging Windows Build</h1>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 10 2021 02:00:13 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+Generated on Sun Jan 10 2021 19:50:57 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
 </small></address>
 </body>
 </html>

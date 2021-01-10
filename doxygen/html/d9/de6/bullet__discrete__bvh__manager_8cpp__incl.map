@@ -1,5 +1,5 @@
-<map id="tesseract/tesseract_collision/src/bullet/bullet_discrete_bvh_manager.cpp" name="tesseract/tesseract_collision/src/bullet/bullet_discrete_bvh_manager.cpp">
-<area shape="rect" id="node1" title="Tesseract ROS Bullet Discrete BVH Manager implementation." alt="" coords="1747,5,1965,61"/>
+<map id="tesseract_collision/src/bullet/bullet_discrete_bvh_manager.cpp" name="tesseract_collision/src/bullet/bullet_discrete_bvh_manager.cpp">
+<area shape="rect" id="node1" title="Tesseract ROS Bullet Discrete BVH Manager implementation." alt="" coords="1773,5,1939,61"/>
 <area shape="rect" id="node2" href="$df/d19/bullet__discrete__bvh__manager_8h.html" title="Tesseract ROS Bullet discrete BVH collision manager." alt="" coords="1783,109,1929,165"/>
 <area shape="rect" id="node3" href="$d6/d91/bullet__utils_8h.html" title="Tesseract ROS Bullet environment utility function." alt="" coords="1789,221,1923,262"/>
 <area shape="rect" id="node48" href="$db/d35/discrete__contact__manager_8h.html" title="This is the discrete contact manager base class." alt="" coords="1335,317,1486,373"/>
