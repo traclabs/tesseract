@@ -124,7 +124,7 @@ $(function() {
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../df/da9/namespacetesseract__common.html#af89ed6517f4c84bdb2b037bb40f7d9d9">tesseract_common::VectorVector3d</a> mesh_vertices;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Eigen::VectorXi mesh_faces;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// TODO: Need to figure out why this test not pass of bullet when using the box_2m.ply mesh</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    EXPECT_GT(<a class="code" href="../../d4/d79/namespacetesseract__collision.html#ab79187502eefb0f670dbde89a5b7b969">loadSimplePlyFile</a>(std::string(<a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a5c46490123b146305726fcf9eb50549f">TESSERACT_SUPPORT_DIR</a>) + <span class="stringliteral">&quot;/meshes/box2_2m.ply&quot;</span>, mesh_vertices, mesh_faces),</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    EXPECT_GT(<a class="code" href="../../d4/d79/namespacetesseract__collision.html#ab79187502eefb0f670dbde89a5b7b969">loadSimplePlyFile</a>(std::string(TESSERACT_SUPPORT_DIR) + <span class="stringliteral">&quot;/meshes/box2_2m.ply&quot;</span>, mesh_vertices, mesh_faces),</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              0);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// This is required because convex hull cannot have multiple faces on the same plane.</span></div>
@@ -382,7 +382,6 @@ $(function() {
 <div class="ttc" id="acontinuous__contact__manager_8h_html"><div class="ttname"><a href="../../d6/d0f/continuous__contact__manager_8h.html">continuous_contact_manager.h</a></div><div class="ttdoc">This is the continuous contact manager base class.</div></div>
 <div class="ttc" id="adiscrete__contact__manager_8h_html"><div class="ttname"><a href="../../db/d35/discrete__contact__manager_8h.html">discrete_contact_manager.h</a></div><div class="ttdoc">This is the discrete contact manager base class.</div></div>
 <div class="ttc" id="ageometries_8h_html"><div class="ttname"><a href="../../d4/ddb/geometries_8h.html">geometries.h</a></div><div class="ttdoc">Tesseract Geometries.</div></div>
-<div class="ttc" id="anamespaceabb__irb2400__viewer_html_a5c46490123b146305726fcf9eb50549f"><div class="ttname"><a href="../../d0/da4/namespaceabb__irb2400__viewer.html#a5c46490123b146305726fcf9eb50549f">abb_irb2400_viewer.TESSERACT_SUPPORT_DIR</a></div><div class="ttdeci">TESSERACT_SUPPORT_DIR</div><div class="ttdef"><b>Definition:</b> abb_irb2400_viewer.py:18</div></div>
 <div class="ttc" id="anamespacetesseract__collision_1_1test__suite_1_1detail_html_a0a7ad50afb38adcc7d419ceb194393e4"><div class="ttname"><a href="../../df/d98/namespacetesseract__collision_1_1test__suite_1_1detail.html#a0a7ad50afb38adcc7d419ceb194393e4">tesseract_collision::test_suite::detail::runTestTyped</a></div><div class="ttdeci">void runTestTyped(DiscreteContactManager &amp;checker, ContactTestType test_type)</div><div class="ttdef"><b>Definition:</b> collision_box_box_unit.hpp:128</div></div>
 <div class="ttc" id="anamespacetesseract__collision_1_1test__suite_1_1detail_html_a3fb030da7784f5e059d57666cb288f3d"><div class="ttname"><a href="../../df/d98/namespacetesseract__collision_1_1test__suite_1_1detail.html#a3fb030da7784f5e059d57666cb288f3d">tesseract_collision::test_suite::detail::addCollisionObjects</a></div><div class="ttdeci">void addCollisionObjects(ContinuousContactManager &amp;checker)</div><div class="ttdef"><b>Definition:</b> collision_box_box_cast_unit.hpp:13</div></div>
 <div class="ttc" id="anamespacetesseract__collision_1_1test__suite_html_a64721a2ef6abc909e9a762274303107b"><div class="ttname"><a href="../../d3/d75/namespacetesseract__collision_1_1test__suite.html#a64721a2ef6abc909e9a762274303107b">tesseract_collision::test_suite::runTest</a></div><div class="ttdeci">void runTest(ContinuousContactManager &amp;checker)</div><div class="ttdef"><b>Definition:</b> collision_box_box_cast_unit.hpp:113</div></div>
@@ -409,7 +408,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 9 2021 21:31:59 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+Generated on Sun Jan 10 2021 02:00:07 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
 </small></address>
 </body>
 </html>

@@ -90,12 +90,12 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d9/dcd/namespacetesseract__planning.html">tesseract_planning</a></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#afa3626408640368d63608d050329f4a1">successTask</a>(<span class="keyword">const</span> <a class="code" href="../../db/d7c/structTaskInput.html">TaskInput</a>&amp; <span class="comment">/*instruction*/</span>,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                 <span class="keyword">const</span> std::string&amp; <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                 <span class="keyword">const</span> std::string&amp; name,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                 <span class="keyword">const</span> std::string&amp; message,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                 <span class="keyword">const</span> <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#ab54ff51797cb237e3e8461f4a12950e0">TaskflowVoidFn</a>&amp; user_callback = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#a4a082cae593b327f12943022ad5cf5f7">failureTask</a>(<a class="code" href="../../db/d7c/structTaskInput.html">TaskInput</a> instruction,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                 <span class="keyword">const</span> std::string&amp; <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                 <span class="keyword">const</span> std::string&amp; name,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                 <span class="keyword">const</span> std::string&amp; message,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                 <span class="keyword">const</span> <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#ab54ff51797cb237e3e8461f4a12950e0">TaskflowVoidFn</a>&amp; user_callback = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
@@ -110,7 +110,6 @@ $(function() {
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="../../de/d3c/macros_8h.html">macros.h</a></div><div class="ttdoc">Common Tesseract Macros.</div></div>
 <div class="ttc" id="amacros_8h_html_a8cc0e3c6a3382c5c0b19eb9e676fc2db"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div><div class="ttdeci">#define TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</div><div class="ttdef"><b>Definition:</b> macros.h:65</div></div>
 <div class="ttc" id="anamespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP_html"><div class="ttname"><a href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div><div class="ttdef"><b>Definition:</b> create_convex_hull.cpp:35</div></div>
-<div class="ttc" id="anamespaceabb__irb2400__viewer_html_a2448c83cd96948b46ff1d6dfbe23f183"><div class="ttname"><a href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">abb_irb2400_viewer.name</a></div><div class="ttdeci">name</div><div class="ttdef"><b>Definition:</b> abb_irb2400_viewer.py:69</div></div>
 <div class="ttc" id="anamespacetesseract__planning_html"><div class="ttname"><a href="../../d9/dcd/namespacetesseract__planning.html">tesseract_planning</a></div><div class="ttdef"><b>Definition:</b> cartesian_waypoint.h:41</div></div>
 <div class="ttc" id="anamespacetesseract__planning_html_a4a082cae593b327f12943022ad5cf5f7"><div class="ttname"><a href="../../d9/dcd/namespacetesseract__planning.html#a4a082cae593b327f12943022ad5cf5f7">tesseract_planning::failureTask</a></div><div class="ttdeci">void failureTask(TaskInput instruction, const std::string &amp;name, const std::string &amp;message, const TaskflowVoidFn &amp;user_callback=nullptr)</div><div class="ttdoc">The default failure task to be used.</div><div class="ttdef"><b>Definition:</b> utils.cpp:42</div></div>
 <div class="ttc" id="anamespacetesseract__planning_html_a6e3bc51fc2552d2913c17d1f020c23b4"><div class="ttname"><a href="../../d9/dcd/namespacetesseract__planning.html#a6e3bc51fc2552d2913c17d1f020c23b4">tesseract_planning::hasSeedTask</a></div><div class="ttdeci">int hasSeedTask(TaskInput input)</div><div class="ttdoc">Check if the input has a seed.</div><div class="ttdef"><b>Definition:</b> utils.cpp:74</div></div>
@@ -123,7 +122,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 9 2021 21:31:59 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+Generated on Sun Jan 10 2021 02:00:07 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
 </small></address>
 </body>
 </html>

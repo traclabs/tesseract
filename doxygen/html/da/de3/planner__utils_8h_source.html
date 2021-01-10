@@ -141,9 +141,9 @@ $(function() {
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#a97a7a198edf46fea10c33898f4b1e2c5">PlannerProfileRemapping</a>&amp; profile_remapping,</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                    std::string default_profile = <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#a43d81c6e05a1a36d5a36bee6c034e88b">DEFAULT_PROFILE_KEY</a>)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  std::string <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a12e1e449f7d8f460458e4e9689d7b909">results</a> = profile;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  std::string results = profile;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">if</span> (profile.empty())</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a12e1e449f7d8f460458e4e9689d7b909">results</a> = std::move(default_profile);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    results = std::move(default_profile);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="comment">// Check for remapping of profile</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">auto</span> remap = profile_remapping.find(planner_name);</div>
@@ -151,9 +151,9 @@ $(function() {
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">auto</span> p = remap-&gt;second.find(profile);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span> (p != remap-&gt;second.end())</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a12e1e449f7d8f460458e4e9689d7b909">results</a> = p-&gt;second;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      results = p-&gt;second;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a12e1e449f7d8f460458e4e9689d7b909">results</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">return</span> results;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ProfileType&gt;</div>
@@ -162,7 +162,7 @@ $(function() {
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;           <span class="keyword">const</span> std::unordered_map&lt;std::string, std::shared_ptr&lt;const ProfileType&gt;&gt;&amp; profile_map,</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;           std::shared_ptr&lt;const ProfileType&gt; default_profile = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  std::shared_ptr&lt;const ProfileType&gt; <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a12e1e449f7d8f460458e4e9689d7b909">results</a>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  std::shared_ptr&lt;const ProfileType&gt; results;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keyword">auto</span> it = profile_map.find(profile);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">if</span> (it == profile_map.end())</div>
@@ -171,12 +171,12 @@ $(function() {
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                            profile.c_str());</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; pair : profile_map)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      CONSOLE_BRIDGE_logDebug(<span class="stringliteral">&quot;%s&quot;</span>, pair.first.c_str());</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a12e1e449f7d8f460458e4e9689d7b909">results</a> = default_profile;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    results = default_profile;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a12e1e449f7d8f460458e4e9689d7b909">results</a> = it-&gt;second;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    results = it-&gt;second;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a12e1e449f7d8f460458e4e9689d7b909">results</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordflow">return</span> results;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}  <span class="comment">// namespace tesseract_planning</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
@@ -187,7 +187,6 @@ $(function() {
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="../../de/d3c/macros_8h.html">macros.h</a></div><div class="ttdoc">Common Tesseract Macros.</div></div>
 <div class="ttc" id="amacros_8h_html_a8cc0e3c6a3382c5c0b19eb9e676fc2db"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div><div class="ttdeci">#define TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</div><div class="ttdef"><b>Definition:</b> macros.h:65</div></div>
 <div class="ttc" id="anamespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP_html"><div class="ttname"><a href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div><div class="ttdef"><b>Definition:</b> create_convex_hull.cpp:35</div></div>
-<div class="ttc" id="anamespaceabb__irb2400__viewer_html_a12e1e449f7d8f460458e4e9689d7b909"><div class="ttname"><a href="../../d0/da4/namespaceabb__irb2400__viewer.html#a12e1e449f7d8f460458e4e9689d7b909">abb_irb2400_viewer.results</a></div><div class="ttdeci">results</div><div class="ttdef"><b>Definition:</b> abb_irb2400_viewer.py:77</div></div>
 <div class="ttc" id="anamespacetesseract__planning_html"><div class="ttname"><a href="../../d9/dcd/namespacetesseract__planning.html">tesseract_planning</a></div><div class="ttdef"><b>Definition:</b> cartesian_waypoint.h:41</div></div>
 <div class="ttc" id="anamespacetesseract__planning_html_a006d576ff51dbc06d744c7655d75b94b"><div class="ttname"><a href="../../d9/dcd/namespacetesseract__planning.html#a006d576ff51dbc06d744c7655d75b94b">tesseract_planning::isWithinJointLimits</a></div><div class="ttdeci">bool isWithinJointLimits(const Waypoint &amp;wp, const Eigen::Ref&lt; const Eigen::MatrixX2d &gt; &amp;limits)</div><div class="ttdoc">Checks if a waypoint is.</div><div class="ttdef"><b>Definition:</b> utils.cpp:176</div></div>
 <div class="ttc" id="anamespacetesseract__planning_html_a2c3697d8b33f7e6ffa453a80d765c2dd"><div class="ttname"><a href="../../d9/dcd/namespacetesseract__planning.html#a2c3697d8b33f7e6ffa453a80d765c2dd">tesseract_planning::getProfileString</a></div><div class="ttdeci">std::string getProfileString(const std::string &amp;profile, const std::string &amp;planner_name, const PlannerProfileRemapping &amp;profile_remapping, std::string default_profile=DEFAULT_PROFILE_KEY)</div><div class="ttdoc">Get the profile string taking into account defaults and profile remapping.</div><div class="ttdef"><b>Definition:</b> planner_utils.h:118</div></div>
@@ -203,7 +202,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 9 2021 21:32:00 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+Generated on Sun Jan 10 2021 02:00:08 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
 </small></address>
 </body>
 </html>

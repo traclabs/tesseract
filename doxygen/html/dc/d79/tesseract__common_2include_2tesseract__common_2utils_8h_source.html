@@ -230,62 +230,62 @@ $(function() {
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#a22a4a1b896230ca84cce7aae2e21673a">  251</a></span>&#160;<span class="keyword">inline</span> tinyxml2::XMLError <a class="code" href="../../df/da9/namespacetesseract__common.html#a22a4a1b896230ca84cce7aae2e21673a">QueryStringAttribute</a>(<span class="keyword">const</span> tinyxml2::XMLElement* xml_element,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                               <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>,</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                               <span class="keyword">const</span> <span class="keywordtype">char</span>* name,</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                               std::string&amp; value)</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keyword">const</span> tinyxml2::XMLAttribute* attribute = xml_element-&gt;FindAttribute(<a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keyword">const</span> tinyxml2::XMLAttribute* attribute = xml_element-&gt;FindAttribute(name);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">if</span> (attribute == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> tinyxml2::XML_NO_ATTRIBUTE;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../df/da9/namespacetesseract__common.html#ae1a3ebd3610dce6d24cc7569606fd9ab">QueryStringValue</a>(attribute, value);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#aadfa4845aecc119ae62b37e59c6ee168">  269</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="../../df/da9/namespacetesseract__common.html#aadfa4845aecc119ae62b37e59c6ee168">StringAttribute</a>(<span class="keyword">const</span> tinyxml2::XMLElement* xml_element, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>, std::string default_value)</div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#aadfa4845aecc119ae62b37e59c6ee168">  269</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="../../df/da9/namespacetesseract__common.html#aadfa4845aecc119ae62b37e59c6ee168">StringAttribute</a>(<span class="keyword">const</span> tinyxml2::XMLElement* xml_element, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, std::string default_value)</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;{</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  std::string str = std::move(default_value);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <a class="code" href="../../df/da9/namespacetesseract__common.html#a22a4a1b896230ca84cce7aae2e21673a">QueryStringAttribute</a>(xml_element, <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>, str);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <a class="code" href="../../df/da9/namespacetesseract__common.html#a22a4a1b896230ca84cce7aae2e21673a">QueryStringAttribute</a>(xml_element, name, str);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keywordflow">return</span> str;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
 <div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#a609734264f8b63f5c7815871c40b231f">  288</a></span>&#160;<span class="keyword">inline</span> tinyxml2::XMLError <a class="code" href="../../df/da9/namespacetesseract__common.html#a609734264f8b63f5c7815871c40b231f">QueryStringAttributeRequired</a>(<span class="keyword">const</span> tinyxml2::XMLElement* xml_element,</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                                                       <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>,</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                                                       <span class="keyword">const</span> <span class="keywordtype">char</span>* name,</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                                       std::string&amp; value)</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  tinyxml2::XMLError status = <a class="code" href="../../df/da9/namespacetesseract__common.html#a22a4a1b896230ca84cce7aae2e21673a">QueryStringAttribute</a>(xml_element, <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>, value);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  tinyxml2::XMLError status = <a class="code" href="../../df/da9/namespacetesseract__common.html#a22a4a1b896230ca84cce7aae2e21673a">QueryStringAttribute</a>(xml_element, name, value);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordflow">if</span> (status != tinyxml2::XML_NO_ATTRIBUTE &amp;&amp; status != tinyxml2::XML_SUCCESS)</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), name);</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  }</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (status == tinyxml2::XML_NO_ATTRIBUTE)</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  {</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Missing %s required attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Missing %s required attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), name);</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  }</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (status == tinyxml2::XML_WRONG_ATTRIBUTE_TYPE)</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  {</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute type &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute type &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), name);</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  }</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordflow">return</span> status;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
 <div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">  322</a></span>&#160;<span class="keyword">inline</span> tinyxml2::XMLError <a class="code" href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">QueryDoubleAttributeRequired</a>(<span class="keyword">const</span> tinyxml2::XMLElement* xml_element,</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                                       <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>,</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                                       <span class="keyword">const</span> <span class="keywordtype">char</span>* name,</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                                       <span class="keywordtype">double</span>&amp; value)</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  tinyxml2::XMLError status = xml_element-&gt;QueryDoubleAttribute(<a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>, &amp;value);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  tinyxml2::XMLError status = xml_element-&gt;QueryDoubleAttribute(name, &amp;value);</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keywordflow">if</span> (status != tinyxml2::XML_NO_ATTRIBUTE &amp;&amp; status != tinyxml2::XML_SUCCESS)</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), name);</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  }</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (status == tinyxml2::XML_NO_ATTRIBUTE)</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Missing %s required attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Missing %s required attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), name);</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  }</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (status == tinyxml2::XML_WRONG_ATTRIBUTE_TYPE)</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute type &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute type &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), name);</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  }</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <span class="keywordflow">return</span> status;</div>
@@ -314,7 +314,6 @@ $(function() {
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="../../de/d3c/macros_8h.html">macros.h</a></div><div class="ttdoc">Common Tesseract Macros.</div></div>
 <div class="ttc" id="amacros_8h_html_a8cc0e3c6a3382c5c0b19eb9e676fc2db"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div><div class="ttdeci">#define TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</div><div class="ttdef"><b>Definition:</b> macros.h:65</div></div>
 <div class="ttc" id="anamespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP_html"><div class="ttname"><a href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div><div class="ttdef"><b>Definition:</b> create_convex_hull.cpp:35</div></div>
-<div class="ttc" id="anamespaceabb__irb2400__viewer_html_a2448c83cd96948b46ff1d6dfbe23f183"><div class="ttname"><a href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">abb_irb2400_viewer.name</a></div><div class="ttdeci">name</div><div class="ttdef"><b>Definition:</b> abb_irb2400_viewer.py:69</div></div>
 <div class="ttc" id="anamespacetesseract__common_html"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html">tesseract_common</a></div><div class="ttdef"><b>Definition:</b> clone_cache.h:41</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_a00bc131acfeba0eba8fe7ff7cd944860"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a00bc131acfeba0eba8fe7ff7cd944860">tesseract_common::toNumeric</a></div><div class="ttdeci">bool toNumeric(const std::string &amp;s, FloatType &amp;value)</div><div class="ttdoc">Convert a string to a numeric value type.</div><div class="ttdef"><b>Definition:</b> utils.h:105</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_a1077809c98ad8bf5262e426cff6e63a3"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a1077809c98ad8bf5262e426cff6e63a3">tesseract_common::getTimestampString</a></div><div class="ttdeci">std::string getTimestampString()</div><div class="ttdoc">Get Timestamp string.</div><div class="ttdef"><b>Definition:</b> utils.h:186</div></div>
@@ -336,7 +335,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 9 2021 21:31:59 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+Generated on Sun Jan 10 2021 02:00:07 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
 </small></address>
 </body>
 </html>

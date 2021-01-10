@@ -146,33 +146,33 @@ $(function() {
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../d9/d42/namespacetesseract__scene__graph.html#aa77add93f95a664b924ff3067128eb15">   86</a></span>&#160;<span class="keyword">inline</span> KDL::Joint <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#a9f0ce2dde1dfc29ac92461d216bb82a8">convert</a>(<span class="keyword">const</span> <a class="code" href="../../d6/d5f/classtesseract__scene__graph_1_1Joint.html#a705d1f0a066833444550aa0c7f6d16b9">Joint::ConstPtr</a>&amp; joint)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  KDL::Frame parent_joint = <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#a9f0ce2dde1dfc29ac92461d216bb82a8">convert</a>(joint-&gt;parent_to_joint_origin_transform);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">const</span> std::string&amp; <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a> = joint-&gt;getName();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">const</span> std::string&amp; name = joint-&gt;getName();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">switch</span> (joint-&gt;type)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  {</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#ade43fa945a554b6e0c703e38e6a8cf16ac6e6dc18b53b4c2681394b9d8aefcec7">JointType::FIXED</a>:</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(<a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>, KDL::Joint::None);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(name, KDL::Joint::None);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#ade43fa945a554b6e0c703e38e6a8cf16a06ec593fa63e118e8d2d0fd58c223acf">JointType::REVOLUTE</a>:</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      KDL::Vector axis = <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#a9f0ce2dde1dfc29ac92461d216bb82a8">convert</a>(joint-&gt;axis);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(<a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>, parent_joint.p, parent_joint.M * axis, KDL::Joint::RotAxis);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(name, parent_joint.p, parent_joint.M * axis, KDL::Joint::RotAxis);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#ade43fa945a554b6e0c703e38e6a8cf16ab1fa9dd3af034b3ef4291579aa673c07">JointType::CONTINUOUS</a>:</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      KDL::Vector axis = <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#a9f0ce2dde1dfc29ac92461d216bb82a8">convert</a>(joint-&gt;axis);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(<a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>, parent_joint.p, parent_joint.M * axis, KDL::Joint::RotAxis);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(name, parent_joint.p, parent_joint.M * axis, KDL::Joint::RotAxis);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#ade43fa945a554b6e0c703e38e6a8cf16aace8e17dd1560c692929800de207e902">JointType::PRISMATIC</a>:</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      KDL::Vector axis = <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#a9f0ce2dde1dfc29ac92461d216bb82a8">convert</a>(joint-&gt;axis);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(<a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>, parent_joint.p, parent_joint.M * axis, KDL::Joint::TransAxis);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(name, parent_joint.p, parent_joint.M * axis, KDL::Joint::TransAxis);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      CONSOLE_BRIDGE_logWarn(<span class="stringliteral">&quot;Converting unknown joint type of joint &#39;%s&#39; into a fixed joint&quot;</span>, <a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>.c_str());</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(<a class="code" href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">name</a>, KDL::Joint::None);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      CONSOLE_BRIDGE_logWarn(<span class="stringliteral">&quot;Converting unknown joint type of joint &#39;%s&#39; into a fixed joint&quot;</span>, name.c_str());</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">return</span> KDL::Joint(name, KDL::Joint::None);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
@@ -291,7 +291,6 @@ $(function() {
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="../../de/d3c/macros_8h.html">macros.h</a></div><div class="ttdoc">Common Tesseract Macros.</div></div>
 <div class="ttc" id="amacros_8h_html_a8cc0e3c6a3382c5c0b19eb9e676fc2db"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div><div class="ttdeci">#define TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</div><div class="ttdef"><b>Definition:</b> macros.h:65</div></div>
 <div class="ttc" id="anamespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP_html"><div class="ttname"><a href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div><div class="ttdef"><b>Definition:</b> create_convex_hull.cpp:35</div></div>
-<div class="ttc" id="anamespaceabb__irb2400__viewer_html_a2448c83cd96948b46ff1d6dfbe23f183"><div class="ttname"><a href="../../d0/da4/namespaceabb__irb2400__viewer.html#a2448c83cd96948b46ff1d6dfbe23f183">abb_irb2400_viewer.name</a></div><div class="ttdeci">name</div><div class="ttdef"><b>Definition:</b> abb_irb2400_viewer.py:69</div></div>
 <div class="ttc" id="anamespaceboost_html_a5bdec37849f299741830b4d2fc9f93aaafabcd8d39ed0870eb89a37f3c235026d"><div class="ttname"><a href="../../d4/da9/namespaceboost.html#a5bdec37849f299741830b4d2fc9f93aaafabcd8d39ed0870eb89a37f3c235026d">boost::edge_joint</a></div><div class="ttdeci">@ edge_joint</div><div class="ttdef"><b>Definition:</b> graph.h:74</div></div>
 <div class="ttc" id="anamespaceboost_html_ab951500554c258d05de53b1a9e47c6f7aaa6eb1f0c641e015418e35bd1d9aa546"><div class="ttname"><a href="../../d4/da9/namespaceboost.html#ab951500554c258d05de53b1a9e47c6f7aaa6eb1f0c641e015418e35bd1d9aa546">boost::vertex_link</a></div><div class="ttdeci">@ vertex_link</div><div class="ttdef"><b>Definition:</b> graph.h:62</div></div>
 <div class="ttc" id="anamespacetesseract__scene__graph_html"><div class="ttname"><a href="../../d9/d42/namespacetesseract__scene__graph.html">tesseract_scene_graph</a></div><div class="ttdoc">Main namespace.</div><div class="ttdef"><b>Definition:</b> allowed_collision_matrix.h:22</div></div>
@@ -309,7 +308,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 9 2021 21:32:00 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+Generated on Sun Jan 10 2021 02:00:08 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
 </small></address>
 </body>
 </html>
