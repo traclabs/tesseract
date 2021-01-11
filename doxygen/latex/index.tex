@@ -70,6 +70,8 @@ Warning\+: These packages are under heavy development and are subject to change.
 See \href{https://github.com/ros-industrial-consortium/tesseract/issues/66}{\texttt{ issue \#66}}\hypertarget{index_autotoc_md7}{}\doxysection{Build Instructions}\label{index_autotoc_md7}
 1) Clone repository into your workspace 2) Clone the repositories in the dependencies.\+rosinstall file using wstool or some other method (e.\+g. manually git cloning them) 3) Build the workspace using catkin tools, colcon, or a similar tool
 
+NOTE\+: For noetic tesseract\+\_\+ext is not required. Install the following dependencies\+: libbullet-\/dev, libbullet-\/extras-\/dev and ros-\/noetic-\/fcl. Taskflow can be install using the PPA below.
+
 NOTE\+: To speed up clean build you may want to add tesseract\+\_\+ext to an extended workspace.
 
 NOTE\+: Install Task\+Flow from \href{https://launchpad.net/~ros-industrial/+archive/ubuntu/ppa}{\texttt{ ROS-\/\+Industrial PPA}}.\hypertarget{index_autotoc_md8}{}\doxysubsection{Building with Clang-\/\+Tidy Enabled}\label{index_autotoc_md8}
