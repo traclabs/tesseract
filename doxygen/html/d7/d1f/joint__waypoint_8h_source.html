@@ -306,32 +306,32 @@ $(function() {
 <div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#aeaded3eb09bc692617a5a8fcde0767fe">  276</a></span>&#160;  Eigen::VectorXd <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#aeaded3eb09bc692617a5a8fcde0767fe">lower_tolerance</a>;</div>
 <div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#afae1cdc8b5a952c209b98f5523421ca7">  278</a></span>&#160;  Eigen::VectorXd <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#afae1cdc8b5a952c209b98f5523421ca7">upper_tolerance</a>;</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a6270ec59caa862e325e3a75f3ec8caf1">  280</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a6270ec59caa862e325e3a75f3ec8caf1">isToleranced</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="comment">// Check if they are empty</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#aeaded3eb09bc692617a5a8fcde0767fe">lower_tolerance</a>.size() == 0 || <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#afae1cdc8b5a952c209b98f5523421ca7">upper_tolerance</a>.size() == 0)</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="comment">// Check if they are close to 0</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    Eigen::VectorXd range = <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#afae1cdc8b5a952c209b98f5523421ca7">upper_tolerance</a> - <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#aeaded3eb09bc692617a5a8fcde0767fe">lower_tolerance</a>;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordtype">double</span> sum = range.sum();</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">return</span> (sum &lt; 1e-5);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;};</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}  <span class="comment">// namespace tesseract_planning</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#ifdef SWIG</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;%extend <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html">tesseract_planning::JointWaypoint</a> {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  JointWaypoint(std::vector&lt;std::string&gt; joint_names, <span class="keyword">const</span> Eigen::VectorXd&amp; other)</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html">tesseract_planning::JointWaypoint</a>(joint_names, other);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  }</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;%tesseract_command_language_add_waypoint_type(JointWaypoint)</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// SWIG</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_COMMAND_LANGUAGE_JOINT_WAYPOINT_H</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a6270ec59caa862e325e3a75f3ec8caf1">  284</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a6270ec59caa862e325e3a75f3ec8caf1">isToleranced</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="comment">// Check if they are empty</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#aeaded3eb09bc692617a5a8fcde0767fe">lower_tolerance</a>.size() == 0 || <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#afae1cdc8b5a952c209b98f5523421ca7">upper_tolerance</a>.size() == 0)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="comment">// Check if they are close to 0</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    Eigen::VectorXd range = <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#afae1cdc8b5a952c209b98f5523421ca7">upper_tolerance</a> - <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#aeaded3eb09bc692617a5a8fcde0767fe">lower_tolerance</a>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">double</span> sum = range.sum();</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">return</span> (sum &gt; 1e-5);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;};</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}  <span class="comment">// namespace tesseract_planning</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#ifdef SWIG</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;%extend <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html">tesseract_planning::JointWaypoint</a> {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  JointWaypoint(std::vector&lt;std::string&gt; joint_names, <span class="keyword">const</span> Eigen::VectorXd&amp; other)</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html">tesseract_planning::JointWaypoint</a>(joint_names, other);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;%tesseract_command_language_add_waypoint_type(JointWaypoint)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// SWIG</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_COMMAND_LANGUAGE_JOINT_WAYPOINT_H</span></div>
 <div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html">tesseract_planning::JointWaypoint</a></div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:44</div></div>
 <div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a094405e4d78d2c474c801c3e98a4d54b"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a094405e4d78d2c474c801c3e98a4d54b">tesseract_planning::JointWaypoint::operator()</a></div><div class="ttdeci">double operator()(Eigen::Index i) const</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:249</div></div>
 <div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a0cf419185eaf6e54e674533c5ca32788"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a0cf419185eaf6e54e674533c5ca32788">tesseract_planning::JointWaypoint::operator[]</a></div><div class="ttdeci">double operator[](Eigen::Index i) const</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:247</div></div>
@@ -340,7 +340,7 @@ $(function() {
 <div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a533b1e1df36f2d14601cc32489b9428a"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a533b1e1df36f2d14601cc32489b9428a">tesseract_planning::JointWaypoint::operator*=</a></div><div class="ttdeci">JointWaypoint &amp; operator*=(const Eigen::MatrixBase&lt; OtherDerived &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:186</div></div>
 <div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a56fbf0fa9035d3f7260be908c72116c7"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a56fbf0fa9035d3f7260be908c72116c7">tesseract_planning::JointWaypoint::JointWaypoint</a></div><div class="ttdeci">JointWaypoint(const tinyxml2::XMLElement &amp;xml_element)</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:51</div></div>
 <div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a5c68db2a587e0863d6668de170e88587"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a5c68db2a587e0863d6668de170e88587">tesseract_planning::JointWaypoint::waypoint</a></div><div class="ttdeci">Eigen::VectorXd waypoint</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:273</div></div>
-<div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a6270ec59caa862e325e3a75f3ec8caf1"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a6270ec59caa862e325e3a75f3ec8caf1">tesseract_planning::JointWaypoint::isToleranced</a></div><div class="ttdeci">bool isToleranced() const</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:280</div></div>
+<div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a6270ec59caa862e325e3a75f3ec8caf1"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a6270ec59caa862e325e3a75f3ec8caf1">tesseract_planning::JointWaypoint::isToleranced</a></div><div class="ttdeci">bool isToleranced() const</div><div class="ttdoc">Returns true if waypoint is toleranced.</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:284</div></div>
 <div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a64988782c42ddd417cd6ce6b05f233f9"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a64988782c42ddd417cd6ce6b05f233f9">tesseract_planning::JointWaypoint::operator()</a></div><div class="ttdeci">double &amp; operator()(Eigen::Index i)</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:248</div></div>
 <div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a6dc4ac21db865d41851190726bf80fb3"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a6dc4ac21db865d41851190726bf80fb3">tesseract_planning::JointWaypoint::size</a></div><div class="ttdeci">Eigen::Index size() const</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:165</div></div>
 <div class="ttc" id="aclasstesseract__planning_1_1JointWaypoint_html_a7be5bac313b8a5b357c5b6e52a0844e6"><div class="ttname"><a href="../../d7/d93/classtesseract__planning_1_1JointWaypoint.html#a7be5bac313b8a5b357c5b6e52a0844e6">tesseract_planning::JointWaypoint::ConstTransposeReturnType</a></div><div class="ttdeci">Eigen::VectorXd::ConstTransposeReturnType ConstTransposeReturnType</div><div class="ttdef"><b>Definition:</b> joint_waypoint.h:133</div></div>
@@ -375,7 +375,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 11 2021 14:04:05 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+Generated on Wed Jan 13 2021 03:41:10 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
 </small></address>
 </body>
 </html>
