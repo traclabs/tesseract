@@ -6,12 +6,22 @@
 
 
 
+Inheritance diagram for tesseract\+\_\+planning\+::State\+Waypoint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d7/d34/classtesseract__planning_1_1StateWaypoint__inherit__graph}
+\end{center}
+\end{figure}
+
+
 Collaboration diagram for tesseract\+\_\+planning\+::State\+Waypoint\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=276pt]{d3/d44/classtesseract__planning_1_1StateWaypoint__coll__graph}
+\includegraphics[width=283pt]{d3/d44/classtesseract__planning_1_1StateWaypoint__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -19,7 +29,7 @@ Collaboration diagram for tesseract\+\_\+planning\+::State\+Waypoint\+:
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a16c0e2ad4aaae900f7ac4cfcd19e4d71}{State\+Waypoint}} ()=default
 \item 
-\mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_ae34355c716d6361d523d5f65f6f0c863}{State\+Waypoint}} (std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a159a6134a1f67e289c8a873723179c8c}{joint\+\_\+names}}, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&\mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a6a208e3ad21571572840a43c56c5ef9e}{position}})
+\mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_ae34355c716d6361d523d5f65f6f0c863}{State\+Waypoint}} (std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{structtesseract__common_1_1JointState_a20a35aac92b19da25bd258f3d5121e1f}{joint\+\_\+names}}, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&\mbox{\hyperlink{structtesseract__common_1_1JointState_ac721833782498a2f02ec901d19e1f3d8}{position}})
 \item 
 \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a05e6de560d5e73b088a1d18ca3c8fce3}{State\+Waypoint}} (const tinyxml2\+::\+XMLElement \&xml\+\_\+element)
 \item 
@@ -29,21 +39,7 @@ void \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_ac5b46e5a167bac1
 \item 
 tinyxml2\+::\+XMLElement $\ast$ \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a87d77fdfd070ae62d934cc504f879d51}{to\+XML}} (tinyxml2\+::\+XMLDocument \&doc) const
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a159a6134a1f67e289c8a873723179c8c}{joint\+\_\+names}}
-\begin{DoxyCompactList}\small\item\em The joint corresponding to the position vector. \end{DoxyCompactList}\item 
-Eigen\+::\+Vector\+Xd \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a6a208e3ad21571572840a43c56c5ef9e}{position}}
-\begin{DoxyCompactList}\small\item\em The joint position at the waypoint. \end{DoxyCompactList}\item 
-Eigen\+::\+Vector\+Xd \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_aae3153bad0ab78fd50fe821c565501dd}{velocity}}
-\begin{DoxyCompactList}\small\item\em The velocity at the waypoint. \end{DoxyCompactList}\item 
-Eigen\+::\+Vector\+Xd \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_adeb3ba5154a112bbbdf7aec992180e04}{acceleration}}
-\begin{DoxyCompactList}\small\item\em The Acceleration at the waypoint. \end{DoxyCompactList}\item 
-Eigen\+::\+Vector\+Xd \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_a3f0943fad53dc3fa25136bf2da724623}{effort}}
-\begin{DoxyCompactList}\small\item\em The Effort at the waypoint. \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_aa9186b586787a59af098908f238bce82}{time}} \{ 0 \}
-\begin{DoxyCompactList}\small\item\em The Time from start at the waypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -85,69 +81,6 @@ double \mbox{\hyperlink{classtesseract__planning_1_1StateWaypoint_aa9186b586787a
 \index{toXML@{toXML}!tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}}
 \doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
 {\footnotesize\ttfamily tinyxml2\+::\+XMLElement $\ast$ tesseract\+\_\+planning\+::\+State\+Waypoint\+::to\+XML (\begin{DoxyParamCaption}\item[{tinyxml2\+::\+XMLDocument \&}]{doc }\end{DoxyParamCaption}) const}
-
-
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classtesseract__planning_1_1StateWaypoint_adeb3ba5154a112bbbdf7aec992180e04}\label{classtesseract__planning_1_1StateWaypoint_adeb3ba5154a112bbbdf7aec992180e04}} 
-\index{tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}!acceleration@{acceleration}}
-\index{acceleration@{acceleration}!tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}}
-\doxysubsubsection{\texorpdfstring{acceleration}{acceleration}}
-{\footnotesize\ttfamily Eigen\+::\+Vector\+Xd tesseract\+\_\+planning\+::\+State\+Waypoint\+::acceleration}
-
-
-
-The Acceleration at the waypoint. 
-
-\mbox{\Hypertarget{classtesseract__planning_1_1StateWaypoint_a3f0943fad53dc3fa25136bf2da724623}\label{classtesseract__planning_1_1StateWaypoint_a3f0943fad53dc3fa25136bf2da724623}} 
-\index{tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}!effort@{effort}}
-\index{effort@{effort}!tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}}
-\doxysubsubsection{\texorpdfstring{effort}{effort}}
-{\footnotesize\ttfamily Eigen\+::\+Vector\+Xd tesseract\+\_\+planning\+::\+State\+Waypoint\+::effort}
-
-
-
-The Effort at the waypoint. 
-
-\mbox{\Hypertarget{classtesseract__planning_1_1StateWaypoint_a159a6134a1f67e289c8a873723179c8c}\label{classtesseract__planning_1_1StateWaypoint_a159a6134a1f67e289c8a873723179c8c}} 
-\index{tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}!joint\_names@{joint\_names}}
-\index{joint\_names@{joint\_names}!tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}}
-\doxysubsubsection{\texorpdfstring{joint\_names}{joint\_names}}
-{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ tesseract\+\_\+planning\+::\+State\+Waypoint\+::joint\+\_\+names}
-
-
-
-The joint corresponding to the position vector. 
-
-\mbox{\Hypertarget{classtesseract__planning_1_1StateWaypoint_a6a208e3ad21571572840a43c56c5ef9e}\label{classtesseract__planning_1_1StateWaypoint_a6a208e3ad21571572840a43c56c5ef9e}} 
-\index{tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}!position@{position}}
-\index{position@{position}!tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}}
-\doxysubsubsection{\texorpdfstring{position}{position}}
-{\footnotesize\ttfamily Eigen\+::\+Vector\+Xd tesseract\+\_\+planning\+::\+State\+Waypoint\+::position}
-
-
-
-The joint position at the waypoint. 
-
-This is different from waypoint because it can be cartesian or joint and this stores the joint position solved for the planned waypoint. This also can be used for determining the robot configuration if provided a cartesian waypoint for generating a native robot program. \mbox{\Hypertarget{classtesseract__planning_1_1StateWaypoint_aa9186b586787a59af098908f238bce82}\label{classtesseract__planning_1_1StateWaypoint_aa9186b586787a59af098908f238bce82}} 
-\index{tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}!time@{time}}
-\index{time@{time}!tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}}
-\doxysubsubsection{\texorpdfstring{time}{time}}
-{\footnotesize\ttfamily double tesseract\+\_\+planning\+::\+State\+Waypoint\+::time \{ 0 \}}
-
-
-
-The Time from start at the waypoint. 
-
-\mbox{\Hypertarget{classtesseract__planning_1_1StateWaypoint_aae3153bad0ab78fd50fe821c565501dd}\label{classtesseract__planning_1_1StateWaypoint_aae3153bad0ab78fd50fe821c565501dd}} 
-\index{tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}!velocity@{velocity}}
-\index{velocity@{velocity}!tesseract\_planning::StateWaypoint@{tesseract\_planning::StateWaypoint}}
-\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
-{\footnotesize\ttfamily Eigen\+::\+Vector\+Xd tesseract\+\_\+planning\+::\+State\+Waypoint\+::velocity}
-
-
-
-The velocity at the waypoint. 
 
 
 

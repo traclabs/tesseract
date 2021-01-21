@@ -31,8 +31,8 @@ class \mbox{\hyperlink{classtesseract__common_1_1StatusCode}{Status\+Code}}
 \item 
 struct \mbox{\hyperlink{structtesseract__common_1_1PairHash}{Pair\+Hash}}
 \item 
-struct \mbox{\hyperlink{structtesseract__common_1_1JointTrajectory}{Joint\+Trajectory}}
-\begin{DoxyCompactList}\small\item\em Represents a joint trajectory. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}}
+\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}}
 \begin{DoxyCompactList}\small\item\em Store kinematic limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
@@ -54,10 +54,14 @@ using \mbox{\hyperlink{namespacetesseract__common_ac60e1af30f961fc086b69e330c643
 \item 
 using \mbox{\hyperlink{namespacetesseract__common_a67bde3cb7bb235f0f61c370ef8bc74d8}{Transform\+Map}} = \mbox{\hyperlink{namespacetesseract__common_a2c5a4b6149060671cf8c3f9d15ef58c4}{Aligned\+Map}}$<$ std\+::string, Eigen\+::\+Isometry3d $>$
 \item 
+using \mbox{\hyperlink{namespacetesseract__common_a917718f518f98714fce17e831ec1ea11}{Toolpath}} = \mbox{\hyperlink{namespacetesseract__common_a000d15c3ab8d8ba4ebdaae64153b053a}{Aligned\+Vector}}$<$ \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{Vector\+Isometry3d}} $>$
+\item 
 using \mbox{\hyperlink{namespacetesseract__common_a431ff65777ee0bed71e7671390638244}{Traj\+Array}} = Eigen\+::\+Matrix$<$ double, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic, Eigen\+::\+Row\+Major $>$
 \item 
 using \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{Link\+Names\+Pair}} = std\+::pair$<$ std\+::string, std\+::string $>$
-\end{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}{Joint\+Trajectory}} = std\+::vector$<$ \mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}} $>$
+\begin{DoxyCompactList}\small\item\em Represents a joint trajectory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -128,11 +132,27 @@ using \mbox{\hyperlink{namespacetesseract__common_a85a5c73ede3e67335c3e09f9f3bc3
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 using \mbox{\hyperlink{namespacetesseract__common_a000d15c3ab8d8ba4ebdaae64153b053a}{tesseract\+\_\+common\+::\+Aligned\+Vector}} = typedef std\+::vector$<$T, Eigen\+::aligned\+\_\+allocator$<$T$>$ $>$}
 
+\mbox{\Hypertarget{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}\label{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}} 
+\index{tesseract\_common@{tesseract\_common}!JointTrajectory@{JointTrajectory}}
+\index{JointTrajectory@{JointTrajectory}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{JointTrajectory}{JointTrajectory}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}{tesseract\+\_\+common\+::\+Joint\+Trajectory}} = typedef std\+::vector$<$\mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}}$>$}
+
+
+
+Represents a joint trajectory. 
+
 \mbox{\Hypertarget{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}\label{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}} 
 \index{tesseract\_common@{tesseract\_common}!LinkNamesPair@{LinkNamesPair}}
 \index{LinkNamesPair@{LinkNamesPair}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{LinkNamesPair}{LinkNamesPair}}
 {\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{tesseract\+\_\+common\+::\+Link\+Names\+Pair}} = typedef std\+::pair$<$std\+::string, std\+::string$>$}
+
+\mbox{\Hypertarget{namespacetesseract__common_a917718f518f98714fce17e831ec1ea11}\label{namespacetesseract__common_a917718f518f98714fce17e831ec1ea11}} 
+\index{tesseract\_common@{tesseract\_common}!Toolpath@{Toolpath}}
+\index{Toolpath@{Toolpath}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{Toolpath}{Toolpath}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__common_a917718f518f98714fce17e831ec1ea11}{tesseract\+\_\+common\+::\+Toolpath}} = typedef \mbox{\hyperlink{namespacetesseract__common_a000d15c3ab8d8ba4ebdaae64153b053a}{Aligned\+Vector}}$<$\mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{Vector\+Isometry3d}}$>$}
 
 \mbox{\Hypertarget{namespacetesseract__common_a431ff65777ee0bed71e7671390638244}\label{namespacetesseract__common_a431ff65777ee0bed71e7671390638244}} 
 \index{tesseract\_common@{tesseract\_common}!TrajArray@{TrajArray}}

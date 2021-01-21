@@ -33,8 +33,8 @@ This graph shows which files directly or indirectly include this file\+:
 \item 
 struct \mbox{\hyperlink{structtesseract__common_1_1PairHash}{tesseract\+\_\+common\+::\+Pair\+Hash}}
 \item 
-struct \mbox{\hyperlink{structtesseract__common_1_1JointTrajectory}{tesseract\+\_\+common\+::\+Joint\+Trajectory}}
-\begin{DoxyCompactList}\small\item\em Represents a joint trajectory. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__common_1_1JointState}{tesseract\+\_\+common\+::\+Joint\+State}}
+\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}}
 \begin{DoxyCompactList}\small\item\em Store kinematic limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
@@ -61,10 +61,14 @@ using \mbox{\hyperlink{namespacetesseract__common_ac60e1af30f961fc086b69e330c643
 \item 
 using \mbox{\hyperlink{namespacetesseract__common_a67bde3cb7bb235f0f61c370ef8bc74d8}{tesseract\+\_\+common\+::\+Transform\+Map}} = Aligned\+Map$<$ std\+::string, Eigen\+::\+Isometry3d $>$
 \item 
+using \mbox{\hyperlink{namespacetesseract__common_a917718f518f98714fce17e831ec1ea11}{tesseract\+\_\+common\+::\+Toolpath}} = Aligned\+Vector$<$ Vector\+Isometry3d $>$
+\item 
 using \mbox{\hyperlink{namespacetesseract__common_a431ff65777ee0bed71e7671390638244}{tesseract\+\_\+common\+::\+Traj\+Array}} = Eigen\+::\+Matrix$<$ double, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic, Eigen\+::\+Row\+Major $>$
 \item 
 using \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{tesseract\+\_\+common\+::\+Link\+Names\+Pair}} = std\+::pair$<$ std\+::string, std\+::string $>$
-\end{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}{tesseract\+\_\+common\+::\+Joint\+Trajectory}} = std\+::vector$<$ Joint\+State $>$
+\begin{DoxyCompactList}\small\item\em Represents a joint trajectory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
