@@ -382,7 +382,7 @@ $(function() {
 <div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="../../d0/d17/namespacetesseract__geometry.html#a6eb14091f9adce45929f5fddece2d7f7">  336</a></span>&#160;std::vector&lt;std::shared_ptr&lt;T&gt;&gt; <a class="code" href="../../d0/d17/namespacetesseract__geometry.html#a6eb14091f9adce45929f5fddece2d7f7">createMeshFromPath</a>(<span class="keyword">const</span> std::string&amp; path,</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                                                   Eigen::Vector3d scale = Eigen::Vector3d(1, 1, 1),</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                                   <span class="keywordtype">bool</span> triangulate = <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                                   <span class="keywordtype">bool</span> <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#ac0bda18baed62560eb55f6babe637f4e">flatten</a> = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                                   <span class="keywordtype">bool</span> flatten = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                                                   <span class="keywordtype">bool</span> normals = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                                   <span class="keywordtype">bool</span> vertex_colors = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                                   <span class="keywordtype">bool</span> material_and_texture = <span class="keyword">false</span>)</div>
@@ -433,7 +433,7 @@ $(function() {
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="comment">// @todo See this issue for possible fix parsing scene metadata https://github.com/assimp/assimp/issues/849</span></div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  scene-&gt;mRootNode-&gt;mTransformation = aiMatrix4x4();</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/dcd/namespacetesseract__planning.html#ac0bda18baed62560eb55f6babe637f4e">flatten</a>)</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keywordflow">if</span> (flatten)</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  {</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="comment">// These post processing steps flatten the root node transformation into child nodes,</span></div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="comment">// so they must be delayed until after clearing the root node transform above.</span></div>
@@ -451,7 +451,7 @@ $(function() {
 <div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="../../d0/d17/namespacetesseract__geometry.html#a5b7ae1c48794bcb9bb4de99e332094ab">  418</a></span>&#160;std::vector&lt;std::shared_ptr&lt;T&gt;&gt; <a class="code" href="../../d0/d17/namespacetesseract__geometry.html#a5b7ae1c48794bcb9bb4de99e332094ab">createMeshFromResource</a>(<a class="code" href="../../d8/def/classtesseract__common_1_1Resource.html#acdba916fa227bef4391c469581844dc6">tesseract_common::Resource::Ptr</a> resource,</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                                       Eigen::Vector3d scale = Eigen::Vector3d(1, 1, 1),</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                                       <span class="keywordtype">bool</span> triangulate = <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                                       <span class="keywordtype">bool</span> <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#ac0bda18baed62560eb55f6babe637f4e">flatten</a> = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                                       <span class="keywordtype">bool</span> flatten = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                                       <span class="keywordtype">bool</span> normals = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                                                       <span class="keywordtype">bool</span> vertex_colors = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                                                       <span class="keywordtype">bool</span> material_and_texture = <span class="keyword">false</span>)</div>
@@ -479,7 +479,7 @@ $(function() {
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  {</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordflow">if</span> (resource-&gt;isFile())</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      <span class="keywordflow">return</span> createMeshFromPath&lt;T&gt;(</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;          resource-&gt;getFilePath(), scale, triangulate, <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#ac0bda18baed62560eb55f6babe637f4e">flatten</a>, normals, vertex_colors, material_and_texture);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;          resource-&gt;getFilePath(), scale, triangulate, flatten, normals, vertex_colors, material_and_texture);</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">return</span> std::vector&lt;std::shared_ptr&lt;T&gt;&gt;();</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  }</div>
@@ -535,7 +535,7 @@ $(function() {
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="comment">// Note that this is also what RViz does internally.</span></div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  scene-&gt;mRootNode-&gt;mTransformation = aiMatrix4x4();</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160; </div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/dcd/namespacetesseract__planning.html#ac0bda18baed62560eb55f6babe637f4e">flatten</a>)</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <span class="keywordflow">if</span> (flatten)</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  {</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="comment">// These post processing steps flatten the root node transformation into child nodes,</span></div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <span class="comment">// so they must be delayed until after clearing the root node transform above.</span></div>
@@ -555,7 +555,7 @@ $(function() {
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                                                           <span class="keywordtype">size_t</span> bytes_len,</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                                                           Eigen::Vector3d scale = Eigen::Vector3d(1, 1, 1),</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                                                           <span class="keywordtype">bool</span> triangulate = <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                                                           <span class="keywordtype">bool</span> <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#ac0bda18baed62560eb55f6babe637f4e">flatten</a> = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                                                           <span class="keywordtype">bool</span> flatten = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                                                           <span class="keywordtype">bool</span> normals = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                                                           <span class="keywordtype">bool</span> vertex_colors = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                                                           <span class="keywordtype">bool</span> material_and_texture = <span class="keyword">false</span>)</div>
@@ -563,7 +563,7 @@ $(function() {
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  std::shared_ptr&lt;tesseract_common::Resource&gt; resource =</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;      std::make_shared&lt;tesseract_common::BytesResource&gt;(url, bytes, bytes_len);</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;  <span class="keywordflow">return</span> tesseract_geometry::createMeshFromResource&lt;T&gt;(</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;      resource, scale, triangulate, <a class="code" href="../../d9/dcd/namespacetesseract__planning.html#ac0bda18baed62560eb55f6babe637f4e">flatten</a>, normals, vertex_colors, material_and_texture);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;      resource, scale, triangulate, flatten, normals, vertex_colors, material_and_texture);</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;}</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;}  <span class="comment">// namespace tesseract_geometry</span></div>
@@ -595,13 +595,12 @@ $(function() {
 <div class="ttc" id="anamespacetesseract__geometry_html_a5b7ae1c48794bcb9bb4de99e332094ab"><div class="ttname"><a href="../../d0/d17/namespacetesseract__geometry.html#a5b7ae1c48794bcb9bb4de99e332094ab">tesseract_geometry::createMeshFromResource</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; T &gt; &gt; createMeshFromResource(tesseract_common::Resource::Ptr resource, Eigen::Vector3d scale=Eigen::Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false, bool normals=false, bool vertex_colors=false, bool material_and_texture=false)</div><div class="ttdoc">Create a mesh using assimp from resource.</div><div class="ttdef"><b>Definition:</b> mesh_parser.h:418</div></div>
 <div class="ttc" id="anamespacetesseract__geometry_html_a6eb14091f9adce45929f5fddece2d7f7"><div class="ttname"><a href="../../d0/d17/namespacetesseract__geometry.html#a6eb14091f9adce45929f5fddece2d7f7">tesseract_geometry::createMeshFromPath</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; T &gt; &gt; createMeshFromPath(const std::string &amp;path, Eigen::Vector3d scale=Eigen::Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false, bool normals=false, bool vertex_colors=false, bool material_and_texture=false)</div><div class="ttdoc">Create a mesh using assimp from file path.</div><div class="ttdef"><b>Definition:</b> mesh_parser.h:336</div></div>
 <div class="ttc" id="anamespacetesseract__geometry_html_adc3bc34e93aaa227ba3bd81d09b5be77"><div class="ttname"><a href="../../d0/d17/namespacetesseract__geometry.html#adc3bc34e93aaa227ba3bd81d09b5be77">tesseract_geometry::createMeshFromBytes</a></div><div class="ttdeci">static std::vector&lt; std::shared_ptr&lt; T &gt; &gt; createMeshFromBytes(const std::string &amp;url, const uint8_t *bytes, size_t bytes_len, Eigen::Vector3d scale=Eigen::Vector3d(1, 1, 1), bool triangulate=false, bool flatten=false, bool normals=false, bool vertex_colors=false, bool material_and_texture=false)</div><div class="ttdoc">Create a mesh from byte array.</div><div class="ttdef"><b>Definition:</b> mesh_parser.h:535</div></div>
-<div class="ttc" id="anamespacetesseract__planning_html_ac0bda18baed62560eb55f6babe637f4e"><div class="ttname"><a href="../../d9/dcd/namespacetesseract__planning.html#ac0bda18baed62560eb55f6babe637f4e">tesseract_planning::flatten</a></div><div class="ttdeci">std::vector&lt; std::reference_wrapper&lt; Instruction &gt; &gt; flatten(CompositeInstruction &amp;composite_instruction, flattenFilterFn filter=nullptr)</div><div class="ttdoc">Flattens a CompositeInstruction into a vector of Instruction.</div><div class="ttdef"><b>Definition:</b> flatten_utils.cpp:75</div></div>
 <div class="ttc" id="aresource_8h_html"><div class="ttname"><a href="../../d8/d01/resource_8h.html">resource.h</a></div><div class="ttdoc">Class to retrieve data from resources.</div></div>
 <div class="ttc" id="atesseract__common_2include_2tesseract__common_2types_8h_html"><div class="ttname"><a href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html">types.h</a></div><div class="ttdoc">Common Tesseract Types.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 21 2021 15:39:02 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 22 2021 17:23:42 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
