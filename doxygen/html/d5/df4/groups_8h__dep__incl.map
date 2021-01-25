@@ -1,4 +1,5 @@
 <map id="tesseract_scene_graph/include/tesseract_scene_graph/srdf/groups.h" name="tesseract_scene_graph/include/tesseract_scene_graph/srdf/groups.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,172,61"/>
-<area shape="rect" id="node2" href="$d6/de2/srdf__model_8cpp.html" title="Parse srdf xml." alt="" coords="10,109,167,151"/>
+<area shape="rect" id="node1" title=" " alt="" coords="91,5,258,61"/>
+<area shape="rect" id="node2" href="$d6/de2/srdf__model_8cpp.html" title="Parse srdf xml." alt="" coords="5,117,163,158"/>
+<area shape="rect" id="node3" href="$d4/d62/tesseract__scene__graph__srdf__unit_8cpp.html" title=" " alt="" coords="187,109,344,165"/>
 </map>
