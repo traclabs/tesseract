@@ -164,10 +164,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a881ff48bb24f8ac4e92de3f1e5c0bfb5">ForwardKinematicsConstPtrMap</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">createKinematicsMap</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> &amp;scene_graph, const <a class="el" href="../../de/d55/structtesseract__scene__graph_1_1KinematicsInformation.html">tesseract_scene_graph::KinematicsInformation</a> &amp;kinematics_information)</td></tr>
 <tr class="memdesc:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kinematics map from the srdf model.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">More...</a><br /></td></tr>
 <tr class="separator:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c4eddced530b2ee14d2be64aca24b7"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:ae2c4eddced530b2ee14d2be64aca24b7"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#ae2c4eddced530b2ee14d2be64aca24b7">isWithinLimits</a> (const Eigen::Ref&lt; const Eigen::Matrix&lt; FloatType, Eigen::Dynamic, 1 &gt; &gt; &amp;joint_values, const Eigen::MatrixX2d &amp;limits)</td></tr>
-<tr class="memdesc:ae2c4eddced530b2ee14d2be64aca24b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will check if the provided joint values are within the privided limits.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#ae2c4eddced530b2ee14d2be64aca24b7">More...</a><br /></td></tr>
-<tr class="separator:ae2c4eddced530b2ee14d2be64aca24b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6673bf40b1b83909662120655499af68"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:a6673bf40b1b83909662120655499af68"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a6673bf40b1b83909662120655499af68">isWithinLimits</a> (const Eigen::Ref&lt; const Eigen::Matrix&lt; FloatType, Eigen::Dynamic, 1 &gt; &gt; &amp;joint_values, const Eigen::MatrixX2d &amp;limits)</td></tr>
+<tr class="memdesc:a6673bf40b1b83909662120655499af68"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will check if the provided joint values are within the privided limits.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a6673bf40b1b83909662120655499af68">More...</a><br /></td></tr>
+<tr class="separator:a6673bf40b1b83909662120655499af68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f25773355cc9daf6a5344643259d055"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
 <tr class="memitem:a5f25773355cc9daf6a5344643259d055"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; FloatType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a5f25773355cc9daf6a5344643259d055">getRedundantSolutions</a> (const FloatType *sol, const Eigen::MatrixX2d &amp;limits)</td></tr>
 <tr class="memdesc:a5f25773355cc9daf6a5344643259d055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinematics only return solution between PI and -PI. Provided the limits it will append redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a5f25773355cc9daf6a5344643259d055">More...</a><br /></td></tr>
@@ -754,8 +754,8 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="ae2c4eddced530b2ee14d2be64aca24b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2c4eddced530b2ee14d2be64aca24b7">&#9670;&nbsp;</a></span>isWithinLimits()</h2>
+<a id="a6673bf40b1b83909662120655499af68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6673bf40b1b83909662120655499af68">&#9670;&nbsp;</a></span>isWithinLimits()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -766,7 +766,7 @@ template&lt;typename FloatType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool tesseract_kinematics::isWithinLimits </td>
+          <td class="memname">bool tesseract_kinematics::isWithinLimits </td>
           <td>(</td>
           <td class="paramtype">const Eigen::Ref&lt; const Eigen::Matrix&lt; FloatType, Eigen::Dynamic, 1 &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>joint_values</em>, </td>
@@ -785,7 +785,7 @@ template&lt;typename FloatType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1365,7 +1365,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 25 2021 18:23:56 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jan 27 2021 05:58:35 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
