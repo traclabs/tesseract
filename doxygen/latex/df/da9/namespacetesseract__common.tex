@@ -102,7 +102,9 @@ tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_a609734264f8b
 tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ab5ec94b62bea51b6e40598e0f8e7a6c3}{Query\+Double\+Attribute\+Required}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, double \&value)
 \begin{DoxyCompactList}\small\item\em Query a double attribute from an xml element and print error log. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__common_a1ce86f1e809df1ac04fef0b5cf396fe2}{almost\+Equal\+Relative\+And\+Abs}} (double a, double b, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
-\begin{DoxyCompactList}\small\item\em Check if two double are relatively equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Check if two double are relatively equal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}{almost\+Equal\+Relative\+And\+Abs}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v1, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v2, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
+\begin{DoxyCompactList}\small\item\em Check if two Eigen Vector\+Xd are relatively and absolute equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -193,17 +195,41 @@ Represents a joint trajectory.
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}\label{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}} 
+\index{tesseract\_common@{tesseract\_common}!almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}}
+\index{almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{almostEqualRelativeAndAbs()}{almostEqualRelativeAndAbs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v1,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v2,  }\item[{double}]{max\+\_\+diff,  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if two Eigen Vector\+Xd are relatively and absolute equal. 
+
+This is a vectorized implementation of the function above. The max\+\_\+diff is for handling when comparing numbers near zero 
+\begin{DoxyParams}{Parameters}
+{\em a} & A vector of double \\
+\hline
+{\em b} & A vector of double \\
+\hline
+{\em max\+\_\+diff} & The max diff when comparing max(abs(a -\/ b)) $<$= max\+\_\+diff, if true they are considered equal \\
+\hline
+{\em max\+\_\+rel\+\_\+diff} & The max relative diff abs(a -\/ b) $<$= largest $\ast$ max\+\_\+rel\+\_\+diff, if true considered equal. The largest is the largest of the absolute values of a and b. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are relativily equal, otherwise false. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_a1ce86f1e809df1ac04fef0b5cf396fe2}\label{namespacetesseract__common_a1ce86f1e809df1ac04fef0b5cf396fe2}} 
 \index{tesseract\_common@{tesseract\_common}!almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}}
 \index{almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}!tesseract\_common@{tesseract\_common}}
-\doxysubsubsection{\texorpdfstring{almostEqualRelativeAndAbs()}{almostEqualRelativeAndAbs()}}
+\doxysubsubsection{\texorpdfstring{almostEqualRelativeAndAbs()}{almostEqualRelativeAndAbs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{max\+\_\+diff,  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Check if two double are relatively equal. 
 
-
+The max\+\_\+diff is for handling when comparing numbers near zero 
 \begin{DoxyParams}{Parameters}
 {\em a} & Double \\
 \hline
