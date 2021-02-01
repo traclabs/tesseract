@@ -238,4 +238,5 @@ var menudata={children:[
 {text:"r",url:"globals_func_r.html#index_r"},
 {text:"t",url:"globals_func_t.html#index_t"}]},
 {text:"Variables",url:"globals_vars.html"},
+{text:"Enumerations",url:"globals_enum.html"},
 {text:"Macros",url:"globals_defs.html"}]}]}]}

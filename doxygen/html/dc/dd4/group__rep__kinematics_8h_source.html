@@ -145,28 +145,45 @@ $(function() {
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// get the chains in the groups</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> tinyxml2::XMLElement* joint_xml = positioner_xml-&gt;FirstChildElement(<span class="stringliteral">&quot;joint&quot;</span>); positioner_xml;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;         positioner_xml = positioner_xml-&gt;NextSiblingElement(<span class="stringliteral">&quot;joint&quot;</span>))</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      std::string joint_name;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      status = <a class="code" href="../../df/da9/namespacetesseract__common.html#a609734264f8b63f5c7815871c40b231f">tesseract_common::QueryStringAttributeRequired</a>(joint_xml, <span class="stringliteral">&quot;name&quot;</span>, joint_name);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">if</span> (status != tinyxml2::XML_SUCCESS)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordtype">double</span> resolution;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      status = <a class="code" href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">tesseract_common::QueryDoubleAttributeRequired</a>(joint_xml, <span class="stringliteral">&quot;resolution&quot;</span>, resolution);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">if</span> (status != tinyxml2::XML_SUCCESS)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      rep_info.<a class="code" href="../../d8/de9/structtesseract__scene__graph_1_1REPKinematicParameters.html#a935c18a8bd9843bf61dabf6a96d0a219">positioner_sample_resolution</a>[joint_name] = resolution;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    group_rep_kinematics[group_name_string] = rep_info;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> parse_joints_failed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> tinyxml2::XMLElement* joint_xml = positioner_xml-&gt;FirstChildElement(<span class="stringliteral">&quot;joint&quot;</span>); positioner_xml;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;         positioner_xml = positioner_xml-&gt;NextSiblingElement(<span class="stringliteral">&quot;joint&quot;</span>))</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">if</span> (joint_xml == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        parse_joints_failed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      std::string joint_name;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      status = <a class="code" href="../../df/da9/namespacetesseract__common.html#a609734264f8b63f5c7815871c40b231f">tesseract_common::QueryStringAttributeRequired</a>(joint_xml, <span class="stringliteral">&quot;name&quot;</span>, joint_name);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">if</span> (status != tinyxml2::XML_SUCCESS)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        parse_joints_failed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">return</span> group_rep_kinematics;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}  <span class="comment">// namespace tesseract_scene_graph</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_SCENE_GRAPH_SRDF_GROUP_REP_KINEMATICS_H</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordtype">double</span> resolution;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      status = <a class="code" href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">tesseract_common::QueryDoubleAttributeRequired</a>(joint_xml, <span class="stringliteral">&quot;resolution&quot;</span>, resolution);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">if</span> (status != tinyxml2::XML_SUCCESS)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        parse_joints_failed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      rep_info.<a class="code" href="../../d8/de9/structtesseract__scene__graph_1_1REPKinematicParameters.html#a935c18a8bd9843bf61dabf6a96d0a219">positioner_sample_resolution</a>[joint_name] = resolution;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span> (parse_joints_failed || rep_info.<a class="code" href="../../d8/de9/structtesseract__scene__graph_1_1REPKinematicParameters.html#a935c18a8bd9843bf61dabf6a96d0a219">positioner_sample_resolution</a>.empty())</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    group_rep_kinematics[group_name_string] = rep_info;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">return</span> group_rep_kinematics;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}  <span class="comment">// namespace tesseract_scene_graph</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_SCENE_GRAPH_SRDF_GROUP_REP_KINEMATICS_H</span></div>
 <div class="ttc" id="aclasstesseract__scene__graph_1_1SceneGraph_html"><div class="ttname"><a href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">tesseract_scene_graph::SceneGraph</a></div><div class="ttdef"><b>Definition:</b> graph.h:120</div></div>
 <div class="ttc" id="agraph_8h_html"><div class="ttname"><a href="../../d6/df3/graph_8h.html">graph.h</a></div><div class="ttdoc">A basic scene graph using boost.</div></div>
 <div class="ttc" id="akinematics__information_8h_html"><div class="ttname"><a href="../../d3/d7a/kinematics__information_8h.html">kinematics_information.h</a></div><div class="ttdoc">This hold the kinematics information.</div></div>
@@ -190,7 +207,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 30 2021 00:50:20 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Feb 1 2021 20:45:25 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
