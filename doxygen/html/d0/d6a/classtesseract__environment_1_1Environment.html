@@ -266,7 +266,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae9ae9c20068281feec5893cfdb2fa4d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the position limits associated with a joint.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ae9ae9c20068281feec5893cfdb2fa4d3">More...</a><br /></td></tr>
 <tr class="separator:ae9ae9c20068281feec5893cfdb2fa4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a989b07d9a3fb1a9c27b98fd164d833f8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a989b07d9a3fb1a9c27b98fd164d833f8">changeJointPositionLimits</a> (const std::unordered_map&lt; std::string, std::pair&lt; double, double &gt;&gt; &amp;limits)</td></tr>
-<tr class="memdesc:a989b07d9a3fb1a9c27b98fd164d833f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the position limits associated with a joint.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a989b07d9a3fb1a9c27b98fd164d833f8">More...</a><br /></td></tr>
+<tr class="memdesc:a989b07d9a3fb1a9c27b98fd164d833f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the position limits associated with one or more joints.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a989b07d9a3fb1a9c27b98fd164d833f8">More...</a><br /></td></tr>
 <tr class="separator:a989b07d9a3fb1a9c27b98fd164d833f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0abe21ad3aaa8eeb056b867e0cb7b99"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ad0abe21ad3aaa8eeb056b867e0cb7b99">changeJointVelocityLimits</a> (const std::string &amp;joint_name, double limit)</td></tr>
 <tr class="memdesc:ad0abe21ad3aaa8eeb056b867e0cb7b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the velocity limits associated with a joint.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ad0abe21ad3aaa8eeb056b867e0cb7b99">More...</a><br /></td></tr>
@@ -898,7 +898,7 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful. If returned false, then only a partial set of commands have been applied. Call getCommandHistory to check. Some commands are not checked for success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful. If returned false, then the command have not been applied. Some type of <a class="el" href="../../d0/d1c/classtesseract__environment_1_1Command.html">Command</a> are not checked for success </dd></dl>
 
 </div>
 </div>
@@ -1159,10 +1159,10 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Changes the position limits associated with a joint. </p>
+<p>Changes the position limits associated with one or more joints. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">limits</td><td>A map of joint names to new position limits </td></tr>
+    <tr><td class="paramname">limits</td><td>A map of joint names to new position limits. For each limit pair, first is the lower limit second is the upper limit </td></tr>
   </table>
   </dd>
 </dl>
@@ -4032,7 +4032,7 @@ template&lt;typename S &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 1 2021 20:45:27 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Feb 2 2021 15:59:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

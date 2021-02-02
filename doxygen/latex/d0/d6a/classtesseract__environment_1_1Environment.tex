@@ -125,7 +125,7 @@ virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_add1e20
 virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_ae9ae9c20068281feec5893cfdb2fa4d3}{change\+Joint\+Position\+Limits}} (const std\+::string \&joint\+\_\+name, double lower, double upper)
 \begin{DoxyCompactList}\small\item\em Changes the position limits associated with a joint. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a989b07d9a3fb1a9c27b98fd164d833f8}{change\+Joint\+Position\+Limits}} (const std\+::unordered\+\_\+map$<$ std\+::string, std\+::pair$<$ double, double $>$$>$ \&limits)
-\begin{DoxyCompactList}\small\item\em Changes the position limits associated with a joint. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Changes the position limits associated with one or more joints. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_ad0abe21ad3aaa8eeb056b867e0cb7b99}{change\+Joint\+Velocity\+Limits}} (const std\+::string \&joint\+\_\+name, double limit)
 \begin{DoxyCompactList}\small\item\em Changes the velocity limits associated with a joint. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_add461285ac3c50719fa53253fd28343b}{change\+Joint\+Velocity\+Limits}} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&limits)
@@ -470,7 +470,7 @@ Apply command to the environment.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true if successful. If returned false, then only a partial set of commands have been applied. Call get\+Command\+History to check. Some commands are not checked for success 
+true if successful. If returned false, then the command have not been applied. Some type of \mbox{\hyperlink{classtesseract__environment_1_1Command}{Command}} are not checked for success 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__environment_1_1Environment_a9d1f92184c8f27d1a916a43414c36015}\label{classtesseract__environment_1_1Environment_a9d1f92184c8f27d1a916a43414c36015}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!applyCommands@{applyCommands}}
@@ -594,11 +594,11 @@ Changes the position limits associated with a joint.
 
 
 
-Changes the position limits associated with a joint. 
+Changes the position limits associated with one or more joints. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em limits} & A map of joint names to new position limits \\
+{\em limits} & A map of joint names to new position limits. For each limit pair, first is the lower limit second is the upper limit \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
