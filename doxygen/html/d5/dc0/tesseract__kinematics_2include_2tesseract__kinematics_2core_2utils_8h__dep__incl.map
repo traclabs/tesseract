@@ -2,8 +2,10 @@
 <area shape="rect" id="node1" title="Kinematics utility functions." alt="" coords="483,5,677,61"/>
 <area shape="rect" id="node2" href="$db/d22/ikfast__inv__kin_8hpp.html" title="Tesseract IKFast Inverse kinematics Wrapper Implementation." alt="" coords="5,109,200,165"/>
 <area shape="rect" id="node3" href="$d3/d61/opw__inv__kin_8cpp.html" title="Tesseract OPW Inverse kinematics implementation." alt="" coords="225,117,397,158"/>
-<area shape="rect" id="node4" href="$da/d94/kdl__kinematics__unit_8cpp.html" title=" " alt="" coords="421,109,568,165"/>
-<area shape="rect" id="node5" href="$d4/d0f/kinematics__core__unit_8cpp.html" title=" " alt="" coords="592,109,739,165"/>
-<area shape="rect" id="node6" href="$d9/dee/rep__kinematics__unit_8cpp.html" title=" " alt="" coords="763,109,909,165"/>
-<area shape="rect" id="node7" href="$d0/dac/rop__kinematics__unit_8cpp.html" title=" " alt="" coords="933,109,1080,165"/>
+<area shape="rect" id="node4" href="$d4/d0f/kinematics__core__unit_8cpp.html" title=" " alt="" coords="421,109,568,165"/>
+<area shape="rect" id="node5" href="$d7/dcb/kinematics__test__utils_8h.html" title=" " alt="" coords="592,109,739,165"/>
+<area shape="rect" id="node8" href="$d9/dee/rep__kinematics__unit_8cpp.html" title=" " alt="" coords="647,213,793,269"/>
+<area shape="rect" id="node9" href="$d0/dac/rop__kinematics__unit_8cpp.html" title=" " alt="" coords="817,213,964,269"/>
+<area shape="rect" id="node6" href="$da/d94/kdl__kinematics__unit_8cpp.html" title=" " alt="" coords="305,213,452,269"/>
+<area shape="rect" id="node7" href="$d6/d2e/opw__kinematics__unit_8cpp.html" title=" " alt="" coords="476,213,623,269"/>
 </map>
