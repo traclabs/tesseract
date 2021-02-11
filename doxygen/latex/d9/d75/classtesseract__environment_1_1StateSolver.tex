@@ -36,7 +36,7 @@ virtual \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_adbc9a9924ff
 \item 
 \mbox{\hyperlink{classtesseract__environment_1_1StateSolver}{State\+Solver}} \& \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_ab77ddcab878f13883505bbf1d493b7c4}{operator=}} (\mbox{\hyperlink{classtesseract__environment_1_1StateSolver}{State\+Solver}} \&\&)=delete
 \item 
-virtual bool \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a54e3b7cb54219931985c04cc697543c4}{init}} (\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} scene\+\_\+graph)=0
+virtual bool \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a3e38caac250bfbefac54789d7811c46d}{init}} (\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} scene\+\_\+graph, int revision=1)=0
 \item 
 virtual void \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a8fb58459075f088b79954a5677a8f09d}{set\+State}} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&joints)=0
 \begin{DoxyCompactList}\small\item\em Set the current state of the solver. \end{DoxyCompactList}\item 
@@ -225,15 +225,15 @@ Implemented in \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a
 
 Implemented in \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a10e73565cbf208f7b9d1c11acbc871a9}{tesseract\+\_\+environment\+::\+OFKTState\+Solver}}, and \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_aba6d8be2479077f0833285af60f87d1a}{tesseract\+\_\+environment\+::\+KDLState\+Solver}}.
 
-\mbox{\Hypertarget{classtesseract__environment_1_1StateSolver_a54e3b7cb54219931985c04cc697543c4}\label{classtesseract__environment_1_1StateSolver_a54e3b7cb54219931985c04cc697543c4}} 
+\mbox{\Hypertarget{classtesseract__environment_1_1StateSolver_a3e38caac250bfbefac54789d7811c46d}\label{classtesseract__environment_1_1StateSolver_a3e38caac250bfbefac54789d7811c46d}} 
 \index{tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}!init@{init}}
 \index{init@{init}!tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
-{\footnotesize\ttfamily virtual bool tesseract\+\_\+environment\+::\+State\+Solver\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}}}]{scene\+\_\+graph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual bool tesseract\+\_\+environment\+::\+State\+Solver\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}}}]{scene\+\_\+graph,  }\item[{int}]{revision = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Implemented in \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a3013c5ef3fcfea8cbb8dbd689376c7cd}{tesseract\+\_\+environment\+::\+OFKTState\+Solver}}, and \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_a36399263d5f891655241767a6290866d}{tesseract\+\_\+environment\+::\+KDLState\+Solver}}.
+Implemented in \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a491b86f27ec48595c26939503a8fe3d8}{tesseract\+\_\+environment\+::\+OFKTState\+Solver}}, and \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_a7d5fd515abb17dfb9dfb8ce8bd60ae67}{tesseract\+\_\+environment\+::\+KDLState\+Solver}}.
 
 \mbox{\Hypertarget{classtesseract__environment_1_1StateSolver_a5cb95153affac8ef7f53d7e730a3a0cb}\label{classtesseract__environment_1_1StateSolver_a5cb95153affac8ef7f53d7e730a3a0cb}} 
 \index{tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}!onEnvironmentChanged@{onEnvironmentChanged}}

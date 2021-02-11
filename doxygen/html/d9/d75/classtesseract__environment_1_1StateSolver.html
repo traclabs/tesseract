@@ -113,8 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6e96dfa542738b691bf0e9983d7745e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab77ddcab878f13883505bbf1d493b7c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html">StateSolver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#ab77ddcab878f13883505bbf1d493b7c4">operator=</a> (<a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html">StateSolver</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:ab77ddcab878f13883505bbf1d493b7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54e3b7cb54219931985c04cc697543c4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a54e3b7cb54219931985c04cc697543c4">init</a> (<a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> scene_graph)=0</td></tr>
-<tr class="separator:a54e3b7cb54219931985c04cc697543c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e38caac250bfbefac54789d7811c46d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a3e38caac250bfbefac54789d7811c46d">init</a> (<a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> scene_graph, int revision=1)=0</td></tr>
+<tr class="separator:a3e38caac250bfbefac54789d7811c46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fb58459075f088b79954a5677a8f09d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a8fb58459075f088b79954a5677a8f09d">setState</a> (const std::unordered_map&lt; std::string, double &gt; &amp;joints)=0</td></tr>
 <tr class="memdesc:a8fb58459075f088b79954a5677a8f09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current state of the solver.  <a href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a8fb58459075f088b79954a5677a8f09d">More...</a><br /></td></tr>
 <tr class="separator:a8fb58459075f088b79954a5677a8f09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -520,8 +520,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a54e3b7cb54219931985c04cc697543c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54e3b7cb54219931985c04cc697543c4">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a3e38caac250bfbefac54789d7811c46d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e38caac250bfbefac54789d7811c46d">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,8 +533,18 @@ Friends</h2></td></tr>
           <td class="memname">virtual bool tesseract_environment::StateSolver::init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a>&#160;</td>
-          <td class="paramname"><em>scene_graph</em></td><td>)</td>
+          <td class="paramname"><em>scene_graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>revision</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -544,7 +554,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a3013c5ef3fcfea8cbb8dbd689376c7cd">tesseract_environment::OFKTStateSolver</a>, and <a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a36399263d5f891655241767a6290866d">tesseract_environment::KDLStateSolver</a>.</p>
+<p>Implemented in <a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a491b86f27ec48595c26939503a8fe3d8">tesseract_environment::OFKTStateSolver</a>, and <a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a7d5fd515abb17dfb9dfb8ce8bd60ae67">tesseract_environment::KDLStateSolver</a>.</p>
 
 </div>
 </div>
@@ -772,7 +782,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 11 2021 17:13:11 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Feb 11 2021 20:58:08 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

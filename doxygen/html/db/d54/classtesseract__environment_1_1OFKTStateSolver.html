@@ -145,8 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7923c9cf37c5ffd2d507b8d62aefc7de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#aa3ff331ff46017f494dfeccf22ca80b6">StateSolver::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a7923c9cf37c5ffd2d507b8d62aefc7de">clone</a> () const override</td></tr>
 <tr class="memdesc:a7923c9cf37c5ffd2d507b8d62aefc7de"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should clone the object so it may be used in a multi threaded application where each thread would clone the solver.  <a href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a7923c9cf37c5ffd2d507b8d62aefc7de">More...</a><br /></td></tr>
 <tr class="separator:a7923c9cf37c5ffd2d507b8d62aefc7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3013c5ef3fcfea8cbb8dbd689376c7cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a3013c5ef3fcfea8cbb8dbd689376c7cd">init</a> (<a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> scene_graph) override</td></tr>
-<tr class="separator:a3013c5ef3fcfea8cbb8dbd689376c7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491b86f27ec48595c26939503a8fe3d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a491b86f27ec48595c26939503a8fe3d8">init</a> (<a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> scene_graph, int revision=1) override</td></tr>
+<tr class="separator:a491b86f27ec48595c26939503a8fe3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73e45c4706518a1a1759ae94e27c4e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a73e45c4706518a1a1759ae94e27c4e55">setState</a> (const std::unordered_map&lt; std::string, double &gt; &amp;joints) override</td></tr>
 <tr class="memdesc:a73e45c4706518a1a1759ae94e27c4e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current state of the solver.  <a href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a73e45c4706518a1a1759ae94e27c4e55">More...</a><br /></td></tr>
 <tr class="separator:a73e45c4706518a1a1759ae94e27c4e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +186,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:aab16a702ce3bcc5cecc0f2e8f01747d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#aab16a702ce3bcc5cecc0f2e8f01747d2">clear</a> ()</td></tr>
+<tr class="separator:aab16a702ce3bcc5cecc0f2e8f01747d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4bb1d8d91934b057e8841c41cbee452"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#ab4bb1d8d91934b057e8841c41cbee452">onEnvironmentChanged</a> (const <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#acb95740502ec41d80a94a7631d4b7a3c">Commands</a> &amp;commands) override</td></tr>
 <tr class="memdesc:ab4bb1d8d91934b057e8841c41cbee452"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is to only be used by the environment.  <a href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#ab4bb1d8d91934b057e8841c41cbee452">More...</a><br /></td></tr>
 <tr class="separator:ab4bb1d8d91934b057e8841c41cbee452"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,6 +432,31 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aab16a702ce3bcc5cecc0f2e8f01747d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab16a702ce3bcc5cecc0f2e8f01747d2">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tesseract_environment::OFKTStateSolver::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -712,8 +739,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a3013c5ef3fcfea8cbb8dbd689376c7cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3013c5ef3fcfea8cbb8dbd689376c7cd">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a491b86f27ec48595c26939503a8fe3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a491b86f27ec48595c26939503a8fe3d8">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -725,8 +752,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool tesseract_environment::OFKTStateSolver::init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a>&#160;</td>
-          <td class="paramname"><em>scene_graph</em></td><td>)</td>
+          <td class="paramname"><em>scene_graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>revision</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -736,7 +773,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a54e3b7cb54219931985c04cc697543c4">tesseract_environment::StateSolver</a>.</p>
+<p>Implements <a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a3e38caac250bfbefac54789d7811c46d">tesseract_environment::StateSolver</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1319,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 11 2021 17:13:11 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Feb 11 2021 20:58:08 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

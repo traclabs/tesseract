@@ -1,8 +1,8 @@
 <map id="tesseract_environment::Command" name="tesseract_environment::Command">
 <area shape="rect" id="node1" title=" " alt="" coords="5,657,160,699"/>
 <area shape="rect" id="node2" href="$df/d6c/classtesseract__environment_1_1AddAllowedCollisionCommand.html" title=" " alt="" coords="225,5,431,47"/>
-<area shape="rect" id="node3" href="$d5/def/classtesseract__environment_1_1AddCommand.html" title=" " alt="" coords="251,71,405,112"/>
-<area shape="rect" id="node4" href="$dc/d63/classtesseract__environment_1_1AddKinematicsInformationCommand.html" title=" " alt="" coords="208,136,448,177"/>
+<area shape="rect" id="node3" href="$dc/d63/classtesseract__environment_1_1AddKinematicsInformationCommand.html" title=" " alt="" coords="208,71,448,112"/>
+<area shape="rect" id="node4" href="$de/d3b/classtesseract__environment_1_1AddLinkCommand.html" title=" " alt="" coords="251,136,405,177"/>
 <area shape="rect" id="node5" href="$d6/d6f/classtesseract__environment_1_1AddSceneGraphCommand.html" title=" " alt="" coords="237,201,419,243"/>
 <area shape="rect" id="node6" href="$d8/d52/classtesseract__environment_1_1ChangeDefaultContactMarginCommand.html" title=" " alt="" coords="229,266,427,322"/>
 <area shape="rect" id="node7" href="$d3/d66/classtesseract__environment_1_1ChangeJointAccelerationLimitsCommand.html" title=" " alt="" coords="224,346,432,402"/>

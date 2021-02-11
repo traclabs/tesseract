@@ -69,11 +69,6 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">commands.h File Reference</div>  </div>
 </div><!--header-->
@@ -81,61 +76,75 @@ $(function() {
 
 <p>This contains classes for recording operations applied to the environment for tracking changes. This is mainly support distributed systems to keep multiple instances up-to-date.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="../../de/d3c/macros_8h_source.html">tesseract_common/macros.h</a>&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;Eigen/Geometry&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h_source.html">tesseract_scene_graph/joint.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d2/d5c/tesseract__scene__graph_2include_2tesseract__scene__graph_2link_8h_source.html">tesseract_scene_graph/link.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d6/df3/graph_8h_source.html">tesseract_scene_graph/graph.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d3/d7a/kinematics__information_8h_source.html">tesseract_scene_graph/kinematics_information.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d3/d0c/tesseract__collision_2include_2tesseract__collision_2core_2types_8h_source.html">tesseract_collision/core/types.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d4/d04/add__allowed__collision__command_8h_source.html">tesseract_environment/core/commands/add_allowed_collision_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/db7/add__link__command_8h_source.html">tesseract_environment/core/commands/add_link_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d6/d07/add__kinematics__information__command_8h_source.html">tesseract_environment/core/commands/add_kinematics_information_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../df/ddd/add__scene__graph__command_8h_source.html">tesseract_environment/core/commands/add_scene_graph_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dc/d3f/change__default__contact__margin__command_8h_source.html">tesseract_environment/core/commands/change_default_contact_margin_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d98/change__joint__acceleration__limits__command_8h_source.html">tesseract_environment/core/commands/change_joint_acceleration_limits_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../df/dd7/change__joint__origin__command_8h_source.html">tesseract_environment/core/commands/change_joint_origin_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../de/dbe/change__joint__position__limits__command_8h_source.html">tesseract_environment/core/commands/change_joint_position_limits_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d8/dcb/change__joint__velocity__limits__command_8h_source.html">tesseract_environment/core/commands/change_joint_velocity_limits_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../de/d30/change__link__collision__enabled__command_8h_source.html">tesseract_environment/core/commands/change_link_collision_enabled_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/d87/change__link__origin__command_8h_source.html">tesseract_environment/core/commands/change_link_origin_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d8/d76/change__link__visibility__command_8h_source.html">tesseract_environment/core/commands/change_link_visibility_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d72/change__pair__contact__margin__command_8h_source.html">tesseract_environment/core/commands/change_pair_contact_margin_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dd/dbd/move__joint__command_8h_source.html">tesseract_environment/core/commands/move_joint_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/ddd/move__link__command_8h_source.html">tesseract_environment/core/commands/move_link_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dc/d4e/remove__allowed__collision__command_8h_source.html">tesseract_environment/core/commands/remove_allowed_collision_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d0/dfb/remove__allowed__collision__link__command_8h_source.html">tesseract_environment/core/commands/remove_allowed_collision_link_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dd/d36/remove__joint__command_8h_source.html">tesseract_environment/core/commands/remove_joint_command.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/dfb/remove__link__command_8h_source.html">tesseract_environment/core/commands/remove_link_command.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for commands.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d7/d1b/commands_8h__incl.png" border="0" usemap="#atesseract__environment_2include_2tesseract__environment_2core_2commands_8h" alt=""/></div>
 <map name="atesseract__environment_2include_2tesseract__environment_2core_2commands_8h" id="atesseract__environment_2include_2tesseract__environment_2core_2commands_8h">
-<area shape="rect" title="This contains classes for recording operations applied to the environment for tracking changes...." alt="" coords="1585,5,1788,61"/>
-<area shape="rect" href="../../de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="2617,556,2807,583"/>
-<area shape="rect" title=" " alt="" coords="3153,556,3221,583"/>
-<area shape="rect" title=" " alt="" coords="4059,556,4173,583"/>
-<area shape="rect" href="../../d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="983,467,1140,508"/>
-<area shape="rect" href="../../d2/d5c/tesseract__scene__graph_2include_2tesseract__scene__graph_2link_8h.html" title=" " alt="" coords="1391,377,1548,419"/>
-<area shape="rect" href="../../d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="677,288,835,329"/>
-<area shape="rect" href="../../d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="1724,377,1895,419"/>
-<area shape="rect" href="../../d3/d0c/tesseract__collision_2include_2tesseract__collision_2core_2types_8h.html" title="Tesseracts Collision Common Types." alt="" coords="1968,109,2099,151"/>
-<area shape="rect" title=" " alt="" coords="922,556,977,583"/>
-<area shape="rect" title=" " alt="" coords="1565,556,1624,583"/>
-<area shape="rect" title=" " alt="" coords="176,556,267,583"/>
-<area shape="rect" title=" " alt="" coords="1661,556,1707,583"/>
-<area shape="rect" href="../../d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="2963,467,3099,508"/>
-<area shape="rect" title=" " alt="" coords="800,377,952,419"/>
-<area shape="rect" title=" " alt="" coords="977,377,1117,419"/>
-<area shape="rect" title=" " alt="" coords="1141,385,1315,411"/>
-<area shape="rect" title=" " alt="" coords="93,377,248,419"/>
-<area shape="rect" title=" " alt="" coords="523,377,661,419"/>
-<area shape="rect" title=" " alt="" coords="737,385,775,411"/>
-<area shape="rect" title=" " alt="" coords="1001,556,1111,583"/>
-<area shape="rect" href="../../d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="323,377,499,419"/>
-<area shape="rect" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="2100,474,2279,501"/>
-<area shape="rect" title=" " alt="" coords="2057,556,2143,583"/>
-<area shape="rect" title=" " alt="" coords="1924,474,1975,501"/>
-<area shape="rect" title=" " alt="" coords="2122,206,2201,233"/>
-<area shape="rect" title=" " alt="" coords="1775,206,1881,233"/>
-<area shape="rect" href="../../d4/ddb/geometries_8h.html" title="Tesseract Geometries." alt="" coords="2964,199,3100,240"/>
-<area shape="rect" href="../../df/d9e/tesseract__geometry_2include_2tesseract__geometry_2impl_2box_8h.html" title="Tesseract Box Geometry." alt="" coords="2964,377,3100,419"/>
-<area shape="rect" href="../../d8/db6/tesseract__geometry_2include_2tesseract__geometry_2impl_2sphere_8h.html" title="Tesseract Sphere Geometry." alt="" coords="3276,377,3412,419"/>
-<area shape="rect" href="../../d8/d3b/tesseract__geometry_2include_2tesseract__geometry_2impl_2cylinder_8h.html" title="Tesseract Cylinder Geometry." alt="" coords="2324,377,2460,419"/>
-<area shape="rect" href="../../d8/d2b/tesseract__geometry_2include_2tesseract__geometry_2impl_2capsule_8h.html" title="Tesseract Capsule Geometry." alt="" coords="2484,377,2620,419"/>
-<area shape="rect" href="../../dc/df2/tesseract__geometry_2include_2tesseract__geometry_2impl_2cone_8h.html" title="Tesseract Cone Geometry." alt="" coords="2804,377,2940,419"/>
-<area shape="rect" href="../../db/d8b/plane_8h.html" title="Tesseract Plane Geometry." alt="" coords="2644,377,2780,419"/>
-<area shape="rect" href="../../d5/d93/tesseract__geometry_2include_2tesseract__geometry_2impl_2mesh_8h.html" title="Tesseract Mesh Geometry." alt="" coords="3393,288,3529,329"/>
-<area shape="rect" href="../../de/dd2/tesseract__geometry_2include_2tesseract__geometry_2impl_2convex__mesh_8h.html" title="Tesseract Convex Mesh Geometry." alt="" coords="3577,288,3721,329"/>
-<area shape="rect" href="../../df/d5e/tesseract__geometry_2include_2tesseract__geometry_2impl_2octree_8h.html" title="Tesseract Octree Geometry." alt="" coords="4217,377,4353,419"/>
-<area shape="rect" href="../../d2/d17/tesseract__geometry_2include_2tesseract__geometry_2impl_2sdf__mesh_8h.html" title="Tesseract SDF Mesh Geometry." alt="" coords="3808,288,3944,329"/>
-<area shape="rect" href="../../d8/d01/resource_8h.html" title="Class to retrieve data from resources." alt="" coords="3577,474,3775,501"/>
-<area shape="rect" href="../../df/d8e/mesh__material_8h.html" title="Tesseract Mesh Material read from a mesh file." alt="" coords="3588,377,3737,419"/>
-<area shape="rect" title=" " alt="" coords="3641,556,3711,583"/>
-<area shape="rect" title=" " alt="" coords="4204,474,4340,501"/>
+<area shape="rect" title="This contains classes for recording operations applied to the environment for tracking changes...." alt="" coords="1887,5,2090,61"/>
+<area shape="rect" href="../../d4/d04/add__allowed__collision__command_8h.html" title="Used to add an allowed collision to the environment." alt="" coords="3601,325,3795,381"/>
+<area shape="rect" href="../../da/db7/add__link__command_8h.html" title="Used to add link and joint to environment." alt="" coords="4487,213,4658,269"/>
+<area shape="rect" href="../../d6/d07/add__kinematics__information__command_8h.html" title="Used to kinematics information to the environment." alt="" coords="3807,213,4021,269"/>
+<area shape="rect" href="../../df/ddd/add__scene__graph__command_8h.html" title="Used to add scene graph to the environment." alt="" coords="2979,109,3166,165"/>
+<area shape="rect" href="../../dc/d3f/change__default__contact__margin__command_8h.html" title="Used to change default contact margin in environment." alt="" coords="430,317,595,388"/>
+<area shape="rect" href="../../da/d98/change__joint__acceleration__limits__command_8h.html" title="Used to change a joints acceleration limits in environment." alt="" coords="49,317,217,388"/>
+<area shape="rect" href="../../df/dd7/change__joint__origin__command_8h.html" title="Used to change a joints origin in environment." alt="" coords="4230,325,4395,381"/>
+<area shape="rect" href="../../de/dbe/change__joint__position__limits__command_8h.html" title="Used to change a joints position limits in environment." alt="" coords="241,317,406,388"/>
+<area shape="rect" href="../../d8/dcb/change__joint__velocity__limits__command_8h.html" title="Used to change a joints velocity limits in environment." alt="" coords="619,317,785,388"/>
+<area shape="rect" href="../../de/d30/change__link__collision__enabled__command_8h.html" title="Used to change a links collision enabled in environment." alt="" coords="1711,317,1877,388"/>
+<area shape="rect" href="../../db/d87/change__link__origin__command_8h.html" title="Used to change a links origin in environment." alt="" coords="4470,325,4635,381"/>
+<area shape="rect" href="../../d8/d76/change__link__visibility__command_8h.html" title="Used to change a links visibility in environment." alt="" coords="1901,325,2077,381"/>
+<area shape="rect" href="../../da/d72/change__pair__contact__margin__command_8h.html" title="Used to change pair contact margin in environment." alt="" coords="860,325,1080,381"/>
+<area shape="rect" href="../../dd/dbd/move__joint__command_8h.html" title="Used to move joint in environment." alt="" coords="2101,325,2287,381"/>
+<area shape="rect" href="../../db/ddd/move__link__command_8h.html" title="Used to move link in environment." alt="" coords="4023,325,4205,381"/>
+<area shape="rect" href="../../dc/d4e/remove__allowed__collision__command_8h.html" title="Used to remove an allowed collision from the environment." alt="" coords="1104,325,1305,381"/>
+<area shape="rect" href="../../d0/dfb/remove__allowed__collision__link__command_8h.html" title=" " alt="" coords="1329,317,1496,388"/>
+<area shape="rect" href="../../dd/d36/remove__joint__command_8h.html" title="Used to remove joint from environment." alt="" coords="3409,325,3576,381"/>
+<area shape="rect" href="../../db/dfb/remove__link__command_8h.html" title="Used to remove link from environment." alt="" coords="1520,325,1687,381"/>
+<area shape="rect" href="../../de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="3568,525,3759,552"/>
+<area shape="rect" title=" " alt="" coords="2325,525,2393,552"/>
+<area shape="rect" href="../../d0/d09/command_8h.html" title="This contains classes for recording operations applied to the environment for tracking changes...." alt="" coords="2282,436,2437,477"/>
+<area shape="rect" title=" " alt="" coords="4875,525,4934,552"/>
+<area shape="rect" href="../../d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="5077,436,5234,477"/>
+<area shape="rect" href="../../d2/d5c/tesseract__scene__graph_2include_2tesseract__scene__graph_2link_8h.html" title=" " alt="" coords="4910,332,5067,373"/>
+<area shape="rect" title=" " alt="" coords="5396,525,5451,552"/>
+<area shape="rect" title=" " alt="" coords="5226,525,5317,552"/>
+<area shape="rect" title=" " alt="" coords="4804,525,4851,552"/>
+<area shape="rect" href="../../d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="4410,436,4546,477"/>
+<area shape="rect" href="../../d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="5297,332,5467,373"/>
+<area shape="rect" title=" " alt="" coords="564,525,675,552"/>
+<area shape="rect" title=" " alt="" coords="5461,443,5511,470"/>
+<area shape="rect" title=" " alt="" coords="4970,525,5085,552"/>
+<area shape="rect" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="4621,443,4799,470"/>
+<area shape="rect" title=" " alt="" coords="4530,525,4615,552"/>
+<area shape="rect" title=" " alt="" coords="4640,525,4780,552"/>
+<area shape="rect" href="../../d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="2994,221,3151,262"/>
+<area shape="rect" title=" " alt="" coords="2915,332,3067,373"/>
+<area shape="rect" title=" " alt="" coords="3092,332,3232,373"/>
+<area shape="rect" title=" " alt="" coords="2312,339,2487,366"/>
+<area shape="rect" title=" " alt="" coords="2511,332,2666,373"/>
+<area shape="rect" title=" " alt="" coords="2691,332,2828,373"/>
+<area shape="rect" title=" " alt="" coords="2852,339,2891,366"/>
+<area shape="rect" href="../../d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="4710,332,4886,373"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -143,120 +152,36 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/d92/commands_8h__dep__incl.png" border="0" usemap="#atesseract__environment_2include_2tesseract__environment_2core_2commands_8hdep" alt=""/></div>
 <map name="atesseract__environment_2include_2tesseract__environment_2core_2commands_8hdep" id="atesseract__environment_2include_2tesseract__environment_2core_2commands_8hdep">
-<area shape="rect" title="This contains classes for recording operations applied to the environment for tracking changes...." alt="" coords="480,5,683,61"/>
-<area shape="rect" href="../../de/d26/environment_8h.html" title=" " alt="" coords="558,213,760,269"/>
-<area shape="rect" href="../../dd/dac/manipulator__manager_8h.html" title="This managers everything about all manipulator, like forward kinematics, inverse kinematics,..." alt="" coords="619,109,822,165"/>
-<area shape="rect" href="../../d9/dcf/state__solver_8h.html" title="Tesseract Environment State Solver Interface." alt="" coords="327,109,530,165"/>
-<area shape="rect" href="../../d4/d2d/tesseract__environment_2include_2tesseract__environment_2core_2utils_8h.html" title="Tesseract Environment Utility Functions." alt="" coords="634,317,836,373"/>
-<area shape="rect" href="../../dc/d82/environment_8cpp.html" title="Tesseract environment interface implementation." alt="" coords="649,436,821,477"/>
-<area shape="rect" href="../../de/d87/environment__clone__benchmarks_8cpp.html" title=" " alt="" coords="410,317,609,373"/>
-<area shape="rect" href="../../d0/d5b/tesseract__environment__unit_8cpp.html" title=" " alt="" coords="24,317,208,373"/>
-<area shape="rect" href="../../d0/de9/tesseract__ignition__visualization_8h.html" title=" " alt="" coords="846,421,1048,492"/>
-<area shape="rect" href="../../d2/d02/visualization_8h.html" title="Visualization Class." alt="" coords="962,317,1164,373"/>
-<area shape="rect" href="../../d2/d87/tesseract__environment_2include_2tesseract__environment_2kdl_2kdl__utils_8h.html" title="Tesseract Environment KDL utility functions." alt="" coords="288,429,491,485"/>
-<area shape="rect" href="../../da/dfb/kdl__state__solver_8cpp.html" title="Tesseract environment kdl solver implementation." alt="" coords="28,555,216,596"/>
-<area shape="rect" href="../../d6/dbe/tesseract__ignition__visualization_8cpp.html" title=" " alt="" coords="689,547,861,603"/>
-<area shape="rect" href="../../db/d07/tesseract__ignition__visualization__plugin_8cpp.html" title=" " alt="" coords="886,540,1040,611"/>
-<area shape="rect" href="../../da/d93/visualization__loader_8h.html" title="Visualization Loader." alt="" coords="1072,429,1275,485"/>
-<area shape="rect" href="../../d3/da9/visualization__loader_8cpp.html" title=" " alt="" coords="1081,555,1266,596"/>
-<area shape="rect" href="../../df/d3c/manipulator__manager_8cpp.html" title=" " alt="" coords="784,213,939,269"/>
-<area shape="rect" href="../../dd/d7b/kdl__state__solver_8h.html" title=" " alt="" coords="15,213,218,269"/>
-<area shape="rect" href="../../d9/dfa/ofkt__state__solver_8h.html" title="A implementation of the Optimized Forward Kinematic Tree as a state solver." alt="" coords="270,213,472,269"/>
-<area shape="rect" href="../../d3/d9a/ofkt__state__solver_8cpp.html" title="A implementation of the Optimized Forward Kinematic Tree as a state solver." alt="" coords="232,317,387,373"/>
+<area shape="rect" title="This contains classes for recording operations applied to the environment for tracking changes...." alt="" coords="352,5,555,61"/>
+<area shape="rect" href="../../de/d26/environment_8h.html" title=" " alt="" coords="535,213,737,269"/>
+<area shape="rect" href="../../d0/d5b/tesseract__environment__unit_8cpp.html" title=" " alt="" coords="57,317,241,373"/>
+<area shape="rect" href="../../dd/dac/manipulator__manager_8h.html" title="This managers everything about all manipulator, like forward kinematics, inverse kinematics,..." alt="" coords="560,109,763,165"/>
+<area shape="rect" href="../../d9/dcf/state__solver_8h.html" title="Tesseract Environment State Solver Interface." alt="" coords="283,109,485,165"/>
+<area shape="rect" href="../../d4/d2d/tesseract__environment_2include_2tesseract__environment_2core_2utils_8h.html" title="Tesseract Environment Utility Functions." alt="" coords="667,317,869,373"/>
+<area shape="rect" href="../../dc/d82/environment_8cpp.html" title="Tesseract environment interface implementation." alt="" coords="682,436,854,477"/>
+<area shape="rect" href="../../de/d87/environment__clone__benchmarks_8cpp.html" title=" " alt="" coords="443,317,642,373"/>
+<area shape="rect" href="../../d0/de9/tesseract__ignition__visualization_8h.html" title=" " alt="" coords="879,421,1081,492"/>
+<area shape="rect" href="../../d2/d02/visualization_8h.html" title="Visualization Class." alt="" coords="995,317,1197,373"/>
+<area shape="rect" href="../../d2/d87/tesseract__environment_2include_2tesseract__environment_2kdl_2kdl__utils_8h.html" title="Tesseract Environment KDL utility functions." alt="" coords="321,429,524,485"/>
+<area shape="rect" href="../../da/dfb/kdl__state__solver_8cpp.html" title="Tesseract environment kdl solver implementation." alt="" coords="61,555,249,596"/>
+<area shape="rect" href="../../d6/dbe/tesseract__ignition__visualization_8cpp.html" title=" " alt="" coords="722,547,894,603"/>
+<area shape="rect" href="../../db/d07/tesseract__ignition__visualization__plugin_8cpp.html" title=" " alt="" coords="919,540,1073,611"/>
+<area shape="rect" href="../../da/d93/visualization__loader_8h.html" title="Visualization Loader." alt="" coords="1105,429,1308,485"/>
+<area shape="rect" href="../../d3/da9/visualization__loader_8cpp.html" title=" " alt="" coords="1114,555,1299,596"/>
+<area shape="rect" href="../../df/d3c/manipulator__manager_8cpp.html" title=" " alt="" coords="761,213,916,269"/>
+<area shape="rect" href="../../dd/d7b/kdl__state__solver_8h.html" title=" " alt="" coords="5,213,208,269"/>
+<area shape="rect" href="../../d9/dfa/ofkt__state__solver_8h.html" title="A implementation of the Optimized Forward Kinematic Tree as a state solver." alt="" coords="283,213,485,269"/>
+<area shape="rect" href="../../d3/d9a/ofkt__state__solver_8cpp.html" title="A implementation of the Optimized Forward Kinematic Tree as a state solver." alt="" coords="265,317,420,373"/>
 </map>
 </div>
 </div>
 <p><a href="../../d5/d90/commands_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1c/classtesseract__environment_1_1Command.html">tesseract_environment::Command</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classtesseract__environment_1_1AddCommand.html">tesseract_environment::AddCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d48/classtesseract__environment_1_1MoveLinkCommand.html">tesseract_environment::MoveLinkCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc2/classtesseract__environment_1_1MoveJointCommand.html">tesseract_environment::MoveJointCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da6/classtesseract__environment_1_1RemoveLinkCommand.html">tesseract_environment::RemoveLinkCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db1/classtesseract__environment_1_1RemoveJointCommand.html">tesseract_environment::RemoveJointCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/classtesseract__environment_1_1ChangeLinkOriginCommand.html">tesseract_environment::ChangeLinkOriginCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d66/classtesseract__environment_1_1ChangeJointOriginCommand.html">tesseract_environment::ChangeJointOriginCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/classtesseract__environment_1_1ChangeLinkCollisionEnabledCommand.html">tesseract_environment::ChangeLinkCollisionEnabledCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dff/classtesseract__environment_1_1ChangeLinkVisibilityCommand.html">tesseract_environment::ChangeLinkVisibilityCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6c/classtesseract__environment_1_1AddAllowedCollisionCommand.html">tesseract_environment::AddAllowedCollisionCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7d/classtesseract__environment_1_1RemoveAllowedCollisionCommand.html">tesseract_environment::RemoveAllowedCollisionCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d28/classtesseract__environment_1_1RemoveAllowedCollisionLinkCommand.html">tesseract_environment::RemoveAllowedCollisionLinkCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6f/classtesseract__environment_1_1AddSceneGraphCommand.html">tesseract_environment::AddSceneGraphCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d63/classtesseract__environment_1_1AddKinematicsInformationCommand.html">tesseract_environment::AddKinematicsInformationCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d17/classtesseract__environment_1_1ChangeJointPositionLimitsCommand.html">tesseract_environment::ChangeJointPositionLimitsCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3d/classtesseract__environment_1_1ChangeJointVelocityLimitsCommand.html">tesseract_environment::ChangeJointVelocityLimitsCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/classtesseract__environment_1_1ChangeJointAccelerationLimitsCommand.html">tesseract_environment::ChangeJointAccelerationLimitsCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d52/classtesseract__environment_1_1ChangeDefaultContactMarginCommand.html">tesseract_environment::ChangeDefaultContactMarginCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d38/classtesseract__environment_1_1ChangePairContactMarginCommand.html">tesseract_environment::ChangePairContactMarginCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:d2/d5f/namespacetesseract__environment"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5f/namespacetesseract__environment.html">tesseract_environment</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:acb95740502ec41d80a94a7631d4b7a3c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5f/namespacetesseract__environment.html#acb95740502ec41d80a94a7631d4b7a3c">tesseract_environment::Commands</a> = std::vector&lt; Command::ConstPtr &gt;</td></tr>
-<tr class="separator:acb95740502ec41d80a94a7631d4b7a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:afc00c1aecb519acba3afc24dbd367029"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029">tesseract_environment::CommandType</a> { <br />
-&#160;&#160;<a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a9eeb52badb613229884838847294b90d">tesseract_environment::ADD</a> = 0
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a0c4617d6ea17eb456b514b9bc9ddaaec">tesseract_environment::MOVE_LINK</a> = 1
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a4ca2d320bdf40df7e6f465d21e268ec4">tesseract_environment::MOVE_JOINT</a> = 2
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029afff7bebecead86441476e38b94b3bc05">tesseract_environment::REMOVE_LINK</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a6721b27017cd21a598f1740481167224">tesseract_environment::REMOVE_JOINT</a> = 4
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a5556c1986a9b58c054c0038a8c73cab9">tesseract_environment::CHANGE_LINK_ORIGIN</a> = 5
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a9e520d728925baf2b87146d99a20d8ba">tesseract_environment::CHANGE_JOINT_ORIGIN</a> = 6
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a12a8518522948e345cab8fefd0235008">tesseract_environment::CHANGE_LINK_COLLISION_ENABLED</a> = 7
-, <br />
-&#160;&#160;<a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029aaa5732dcc51c06b4e9af6373e937e4a1">tesseract_environment::CHANGE_LINK_VISIBILITY</a> = 8
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029ab2889e5decae30347cb29cdeb282d664">tesseract_environment::ADD_ALLOWED_COLLISION</a> = 9
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a6944181c71015e5537d5271cb1c432f3">tesseract_environment::REMOVE_ALLOWED_COLLISION</a> = 10
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029ac40ca000ef4f65a27cf7998ef4f020a0">tesseract_environment::REMOVE_ALLOWED_COLLISION_LINK</a> = 11
-, <br />
-&#160;&#160;<a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029abad512ee301f85596f24ccb211411856">tesseract_environment::ADD_SCENE_GRAPH</a> = 12
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a45b7ca4cbdf3997ccbb8e81e45c25c0f">tesseract_environment::CHANGE_JOINT_POSITION_LIMITS</a> = 13
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029aea4ee03591d62742fc798bd6d07914dd">tesseract_environment::CHANGE_JOINT_VELOCITY_LIMITS</a> = 14
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a0e622edebb918e58a2e50f37f48ec6be">tesseract_environment::CHANGE_JOINT_ACCELERATION_LIMITS</a> = 15
-, <br />
-&#160;&#160;<a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a6f820e76663d877e0103c6aea1616b1b">tesseract_environment::ADD_KINEMATICS_INFORMATION</a> = 16
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a57762920e9d0b5db119a64c74ecb0bea">tesseract_environment::CHANGE_DEFAULT_CONTACT_MARGIN</a> = 17
-, <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#afc00c1aecb519acba3afc24dbd367029a330b999d14606191ac7b92db4c782632">tesseract_environment::CHANGE_PAIR_CONTACT_MARGIN</a> = 18
-<br />
- }</td></tr>
-<tr class="separator:afc00c1aecb519acba3afc24dbd367029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This contains classes for recording operations applied to the environment for tracking changes. This is mainly support distributed systems to keep multiple instances up-to-date. </p>
 <dl class="section author"><dt>Author</dt><dd>Levi Armstrong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Dec 18, 2017 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>TODO </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000035">Bug:</a></b></dt><dd>No known bugs</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000055">Bug:</a></b></dt><dd>No known bugs</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2017, Southwest Research Institute</dd></dl>
 <dl class="section user"><dt>License</dt><dd>Software License Agreement (Apache License) </dd></dl>
 <dl class="section user"><dt></dt><dd>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a> </dd></dl>
@@ -264,7 +189,7 @@ Enumerations</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 11 2021 17:13:10 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Feb 11 2021 20:58:07 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -137,8 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5edddf2a7a85bf2206e5393b88d8f98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#aa3ff331ff46017f494dfeccf22ca80b6">StateSolver::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#ad5edddf2a7a85bf2206e5393b88d8f98">clone</a> () const override</td></tr>
 <tr class="memdesc:ad5edddf2a7a85bf2206e5393b88d8f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should clone the object so it may be used in a multi threaded application where each thread would clone the solver.  <a href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#ad5edddf2a7a85bf2206e5393b88d8f98">More...</a><br /></td></tr>
 <tr class="separator:ad5edddf2a7a85bf2206e5393b88d8f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36399263d5f891655241767a6290866d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a36399263d5f891655241767a6290866d">init</a> (<a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> scene_graph) override</td></tr>
-<tr class="separator:a36399263d5f891655241767a6290866d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5fd515abb17dfb9dfb8ce8bd60ae67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a7d5fd515abb17dfb9dfb8ce8bd60ae67">init</a> (<a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> scene_graph, int revision=1) override</td></tr>
+<tr class="separator:a7d5fd515abb17dfb9dfb8ce8bd60ae67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a525c34034ecc569d7aa9b3cf2c4cae14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a525c34034ecc569d7aa9b3cf2c4cae14">setState</a> (const std::unordered_map&lt; std::string, double &gt; &amp;joints) override</td></tr>
 <tr class="memdesc:a525c34034ecc569d7aa9b3cf2c4cae14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current state of the solver.  <a href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a525c34034ecc569d7aa9b3cf2c4cae14">More...</a><br /></td></tr>
 <tr class="separator:a525c34034ecc569d7aa9b3cf2c4cae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -726,12 +726,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This used by the clone method. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if <a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a36399263d5f891655241767a6290866d">init()</a> completes successfully </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a7d5fd515abb17dfb9dfb8ce8bd60ae67">init()</a> completes successfully </dd></dl>
 
 </div>
 </div>
-<a id="a36399263d5f891655241767a6290866d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36399263d5f891655241767a6290866d">&#9670;&nbsp;</a></span>init() <span class="overload">[2/2]</span></h2>
+<a id="a7d5fd515abb17dfb9dfb8ce8bd60ae67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5fd515abb17dfb9dfb8ce8bd60ae67">&#9670;&nbsp;</a></span>init() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -743,8 +743,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool tesseract_environment::KDLStateSolver::init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a>&#160;</td>
-          <td class="paramname"><em>scene_graph</em></td><td>)</td>
+          <td class="paramname"><em>scene_graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>revision</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -754,7 +764,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a54e3b7cb54219931985c04cc697543c4">tesseract_environment::StateSolver</a>.</p>
+<p>Implements <a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a3e38caac250bfbefac54789d7811c46d">tesseract_environment::StateSolver</a>.</p>
 
 </div>
 </div>
@@ -1164,7 +1174,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 11 2021 17:13:11 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Feb 11 2021 20:58:08 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
