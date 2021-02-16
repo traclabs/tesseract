@@ -312,19 +312,24 @@ $(function() {
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                                      <span class="keywordtype">double</span> max_diff,</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                                      <span class="keywordtype">double</span> max_rel_diff = std::numeric_limits&lt;double&gt;::epsilon())</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;{</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  Eigen::ArrayWrapper&lt;const Eigen::Ref&lt;const Eigen::VectorXd&gt;&gt; a1 = v1.array();</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  Eigen::ArrayWrapper&lt;const Eigen::Ref&lt;const Eigen::VectorXd&gt;&gt; a2 = v2.array();</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keyword">auto</span> diff_abs = (a1 - a2).abs();</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  <span class="keywordtype">double</span> diff = diff_abs.maxCoeff();</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordflow">if</span> (diff &lt;= max_diff)</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="keywordflow">if</span> (v1.size() == 0 &amp;&amp; v2.size() == 0)</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordflow">if</span> (v1.size() != v2.size())</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  Eigen::ArrayWrapper&lt;const Eigen::Ref&lt;const Eigen::VectorXd&gt;&gt; a1 = v1.array();</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  Eigen::ArrayWrapper&lt;const Eigen::Ref&lt;const Eigen::VectorXd&gt;&gt; a2 = v2.array();</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <span class="keywordflow">return</span> (diff_abs &lt;= (max_rel_diff * a1.abs().max(a2.abs()))).all();</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;}  <span class="comment">// namespace tesseract_common</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_COMMON_UTILS_H</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <span class="keyword">auto</span> diff_abs = (a1 - a2).abs();</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keywordtype">double</span> diff = diff_abs.maxCoeff();</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  <span class="keywordflow">if</span> (diff &lt;= max_diff)</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keywordflow">return</span> (diff_abs &lt;= (max_rel_diff * a1.abs().max(a2.abs()))).all();</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;}  <span class="comment">// namespace tesseract_common</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_COMMON_UTILS_H</span></div>
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="../../de/d3c/macros_8h.html">macros.h</a></div><div class="ttdoc">Common Tesseract Macros.</div></div>
 <div class="ttc" id="amacros_8h_html_a8cc0e3c6a3382c5c0b19eb9e676fc2db"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div><div class="ttdeci">#define TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</div><div class="ttdef"><b>Definition:</b> macros.h:65</div></div>
 <div class="ttc" id="anamespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP_html"><div class="ttname"><a href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div><div class="ttdef"><b>Definition:</b> create_convex_hull.cpp:35</div></div>
@@ -350,7 +355,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 11 2021 20:58:06 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Feb 16 2021 22:10:43 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
