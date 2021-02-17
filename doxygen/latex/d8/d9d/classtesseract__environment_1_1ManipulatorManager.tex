@@ -37,7 +37,9 @@ virtual \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a9040
 \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager}{Manipulator\+Manager}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a1a222f2edb6ce053e1170aa13e3f2d3e}{operator=}} (\mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager}{Manipulator\+Manager}} \&\&)=default
 \item 
 bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a93ce9372cd3abf674c219fa132e12daa}{init}} (\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} scene\+\_\+graph, \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} kinematics\+\_\+information)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize the manipulator manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_adc09a603b6465b4fa3a170945b393609}{is\+Initialized}} () const
+\begin{DoxyCompactList}\small\item\em Check if manipulator manager has been initialized. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a28dfb54dadc0ea11d24bbfd80f7ed2b1}{Manipulator\+Manager\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a8d21a537f32a0df0981e7bf5f509df4a}{clone}} (\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} scene\+\_\+graph) const
 \begin{DoxyCompactList}\small\item\em This will clone the manager and assign the new environment object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a8642e1c81bd23e66d2f3d86a11183645}{add\+Kinematics\+Information}} (const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \&kinematics\+\_\+information)
@@ -52,6 +54,8 @@ bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_aed22602
 \item 
 void \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a8bc5598d86834768cef13049805e9369}{remove\+Chain\+Group}} (const std\+::string \&group\+\_\+name)
 \item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a9210908c76e909bc85016942d3e01bd5}{has\+Chain\+Group}} (const std\+::string \&group\+\_\+name) const
+\item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_af59fa5cf100507d2b1544006747c5333}{tesseract\+\_\+scene\+\_\+graph\+::\+Chain\+Group}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_ae25fca79fc80e311f4b6b3edde223ce4}{get\+Chain\+Group}} (const std\+::string \&group\+\_\+name) const
 \item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_a3abd6411aec87a44d780401c2cb30cf9}{tesseract\+\_\+scene\+\_\+graph\+::\+Chain\+Groups}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a2ebdfc3b5e979190ad7699ee9043ee04}{get\+Chain\+Groups}} () const
@@ -59,6 +63,8 @@ const \mbox{\hyperlink{namespacetesseract__scene__graph_a3abd6411aec87a44d780401
 bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a9909fa7546dc98da653a00c0f556b17a}{add\+Joint\+Group}} (const std\+::string \&group\+\_\+name, const \mbox{\hyperlink{namespacetesseract__scene__graph_a7bf9af642abac4d4888c64f4ec6ad832}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+Group}} \&joint\+\_\+group)
 \item 
 void \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a3d85a7aee60f9c543dfbf2342a08d68c}{remove\+Joint\+Group}} (const std\+::string \&group\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a9a532ec44bb0d4de8ef46b0b5a4418fb}{has\+Joint\+Group}} (const std\+::string \&group\+\_\+name) const
 \item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_a7bf9af642abac4d4888c64f4ec6ad832}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+Group}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a1b3c7f5e35ceab6ca08d92ca9446af61}{get\+Joint\+Group}} (const std\+::string \&group\+\_\+name) const
 \item 
@@ -68,6 +74,8 @@ bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_ad5207b8
 \item 
 void \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a23f642f82c8b6727f262d2af92b7e12d}{remove\+Link\+Group}} (const std\+::string \&group\+\_\+name)
 \item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_ad2c14bbabb7bb5299dde4c37f6ec396b}{has\+Link\+Group}} (const std\+::string \&group\+\_\+name) const
+\item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_a847a67031db93f9304702b1facfd9f6d}{tesseract\+\_\+scene\+\_\+graph\+::\+Link\+Group}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_afe2e80460d365be695b5297334df2dfe}{get\+Link\+Group}} (const std\+::string \&group\+\_\+name) const
 \item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_ab616c56edf955298f1d2c550edb9548f}{tesseract\+\_\+scene\+\_\+graph\+::\+Link\+Groups}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a42d1fdae077dcde5e7fbe52bb2193efc}{get\+Link\+Groups}} () const
@@ -75,6 +83,8 @@ const \mbox{\hyperlink{namespacetesseract__scene__graph_ab616c56edf955298f1d2c55
 bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a3444963f94ba8eaa76d7979ca7129a07}{add\+ROPKinematics\+Solver}} (const std\+::string \&group\+\_\+name, const \mbox{\hyperlink{structtesseract__scene__graph_1_1ROPKinematicParameters}{tesseract\+\_\+scene\+\_\+graph\+::\+ROPKinematic\+Parameters}} \&rop\+\_\+group)
 \item 
 void \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a435ef50a7c200c6f32f185ff6a2edcb2}{remove\+ROPKinematics\+Solver}} (const std\+::string \&group\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a14f57df1b6459dbcfca192bb83afb4e5}{has\+ROPKinematics\+Solver}} (const std\+::string \&group\+\_\+name) const
 \item 
 const \mbox{\hyperlink{structtesseract__scene__graph_1_1ROPKinematicParameters}{tesseract\+\_\+scene\+\_\+graph\+::\+ROPKinematic\+Parameters}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a46212d109c85313cea26020d66fb8d6d}{get\+ROPKinematics\+Solver}} (const std\+::string \&group\+\_\+name) const
 \item 
@@ -84,6 +94,8 @@ bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a18e1d7d
 \item 
 void \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a61384145bc8dc39469f593bf74a35899}{remove\+REPKinematics\+Solver}} (const std\+::string \&group\+\_\+name)
 \item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a511eff5a32ee23a2597f8f5dbcabe31b}{has\+REPKinematics\+Solver}} (const std\+::string \&group\+\_\+name) const
+\item 
 const \mbox{\hyperlink{structtesseract__scene__graph_1_1REPKinematicParameters}{tesseract\+\_\+scene\+\_\+graph\+::\+REPKinematic\+Parameters}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a746d652541ca4928b5a1705370e2c8b3}{get\+REPKinematics\+Solver}} (const std\+::string \&group\+\_\+name) const
 \item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_acc7a2b9aba7513de98222c5b680baa97}{tesseract\+\_\+scene\+\_\+graph\+::\+Group\+REPKinematics}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a2a8d4a7135e61b9a378a1f259d965ae9}{get\+REPKinematics\+Solvers}} () const
@@ -92,6 +104,8 @@ bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a6556bfb
 \item 
 void \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a2b8c6f854f026fa578df1815dd497b5a}{remove\+OPWKinematics\+Sovler}} (const std\+::string \&group\+\_\+name)
 \item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_af99036d9b33199217ee3d7fe33bd57c0}{has\+OPWKinematics\+Solver}} (const std\+::string \&group\+\_\+name) const
+\item 
 const \mbox{\hyperlink{structtesseract__scene__graph_1_1OPWKinematicParameters}{tesseract\+\_\+scene\+\_\+graph\+::\+OPWKinematic\+Parameters}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a743064486fe5d3446bcc2d432379d271}{get\+OPWKinematics\+Solver}} (const std\+::string \&group\+\_\+name) const
 \item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_a33353003fc3c590f3f10a9a1dab84b77}{tesseract\+\_\+scene\+\_\+graph\+::\+Group\+OPWKinematics}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_af14554f8ce05977018801d69a429da76}{get\+OPWKinematics\+Solvers}} () const
@@ -99,6 +113,8 @@ const \mbox{\hyperlink{namespacetesseract__scene__graph_a33353003fc3c590f3f10a9a
 bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a5ad21163b55c252b324903cc7adc941c}{add\+Group\+Joint\+State}} (const std\+::string \&group\+\_\+name, const std\+::string \&state\+\_\+name, const \mbox{\hyperlink{namespacetesseract__scene__graph_a77b1884f10925e2c431045d0d4d134e0}{tesseract\+\_\+scene\+\_\+graph\+::\+Groups\+Joint\+State}} \&joint\+\_\+state)
 \item 
 void \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_ae43b82ba95ad6e432473f6a781c4c567}{remove\+Group\+Joint\+State}} (const std\+::string \&group\+\_\+name, const std\+::string \&state\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a28f928cf393bafbce050f586567871ae}{has\+Group\+Joint\+State}} (const std\+::string \&group\+\_\+name, const std\+::string \&state\+\_\+name) const
 \item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_a77b1884f10925e2c431045d0d4d134e0}{tesseract\+\_\+scene\+\_\+graph\+::\+Groups\+Joint\+State}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_aefa751a0e4f3cf66ae760d457ee33417}{get\+Groups\+Joint\+State}} (const std\+::string \&group\+\_\+name, const std\+::string \&state\+\_\+name) const
 \item 
@@ -110,13 +126,13 @@ bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_aacf9edb
 \item 
 void \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a6bc1ae83e53a9912b0801cb23ac68d36}{remove\+Group\+TCP}} (const std\+::string \&group\+\_\+name, const std\+::string \&tcp\+\_\+name)
 \item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a26a30817df02405b267d205fd4779b89}{has\+Group\+TCP}} (const std\+::string \&group\+\_\+name, const std\+::string \&tcp\+\_\+name) const
+\item 
 const Eigen\+::\+Isometry3d \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a31ad4b6e4d0723991ce0b15604761263}{get\+Groups\+TCP}} (const std\+::string \&group\+\_\+name, const std\+::string \&tcp\+\_\+name) const
 \item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_a18bcf73ffc76d25188696564005cf569}{tesseract\+\_\+scene\+\_\+graph\+::\+Groups\+TCPs}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a955bd46808bee065980457e67ec1138a}{get\+Groups\+TCPs}} (const std\+::string \&group\+\_\+name) const
 \item 
 const \mbox{\hyperlink{namespacetesseract__scene__graph_aeee0af01091daa5112d3a5e167c09951}{tesseract\+\_\+scene\+\_\+graph\+::\+Group\+TCPs}} \& \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a583fe71ebe05dcbf354546f03358a6cd}{get\+Group\+TCPs}} () const
-\item 
-bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a26a30817df02405b267d205fd4779b89}{has\+Group\+TCP}} (const std\+::string \&group\+\_\+name, const std\+::string \&tcp\+\_\+name) const
 \item 
 bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a8dfeb47276c45cc0d95f2abb6c089ce2}{register\+Fwd\+Kinematics\+Factory}} (\mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematicsFactory_a33c7aac804e9ae1dbb4c7b84f611223d}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics\+Factory\+::\+Const\+Ptr}} factory)
 \begin{DoxyCompactList}\small\item\em Register a forward kinematics factory. \end{DoxyCompactList}\item 
@@ -185,6 +201,8 @@ void \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a5c628ac
 \begin{DoxyCompactList}\small\item\em Apply environment command to update kinematics if needed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_ae9b4b0923669900af1024a0b10451a3c}{initialized\+\_\+}} \{ false \}
 \item 
 \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_accfba9e8f0ea6397d9e53d40d4d58a58}{kinematics\+\_\+information\+\_\+}}
 \item 
@@ -701,11 +719,23 @@ Get the kinematics information.
 \doxysubsubsection{\texorpdfstring{getROPKinematicsSolvers()}{getROPKinematicsSolvers()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{namespacetesseract__scene__graph_a78f17c9d34861d2c993d97cc82a1e657}{tesseract\+\_\+scene\+\_\+graph\+::\+Group\+ROPKinematics}} \& tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::get\+ROPKinematics\+Solvers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_a9210908c76e909bc85016942d3e01bd5}\label{classtesseract__environment_1_1ManipulatorManager_a9210908c76e909bc85016942d3e01bd5}} 
+\index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!hasChainGroup@{hasChainGroup}}
+\index{hasChainGroup@{hasChainGroup}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
+\doxysubsubsection{\texorpdfstring{hasChainGroup()}{hasChainGroup()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::has\+Chain\+Group (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name }\end{DoxyParamCaption}) const}
+
 \mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_ae3b5974dfb7fc5f9353973f538a0b7f9}\label{classtesseract__environment_1_1ManipulatorManager_ae3b5974dfb7fc5f9353973f538a0b7f9}} 
 \index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!hasGroup@{hasGroup}}
 \index{hasGroup@{hasGroup}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
 \doxysubsubsection{\texorpdfstring{hasGroup()}{hasGroup()}}
 {\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::has\+Group (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_a28f928cf393bafbce050f586567871ae}\label{classtesseract__environment_1_1ManipulatorManager_a28f928cf393bafbce050f586567871ae}} 
+\index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!hasGroupJointState@{hasGroupJointState}}
+\index{hasGroupJointState@{hasGroupJointState}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
+\doxysubsubsection{\texorpdfstring{hasGroupJointState()}{hasGroupJointState()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::has\+Group\+Joint\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name,  }\item[{const std\+::string \&}]{state\+\_\+name }\end{DoxyParamCaption}) const}
 
 \mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_a26a30817df02405b267d205fd4779b89}\label{classtesseract__environment_1_1ManipulatorManager_a26a30817df02405b267d205fd4779b89}} 
 \index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!hasGroupTCP@{hasGroupTCP}}
@@ -713,12 +743,69 @@ Get the kinematics information.
 \doxysubsubsection{\texorpdfstring{hasGroupTCP()}{hasGroupTCP()}}
 {\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::has\+Group\+TCP (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name,  }\item[{const std\+::string \&}]{tcp\+\_\+name }\end{DoxyParamCaption}) const}
 
+\mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_a9a532ec44bb0d4de8ef46b0b5a4418fb}\label{classtesseract__environment_1_1ManipulatorManager_a9a532ec44bb0d4de8ef46b0b5a4418fb}} 
+\index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!hasJointGroup@{hasJointGroup}}
+\index{hasJointGroup@{hasJointGroup}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
+\doxysubsubsection{\texorpdfstring{hasJointGroup()}{hasJointGroup()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::has\+Joint\+Group (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_ad2c14bbabb7bb5299dde4c37f6ec396b}\label{classtesseract__environment_1_1ManipulatorManager_ad2c14bbabb7bb5299dde4c37f6ec396b}} 
+\index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!hasLinkGroup@{hasLinkGroup}}
+\index{hasLinkGroup@{hasLinkGroup}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
+\doxysubsubsection{\texorpdfstring{hasLinkGroup()}{hasLinkGroup()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::has\+Link\+Group (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_af99036d9b33199217ee3d7fe33bd57c0}\label{classtesseract__environment_1_1ManipulatorManager_af99036d9b33199217ee3d7fe33bd57c0}} 
+\index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!hasOPWKinematicsSolver@{hasOPWKinematicsSolver}}
+\index{hasOPWKinematicsSolver@{hasOPWKinematicsSolver}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
+\doxysubsubsection{\texorpdfstring{hasOPWKinematicsSolver()}{hasOPWKinematicsSolver()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::has\+OPWKinematics\+Solver (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_a511eff5a32ee23a2597f8f5dbcabe31b}\label{classtesseract__environment_1_1ManipulatorManager_a511eff5a32ee23a2597f8f5dbcabe31b}} 
+\index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!hasREPKinematicsSolver@{hasREPKinematicsSolver}}
+\index{hasREPKinematicsSolver@{hasREPKinematicsSolver}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
+\doxysubsubsection{\texorpdfstring{hasREPKinematicsSolver()}{hasREPKinematicsSolver()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::has\+REPKinematics\+Solver (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_a14f57df1b6459dbcfca192bb83afb4e5}\label{classtesseract__environment_1_1ManipulatorManager_a14f57df1b6459dbcfca192bb83afb4e5}} 
+\index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!hasROPKinematicsSolver@{hasROPKinematicsSolver}}
+\index{hasROPKinematicsSolver@{hasROPKinematicsSolver}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
+\doxysubsubsection{\texorpdfstring{hasROPKinematicsSolver()}{hasROPKinematicsSolver()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::has\+ROPKinematics\+Solver (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name }\end{DoxyParamCaption}) const}
+
 \mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_a93ce9372cd3abf674c219fa132e12daa}\label{classtesseract__environment_1_1ManipulatorManager_a93ce9372cd3abf674c219fa132e12daa}} 
 \index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!init@{init}}
 \index{init@{init}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}}}]{scene\+\_\+graph,  }\item[{\mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}}}]{kinematics\+\_\+information }\end{DoxyParamCaption})}
 
+
+
+Initialize the manipulator manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+\_\+graph} & The scene graph associated with the manipulator manager \\
+\hline
+{\em kinematics\+\_\+information} & The kinematic information used to initialize the manager \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_adc09a603b6465b4fa3a170945b393609}\label{classtesseract__environment_1_1ManipulatorManager_adc09a603b6465b4fa3a170945b393609}} 
+\index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!isInitialized@{isInitialized}}
+\index{isInitialized@{isInitialized}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
+\doxysubsubsection{\texorpdfstring{isInitialized()}{isInitialized()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::is\+Initialized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if manipulator manager has been initialized. 
+
+\begin{DoxyReturn}{Returns}
+True if successful, otherwise false 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_a5c628ac3de6a5144a429dcef8e37a9c7}\label{classtesseract__environment_1_1ManipulatorManager_a5c628ac3de6a5144a429dcef8e37a9c7}} 
 \index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!onEnvironmentChanged@{onEnvironmentChanged}}
 \index{onEnvironmentChanged@{onEnvironmentChanged}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
@@ -1040,6 +1127,12 @@ True if manipulator solver pair exist, otherwise false
 \index{fwd\_kin\_tree\_default\_factory\_@{fwd\_kin\_tree\_default\_factory\_}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
 \doxysubsubsection{\texorpdfstring{fwd\_kin\_tree\_default\_factory\_}{fwd\_kin\_tree\_default\_factory\_}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematicsFactory_a33c7aac804e9ae1dbb4c7b84f611223d}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics\+Factory\+::\+Const\+Ptr}} tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::fwd\+\_\+kin\+\_\+tree\+\_\+default\+\_\+factory\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_ae9b4b0923669900af1024a0b10451a3c}\label{classtesseract__environment_1_1ManipulatorManager_ae9b4b0923669900af1024a0b10451a3c}} 
+\index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!initialized\_@{initialized\_}}
+\index{initialized\_@{initialized\_}!tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}}
+\doxysubsubsection{\texorpdfstring{initialized\_}{initialized\_}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Manipulator\+Manager\+::initialized\+\_\+ \{ false \}\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{classtesseract__environment_1_1ManipulatorManager_a1f44fa4e616deaadba11292c3d82e3b2}\label{classtesseract__environment_1_1ManipulatorManager_a1f44fa4e616deaadba11292c3d82e3b2}} 
 \index{tesseract\_environment::ManipulatorManager@{tesseract\_environment::ManipulatorManager}!inv\_kin\_chain\_default\_factory\_@{inv\_kin\_chain\_default\_factory\_}}

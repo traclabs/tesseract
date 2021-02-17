@@ -159,6 +159,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78bab04647b84e87fa576d23777cb0fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dd7/structtesseract__environment_1_1EnvState.html#a6a9f30b8418e9cb943125008c62b1d39">EnvState::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a78bab04647b84e87fa576d23777cb0fd">getRandomState</a> () const override</td></tr>
 <tr class="memdesc:a78bab04647b84e87fa576d23777cb0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the random state of the environment.  <a href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a78bab04647b84e87fa576d23777cb0fd">More...</a><br /></td></tr>
 <tr class="separator:a78bab04647b84e87fa576d23777cb0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81469775cd8a89a1bab027be8703a378"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a81469775cd8a89a1bab027be8703a378">getJointNames</a> () const override</td></tr>
+<tr class="memdesc:a81469775cd8a89a1bab027be8703a378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vector of joint names which align with the limits.  <a href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a81469775cd8a89a1bab027be8703a378">More...</a><br /></td></tr>
+<tr class="separator:a81469775cd8a89a1bab027be8703a378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf9af771490f9277acd5a283110c115f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html">tesseract_common::KinematicLimits</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#adf9af771490f9277acd5a283110c115f">getLimits</a> () const override</td></tr>
 <tr class="memdesc:adf9af771490f9277acd5a283110c115f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for kinematic limits.  <a href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#adf9af771490f9277acd5a283110c115f">More...</a><br /></td></tr>
 <tr class="separator:adf9af771490f9277acd5a283110c115f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -524,6 +527,36 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 <p>Implements <a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a403f2c5b7b8fd3c85a2f04719ce64eed">tesseract_environment::StateSolver</a>.</p>
+
+</div>
+</div>
+<a id="a81469775cd8a89a1bab027be8703a378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81469775cd8a89a1bab027be8703a378">&#9670;&nbsp;</a></span>getJointNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; std::string &gt; &amp; tesseract_environment::KDLStateSolver::getJointNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the vector of joint names which align with the limits. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector of joint names </dd></dl>
+
+<p>Implements <a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a7b17029c568853beef340bed4dc78f0c">tesseract_environment::StateSolver</a>.</p>
 
 </div>
 </div>
@@ -1174,7 +1207,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 16 2021 22:10:45 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Feb 17 2021 01:20:45 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

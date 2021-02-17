@@ -34,15 +34,17 @@ using \mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a7335730d83
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a0361cb6b2db3d76ed1cce6b4beefcbe4}{Add\+Link\+Command}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{tesseract\+\_\+scene\+\_\+graph\+::\+Link}} \&link)
-\begin{DoxyCompactList}\small\item\em Adds a link to the environment. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a5b00cd639f20e6ece21ab1a50c59c402}{Add\+Link\+Command}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{tesseract\+\_\+scene\+\_\+graph\+::\+Link}} \&link, const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint}} \&joint)
-\begin{DoxyCompactList}\small\item\em Adds a link to the environment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a00c56f1e1c90852ec1df3db8fe176f95}{Add\+Link\+Command}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{tesseract\+\_\+scene\+\_\+graph\+::\+Link}} \&link, bool replace\+\_\+allowed=false)
+\begin{DoxyCompactList}\small\item\em Adds or replace a link to the environment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a68054aa6870a1600fa5d1ff56b94a9e4}{Add\+Link\+Command}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{tesseract\+\_\+scene\+\_\+graph\+::\+Link}} \&link, const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint}} \&joint, bool replace\+\_\+allowed=false)
+\begin{DoxyCompactList}\small\item\em Adds a link and joint in the environment. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029}{Command\+Type}} \mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a700ee6060b73b22a8122239548d8a42a}{get\+Type}} () const final
 \item 
 const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link_afad1873344245e2223664b6b7f846f1c}{tesseract\+\_\+scene\+\_\+graph\+::\+Link\+::\+Const\+Ptr}} \& \mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a1c91f2cb2dbbdd98a5f6d696398b3749}{get\+Link}} () const
 \item 
 const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} \& \mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a39181712b15ffce0122e8436ca319159}{get\+Joint}} () const
+\item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a4de34a215514182616cf8937a3ff7c0d}{replace\+Allowed}} () const
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -50,6 +52,8 @@ const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a0668334445
 \mbox{\hyperlink{classtesseract__scene__graph_1_1Link_afad1873344245e2223664b6b7f846f1c}{tesseract\+\_\+scene\+\_\+graph\+::\+Link\+::\+Const\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a6abdd6591c2588ef92d1e03286c66263}{link\+\_\+}}
 \item 
 \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_acc27a3dfd586da01c2642f71649305f8}{joint\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a01ef4c22cd112c2a1a3bcb42ff0b9b8a}{replace\+\_\+allowed\+\_\+}} \{ false \}
 \end{DoxyCompactItemize}
 
 
@@ -69,41 +73,57 @@ const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a0668334445
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classtesseract__environment_1_1AddLinkCommand_a0361cb6b2db3d76ed1cce6b4beefcbe4}\label{classtesseract__environment_1_1AddLinkCommand_a0361cb6b2db3d76ed1cce6b4beefcbe4}} 
+\mbox{\Hypertarget{classtesseract__environment_1_1AddLinkCommand_a00c56f1e1c90852ec1df3db8fe176f95}\label{classtesseract__environment_1_1AddLinkCommand_a00c56f1e1c90852ec1df3db8fe176f95}} 
 \index{tesseract\_environment::AddLinkCommand@{tesseract\_environment::AddLinkCommand}!AddLinkCommand@{AddLinkCommand}}
 \index{AddLinkCommand@{AddLinkCommand}!tesseract\_environment::AddLinkCommand@{tesseract\_environment::AddLinkCommand}}
 \doxysubsubsection{\texorpdfstring{AddLinkCommand()}{AddLinkCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily tesseract\+\_\+environment\+::\+Add\+Link\+Command\+::\+Add\+Link\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{tesseract\+\_\+scene\+\_\+graph\+::\+Link}} \&}]{link }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tesseract\+\_\+environment\+::\+Add\+Link\+Command\+::\+Add\+Link\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{tesseract\+\_\+scene\+\_\+graph\+::\+Link}} \&}]{link,  }\item[{bool}]{replace\+\_\+allowed = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Adds a link to the environment. 
+Adds or replace a link to the environment. 
 
-\begin{DoxyVerb}   This method should attach the link to the root link with a fixed joint
+If the link exists and replace\+\_\+allowed equals true\+: \begin{DoxyVerb}   This command should replace the current link with the new link
+\end{DoxyVerb}
+ If the link exists and replace\+\_\+allowed equals false\+: \begin{DoxyVerb}   This command should result in an error
+\end{DoxyVerb}
+ If the link does not exist\+: \begin{DoxyVerb}   This command should attach the link to the root link with a fixed joint
    with a joint name of joint_{link name}".
 \end{DoxyVerb}
  
 \begin{DoxyParams}{Parameters}
 {\em link} & The link to be added to the graph \\
 \hline
+{\em replace\+\_\+allowed} & If true then if the link exists it will be replaced, otherwise if false it will fail. \\
+\hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classtesseract__environment_1_1AddLinkCommand_a5b00cd639f20e6ece21ab1a50c59c402}\label{classtesseract__environment_1_1AddLinkCommand_a5b00cd639f20e6ece21ab1a50c59c402}} 
+\mbox{\Hypertarget{classtesseract__environment_1_1AddLinkCommand_a68054aa6870a1600fa5d1ff56b94a9e4}\label{classtesseract__environment_1_1AddLinkCommand_a68054aa6870a1600fa5d1ff56b94a9e4}} 
 \index{tesseract\_environment::AddLinkCommand@{tesseract\_environment::AddLinkCommand}!AddLinkCommand@{AddLinkCommand}}
 \index{AddLinkCommand@{AddLinkCommand}!tesseract\_environment::AddLinkCommand@{tesseract\_environment::AddLinkCommand}}
 \doxysubsubsection{\texorpdfstring{AddLinkCommand()}{AddLinkCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily tesseract\+\_\+environment\+::\+Add\+Link\+Command\+::\+Add\+Link\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{tesseract\+\_\+scene\+\_\+graph\+::\+Link}} \&}]{link,  }\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint}} \&}]{joint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tesseract\+\_\+environment\+::\+Add\+Link\+Command\+::\+Add\+Link\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{tesseract\+\_\+scene\+\_\+graph\+::\+Link}} \&}]{link,  }\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint}} \&}]{joint,  }\item[{bool}]{replace\+\_\+allowed = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Adds a link to the environment. 
+Adds a link and joint in the environment. 
 
-
+If the link and joint exist and replace is allowed \begin{DoxyVerb}   This command will replace both link and joint if the link is the child link, otherwise this results in error
+\end{DoxyVerb}
+ If the link and joint exist and replace is not allowed \begin{DoxyVerb}   This command should result in an error
+\end{DoxyVerb}
+ If the link or joint only exists\+: \begin{DoxyVerb}   This command should result in an error
+\end{DoxyVerb}
+ 
 \begin{DoxyParams}{Parameters}
 {\em link} & The link to be added to the graph \\
 \hline
 {\em joint} & The joint to be used to attach link to environment \\
 \hline
+{\em replace\+\_\+allowed} & If true then if the link and joint exists it will be replaced, otherwise if false it will fail. \\
+\hline
 \end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]if joint is not fixed we should verify that limits are provided \end{DoxyRefDesc}
 
 
 \doxysubsection{Member Function Documentation}
@@ -129,6 +149,12 @@ Adds a link to the environment.
 
 Implements \mbox{\hyperlink{classtesseract__environment_1_1Command_ae76293ca1e231a278dcd79c1ec16490f}{tesseract\+\_\+environment\+::\+Command}}.
 
+\mbox{\Hypertarget{classtesseract__environment_1_1AddLinkCommand_a4de34a215514182616cf8937a3ff7c0d}\label{classtesseract__environment_1_1AddLinkCommand_a4de34a215514182616cf8937a3ff7c0d}} 
+\index{tesseract\_environment::AddLinkCommand@{tesseract\_environment::AddLinkCommand}!replaceAllowed@{replaceAllowed}}
+\index{replaceAllowed@{replaceAllowed}!tesseract\_environment::AddLinkCommand@{tesseract\_environment::AddLinkCommand}}
+\doxysubsubsection{\texorpdfstring{replaceAllowed()}{replaceAllowed()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Add\+Link\+Command\+::replace\+Allowed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
 
 
 \doxysubsection{Member Data Documentation}
@@ -143,6 +169,12 @@ Implements \mbox{\hyperlink{classtesseract__environment_1_1Command_ae76293ca1e23
 \index{link\_@{link\_}!tesseract\_environment::AddLinkCommand@{tesseract\_environment::AddLinkCommand}}
 \doxysubsubsection{\texorpdfstring{link\_}{link\_}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__scene__graph_1_1Link_afad1873344245e2223664b6b7f846f1c}{tesseract\+\_\+scene\+\_\+graph\+::\+Link\+::\+Const\+Ptr}} tesseract\+\_\+environment\+::\+Add\+Link\+Command\+::link\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesseract__environment_1_1AddLinkCommand_a01ef4c22cd112c2a1a3bcb42ff0b9b8a}\label{classtesseract__environment_1_1AddLinkCommand_a01ef4c22cd112c2a1a3bcb42ff0b9b8a}} 
+\index{tesseract\_environment::AddLinkCommand@{tesseract\_environment::AddLinkCommand}!replace\_allowed\_@{replace\_allowed\_}}
+\index{replace\_allowed\_@{replace\_allowed\_}!tesseract\_environment::AddLinkCommand@{tesseract\_environment::AddLinkCommand}}
+\doxysubsubsection{\texorpdfstring{replace\_allowed\_}{replace\_allowed\_}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Add\+Link\+Command\+::replace\+\_\+allowed\+\_\+ \{ false \}\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

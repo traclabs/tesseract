@@ -71,6 +71,8 @@ void \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_ae3b228a16d
 \begin{DoxyCompactList}\small\item\em Get the current state of the environment. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a71c98e34d41205be9a4f0d8e570e983c}{get\+Random\+State}} () const override
 \begin{DoxyCompactList}\small\item\em Get the random state of the environment. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a61b48638d88645771ff0c71f37e8c038}{get\+Joint\+Names}} () const override
+\begin{DoxyCompactList}\small\item\em Get the vector of joint names which align with the limits. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \& \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_abdc33f6c92e0ec61f673fd47d13c0bb5}{get\+Limits}} () const override
 \begin{DoxyCompactList}\small\item\em Getter for kinematic limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
@@ -89,7 +91,13 @@ void \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a8c9d3d9a9f
 void \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_ad2a437d8a1633b1ddac428701cd14092}{add\+Node}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} \&joint, const std\+::string \&joint\+\_\+name, const std\+::string \&parent\+\_\+link\+\_\+name, const std\+::string \&child\+\_\+link\+\_\+name, std\+::vector$<$ \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} $>$ \&kinematic\+\_\+joints)
 \begin{DoxyCompactList}\small\item\em Add a node to the tree. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a667870d3bf34e8d76e7afa7cf71d8e06}{remove\+Node}} (\mbox{\hyperlink{classtesseract__environment_1_1OFKTNode}{OFKTNode}} $\ast$node, std\+::vector$<$ std\+::string $>$ \&removed\+\_\+joints, std\+::vector$<$ long $>$ \&removed\+\_\+joints\+\_\+indices)
-\begin{DoxyCompactList}\small\item\em Remove a node and all of its children. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Remove a node and all of its children. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a3a6b0ba76ef829f5bbb0756e82cb7b44}{move\+Link\+Helper}} (std\+::vector$<$ \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} $>$ \&new\+\_\+kinematic\+\_\+joints, const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} \&joint)
+\begin{DoxyCompactList}\small\item\em This a helper function for moving a link. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_acf8e88aa92a611eba80acdca0c1eaf11}{replace\+Joint\+Helper}} (std\+::vector$<$ \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} $>$ \&new\+\_\+kinematic\+\_\+joints, const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} \&joint)
+\begin{DoxyCompactList}\small\item\em This is a helper function for replacing a joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a55364103cf0e167873923ce5f3a1c588}{remove\+Joint\+Helper}} (const std\+::vector$<$ std\+::string $>$ \&removed\+\_\+joints, const std\+::vector$<$ long $>$ \&removed\+\_\+joints\+\_\+indices)
+\begin{DoxyCompactList}\small\item\em This will clean up member variables joint\+\_\+names\+\_\+ and limits\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -245,6 +253,23 @@ Get the current state of the environment.
 
 Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a403f2c5b7b8fd3c85a2f04719ce64eed}{tesseract\+\_\+environment\+::\+State\+Solver}}.
 
+\mbox{\Hypertarget{classtesseract__environment_1_1OFKTStateSolver_a61b48638d88645771ff0c71f37e8c038}\label{classtesseract__environment_1_1OFKTStateSolver_a61b48638d88645771ff0c71f37e8c038}} 
+\index{tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}!getJointNames@{getJointNames}}
+\index{getJointNames@{getJointNames}!tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}}
+\doxysubsubsection{\texorpdfstring{getJointNames()}{getJointNames()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& tesseract\+\_\+environment\+::\+OFKTState\+Solver\+::get\+Joint\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the vector of joint names which align with the limits. 
+
+\begin{DoxyReturn}{Returns}
+A vector of joint names 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a7b17029c568853beef340bed4dc78f0c}{tesseract\+\_\+environment\+::\+State\+Solver}}.
+
 \mbox{\Hypertarget{classtesseract__environment_1_1OFKTStateSolver_abdc33f6c92e0ec61f673fd47d13c0bb5}\label{classtesseract__environment_1_1OFKTStateSolver_abdc33f6c92e0ec61f673fd47d13c0bb5}} 
 \index{tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}!getLimits@{getLimits}}
 \index{getLimits@{getLimits}!tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}}
@@ -333,6 +358,23 @@ Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_ae8bb022f
 
 Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a3e38caac250bfbefac54789d7811c46d}{tesseract\+\_\+environment\+::\+State\+Solver}}.
 
+\mbox{\Hypertarget{classtesseract__environment_1_1OFKTStateSolver_a3a6b0ba76ef829f5bbb0756e82cb7b44}\label{classtesseract__environment_1_1OFKTStateSolver_a3a6b0ba76ef829f5bbb0756e82cb7b44}} 
+\index{tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}!moveLinkHelper@{moveLinkHelper}}
+\index{moveLinkHelper@{moveLinkHelper}!tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}}
+\doxysubsubsection{\texorpdfstring{moveLinkHelper()}{moveLinkHelper()}}
+{\footnotesize\ttfamily void tesseract\+\_\+environment\+::\+OFKTState\+Solver\+::move\+Link\+Helper (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} $>$ \&}]{new\+\_\+kinematic\+\_\+joints,  }\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} \&}]{joint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This a helper function for moving a link. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+kinematic\+\_\+joints} & The vector to store new kinematic joints added to the solver \\
+\hline
+{\em joint} & The joint performing the move \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classtesseract__environment_1_1OFKTStateSolver_ab4bb1d8d91934b057e8841c41cbee452}\label{classtesseract__environment_1_1OFKTStateSolver_ab4bb1d8d91934b057e8841c41cbee452}} 
 \index{tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}!onEnvironmentChanged@{onEnvironmentChanged}}
 \index{onEnvironmentChanged@{onEnvironmentChanged}!tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}}
@@ -364,6 +406,23 @@ Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a5cb95153
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver}{OFKTState\+Solver}}\& tesseract\+\_\+environment\+::\+OFKTState\+Solver\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver}{OFKTState\+Solver}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+\mbox{\Hypertarget{classtesseract__environment_1_1OFKTStateSolver_a55364103cf0e167873923ce5f3a1c588}\label{classtesseract__environment_1_1OFKTStateSolver_a55364103cf0e167873923ce5f3a1c588}} 
+\index{tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}!removeJointHelper@{removeJointHelper}}
+\index{removeJointHelper@{removeJointHelper}!tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}}
+\doxysubsubsection{\texorpdfstring{removeJointHelper()}{removeJointHelper()}}
+{\footnotesize\ttfamily void tesseract\+\_\+environment\+::\+OFKTState\+Solver\+::remove\+Joint\+Helper (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{removed\+\_\+joints,  }\item[{const std\+::vector$<$ long $>$ \&}]{removed\+\_\+joints\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This will clean up member variables joint\+\_\+names\+\_\+ and limits\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em removed\+\_\+joints} & The removed joint names container \\
+\hline
+{\em removed\+\_\+joints\+\_\+indices} & The removed joint names indices container \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classtesseract__environment_1_1OFKTStateSolver_a667870d3bf34e8d76e7afa7cf71d8e06}\label{classtesseract__environment_1_1OFKTStateSolver_a667870d3bf34e8d76e7afa7cf71d8e06}} 
 \index{tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}!removeNode@{removeNode}}
 \index{removeNode@{removeNode}!tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}}
@@ -381,6 +440,23 @@ Remove a node and all of its children.
 {\em removed\+\_\+joints} & The removed joint names container \\
 \hline
 {\em removed\+\_\+joints\+\_\+indices} & The removed joint names indices container \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtesseract__environment_1_1OFKTStateSolver_acf8e88aa92a611eba80acdca0c1eaf11}\label{classtesseract__environment_1_1OFKTStateSolver_acf8e88aa92a611eba80acdca0c1eaf11}} 
+\index{tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}!replaceJointHelper@{replaceJointHelper}}
+\index{replaceJointHelper@{replaceJointHelper}!tesseract\_environment::OFKTStateSolver@{tesseract\_environment::OFKTStateSolver}}
+\doxysubsubsection{\texorpdfstring{replaceJointHelper()}{replaceJointHelper()}}
+{\footnotesize\ttfamily void tesseract\+\_\+environment\+::\+OFKTState\+Solver\+::replace\+Joint\+Helper (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} $>$ \&}]{new\+\_\+kinematic\+\_\+joints,  }\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} \&}]{joint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This is a helper function for replacing a joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+kinematic\+\_\+joints} & The vector to store new kinematic joints added to the solver \\
+\hline
+{\em joint} & The joint performing the replacement \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classtesseract__environment_1_1OFKTStateSolver_a73e45c4706518a1a1759ae94e27c4e55}\label{classtesseract__environment_1_1OFKTStateSolver_a73e45c4706518a1a1759ae94e27c4e55}} 

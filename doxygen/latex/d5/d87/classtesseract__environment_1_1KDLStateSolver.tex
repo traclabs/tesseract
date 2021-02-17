@@ -66,6 +66,8 @@ void \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_ab14ade8ff24
 \begin{DoxyCompactList}\small\item\em Get the current state of the environment. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_a78bab04647b84e87fa576d23777cb0fd}{get\+Random\+State}} () const override
 \begin{DoxyCompactList}\small\item\em Get the random state of the environment. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_a81469775cd8a89a1bab027be8703a378}{get\+Joint\+Names}} () const override
+\begin{DoxyCompactList}\small\item\em Get the vector of joint names which align with the limits. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \& \mbox{\hyperlink{classtesseract__environment_1_1KDLStateSolver_adf9af771490f9277acd5a283110c115f}{get\+Limits}} () const override
 \begin{DoxyCompactList}\small\item\em Getter for kinematic limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
@@ -197,6 +199,23 @@ Get the current state of the environment.
 
 
 Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a403f2c5b7b8fd3c85a2f04719ce64eed}{tesseract\+\_\+environment\+::\+State\+Solver}}.
+
+\mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_a81469775cd8a89a1bab027be8703a378}\label{classtesseract__environment_1_1KDLStateSolver_a81469775cd8a89a1bab027be8703a378}} 
+\index{tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}!getJointNames@{getJointNames}}
+\index{getJointNames@{getJointNames}!tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}}
+\doxysubsubsection{\texorpdfstring{getJointNames()}{getJointNames()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& tesseract\+\_\+environment\+::\+KDLState\+Solver\+::get\+Joint\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the vector of joint names which align with the limits. 
+
+\begin{DoxyReturn}{Returns}
+A vector of joint names 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a7b17029c568853beef340bed4dc78f0c}{tesseract\+\_\+environment\+::\+State\+Solver}}.
 
 \mbox{\Hypertarget{classtesseract__environment_1_1KDLStateSolver_adf9af771490f9277acd5a283110c115f}\label{classtesseract__environment_1_1KDLStateSolver_adf9af771490f9277acd5a283110c115f}} 
 \index{tesseract\_environment::KDLStateSolver@{tesseract\_environment::KDLStateSolver}!getLimits@{getLimits}}

@@ -268,9 +268,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad694d0f6ffbd89a68a58c797abc97a6e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/da9/namespacetesseract__common.html#a94d9921fc7ed323609ac57d06f939cb6">tesseract_common::VectorIsometry3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ad694d0f6ffbd89a68a58c797abc97a6e">getLinkTransforms</a> () const</td></tr>
 <tr class="memdesc:ad694d0f6ffbd89a68a58c797abc97a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all of the links transforms.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ad694d0f6ffbd89a68a58c797abc97a6e">More...</a><br /></td></tr>
 <tr class="separator:ad694d0f6ffbd89a68a58c797abc97a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1c5a2cd5657c4e36b45afb2f89c42e4"><td class="memItemLeft" align="right" valign="top">virtual const Eigen::Isometry3d &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#af1c5a2cd5657c4e36b45afb2f89c42e4">getLinkTransform</a> (const std::string &amp;link_name) const</td></tr>
-<tr class="memdesc:af1c5a2cd5657c4e36b45afb2f89c42e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transform corresponding to the link.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#af1c5a2cd5657c4e36b45afb2f89c42e4">More...</a><br /></td></tr>
-<tr class="separator:af1c5a2cd5657c4e36b45afb2f89c42e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ea45e7b76cfa06d09b9a2d2e25b137"><td class="memItemLeft" align="right" valign="top">virtual Eigen::Isometry3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ac1ea45e7b76cfa06d09b9a2d2e25b137">getLinkTransform</a> (const std::string &amp;link_name) const</td></tr>
+<tr class="memdesc:ac1ea45e7b76cfa06d09b9a2d2e25b137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transform corresponding to the link.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ac1ea45e7b76cfa06d09b9a2d2e25b137">More...</a><br /></td></tr>
+<tr class="separator:ac1ea45e7b76cfa06d09b9a2d2e25b137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ecee9b7a05f8aede6c0884244367b4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#aa3ff331ff46017f494dfeccf22ca80b6">StateSolver::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a28ecee9b7a05f8aede6c0884244367b4">getStateSolver</a> () const</td></tr>
 <tr class="memdesc:a28ecee9b7a05f8aede6c0884244367b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a clone of the environments state solver.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a28ecee9b7a05f8aede6c0884244367b4">More...</a><br /></td></tr>
 <tr class="separator:a28ecee9b7a05f8aede6c0884244367b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -459,6 +459,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a26cb6e0ffce2ac1e6986e5b52b4b2fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a249d976b55af1b763c526de937c0d937"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a249d976b55af1b763c526de937c0d937">applyRemoveJointCommand</a> (const <a class="el" href="../../d4/db1/classtesseract__environment_1_1RemoveJointCommand.html#a6cd0fcbaf19183016a7895e47b316609">RemoveJointCommand::ConstPtr</a> &amp;cmd)</td></tr>
 <tr class="separator:a249d976b55af1b763c526de937c0d937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01dbe0644c5ad3f0bd0dfdda54630f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#aa01dbe0644c5ad3f0bd0dfdda54630f9">applyReplaceJointCommand</a> (const <a class="el" href="../../dd/de9/classtesseract__environment_1_1ReplaceJointCommand.html#af916c42f76c0bde81dc7aac295b545ab">ReplaceJointCommand::ConstPtr</a> &amp;cmd)</td></tr>
+<tr class="separator:aa01dbe0644c5ad3f0bd0dfdda54630f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c027390c7f47973e830bbd3fb03c9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a82c027390c7f47973e830bbd3fb03c9c">applyChangeLinkOriginCommand</a> (const <a class="el" href="../../dc/dac/classtesseract__environment_1_1ChangeLinkOriginCommand.html#a874c9bbcf832607001e63d94e463b302">ChangeLinkOriginCommand::ConstPtr</a> &amp;cmd)</td></tr>
 <tr class="separator:a82c027390c7f47973e830bbd3fb03c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a321d017a9803be463eed3fd99e600277"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a321d017a9803be463eed3fd99e600277">applyChangeJointOriginCommand</a> (const <a class="el" href="../../de/d66/classtesseract__environment_1_1ChangeJointOriginCommand.html#a5e88a57c1e52eeed9bc960db3b6f41f8">ChangeJointOriginCommand::ConstPtr</a> &amp;cmd)</td></tr>
@@ -1453,6 +1455,32 @@ Private Member Functions</h2></td></tr>
           <td class="memname">bool tesseract_environment::Environment::applyRemoveLinkCommand </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../db/da6/classtesseract__environment_1_1RemoveLinkCommand.html#a31a75f9987d9bf8f51323fa00bfb2082">RemoveLinkCommand::ConstPtr</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa01dbe0644c5ad3f0bd0dfdda54630f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01dbe0644c5ad3f0bd0dfdda54630f9">&#9670;&nbsp;</a></span>applyReplaceJointCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tesseract_environment::Environment::applyReplaceJointCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/de9/classtesseract__environment_1_1ReplaceJointCommand.html#af916c42f76c0bde81dc7aac295b545ab">ReplaceJointCommand::ConstPtr</a> &amp;&#160;</td>
           <td class="paramname"><em>cmd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2526,8 +2554,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af1c5a2cd5657c4e36b45afb2f89c42e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1c5a2cd5657c4e36b45afb2f89c42e4">&#9670;&nbsp;</a></span>getLinkTransform()</h2>
+<a id="ac1ea45e7b76cfa06d09b9a2d2e25b137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ea45e7b76cfa06d09b9a2d2e25b137">&#9670;&nbsp;</a></span>getLinkTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2536,7 +2564,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Eigen::Isometry3d &amp; tesseract_environment::Environment::getLinkTransform </td>
+          <td class="memname">Eigen::Isometry3d tesseract_environment::Environment::getLinkTransform </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>link_name</em></td><td>)</td>
@@ -2637,7 +2665,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the manipulator manager. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000001">Todo:</a></b></dt><dd>This should go away and should expose methods for adding and removing objects from the manager and storing as commands </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000003">Todo:</a></b></dt><dd>This should go away and should expose methods for adding and removing objects from the manager and storing as commands </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Changes made to the manager are not capture in the command history. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The manipulator manager </dd></dl>
 
@@ -3664,6 +3692,7 @@ template&lt;typename S &gt; </div>
 </div><div class="memdoc">
 
 <p>reset to initialized state </p>
+<p>If the environment has not been initialized then this returns false </p><dl class="section return"><dt>Returns</dt><dd>True if environment was successfully reset, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -4622,7 +4651,7 @@ template&lt;typename S &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 16 2021 22:10:45 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Feb 17 2021 01:20:45 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

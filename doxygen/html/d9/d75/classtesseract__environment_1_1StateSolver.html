@@ -135,6 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c35ca2883218ffe84123c121a907c36"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/dd7/structtesseract__environment_1_1EnvState.html#a6a9f30b8418e9cb943125008c62b1d39">EnvState::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a0c35ca2883218ffe84123c121a907c36">getRandomState</a> () const =0</td></tr>
 <tr class="memdesc:a0c35ca2883218ffe84123c121a907c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the random state of the environment.  <a href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a0c35ca2883218ffe84123c121a907c36">More...</a><br /></td></tr>
 <tr class="separator:a0c35ca2883218ffe84123c121a907c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b17029c568853beef340bed4dc78f0c"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a7b17029c568853beef340bed4dc78f0c">getJointNames</a> () const =0</td></tr>
+<tr class="memdesc:a7b17029c568853beef340bed4dc78f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vector of joint names which align with the limits.  <a href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#a7b17029c568853beef340bed4dc78f0c">More...</a><br /></td></tr>
+<tr class="separator:a7b17029c568853beef340bed4dc78f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a86d112f60f8d5ccb8f299429c9128"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html">tesseract_common::KinematicLimits</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#ab3a86d112f60f8d5ccb8f299429c9128">getLimits</a> () const =0</td></tr>
 <tr class="memdesc:ab3a86d112f60f8d5ccb8f299429c9128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for kinematic limits.  <a href="../../d9/d75/classtesseract__environment_1_1StateSolver.html#ab3a86d112f60f8d5ccb8f299429c9128">More...</a><br /></td></tr>
 <tr class="separator:ab3a86d112f60f8d5ccb8f299429c9128"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,6 +346,36 @@ Friends</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 <p>Implemented in <a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a0e3a4fd13db61923043144e9c0a79d48">tesseract_environment::OFKTStateSolver</a>, and <a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a08001f031f72185d2d8dfab2edf7675e">tesseract_environment::KDLStateSolver</a>.</p>
+
+</div>
+</div>
+<a id="a7b17029c568853beef340bed4dc78f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b17029c568853beef340bed4dc78f0c">&#9670;&nbsp;</a></span>getJointNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::vector&lt;std::string&gt;&amp; tesseract_environment::StateSolver::getJointNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the vector of joint names which align with the limits. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector of joint names </dd></dl>
+
+<p>Implemented in <a class="el" href="../../db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a61b48638d88645771ff0c71f37e8c038">tesseract_environment::OFKTStateSolver</a>, and <a class="el" href="../../d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a81469775cd8a89a1bab027be8703a378">tesseract_environment::KDLStateSolver</a>.</p>
 
 </div>
 </div>
@@ -782,7 +815,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 16 2021 22:10:45 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Feb 17 2021 01:20:45 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

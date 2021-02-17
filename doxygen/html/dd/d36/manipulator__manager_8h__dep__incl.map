@@ -1,7 +1,8 @@
 <map id="tesseract_environment/include/tesseract_environment/core/manipulator_manager.h" name="tesseract_environment/include/tesseract_environment/core/manipulator_manager.h">
-<area shape="rect" id="node1" title="This managers everything about all manipulator, like forward kinematics, inverse kinematics,..." alt="" coords="563,5,765,61"/>
+<area shape="rect" id="node1" title="This managers everything about all manipulator, like forward kinematics, inverse kinematics,..." alt="" coords="664,5,867,61"/>
 <area shape="rect" id="node2" href="$de/d26/environment_8h.html" title=" " alt="" coords="461,109,664,165"/>
 <area shape="rect" id="node15" href="$df/d3c/manipulator__manager_8cpp.html" title=" " alt="" coords="688,109,843,165"/>
+<area shape="rect" id="node16" href="$df/ddd/tesseract__environment__manipulator__manager__unit_8cpp.html" title=" " alt="" coords="867,109,1072,165"/>
 <area shape="rect" id="node3" href="$d4/d2d/tesseract__environment_2include_2tesseract__environment_2core_2utils_8h.html" title="Tesseract Environment Utility Functions." alt="" coords="79,213,281,269"/>
 <area shape="rect" id="node6" href="$dc/d82/environment_8cpp.html" title="Tesseract environment interface implementation." alt="" coords="233,332,405,373"/>
 <area shape="rect" id="node7" href="$de/d87/environment__clone__benchmarks_8cpp.html" title=" " alt="" coords="355,213,554,269"/>
