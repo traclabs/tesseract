@@ -146,21 +146,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad46f03850f6b6268888249e43e6aa5ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#ad46f03850f6b6268888249e43e6aa5ee">update</a> () override</td></tr>
 <tr class="memdesc:ad46f03850f6b6268888249e43e6aa5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates kinematics if kinematic parameters have changed.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#ad46f03850f6b6268888249e43e6aa5ee">More...</a><br /></td></tr>
 <tr class="separator:ad46f03850f6b6268888249e43e6aa5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e420b880d2a6a9e81c7d52ea7c735c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a8e420b880d2a6a9e81c7d52ea7c735c1">calcFwdKin</a> (Eigen::Isometry3d &amp;pose, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles) const override</td></tr>
-<tr class="memdesc:a8e420b880d2a6a9e81c7d52ea7c735c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates tool pose of robot chain.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a8e420b880d2a6a9e81c7d52ea7c735c1">More...</a><br /></td></tr>
-<tr class="separator:a8e420b880d2a6a9e81c7d52ea7c735c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add04aaa4e079579a532cfa8217dc188f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#add04aaa4e079579a532cfa8217dc188f">calcFwdKin</a> (<a class="el" href="../../df/da9/namespacetesseract__common.html#a94d9921fc7ed323609ac57d06f939cb6">tesseract_common::VectorIsometry3d</a> &amp;poses, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles) const override</td></tr>
-<tr class="memdesc:add04aaa4e079579a532cfa8217dc188f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates pose for all links of robot chain.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#add04aaa4e079579a532cfa8217dc188f">More...</a><br /></td></tr>
-<tr class="separator:add04aaa4e079579a532cfa8217dc188f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ebdbce69aaa3fb767730252c24a95df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a6ebdbce69aaa3fb767730252c24a95df">calcFwdKin</a> (Eigen::Isometry3d &amp;pose, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles, const std::string &amp;link_name) const override</td></tr>
-<tr class="memdesc:a6ebdbce69aaa3fb767730252c24a95df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates pose for a given link.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a6ebdbce69aaa3fb767730252c24a95df">More...</a><br /></td></tr>
-<tr class="separator:a6ebdbce69aaa3fb767730252c24a95df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ed70460d7cab17374b478f20c15c594"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a8ed70460d7cab17374b478f20c15c594">calcJacobian</a> (Eigen::Ref&lt; Eigen::MatrixXd &gt; jacobian, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles) const override</td></tr>
-<tr class="memdesc:a8ed70460d7cab17374b478f20c15c594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculated jacobian of robot given joint angles.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a8ed70460d7cab17374b478f20c15c594">More...</a><br /></td></tr>
-<tr class="separator:a8ed70460d7cab17374b478f20c15c594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6948c05a0fa7761ce60108e2cb38849b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a6948c05a0fa7761ce60108e2cb38849b">calcJacobian</a> (Eigen::Ref&lt; Eigen::MatrixXd &gt; jacobian, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles, const std::string &amp;link_name) const override</td></tr>
-<tr class="memdesc:a6948c05a0fa7761ce60108e2cb38849b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculated jacobian at a link given joint angles.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a6948c05a0fa7761ce60108e2cb38849b">More...</a><br /></td></tr>
-<tr class="separator:a6948c05a0fa7761ce60108e2cb38849b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011ae353075c5535e8494913ef1c4fa2"><td class="memItemLeft" align="right" valign="top">Eigen::Isometry3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a011ae353075c5535e8494913ef1c4fa2">calcFwdKin</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles) const override</td></tr>
+<tr class="memdesc:a011ae353075c5535e8494913ef1c4fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates tool pose of robot chain.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a011ae353075c5535e8494913ef1c4fa2">More...</a><br /></td></tr>
+<tr class="separator:a011ae353075c5535e8494913ef1c4fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6e7e04f3dacce2a6b93237ac11401e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/da9/namespacetesseract__common.html#a94d9921fc7ed323609ac57d06f939cb6">tesseract_common::VectorIsometry3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#abe6e7e04f3dacce2a6b93237ac11401e">calcFwdKinAll</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles) const override</td></tr>
+<tr class="memdesc:abe6e7e04f3dacce2a6b93237ac11401e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates pose for all links of robot chain.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#abe6e7e04f3dacce2a6b93237ac11401e">More...</a><br /></td></tr>
+<tr class="separator:abe6e7e04f3dacce2a6b93237ac11401e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b1d3aac0e91e178bee04e8fd28f461"><td class="memItemLeft" align="right" valign="top">Eigen::Isometry3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a31b1d3aac0e91e178bee04e8fd28f461">calcFwdKin</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles, const std::string &amp;link_name) const override</td></tr>
+<tr class="memdesc:a31b1d3aac0e91e178bee04e8fd28f461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates pose for a given link.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a31b1d3aac0e91e178bee04e8fd28f461">More...</a><br /></td></tr>
+<tr class="separator:a31b1d3aac0e91e178bee04e8fd28f461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74202379cfb58a01d11ba238319ffc5"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#ac74202379cfb58a01d11ba238319ffc5">calcJacobian</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles) const override</td></tr>
+<tr class="memdesc:ac74202379cfb58a01d11ba238319ffc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculated jacobian of robot given joint angles.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#ac74202379cfb58a01d11ba238319ffc5">More...</a><br /></td></tr>
+<tr class="separator:ac74202379cfb58a01d11ba238319ffc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456b948fd64e08f8bef1645ef09f0ed6"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a456b948fd64e08f8bef1645ef09f0ed6">calcJacobian</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles, const std::string &amp;link_name) const override</td></tr>
+<tr class="memdesc:a456b948fd64e08f8bef1645ef09f0ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculated jacobian at a link given joint angles.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a456b948fd64e08f8bef1645ef09f0ed6">More...</a><br /></td></tr>
+<tr class="separator:a456b948fd64e08f8bef1645ef09f0ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0642c6121ab7bc9a0c1a8445dbfeb0b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a0642c6121ab7bc9a0c1a8445dbfeb0b6">checkJoints</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;vec) const override</td></tr>
 <tr class="memdesc:a0642c6121ab7bc9a0c1a8445dbfeb0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for consistency in # and limits of joints.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a0642c6121ab7bc9a0c1a8445dbfeb0b6">More...</a><br /></td></tr>
 <tr class="separator:a0642c6121ab7bc9a0c1a8445dbfeb0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,9 +227,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a4d2d2d222a6709b64cca0d25eb0452d5"><td class="memItemLeft" align="right" valign="top">KDL::JntArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a4d2d2d222a6709b64cca0d25eb0452d5">getKDLJntArray</a> (const std::vector&lt; std::string &gt; &amp;joint_names, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles) const</td></tr>
 <tr class="memdesc:a4d2d2d222a6709b64cca0d25eb0452d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an updated kdl joint array.  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a4d2d2d222a6709b64cca0d25eb0452d5">More...</a><br /></td></tr>
 <tr class="separator:a4d2d2d222a6709b64cca0d25eb0452d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f948a36d5700b3c2ff2e53f9a3a9ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a55f948a36d5700b3c2ff2e53f9a3a9ea">calcFwdKinHelper</a> (Eigen::Isometry3d &amp;pose, const KDL::JntArray &amp;kdl_joints, const std::string &amp;link_name) const</td></tr>
-<tr class="memdesc:a55f948a36d5700b3c2ff2e53f9a3a9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">calcFwdKin helper function  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a55f948a36d5700b3c2ff2e53f9a3a9ea">More...</a><br /></td></tr>
-<tr class="separator:a55f948a36d5700b3c2ff2e53f9a3a9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f32b8e2f30eec773c714183c7c16a5"><td class="memItemLeft" align="right" valign="top">Eigen::Isometry3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#ad4f32b8e2f30eec773c714183c7c16a5">calcFwdKinHelper</a> (const KDL::JntArray &amp;kdl_joints, const std::string &amp;link_name) const</td></tr>
+<tr class="memdesc:ad4f32b8e2f30eec773c714183c7c16a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">calcFwdKin helper function  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#ad4f32b8e2f30eec773c714183c7c16a5">More...</a><br /></td></tr>
+<tr class="separator:ad4f32b8e2f30eec773c714183c7c16a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a38ca9b9084e7306c3a6ce5558b7e87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a7a38ca9b9084e7306c3a6ce5558b7e87">calcJacobianHelper</a> (KDL::Jacobian &amp;jacobian, const KDL::JntArray &amp;kdl_joints, const std::string &amp;link_name) const</td></tr>
 <tr class="memdesc:a7a38ca9b9084e7306c3a6ce5558b7e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">calcJacobian helper function  <a href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a7a38ca9b9084e7306c3a6ce5558b7e87">More...</a><br /></td></tr>
 <tr class="separator:a7a38ca9b9084e7306c3a6ce5558b7e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -403,8 +403,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8e420b880d2a6a9e81c7d52ea7c735c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e420b880d2a6a9e81c7d52ea7c735c1">&#9670;&nbsp;</a></span>calcFwdKin() <span class="overload">[1/3]</span></h2>
+<a id="a011ae353075c5535e8494913ef1c4fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011ae353075c5535e8494913ef1c4fa2">&#9670;&nbsp;</a></span>calcFwdKin() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,21 +413,11 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tesseract_kinematics::KDLFwdKinTree::calcFwdKin </td>
+          <td class="memname">Eigen::Isometry3d tesseract_kinematics::KDLFwdKinTree::calcFwdKin </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Isometry3d &amp;&#160;</td>
-          <td class="paramname"><em>pose</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;&#160;</td>
-          <td class="paramname"><em>joint_angles</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>joint_angles</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -438,21 +428,20 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates tool pose of robot chain. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Throws an exception on failures (including uninitialized) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pose</td><td>Transform of end-of-tip relative to root </td></tr>
     <tr><td class="paramname">joint_angles</td><td>Vector of joint angles (size must match number of joints in robot chain) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if calculation successful, False if anything is wrong (including uninitialized BasicKin) </dd></dl>
 
-<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a9f85d051b41d7c082faf881e3c095b27">tesseract_kinematics::ForwardKinematics</a>.</p>
+<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a3f0aa2d22c2e5641a75e6e39a8306bb9">tesseract_kinematics::ForwardKinematics</a>.</p>
 
 </div>
 </div>
-<a id="a6ebdbce69aaa3fb767730252c24a95df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ebdbce69aaa3fb767730252c24a95df">&#9670;&nbsp;</a></span>calcFwdKin() <span class="overload">[2/3]</span></h2>
+<a id="a31b1d3aac0e91e178bee04e8fd28f461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b1d3aac0e91e178bee04e8fd28f461">&#9670;&nbsp;</a></span>calcFwdKin() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -461,14 +450,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tesseract_kinematics::KDLFwdKinTree::calcFwdKin </td>
+          <td class="memname">Eigen::Isometry3d tesseract_kinematics::KDLFwdKinTree::calcFwdKin </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Isometry3d &amp;&#160;</td>
-          <td class="paramname"><em>pose</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;&#160;</td>
           <td class="paramname"><em>joint_angles</em>, </td>
         </tr>
@@ -492,7 +475,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates pose for a given link. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Throws an exception on failures (including uninitialized) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pose</td><td>Transform of link relative to root </td></tr>
     <tr><td class="paramname">joint_angles</td><td>Vector of joint angles (size must match number of joints in robot chain) </td></tr>
@@ -500,14 +483,13 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if calculation successful, False if anything is wrong (including uninitialized BasicKin) </dd></dl>
 
-<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#aeaeaa1a52df69e1afc65c2895fd48cca">tesseract_kinematics::ForwardKinematics</a>.</p>
+<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a462a17517473ab9cae3b270a8232f4a5">tesseract_kinematics::ForwardKinematics</a>.</p>
 
 </div>
 </div>
-<a id="add04aaa4e079579a532cfa8217dc188f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add04aaa4e079579a532cfa8217dc188f">&#9670;&nbsp;</a></span>calcFwdKin() <span class="overload">[3/3]</span></h2>
+<a id="abe6e7e04f3dacce2a6b93237ac11401e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6e7e04f3dacce2a6b93237ac11401e">&#9670;&nbsp;</a></span>calcFwdKinAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,21 +498,11 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tesseract_kinematics::KDLFwdKinTree::calcFwdKin </td>
+          <td class="memname"><a class="el" href="../../df/da9/namespacetesseract__common.html#a94d9921fc7ed323609ac57d06f939cb6">tesseract_common::VectorIsometry3d</a> tesseract_kinematics::KDLFwdKinTree::calcFwdKinAll </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/da9/namespacetesseract__common.html#a94d9921fc7ed323609ac57d06f939cb6">tesseract_common::VectorIsometry3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>poses</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;&#160;</td>
-          <td class="paramname"><em>joint_angles</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>joint_angles</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -541,21 +513,20 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates pose for all links of robot chain. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Throws an exception on failures (including uninitialized) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">poses</td><td>Transform of each link relative to root. Same order as <a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a271f889515b54549fc2c2710551ca48e" title="Get list of all link names (with and without geometry) for kinematic object.">getLinkNames()</a> </td></tr>
     <tr><td class="paramname">joint_angles</td><td>Vector of joint angles (size must match number of joints in robot chain) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if calculation successful, False if anything is wrong (including uninitialized BasicKin) </dd></dl>
 
-<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#ac67d1afaf30c94e22236fd57bd24a1b7">tesseract_kinematics::ForwardKinematics</a>.</p>
+<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#adf7cb4b052f64e16656e516c1107b02c">tesseract_kinematics::ForwardKinematics</a>.</p>
 
 </div>
 </div>
-<a id="a55f948a36d5700b3c2ff2e53f9a3a9ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55f948a36d5700b3c2ff2e53f9a3a9ea">&#9670;&nbsp;</a></span>calcFwdKinHelper()</h2>
+<a id="ad4f32b8e2f30eec773c714183c7c16a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f32b8e2f30eec773c714183c7c16a5">&#9670;&nbsp;</a></span>calcFwdKinHelper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,14 +535,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tesseract_kinematics::KDLFwdKinTree::calcFwdKinHelper </td>
+          <td class="memname">Eigen::Isometry3d tesseract_kinematics::KDLFwdKinTree::calcFwdKinHelper </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Isometry3d &amp;&#160;</td>
-          <td class="paramname"><em>pose</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const KDL::JntArray &amp;&#160;</td>
           <td class="paramname"><em>kdl_joints</em>, </td>
         </tr>
@@ -598,8 +563,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ed70460d7cab17374b478f20c15c594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ed70460d7cab17374b478f20c15c594">&#9670;&nbsp;</a></span>calcJacobian() <span class="overload">[1/2]</span></h2>
+<a id="ac74202379cfb58a01d11ba238319ffc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74202379cfb58a01d11ba238319ffc5">&#9670;&nbsp;</a></span>calcJacobian() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -608,21 +573,11 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tesseract_kinematics::KDLFwdKinTree::calcJacobian </td>
+          <td class="memname">Eigen::MatrixXd tesseract_kinematics::KDLFwdKinTree::calcJacobian </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Ref&lt; Eigen::MatrixXd &gt;&#160;</td>
-          <td class="paramname"><em>jacobian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;&#160;</td>
-          <td class="paramname"><em>joint_angles</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>joint_angles</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -633,21 +588,20 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculated jacobian of robot given joint angles. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Throws an exception on failures (including uninitialized) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">jacobian</td><td>Output jacobian </td></tr>
     <tr><td class="paramname">joint_angles</td><td>Input vector of joint angles </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if calculation successful, False if anything is wrong (including uninitialized BasicKin) </dd></dl>
 
-<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a27dfd3fa2f9752722bd98a1e2eb6ce66">tesseract_kinematics::ForwardKinematics</a>.</p>
+<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a75d73bf5be01c96658f6c9c815f747a4">tesseract_kinematics::ForwardKinematics</a>.</p>
 
 </div>
 </div>
-<a id="a6948c05a0fa7761ce60108e2cb38849b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6948c05a0fa7761ce60108e2cb38849b">&#9670;&nbsp;</a></span>calcJacobian() <span class="overload">[2/2]</span></h2>
+<a id="a456b948fd64e08f8bef1645ef09f0ed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456b948fd64e08f8bef1645ef09f0ed6">&#9670;&nbsp;</a></span>calcJacobian() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -656,14 +610,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool tesseract_kinematics::KDLFwdKinTree::calcJacobian </td>
+          <td class="memname">Eigen::MatrixXd tesseract_kinematics::KDLFwdKinTree::calcJacobian </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Ref&lt; Eigen::MatrixXd &gt;&#160;</td>
-          <td class="paramname"><em>jacobian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;&#160;</td>
           <td class="paramname"><em>joint_angles</em>, </td>
         </tr>
@@ -687,7 +635,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculated jacobian at a link given joint angles. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Throws an exception on failures (including uninitialized) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">jacobian</td><td>Output jacobian for a given link </td></tr>
     <tr><td class="paramname">joint_angles</td><td>Input vector of joint angles </td></tr>
@@ -697,7 +645,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if calculation successful, False if anything is wrong (including uninitialized BasicKin) </dd></dl>
 
-<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a4183364aa2adcdcd7612e27ab3c26d48">tesseract_kinematics::ForwardKinematics</a>.</p>
+<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a4b70df584a97c3504ea7326eecc2804f">tesseract_kinematics::ForwardKinematics</a>.</p>
 
 </div>
 </div>
@@ -1733,7 +1681,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 18 2021 02:43:41 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Feb 20 2021 02:40:30 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

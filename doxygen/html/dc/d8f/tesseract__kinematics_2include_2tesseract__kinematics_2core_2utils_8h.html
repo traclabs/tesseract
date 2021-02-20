@@ -71,6 +71,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">utils.h File Reference</div>  </div>
@@ -80,6 +81,7 @@ $(function() {
 <p>Kinematics utility functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="../../de/d3c/macros_8h_source.html">tesseract_common/macros.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;Eigen/Core&gt;</code><br />
 <code>#include &lt;Eigen/Geometry&gt;</code><br />
 <code>#include &lt;console_bridge/console.h&gt;</code><br />
@@ -91,45 +93,45 @@ Include dependency graph for utils.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d59/tesseract__kinematics_2include_2tesseract__kinematics_2core_2utils_8h__incl.png" border="0" usemap="#atesseract__kinematics_2include_2tesseract__kinematics_2core_2utils_8h" alt=""/></div>
 <map name="atesseract__kinematics_2include_2tesseract__kinematics_2core_2utils_8h" id="atesseract__kinematics_2include_2tesseract__kinematics_2core_2utils_8h">
-<area shape="rect" title="Kinematics utility functions." alt="" coords="1190,5,1384,61"/>
-<area shape="rect" href="../../de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="2178,467,2369,493"/>
-<area shape="rect" title=" " alt="" coords="366,467,451,493"/>
-<area shape="rect" title=" " alt="" coords="475,467,590,493"/>
-<area shape="rect" title=" " alt="" coords="46,385,214,411"/>
-<area shape="rect" href="../../d0/d42/srdf__model_8h.html" title="Parse srdf xml." alt="" coords="1208,109,1366,151"/>
-<area shape="rect" href="../../d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="2411,199,2568,240"/>
-<area shape="rect" href="../../d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="1627,109,1806,151"/>
-<area shape="rect" title=" " alt="" coords="1236,467,1346,493"/>
-<area shape="rect" title=" " alt="" coords="3094,467,3149,493"/>
-<area shape="rect" title=" " alt="" coords="1788,467,1847,493"/>
-<area shape="rect" title=" " alt="" coords="473,206,525,233"/>
-<area shape="rect" title=" " alt="" coords="3261,467,3329,493"/>
-<area shape="rect" title=" " alt="" coords="340,385,418,411"/>
-<area shape="rect" title=" " alt="" coords="280,206,347,233"/>
-<area shape="rect" title=" " alt="" coords="419,295,470,322"/>
-<area shape="rect" href="../../d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="1956,288,2132,329"/>
-<area shape="rect" href="../../d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="1202,199,1372,240"/>
-<area shape="rect" title=" " alt="" coords="2534,288,2686,329"/>
-<area shape="rect" title=" " alt="" coords="2710,288,2850,329"/>
-<area shape="rect" title=" " alt="" coords="2874,295,3049,322"/>
-<area shape="rect" title=" " alt="" coords="3074,288,3228,329"/>
-<area shape="rect" title=" " alt="" coords="2309,288,2446,329"/>
-<area shape="rect" title=" " alt="" coords="2470,295,2509,322"/>
-<area shape="rect" href="../../d2/d5c/tesseract__scene__graph_2include_2tesseract__scene__graph_2link_8h.html" title=" " alt="" coords="3252,288,3410,329"/>
-<area shape="rect" href="../../d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="3100,377,3258,419"/>
-<area shape="rect" title=" " alt="" coords="1701,467,1748,493"/>
-<area shape="rect" title=" " alt="" coords="3503,467,3594,493"/>
-<area shape="rect" href="../../d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="2514,377,2650,419"/>
-<area shape="rect" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="1500,385,1679,411"/>
-<area shape="rect" title=" " alt="" coords="1520,467,1660,493"/>
-<area shape="rect" href="../../dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="911,295,1082,322"/>
-<area shape="rect" title=" " alt="" coords="1058,385,1127,411"/>
-<area shape="rect" title=" " alt="" coords="596,385,674,411"/>
-<area shape="rect" title=" " alt="" coords="698,385,764,411"/>
-<area shape="rect" title=" " alt="" coords="788,385,855,411"/>
-<area shape="rect" title=" " alt="" coords="880,385,934,411"/>
-<area shape="rect" title=" " alt="" coords="1404,385,1476,411"/>
-<area shape="rect" title=" " alt="" coords="959,385,1034,411"/>
+<area shape="rect" title="Kinematics utility functions." alt="" coords="1983,5,2177,61"/>
+<area shape="rect" href="../../de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="918,467,1109,493"/>
+<area shape="rect" title=" " alt="" coords="1773,467,1832,493"/>
+<area shape="rect" title=" " alt="" coords="3063,467,3148,493"/>
+<area shape="rect" title=" " alt="" coords="3172,467,3287,493"/>
+<area shape="rect" title=" " alt="" coords="3385,385,3553,411"/>
+<area shape="rect" href="../../d0/d42/srdf__model_8h.html" title="Parse srdf xml." alt="" coords="2099,109,2256,151"/>
+<area shape="rect" href="../../d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="1015,199,1172,240"/>
+<area shape="rect" href="../../d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="1816,109,1995,151"/>
+<area shape="rect" title=" " alt="" coords="2169,467,2279,493"/>
+<area shape="rect" title=" " alt="" coords="349,467,403,493"/>
+<area shape="rect" title=" " alt="" coords="2569,206,2621,233"/>
+<area shape="rect" title=" " alt="" coords="1393,467,1461,493"/>
+<area shape="rect" title=" " alt="" coords="3231,385,3310,411"/>
+<area shape="rect" title=" " alt="" coords="2645,206,2712,233"/>
+<area shape="rect" title=" " alt="" coords="3055,295,3105,322"/>
+<area shape="rect" href="../../d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="1515,288,1691,329"/>
+<area shape="rect" href="../../d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="2171,199,2341,240"/>
+<area shape="rect" title=" " alt="" coords="540,288,692,329"/>
+<area shape="rect" title=" " alt="" coords="717,288,857,329"/>
+<area shape="rect" title=" " alt="" coords="881,295,1055,322"/>
+<area shape="rect" title=" " alt="" coords="136,288,291,329"/>
+<area shape="rect" title=" " alt="" coords="315,288,453,329"/>
+<area shape="rect" title=" " alt="" coords="477,295,515,322"/>
+<area shape="rect" href="../../d2/d5c/tesseract__scene__graph_2include_2tesseract__scene__graph_2link_8h.html" title=" " alt="" coords="1232,288,1389,329"/>
+<area shape="rect" href="../../d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="667,377,824,419"/>
+<area shape="rect" title=" " alt="" coords="1878,467,1925,493"/>
+<area shape="rect" title=" " alt="" coords="700,467,791,493"/>
+<area shape="rect" href="../../d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="1253,377,1389,419"/>
+<area shape="rect" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="1971,385,2149,411"/>
+<area shape="rect" title=" " alt="" coords="1990,467,2130,493"/>
+<area shape="rect" href="../../dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="2555,295,2725,322"/>
+<area shape="rect" title=" " alt="" coords="2701,385,2771,411"/>
+<area shape="rect" title=" " alt="" coords="2795,385,2874,411"/>
+<area shape="rect" title=" " alt="" coords="2898,385,2963,411"/>
+<area shape="rect" title=" " alt="" coords="2988,385,3055,411"/>
+<area shape="rect" title=" " alt="" coords="2523,385,2578,411"/>
+<area shape="rect" title=" " alt="" coords="2325,385,2397,411"/>
+<area shape="rect" title=" " alt="" coords="2603,385,2677,411"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -156,6 +158,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:d8/d4e/namespacetesseract__kinematics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html">tesseract_kinematics</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a59d7ac70f855c7d00848b703e6bcfe9a"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:a59d7ac70f855c7d00848b703e6bcfe9a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">tesseract_kinematics::VectorX</a> = Eigen::Matrix&lt; FloatType, Eigen::Dynamic, 1 &gt;</td></tr>
+<tr class="separator:a59d7ac70f855c7d00848b703e6bcfe9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa818d0b8ef2f027488fd09c1aa7df4e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#aa818d0b8ef2f027488fd09c1aa7df4e0">tesseract_kinematics::jacobianChangeBase</a> (Eigen::Ref&lt; Eigen::MatrixXd &gt; jacobian, const Eigen::Isometry3d &amp;change_base)</td></tr>
@@ -177,22 +185,22 @@ Functions</h2></td></tr>
 <tr class="memitem:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memTemplItemLeft" align="right" valign="top">ForwardKinematicsConstPtrMap&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">tesseract_kinematics::createKinematicsMap</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> &amp;scene_graph, const <a class="el" href="../../de/d55/structtesseract__scene__graph_1_1KinematicsInformation.html">tesseract_scene_graph::KinematicsInformation</a> &amp;kinematics_information)</td></tr>
 <tr class="memdesc:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kinematics map from the srdf model.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">More...</a><br /></td></tr>
 <tr class="separator:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6673bf40b1b83909662120655499af68"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:a6673bf40b1b83909662120655499af68"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a6673bf40b1b83909662120655499af68">tesseract_kinematics::isWithinLimits</a> (const Eigen::Ref&lt; const Eigen::Matrix&lt; FloatType, Eigen::Dynamic, 1 &gt; &gt; &amp;joint_values, const Eigen::MatrixX2d &amp;limits)</td></tr>
-<tr class="memdesc:a6673bf40b1b83909662120655499af68"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will check if the provided joint values are within the privided limits.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a6673bf40b1b83909662120655499af68">More...</a><br /></td></tr>
-<tr class="separator:a6673bf40b1b83909662120655499af68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f25773355cc9daf6a5344643259d055"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:a5f25773355cc9daf6a5344643259d055"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; FloatType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a5f25773355cc9daf6a5344643259d055">tesseract_kinematics::getRedundantSolutions</a> (const FloatType *sol, const Eigen::MatrixX2d &amp;limits)</td></tr>
-<tr class="memdesc:a5f25773355cc9daf6a5344643259d055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinematics only return solution between PI and -PI. Provided the limits it will append redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a5f25773355cc9daf6a5344643259d055">More...</a><br /></td></tr>
-<tr class="separator:a5f25773355cc9daf6a5344643259d055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eea93b3922144518e6e719663fa55fd"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:a4eea93b3922144518e6e719663fa55fd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a4eea93b3922144518e6e719663fa55fd">tesseract_kinematics::isValid</a> (const FloatType *qs, int dof)</td></tr>
-<tr class="memdesc:a4eea93b3922144518e6e719663fa55fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a vector of floats, this check if they are finite.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a4eea93b3922144518e6e719663fa55fd">More...</a><br /></td></tr>
-<tr class="separator:a4eea93b3922144518e6e719663fa55fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ef95096700a2fdcbb05df6c06c92eb"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:ad5ef95096700a2fdcbb05df6c06c92eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#ad5ef95096700a2fdcbb05df6c06c92eb">tesseract_kinematics::harmonizeTowardZero</a> (FloatType *qs, int dof)</td></tr>
-<tr class="memdesc:ad5ef95096700a2fdcbb05df6c06c92eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This take an array of floats and modifies them in place to be between [-PI, PI].  <a href="../../d8/d4e/namespacetesseract__kinematics.html#ad5ef95096700a2fdcbb05df6c06c92eb">More...</a><br /></td></tr>
-<tr class="separator:ad5ef95096700a2fdcbb05df6c06c92eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7bf99d154356876827ff501c21d3432"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:af7bf99d154356876827ff501c21d3432"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#af7bf99d154356876827ff501c21d3432">tesseract_kinematics::isWithinLimits</a> (const Eigen::Ref&lt; const VectorX&lt; FloatType &gt;&gt; &amp;joint_values, const Eigen::MatrixX2d &amp;limits)</td></tr>
+<tr class="memdesc:af7bf99d154356876827ff501c21d3432"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will check if the provided joint values are within the privided limits.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#af7bf99d154356876827ff501c21d3432">More...</a><br /></td></tr>
+<tr class="separator:af7bf99d154356876827ff501c21d3432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829684b4f8565088734434970937efba"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:a829684b4f8565088734434970937efba"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; VectorX&lt; FloatType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a829684b4f8565088734434970937efba">tesseract_kinematics::getRedundantSolutions</a> (const Eigen::Ref&lt; const VectorX&lt; FloatType &gt;&gt; &amp;sol, const Eigen::MatrixX2d &amp;limits)</td></tr>
+<tr class="memdesc:a829684b4f8565088734434970937efba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinematics only return solution between PI and -PI. Provided the limits it will append redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a829684b4f8565088734434970937efba">More...</a><br /></td></tr>
+<tr class="separator:a829684b4f8565088734434970937efba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f74af65eeb166856e00a64254da7ee8"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:a2f74af65eeb166856e00a64254da7ee8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a2f74af65eeb166856e00a64254da7ee8">tesseract_kinematics::isValid</a> (const std::array&lt; FloatType, 6 &gt; &amp;qs)</td></tr>
+<tr class="memdesc:a2f74af65eeb166856e00a64254da7ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a vector of floats, this check if they are finite.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a2f74af65eeb166856e00a64254da7ee8">More...</a><br /></td></tr>
+<tr class="separator:a2f74af65eeb166856e00a64254da7ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50bcc818a12ddc691a8fced83b22585"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:ab50bcc818a12ddc691a8fced83b22585"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#ab50bcc818a12ddc691a8fced83b22585">tesseract_kinematics::harmonizeTowardZero</a> (Eigen::Ref&lt; VectorX&lt; FloatType &gt;&gt; qs)</td></tr>
+<tr class="memdesc:ab50bcc818a12ddc691a8fced83b22585"><td class="mdescLeft">&#160;</td><td class="mdescRight">This take an array of floats and modifies them in place to be between [-PI, PI].  <a href="../../d8/d4e/namespacetesseract__kinematics.html#ab50bcc818a12ddc691a8fced83b22585">More...</a><br /></td></tr>
+<tr class="separator:ab50bcc818a12ddc691a8fced83b22585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Kinematics utility functions. </p>
@@ -207,7 +215,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 18 2021 02:43:39 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Feb 20 2021 02:40:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

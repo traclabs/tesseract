@@ -121,12 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68995e0b0785e40bc69b7f69066120f2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a68995e0b0785e40bc69b7f69066120f2">update</a> ()=0</td></tr>
 <tr class="memdesc:a68995e0b0785e40bc69b7f69066120f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates kinematics if kinematic parameters have changed.  <a href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a68995e0b0785e40bc69b7f69066120f2">More...</a><br /></td></tr>
 <tr class="separator:a68995e0b0785e40bc69b7f69066120f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad944080e198501a2db0aeb91fcc65c08"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#ad944080e198501a2db0aeb91fcc65c08">calcInvKin</a> (Eigen::VectorXd &amp;solutions, const Eigen::Isometry3d &amp;pose, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;seed) const =0</td></tr>
-<tr class="memdesc:ad944080e198501a2db0aeb91fcc65c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates joint solutions given a pose.  <a href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#ad944080e198501a2db0aeb91fcc65c08">More...</a><br /></td></tr>
-<tr class="separator:ad944080e198501a2db0aeb91fcc65c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a622eb9c27e988a618b01890546e77aa2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a622eb9c27e988a618b01890546e77aa2">calcInvKin</a> (Eigen::VectorXd &amp;solutions, const Eigen::Isometry3d &amp;pose, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;seed, const std::string &amp;link_name) const =0</td></tr>
-<tr class="memdesc:a622eb9c27e988a618b01890546e77aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates joint solutions given a pose for a specific link.  <a href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a622eb9c27e988a618b01890546e77aa2">More...</a><br /></td></tr>
-<tr class="separator:a622eb9c27e988a618b01890546e77aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672e765e10a32693d2fada354e740bc8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#af12a01d2264e3371dc9bc7db2a7b59ac">IKSolutions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a672e765e10a32693d2fada354e740bc8">calcInvKin</a> (const Eigen::Isometry3d &amp;pose, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;seed) const =0</td></tr>
+<tr class="memdesc:a672e765e10a32693d2fada354e740bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates joint solutions given a pose.  <a href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a672e765e10a32693d2fada354e740bc8">More...</a><br /></td></tr>
+<tr class="separator:a672e765e10a32693d2fada354e740bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976acbb90864ca97d6a998d42465e3a1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#af12a01d2264e3371dc9bc7db2a7b59ac">IKSolutions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a976acbb90864ca97d6a998d42465e3a1">calcInvKin</a> (const Eigen::Isometry3d &amp;pose, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;seed, const std::string &amp;link_name) const =0</td></tr>
+<tr class="memdesc:a976acbb90864ca97d6a998d42465e3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates joint solutions given a pose for a specific link.  <a href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a976acbb90864ca97d6a998d42465e3a1">More...</a><br /></td></tr>
+<tr class="separator:a976acbb90864ca97d6a998d42465e3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a506b3d2d31903e51f370106c923d3ede"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a506b3d2d31903e51f370106c923d3ede">checkJoints</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;vec) const =0</td></tr>
 <tr class="memdesc:a506b3d2d31903e51f370106c923d3ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for consistency in # and limits of joints.  <a href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a506b3d2d31903e51f370106c923d3ede">More...</a><br /></td></tr>
 <tr class="separator:a506b3d2d31903e51f370106c923d3ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,8 +299,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad944080e198501a2db0aeb91fcc65c08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad944080e198501a2db0aeb91fcc65c08">&#9670;&nbsp;</a></span>calcInvKin() <span class="overload">[1/2]</span></h2>
+<a id="a672e765e10a32693d2fada354e740bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672e765e10a32693d2fada354e740bc8">&#9670;&nbsp;</a></span>calcInvKin() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,14 +309,8 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool tesseract_kinematics::InverseKinematics::calcInvKin </td>
+          <td class="memname">virtual <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#af12a01d2264e3371dc9bc7db2a7b59ac">IKSolutions</a> tesseract_kinematics::InverseKinematics::calcInvKin </td>
           <td>(</td>
-          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
-          <td class="paramname"><em>solutions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const Eigen::Isometry3d &amp;&#160;</td>
           <td class="paramname"><em>pose</em>, </td>
         </tr>
@@ -348,14 +342,14 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if calculation successful, False if anything is wrong (including uninitialized) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of solutions, If empty it failed to find a solution (including uninitialized) </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a81b9acc1a2149c831887d59e7894d3fb">tesseract_kinematics::OPWInvKin</a>, <a class="el" href="../../d4/da0/classtesseract__kinematics_1_1KDLInvKinChainNR.html#ad1e4671df51c049219bd0522ffa5709e">tesseract_kinematics::KDLInvKinChainNR</a>, <a class="el" href="../../d7/dc4/classtesseract__kinematics_1_1KDLInvKinChainLMA.html#a004ac8294cda655f681152ff22945dbc">tesseract_kinematics::KDLInvKinChainLMA</a>, <a class="el" href="../../d5/df5/classtesseract__kinematics_1_1IKFastInvKin.html#ac183202d391b2f75f98359e085c472d9">tesseract_kinematics::IKFastInvKin</a>, <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a5b2615a5f683d7385216f967f7854950">tesseract_kinematics::RobotOnPositionerInvKin</a>, and <a class="el" href="../../d3/def/classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin.html#a82edb3f7a5d236a0a1bf9077b18fdc06">tesseract_kinematics::RobotWithExternalPositionerInvKin</a>.</p>
+<p>Implemented in <a class="el" href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#ac27166ae9b5a844fa540378d58a2b52b">tesseract_kinematics::OPWInvKin</a>, <a class="el" href="../../d4/da0/classtesseract__kinematics_1_1KDLInvKinChainNR.html#af49b7208ef6c5d1ab5381f7db1dcc11d">tesseract_kinematics::KDLInvKinChainNR</a>, <a class="el" href="../../d7/dc4/classtesseract__kinematics_1_1KDLInvKinChainLMA.html#a914a2866b6e0dfafd45a6afb677390e9">tesseract_kinematics::KDLInvKinChainLMA</a>, <a class="el" href="../../d5/df5/classtesseract__kinematics_1_1IKFastInvKin.html#a2b02be8b81124557ceed952133f92f4f">tesseract_kinematics::IKFastInvKin</a>, <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a4619c741801862a937023878dcd5a5c4">tesseract_kinematics::RobotOnPositionerInvKin</a>, and <a class="el" href="../../d3/def/classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin.html#ab337792c4d003a9744da53d5a7bd1dd7">tesseract_kinematics::RobotWithExternalPositionerInvKin</a>.</p>
 
 </div>
 </div>
-<a id="a622eb9c27e988a618b01890546e77aa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a622eb9c27e988a618b01890546e77aa2">&#9670;&nbsp;</a></span>calcInvKin() <span class="overload">[2/2]</span></h2>
+<a id="a976acbb90864ca97d6a998d42465e3a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976acbb90864ca97d6a998d42465e3a1">&#9670;&nbsp;</a></span>calcInvKin() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,14 +358,8 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool tesseract_kinematics::InverseKinematics::calcInvKin </td>
+          <td class="memname">virtual <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#af12a01d2264e3371dc9bc7db2a7b59ac">IKSolutions</a> tesseract_kinematics::InverseKinematics::calcInvKin </td>
           <td>(</td>
-          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
-          <td class="paramname"><em>solutions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const Eigen::Isometry3d &amp;&#160;</td>
           <td class="paramname"><em>pose</em>, </td>
         </tr>
@@ -403,15 +391,14 @@ Public Member Functions</h2></td></tr>
 <p>Calculates joint solutions given a pose for a specific link. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">solutions</td><td>A vector of solutions, so check the size of the vector to determine the number of solutions </td></tr>
     <tr><td class="paramname">pose</td><td>Transform of end-of-tip relative to root (base link) </td></tr>
     <tr><td class="paramname">seed</td><td>Vector of seed joint angles (size must match number of joints in robot chain) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if calculation successful, False if anything is wrong (including uninitialized) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of solutions, If empty it failed to find a solution (including uninitialized) </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a9ac1592552f43ea807a0782ddde4c1ad">tesseract_kinematics::OPWInvKin</a>, <a class="el" href="../../d4/da0/classtesseract__kinematics_1_1KDLInvKinChainNR.html#a6b951c2e79de9eaf92e1b0785302908d">tesseract_kinematics::KDLInvKinChainNR</a>, <a class="el" href="../../d7/dc4/classtesseract__kinematics_1_1KDLInvKinChainLMA.html#ada1769438011d2109370b39a6cbfa7f2">tesseract_kinematics::KDLInvKinChainLMA</a>, <a class="el" href="../../d5/df5/classtesseract__kinematics_1_1IKFastInvKin.html#a0924b31c8e8aedf57d654959919ea73e">tesseract_kinematics::IKFastInvKin</a>, <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a60c4ca9b6ac7dfb399de7d7793b42a3a">tesseract_kinematics::RobotOnPositionerInvKin</a>, and <a class="el" href="../../d3/def/classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin.html#afd08eaa18cc337c5422d692205817ccc">tesseract_kinematics::RobotWithExternalPositionerInvKin</a>.</p>
+<p>Implemented in <a class="el" href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#ab78aa29eefd4e257e9920207e6ba0a7a">tesseract_kinematics::OPWInvKin</a>, <a class="el" href="../../d4/da0/classtesseract__kinematics_1_1KDLInvKinChainNR.html#a35583d8d364b9f3d5647d79ea10205ed">tesseract_kinematics::KDLInvKinChainNR</a>, <a class="el" href="../../d7/dc4/classtesseract__kinematics_1_1KDLInvKinChainLMA.html#a0f783c1432eafb4dde9f9e16240d8ff2">tesseract_kinematics::KDLInvKinChainLMA</a>, <a class="el" href="../../d5/df5/classtesseract__kinematics_1_1IKFastInvKin.html#a01826e8e4107a8b091f3dbe481ee3a1e">tesseract_kinematics::IKFastInvKin</a>, <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a57f5c19b87150f7f729d2092e7995c12">tesseract_kinematics::RobotOnPositionerInvKin</a>, and <a class="el" href="../../d3/def/classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin.html#a91272867f75776feac4a54d4c3e02f1d">tesseract_kinematics::RobotWithExternalPositionerInvKin</a>.</p>
 
 </div>
 </div>
@@ -872,7 +859,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 18 2021 02:43:41 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Feb 20 2021 02:40:30 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

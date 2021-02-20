@@ -48,6 +48,10 @@ class \mbox{\hyperlink{classtesseract__kinematics_1_1OPWInvKin}{OPWInv\+Kin}}
 using \mbox{\hyperlink{namespacetesseract__kinematics_a200cb09693ba9ff864ed53738cb3a551}{Forward\+Kinematics\+Ptr\+Map}} = std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_abdb52d493e8f0c584be778ddb193ed46}{Forward\+Kinematics\+::\+Ptr}} $>$
 \item 
 using \mbox{\hyperlink{namespacetesseract__kinematics_a881ff48bb24f8ac4e92de3f1e5c0bfb5}{Forward\+Kinematics\+Const\+Ptr\+Map}} = std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_a2c99fff4d4596e15bfdc4f72ec3b7406}{Forward\+Kinematics\+::\+Const\+Ptr}} $>$
+\item 
+using \mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} = std\+::vector$<$ Eigen\+::\+Vector\+Xd $>$
+\item 
+{\footnotesize template$<$typename Float\+Type $>$ }\\using \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}} = Eigen\+::\+Matrix$<$ Float\+Type, Eigen\+::\+Dynamic, 1 $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
@@ -77,13 +81,13 @@ static bool \mbox{\hyperlink{namespacetesseract__kinematics_a1645b1b27fd8279b5f0
 \begin{DoxyCompactList}\small\item\em Calculate Damped Pseudoinverse Use this SVD to compute A+ (pseudoinverse of A). Weighting still TBD. \end{DoxyCompactList}\item 
 {\footnotesize template$<$class Chain\+\_\+T , class Tree\+\_\+T $>$ }\\\mbox{\hyperlink{namespacetesseract__kinematics_a881ff48bb24f8ac4e92de3f1e5c0bfb5}{Forward\+Kinematics\+Const\+Ptr\+Map}} \mbox{\hyperlink{namespacetesseract__kinematics_a8c5e79830b1da0e1e83fb6f765e77cd4}{create\+Kinematics\+Map}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&scene\+\_\+graph, const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \&kinematics\+\_\+information)
 \begin{DoxyCompactList}\small\item\em Create a kinematics map from the srdf model. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__kinematics_a6673bf40b1b83909662120655499af68}{is\+Within\+Limits}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix$<$ Float\+Type, Eigen\+::\+Dynamic, 1 $>$ $>$ \&joint\+\_\+values, const Eigen\+::\+Matrix\+X2d \&limits)
+{\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__kinematics_af7bf99d154356876827ff501c21d3432}{is\+Within\+Limits}} (const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&joint\+\_\+values, const Eigen\+::\+Matrix\+X2d \&limits)
 \begin{DoxyCompactList}\small\item\em This will check if the provided joint values are within the privided limits. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename Float\+Type $>$ }\\std\+::vector$<$ Float\+Type $>$ \mbox{\hyperlink{namespacetesseract__kinematics_a5f25773355cc9daf6a5344643259d055}{get\+Redundant\+Solutions}} (const Float\+Type $\ast$sol, const Eigen\+::\+Matrix\+X2d \&limits)
+{\footnotesize template$<$typename Float\+Type $>$ }\\std\+::vector$<$ \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$ $>$ \mbox{\hyperlink{namespacetesseract__kinematics_a829684b4f8565088734434970937efba}{get\+Redundant\+Solutions}} (const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&sol, const Eigen\+::\+Matrix\+X2d \&limits)
 \begin{DoxyCompactList}\small\item\em Kinematics only return solution between PI and -\/PI. Provided the limits it will append redundant solutions. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__kinematics_a4eea93b3922144518e6e719663fa55fd}{is\+Valid}} (const Float\+Type $\ast$qs, int dof)
+{\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__kinematics_a2f74af65eeb166856e00a64254da7ee8}{is\+Valid}} (const std\+::array$<$ Float\+Type, 6 $>$ \&qs)
 \begin{DoxyCompactList}\small\item\em Given a vector of floats, this check if they are finite. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename Float\+Type $>$ }\\void \mbox{\hyperlink{namespacetesseract__kinematics_ad5ef95096700a2fdcbb05df6c06c92eb}{harmonize\+Toward\+Zero}} (Float\+Type $\ast$qs, int dof)
+{\footnotesize template$<$typename Float\+Type $>$ }\\void \mbox{\hyperlink{namespacetesseract__kinematics_ab50bcc818a12ddc691a8fced83b22585}{harmonize\+Toward\+Zero}} (Eigen\+::\+Ref$<$ \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ qs)
 \begin{DoxyCompactList}\small\item\em This take an array of floats and modifies them in place to be between \mbox{[}-\/PI, PI\mbox{]}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__kinematics_a2c175ae7eb98643c57e58df0d3825d18}{check\+Kinematics}} (const \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_a2c99fff4d4596e15bfdc4f72ec3b7406}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics\+::\+Const\+Ptr}} \&fwd\+\_\+kin, const \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_ab8d8c23f62e4298bcc0951f82f3dba27}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics\+::\+Const\+Ptr}} \&inv\+\_\+kin, double tol=1e-\/3)
 \begin{DoxyCompactList}\small\item\em This compares a forward kinematics object to an inverse kinematics object and check that they are the same. \end{DoxyCompactList}\item 
@@ -121,6 +125,19 @@ bool \mbox{\hyperlink{namespacetesseract__kinematics_a2155d49cf12de450b17aa74b43
 \index{ForwardKinematicsPtrMap@{ForwardKinematicsPtrMap}!tesseract\_kinematics@{tesseract\_kinematics}}
 \doxysubsubsection{\texorpdfstring{ForwardKinematicsPtrMap}{ForwardKinematicsPtrMap}}
 {\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__kinematics_a200cb09693ba9ff864ed53738cb3a551}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics\+Ptr\+Map}} = typedef std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_abdb52d493e8f0c584be778ddb193ed46}{Forward\+Kinematics\+::\+Ptr}}$>$}
+
+\mbox{\Hypertarget{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}\label{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}} 
+\index{tesseract\_kinematics@{tesseract\_kinematics}!IKSolutions@{IKSolutions}}
+\index{IKSolutions@{IKSolutions}!tesseract\_kinematics@{tesseract\_kinematics}}
+\doxysubsubsection{\texorpdfstring{IKSolutions}{IKSolutions}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{tesseract\+\_\+kinematics\+::\+IKSolutions}} = typedef std\+::vector$<$Eigen\+::\+Vector\+Xd$>$}
+
+\mbox{\Hypertarget{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}\label{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}} 
+\index{tesseract\_kinematics@{tesseract\_kinematics}!VectorX@{VectorX}}
+\index{VectorX@{VectorX}!tesseract\_kinematics@{tesseract\_kinematics}}
+\doxysubsubsection{\texorpdfstring{VectorX}{VectorX}}
+{\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
+using \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{tesseract\+\_\+kinematics\+::\+VectorX}} = typedef Eigen\+::\+Matrix$<$Float\+Type, Eigen\+::\+Dynamic, 1$>$}
 
 
 
@@ -305,12 +322,12 @@ Convert Eigen\+::\+Vector to KDL\+::\+Jnt\+Array.
 {\em joints} & Output KDL joint array \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{namespacetesseract__kinematics_a5f25773355cc9daf6a5344643259d055}\label{namespacetesseract__kinematics_a5f25773355cc9daf6a5344643259d055}} 
+\mbox{\Hypertarget{namespacetesseract__kinematics_a829684b4f8565088734434970937efba}\label{namespacetesseract__kinematics_a829684b4f8565088734434970937efba}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!getRedundantSolutions@{getRedundantSolutions}}
 \index{getRedundantSolutions@{getRedundantSolutions}!tesseract\_kinematics@{tesseract\_kinematics}}
 \doxysubsubsection{\texorpdfstring{getRedundantSolutions()}{getRedundantSolutions()}}
 {\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-std\+::vector$<$Float\+Type$>$ tesseract\+\_\+kinematics\+::get\+Redundant\+Solutions (\begin{DoxyParamCaption}\item[{const Float\+Type $\ast$}]{sol,  }\item[{const Eigen\+::\+Matrix\+X2d \&}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+std\+::vector$<$\mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$Float\+Type$>$ $>$ tesseract\+\_\+kinematics\+::get\+Redundant\+Solutions (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&}]{sol,  }\item[{const Eigen\+::\+Matrix\+X2d \&}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -323,12 +340,12 @@ Kinematics only return solution between PI and -\/PI. Provided the limits it wil
 {\em limits} & The joint limits of the robot \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{namespacetesseract__kinematics_ad5ef95096700a2fdcbb05df6c06c92eb}\label{namespacetesseract__kinematics_ad5ef95096700a2fdcbb05df6c06c92eb}} 
+\mbox{\Hypertarget{namespacetesseract__kinematics_ab50bcc818a12ddc691a8fced83b22585}\label{namespacetesseract__kinematics_ab50bcc818a12ddc691a8fced83b22585}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!harmonizeTowardZero@{harmonizeTowardZero}}
 \index{harmonizeTowardZero@{harmonizeTowardZero}!tesseract\_kinematics@{tesseract\_kinematics}}
 \doxysubsubsection{\texorpdfstring{harmonizeTowardZero()}{harmonizeTowardZero()}}
 {\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-void tesseract\+\_\+kinematics\+::harmonize\+Toward\+Zero (\begin{DoxyParamCaption}\item[{Float\+Type $\ast$}]{qs,  }\item[{int}]{dof }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void tesseract\+\_\+kinematics\+::harmonize\+Toward\+Zero (\begin{DoxyParamCaption}\item[{Eigen\+::\+Ref$<$ \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$}]{qs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -341,12 +358,12 @@ This take an array of floats and modifies them in place to be between \mbox{[}-\
 {\em dof} & The length of the float array \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{namespacetesseract__kinematics_a4eea93b3922144518e6e719663fa55fd}\label{namespacetesseract__kinematics_a4eea93b3922144518e6e719663fa55fd}} 
+\mbox{\Hypertarget{namespacetesseract__kinematics_a2f74af65eeb166856e00a64254da7ee8}\label{namespacetesseract__kinematics_a2f74af65eeb166856e00a64254da7ee8}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!isValid@{isValid}}
 \index{isValid@{isValid}!tesseract\_kinematics@{tesseract\_kinematics}}
 \doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
 {\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-bool tesseract\+\_\+kinematics\+::is\+Valid (\begin{DoxyParamCaption}\item[{const Float\+Type $\ast$}]{qs,  }\item[{int}]{dof }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+bool tesseract\+\_\+kinematics\+::is\+Valid (\begin{DoxyParamCaption}\item[{const std\+::array$<$ Float\+Type, 6 $>$ \&}]{qs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -364,12 +381,12 @@ In the case of OPW and IKFast they can return NANS so this is used to check that
 \begin{DoxyReturn}{Returns}
 True if the array is valid, otherwise false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacetesseract__kinematics_a6673bf40b1b83909662120655499af68}\label{namespacetesseract__kinematics_a6673bf40b1b83909662120655499af68}} 
+\mbox{\Hypertarget{namespacetesseract__kinematics_af7bf99d154356876827ff501c21d3432}\label{namespacetesseract__kinematics_af7bf99d154356876827ff501c21d3432}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!isWithinLimits@{isWithinLimits}}
 \index{isWithinLimits@{isWithinLimits}!tesseract\_kinematics@{tesseract\_kinematics}}
 \doxysubsubsection{\texorpdfstring{isWithinLimits()}{isWithinLimits()}}
 {\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-bool tesseract\+\_\+kinematics\+::is\+Within\+Limits (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix$<$ Float\+Type, Eigen\+::\+Dynamic, 1 $>$ $>$ \&}]{joint\+\_\+values,  }\item[{const Eigen\+::\+Matrix\+X2d \&}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+bool tesseract\+\_\+kinematics\+::is\+Within\+Limits (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&}]{joint\+\_\+values,  }\item[{const Eigen\+::\+Matrix\+X2d \&}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

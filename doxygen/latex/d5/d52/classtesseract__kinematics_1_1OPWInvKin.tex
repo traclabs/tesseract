@@ -55,9 +55,9 @@ using \mbox{\hyperlink{classtesseract__kinematics_1_1OPWInvKin_a22c2937057af9dd1
 \begin{DoxyCompactList}\small\item\em Clone the forward kinematics object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__kinematics_1_1OPWInvKin_a38b072b6c1bd27cebfb744bad5332e24}{update}} () override
 \begin{DoxyCompactList}\small\item\em Updates kinematics if kinematic parameters have changed. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtesseract__kinematics_1_1OPWInvKin_a81b9acc1a2149c831887d59e7894d3fb}{calc\+Inv\+Kin}} (Eigen\+::\+Vector\+Xd \&solutions, const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const override
+\mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} \mbox{\hyperlink{classtesseract__kinematics_1_1OPWInvKin_ac27166ae9b5a844fa540378d58a2b52b}{calc\+Inv\+Kin}} (const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const override
 \begin{DoxyCompactList}\small\item\em Calculates joint solutions given a pose. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtesseract__kinematics_1_1OPWInvKin_a9ac1592552f43ea807a0782ddde4c1ad}{calc\+Inv\+Kin}} (Eigen\+::\+Vector\+Xd \&solutions, const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed, const std\+::string \&link\+\_\+name) const override
+\mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} \mbox{\hyperlink{classtesseract__kinematics_1_1OPWInvKin_ab78aa29eefd4e257e9920207e6ba0a7a}{calc\+Inv\+Kin}} (const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed, const std\+::string \&link\+\_\+name) const override
 \begin{DoxyCompactList}\small\item\em Calculates joint solutions given a pose for a specific link. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__kinematics_1_1OPWInvKin_a429af4de178b3a1cc3af544cdb6bf5fa}{check\+Joints}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&vec) const override
 \begin{DoxyCompactList}\small\item\em Check for consistency in \# and limits of joints. \end{DoxyCompactList}\item 
@@ -161,11 +161,11 @@ OPW Inverse Kinematics Implmentation.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classtesseract__kinematics_1_1OPWInvKin_a81b9acc1a2149c831887d59e7894d3fb}\label{classtesseract__kinematics_1_1OPWInvKin_a81b9acc1a2149c831887d59e7894d3fb}} 
+\mbox{\Hypertarget{classtesseract__kinematics_1_1OPWInvKin_ac27166ae9b5a844fa540378d58a2b52b}\label{classtesseract__kinematics_1_1OPWInvKin_ac27166ae9b5a844fa540378d58a2b52b}} 
 \index{tesseract\_kinematics::OPWInvKin@{tesseract\_kinematics::OPWInvKin}!calcInvKin@{calcInvKin}}
 \index{calcInvKin@{calcInvKin}!tesseract\_kinematics::OPWInvKin@{tesseract\_kinematics::OPWInvKin}}
 \doxysubsubsection{\texorpdfstring{calcInvKin()}{calcInvKin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+kinematics\+::\+OPWInv\+Kin\+::calc\+Inv\+Kin (\begin{DoxyParamCaption}\item[{Eigen\+::\+Vector\+Xd \&}]{solutions,  }\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} tesseract\+\_\+kinematics\+::\+OPWInv\+Kin\+::calc\+Inv\+Kin (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -181,17 +181,17 @@ Calculates joint solutions given a pose.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-True if calculation successful, False if anything is wrong (including uninitialized) 
+A vector of solutions, If empty it failed to find a solution (including uninitialized) 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_ad944080e198501a2db0aeb91fcc65c08}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
+Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a672e765e10a32693d2fada354e740bc8}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
 
-\mbox{\Hypertarget{classtesseract__kinematics_1_1OPWInvKin_a9ac1592552f43ea807a0782ddde4c1ad}\label{classtesseract__kinematics_1_1OPWInvKin_a9ac1592552f43ea807a0782ddde4c1ad}} 
+\mbox{\Hypertarget{classtesseract__kinematics_1_1OPWInvKin_ab78aa29eefd4e257e9920207e6ba0a7a}\label{classtesseract__kinematics_1_1OPWInvKin_ab78aa29eefd4e257e9920207e6ba0a7a}} 
 \index{tesseract\_kinematics::OPWInvKin@{tesseract\_kinematics::OPWInvKin}!calcInvKin@{calcInvKin}}
 \index{calcInvKin@{calcInvKin}!tesseract\_kinematics::OPWInvKin@{tesseract\_kinematics::OPWInvKin}}
 \doxysubsubsection{\texorpdfstring{calcInvKin()}{calcInvKin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+kinematics\+::\+OPWInv\+Kin\+::calc\+Inv\+Kin (\begin{DoxyParamCaption}\item[{Eigen\+::\+Vector\+Xd \&}]{solutions,  }\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed,  }\item[{const std\+::string \&}]{link\+\_\+name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} tesseract\+\_\+kinematics\+::\+OPWInv\+Kin\+::calc\+Inv\+Kin (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed,  }\item[{const std\+::string \&}]{link\+\_\+name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -199,19 +199,17 @@ Calculates joint solutions given a pose for a specific link.
 
 
 \begin{DoxyParams}{Parameters}
-{\em solutions} & A vector of solutions, so check the size of the vector to determine the number of solutions \\
-\hline
 {\em pose} & Transform of end-\/of-\/tip relative to root (base link) \\
 \hline
 {\em seed} & Vector of seed joint angles (size must match number of joints in robot chain) \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-True if calculation successful, False if anything is wrong (including uninitialized) 
+A vector of solutions, If empty it failed to find a solution (including uninitialized) 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a622eb9c27e988a618b01890546e77aa2}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
+Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a976acbb90864ca97d6a998d42465e3a1}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
 
 \mbox{\Hypertarget{classtesseract__kinematics_1_1OPWInvKin_a0b8b2df5b69bfb7912e910f44d9907cb}\label{classtesseract__kinematics_1_1OPWInvKin_a0b8b2df5b69bfb7912e910f44d9907cb}} 
 \index{tesseract\_kinematics::OPWInvKin@{tesseract\_kinematics::OPWInvKin}!checkInitialized@{checkInitialized}}

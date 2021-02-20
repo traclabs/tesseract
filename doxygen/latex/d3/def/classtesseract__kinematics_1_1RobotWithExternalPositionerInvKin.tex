@@ -55,9 +55,9 @@ using \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositioner
 \begin{DoxyCompactList}\small\item\em Clone the forward kinematics object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_aabe60042fcd23e0a574b8526f1b079db}{update}} () override
 \begin{DoxyCompactList}\small\item\em Updates kinematics if kinematic parameters have changed. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a82edb3f7a5d236a0a1bf9077b18fdc06}{calc\+Inv\+Kin}} (Eigen\+::\+Vector\+Xd \&solutions, const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const override
+\mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ab337792c4d003a9744da53d5a7bd1dd7}{calc\+Inv\+Kin}} (const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const override
 \begin{DoxyCompactList}\small\item\em Calculates joint solutions given a pose. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_afd08eaa18cc337c5422d692205817ccc}{calc\+Inv\+Kin}} (Eigen\+::\+Vector\+Xd \&solutions, const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed, const std\+::string \&link\+\_\+name) const override
+\mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a91272867f75776feac4a54d4c3e02f1d}{calc\+Inv\+Kin}} (const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed, const std\+::string \&link\+\_\+name) const override
 \begin{DoxyCompactList}\small\item\em Calculates joint solutions given a pose for a specific link. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_abf155e523fc86e52dbad92a339c3945f}{check\+Joints}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&vec) const override
 \begin{DoxyCompactList}\small\item\em Check for consistency in \# and limits of joints. \end{DoxyCompactList}\item 
@@ -96,11 +96,11 @@ bool \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerI
 \item 
 bool \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ad758cf604d403109a7a14c479749a561}{init}} (const \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin}{Robot\+With\+External\+Positioner\+Inv\+Kin}} \&kin)
 \begin{DoxyCompactList}\small\item\em This used by the clone method. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a2601d03c449361abc62f288cf32a34a4}{calc\+Inv\+Kin\+Helper}} (std\+::vector$<$ double $>$ \&solutions, const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const
+\mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a7a7b84545130c43cf6b1320a3e26196a}{calc\+Inv\+Kin\+Helper}} (const Eigen\+::\+Isometry3d \&pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const
 \begin{DoxyCompactList}\small\item\em calc\+Fwd\+Kin helper function \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a580b6f848c2bf4c11edd7ec5dfd3f4e1}{nested\+\_\+ik}} (std\+::vector$<$ double $>$ \&solutions, int loop\+\_\+level, const std\+::vector$<$ Eigen\+::\+Vector\+Xd $>$ \&dof\+\_\+range, const Eigen\+::\+Isometry3d \&target\+\_\+pose, Eigen\+::\+Vector\+Xd \&positioner\+\_\+pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const
+void \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ad4860e0a895d4ae11fc305130056f4ae}{nested\+\_\+ik}} (\mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} \&solutions, int loop\+\_\+level, const std\+::vector$<$ Eigen\+::\+Vector\+Xd $>$ \&dof\+\_\+range, const Eigen\+::\+Isometry3d \&target\+\_\+pose, Eigen\+::\+Vector\+Xd \&positioner\+\_\+pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const
 \item 
-bool \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ad47070ea294277cb55917ce61697e0cf}{ik\+At}} (std\+::vector$<$ double $>$ \&solutions, const Eigen\+::\+Isometry3d \&target\+\_\+pose, Eigen\+::\+Vector\+Xd \&positioner\+\_\+pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const
+void \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_adc989dbeca81c0b85932a62612095bb4}{ik\+At}} (\mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} \&solutions, const Eigen\+::\+Isometry3d \&target\+\_\+pose, Eigen\+::\+Vector\+Xd \&positioner\+\_\+pose, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&seed) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -185,11 +185,11 @@ In this kinematic arrangement the base link is the tip link of the external posi
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a82edb3f7a5d236a0a1bf9077b18fdc06}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a82edb3f7a5d236a0a1bf9077b18fdc06}} 
+\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ab337792c4d003a9744da53d5a7bd1dd7}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ab337792c4d003a9744da53d5a7bd1dd7}} 
 \index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!calcInvKin@{calcInvKin}}
 \index{calcInvKin@{calcInvKin}!tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}}
 \doxysubsubsection{\texorpdfstring{calcInvKin()}{calcInvKin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::calc\+Inv\+Kin (\begin{DoxyParamCaption}\item[{Eigen\+::\+Vector\+Xd \&}]{solutions,  }\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::calc\+Inv\+Kin (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -205,17 +205,17 @@ Calculates joint solutions given a pose.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-True if calculation successful, False if anything is wrong (including uninitialized) 
+A vector of solutions, If empty it failed to find a solution (including uninitialized) 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_ad944080e198501a2db0aeb91fcc65c08}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
+Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a672e765e10a32693d2fada354e740bc8}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
 
-\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_afd08eaa18cc337c5422d692205817ccc}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_afd08eaa18cc337c5422d692205817ccc}} 
+\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a91272867f75776feac4a54d4c3e02f1d}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a91272867f75776feac4a54d4c3e02f1d}} 
 \index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!calcInvKin@{calcInvKin}}
 \index{calcInvKin@{calcInvKin}!tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}}
 \doxysubsubsection{\texorpdfstring{calcInvKin()}{calcInvKin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::calc\+Inv\+Kin (\begin{DoxyParamCaption}\item[{Eigen\+::\+Vector\+Xd \&}]{solutions,  }\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed,  }\item[{const std\+::string \&}]{link\+\_\+name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::calc\+Inv\+Kin (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed,  }\item[{const std\+::string \&}]{link\+\_\+name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -223,25 +223,23 @@ Calculates joint solutions given a pose for a specific link.
 
 
 \begin{DoxyParams}{Parameters}
-{\em solutions} & A vector of solutions, so check the size of the vector to determine the number of solutions \\
-\hline
 {\em pose} & Transform of end-\/of-\/tip relative to root (base link) \\
 \hline
 {\em seed} & Vector of seed joint angles (size must match number of joints in robot chain) \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-True if calculation successful, False if anything is wrong (including uninitialized) 
+A vector of solutions, If empty it failed to find a solution (including uninitialized) 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a622eb9c27e988a618b01890546e77aa2}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
+Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a976acbb90864ca97d6a998d42465e3a1}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
 
-\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a2601d03c449361abc62f288cf32a34a4}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a2601d03c449361abc62f288cf32a34a4}} 
+\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a7a7b84545130c43cf6b1320a3e26196a}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a7a7b84545130c43cf6b1320a3e26196a}} 
 \index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!calcInvKinHelper@{calcInvKinHelper}}
 \index{calcInvKinHelper@{calcInvKinHelper}!tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}}
 \doxysubsubsection{\texorpdfstring{calcInvKinHelper()}{calcInvKinHelper()}}
-{\footnotesize\ttfamily bool tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::calc\+Inv\+Kin\+Helper (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{solutions,  }\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::calc\+Inv\+Kin\+Helper (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Isometry3d \&}]{pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -428,11 +426,11 @@ Get the tip link name.
 
 Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a4bc2d1bf676a2f111752863d7110b42a}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
 
-\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ad47070ea294277cb55917ce61697e0cf}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ad47070ea294277cb55917ce61697e0cf}} 
+\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_adc989dbeca81c0b85932a62612095bb4}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_adc989dbeca81c0b85932a62612095bb4}} 
 \index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!ikAt@{ikAt}}
 \index{ikAt@{ikAt}!tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}}
 \doxysubsubsection{\texorpdfstring{ikAt()}{ikAt()}}
-{\footnotesize\ttfamily bool tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::ik\+At (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{solutions,  }\item[{const Eigen\+::\+Isometry3d \&}]{target\+\_\+pose,  }\item[{Eigen\+::\+Vector\+Xd \&}]{positioner\+\_\+pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::ik\+At (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} \&}]{solutions,  }\item[{const Eigen\+::\+Isometry3d \&}]{target\+\_\+pose,  }\item[{Eigen\+::\+Vector\+Xd \&}]{positioner\+\_\+pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ad758cf604d403109a7a14c479749a561}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ad758cf604d403109a7a14c479749a561}} 
 \index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!init@{init}}
@@ -533,11 +531,11 @@ Initializes Inverse Kinematics for a robot on a positioner.
 \begin{DoxyReturn}{Returns}
 True if \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a49d777da2228a61beab06cca78783220}{init()}} completes successfully 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a580b6f848c2bf4c11edd7ec5dfd3f4e1}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a580b6f848c2bf4c11edd7ec5dfd3f4e1}} 
+\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ad4860e0a895d4ae11fc305130056f4ae}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ad4860e0a895d4ae11fc305130056f4ae}} 
 \index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!nested\_ik@{nested\_ik}}
 \index{nested\_ik@{nested\_ik}!tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}}
 \doxysubsubsection{\texorpdfstring{nested\_ik()}{nested\_ik()}}
-{\footnotesize\ttfamily void tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::nested\+\_\+ik (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{solutions,  }\item[{int}]{loop\+\_\+level,  }\item[{const std\+::vector$<$ Eigen\+::\+Vector\+Xd $>$ \&}]{dof\+\_\+range,  }\item[{const Eigen\+::\+Isometry3d \&}]{target\+\_\+pose,  }\item[{Eigen\+::\+Vector\+Xd \&}]{positioner\+\_\+pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::nested\+\_\+ik (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetesseract__kinematics_af12a01d2264e3371dc9bc7db2a7b59ac}{IKSolutions}} \&}]{solutions,  }\item[{int}]{loop\+\_\+level,  }\item[{const std\+::vector$<$ Eigen\+::\+Vector\+Xd $>$ \&}]{dof\+\_\+range,  }\item[{const Eigen\+::\+Isometry3d \&}]{target\+\_\+pose,  }\item[{Eigen\+::\+Vector\+Xd \&}]{positioner\+\_\+pose,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{seed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_af7e3dbeaa53d4a7a238b49bfcc4958e9}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_af7e3dbeaa53d4a7a238b49bfcc4958e9}} 
 \index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!numJoints@{numJoints}}
