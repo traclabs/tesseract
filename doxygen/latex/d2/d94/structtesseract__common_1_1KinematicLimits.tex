@@ -19,6 +19,11 @@ Collaboration diagram for tesseract\+\_\+common\+::Kinematic\+Limits\+:
 \includegraphics[width=238pt]{d5/da6/structtesseract__common_1_1KinematicLimits__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_a79272820124db3c50f4a564a5ada30f1}{operator==}} (const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}} \&other) const
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,10 +33,45 @@ Eigen\+::\+Vector\+Xd \mbox{\hyperlink{structtesseract__common_1_1KinematicLimit
 \item 
 Eigen\+::\+Vector\+Xd \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_a609b65f616f248719082654c9a8a51c6}{acceleration\+\_\+limits}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_a3535ccf22c52e35fafd11958fe7acc1d}{serialize}} (Archive \&ar, const unsigned int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Store kinematic limits. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structtesseract__common_1_1KinematicLimits_a79272820124db3c50f4a564a5ada30f1}\label{structtesseract__common_1_1KinematicLimits_a79272820124db3c50f4a564a5ada30f1}} 
+\index{tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}!operator==@{operator==}}
+\index{operator==@{operator==}!tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::\+Kinematic\+Limits\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structtesseract__common_1_1KinematicLimits_a3535ccf22c52e35fafd11958fe7acc1d}\label{structtesseract__common_1_1KinematicLimits_a3535ccf22c52e35fafd11958fe7acc1d}} 
+\index{tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}!serialize@{serialize}}
+\index{serialize@{serialize}!tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily template$<$class Archive $>$ \\
+void tesseract\+\_\+common\+::\+Kinematic\+Limits\+::serialize (\begin{DoxyParamCaption}\item[{Archive \&}]{ar,  }\item[{const unsigned int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structtesseract__common_1_1KinematicLimits_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structtesseract__common_1_1KinematicLimits_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+\index{tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}!boost::serialization::access@{boost::serialization::access}}
+\index{boost::serialization::access@{boost::serialization::access}!tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}}
+\doxysubsubsection{\texorpdfstring{boost::serialization::access}{boost::serialization::access}}
+{\footnotesize\ttfamily friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}
+
+
 
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{structtesseract__common_1_1KinematicLimits_a609b65f616f248719082654c9a8a51c6}\label{structtesseract__common_1_1KinematicLimits_a609b65f616f248719082654c9a8a51c6}} 

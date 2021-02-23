@@ -13,6 +13,7 @@ Common Tesseract Types.
 {\ttfamily \#include $<$map$>$}\newline
 {\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
 {\ttfamily \#include $<$boost/filesystem.\+hpp$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+common/serialization.\+h$>$}\newline
 Include dependency graph for types.\+h\+:
 \nopagebreak
 \begin{figure}[H]
@@ -33,8 +34,6 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structtesseract__common_1_1PairHash}{tesseract\+\_\+common\+::\+Pair\+Hash}}
-\item 
-struct \mbox{\hyperlink{structtesseract__common_1_1JointState}{tesseract\+\_\+common\+::\+Joint\+State}}
 \item 
 struct \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}}
 \begin{DoxyCompactList}\small\item\em Store kinematic limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -67,9 +66,7 @@ using \mbox{\hyperlink{namespacetesseract__common_a917718f518f98714fce17e831ec1e
 using \mbox{\hyperlink{namespacetesseract__common_a431ff65777ee0bed71e7671390638244}{tesseract\+\_\+common\+::\+Traj\+Array}} = Eigen\+::\+Matrix$<$ double, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic, Eigen\+::\+Row\+Major $>$
 \item 
 using \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{tesseract\+\_\+common\+::\+Link\+Names\+Pair}} = std\+::pair$<$ std\+::string, std\+::string $>$
-\item 
-using \mbox{\hyperlink{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}{tesseract\+\_\+common\+::\+Joint\+Trajectory}} = std\+::vector$<$ Joint\+State $>$
-\begin{DoxyCompactList}\small\item\em Represents a joint trajectory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -90,7 +87,7 @@ January 18, 2018
 TODO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000032}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000034}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}

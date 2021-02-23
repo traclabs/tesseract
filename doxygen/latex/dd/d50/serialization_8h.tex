@@ -1,0 +1,93 @@
+\hypertarget{serialization_8h}{}\doxysection{tesseract\+\_\+common/include/tesseract\+\_\+common/serialization.h File Reference}
+\label{serialization_8h}\index{tesseract\_common/include/tesseract\_common/serialization.h@{tesseract\_common/include/tesseract\_common/serialization.h}}
+
+
+Additional Boost serialization wrappers.  
+
+
+{\ttfamily \#include $<$tesseract\+\_\+common/macros.\+h$>$}\newline
+{\ttfamily \#include $<$Eigen/\+Dense$>$}\newline
+{\ttfamily \#include $<$boost/serialization/base\+\_\+object.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/serialization/nvp.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/serialization/array.\+hpp$>$}\newline
+Include dependency graph for serialization.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/serialization_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dd0/serialization_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceboost}{boost}}
+\item 
+ \mbox{\hyperlink{namespaceboost_1_1serialization}{boost\+::serialization}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a09562fae1fb0fcdd6dc2fabf116f3eec}{boost\+::serialization\+::save}} (Archive \&ar, const Eigen\+::\+Vector\+Xd \&g, const unsigned int)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a391d4d87d5b5968ed9b01d8480dfbe20}{boost\+::serialization\+::load}} (Archive \&ar, Eigen\+::\+Vector\+Xd \&g, const unsigned int)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a2da13e661fc59d6f4e6af326fa4a119d}{boost\+::serialization\+::serialize}} (Archive \&ar, Eigen\+::\+Vector\+Xd \&g, const unsigned int version)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a9a5ede58e68071f179cefd86893c10f5}{boost\+::serialization\+::save}} (Archive \&ar, const Eigen\+::\+Isometry3d \&g, const unsigned int)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_abab485628e56eeaf0fa2fce4e8b9a9ca}{boost\+::serialization\+::load}} (Archive \&ar, Eigen\+::\+Isometry3d \&g, const unsigned int)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a4b28ff5af1663c933c8f23f65071e013}{boost\+::serialization\+::serialize}} (Archive \&ar, Eigen\+::\+Isometry3d \&g, const unsigned int version)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a33c005d2e23e13e66aea54de5b10e486}{boost\+::serialization\+::save}} (Archive \&ar, const Eigen\+::\+Matrix\+X2d \&g, const unsigned int)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_ac1f4161f78998345de402f4a3f31dba6}{boost\+::serialization\+::load}} (Archive \&ar, Eigen\+::\+Matrix\+X2d \&g, const unsigned int)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_acc2c87e6f21f9f87a5ef38ef10d38d8d}{boost\+::serialization\+::serialize}} (Archive \&ar, Eigen\+::\+Matrix\+X2d \&g, const unsigned int version)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Additional Boost serialization wrappers. 
+
+Supports the following
+\begin{DoxyItemize}
+\item Eigen\+::\+Vector\+Xd
+\item Eigen\+::\+Isometry3d
+\item Eigen\+::\+Matrix\+X2d
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Levi Armstrong 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+February 21, 2021 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+TODO 
+\end{DoxyVersion}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000031}{Bug}}]No known bugs\end{DoxyRefDesc}
+
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021, Southwest Research Institute
+\end{DoxyCopyright}
+\begin{DoxyParagraph}{License}
+Software License Agreement (Apache License) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+\end{DoxyParagraph}

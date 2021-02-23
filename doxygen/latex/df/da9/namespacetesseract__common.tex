@@ -5,6 +5,8 @@
 \item 
 class \mbox{\hyperlink{classtesseract__common_1_1CloneCache}{Clone\+Cache}}
 \begin{DoxyCompactList}\small\item\em Used to create a cache of objects. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}}
+\item 
 class \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}}
 \begin{DoxyCompactList}\small\item\em Manipulator Info Tool Center Point Definition. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo}{Manipulator\+Info}}
@@ -33,13 +35,13 @@ class \mbox{\hyperlink{classtesseract__common_1_1Timer}{Timer}}
 \begin{DoxyCompactList}\small\item\em A simple timer class leveraging chrono high resolution clock. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1PairHash}{Pair\+Hash}}
 \item 
-struct \mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}}
-\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}}
 \begin{DoxyCompactList}\small\item\em Store kinematic limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
+using \mbox{\hyperlink{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}{Joint\+Trajectory}} = std\+::vector$<$ \mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}} $>$
+\begin{DoxyCompactList}\small\item\em Represents a joint trajectory. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespacetesseract__common_a000d15c3ab8d8ba4ebdaae64153b053a}{Aligned\+Vector}} = std\+::vector$<$ T, Eigen\+::aligned\+\_\+allocator$<$ T $>$ $>$
 \begin{DoxyCompactList}\small\item\em Enable easy switching to std\+::filesystem when available. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Key , typename Value $>$ }\\using \mbox{\hyperlink{namespacetesseract__common_a2c5a4b6149060671cf8c3f9d15ef58c4}{Aligned\+Map}} = std\+::map$<$ Key, Value, std\+::less$<$ Key $>$, Eigen\+::aligned\+\_\+allocator$<$ std\+::pair$<$ const Key, Value $>$ $>$$>$
@@ -61,9 +63,7 @@ using \mbox{\hyperlink{namespacetesseract__common_a917718f518f98714fce17e831ec1e
 using \mbox{\hyperlink{namespacetesseract__common_a431ff65777ee0bed71e7671390638244}{Traj\+Array}} = Eigen\+::\+Matrix$<$ double, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic, Eigen\+::\+Row\+Major $>$
 \item 
 using \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{Link\+Names\+Pair}} = std\+::pair$<$ std\+::string, std\+::string $>$
-\item 
-using \mbox{\hyperlink{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}{Joint\+Trajectory}} = std\+::vector$<$ \mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}} $>$
-\begin{DoxyCompactList}\small\item\em Represents a joint trajectory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 

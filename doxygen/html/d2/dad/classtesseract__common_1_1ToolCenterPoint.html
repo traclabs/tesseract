@@ -71,7 +71,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="../../d0/dba/classtesseract__common_1_1ToolCenterPoint-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">tesseract_common::ToolCenterPoint Class Reference</div>  </div>
@@ -115,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab490d1b31cf4e6d1cb1eba7b5287a1fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#ab490d1b31cf4e6d1cb1eba7b5287a1fd">isExternal</a> () const</td></tr>
 <tr class="memdesc:ab490d1b31cf4e6d1cb1eba7b5287a1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if tool center point is and external tcp which mean it is not defined.  <a href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#ab490d1b31cf4e6d1cb1eba7b5287a1fd">More...</a><br /></td></tr>
 <tr class="separator:ab490d1b31cf4e6d1cb1eba7b5287a1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb12b6edb74d43702136af70f8dcce16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#acb12b6edb74d43702136af70f8dcce16">setExternal</a> (bool value, std::string external_frame)</td></tr>
-<tr class="memdesc:acb12b6edb74d43702136af70f8dcce16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the external property.  <a href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#acb12b6edb74d43702136af70f8dcce16">More...</a><br /></td></tr>
-<tr class="separator:acb12b6edb74d43702136af70f8dcce16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aad9cad4bcc876cd097beebe8ff1a7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a0aad9cad4bcc876cd097beebe8ff1a7a">setExternal</a> (bool value, std::string external_frame=&quot;&quot;)</td></tr>
+<tr class="memdesc:a0aad9cad4bcc876cd097beebe8ff1a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the external property.  <a href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a0aad9cad4bcc876cd097beebe8ff1a7a">More...</a><br /></td></tr>
+<tr class="separator:a0aad9cad4bcc876cd097beebe8ff1a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a69710f4090e7ee957ef12ffc54e64e"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a9a69710f4090e7ee957ef12ffc54e64e">getExternalFrame</a> () const</td></tr>
 <tr class="memdesc:a9a69710f4090e7ee957ef12ffc54e64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If an external tcp was defined as an Isometry then an external frame can be provided. If empty assumed relative to world.  <a href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a9a69710f4090e7ee957ef12ffc54e64e">More...</a><br /></td></tr>
 <tr class="separator:a9a69710f4090e7ee957ef12ffc54e64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +131,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac206b7b243793abe72d4692da7c28c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26259ffce09c0d505c3300c8600b6788"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a26259ffce09c0d505c3300c8600b6788">operator==</a> (const <a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html">ToolCenterPoint</a> &amp;other) const</td></tr>
 <tr class="separator:a26259ffce09c0d505c3300c8600b6788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cf62c95cbd80801d6045794635ed32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a91cf62c95cbd80801d6045794635ed32">operator!=</a> (const <a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html">ToolCenterPoint</a> &amp;rhs) const</td></tr>
+<tr class="separator:a91cf62c95cbd80801d6045794635ed32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6b1eac73320241faafcdfd5487b1c647"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:a6b1eac73320241faafcdfd5487b1c647"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a6b1eac73320241faafcdfd5487b1c647">serialize</a> (Archive &amp;ar, const unsigned int)</td></tr>
+<tr class="separator:a6b1eac73320241faafcdfd5487b1c647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -136,7 +146,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a118383acddf449e3a0caf5e681fd5a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54146cdb8c7a98dca4e86254747a9c33"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a54146cdb8c7a98dca4e86254747a9c33">name_</a></td></tr>
 <tr class="separator:a54146cdb8c7a98dca4e86254747a9c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a9146826d1b93736bb155dac2f5c1c"><td class="memItemLeft" align="right" valign="top">Eigen::Isometry3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a63a9146826d1b93736bb155dac2f5c1c">transform_</a></td></tr>
+<tr class="memitem:a63a9146826d1b93736bb155dac2f5c1c"><td class="memItemLeft" align="right" valign="top">Eigen::Isometry3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a63a9146826d1b93736bb155dac2f5c1c">transform_</a> { Eigen::Isometry3d::Identity() }</td></tr>
 <tr class="separator:a63a9146826d1b93736bb155dac2f5c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a090a3fff3a757612e1adc33dfa3d159e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a090a3fff3a757612e1adc33dfa3d159e">external_</a> { false }</td></tr>
 <tr class="memdesc:a090a3fff3a757612e1adc33dfa3d159e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The external TCP is used when the robot is holding the part versus the tool.  <a href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#a090a3fff3a757612e1adc33dfa3d159e">More...</a><br /></td></tr>
@@ -144,6 +154,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aff21e2a7af841ce0da176244bf41ad45"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#aff21e2a7af841ce0da176244bf41ad45">external_frame_</a></td></tr>
 <tr class="memdesc:aff21e2a7af841ce0da176244bf41ad45"><td class="mdescLeft">&#160;</td><td class="mdescRight">If an external tcp was defined as an Isometry then an external can be provided. If empty assumed relative to world.  <a href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#aff21e2a7af841ce0da176244bf41ad45">More...</a><br /></td></tr>
 <tr class="separator:aff21e2a7af841ce0da176244bf41ad45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manipulator Info Tool Center Point Definition. </p>
@@ -396,6 +411,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a91cf62c95cbd80801d6045794635ed32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91cf62c95cbd80801d6045794635ed32">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tesseract_common::ToolCenterPoint::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dad/classtesseract__common_1_1ToolCenterPoint.html">ToolCenterPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a26259ffce09c0d505c3300c8600b6788"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26259ffce09c0d505c3300c8600b6788">&#9670;&nbsp;</a></span>operator==()</h2>
 
@@ -422,8 +463,46 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acb12b6edb74d43702136af70f8dcce16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb12b6edb74d43702136af70f8dcce16">&#9670;&nbsp;</a></span>setExternal()</h2>
+<a id="a6b1eac73320241faafcdfd5487b1c647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1eac73320241faafcdfd5487b1c647">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Archive &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tesseract_common::ToolCenterPoint::serialize </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em>ar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0aad9cad4bcc876cd097beebe8ff1a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aad9cad4bcc876cd097beebe8ff1a7a">&#9670;&nbsp;</a></span>setExternal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,7 +517,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>external_frame</em>&#160;</td>
+          <td class="paramname"><em>external_frame</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -456,6 +535,29 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="ac98d07dd8f7b70e16ccb9a01abf56b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98d07dd8f7b70e16ccb9a01abf56b9c">&#9670;&nbsp;</a></span>boost::serialization::access</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class boost::serialization::access</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -541,7 +643,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Isometry3d tesseract_common::ToolCenterPoint::transform_</td>
+          <td class="memname">Eigen::Isometry3d tesseract_common::ToolCenterPoint::transform_ { Eigen::Isometry3d::Identity() }</td>
         </tr>
       </table>
   </td>
@@ -582,7 +684,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 20 2021 02:40:29 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Feb 23 2021 16:34:21 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
