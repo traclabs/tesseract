@@ -1,11 +1,11 @@
 <map id="tesseract_urdf/include/tesseract_urdf/mimic.h" name="tesseract_urdf/include/tesseract_urdf/mimic.h">
 <area shape="rect" id="node1" title="Parse mimic from xml string." alt="" coords="739,5,897,47"/>
-<area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="609,341,800,367"/>
+<area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="595,341,785,367"/>
 <area shape="rect" id="node3" href="$dc/d00/status__code_8h.html" title="A status code class." alt="" coords="95,169,269,211"/>
 <area shape="rect" id="node8" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1013,95,1183,121"/>
 <area shape="rect" id="node15" title=" " alt="" coords="1679,259,1794,285"/>
 <area shape="rect" id="node18" title=" " alt="" coords="1775,177,1853,203"/>
-<area shape="rect" id="node30" href="$d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="343,169,501,211"/>
+<area shape="rect" id="node32" href="$d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="343,169,501,211"/>
 <area shape="rect" id="node4" title=" " alt="" coords="249,259,304,285"/>
 <area shape="rect" id="node5" title=" " alt="" coords="95,259,173,285"/>
 <area shape="rect" id="node6" title=" " alt="" coords="328,259,396,285"/>
@@ -25,9 +25,11 @@
 <area shape="rect" id="node23" title=" " alt="" coords="1139,259,1249,285"/>
 <area shape="rect" id="node24" title=" " alt="" coords="1273,259,1413,285"/>
 <area shape="rect" id="node25" href="$dd/d50/serialization_8h.html" title="Additional Boost serialization wrappers." alt="" coords="1437,259,1652,285"/>
-<area shape="rect" id="node26" title=" " alt="" coords="1429,341,1524,367"/>
-<area shape="rect" id="node27" title=" " alt="" coords="1548,333,1675,375"/>
-<area shape="rect" id="node28" title=" " alt="" coords="1699,333,1825,375"/>
-<area shape="rect" id="node29" title=" " alt="" coords="1279,333,1405,375"/>
-<area shape="rect" id="node31" title=" " alt="" coords="421,259,511,285"/>
+<area shape="rect" id="node26" title=" " alt="" coords="1567,341,1661,367"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1685,333,1812,375"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1836,333,1963,375"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1107,333,1233,375"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1257,333,1384,375"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1408,333,1543,375"/>
+<area shape="rect" id="node33" title=" " alt="" coords="421,259,511,285"/>
 </map>

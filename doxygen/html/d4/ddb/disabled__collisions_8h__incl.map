@@ -5,8 +5,8 @@
 <area shape="rect" id="node4" title=" " alt="" coords="5,295,173,322"/>
 <area shape="rect" id="node5" title=" " alt="" coords="198,295,277,322"/>
 <area shape="rect" id="node6" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="672,206,843,233"/>
-<area shape="rect" id="node28" href="$d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="1701,109,1859,151"/>
-<area shape="rect" id="node39" href="$d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="2304,199,2480,240"/>
+<area shape="rect" id="node30" href="$d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="1701,109,1859,151"/>
+<area shape="rect" id="node41" href="$d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="2304,199,2480,240"/>
 <area shape="rect" id="node7" title=" " alt="" coords="1637,377,1696,404"/>
 <area shape="rect" id="node8" title=" " alt="" coords="2123,377,2178,404"/>
 <area shape="rect" id="node9" title=" " alt="" coords="352,295,421,322"/>
@@ -24,18 +24,20 @@
 <area shape="rect" id="node21" title=" " alt="" coords="1502,377,1613,404"/>
 <area shape="rect" id="node22" title=" " alt="" coords="1157,377,1297,404"/>
 <area shape="rect" id="node23" href="$dd/d50/serialization_8h.html" title="Additional Boost serialization wrappers." alt="" coords="765,377,979,404"/>
-<area shape="rect" id="node24" title=" " alt="" coords="615,459,710,486"/>
-<area shape="rect" id="node25" title=" " alt="" coords="734,452,861,493"/>
-<area shape="rect" id="node26" title=" " alt="" coords="885,452,1011,493"/>
-<area shape="rect" id="node27" title=" " alt="" coords="1035,452,1162,493"/>
-<area shape="rect" id="node29" title=" " alt="" coords="1077,199,1229,240"/>
-<area shape="rect" id="node30" title=" " alt="" coords="1254,199,1394,240"/>
-<area shape="rect" id="node31" title=" " alt="" coords="1418,206,1593,233"/>
-<area shape="rect" id="node32" title=" " alt="" coords="1617,199,1772,240"/>
-<area shape="rect" id="node33" title=" " alt="" coords="1797,199,1934,240"/>
-<area shape="rect" id="node34" title=" " alt="" coords="1958,206,1997,233"/>
-<area shape="rect" id="node35" href="$d2/d5c/tesseract__scene__graph_2include_2tesseract__scene__graph_2link_8h.html" title=" " alt="" coords="2021,199,2179,240"/>
-<area shape="rect" id="node37" href="$d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="1956,288,2113,329"/>
-<area shape="rect" id="node36" title=" " alt="" coords="2207,377,2297,404"/>
-<area shape="rect" id="node38" href="$d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="1644,288,1780,329"/>
+<area shape="rect" id="node24" title=" " alt="" coords="465,459,559,486"/>
+<area shape="rect" id="node25" title=" " alt="" coords="583,452,710,493"/>
+<area shape="rect" id="node26" title=" " alt="" coords="734,452,861,493"/>
+<area shape="rect" id="node27" title=" " alt="" coords="885,452,1011,493"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1035,452,1162,493"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1186,452,1321,493"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1077,199,1229,240"/>
+<area shape="rect" id="node32" title=" " alt="" coords="1254,199,1394,240"/>
+<area shape="rect" id="node33" title=" " alt="" coords="1418,206,1593,233"/>
+<area shape="rect" id="node34" title=" " alt="" coords="1617,199,1772,240"/>
+<area shape="rect" id="node35" title=" " alt="" coords="1797,199,1934,240"/>
+<area shape="rect" id="node36" title=" " alt="" coords="1958,206,1997,233"/>
+<area shape="rect" id="node37" href="$d2/d5c/tesseract__scene__graph_2include_2tesseract__scene__graph_2link_8h.html" title=" " alt="" coords="2021,199,2179,240"/>
+<area shape="rect" id="node39" href="$d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="1956,288,2113,329"/>
+<area shape="rect" id="node38" title=" " alt="" coords="2207,377,2297,404"/>
+<area shape="rect" id="node40" href="$d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="1644,288,1780,329"/>
 </map>

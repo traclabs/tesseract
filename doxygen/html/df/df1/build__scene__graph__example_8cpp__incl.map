@@ -4,7 +4,7 @@
 <area shape="rect" id="node3" title=" " alt="" coords="1079,295,1247,322"/>
 <area shape="rect" id="node4" title=" " alt="" coords="1271,295,1343,322"/>
 <area shape="rect" id="node5" href="$d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="606,109,763,151"/>
-<area shape="rect" id="node31" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1703,206,1874,233"/>
+<area shape="rect" id="node33" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1703,206,1874,233"/>
 <area shape="rect" id="node6" title=" " alt="" coords="979,199,1131,240"/>
 <area shape="rect" id="node7" title=" " alt="" coords="1156,199,1296,240"/>
 <area shape="rect" id="node8" title=" " alt="" coords="1320,206,1494,233"/>
@@ -26,15 +26,17 @@
 <area shape="rect" id="node24" title=" " alt="" coords="1482,377,1596,404"/>
 <area shape="rect" id="node25" title=" " alt="" coords="1208,377,1348,404"/>
 <area shape="rect" id="node26" href="$dd/d50/serialization_8h.html" title="Additional Boost serialization wrappers." alt="" coords="1877,377,2092,404"/>
-<area shape="rect" id="node27" title=" " alt="" coords="2146,459,2241,486"/>
-<area shape="rect" id="node28" title=" " alt="" coords="1694,452,1821,493"/>
-<area shape="rect" id="node29" title=" " alt="" coords="1845,452,1972,493"/>
-<area shape="rect" id="node30" title=" " alt="" coords="1996,452,2122,493"/>
-<area shape="rect" id="node32" title=" " alt="" coords="1876,295,1946,322"/>
-<area shape="rect" id="node33" title=" " alt="" coords="1970,295,2049,322"/>
-<area shape="rect" id="node34" title=" " alt="" coords="2073,295,2138,322"/>
-<area shape="rect" id="node35" title=" " alt="" coords="2163,295,2230,322"/>
-<area shape="rect" id="node36" title=" " alt="" coords="2254,295,2309,322"/>
-<area shape="rect" id="node37" title=" " alt="" coords="2334,295,2408,322"/>
-<area shape="rect" id="node38" title=" " alt="" coords="1672,295,1750,322"/>
+<area shape="rect" id="node27" title=" " alt="" coords="2305,459,2400,486"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1544,452,1670,493"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1694,452,1821,493"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1845,452,1972,493"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1996,452,2122,493"/>
+<area shape="rect" id="node32" title=" " alt="" coords="2146,452,2281,493"/>
+<area shape="rect" id="node34" title=" " alt="" coords="1876,295,1946,322"/>
+<area shape="rect" id="node35" title=" " alt="" coords="1970,295,2049,322"/>
+<area shape="rect" id="node36" title=" " alt="" coords="2073,295,2138,322"/>
+<area shape="rect" id="node37" title=" " alt="" coords="2163,295,2230,322"/>
+<area shape="rect" id="node38" title=" " alt="" coords="2254,295,2309,322"/>
+<area shape="rect" id="node39" title=" " alt="" coords="2334,295,2408,322"/>
+<area shape="rect" id="node40" title=" " alt="" coords="1672,295,1750,322"/>
 </map>

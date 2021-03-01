@@ -1,6 +1,6 @@
 <map id="tesseract_common/include/tesseract_common/utils.h" name="tesseract_common/include/tesseract_common/utils.h">
 <area shape="rect" id="node1" title="Common Tesseract Utility Functions." alt="" coords="648,5,827,47"/>
-<area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="562,251,753,278"/>
+<area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="391,251,582,278"/>
 <area shape="rect" id="node3" title=" " alt="" coords="23,169,81,196"/>
 <area shape="rect" id="node4" title=" " alt="" coords="477,95,531,121"/>
 <area shape="rect" id="node5" title=" " alt="" coords="556,95,625,121"/>
@@ -20,8 +20,10 @@
 <area shape="rect" id="node19" title=" " alt="" coords="517,169,627,196"/>
 <area shape="rect" id="node20" title=" " alt="" coords="651,169,791,196"/>
 <area shape="rect" id="node21" href="$dd/d50/serialization_8h.html" title="Additional Boost serialization wrappers." alt="" coords="867,169,1082,196"/>
-<area shape="rect" id="node22" title=" " alt="" coords="927,251,1022,278"/>
-<area shape="rect" id="node23" title=" " alt="" coords="1046,244,1173,285"/>
-<area shape="rect" id="node24" title=" " alt="" coords="1197,244,1323,285"/>
-<area shape="rect" id="node25" title=" " alt="" coords="777,244,903,285"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1066,251,1161,278"/>
+<area shape="rect" id="node23" title=" " alt="" coords="1185,244,1311,285"/>
+<area shape="rect" id="node24" title=" " alt="" coords="1335,244,1462,285"/>
+<area shape="rect" id="node25" title=" " alt="" coords="606,244,733,285"/>
+<area shape="rect" id="node26" title=" " alt="" coords="757,244,883,285"/>
+<area shape="rect" id="node27" title=" " alt="" coords="907,244,1042,285"/>
 </map>

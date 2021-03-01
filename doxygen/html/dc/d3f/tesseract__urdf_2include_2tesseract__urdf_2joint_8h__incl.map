@@ -5,13 +5,13 @@
 <area shape="rect" id="node8" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1352,177,1523,203"/>
 <area shape="rect" id="node15" title=" " alt="" coords="1083,348,1197,375"/>
 <area shape="rect" id="node18" title=" " alt="" coords="878,266,957,293"/>
-<area shape="rect" id="node30" href="$d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="195,259,352,300"/>
-<area shape="rect" id="node32" href="$d5/dc8/calibration_8h.html" title="Parse calibration from xml string." alt="" coords="47,177,225,203"/>
-<area shape="rect" id="node33" href="$d3/da1/dynamics_8h.html" title="Parse dynamics from xml string." alt="" coords="250,177,425,203"/>
-<area shape="rect" id="node34" href="$d9/d86/limits_8h.html" title="Parse limits from xml string." alt="" coords="770,177,921,203"/>
-<area shape="rect" id="node35" href="$db/dc4/mimic_8h.html" title="Parse mimic from xml string." alt="" coords="996,95,1151,121"/>
-<area shape="rect" id="node36" href="$d7/d09/origin_8h.html" title="Parse origin from xml string." alt="" coords="1441,95,1591,121"/>
-<area shape="rect" id="node38" href="$de/dd2/safety__controller_8h.html" title="Parse safety_controller from xml string." alt="" coords="601,169,745,211"/>
+<area shape="rect" id="node32" href="$d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="195,259,352,300"/>
+<area shape="rect" id="node34" href="$d5/dc8/calibration_8h.html" title="Parse calibration from xml string." alt="" coords="47,177,225,203"/>
+<area shape="rect" id="node35" href="$d3/da1/dynamics_8h.html" title="Parse dynamics from xml string." alt="" coords="250,177,425,203"/>
+<area shape="rect" id="node36" href="$d9/d86/limits_8h.html" title="Parse limits from xml string." alt="" coords="770,177,921,203"/>
+<area shape="rect" id="node37" href="$db/dc4/mimic_8h.html" title="Parse mimic from xml string." alt="" coords="996,95,1151,121"/>
+<area shape="rect" id="node38" href="$d7/d09/origin_8h.html" title="Parse origin from xml string." alt="" coords="1517,95,1667,121"/>
+<area shape="rect" id="node40" href="$de/dd2/safety__controller_8h.html" title="Parse safety_controller from xml string." alt="" coords="601,169,745,211"/>
 <area shape="rect" id="node4" title=" " alt="" coords="350,348,405,375"/>
 <area shape="rect" id="node5" title=" " alt="" coords="570,348,649,375"/>
 <area shape="rect" id="node6" title=" " alt="" coords="673,348,741,375"/>
@@ -31,10 +31,12 @@
 <area shape="rect" id="node23" title=" " alt="" coords="2005,348,2115,375"/>
 <area shape="rect" id="node24" title=" " alt="" coords="2139,348,2279,375"/>
 <area shape="rect" id="node25" href="$dd/d50/serialization_8h.html" title="Additional Boost serialization wrappers." alt="" coords="2587,348,2802,375"/>
-<area shape="rect" id="node26" title=" " alt="" coords="2714,430,2809,457"/>
-<area shape="rect" id="node27" title=" " alt="" coords="2833,423,2959,464"/>
-<area shape="rect" id="node28" title=" " alt="" coords="2413,423,2539,464"/>
-<area shape="rect" id="node29" title=" " alt="" coords="2563,423,2690,464"/>
-<area shape="rect" id="node31" title=" " alt="" coords="235,348,325,375"/>
-<area shape="rect" id="node37" title=" " alt="" coords="1547,177,1717,203"/>
+<area shape="rect" id="node26" title=" " alt="" coords="2863,430,2958,457"/>
+<area shape="rect" id="node27" title=" " alt="" coords="2982,423,3109,464"/>
+<area shape="rect" id="node28" title=" " alt="" coords="2253,423,2379,464"/>
+<area shape="rect" id="node29" title=" " alt="" coords="2403,423,2530,464"/>
+<area shape="rect" id="node30" title=" " alt="" coords="2554,423,2681,464"/>
+<area shape="rect" id="node31" title=" " alt="" coords="2705,423,2839,464"/>
+<area shape="rect" id="node33" title=" " alt="" coords="235,348,325,375"/>
+<area shape="rect" id="node39" title=" " alt="" coords="1547,177,1717,203"/>
 </map>
