@@ -271,6 +271,8 @@ bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a7db65379bfadb9
 \item 
 \mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_a77ed388347f257b348dbc6228f4595aa}{get\+Init\+Commands}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a8f29a2073209f6d445be00acb2f4a13a}{tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::\+Const\+Ptr}} \&srdf\+\_\+model=nullptr)
 \item 
+bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a17d4969997bc7c15a6880797b448ed86}{apply\+Commands\+Helper}} (const \mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} \&commands)
+\begin{DoxyCompactList}\small\item\em Apply \mbox{\hyperlink{classtesseract__environment_1_1Command}{Command}} Helper which does not lock. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a2b8bd838a8a4f8c353894d119c604c10}{apply\+Add\+Command}} (\mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand_a7335730d8329f71b02d60c612c58c4fa}{Add\+Link\+Command\+::\+Const\+Ptr}} cmd)
 \item 
 bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a25e6b27aa43c5753a05d08c6ef520719}{apply\+Move\+Link\+Command}} (const \mbox{\hyperlink{classtesseract__environment_1_1MoveLinkCommand_aff5435d35b419004a90188018ab141c5}{Move\+Link\+Command\+::\+Const\+Ptr}} \&cmd)
@@ -617,6 +619,16 @@ Applies the commands to the environment.
 \begin{DoxyReturn}{Returns}
 true if successful. If returned false, then only a partial set of commands have been applied. Call get\+Command\+History to check. Some commands are not checked for success 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a17d4969997bc7c15a6880797b448ed86}\label{classtesseract__environment_1_1Environment_a17d4969997bc7c15a6880797b448ed86}} 
+\index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!applyCommandsHelper@{applyCommandsHelper}}
+\index{applyCommandsHelper@{applyCommandsHelper}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
+\doxysubsubsection{\texorpdfstring{applyCommandsHelper()}{applyCommandsHelper()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Environment\+::apply\+Commands\+Helper (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} \&}]{commands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Apply \mbox{\hyperlink{classtesseract__environment_1_1Command}{Command}} Helper which does not lock. 
+
 \mbox{\Hypertarget{classtesseract__environment_1_1Environment_a41c01098b672358847478f9d32115d1e}\label{classtesseract__environment_1_1Environment_a41c01098b672358847478f9d32115d1e}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!applyMoveJointCommand@{applyMoveJointCommand}}
 \index{applyMoveJointCommand@{applyMoveJointCommand}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}

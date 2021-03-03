@@ -185,9 +185,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a56c780b4b3867d586c638791ae2c44f0"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a56c780b4b3867d586c638791ae2c44f0">getSolverName</a> () const override</td></tr>
 <tr class="memdesc:a56c780b4b3867d586c638791ae2c44f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the solver. Recommned using the name of the class.  <a href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a56c780b4b3867d586c638791ae2c44f0">More...</a><br /></td></tr>
 <tr class="separator:a56c780b4b3867d586c638791ae2c44f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e05ec852337236aecb9a5d89739abb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a5e05ec852337236aecb9a5d89739abb3">init</a> (<a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> scene_graph, <a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a189ebd423f38f83720d58a922d049688">InverseKinematics::Ptr</a> manipulator, double manipulator_reach, <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#abdb52d493e8f0c584be778ddb193ed46">ForwardKinematics::Ptr</a> positioner, Eigen::VectorXd positioner_sample_resolution, std::string name)</td></tr>
-<tr class="memdesc:a5e05ec852337236aecb9a5d89739abb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes Inverse Kinematics for a robot on a positioner.  <a href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a5e05ec852337236aecb9a5d89739abb3">More...</a><br /></td></tr>
-<tr class="separator:a5e05ec852337236aecb9a5d89739abb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c542195de61fccefba99002d1ea9ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a57c542195de61fccefba99002d1ea9ae">init</a> (<a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> scene_graph, <a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a189ebd423f38f83720d58a922d049688">InverseKinematics::Ptr</a> manipulator, double manipulator_reach, <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#abdb52d493e8f0c584be778ddb193ed46">ForwardKinematics::Ptr</a> positioner, Eigen::VectorXd positioner_sample_resolution, std::string name, std::string solver_name=&quot;RobotOnPositionerInvKin&quot;)</td></tr>
+<tr class="memdesc:a57c542195de61fccefba99002d1ea9ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes Inverse Kinematics for a robot on a positioner.  <a href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a57c542195de61fccefba99002d1ea9ae">More...</a><br /></td></tr>
+<tr class="separator:a57c542195de61fccefba99002d1ea9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af09d4c8cc8c1c0f8ee0b8f8e690c6a02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#af09d4c8cc8c1c0f8ee0b8f8e690c6a02">checkInitialized</a> () const</td></tr>
 <tr class="memdesc:af09d4c8cc8c1c0f8ee0b8f8e690c6a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if kinematics has been initialized.  <a href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#af09d4c8cc8c1c0f8ee0b8f8e690c6a02">More...</a><br /></td></tr>
 <tr class="separator:af09d4c8cc8c1c0f8ee0b8f8e690c6a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -541,7 +541,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if kinematics has been initialized. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a5e05ec852337236aecb9a5d89739abb3" title="Initializes Inverse Kinematics for a robot on a positioner.">init()</a> has completed successfully </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a57c542195de61fccefba99002d1ea9ae" title="Initializes Inverse Kinematics for a robot on a positioner.">init()</a> has completed successfully </dd></dl>
 
 </div>
 </div>
@@ -938,12 +938,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This used by the clone method. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a5e05ec852337236aecb9a5d89739abb3" title="Initializes Inverse Kinematics for a robot on a positioner.">init()</a> completes successfully </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a57c542195de61fccefba99002d1ea9ae" title="Initializes Inverse Kinematics for a robot on a positioner.">init()</a> completes successfully </dd></dl>
 
 </div>
 </div>
-<a id="a5e05ec852337236aecb9a5d89739abb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e05ec852337236aecb9a5d89739abb3">&#9670;&nbsp;</a></span>init() <span class="overload">[2/2]</span></h2>
+<a id="a57c542195de61fccefba99002d1ea9ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c542195de61fccefba99002d1ea9ae">&#9670;&nbsp;</a></span>init() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -982,7 +982,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>solver_name</em> = <code>&quot;RobotOnPositionerInvKin&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1001,10 +1007,11 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">positioner</td><td></td></tr>
     <tr><td class="paramname">positioner_sample_resolution</td><td></td></tr>
     <tr><td class="paramname">name</td><td>The name of the kinematic object </td></tr>
+    <tr><td class="paramname">solver_name</td><td>The name given to the solver. This is exposed so you may have same solver with different sampling resolutions </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a5e05ec852337236aecb9a5d89739abb3" title="Initializes Inverse Kinematics for a robot on a positioner.">init()</a> completes successfully </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <a class="el" href="../../d6/d2a/classtesseract__kinematics_1_1RobotOnPositionerInvKin.html#a57c542195de61fccefba99002d1ea9ae" title="Initializes Inverse Kinematics for a robot on a positioner.">init()</a> completes successfully </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000025">Todo:</a></b></dt><dd>Check if the manipulator base link is the child of the positioner tip link. </dd></dl>
 
 </div>
@@ -1537,7 +1544,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 3 2021 02:56:48 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Mar 3 2021 15:44:02 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

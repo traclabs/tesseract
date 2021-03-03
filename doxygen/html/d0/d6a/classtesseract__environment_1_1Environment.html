@@ -449,6 +449,9 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a7db65379bfadb980152ea19a3b22d6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ed388347f257b348dbc6228f4595aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d5f/namespacetesseract__environment.html#acb95740502ec41d80a94a7631d4b7a3c">Commands</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a77ed388347f257b348dbc6228f4595aa">getInitCommands</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">tesseract_scene_graph::SceneGraph</a> &amp;scene_graph, const <a class="el" href="../../de/d87/classtesseract__scene__graph_1_1SRDFModel.html#a8f29a2073209f6d445be00acb2f4a13a">tesseract_scene_graph::SRDFModel::ConstPtr</a> &amp;srdf_model=nullptr)</td></tr>
 <tr class="separator:a77ed388347f257b348dbc6228f4595aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d4969997bc7c15a6880797b448ed86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a17d4969997bc7c15a6880797b448ed86">applyCommandsHelper</a> (const <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#acb95740502ec41d80a94a7631d4b7a3c">Commands</a> &amp;commands)</td></tr>
+<tr class="memdesc:a17d4969997bc7c15a6880797b448ed86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply <a class="el" href="../../d0/d1c/classtesseract__environment_1_1Command.html">Command</a> Helper which does not lock.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a17d4969997bc7c15a6880797b448ed86">More...</a><br /></td></tr>
+<tr class="separator:a17d4969997bc7c15a6880797b448ed86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b8bd838a8a4f8c353894d119c604c10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a2b8bd838a8a4f8c353894d119c604c10">applyAddCommand</a> (<a class="el" href="../../de/d3b/classtesseract__environment_1_1AddLinkCommand.html#a7335730d8329f71b02d60c612c58c4fa">AddLinkCommand::ConstPtr</a> cmd)</td></tr>
 <tr class="separator:a2b8bd838a8a4f8c353894d119c604c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25e6b27aa43c5753a05d08c6ef520719"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a25e6b27aa43c5753a05d08c6ef520719">applyMoveLinkCommand</a> (const <a class="el" href="../../de/d48/classtesseract__environment_1_1MoveLinkCommand.html#aff5435d35b419004a90188018ab141c5">MoveLinkCommand::ConstPtr</a> &amp;cmd)</td></tr>
@@ -1309,6 +1312,34 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successful. If returned false, then only a partial set of commands have been applied. Call getCommandHistory to check. Some commands are not checked for success </dd></dl>
+
+</div>
+</div>
+<a id="a17d4969997bc7c15a6880797b448ed86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d4969997bc7c15a6880797b448ed86">&#9670;&nbsp;</a></span>applyCommandsHelper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tesseract_environment::Environment::applyCommandsHelper </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d5f/namespacetesseract__environment.html#acb95740502ec41d80a94a7631d4b7a3c">Commands</a> &amp;&#160;</td>
+          <td class="paramname"><em>commands</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply <a class="el" href="../../d0/d1c/classtesseract__environment_1_1Command.html">Command</a> Helper which does not lock. </p>
 
 </div>
 </div>
@@ -4651,7 +4682,7 @@ template&lt;typename S &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 3 2021 02:56:48 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Mar 3 2021 15:44:02 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
