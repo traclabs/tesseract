@@ -13,6 +13,8 @@ std\+::string \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_a78
 \item 
 \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a4421b8568bd664cf203613a054e1847b}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Ptr}} \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_a93b7d3c0c55561e1a3efb94b5c7aecf6}{get\+Scene\+Graph\+ABB}} ()
 \item 
+\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a4421b8568bd664cf203613a054e1847b}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Ptr}} \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_a2b8ac4004ec4edd0f6f824faf92d1c23}{get\+Scene\+Graph\+UR}} (const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{tesseract\+\_\+kinematics\+::\+URParameters}} \&params)
+\item 
 \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_ade51b207cb4348410d22b4b5012d9a28}{get\+Target\+Limits}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&scene\+\_\+graph, const std\+::vector$<$ std\+::string $>$ \&joint\+\_\+names)
 \item 
 void \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_a74590ea1a69437948e3ac53c7979006f}{run\+Jacobian\+Test}} (\mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics}} \&kin, const Eigen\+::\+Vector\+Xd \&jvals, const std\+::string \&link\+\_\+name, const Eigen\+::\+Vector3d \&link\+\_\+point, const Eigen\+::\+Isometry3d \&change\+\_\+base)
@@ -38,6 +40,8 @@ void \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_a2999e3ae77e
 void \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_ab3793ff06ab67d6a5cdf8ef07c05ffa8}{run\+Active\+Link\+Names\+IIWATest}} (const \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}} \&kin)
 \item 
 void \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_aaa1724760c561806dba0c7f86405f82d}{run\+Active\+Link\+Names\+ABBTest}} (const \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}} \&kin)
+\item 
+void \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_a9248cd59ecec049d07b89770be44b7b1}{run\+Active\+Link\+Names\+URTest}} (const \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}} \&kin)
 \item 
 void \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_a07f82a121fd94bc7bb73869f44e57356}{run\+Active\+Link\+Names\+ABBOn\+Positioner\+Test}} (const \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}} \&kin)
 \item 
@@ -71,6 +75,12 @@ void \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_a3110331c6cc
 \index{getSceneGraphIIWA@{getSceneGraphIIWA}!tesseract\_kinematics::test\_suite@{tesseract\_kinematics::test\_suite}}
 \doxysubsubsection{\texorpdfstring{getSceneGraphIIWA()}{getSceneGraphIIWA()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a4421b8568bd664cf203613a054e1847b}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Ptr}} tesseract\+\_\+kinematics\+::test\+\_\+suite\+::get\+Scene\+Graph\+IIWA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetesseract__kinematics_1_1test__suite_a2b8ac4004ec4edd0f6f824faf92d1c23}\label{namespacetesseract__kinematics_1_1test__suite_a2b8ac4004ec4edd0f6f824faf92d1c23}} 
+\index{tesseract\_kinematics::test\_suite@{tesseract\_kinematics::test\_suite}!getSceneGraphUR@{getSceneGraphUR}}
+\index{getSceneGraphUR@{getSceneGraphUR}!tesseract\_kinematics::test\_suite@{tesseract\_kinematics::test\_suite}}
+\doxysubsubsection{\texorpdfstring{getSceneGraphUR()}{getSceneGraphUR()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a4421b8568bd664cf203613a054e1847b}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Ptr}} tesseract\+\_\+kinematics\+::test\+\_\+suite\+::get\+Scene\+Graph\+UR (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{tesseract\+\_\+kinematics\+::\+URParameters}} \&}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \mbox{\Hypertarget{namespacetesseract__kinematics_1_1test__suite_ade51b207cb4348410d22b4b5012d9a28}\label{namespacetesseract__kinematics_1_1test__suite_ade51b207cb4348410d22b4b5012d9a28}} 
 \index{tesseract\_kinematics::test\_suite@{tesseract\_kinematics::test\_suite}!getTargetLimits@{getTargetLimits}}
@@ -113,6 +123,12 @@ void \mbox{\hyperlink{namespacetesseract__kinematics_1_1test__suite_a3110331c6cc
 \index{runActiveLinkNamesIIWATest@{runActiveLinkNamesIIWATest}!tesseract\_kinematics::test\_suite@{tesseract\_kinematics::test\_suite}}
 \doxysubsubsection{\texorpdfstring{runActiveLinkNamesIIWATest()}{runActiveLinkNamesIIWATest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void tesseract\+\_\+kinematics\+::test\+\_\+suite\+::run\+Active\+Link\+Names\+IIWATest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}} \&}]{kin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetesseract__kinematics_1_1test__suite_a9248cd59ecec049d07b89770be44b7b1}\label{namespacetesseract__kinematics_1_1test__suite_a9248cd59ecec049d07b89770be44b7b1}} 
+\index{tesseract\_kinematics::test\_suite@{tesseract\_kinematics::test\_suite}!runActiveLinkNamesURTest@{runActiveLinkNamesURTest}}
+\index{runActiveLinkNamesURTest@{runActiveLinkNamesURTest}!tesseract\_kinematics::test\_suite@{tesseract\_kinematics::test\_suite}}
+\doxysubsubsection{\texorpdfstring{runActiveLinkNamesURTest()}{runActiveLinkNamesURTest()}}
+{\footnotesize\ttfamily void tesseract\+\_\+kinematics\+::test\+\_\+suite\+::run\+Active\+Link\+Names\+URTest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}} \&}]{kin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \mbox{\Hypertarget{namespacetesseract__kinematics_1_1test__suite_afaa1231ab6cd5746a727fe5466620d28}\label{namespacetesseract__kinematics_1_1test__suite_afaa1231ab6cd5746a727fe5466620d28}} 
 \index{tesseract\_kinematics::test\_suite@{tesseract\_kinematics::test\_suite}!runFwdKinAllPosesIIWATest@{runFwdKinAllPosesIIWATest}}

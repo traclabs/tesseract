@@ -1,0 +1,10 @@
+<map id="tesseract_kinematics::URInvKin" name="tesseract_kinematics::URInvKin">
+<area shape="rect" id="node1" title="Universal Robot Inverse Kinematics Implmentation." alt="" coords="781,175,928,216"/>
+<area shape="rect" id="node2" href="$de/d1c/classtesseract__kinematics_1_1InverseKinematics.html" title="Inverse kinematics functions." alt="" coords="443,5,589,47"/>
+<area shape="rect" id="node3" href="$d2/d94/structtesseract__common_1_1KinematicLimits.html" title="Store kinematic limits." alt="" coords="417,71,615,112"/>
+<area shape="rect" id="node4" title=" " alt="" coords="180,78,256,105"/>
+<area shape="rect" id="node5" title=" " alt="" coords="179,206,257,233"/>
+<area shape="rect" id="node8" title=" " alt="" coords="436,243,596,270"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,199,129,240"/>
+<area shape="rect" id="node7" href="$d9/da6/structtesseract__kinematics_1_1URParameters.html" title="The Universal Robot kinematic parameters." alt="" coords="443,295,589,336"/>
+</map>

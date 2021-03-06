@@ -20,6 +20,8 @@ class \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositioner
 \begin{DoxyCompactList}\small\item\em Robot With External Positioner Inverse kinematic implementation. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__kinematics_1_1RobotOnPositionerInvKin}{Robot\+On\+Positioner\+Inv\+Kin}}
 \begin{DoxyCompactList}\small\item\em Robot on Positioner Inverse kinematic implementation. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}}
+\begin{DoxyCompactList}\small\item\em The Universal Robot kinematic parameters. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__kinematics_1_1IKFastInvKin}{IKFast\+Inv\+Kin}}
 \begin{DoxyCompactList}\small\item\em IKFast Inverse Kinematics Implmentation. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinChain}{KDLFwd\+Kin\+Chain}}
@@ -41,7 +43,9 @@ class \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNRFactory}{KD
 struct \mbox{\hyperlink{structtesseract__kinematics_1_1KDLChainData}{KDLChain\+Data}}
 \begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{structtesseract__kinematics_1_1KDLChainData}{KDLChain\+Data}} struct. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__kinematics_1_1OPWInvKin}{OPWInv\+Kin}}
-\begin{DoxyCompactList}\small\item\em OPW Inverse Kinematics Implmentation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em OPW Inverse Kinematics Implmentation. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classtesseract__kinematics_1_1URInvKin}{URInv\+Kin}}
+\begin{DoxyCompactList}\small\item\em Universal Robot Inverse Kinematics Implmentation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
@@ -69,6 +73,12 @@ enum class \mbox{\hyperlink{namespacetesseract__kinematics_a2ff85855971411dd8a44
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+static const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}} \mbox{\hyperlink{namespacetesseract__kinematics_a67562660c68afc07ad2721dd7beb8624}{UR10\+Parameters}} (0.\+1273, -\/0.\+612, -\/0.\+5723, 0.\+163941, 0.\+1157, 0.\+0922)
+\begin{DoxyCompactList}\small\item\em The UR10 kinematic parameters. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}} \mbox{\hyperlink{namespacetesseract__kinematics_a2829ff8fad3f34c3cca260f69559ba55}{UR5\+Parameters}} (0.\+089159, -\/0.\+42500, -\/0.\+39225, 0.\+10915, 0.\+09465, 0.\+0823)
+\begin{DoxyCompactList}\small\item\em The UR5 kinematic parameters. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}} \mbox{\hyperlink{namespacetesseract__kinematics_ad6a45008fdd6109d141014bf486961d2}{UR3\+Parameters}} (0.\+1519, -\/0.\+24365, -\/0.\+21325, 0.\+11235, 0.\+08535, 0.\+0819)
+\begin{DoxyCompactList}\small\item\em The UR3 kinematic parameters. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{namespacetesseract__kinematics_aa818d0b8ef2f027488fd09c1aa7df4e0}{jacobian\+Change\+Base}} (Eigen\+::\+Ref$<$ Eigen\+::\+Matrix\+Xd $>$ jacobian, const Eigen\+::\+Isometry3d \&change\+\_\+base)
 \begin{DoxyCompactList}\small\item\em Change the base coordinate system of the jacobian. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{namespacetesseract__kinematics_a6b45261aabf9d9c3c6ba049bdf52d715}{jacobian\+Change\+Ref\+Point}} (Eigen\+::\+Ref$<$ Eigen\+::\+Matrix\+Xd $>$ jacobian, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector3d $>$ \&ref\+\_\+point)
@@ -110,7 +120,9 @@ void \mbox{\hyperlink{namespacetesseract__kinematics_acc243b4eaa4f3dc348e7d41b10
 bool \mbox{\hyperlink{namespacetesseract__kinematics_a870155d00a26ef465e6abf598ca5bdb7}{parse\+Scene\+Graph}} (\mbox{\hyperlink{structtesseract__kinematics_1_1KDLChainData}{KDLChain\+Data}} \&results, const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&chains)
 \begin{DoxyCompactList}\small\item\em Parse KDL chain data from the scene graph. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__kinematics_a2155d49cf12de450b17aa74b4333755c}{parse\+Scene\+Graph}} (\mbox{\hyperlink{structtesseract__kinematics_1_1KDLChainData}{KDLChain\+Data}} \&results, const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const std\+::string \&base\+\_\+name, const std\+::string \&tip\+\_\+name)
-\begin{DoxyCompactList}\small\item\em Parse KDL chain data from the scene graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Parse KDL chain data from the scene graph. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacetesseract__kinematics_ad68b09c7746fe12cb742749614122636}{inverse}} (const Eigen\+::\+Isometry3d \&T, const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}} \&params, double $\ast$q\+\_\+sols, double q6\+\_\+des)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Typedef Documentation}
@@ -358,6 +370,12 @@ This take an array of floats and modifies them in place to be between \mbox{[}-\
 {\em dof} & The length of the float array \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{namespacetesseract__kinematics_ad68b09c7746fe12cb742749614122636}\label{namespacetesseract__kinematics_ad68b09c7746fe12cb742749614122636}} 
+\index{tesseract\_kinematics@{tesseract\_kinematics}!inverse@{inverse}}
+\index{inverse@{inverse}!tesseract\_kinematics@{tesseract\_kinematics}}
+\doxysubsubsection{\texorpdfstring{inverse()}{inverse()}}
+{\footnotesize\ttfamily int tesseract\+\_\+kinematics\+::inverse (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Isometry3d \&}]{T,  }\item[{const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}} \&}]{params,  }\item[{double $\ast$}]{q\+\_\+sols,  }\item[{double}]{q6\+\_\+des }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{namespacetesseract__kinematics_a2f74af65eeb166856e00a64254da7ee8}\label{namespacetesseract__kinematics_a2f74af65eeb166856e00a64254da7ee8}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!isValid@{isValid}}
 \index{isValid@{isValid}!tesseract\_kinematics@{tesseract\_kinematics}}
@@ -614,3 +632,33 @@ Solve equation Ax=b for x Use this SVD to compute A+ (pseudoinverse of A). Weigh
 \begin{DoxyReturn}{Returns}
 True if solver completes properly 
 \end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__kinematics_a67562660c68afc07ad2721dd7beb8624}\label{namespacetesseract__kinematics_a67562660c68afc07ad2721dd7beb8624}} 
+\index{tesseract\_kinematics@{tesseract\_kinematics}!UR10Parameters@{UR10Parameters}}
+\index{UR10Parameters@{UR10Parameters}!tesseract\_kinematics@{tesseract\_kinematics}}
+\doxysubsubsection{\texorpdfstring{UR10Parameters()}{UR10Parameters()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}} tesseract\+\_\+kinematics\+::\+UR10\+Parameters (\begin{DoxyParamCaption}\item[{0.}]{1273,  }\item[{-\/0.}]{612,  }\item[{-\/0.}]{5723,  }\item[{0.}]{163941,  }\item[{0.}]{1157,  }\item[{0.}]{0922 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The UR10 kinematic parameters. 
+
+\mbox{\Hypertarget{namespacetesseract__kinematics_ad6a45008fdd6109d141014bf486961d2}\label{namespacetesseract__kinematics_ad6a45008fdd6109d141014bf486961d2}} 
+\index{tesseract\_kinematics@{tesseract\_kinematics}!UR3Parameters@{UR3Parameters}}
+\index{UR3Parameters@{UR3Parameters}!tesseract\_kinematics@{tesseract\_kinematics}}
+\doxysubsubsection{\texorpdfstring{UR3Parameters()}{UR3Parameters()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}} tesseract\+\_\+kinematics\+::\+UR3\+Parameters (\begin{DoxyParamCaption}\item[{0.}]{1519,  }\item[{-\/0.}]{24365,  }\item[{-\/0.}]{21325,  }\item[{0.}]{11235,  }\item[{0.}]{08535,  }\item[{0.}]{0819 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The UR3 kinematic parameters. 
+
+\mbox{\Hypertarget{namespacetesseract__kinematics_a2829ff8fad3f34c3cca260f69559ba55}\label{namespacetesseract__kinematics_a2829ff8fad3f34c3cca260f69559ba55}} 
+\index{tesseract\_kinematics@{tesseract\_kinematics}!UR5Parameters@{UR5Parameters}}
+\index{UR5Parameters@{UR5Parameters}!tesseract\_kinematics@{tesseract\_kinematics}}
+\doxysubsubsection{\texorpdfstring{UR5Parameters()}{UR5Parameters()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}} tesseract\+\_\+kinematics\+::\+UR5\+Parameters (\begin{DoxyParamCaption}\item[{0.}]{089159,  }\item[{-\/0.}]{42500,  }\item[{-\/0.}]{39225,  }\item[{0.}]{10915,  }\item[{0.}]{09465,  }\item[{0.}]{0823 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The UR5 kinematic parameters. 
+
