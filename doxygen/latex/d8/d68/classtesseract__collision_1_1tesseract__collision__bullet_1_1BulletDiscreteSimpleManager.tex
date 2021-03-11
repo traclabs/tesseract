@@ -79,13 +79,13 @@ void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_
 \begin{DoxyCompactList}\small\item\em Set which collision objects can move. \end{DoxyCompactList}\item 
 const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_ac76466d1fe8c87fffe68b6a30d773e7b}{get\+Active\+Collision\+Objects}} () const override
 \begin{DoxyCompactList}\small\item\em Get which collision objects can move. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_af7767c2d7856746ceb46be75409bd03e}{set\+Collision\+Margin\+Data}} (\mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} collision\+\_\+margin\+\_\+data) override
+void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a9a7e5ed13f27f40fc7c88767894b1e8b}{set\+Collision\+Margin\+Data}} (\mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} collision\+\_\+margin\+\_\+data, \mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4}{Collision\+Margin\+Override\+Type}} override\+\_\+type=\mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4a560a2dd6f6744646473b3b19e1fe96d7}{Collision\+Margin\+Override\+Type\+::\+REPLACE}}) override
 \begin{DoxyCompactList}\small\item\em Set the contact distance thresholds for which collision should be considered on a per pair basis. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_aabb035347b51c31c9b5eed7868b2592a}{set\+Default\+Collision\+Margin\+Data}} (double default\+\_\+collision\+\_\+margin) override
 \begin{DoxyCompactList}\small\item\em Set the default collision margin. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_ae6538211d34174185318f37e09d3262c}{set\+Pair\+Collision\+Margin\+Data}} (const std\+::string \&name1, const std\+::string \&name2, double collision\+\_\+margin) override
 \begin{DoxyCompactList}\small\item\em Set the margin for a given contact pair. \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a0f4859b84977ef8b82521b4dddabe6e8}{get\+Collision\+Margin\+Data}} () const override
+const \mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a0f4859b84977ef8b82521b4dddabe6e8}{get\+Collision\+Margin\+Data}} () const override
 \begin{DoxyCompactList}\small\item\em Get the contact distance threshold. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a1fb9a59f3f895bd5e47d3e94bce6ebd8}{set\+Is\+Contact\+Allowed\+Fn}} (\mbox{\hyperlink{namespacetesseract__collision_abe7752ce161fbd1139533ac566fec1cb}{Is\+Contact\+Allowed\+Fn}} fn) override
 \begin{DoxyCompactList}\small\item\em Set the active function for determining if two links are allowed to be in collision. \end{DoxyCompactList}\item 
@@ -317,7 +317,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!getCollisionMarginData@{getCollisionMarginData}}
 \index{getCollisionMarginData@{getCollisionMarginData}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{getCollisionMarginData()}{getCollisionMarginData()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::get\+Collision\+Margin\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::get\+Collision\+Margin\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -496,11 +496,11 @@ Set which collision objects can move.
 
 Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_a14111f72aeaa2f22cf79b64e54479fb0}{tesseract\+\_\+collision\+::\+Discrete\+Contact\+Manager}}.
 
-\mbox{\Hypertarget{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_af7767c2d7856746ceb46be75409bd03e}\label{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_af7767c2d7856746ceb46be75409bd03e}} 
+\mbox{\Hypertarget{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a9a7e5ed13f27f40fc7c88767894b1e8b}\label{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a9a7e5ed13f27f40fc7c88767894b1e8b}} 
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!setCollisionMarginData@{setCollisionMarginData}}
 \index{setCollisionMarginData@{setCollisionMarginData}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{setCollisionMarginData()}{setCollisionMarginData()}}
-{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::set\+Collision\+Margin\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}}}]{collision\+\_\+margin\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::set\+Collision\+Margin\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}}}]{collision\+\_\+margin\+\_\+data,  }\item[{\mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4}{Collision\+Margin\+Override\+Type}}}]{override\+\_\+type = {\ttfamily \mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4a560a2dd6f6744646473b3b19e1fe96d7}{Collision\+Margin\+Override\+Type\+::\+REPLACE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -510,10 +510,12 @@ Set the contact distance thresholds for which collision should be considered on 
 \begin{DoxyParams}{Parameters}
 {\em collision\+\_\+margin\+\_\+data} & Contains the data that will replace the current settings \\
 \hline
+{\em override\+\_\+type} & This determines how the provided \mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} is applied \\
+\hline
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_a9dc88c34031b0b4c892cf95a69b5b0b5}{tesseract\+\_\+collision\+::\+Discrete\+Contact\+Manager}}.
+Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_acbd053442a4d591c29aab5be5706ef04}{tesseract\+\_\+collision\+::\+Discrete\+Contact\+Manager}}.
 
 \mbox{\Hypertarget{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a27ae8ba17ca1d5880597690ba706c58c}\label{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a27ae8ba17ca1d5880597690ba706c58c}} 
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!setCollisionObjectsTransform@{setCollisionObjectsTransform}}

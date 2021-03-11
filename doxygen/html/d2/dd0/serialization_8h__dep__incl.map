@@ -1,52 +1,52 @@
 <map id="tesseract_common/include/tesseract_common/serialization.h" name="tesseract_common/include/tesseract_common/serialization.h">
-<area shape="rect" id="node1" title="Additional Boost serialization wrappers." alt="" coords="236,5,455,47"/>
-<area shape="rect" id="node2" href="$d4/dc4/joint__state_8h.html" title="Tesseract Joint State." alt="" coords="104,310,283,366"/>
-<area shape="rect" id="node3" href="$de/df1/tesseract__common__unit_8cpp.html" title=" " alt="" coords="301,429,491,470"/>
-<area shape="rect" id="node11" href="$d5/df5/manipulator__info_8h.html" title=" " alt="" coords="458,317,705,359"/>
-<area shape="rect" id="node18" href="$dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="2302,95,2485,136"/>
-<area shape="rect" id="node4" href="$d7/d5e/trajectory__interpolator_8h.html" title="Trajectory interpolator class." alt="" coords="24,421,227,477"/>
-<area shape="rect" id="node8" href="$d2/d02/visualization_8h.html" title="Visualization Class." alt="" coords="4299,525,4501,581"/>
-<area shape="rect" id="node5" href="$d3/db8/trajectory__player_8h.html" title="Trajectory player class." alt="" coords="248,525,451,581"/>
-<area shape="rect" id="node6" href="$d4/dbe/trajectory__player__unit_8cpp.html" title=" " alt="" coords="92,637,247,693"/>
-<area shape="rect" id="node7" href="$d6/de6/trajectory__interpolator_8cpp.html" title="Trajectory interpolator class." alt="" coords="27,533,223,574"/>
-<area shape="rect" id="node9" href="$d0/de9/tesseract__ignition__visualization_8h.html" title=" " alt="" coords="4941,629,5144,700"/>
-<area shape="rect" id="node10" href="$da/d93/visualization__loader_8h.html" title="Visualization Loader." alt="" coords="4299,637,4501,693"/>
-<area shape="rect" id="node12" href="$d5/dd9/manipulator__info_8cpp.html" title=" " alt="" coords="571,429,725,470"/>
-<area shape="rect" id="node13" href="$de/d26/environment_8h.html" title=" " alt="" coords="4920,421,5123,477"/>
-<area shape="rect" id="node14" href="$d4/d2d/tesseract__environment_2include_2tesseract__environment_2core_2utils_8h.html" title="Tesseract Environment Utility Functions." alt="" coords="4525,525,4728,581"/>
-<area shape="rect" id="node15" href="$dc/d82/environment_8cpp.html" title="Tesseract environment interface implementation." alt="" coords="4541,644,4713,685"/>
-<area shape="rect" id="node16" href="$de/d87/environment__clone__benchmarks_8cpp.html" title=" " alt="" coords="4961,525,5159,581"/>
-<area shape="rect" id="node17" href="$d0/d5b/tesseract__environment__unit_8cpp.html" title=" " alt="" coords="4752,525,4936,581"/>
-<area shape="rect" id="node19" href="$d3/d0c/tesseract__collision_2include_2tesseract__collision_2core_2types_8h.html" title="Tesseracts Collision Common Types." alt="" coords="3123,191,3301,247"/>
-<area shape="rect" id="node31" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1061,199,1240,240"/>
-<area shape="rect" id="node35" href="$dd/dc2/tesseract__kinematics_2include_2tesseract__kinematics_2kdl_2kdl__utils_8h.html" title="Tesseract KDL utility functions." alt="" coords="1531,310,1725,366"/>
-<area shape="rect" id="node37" href="$d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="1297,310,1506,366"/>
-<area shape="rect" id="node38" href="$da/d72/change__pair__contact__margin__command_8h.html" title="Used to change pair contact margin in environment." alt="" coords="1724,184,1927,255"/>
-<area shape="rect" id="node39" href="$d9/dcf/state__solver_8h.html" title="Tesseract Environment State Solver Interface." alt="" coords="4971,310,5173,366"/>
-<area shape="rect" id="node40" href="$de/d88/tesseract__environment_2include_2tesseract__environment_2core_2types_8h.html" title="The tesseract_environment package types." alt="" coords="4781,191,4984,247"/>
-<area shape="rect" id="node41" href="$de/dd2/tesseract__geometry_2include_2tesseract__geometry_2impl_2convex__mesh_8h.html" title="Tesseract Convex Mesh Geometry." alt="" coords="1750,310,1935,366"/>
-<area shape="rect" id="node42" href="$d5/d93/tesseract__geometry_2include_2tesseract__geometry_2impl_2mesh_8h.html" title="Tesseract Mesh Geometry." alt="" coords="1959,310,2145,366"/>
-<area shape="rect" id="node43" href="$df/d8e/mesh__material_8h.html" title="Tesseract Mesh Material read from a mesh file." alt="" coords="2103,191,2289,247"/>
-<area shape="rect" id="node44" href="$d2/d17/tesseract__geometry_2include_2tesseract__geometry_2impl_2sdf__mesh_8h.html" title="Tesseract SDF Mesh Geometry." alt="" coords="2169,310,2354,366"/>
-<area shape="rect" id="node45" href="$d8/dc3/mesh__parser_8h.html" title=" " alt="" coords="2825,310,3010,366"/>
-<area shape="rect" id="node46" href="$d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="2364,191,2559,247"/>
-<area shape="rect" id="node47" href="$d3/da5/inverse__kinematics_8h.html" title="Inverse kinematics functions." alt="" coords="2583,191,2777,247"/>
-<area shape="rect" id="node48" href="$d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="3326,184,3493,255"/>
-<area shape="rect" id="node49" href="$da/dd6/conversions_8h.html" title="A set of conversion between Tesseract and Ignition Robotics objects." alt="" coords="3517,191,3720,247"/>
-<area shape="rect" id="node50" href="$d6/da4/toolpath__marker_8h.html" title=" " alt="" coords="3744,191,3947,247"/>
-<area shape="rect" id="node20" href="$d6/d91/bullet__utils_8h.html" title="Tesseract ROS Bullet environment utility function." alt="" coords="2727,421,2905,477"/>
-<area shape="rect" id="node21" href="$dc/dcd/tesseract__convex__convex__algorithm_8h.html" title=" " alt="" coords="3389,303,3568,373"/>
-<area shape="rect" id="node22" href="$d6/ddf/tesseract__gjk__pair__detector_8h.html" title=" " alt="" coords="3592,303,3771,373"/>
-<area shape="rect" id="node23" href="$dc/d54/common_8h.html" title="This is a collection of common methods." alt="" coords="2597,310,2776,366"/>
-<area shape="rect" id="node24" href="$d2/dde/fcl__utils_8h.html" title="Tesseract ROS FCL Utility Functions." alt="" coords="2932,421,3111,477"/>
-<area shape="rect" id="node26" href="$d6/d0f/continuous__contact__manager_8h.html" title="This is the continuous contact manager base class." alt="" coords="3187,303,3365,373"/>
-<area shape="rect" id="node27" href="$db/d35/discrete__contact__manager_8h.html" title="This is the discrete contact manager base class." alt="" coords="3795,310,4013,366"/>
-<area shape="rect" id="node28" href="$d6/d2d/tesseract__compound__collision__algorithm_8cpp.html" title=" " alt="" coords="4037,310,4264,366"/>
-<area shape="rect" id="node29" href="$d9/dee/tesseract__compound__compound__collision__algorithm_8cpp.html" title=" " alt="" coords="4288,303,4499,373"/>
-<area shape="rect" id="node30" href="$d5/d96/contact__results__marker_8h.html" title=" " alt="" coords="4522,310,4745,366"/>
-<area shape="rect" id="node25" href="$d0/dcb/collision__octomap__mesh__unit_8cpp.html" title=" " alt="" coords="2107,421,2263,477"/>
-<area shape="rect" id="node32" href="$d3/d6c/ofkt__nodes_8cpp.html" title="A implementation of the Optimized Forward Kinematic Tree Nodes." alt="" coords="829,317,992,359"/>
-<area shape="rect" id="node33" href="$d3/d9a/ofkt__state__solver_8cpp.html" title="A implementation of the Optimized Forward Kinematic Tree as a state solver." alt="" coords="1016,310,1171,366"/>
-<area shape="rect" id="node34" href="$dc/dfb/validate_8h.html" title="This contains utility function validate things like forward kinematics match inverse kinematics." alt="" coords="2379,310,2573,366"/>
-<area shape="rect" id="node36" href="$d2/d4f/kdl__fwd__kin__tree_8cpp.html" title=" " alt="" coords="1345,421,1492,477"/>
+<area shape="rect" id="node1" title="Additional Boost serialization wrappers." alt="" coords="253,5,472,47"/>
+<area shape="rect" id="node2" href="$d4/dc4/joint__state_8h.html" title="Tesseract Joint State." alt="" coords="244,303,423,359"/>
+<area shape="rect" id="node3" href="$de/df1/tesseract__common__unit_8cpp.html" title=" " alt="" coords="61,421,251,463"/>
+<area shape="rect" id="node11" href="$d5/df5/manipulator__info_8h.html" title=" " alt="" coords="447,310,694,351"/>
+<area shape="rect" id="node18" href="$dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="2039,95,2222,136"/>
+<area shape="rect" id="node4" href="$d7/d5e/trajectory__interpolator_8h.html" title="Trajectory interpolator class." alt="" coords="275,414,477,470"/>
+<area shape="rect" id="node8" href="$d2/d02/visualization_8h.html" title="Visualization Class." alt="" coords="1668,629,1871,685"/>
+<area shape="rect" id="node5" href="$d3/db8/trajectory__player_8h.html" title="Trajectory player class." alt="" coords="5,525,208,581"/>
+<area shape="rect" id="node6" href="$d4/dbe/trajectory__player__unit_8cpp.html" title=" " alt="" coords="99,629,253,685"/>
+<area shape="rect" id="node7" href="$d6/de6/trajectory__interpolator_8cpp.html" title="Trajectory interpolator class." alt="" coords="283,533,479,574"/>
+<area shape="rect" id="node9" href="$d0/de9/tesseract__ignition__visualization_8h.html" title=" " alt="" coords="1807,733,2009,804"/>
+<area shape="rect" id="node10" href="$da/d93/visualization__loader_8h.html" title="Visualization Loader." alt="" coords="1580,741,1783,797"/>
+<area shape="rect" id="node12" href="$d5/dd9/manipulator__info_8cpp.html" title=" " alt="" coords="605,421,760,463"/>
+<area shape="rect" id="node13" href="$de/d26/environment_8h.html" title=" " alt="" coords="1807,525,2009,581"/>
+<area shape="rect" id="node14" href="$d4/d2d/tesseract__environment_2include_2tesseract__environment_2core_2utils_8h.html" title="Tesseract Environment Utility Functions." alt="" coords="2229,629,2432,685"/>
+<area shape="rect" id="node15" href="$dc/d82/environment_8cpp.html" title="Tesseract environment interface implementation." alt="" coords="2245,748,2417,789"/>
+<area shape="rect" id="node16" href="$de/d87/environment__clone__benchmarks_8cpp.html" title=" " alt="" coords="1945,629,2143,685"/>
+<area shape="rect" id="node17" href="$d0/d5b/tesseract__environment__unit_8cpp.html" title=" " alt="" coords="1460,629,1644,685"/>
+<area shape="rect" id="node19" href="$d4/da8/collision__margin__data_8h.html" title="This is used to store collision margin information." alt="" coords="3563,191,3754,247"/>
+<area shape="rect" id="node20" href="$d3/d0c/tesseract__collision_2include_2tesseract__collision_2core_2types_8h.html" title="Tesseracts Collision Common Types." alt="" coords="3136,303,3315,359"/>
+<area shape="rect" id="node33" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="901,199,1080,240"/>
+<area shape="rect" id="node36" href="$dd/dc2/tesseract__kinematics_2include_2tesseract__kinematics_2kdl_2kdl__utils_8h.html" title="Tesseract KDL utility functions." alt="" coords="1184,303,1379,359"/>
+<area shape="rect" id="node37" href="$d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="1403,303,1613,359"/>
+<area shape="rect" id="node38" href="$da/d72/change__pair__contact__margin__command_8h.html" title="Used to change pair contact margin in environment." alt="" coords="1789,184,1992,255"/>
+<area shape="rect" id="node39" href="$d9/dcf/state__solver_8h.html" title="Tesseract Environment State Solver Interface." alt="" coords="1789,414,1992,470"/>
+<area shape="rect" id="node40" href="$de/d88/tesseract__environment_2include_2tesseract__environment_2core_2types_8h.html" title="The tesseract_environment package types." alt="" coords="1688,303,1891,359"/>
+<area shape="rect" id="node41" href="$de/dd2/tesseract__geometry_2include_2tesseract__geometry_2impl_2convex__mesh_8h.html" title="Tesseract Convex Mesh Geometry." alt="" coords="2067,303,2253,359"/>
+<area shape="rect" id="node42" href="$d5/d93/tesseract__geometry_2include_2tesseract__geometry_2impl_2mesh_8h.html" title="Tesseract Mesh Geometry." alt="" coords="2277,303,2462,359"/>
+<area shape="rect" id="node43" href="$df/d8e/mesh__material_8h.html" title="Tesseract Mesh Material read from a mesh file." alt="" coords="2169,191,2354,247"/>
+<area shape="rect" id="node44" href="$d2/d17/tesseract__geometry_2include_2tesseract__geometry_2impl_2sdf__mesh_8h.html" title="Tesseract SDF Mesh Geometry." alt="" coords="2486,303,2671,359"/>
+<area shape="rect" id="node45" href="$d8/dc3/mesh__parser_8h.html" title=" " alt="" coords="2811,303,2997,359"/>
+<area shape="rect" id="node46" href="$d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="2429,191,2624,247"/>
+<area shape="rect" id="node47" href="$d3/da5/inverse__kinematics_8h.html" title="Inverse kinematics functions." alt="" coords="2648,191,2843,247"/>
+<area shape="rect" id="node48" href="$d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="2867,184,3034,255"/>
+<area shape="rect" id="node49" href="$da/dd6/conversions_8h.html" title="A set of conversion between Tesseract and Ignition Robotics objects." alt="" coords="3059,191,3261,247"/>
+<area shape="rect" id="node50" href="$d6/da4/toolpath__marker_8h.html" title=" " alt="" coords="3285,191,3488,247"/>
+<area shape="rect" id="node21" href="$d6/d91/bullet__utils_8h.html" title="Tesseract ROS Bullet environment utility function." alt="" coords="3009,525,3188,581"/>
+<area shape="rect" id="node22" href="$dc/dcd/tesseract__convex__convex__algorithm_8h.html" title=" " alt="" coords="3136,407,3315,477"/>
+<area shape="rect" id="node23" href="$d6/ddf/tesseract__gjk__pair__detector_8h.html" title=" " alt="" coords="3339,407,3517,477"/>
+<area shape="rect" id="node24" href="$dc/d54/common_8h.html" title="This is a collection of common methods." alt="" coords="2859,414,3037,470"/>
+<area shape="rect" id="node25" href="$d2/dde/fcl__utils_8h.html" title="Tesseract ROS FCL Utility Functions." alt="" coords="3667,525,3845,581"/>
+<area shape="rect" id="node27" href="$d6/d0f/continuous__contact__manager_8h.html" title="This is the continuous contact manager base class." alt="" coords="2309,407,2488,477"/>
+<area shape="rect" id="node28" href="$db/d35/discrete__contact__manager_8h.html" title="This is the discrete contact manager base class." alt="" coords="2067,414,2285,470"/>
+<area shape="rect" id="node29" href="$d6/d2d/tesseract__compound__collision__algorithm_8cpp.html" title=" " alt="" coords="3541,414,3768,470"/>
+<area shape="rect" id="node30" href="$d9/dee/tesseract__compound__compound__collision__algorithm_8cpp.html" title=" " alt="" coords="3792,407,4003,477"/>
+<area shape="rect" id="node31" href="$d5/d56/collision__margin__data__unit_8cpp.html" title=" " alt="" coords="4027,414,4173,470"/>
+<area shape="rect" id="node32" href="$d5/d96/contact__results__marker_8h.html" title=" " alt="" coords="2562,414,2785,470"/>
+<area shape="rect" id="node26" href="$d0/dcb/collision__octomap__mesh__unit_8cpp.html" title=" " alt="" coords="2778,525,2934,581"/>
+<area shape="rect" id="node34" href="$d3/d6c/ofkt__nodes_8cpp.html" title="A implementation of the Optimized Forward Kinematic Tree Nodes." alt="" coords="819,310,981,351"/>
+<area shape="rect" id="node35" href="$d3/d9a/ofkt__state__solver_8cpp.html" title="A implementation of the Optimized Forward Kinematic Tree as a state solver." alt="" coords="1005,303,1160,359"/>
 </map>
