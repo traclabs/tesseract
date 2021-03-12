@@ -89,6 +89,8 @@ static bool \mbox{\hyperlink{namespacetesseract__kinematics_a7c0f58b6ad5f6ccb2f3
 \begin{DoxyCompactList}\small\item\em Solve equation Ax=b for x Use this SVD to compute A+ (pseudoinverse of A). Weighting still TBD. \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{namespacetesseract__kinematics_a1645b1b27fd8279b5f0289dfd1f662c7}{damped\+PInv}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+Xd $>$ \&A, Eigen\+::\+Ref$<$ Eigen\+::\+Matrix\+Xd $>$ P, const double eps=0.\+011, const double lambda=0.\+01)
 \begin{DoxyCompactList}\small\item\em Calculate Damped Pseudoinverse Use this SVD to compute A+ (pseudoinverse of A). Weighting still TBD. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacetesseract__kinematics_ae2bebd951f959b4c39b06dc7b38c8159}{is\+Near\+Singularity}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+Xd $>$ \&jacobian, double threshold=0.\+01)
+\begin{DoxyCompactList}\small\item\em Check if the provided jacobian is near a singularity. \end{DoxyCompactList}\item 
 {\footnotesize template$<$class Chain\+\_\+T , class Tree\+\_\+T $>$ }\\\mbox{\hyperlink{namespacetesseract__kinematics_a881ff48bb24f8ac4e92de3f1e5c0bfb5}{Forward\+Kinematics\+Const\+Ptr\+Map}} \mbox{\hyperlink{namespacetesseract__kinematics_a8c5e79830b1da0e1e83fb6f765e77cd4}{create\+Kinematics\+Map}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&scene\+\_\+graph, const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \&kinematics\+\_\+information)
 \begin{DoxyCompactList}\small\item\em Create a kinematics map from the srdf model. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__kinematics_af7bf99d154356876827ff501c21d3432}{is\+Within\+Limits}} (const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&joint\+\_\+values, const Eigen\+::\+Matrix\+X2d \&limits)
@@ -376,6 +378,23 @@ This take an array of floats and modifies them in place to be between \mbox{[}-\
 \doxysubsubsection{\texorpdfstring{inverse()}{inverse()}}
 {\footnotesize\ttfamily int tesseract\+\_\+kinematics\+::inverse (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Isometry3d \&}]{T,  }\item[{const \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}} \&}]{params,  }\item[{double $\ast$}]{q\+\_\+sols,  }\item[{double}]{q6\+\_\+des }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{namespacetesseract__kinematics_ae2bebd951f959b4c39b06dc7b38c8159}\label{namespacetesseract__kinematics_ae2bebd951f959b4c39b06dc7b38c8159}} 
+\index{tesseract\_kinematics@{tesseract\_kinematics}!isNearSingularity@{isNearSingularity}}
+\index{isNearSingularity@{isNearSingularity}!tesseract\_kinematics@{tesseract\_kinematics}}
+\doxysubsubsection{\texorpdfstring{isNearSingularity()}{isNearSingularity()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+kinematics\+::is\+Near\+Singularity (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+Xd $>$ \&}]{jacobian,  }\item[{double}]{threshold = {\ttfamily 0.01} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the provided jacobian is near a singularity. 
+
+This is keep separated from the forward kinematics because special consideration may need to be made based on the kinematics arrangement. 
+\begin{DoxyParams}{Parameters}
+{\em jacobian} & The jacobian to check if near a singularity \\
+\hline
+{\em threshold} & The threshold that all singular values must be greater than or equal to not be considered near a singularity \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{namespacetesseract__kinematics_a2f74af65eeb166856e00a64254da7ee8}\label{namespacetesseract__kinematics_a2f74af65eeb166856e00a64254da7ee8}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!isValid@{isValid}}
 \index{isValid@{isValid}!tesseract\_kinematics@{tesseract\_kinematics}}

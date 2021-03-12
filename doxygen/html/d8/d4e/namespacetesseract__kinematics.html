@@ -186,6 +186,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1645b1b27fd8279b5f0289dfd1f662c7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a1645b1b27fd8279b5f0289dfd1f662c7">dampedPInv</a> (const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;A, Eigen::Ref&lt; Eigen::MatrixXd &gt; P, const double eps=0.011, const double lambda=0.01)</td></tr>
 <tr class="memdesc:a1645b1b27fd8279b5f0289dfd1f662c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate Damped Pseudoinverse Use this SVD to compute A+ (pseudoinverse of A). Weighting still TBD.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a1645b1b27fd8279b5f0289dfd1f662c7">More...</a><br /></td></tr>
 <tr class="separator:a1645b1b27fd8279b5f0289dfd1f662c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bebd951f959b4c39b06dc7b38c8159"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#ae2bebd951f959b4c39b06dc7b38c8159">isNearSingularity</a> (const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;jacobian, double threshold=0.01)</td></tr>
+<tr class="memdesc:ae2bebd951f959b4c39b06dc7b38c8159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the provided jacobian is near a singularity.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#ae2bebd951f959b4c39b06dc7b38c8159">More...</a><br /></td></tr>
+<tr class="separator:ae2bebd951f959b4c39b06dc7b38c8159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memTemplParams" colspan="2">template&lt;class Chain_T , class Tree_T &gt; </td></tr>
 <tr class="memitem:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a881ff48bb24f8ac4e92de3f1e5c0bfb5">ForwardKinematicsConstPtrMap</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">createKinematicsMap</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> &amp;scene_graph, const <a class="el" href="../../de/d55/structtesseract__scene__graph_1_1KinematicsInformation.html">tesseract_scene_graph::KinematicsInformation</a> &amp;kinematics_information)</td></tr>
 <tr class="memdesc:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kinematics map from the srdf model.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">More...</a><br /></td></tr>
@@ -790,6 +793,51 @@ template&lt;typename FloatType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2bebd951f959b4c39b06dc7b38c8159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2bebd951f959b4c39b06dc7b38c8159">&#9670;&nbsp;</a></span>isNearSingularity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tesseract_kinematics::isNearSingularity </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>threshold</em> = <code>0.01</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the provided jacobian is near a singularity. </p>
+<p>This is keep separated from the forward kinematics because special consideration may need to be made based on the kinematics arrangement. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jacobian</td><td>The jacobian to check if near a singularity </td></tr>
+    <tr><td class="paramname">threshold</td><td>The threshold that all singular values must be greater than or equal to not be considered near a singularity </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1629,7 +1677,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 17:50:56 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 12 2021 13:57:35 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
