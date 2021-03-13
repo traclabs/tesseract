@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sphinx_5frtd_5ftheme_2301',['sphinx_rtd_theme',['../d8/d99/namespacesphinx__rtd__theme.html',1,'']]]
+  ['mine_5fpackage_5finfo_2315',['mine_package_info',['../dd/d17/namespacemine__package__info.html',1,'']]]
 ];

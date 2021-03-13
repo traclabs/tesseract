@@ -172,6 +172,14 @@ Exclude Code From Code Coverage</h3>
 </ul>
 <p>.. NOTE: You can replace <b>LCOV</b> above with <b>GCOV</b> or <b>GCOVR</b>.</p>
 <h1><a class="anchor" id="autotoc_md13"></a>
+Create Debian Package (Linux) or NuGet Package (Windows)</h1>
+<p>The following process will generate a Debian or NuGet package leveraging cmake and cpack based on the OS.</p>
+<p>The package should be located in the current directory.</p>
+<div class="fragment"><div class="line">cd &lt;workspace directory&gt;</div>
+<div class="line">catkin build -DCMAKE_BUILD_TYPE=Release -DTESSERACT_PACKAGE=ON</div>
+<div class="line">./src/tesseract/.run-cpack</div>
+</div><!-- fragment --><p>.. NOTE: You can add a prefix to the package name by setting -DTESSERACT_PACKAGE_PREFIX="ros-noetic-".</p>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Quality Tools Leverage</h1>
 <p>Tesseract currently leverages Compiler Warnigs, Clang Tidy and Code Coverage. All warnings produced by Compiler and Clang Tidy are treated as errors during CI builds.</p>
 <ul>
@@ -217,12 +225,12 @@ Quality Tools Leverage</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Build Branch Sphinx Documentation</h1>
 <div class="fragment"><div class="line">cd gh_pages</div>
 <div class="line">sphinx-build . output</div>
 </div><!-- fragment --><p> Now open gh_pages/output/index.rst and remove <em>output</em> directory before commiting changes.</p>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Debugging Windows Build</h1>
 <ul>
 <li>Search Directories CI<ul>
@@ -239,7 +247,7 @@ Debugging Windows Build</h1>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 12 2021 13:57:36 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Mar 13 2021 09:15:54 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

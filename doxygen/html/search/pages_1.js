@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tesseract_4362',['Tesseract',['../index.html',1,'']]],
-  ['todo_20list_4363',['Todo List',['../dd/da0/todo.html',1,'']]]
+  ['contributing_4385',['CONTRIBUTING',['../d2/dc1/md_CONTRIBUTING.html',1,'']]]
 ];
