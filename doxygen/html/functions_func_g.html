@@ -135,8 +135,7 @@ $(function() {
 </li>
 <li>getAllowedCollisionMatrix()
 : <a class="el" href="d0/d6a/classtesseract__environment_1_1Environment.html#a70986e21df4b69f85142e05033f90958">tesseract_environment::Environment</a>
-, <a class="el" href="d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a151014548fca70e4d51483814cba9966">tesseract_scene_graph::SceneGraph</a>
-, <a class="el" href="de/d87/classtesseract__scene__graph_1_1SRDFModel.html#aa1020e7102b719ae637af46a4be69673">tesseract_scene_graph::SRDFModel</a>
+, <a class="el" href="d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a90612a293585487abbf25c7b1bdd7a00">tesseract_scene_graph::SceneGraph</a>
 </li>
 <li>getAvailableFwdKinematicsManipulators()
 : <a class="el" href="d8/d9d/classtesseract__environment_1_1ManipulatorManager.html#a85ad9dfcd952a1f2a9ab49760ba7069f">tesseract_environment::ManipulatorManager</a>
@@ -234,6 +233,11 @@ $(function() {
 , <a class="el" href="db/db9/classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager.html#a3c0132bcd2b111b1a280354b09bfcd0c">tesseract_collision::tesseract_collision_bullet::BulletDiscreteBVHManager</a>
 , <a class="el" href="d8/d68/classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager.html#a0f4859b84977ef8b82521b4dddabe6e8">tesseract_collision::tesseract_collision_bullet::BulletDiscreteSimpleManager</a>
 , <a class="el" href="df/d0a/classtesseract__collision_1_1tesseract__collision__fcl_1_1FCLDiscreteBVHManager.html#ad14ea772073f229ce56810ad99e56ab4">tesseract_collision::tesseract_collision_fcl::FCLDiscreteBVHManager</a>
+, <a class="el" href="d4/d68/classtesseract__environment_1_1ChangeCollisionMarginsCommand.html#a8f122f794d4672e46740d931611ef81a">tesseract_environment::ChangeCollisionMarginsCommand</a>
+, <a class="el" href="d0/d6a/classtesseract__environment_1_1Environment.html#ad526de2abbc241612f0cd2d2a5fb45de">tesseract_environment::Environment</a>
+</li>
+<li>getCollisionMarginOverrideType()
+: <a class="el" href="d4/d68/classtesseract__environment_1_1ChangeCollisionMarginsCommand.html#ae12e8d82a7c5e739670abcd813a0aba6">tesseract_environment::ChangeCollisionMarginsCommand</a>
 </li>
 <li>getCollisionObject()
 : <a class="el" href="d0/d6a/classtesseract__environment_1_1Environment.html#a1f89fb917c1e03302973658c6b292de2">tesseract_environment::Environment</a>
@@ -292,7 +296,7 @@ $(function() {
 : <a class="el" href="db/d29/classtesseract__common_1_1CloneCache.html#a8f7c577704d6655df29ea2244fd52735">tesseract_common::CloneCache&lt; CacheType &gt;</a>
 </li>
 <li>getCurrentJointValues()
-: <a class="el" href="d0/d6a/classtesseract__environment_1_1Environment.html#aba7032e0247b48c7080891122f90d2db">tesseract_environment::Environment</a>
+: <a class="el" href="d0/d6a/classtesseract__environment_1_1Environment.html#a142aa50fc2767c11e77aee4cd141bcd2">tesseract_environment::Environment</a>
 </li>
 <li>getCurrentState()
 : <a class="el" href="d0/d6a/classtesseract__environment_1_1Environment.html#aa1ebd6bb7468a311e3502f5df6e5eb51">tesseract_environment::Environment</a>
@@ -304,10 +308,8 @@ $(function() {
 : <a class="el" href="d5/df0/classtesseract__geometry_1_1Plane.html#a6b01ed126f677e60d351a9807bb3d5dd">tesseract_geometry::Plane</a>
 </li>
 <li>getDefaultCollisionMargin()
-: <a class="el" href="d8/d52/classtesseract__environment_1_1ChangeDefaultContactMarginCommand.html#a978e59ab9257302932d1366c9b73fafa">tesseract_environment::ChangeDefaultContactMarginCommand</a>
-</li>
-<li>getDefaultCollisionMarginData()
-: <a class="el" href="dc/d4f/classtesseract__collision_1_1CollisionMarginData.html#abe7d93e268267d3077ab8d4a3ce96838">tesseract_collision::CollisionMarginData</a>
+: <a class="el" href="d6/dc7/classtesseract__common_1_1CollisionMarginData.html#a63a01d2569c7aeebb892b075b6c3530d">tesseract_common::CollisionMarginData</a>
+, <a class="el" href="d8/d52/classtesseract__environment_1_1ChangeDefaultContactMarginCommand.html#a978e59ab9257302932d1366c9b73fafa">tesseract_environment::ChangeDefaultContactMarginCommand</a>
 </li>
 <li>getDiscreteContactManager()
 : <a class="el" href="d0/d6a/classtesseract__environment_1_1Environment.html#addcd96675266fb00c6b8e861e1f2f5e8">tesseract_environment::Environment</a>
@@ -463,7 +465,6 @@ $(function() {
 <li>getKinematicsInformation()
 : <a class="el" href="dc/d63/classtesseract__environment_1_1AddKinematicsInformationCommand.html#a2615887321d4b54a6a067c74d3fbfecb">tesseract_environment::AddKinematicsInformationCommand</a>
 , <a class="el" href="d8/d9d/classtesseract__environment_1_1ManipulatorManager.html#a4be05127a61b00971c8f02add998f63f">tesseract_environment::ManipulatorManager</a>
-, <a class="el" href="de/d87/classtesseract__scene__graph_1_1SRDFModel.html#ae150ed1849fa9c02e0c506bc1186765e">tesseract_scene_graph::SRDFModel</a>
 </li>
 <li>getLayer()
 : <a class="el" href="de/d0f/classtesseract__visualization_1_1Marker.html#afbf3a3ed2907fce3c5f6d487876f540f">tesseract_visualization::Marker</a>
@@ -587,7 +588,7 @@ $(function() {
 , <a class="el" href="d8/d3b/classtesseract__geometry_1_1SDFMesh.html#a76d51794ac6cf7905e4096a7ce7ae59c">tesseract_geometry::SDFMesh</a>
 </li>
 <li>getMaxCollisionMargin()
-: <a class="el" href="dc/d4f/classtesseract__collision_1_1CollisionMarginData.html#ac3a3e7a84619282bfe724858df52f08b">tesseract_collision::CollisionMarginData</a>
+: <a class="el" href="d6/dc7/classtesseract__common_1_1CollisionMarginData.html#a8b73bd2450f2c9215e67bba3c048fe4b">tesseract_common::CollisionMarginData</a>
 </li>
 <li>getMetallicFactor()
 : <a class="el" href="d6/dbc/classtesseract__geometry_1_1MeshMaterial.html#abb187c0e82382354171e44a4d1fdfc6b">tesseract_geometry::MeshMaterial</a>
@@ -624,7 +625,6 @@ $(function() {
 , <a class="el" href="dc/d40/classtesseract__scene__graph_1_1Link.html#a379d7c87ec621839aa2482db5b91daa7">tesseract_scene_graph::Link</a>
 , <a class="el" href="d9/d0f/classtesseract__scene__graph_1_1Material.html#acf34c9f07b148b93e08ae9626687edd4">tesseract_scene_graph::Material</a>
 , <a class="el" href="d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#ab00164727a93a5be539462b2213e066a">tesseract_scene_graph::SceneGraph</a>
-, <a class="el" href="de/d87/classtesseract__scene__graph_1_1SRDFModel.html#ad6b13bcb3ac8d5cef4ff4bfa2152aeeb">tesseract_scene_graph::SRDFModel</a>
 , <a class="el" href="d2/dbe/classTestForwardKinematicsFactory.html#ab914fde4b8c5a162740f192e87a13366">TestForwardKinematicsFactory</a>
 , <a class="el" href="d7/df8/classTestInverseKinematicsFactory.html#a09cb1e59824e975d699d8d32f2f54873">TestInverseKinematicsFactory</a>
 </li>
@@ -659,16 +659,18 @@ $(function() {
 <li>getOutboundJoints()
 : <a class="el" href="d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#adbf096c9db422062ebecaf394078dd7b">tesseract_scene_graph::SceneGraph</a>
 </li>
-<li>getPairCollisionMarginData()
-: <a class="el" href="dc/d4f/classtesseract__collision_1_1CollisionMarginData.html#aa10e02836141064fd4d94b149c9a8e06">tesseract_collision::CollisionMarginData</a>
-, <a class="el" href="df/d38/classtesseract__environment_1_1ChangePairContactMarginCommand.html#acfb11702b431c8c1ea16031be223ff93">tesseract_environment::ChangePairContactMarginCommand</a>
+<li>getPairCollisionMargin()
+: <a class="el" href="d6/dc7/classtesseract__common_1_1CollisionMarginData.html#ac94cf7cce62f76b96a8d9aaab324d981">tesseract_common::CollisionMarginData</a>
 </li>
-<li>getPairsCollisionMarginData()
-: <a class="el" href="dc/d4f/classtesseract__collision_1_1CollisionMarginData.html#ad8b0793e05d2e4b6555b7b0b2764c711">tesseract_collision::CollisionMarginData</a>
+<li>getPairCollisionMarginData()
+: <a class="el" href="df/d38/classtesseract__environment_1_1ChangePairContactMarginCommand.html#acfb11702b431c8c1ea16031be223ff93">tesseract_environment::ChangePairContactMarginCommand</a>
+</li>
+<li>getPairCollisionMargins()
+: <a class="el" href="d6/dc7/classtesseract__common_1_1CollisionMarginData.html#ac3f26e53e1ed563de2e002f5836c78cb">tesseract_common::CollisionMarginData</a>
 </li>
 <li>getParent()
 : <a class="el" href="d0/dd5/classtesseract__environment_1_1OFKTBaseNode.html#aa1d08732b10784df55b37e29dc92b6a0">tesseract_environment::OFKTBaseNode</a>
-, <a class="el" href="da/db8/classtesseract__environment_1_1OFKTNode.html#a02c86827da96841664c32bb9d6c8b33e">tesseract_environment::OFKTNode</a>
+, <a class="el" href="da/db8/classtesseract__environment_1_1OFKTNode.html#a6473d8ba14e32ec717a81f29bb45c56e">tesseract_environment::OFKTNode</a>
 </li>
 <li>getParentLink()
 : <a class="el" href="de/dc2/classtesseract__environment_1_1MoveJointCommand.html#aac46a253efe96a007f5cdadcec945a05">tesseract_environment::MoveJointCommand</a>
@@ -792,8 +794,8 @@ $(function() {
 </li>
 <li>getState()
 : <a class="el" href="d0/d6a/classtesseract__environment_1_1Environment.html#acf763cd858c17d45dc4696748d09478e">tesseract_environment::Environment</a>
-, <a class="el" href="d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a38a45baf4666f579fc7869a638d6e1b1">tesseract_environment::KDLStateSolver</a>
-, <a class="el" href="db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a10e73565cbf208f7b9d1c11acbc871a9">tesseract_environment::OFKTStateSolver</a>
+, <a class="el" href="d5/d87/classtesseract__environment_1_1KDLStateSolver.html#a413537b36af42e6ccbfe5a2135534818">tesseract_environment::KDLStateSolver</a>
+, <a class="el" href="db/d54/classtesseract__environment_1_1OFKTStateSolver.html#a7e4afac12b45bdae7ee77ca4961ecdce">tesseract_environment::OFKTStateSolver</a>
 , <a class="el" href="d9/d75/classtesseract__environment_1_1StateSolver.html#ae8bb022f52faa7a8012fe817ce39d352">tesseract_environment::StateSolver</a>
 , <a class="el" href="d6/ded/classtesseract__visualization_1_1TrajectoryInterpolator.html#a36fdc54028e4df163079000fe4edfd5d">tesseract_visualization::TrajectoryInterpolator</a>
 </li>
@@ -859,6 +861,7 @@ $(function() {
 , <a class="el" href="dc/d63/classtesseract__environment_1_1AddKinematicsInformationCommand.html#a5038adf4b92b548a06ced9e02f81e569">tesseract_environment::AddKinematicsInformationCommand</a>
 , <a class="el" href="de/d3b/classtesseract__environment_1_1AddLinkCommand.html#a700ee6060b73b22a8122239548d8a42a">tesseract_environment::AddLinkCommand</a>
 , <a class="el" href="d6/d6f/classtesseract__environment_1_1AddSceneGraphCommand.html#a50f4212c7e99297c264f0452ab1b7d5f">tesseract_environment::AddSceneGraphCommand</a>
+, <a class="el" href="d4/d68/classtesseract__environment_1_1ChangeCollisionMarginsCommand.html#a7bc20da1af1958cdf6d5671be6185a0e">tesseract_environment::ChangeCollisionMarginsCommand</a>
 , <a class="el" href="d8/d52/classtesseract__environment_1_1ChangeDefaultContactMarginCommand.html#add59d6f237faed9313169e2aeb737d2f">tesseract_environment::ChangeDefaultContactMarginCommand</a>
 , <a class="el" href="d3/d66/classtesseract__environment_1_1ChangeJointAccelerationLimitsCommand.html#a134ec77c050d77624782697b95dad9cf">tesseract_environment::ChangeJointAccelerationLimitsCommand</a>
 , <a class="el" href="de/d66/classtesseract__environment_1_1ChangeJointOriginCommand.html#a3ad0eca3080ed400654659dfc131839d">tesseract_environment::ChangeJointOriginCommand</a>
@@ -906,9 +909,6 @@ $(function() {
 <li>getUVs()
 : <a class="el" href="d0/d09/classtesseract__geometry_1_1MeshTexture.html#a2587e4b734d8cfd778f081f31167959f">tesseract_geometry::MeshTexture</a>
 </li>
-<li>getVersion()
-: <a class="el" href="de/d87/classtesseract__scene__graph_1_1SRDFModel.html#a208110a128e24d2cda21946c17a924a3">tesseract_scene_graph::SRDFModel</a>
-</li>
 <li>getVertex()
 : <a class="el" href="d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#acc06c85a479b1c17e30aa3c29fc1af3e">tesseract_scene_graph::SceneGraph</a>
 </li>
@@ -950,7 +950,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 13 2021 09:15:54 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 18 2021 03:06:29 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

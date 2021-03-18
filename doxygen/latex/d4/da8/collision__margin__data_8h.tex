@@ -1,5 +1,5 @@
-\hypertarget{collision__margin__data_8h}{}\doxysection{tesseract\+\_\+collision/include/tesseract\+\_\+collision/core/collision\+\_\+margin\+\_\+data.h File Reference}
-\label{collision__margin__data_8h}\index{tesseract\_collision/include/tesseract\_collision/core/collision\_margin\_data.h@{tesseract\_collision/include/tesseract\_collision/core/collision\_margin\_data.h}}
+\hypertarget{collision__margin__data_8h}{}\doxysection{tesseract\+\_\+common/include/tesseract\+\_\+common/collision\+\_\+margin\+\_\+data.h File Reference}
+\label{collision__margin__data_8h}\index{tesseract\_common/include/tesseract\_common/collision\_margin\_data.h@{tesseract\_common/include/tesseract\_common/collision\_margin\_data.h}}
 
 
 This is used to store collision margin information.  
@@ -10,6 +10,7 @@ This is used to store collision margin information.
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+common/types.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+common/utils.\+h$>$}\newline
 Include dependency graph for collision\+\_\+margin\+\_\+data.\+h\+:
 \nopagebreak
 \begin{figure}[H]
@@ -29,23 +30,28 @@ This graph shows which files directly or indirectly include this file\+:
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{tesseract\+\_\+collision\+::\+Collision\+Margin\+Data}}
+class \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData}{tesseract\+\_\+common\+::\+Collision\+Margin\+Data}}
 \begin{DoxyCompactList}\small\item\em Stores information about how the margins allowed between collision objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \mbox{\hyperlink{namespacetesseract__collision}{tesseract\+\_\+collision}}
+ \mbox{\hyperlink{namespacetesseract__common}{tesseract\+\_\+common}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacetesseract__common_a84cc21cc4b384291adbbddaa81fe6447}{tesseract\+\_\+common\+::\+Pairs\+Collision\+Margin\+Data}} = std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{tesseract\+\_\+common\+::\+Link\+Names\+Pair}}, double, \mbox{\hyperlink{structtesseract__common_1_1PairHash}{tesseract\+\_\+common\+::\+Pair\+Hash}} $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum class \mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4}{tesseract\+\_\+collision\+::\+Collision\+Margin\+Override\+Type}} \{ \newline
-\mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4ab50339a10e1de285ac99d4c3990b8693}{tesseract\+\_\+collision\+::\+NONE}}
-, \mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4a560a2dd6f6744646473b3b19e1fe96d7}{tesseract\+\_\+collision\+::\+REPLACE}}
-, \mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4a68f2f4f7ee420d8895a41ac3f35db3fe}{tesseract\+\_\+collision\+::\+OVERRIDE\+\_\+\+DEFAULT\+\_\+\+MARGIN}}
-, \mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4ae54086ed48f7d2ca425bdeca2121c83c}{tesseract\+\_\+collision\+::\+OVERRIDE\+\_\+\+PAIR\+\_\+\+MARGIN}}
+enum class \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1}{tesseract\+\_\+common\+::\+Collision\+Margin\+Override\+Type}} \{ \newline
+\mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1ab50339a10e1de285ac99d4c3990b8693}{tesseract\+\_\+common\+::\+NONE}}
+, \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a560a2dd6f6744646473b3b19e1fe96d7}{tesseract\+\_\+common\+::\+REPLACE}}
+, \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a68f2f4f7ee420d8895a41ac3f35db3fe}{tesseract\+\_\+common\+::\+OVERRIDE\+\_\+\+DEFAULT\+\_\+\+MARGIN}}
+, \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1ae54086ed48f7d2ca425bdeca2121c83c}{tesseract\+\_\+common\+::\+OVERRIDE\+\_\+\+PAIR\+\_\+\+MARGIN}}
 , \newline
-\mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4a8f7ea9e9137c5d7d8bc6ea025484f55a}{tesseract\+\_\+collision\+::\+MODIFY\+\_\+\+PAIR\+\_\+\+MARGIN}}
+\mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a8f7ea9e9137c5d7d8bc6ea025484f55a}{tesseract\+\_\+common\+::\+MODIFY\+\_\+\+PAIR\+\_\+\+MARGIN}}
  \}
 \begin{DoxyCompactList}\small\item\em Identifies how the provided contact margin data should be applied. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -65,7 +71,7 @@ January 18, 2018
 TODO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000007}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000028}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}

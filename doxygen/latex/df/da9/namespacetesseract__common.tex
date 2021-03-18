@@ -14,6 +14,8 @@ class \mbox{\hyperlink{classtesseract__common_1_1Any}{Any}}
 \item 
 class \mbox{\hyperlink{classtesseract__common_1_1CloneCache}{Clone\+Cache}}
 \begin{DoxyCompactList}\small\item\em Used to create a cache of objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData}{Collision\+Margin\+Data}}
+\begin{DoxyCompactList}\small\item\em Stores information about how the margins allowed between collision objects. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}}
 \item 
 class \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}}
@@ -49,6 +51,8 @@ struct \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+L
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
+using \mbox{\hyperlink{namespacetesseract__common_a84cc21cc4b384291adbbddaa81fe6447}{Pairs\+Collision\+Margin\+Data}} = std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{tesseract\+\_\+common\+::\+Link\+Names\+Pair}}, double, \mbox{\hyperlink{structtesseract__common_1_1PairHash}{tesseract\+\_\+common\+::\+Pair\+Hash}} $>$
+\item 
 using \mbox{\hyperlink{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}{Joint\+Trajectory}} = std\+::vector$<$ \mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}} $>$
 \begin{DoxyCompactList}\small\item\em Represents a joint trajectory. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespacetesseract__common_a000d15c3ab8d8ba4ebdaae64153b053a}{Aligned\+Vector}} = std\+::vector$<$ T, Eigen\+::aligned\+\_\+allocator$<$ T $>$ $>$
@@ -73,6 +77,18 @@ using \mbox{\hyperlink{namespacetesseract__common_a431ff65777ee0bed71e7671390638
 \item 
 using \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{Link\+Names\+Pair}} = std\+::pair$<$ std\+::string, std\+::string $>$
 \end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1}{Collision\+Margin\+Override\+Type}} \{ \newline
+\mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1ab50339a10e1de285ac99d4c3990b8693}{NONE}}
+, \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a560a2dd6f6744646473b3b19e1fe96d7}{REPLACE}}
+, \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a68f2f4f7ee420d8895a41ac3f35db3fe}{OVERRIDE\+\_\+\+DEFAULT\+\_\+\+MARGIN}}
+, \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1ae54086ed48f7d2ca425bdeca2121c83c}{OVERRIDE\+\_\+\+PAIR\+\_\+\+MARGIN}}
+, \newline
+\mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a8f7ea9e9137c5d7d8bc6ea025484f55a}{MODIFY\+\_\+\+PAIR\+\_\+\+MARGIN}}
+ \}
+\begin{DoxyCompactList}\small\item\em Identifies how the provided contact margin data should be applied. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -165,6 +181,12 @@ Represents a joint trajectory.
 \doxysubsubsection{\texorpdfstring{LinkNamesPair}{LinkNamesPair}}
 {\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{tesseract\+\_\+common\+::\+Link\+Names\+Pair}} = typedef std\+::pair$<$std\+::string, std\+::string$>$}
 
+\mbox{\Hypertarget{namespacetesseract__common_a84cc21cc4b384291adbbddaa81fe6447}\label{namespacetesseract__common_a84cc21cc4b384291adbbddaa81fe6447}} 
+\index{tesseract\_common@{tesseract\_common}!PairsCollisionMarginData@{PairsCollisionMarginData}}
+\index{PairsCollisionMarginData@{PairsCollisionMarginData}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{PairsCollisionMarginData}{PairsCollisionMarginData}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__common_a84cc21cc4b384291adbbddaa81fe6447}{tesseract\+\_\+common\+::\+Pairs\+Collision\+Margin\+Data}} = typedef std\+::unordered\+\_\+map$<$\mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{tesseract\+\_\+common\+::\+Link\+Names\+Pair}}, double, \mbox{\hyperlink{structtesseract__common_1_1PairHash}{tesseract\+\_\+common\+::\+Pair\+Hash}}$>$}
+
 \mbox{\Hypertarget{namespacetesseract__common_a917718f518f98714fce17e831ec1ea11}\label{namespacetesseract__common_a917718f518f98714fce17e831ec1ea11}} 
 \index{tesseract\_common@{tesseract\_common}!Toolpath@{Toolpath}}
 \index{Toolpath@{Toolpath}!tesseract\_common@{tesseract\_common}}
@@ -207,6 +229,41 @@ Represents a joint trajectory.
 \doxysubsubsection{\texorpdfstring{VectorVector4d}{VectorVector4d}}
 {\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__common_a7f208ea8b9c62f41c593647319d56f37}{tesseract\+\_\+common\+::\+Vector\+Vector4d}} = typedef \mbox{\hyperlink{namespacetesseract__common_a000d15c3ab8d8ba4ebdaae64153b053a}{Aligned\+Vector}}$<$Eigen\+::\+Vector4d$>$}
 
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1}\label{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1}} 
+\index{tesseract\_common@{tesseract\_common}!CollisionMarginOverrideType@{CollisionMarginOverrideType}}
+\index{CollisionMarginOverrideType@{CollisionMarginOverrideType}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{CollisionMarginOverrideType}{CollisionMarginOverrideType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1}{tesseract\+\_\+common\+::\+Collision\+Margin\+Override\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Identifies how the provided contact margin data should be applied. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!tesseract\_common@{tesseract\_common}}\index{tesseract\_common@{tesseract\_common}!NONE@{NONE}}}\mbox{\Hypertarget{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1ab50339a10e1de285ac99d4c3990b8693}\label{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1ab50339a10e1de285ac99d4c3990b8693}} 
+NONE&Do not apply contact margin data. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REPLACE@{REPLACE}!tesseract\_common@{tesseract\_common}}\index{tesseract\_common@{tesseract\_common}!REPLACE@{REPLACE}}}\mbox{\Hypertarget{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a560a2dd6f6744646473b3b19e1fe96d7}\label{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a560a2dd6f6744646473b3b19e1fe96d7}} 
+REPLACE&Replace the contact manager\textquotesingle{}s \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData}{Collision\+Margin\+Data}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OVERRIDE\_DEFAULT\_MARGIN@{OVERRIDE\_DEFAULT\_MARGIN}!tesseract\_common@{tesseract\_common}}\index{tesseract\_common@{tesseract\_common}!OVERRIDE\_DEFAULT\_MARGIN@{OVERRIDE\_DEFAULT\_MARGIN}}}\mbox{\Hypertarget{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a68f2f4f7ee420d8895a41ac3f35db3fe}\label{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a68f2f4f7ee420d8895a41ac3f35db3fe}} 
+OVERRIDE\+\_\+\+DEFAULT\+\_\+\+MARGIN&Override the contact managers default margin only. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OVERRIDE\_PAIR\_MARGIN@{OVERRIDE\_PAIR\_MARGIN}!tesseract\_common@{tesseract\_common}}\index{tesseract\_common@{tesseract\_common}!OVERRIDE\_PAIR\_MARGIN@{OVERRIDE\_PAIR\_MARGIN}}}\mbox{\Hypertarget{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1ae54086ed48f7d2ca425bdeca2121c83c}\label{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1ae54086ed48f7d2ca425bdeca2121c83c}} 
+OVERRIDE\+\_\+\+PAIR\+\_\+\+MARGIN&Override the contact managers pair margin only. This does not preserve any existing pair margin data. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODIFY\_PAIR\_MARGIN@{MODIFY\_PAIR\_MARGIN}!tesseract\_common@{tesseract\_common}}\index{tesseract\_common@{tesseract\_common}!MODIFY\_PAIR\_MARGIN@{MODIFY\_PAIR\_MARGIN}}}\mbox{\Hypertarget{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a8f7ea9e9137c5d7d8bc6ea025484f55a}\label{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1a8f7ea9e9137c5d7d8bc6ea025484f55a}} 
+MODIFY\+\_\+\+PAIR\+\_\+\+MARGIN&Modify the contact managers pair margin only. This will preserve existing pairs not being modified by the provided margin data. If a pair already exist it will be updated with the provided margin data. \\
+\hline
+
+\end{DoxyEnumFields}
 
 
 \doxysubsection{Function Documentation}

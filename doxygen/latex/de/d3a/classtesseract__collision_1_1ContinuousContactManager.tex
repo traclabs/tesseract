@@ -70,13 +70,13 @@ virtual void \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactMana
 \begin{DoxyCompactList}\small\item\em Set which collision objects can move. \end{DoxyCompactList}\item 
 virtual const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManager_a9b6e955a182da53961b543773de536a7}{get\+Active\+Collision\+Objects}} () const =0
 \begin{DoxyCompactList}\small\item\em Get which collision objects can move. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManager_a9e265422d81599a2ae72022fd8670c76}{set\+Collision\+Margin\+Data}} (\mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} collision\+\_\+margin\+\_\+data, \mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4}{Collision\+Margin\+Override\+Type}} override\+\_\+type=\mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4a560a2dd6f6744646473b3b19e1fe96d7}{Collision\+Margin\+Override\+Type\+::\+REPLACE}})=0
+virtual void \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManager_a9e265422d81599a2ae72022fd8670c76}{set\+Collision\+Margin\+Data}} (\mbox{\hyperlink{namespacetesseract__collision_a0717a3c53d08d510257f631ea96cb560}{Collision\+Margin\+Data}} collision\+\_\+margin\+\_\+data, \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1}{Collision\+Margin\+Override\+Type}} override\+\_\+type=Collision\+Margin\+Override\+Type\+::\+REPLACE)=0
 \begin{DoxyCompactList}\small\item\em Set the contact distance thresholds for which collision should be considered on a per pair basis. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManager_a2f6531e6b49f47b5ad38e5df754a3d6e}{set\+Default\+Collision\+Margin\+Data}} (double default\+\_\+collision\+\_\+margin)=0
 \begin{DoxyCompactList}\small\item\em Set the default collision margin. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManager_a653786ca1c978b548b4688ca30af9222}{set\+Pair\+Collision\+Margin\+Data}} (const std\+::string \&name1, const std\+::string \&name2, double collision\+\_\+margin)=0
 \begin{DoxyCompactList}\small\item\em Set the margin for a given contact pair. \end{DoxyCompactList}\item 
-virtual const \mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} \& \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManager_a97a00b015e2effb4475f70b5f8e409f3}{get\+Collision\+Margin\+Data}} () const =0
+virtual const \mbox{\hyperlink{namespacetesseract__collision_a0717a3c53d08d510257f631ea96cb560}{Collision\+Margin\+Data}} \& \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManager_a97a00b015e2effb4475f70b5f8e409f3}{get\+Collision\+Margin\+Data}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the contact distance threshold. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManager_a8075475e0b84693368f8e657ecd2666e}{set\+Is\+Contact\+Allowed\+Fn}} (\mbox{\hyperlink{namespacetesseract__collision_abe7752ce161fbd1139533ac566fec1cb}{Is\+Contact\+Allowed\+Fn}} fn)=0
 \begin{DoxyCompactList}\small\item\em Set the active function for determining if two links are allowed to be in collision. \end{DoxyCompactList}\item 
@@ -259,7 +259,7 @@ Implemented in \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collisio
 \index{tesseract\_collision::ContinuousContactManager@{tesseract\_collision::ContinuousContactManager}!getCollisionMarginData@{getCollisionMarginData}}
 \index{getCollisionMarginData@{getCollisionMarginData}!tesseract\_collision::ContinuousContactManager@{tesseract\_collision::ContinuousContactManager}}
 \doxysubsubsection{\texorpdfstring{getCollisionMarginData()}{getCollisionMarginData()}}
-{\footnotesize\ttfamily virtual const \mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}}\& tesseract\+\_\+collision\+::\+Continuous\+Contact\+Manager\+::get\+Collision\+Margin\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{namespacetesseract__collision_a0717a3c53d08d510257f631ea96cb560}{Collision\+Margin\+Data}}\& tesseract\+\_\+collision\+::\+Continuous\+Contact\+Manager\+::get\+Collision\+Margin\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -426,7 +426,7 @@ Implemented in \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collisio
 \index{tesseract\_collision::ContinuousContactManager@{tesseract\_collision::ContinuousContactManager}!setCollisionMarginData@{setCollisionMarginData}}
 \index{setCollisionMarginData@{setCollisionMarginData}!tesseract\_collision::ContinuousContactManager@{tesseract\_collision::ContinuousContactManager}}
 \doxysubsubsection{\texorpdfstring{setCollisionMarginData()}{setCollisionMarginData()}}
-{\footnotesize\ttfamily virtual void tesseract\+\_\+collision\+::\+Continuous\+Contact\+Manager\+::set\+Collision\+Margin\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}}}]{collision\+\_\+margin\+\_\+data,  }\item[{\mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4}{Collision\+Margin\+Override\+Type}}}]{override\+\_\+type = {\ttfamily \mbox{\hyperlink{namespacetesseract__collision_ad76828e7a5bf5abb838b13bfd8b4b9f4a560a2dd6f6744646473b3b19e1fe96d7}{Collision\+Margin\+Override\+Type\+::\+REPLACE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void tesseract\+\_\+collision\+::\+Continuous\+Contact\+Manager\+::set\+Collision\+Margin\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetesseract__collision_a0717a3c53d08d510257f631ea96cb560}{Collision\+Margin\+Data}}}]{collision\+\_\+margin\+\_\+data,  }\item[{\mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1}{Collision\+Margin\+Override\+Type}}}]{override\+\_\+type = {\ttfamily CollisionMarginOverrideType\+:\+:REPLACE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -436,7 +436,7 @@ Set the contact distance thresholds for which collision should be considered on 
 \begin{DoxyParams}{Parameters}
 {\em collision\+\_\+margin\+\_\+data} & Contains the data that will replace the current settings \\
 \hline
-{\em override\+\_\+type} & This determines how the provided \mbox{\hyperlink{classtesseract__collision_1_1CollisionMarginData}{Collision\+Margin\+Data}} is applied \\
+{\em override\+\_\+type} & This determines how the provided Collision\+Margin\+Data is applied \\
 \hline
 \end{DoxyParams}
 

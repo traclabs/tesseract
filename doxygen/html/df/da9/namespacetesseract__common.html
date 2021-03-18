@@ -69,6 +69,7 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -89,6 +90,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/classtesseract__common_1_1CloneCache.html">CloneCache</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to create a cache of objects.  <a href="../../db/d29/classtesseract__common_1_1CloneCache.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html">CollisionMarginData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores information about how the margins allowed between collision objects.  <a href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de2/structtesseract__common_1_1JointState.html">JointState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +134,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a84cc21cc4b384291adbbddaa81fe6447"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a84cc21cc4b384291adbbddaa81fe6447">PairsCollisionMarginData</a> = std::unordered_map&lt; <a class="el" href="../../df/da9/namespacetesseract__common.html#a5b28b7ae665b374a7ca166d496f648ce">tesseract_common::LinkNamesPair</a>, double, <a class="el" href="../../d7/de0/structtesseract__common_1_1PairHash.html">tesseract_common::PairHash</a> &gt;</td></tr>
+<tr class="separator:a84cc21cc4b384291adbbddaa81fe6447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57fa3336d4e5f8655281342a9c94aece"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a57fa3336d4e5f8655281342a9c94aece">JointTrajectory</a> = std::vector&lt; <a class="el" href="../../d0/de2/structtesseract__common_1_1JointState.html">JointState</a> &gt;</td></tr>
 <tr class="memdesc:a57fa3336d4e5f8655281342a9c94aece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a joint trajectory.  <a href="../../df/da9/namespacetesseract__common.html#a57fa3336d4e5f8655281342a9c94aece">More...</a><br /></td></tr>
 <tr class="separator:a57fa3336d4e5f8655281342a9c94aece"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +165,20 @@ Typedefs</h2></td></tr>
 <tr class="separator:a431ff65777ee0bed71e7671390638244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b28b7ae665b374a7ca166d496f648ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a5b28b7ae665b374a7ca166d496f648ce">LinkNamesPair</a> = std::pair&lt; std::string, std::string &gt;</td></tr>
 <tr class="separator:a5b28b7ae665b374a7ca166d496f648ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:af06d85d024a36d63b58a6031556af8a1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1">CollisionMarginOverrideType</a> { <br />
+&#160;&#160;<a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1ab50339a10e1de285ac99d4c3990b8693">NONE</a>
+, <a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1a560a2dd6f6744646473b3b19e1fe96d7">REPLACE</a>
+, <a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1a68f2f4f7ee420d8895a41ac3f35db3fe">OVERRIDE_DEFAULT_MARGIN</a>
+, <a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1ae54086ed48f7d2ca425bdeca2121c83c">OVERRIDE_PAIR_MARGIN</a>
+, <br />
+&#160;&#160;<a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1a8f7ea9e9137c5d7d8bc6ea025484f55a">MODIFY_PAIR_MARGIN</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:af06d85d024a36d63b58a6031556af8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies how the provided contact margin data should be applied.  <a href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1">More...</a><br /></td></tr>
+<tr class="separator:af06d85d024a36d63b58a6031556af8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -310,6 +330,20 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a84cc21cc4b384291adbbddaa81fe6447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84cc21cc4b384291adbbddaa81fe6447">&#9670;&nbsp;</a></span>PairsCollisionMarginData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/da9/namespacetesseract__common.html#a84cc21cc4b384291adbbddaa81fe6447">tesseract_common::PairsCollisionMarginData</a> = typedef std::unordered_map&lt;<a class="el" href="../../df/da9/namespacetesseract__common.html#a5b28b7ae665b374a7ca166d496f648ce">tesseract_common::LinkNamesPair</a>, double, <a class="el" href="../../d7/de0/structtesseract__common_1_1PairHash.html">tesseract_common::PairHash</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a917718f518f98714fce17e831ec1ea11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a917718f518f98714fce17e831ec1ea11">&#9670;&nbsp;</a></span>Toolpath</h2>
 
@@ -405,6 +439,44 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="af06d85d024a36d63b58a6031556af8a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af06d85d024a36d63b58a6031556af8a1">&#9670;&nbsp;</a></span>CollisionMarginOverrideType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1">tesseract_common::CollisionMarginOverrideType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Identifies how the provided contact margin data should be applied. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af06d85d024a36d63b58a6031556af8a1ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"><p>Do not apply contact margin data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af06d85d024a36d63b58a6031556af8a1a560a2dd6f6744646473b3b19e1fe96d7"></a>REPLACE&#160;</td><td class="fielddoc"><p>Replace the contact manager's <a class="el" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html" title="Stores information about how the margins allowed between collision objects.">CollisionMarginData</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af06d85d024a36d63b58a6031556af8a1a68f2f4f7ee420d8895a41ac3f35db3fe"></a>OVERRIDE_DEFAULT_MARGIN&#160;</td><td class="fielddoc"><p>Override the contact managers default margin only. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af06d85d024a36d63b58a6031556af8a1ae54086ed48f7d2ca425bdeca2121c83c"></a>OVERRIDE_PAIR_MARGIN&#160;</td><td class="fielddoc"><p>Override the contact managers pair margin only. This does not preserve any existing pair margin data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af06d85d024a36d63b58a6031556af8a1a8f7ea9e9137c5d7d8bc6ea025484f55a"></a>MODIFY_PAIR_MARGIN&#160;</td><td class="fielddoc"><p>Modify the contact managers pair margin only. </p>
+<p>This will preserve existing pairs not being modified by the provided margin data. If a pair already exist it will be updated with the provided margin data. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -1309,7 +1381,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 13 2021 09:15:52 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 18 2021 03:06:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

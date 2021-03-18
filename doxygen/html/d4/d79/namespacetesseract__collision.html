@@ -88,9 +88,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/classtesseract__collision_1_1CollisionMarginData.html">CollisionMarginData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores information about how the margins allowed between collision objects.  <a href="../../dc/d4f/classtesseract__collision_1_1CollisionMarginData.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3a/classtesseract__collision_1_1ContinuousContactManager.html">ContinuousContactManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3b/classtesseract__collision_1_1ContinuousContactManagerFactory.html">ContinuousContactManagerFactory</a></td></tr>
@@ -125,6 +122,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:a0ba6c3df4805b8c865cb45f6571486c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aa5b9a264467e92cd1b9f0cd0c38ee8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#a0aa5b9a264467e92cd1b9f0cd0c38ee8">CollisionShapePtr</a> = <a class="el" href="../../df/d1a/classtesseract__geometry_1_1Geometry.html#acd91c55fb9604ed374446c029b6f2d08">tesseract_geometry::Geometry::Ptr</a></td></tr>
 <tr class="separator:a0aa5b9a264467e92cd1b9f0cd0c38ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0717a3c53d08d510257f631ea96cb560"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#a0717a3c53d08d510257f631ea96cb560">CollisionMarginData</a> = <a class="el" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html">tesseract_common::CollisionMarginData</a></td></tr>
+<tr class="separator:a0717a3c53d08d510257f631ea96cb560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8039c0a16a1e00bd4380e8dba462aeb2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#a8039c0a16a1e00bd4380e8dba462aeb2">CollisionMarginOverrideType</a> = <a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1">tesseract_common::CollisionMarginOverrideType</a></td></tr>
+<tr class="separator:a8039c0a16a1e00bd4380e8dba462aeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af335a7f19e2820b8185b48aafae6d6c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#af335a7f19e2820b8185b48aafae6d6c1">PairsCollisionMarginData</a> = <a class="el" href="../../df/da9/namespacetesseract__common.html#a84cc21cc4b384291adbbddaa81fe6447">tesseract_common::PairsCollisionMarginData</a></td></tr>
+<tr class="separator:af335a7f19e2820b8185b48aafae6d6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe7752ce161fbd1139533ac566fec1cb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#abe7752ce161fbd1139533ac566fec1cb">IsContactAllowedFn</a> = std::function&lt; bool(const std::string &amp;, const std::string &amp;)&gt;</td></tr>
 <tr class="memdesc:abe7752ce161fbd1139533ac566fec1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should return true if contact allowed, otherwise false.  <a href="../../d4/d79/namespacetesseract__collision.html#abe7752ce161fbd1139533ac566fec1cb">More...</a><br /></td></tr>
 <tr class="separator:abe7752ce161fbd1139533ac566fec1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,17 +141,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ad76828e7a5bf5abb838b13bfd8b4b9f4"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#ad76828e7a5bf5abb838b13bfd8b4b9f4">CollisionMarginOverrideType</a> { <br />
-&#160;&#160;<a class="el" href="../../d4/d79/namespacetesseract__collision.html#ad76828e7a5bf5abb838b13bfd8b4b9f4ab50339a10e1de285ac99d4c3990b8693">NONE</a>
-, <a class="el" href="../../d4/d79/namespacetesseract__collision.html#ad76828e7a5bf5abb838b13bfd8b4b9f4a560a2dd6f6744646473b3b19e1fe96d7">REPLACE</a>
-, <a class="el" href="../../d4/d79/namespacetesseract__collision.html#ad76828e7a5bf5abb838b13bfd8b4b9f4a68f2f4f7ee420d8895a41ac3f35db3fe">OVERRIDE_DEFAULT_MARGIN</a>
-, <a class="el" href="../../d4/d79/namespacetesseract__collision.html#ad76828e7a5bf5abb838b13bfd8b4b9f4ae54086ed48f7d2ca425bdeca2121c83c">OVERRIDE_PAIR_MARGIN</a>
-, <br />
-&#160;&#160;<a class="el" href="../../d4/d79/namespacetesseract__collision.html#ad76828e7a5bf5abb838b13bfd8b4b9f4a8f7ea9e9137c5d7d8bc6ea025484f55a">MODIFY_PAIR_MARGIN</a>
-<br />
- }</td></tr>
-<tr class="memdesc:ad76828e7a5bf5abb838b13bfd8b4b9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies how the provided contact margin data should be applied.  <a href="../../d4/d79/namespacetesseract__collision.html#ad76828e7a5bf5abb838b13bfd8b4b9f4">More...</a><br /></td></tr>
-<tr class="separator:ad76828e7a5bf5abb838b13bfd8b4b9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a267c740fd3b446222ba19cbaa56dab5e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#a267c740fd3b446222ba19cbaa56dab5e">ContinuousCollisionType</a> { <a class="el" href="../../d4/d79/namespacetesseract__collision.html#a267c740fd3b446222ba19cbaa56dab5ea79e497b3f5d3d8b23ea29c9370354bb6">CCType_None</a>
 , <a class="el" href="../../d4/d79/namespacetesseract__collision.html#a267c740fd3b446222ba19cbaa56dab5eaf8c51e6d7c61aa31897c3dd7b0719093">CCType_Time0</a>
 , <a class="el" href="../../d4/d79/namespacetesseract__collision.html#a267c740fd3b446222ba19cbaa56dab5ea333ec902092c850b7f23cf437d0fac01">CCType_Time1</a>
@@ -220,6 +212,34 @@ Variables</h2></td></tr>
 <tr class="separator:a7b23767d95cb11ee74a0001502f930a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a0717a3c53d08d510257f631ea96cb560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0717a3c53d08d510257f631ea96cb560">&#9670;&nbsp;</a></span>CollisionMarginData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d4/d79/namespacetesseract__collision.html#a0717a3c53d08d510257f631ea96cb560">tesseract_collision::CollisionMarginData</a> = typedef <a class="el" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html">tesseract_common::CollisionMarginData</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8039c0a16a1e00bd4380e8dba462aeb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8039c0a16a1e00bd4380e8dba462aeb2">&#9670;&nbsp;</a></span>CollisionMarginOverrideType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1">tesseract_collision::CollisionMarginOverrideType</a> = typedef <a class="el" href="../../df/da9/namespacetesseract__common.html#af06d85d024a36d63b58a6031556af8a1">tesseract_common::CollisionMarginOverrideType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0ba6c3df4805b8c865cb45f6571486c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ba6c3df4805b8c865cb45f6571486c0">&#9670;&nbsp;</a></span>CollisionShapeConstPtr</h2>
 
@@ -366,6 +386,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="af335a7f19e2820b8185b48aafae6d6c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af335a7f19e2820b8185b48aafae6d6c1">&#9670;&nbsp;</a></span>PairsCollisionMarginData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d4/d79/namespacetesseract__collision.html#af335a7f19e2820b8185b48aafae6d6c1">tesseract_collision::PairsCollisionMarginData</a> = typedef <a class="el" href="../../df/da9/namespacetesseract__common.html#a84cc21cc4b384291adbbddaa81fe6447">tesseract_common::PairsCollisionMarginData</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="af17e8ee8632a40cf4b6ed1ba1aec41ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af17e8ee8632a40cf4b6ed1ba1aec41ac">&#9670;&nbsp;</a></span>CollisionEvaluatorType</h2>
@@ -399,43 +433,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="af17e8ee8632a40cf4b6ed1ba1aec41acab1fa9dd3af034b3ef4291579aa673c07"></a>CONTINUOUS&#160;</td><td class="fielddoc"><p>Continuous contact manager using only steps specified. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af17e8ee8632a40cf4b6ed1ba1aec41acab8bde735baca78a8b98c00e1a0a50239"></a>LVS_CONTINUOUS&#160;</td><td class="fielddoc"><p>Continuous contact manager interpolating using longest valid segment. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="ad76828e7a5bf5abb838b13bfd8b4b9f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad76828e7a5bf5abb838b13bfd8b4b9f4">&#9670;&nbsp;</a></span>CollisionMarginOverrideType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../d4/d79/namespacetesseract__collision.html#ad76828e7a5bf5abb838b13bfd8b4b9f4">tesseract_collision::CollisionMarginOverrideType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Identifies how the provided contact margin data should be applied. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad76828e7a5bf5abb838b13bfd8b4b9f4ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"><p>Do not apply contact margin data. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad76828e7a5bf5abb838b13bfd8b4b9f4a560a2dd6f6744646473b3b19e1fe96d7"></a>REPLACE&#160;</td><td class="fielddoc"><p>Replace the contact manager's <a class="el" href="../../dc/d4f/classtesseract__collision_1_1CollisionMarginData.html" title="Stores information about how the margins allowed between collision objects.">CollisionMarginData</a>. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad76828e7a5bf5abb838b13bfd8b4b9f4a68f2f4f7ee420d8895a41ac3f35db3fe"></a>OVERRIDE_DEFAULT_MARGIN&#160;</td><td class="fielddoc"><p>Override the contact managers default margin only. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad76828e7a5bf5abb838b13bfd8b4b9f4ae54086ed48f7d2ca425bdeca2121c83c"></a>OVERRIDE_PAIR_MARGIN&#160;</td><td class="fielddoc"><p>Override the contact managers pair margin only. This does not preserve any existing pair margin data. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad76828e7a5bf5abb838b13bfd8b4b9f4a8f7ea9e9137c5d7d8bc6ea025484f55a"></a>MODIFY_PAIR_MARGIN&#160;</td><td class="fielddoc"><p>Modify the contact managers pair margin only. </p>
-<p>This will preserve existing pairs not being modified by the provided margin data. If a pair already exist it will be updated with the provided margin data. </p>
 </td></tr>
 </table>
 
@@ -1230,7 +1227,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 13 2021 09:15:52 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 18 2021 03:06:27 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

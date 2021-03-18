@@ -98,6 +98,10 @@ using \mbox{\hyperlink{namespacetesseract__scene__graph_a33353003fc3c590f3f10a9a
 using \mbox{\hyperlink{namespacetesseract__scene__graph_a63a923da37f74c71d5a0497ea61c29c4}{Group\+Default\+Kinematics\+Solver}} = std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$
 \item 
 using \mbox{\hyperlink{namespacetesseract__scene__graph_a69d7f23b6559723bd757a453bda40714}{Simple\+Resource\+Locator\+Fn}} = std\+::function$<$ std\+::string(const std\+::string \&)$>$
+\item 
+using \mbox{\hyperlink{namespacetesseract__scene__graph_abd739ec5e6d9255c190928a0f9ddcb7b}{Collision\+Margin\+Data}} = \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData}{tesseract\+\_\+common\+::\+Collision\+Margin\+Data}}
+\item 
+using \mbox{\hyperlink{namespacetesseract__scene__graph_ac6b7dc80b6bdac1274d136a881ff9c92}{Pairs\+Collision\+Margin\+Data}} = \mbox{\hyperlink{namespacetesseract__common_a84cc21cc4b384291adbbddaa81fe6447}{tesseract\+\_\+common\+::\+Pairs\+Collision\+Margin\+Data}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
@@ -130,6 +134,8 @@ KDL\+::\+Rigid\+Body\+Inertia \mbox{\hyperlink{namespacetesseract__scene__graph_
 \begin{DoxyCompactList}\small\item\em Convert Tesseract Inertail to KDL \mbox{\hyperlink{classtesseract__scene__graph_1_1Inertial}{Inertial}}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__scene__graph_a7132480e5402ba4a3c44d4dc09712c0a}{parse\+Scene\+Graph}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{Scene\+Graph}} \&scene\+\_\+graph, KDL\+::\+Tree \&tree)
 \begin{DoxyCompactList}\small\item\em Convert a Tesseract \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{Scene\+Graph}} into a KDL Tree If graph is not a tree it will return false. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData_a9d0116259e8c3b97d61e63a3209ffa7b}{Collision\+Margin\+Data\+::\+Ptr}} \mbox{\hyperlink{namespacetesseract__scene__graph_a199e7dc0c28bf7321a1ee85ce736f5fa}{parse\+Collision\+Margins}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const tinyxml2\+::\+XMLElement $\ast$srdf\+\_\+xml, const std\+::array$<$ int, 3 $>$ \&)
+\begin{DoxyCompactList}\small\item\em Parse allowed collisions from srdf xml element. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix}{Allowed\+Collision\+Matrix}} \mbox{\hyperlink{namespacetesseract__scene__graph_a1610e4fb73f2ebb59eb0bddfe9b81c1b}{parse\+Disabled\+Collisions}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const tinyxml2\+::\+XMLElement $\ast$srdf\+\_\+xml, const std\+::array$<$ int, 3 $>$ \&)
 \begin{DoxyCompactList}\small\item\em Parse allowed collisions from srdf xml element. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacetesseract__scene__graph_a33353003fc3c590f3f10a9a1dab84b77}{Group\+OPWKinematics}} \mbox{\hyperlink{namespacetesseract__scene__graph_adfb106ccb06a856d953385947364955c}{parse\+Group\+OPWKinematics}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&, const tinyxml2\+::\+XMLElement $\ast$srdf\+\_\+xml, const std\+::array$<$ int, 3 $>$ \&)
@@ -176,6 +182,12 @@ Main namespace.
 \index{ChainGroups@{ChainGroups}!tesseract\_scene\_graph@{tesseract\_scene\_graph}}
 \doxysubsubsection{\texorpdfstring{ChainGroups}{ChainGroups}}
 {\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__scene__graph_a3abd6411aec87a44d780401c2cb30cf9}{tesseract\+\_\+scene\+\_\+graph\+::\+Chain\+Groups}} = typedef std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{namespacetesseract__scene__graph_af59fa5cf100507d2b1544006747c5333}{Chain\+Group}}$>$}
+
+\mbox{\Hypertarget{namespacetesseract__scene__graph_abd739ec5e6d9255c190928a0f9ddcb7b}\label{namespacetesseract__scene__graph_abd739ec5e6d9255c190928a0f9ddcb7b}} 
+\index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!CollisionMarginData@{CollisionMarginData}}
+\index{CollisionMarginData@{CollisionMarginData}!tesseract\_scene\_graph@{tesseract\_scene\_graph}}
+\doxysubsubsection{\texorpdfstring{CollisionMarginData}{CollisionMarginData}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__scene__graph_abd739ec5e6d9255c190928a0f9ddcb7b}{tesseract\+\_\+scene\+\_\+graph\+::\+Collision\+Margin\+Data}} = typedef \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData}{tesseract\+\_\+common\+::\+Collision\+Margin\+Data}}}
 
 \mbox{\Hypertarget{namespacetesseract__scene__graph_a9dc21bc544723df21ec27052717c4e1e}\label{namespacetesseract__scene__graph_a9dc21bc544723df21ec27052717c4e1e}} 
 \index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!EdgeProperty@{EdgeProperty}}
@@ -286,6 +298,12 @@ Defines the boost graph property.
 \index{LinkGroups@{LinkGroups}!tesseract\_scene\_graph@{tesseract\_scene\_graph}}
 \doxysubsubsection{\texorpdfstring{LinkGroups}{LinkGroups}}
 {\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__scene__graph_ab616c56edf955298f1d2c550edb9548f}{tesseract\+\_\+scene\+\_\+graph\+::\+Link\+Groups}} = typedef std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{namespacetesseract__scene__graph_a847a67031db93f9304702b1facfd9f6d}{Link\+Group}}$>$}
+
+\mbox{\Hypertarget{namespacetesseract__scene__graph_ac6b7dc80b6bdac1274d136a881ff9c92}\label{namespacetesseract__scene__graph_ac6b7dc80b6bdac1274d136a881ff9c92}} 
+\index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!PairsCollisionMarginData@{PairsCollisionMarginData}}
+\index{PairsCollisionMarginData@{PairsCollisionMarginData}!tesseract\_scene\_graph@{tesseract\_scene\_graph}}
+\doxysubsubsection{\texorpdfstring{PairsCollisionMarginData}{PairsCollisionMarginData}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__scene__graph_ac6b7dc80b6bdac1274d136a881ff9c92}{tesseract\+\_\+scene\+\_\+graph\+::\+Pairs\+Collision\+Margin\+Data}} = typedef \mbox{\hyperlink{namespacetesseract__common_a84cc21cc4b384291adbbddaa81fe6447}{tesseract\+\_\+common\+::\+Pairs\+Collision\+Margin\+Data}}}
 
 \mbox{\Hypertarget{namespacetesseract__scene__graph_a69d7f23b6559723bd757a453bda40714}\label{namespacetesseract__scene__graph_a69d7f23b6559723bd757a453bda40714}} 
 \index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!SimpleResourceLocatorFn@{SimpleResourceLocatorFn}}
@@ -451,6 +469,28 @@ vector of links that are allowed to collide with links given
 \doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::ostream\& tesseract\+\_\+scene\+\_\+graph\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a52654d2ec93d3faa655f811c4bc72bed}{Scene\+Graph\+::\+Path}} \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+\mbox{\Hypertarget{namespacetesseract__scene__graph_a199e7dc0c28bf7321a1ee85ce736f5fa}\label{namespacetesseract__scene__graph_a199e7dc0c28bf7321a1ee85ce736f5fa}} 
+\index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!parseCollisionMargins@{parseCollisionMargins}}
+\index{parseCollisionMargins@{parseCollisionMargins}!tesseract\_scene\_graph@{tesseract\_scene\_graph}}
+\doxysubsubsection{\texorpdfstring{parseCollisionMargins()}{parseCollisionMargins()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData_a9d0116259e8c3b97d61e63a3209ffa7b}{Collision\+Margin\+Data\+::\+Ptr}} tesseract\+\_\+scene\+\_\+graph\+::parse\+Collision\+Margins (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&}]{scene\+\_\+graph,  }\item[{const tinyxml2\+::\+XMLElement $\ast$}]{srdf\+\_\+xml,  }\item[{const std\+::array$<$ int, 3 $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse allowed collisions from srdf xml element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+\_\+graph} & The tesseract scene graph \\
+\hline
+{\em srdf\+\_\+xml} & The xml element to parse \\
+\hline
+{\em version} & The srdf version number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Allowed \mbox{\hyperlink{classtesseract__scene__graph_1_1Collision}{Collision}} Matrix 
+\end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__scene__graph_a1610e4fb73f2ebb59eb0bddfe9b81c1b}\label{namespacetesseract__scene__graph_a1610e4fb73f2ebb59eb0bddfe9b81c1b}} 
 \index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!parseDisabledCollisions@{parseDisabledCollisions}}
 \index{parseDisabledCollisions@{parseDisabledCollisions}!tesseract\_scene\_graph@{tesseract\_scene\_graph}}

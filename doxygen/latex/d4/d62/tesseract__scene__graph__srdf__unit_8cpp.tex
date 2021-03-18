@@ -7,6 +7,7 @@
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/graph.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/utils.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/resource\+\_\+locator.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/srdf/collision\+\_\+margins.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/srdf/disabled\+\_\+collisions.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/srdf/group\+\_\+opw\+\_\+kinematics.\+h$>$}\newline
 {\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/srdf/group\+\_\+rep\+\_\+kinematics.\+h$>$}\newline
@@ -73,6 +74,8 @@ enum class \mbox{\hyperlink{tesseract__scene__graph__srdf__unit_8cpp_a3b3fec2e8c
 \item 
 \mbox{\hyperlink{tesseract__scene__graph__srdf__unit_8cpp_a19cb92f262f5ce813272b8be120ac48b}{TEST}} (Tesseract\+Scene\+Graph\+SRDFUnit, SRDFGroup\+TCPs\+Unit)
 \item 
+\mbox{\hyperlink{tesseract__scene__graph__srdf__unit_8cpp_a77d55bfc6bcf80d477ddc98e4b2bf3a5}{TEST}} (Tesseract\+Scene\+Graph\+SRDFUnit, SRDFCollision\+Margins\+Unit)
+\item 
 int \mbox{\hyperlink{tesseract__scene__graph__srdf__unit_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
 \end{DoxyCompactItemize}
 
@@ -134,90 +137,96 @@ ROBOT\+\_\+\+WITH\+\_\+\+POSITIONER&\\
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_af1fd604adef8c1b09e48872fd3d9b95b}\label{tesseract__scene__graph__srdf__unit_8cpp_af1fd604adef8c1b09e48872fd3d9b95b}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFAllowed\+Collision\+Matrix\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_aa1e82a158d3ef531f04bd5de5e596889}\label{tesseract__scene__graph__srdf__unit_8cpp_aa1e82a158d3ef531f04bd5de5e596889}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFFailure\+Cases\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_ae034946a9ccb4bb179355b6aa794aefd}\label{tesseract__scene__graph__srdf__unit_8cpp_ae034946a9ccb4bb179355b6aa794aefd}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFFile\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_ab8059dd9dfb30a1488c137cd7731685d}\label{tesseract__scene__graph__srdf__unit_8cpp_ab8059dd9dfb30a1488c137cd7731685d}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFGroup\+States\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_ae9ad20e03259cbb68c186062fdc78dd1}\label{tesseract__scene__graph__srdf__unit_8cpp_ae9ad20e03259cbb68c186062fdc78dd1}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFOPWKinematics\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_aba850a973214fab8f7acb08fb231f1f9}\label{tesseract__scene__graph__srdf__unit_8cpp_aba850a973214fab8f7acb08fb231f1f9}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFREPKinematics\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a00f4b591451d3be2b7057658a57c8e69}\label{tesseract__scene__graph__srdf__unit_8cpp_a00f4b591451d3be2b7057658a57c8e69}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFREPUnit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a9f4e1d2d94feaf95a1cdcecd997a5092}\label{tesseract__scene__graph__srdf__unit_8cpp_a9f4e1d2d94feaf95a1cdcecd997a5092}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFROPKinematics\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a4bcc8a429a848357cae892001220a705}\label{tesseract__scene__graph__srdf__unit_8cpp_a4bcc8a429a848357cae892001220a705}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFROPUnit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a025ca42752024b0e71f9098210cb59c4}\label{tesseract__scene__graph__srdf__unit_8cpp_a025ca42752024b0e71f9098210cb59c4}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFSave2\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a0bc72b5f445344c5a69c5b69675ecc46}\label{tesseract__scene__graph__srdf__unit_8cpp_a0bc72b5f445344c5a69c5b69675ecc46}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{Load\+SRDFSave\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a8cd214a1b7b24d7cbcd32d62ad55768b}\label{tesseract__scene__graph__srdf__unit_8cpp_a8cd214a1b7b24d7cbcd32d62ad55768b}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{SRDFChain\+Group\+Unit}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a77d55bfc6bcf80d477ddc98e4b2bf3a5}\label{tesseract__scene__graph__srdf__unit_8cpp_a77d55bfc6bcf80d477ddc98e4b2bf3a5}} 
+\index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/16]}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{SRDFCollision\+Margins\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a19cb92f262f5ce813272b8be120ac48b}\label{tesseract__scene__graph__srdf__unit_8cpp_a19cb92f262f5ce813272b8be120ac48b}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [14/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{SRDFGroup\+TCPs\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a00a77dbb5fdb8982d73c07a495545ea2}\label{tesseract__scene__graph__srdf__unit_8cpp_a00a77dbb5fdb8982d73c07a495545ea2}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [14/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [15/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{SRDFJoint\+Group\+Unit}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{tesseract__scene__graph__srdf__unit_8cpp_a7ae48e4f6b74bae6d51073ee95f0ed2c}\label{tesseract__scene__graph__srdf__unit_8cpp_a7ae48e4f6b74bae6d51073ee95f0ed2c}} 
 \index{tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!tesseract\_scene\_graph\_srdf\_unit.cpp@{tesseract\_scene\_graph\_srdf\_unit.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [15/15]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [16/16]}}
 {\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Tesseract\+Scene\+Graph\+SRDFUnit}]{,  }\item[{SRDFLink\+Group\+Unit}]{ }\end{DoxyParamCaption})}
 

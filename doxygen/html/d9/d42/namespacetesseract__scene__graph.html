@@ -183,6 +183,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:a63a923da37f74c71d5a0497ea61c29c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69d7f23b6559723bd757a453bda40714"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#a69d7f23b6559723bd757a453bda40714">SimpleResourceLocatorFn</a> = std::function&lt; std::string(const std::string &amp;)&gt;</td></tr>
 <tr class="separator:a69d7f23b6559723bd757a453bda40714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd739ec5e6d9255c190928a0f9ddcb7b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#abd739ec5e6d9255c190928a0f9ddcb7b">CollisionMarginData</a> = <a class="el" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html">tesseract_common::CollisionMarginData</a></td></tr>
+<tr class="separator:abd739ec5e6d9255c190928a0f9ddcb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b7dc80b6bdac1274d136a881ff9c92"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#ac6b7dc80b6bdac1274d136a881ff9c92">PairsCollisionMarginData</a> = <a class="el" href="../../df/da9/namespacetesseract__common.html#a84cc21cc4b384291adbbddaa81fe6447">tesseract_common::PairsCollisionMarginData</a></td></tr>
+<tr class="separator:ac6b7dc80b6bdac1274d136a881ff9c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -220,6 +224,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7132480e5402ba4a3c44d4dc09712c0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#a7132480e5402ba4a3c44d4dc09712c0a">parseSceneGraph</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">SceneGraph</a> &amp;scene_graph, KDL::Tree &amp;tree)</td></tr>
 <tr class="memdesc:a7132480e5402ba4a3c44d4dc09712c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a Tesseract <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">SceneGraph</a> into a KDL Tree If graph is not a tree it will return false.  <a href="../../d9/d42/namespacetesseract__scene__graph.html#a7132480e5402ba4a3c44d4dc09712c0a">More...</a><br /></td></tr>
 <tr class="separator:a7132480e5402ba4a3c44d4dc09712c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199e7dc0c28bf7321a1ee85ce736f5fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html#a9d0116259e8c3b97d61e63a3209ffa7b">CollisionMarginData::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#a199e7dc0c28bf7321a1ee85ce736f5fa">parseCollisionMargins</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">tesseract_scene_graph::SceneGraph</a> &amp;scene_graph, const tinyxml2::XMLElement *srdf_xml, const std::array&lt; int, 3 &gt; &amp;)</td></tr>
+<tr class="memdesc:a199e7dc0c28bf7321a1ee85ce736f5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse allowed collisions from srdf xml element.  <a href="../../d9/d42/namespacetesseract__scene__graph.html#a199e7dc0c28bf7321a1ee85ce736f5fa">More...</a><br /></td></tr>
+<tr class="separator:a199e7dc0c28bf7321a1ee85ce736f5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1610e4fb73f2ebb59eb0bddfe9b81c1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/df3/classtesseract__scene__graph_1_1AllowedCollisionMatrix.html">AllowedCollisionMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#a1610e4fb73f2ebb59eb0bddfe9b81c1b">parseDisabledCollisions</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">tesseract_scene_graph::SceneGraph</a> &amp;scene_graph, const tinyxml2::XMLElement *srdf_xml, const std::array&lt; int, 3 &gt; &amp;)</td></tr>
 <tr class="memdesc:a1610e4fb73f2ebb59eb0bddfe9b81c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse allowed collisions from srdf xml element.  <a href="../../d9/d42/namespacetesseract__scene__graph.html#a1610e4fb73f2ebb59eb0bddfe9b81c1b">More...</a><br /></td></tr>
 <tr class="separator:a1610e4fb73f2ebb59eb0bddfe9b81c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,6 +298,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#a3abd6411aec87a44d780401c2cb30cf9">tesseract_scene_graph::ChainGroups</a> = typedef std::unordered_map&lt;std::string, <a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#af59fa5cf100507d2b1544006747c5333">ChainGroup</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd739ec5e6d9255c190928a0f9ddcb7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd739ec5e6d9255c190928a0f9ddcb7b">&#9670;&nbsp;</a></span>CollisionMarginData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#abd739ec5e6d9255c190928a0f9ddcb7b">tesseract_scene_graph::CollisionMarginData</a> = typedef <a class="el" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html">tesseract_common::CollisionMarginData</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -534,6 +555,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#ab616c56edf955298f1d2c550edb9548f">tesseract_scene_graph::LinkGroups</a> = typedef std::unordered_map&lt;std::string, <a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#a847a67031db93f9304702b1facfd9f6d">LinkGroup</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6b7dc80b6bdac1274d136a881ff9c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b7dc80b6bdac1274d136a881ff9c92">&#9670;&nbsp;</a></span>PairsCollisionMarginData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html#ac6b7dc80b6bdac1274d136a881ff9c92">tesseract_scene_graph::PairsCollisionMarginData</a> = typedef <a class="el" href="../../df/da9/namespacetesseract__common.html#a84cc21cc4b384291adbbddaa81fe6447">tesseract_common::PairsCollisionMarginData</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -865,6 +900,59 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a199e7dc0c28bf7321a1ee85ce736f5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a199e7dc0c28bf7321a1ee85ce736f5fa">&#9670;&nbsp;</a></span>parseCollisionMargins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html#a9d0116259e8c3b97d61e63a3209ffa7b">CollisionMarginData::Ptr</a> tesseract_scene_graph::parseCollisionMargins </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">tesseract_scene_graph::SceneGraph</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene_graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const tinyxml2::XMLElement *&#160;</td>
+          <td class="paramname"><em>srdf_xml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; int, 3 &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse allowed collisions from srdf xml element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scene_graph</td><td>The tesseract scene graph </td></tr>
+    <tr><td class="paramname">srdf_xml</td><td>The xml element to parse </td></tr>
+    <tr><td class="paramname">version</td><td>The srdf version number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Allowed <a class="el" href="../../d1/d90/classtesseract__scene__graph_1_1Collision.html">Collision</a> Matrix </dd></dl>
 
 </div>
 </div>
@@ -1353,7 +1441,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 13 2021 09:15:53 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 18 2021 03:06:29 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

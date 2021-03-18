@@ -51,33 +51,21 @@ bool \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a51e291f1c8683b2
 \begin{DoxyCompactList}\small\item\em Load Model from a XML-\/string. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a4477d5c4958945809588584153451c36}{save\+To\+File}} (const std\+::string \&file\+\_\+path) const
 \begin{DoxyCompactList}\small\item\em Save the model to a file. \end{DoxyCompactList}\item 
-const std\+::string \& \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_ad6b13bcb3ac8d5cef4ff4bfa2152aeeb}{get\+Name}} () const
-\begin{DoxyCompactList}\small\item\em Get the name of this model. \end{DoxyCompactList}\item 
-std\+::string \& \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a96574d04c998dc4cf9ac61fe940ae3df}{get\+Name}} ()
-\item 
-const std\+::array$<$ int, 3 $>$ \& \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a208110a128e24d2cda21946c17a924a3}{get\+Version}} () const
-\begin{DoxyCompactList}\small\item\em Get the version number \{major, minor, patch\}. \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix}{Allowed\+Collision\+Matrix}} \& \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_aa1020e7102b719ae637af46a4be69673}{get\+Allowed\+Collision\+Matrix}} () const
-\begin{DoxyCompactList}\small\item\em Get the allowed collision matrix. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix}{Allowed\+Collision\+Matrix}} \& \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_ae56ade74d9dad7f31c4cc361643d101c}{get\+Allowed\+Collision\+Matrix}} ()
-\item 
-const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{Kinematics\+Information}} \& \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_ae150ed1849fa9c02e0c506bc1186765e}{get\+Kinematics\+Information}} () const
-\begin{DoxyCompactList}\small\item\em Get the kinematics information. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{Kinematics\+Information}} \& \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_aef2e25048365cc5511d5af5931b58fe5}{get\+Kinematics\+Information}} ()
-\item 
 void \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a876d8b44fdb3e6803baea11e90fed787}{clear}} ()
 \begin{DoxyCompactList}\small\item\em Clear the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a9d90286c59b8989ebcf7442169bb3c91}{name\+\_\+}} \{ \char`\"{}undefined\char`\"{} \}
+std\+::string \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a849add710e10ce7466a65dba89726aee}{name}} \{ \char`\"{}undefined\char`\"{} \}
 \begin{DoxyCompactList}\small\item\em The name of the srdf model. \end{DoxyCompactList}\item 
-std\+::array$<$ int, 3 $>$ \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_af4374879ccb8ba8c10b7e5702b29772d}{version\+\_\+}} \{ \{ 1, 0, 0 \} \}
+std\+::array$<$ int, 3 $>$ \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_af9498d417eeab126c35822f68eed38ad}{version}} \{ \{ 1, 0, 0 \} \}
 \begin{DoxyCompactList}\small\item\em The version number major.\+minor\mbox{[}.patch\mbox{]}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix}{Allowed\+Collision\+Matrix}} \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a34f912ca55dd61474f96308100714682}{acm\+\_\+}}
+\mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix}{Allowed\+Collision\+Matrix}} \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a14ff28074c7aa2e8f49bfca2ce513d7a}{acm}}
 \begin{DoxyCompactList}\small\item\em The allowed collision matrix. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{Kinematics\+Information}} \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a65bf3913a0407500edf07ab945e0e4d5}{kinematics\+\_\+information\+\_\+}}
-\begin{DoxyCompactList}\small\item\em A map of group opw kinematics data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{Kinematics\+Information}} \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a728da1d31301cd8a8ffba867baaefc10}{kinematics\+\_\+information}}
+\begin{DoxyCompactList}\small\item\em A map of group opw kinematics data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData_a9d0116259e8c3b97d61e63a3209ffa7b}{tesseract\+\_\+common\+::\+Collision\+Margin\+Data\+::\+Ptr}} \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_aa1717b2b80fe0987d85b54fa555a15fc}{collision\+\_\+margin\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtesseract__scene__graph_1_1Collision}{Collision}} margin data. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -135,64 +123,6 @@ Representation of semantic information about the robot.
 
 
 Clear the model. 
-
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_ae56ade74d9dad7f31c4cc361643d101c}\label{classtesseract__scene__graph_1_1SRDFModel_ae56ade74d9dad7f31c4cc361643d101c}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!getAllowedCollisionMatrix@{getAllowedCollisionMatrix}}
-\index{getAllowedCollisionMatrix@{getAllowedCollisionMatrix}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{getAllowedCollisionMatrix()}{getAllowedCollisionMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix}{Allowed\+Collision\+Matrix}} \& tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::get\+Allowed\+Collision\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_aa1020e7102b719ae637af46a4be69673}\label{classtesseract__scene__graph_1_1SRDFModel_aa1020e7102b719ae637af46a4be69673}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!getAllowedCollisionMatrix@{getAllowedCollisionMatrix}}
-\index{getAllowedCollisionMatrix@{getAllowedCollisionMatrix}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{getAllowedCollisionMatrix()}{getAllowedCollisionMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix}{Allowed\+Collision\+Matrix}} \& tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::get\+Allowed\+Collision\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-
-
-Get the allowed collision matrix. 
-
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_aef2e25048365cc5511d5af5931b58fe5}\label{classtesseract__scene__graph_1_1SRDFModel_aef2e25048365cc5511d5af5931b58fe5}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!getKinematicsInformation@{getKinematicsInformation}}
-\index{getKinematicsInformation@{getKinematicsInformation}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{getKinematicsInformation()}{getKinematicsInformation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{Kinematics\+Information}} \& tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::get\+Kinematics\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_ae150ed1849fa9c02e0c506bc1186765e}\label{classtesseract__scene__graph_1_1SRDFModel_ae150ed1849fa9c02e0c506bc1186765e}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!getKinematicsInformation@{getKinematicsInformation}}
-\index{getKinematicsInformation@{getKinematicsInformation}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{getKinematicsInformation()}{getKinematicsInformation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{Kinematics\+Information}} \& tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::get\+Kinematics\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-
-
-Get the kinematics information. 
-
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_a96574d04c998dc4cf9ac61fe940ae3df}\label{classtesseract__scene__graph_1_1SRDFModel_a96574d04c998dc4cf9ac61fe940ae3df}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!getName@{getName}}
-\index{getName@{getName}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{getName()}{getName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily std\+::string \& tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_ad6b13bcb3ac8d5cef4ff4bfa2152aeeb}\label{classtesseract__scene__graph_1_1SRDFModel_ad6b13bcb3ac8d5cef4ff4bfa2152aeeb}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!getName@{getName}}
-\index{getName@{getName}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{getName()}{getName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const std\+::string \& tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-
-
-Get the name of this model. 
-
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_a208110a128e24d2cda21946c17a924a3}\label{classtesseract__scene__graph_1_1SRDFModel_a208110a128e24d2cda21946c17a924a3}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!getVersion@{getVersion}}
-\index{getVersion@{getVersion}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{getVersion()}{getVersion()}}
-{\footnotesize\ttfamily const std\+::array$<$ int, 3 $>$ \& tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::get\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-
-
-Get the version number \{major, minor, patch\}. 
 
 \mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_a6067e78c048d90a6f6fb3582fe9a9bbf}\label{classtesseract__scene__graph_1_1SRDFModel_a6067e78c048d90a6f6fb3582fe9a9bbf}} 
 \index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!initFile@{initFile}}
@@ -259,41 +189,51 @@ Save the model to a file.
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_a34f912ca55dd61474f96308100714682}\label{classtesseract__scene__graph_1_1SRDFModel_a34f912ca55dd61474f96308100714682}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!acm\_@{acm\_}}
-\index{acm\_@{acm\_}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{acm\_}{acm\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix}{Allowed\+Collision\+Matrix}} tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::acm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_a14ff28074c7aa2e8f49bfca2ce513d7a}\label{classtesseract__scene__graph_1_1SRDFModel_a14ff28074c7aa2e8f49bfca2ce513d7a}} 
+\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!acm@{acm}}
+\index{acm@{acm}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
+\doxysubsubsection{\texorpdfstring{acm}{acm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__scene__graph_1_1AllowedCollisionMatrix}{Allowed\+Collision\+Matrix}} tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::acm}
 
 
 
 The allowed collision matrix. 
 
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_a65bf3913a0407500edf07ab945e0e4d5}\label{classtesseract__scene__graph_1_1SRDFModel_a65bf3913a0407500edf07ab945e0e4d5}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!kinematics\_information\_@{kinematics\_information\_}}
-\index{kinematics\_information\_@{kinematics\_information\_}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{kinematics\_information\_}{kinematics\_information\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{Kinematics\+Information}} tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::kinematics\+\_\+information\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_aa1717b2b80fe0987d85b54fa555a15fc}\label{classtesseract__scene__graph_1_1SRDFModel_aa1717b2b80fe0987d85b54fa555a15fc}} 
+\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!collision\_margin\_data@{collision\_margin\_data}}
+\index{collision\_margin\_data@{collision\_margin\_data}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
+\doxysubsubsection{\texorpdfstring{collision\_margin\_data}{collision\_margin\_data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData_a9d0116259e8c3b97d61e63a3209ffa7b}{tesseract\+\_\+common\+::\+Collision\+Margin\+Data\+::\+Ptr}} tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::collision\+\_\+margin\+\_\+data}
+
+
+
+\mbox{\hyperlink{classtesseract__scene__graph_1_1Collision}{Collision}} margin data. 
+
+\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_a728da1d31301cd8a8ffba867baaefc10}\label{classtesseract__scene__graph_1_1SRDFModel_a728da1d31301cd8a8ffba867baaefc10}} 
+\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!kinematics\_information@{kinematics\_information}}
+\index{kinematics\_information@{kinematics\_information}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
+\doxysubsubsection{\texorpdfstring{kinematics\_information}{kinematics\_information}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{Kinematics\+Information}} tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::kinematics\+\_\+information}
 
 
 
 A map of group opw kinematics data. 
 
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_a9d90286c59b8989ebcf7442169bb3c91}\label{classtesseract__scene__graph_1_1SRDFModel_a9d90286c59b8989ebcf7442169bb3c91}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!name\_@{name\_}}
-\index{name\_@{name\_}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{name\_}{name\_}}
-{\footnotesize\ttfamily std\+::string tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::name\+\_\+ \{ \char`\"{}undefined\char`\"{} \}\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_a849add710e10ce7466a65dba89726aee}\label{classtesseract__scene__graph_1_1SRDFModel_a849add710e10ce7466a65dba89726aee}} 
+\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!name@{name}}
+\index{name@{name}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::name \{ \char`\"{}undefined\char`\"{} \}}
 
 
 
 The name of the srdf model. 
 
-\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_af4374879ccb8ba8c10b7e5702b29772d}\label{classtesseract__scene__graph_1_1SRDFModel_af4374879ccb8ba8c10b7e5702b29772d}} 
-\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!version\_@{version\_}}
-\index{version\_@{version\_}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
-\doxysubsubsection{\texorpdfstring{version\_}{version\_}}
-{\footnotesize\ttfamily std\+::array$<$int, 3$>$ tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::version\+\_\+ \{ \{ 1, 0, 0 \} \}\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classtesseract__scene__graph_1_1SRDFModel_af9498d417eeab126c35822f68eed38ad}\label{classtesseract__scene__graph_1_1SRDFModel_af9498d417eeab126c35822f68eed38ad}} 
+\index{tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}!version@{version}}
+\index{version@{version}!tesseract\_scene\_graph::SRDFModel@{tesseract\_scene\_graph::SRDFModel}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily std\+::array$<$int, 3$>$ tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::version \{ \{ 1, 0, 0 \} \}}
 
 
 
