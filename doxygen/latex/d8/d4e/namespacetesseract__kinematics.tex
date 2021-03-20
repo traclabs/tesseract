@@ -22,6 +22,10 @@ class \mbox{\hyperlink{classtesseract__kinematics_1_1RobotOnPositionerInvKin}{Ro
 \begin{DoxyCompactList}\small\item\em Robot on Positioner Inverse kinematic implementation. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__kinematics_1_1URParameters}{URParameters}}
 \begin{DoxyCompactList}\small\item\em The Universal Robot kinematic parameters. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__kinematics_1_1ManipulabilityEllipsoid}{Manipulability\+Ellipsoid}}
+\begin{DoxyCompactList}\small\item\em Used to store \mbox{\hyperlink{structtesseract__kinematics_1_1Manipulability}{Manipulability}} and Force Ellipsoid data. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__kinematics_1_1Manipulability}{Manipulability}}
+\begin{DoxyCompactList}\small\item\em Contains both manipulability ellipsoid and force ellipsoid data. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__kinematics_1_1IKFastInvKin}{IKFast\+Inv\+Kin}}
 \begin{DoxyCompactList}\small\item\em IKFast Inverse Kinematics Implmentation. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinChain}{KDLFwd\+Kin\+Chain}}
@@ -91,6 +95,8 @@ static bool \mbox{\hyperlink{namespacetesseract__kinematics_a1645b1b27fd8279b5f0
 \begin{DoxyCompactList}\small\item\em Calculate Damped Pseudoinverse Use this SVD to compute A+ (pseudoinverse of A). Weighting still TBD. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__kinematics_ae2bebd951f959b4c39b06dc7b38c8159}{is\+Near\+Singularity}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+Xd $>$ \&jacobian, double threshold=0.\+01)
 \begin{DoxyCompactList}\small\item\em Check if the provided jacobian is near a singularity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structtesseract__kinematics_1_1Manipulability}{Manipulability}} \mbox{\hyperlink{namespacetesseract__kinematics_ad071f516596c9a983b661f60e4511ac3}{calc\+Manipulability}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+Xd $>$ \&jacobian)
+\begin{DoxyCompactList}\small\item\em Calculate manipulability data about the provided jacobian. \end{DoxyCompactList}\item 
 {\footnotesize template$<$class Chain\+\_\+T , class Tree\+\_\+T $>$ }\\\mbox{\hyperlink{namespacetesseract__kinematics_a881ff48bb24f8ac4e92de3f1e5c0bfb5}{Forward\+Kinematics\+Const\+Ptr\+Map}} \mbox{\hyperlink{namespacetesseract__kinematics_a8c5e79830b1da0e1e83fb6f765e77cd4}{create\+Kinematics\+Map}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&scene\+\_\+graph, const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \&kinematics\+\_\+information)
 \begin{DoxyCompactList}\small\item\em Create a kinematics map from the srdf model. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__kinematics_af7bf99d154356876827ff501c21d3432}{is\+Within\+Limits}} (const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&joint\+\_\+values, const Eigen\+::\+Matrix\+X2d \&limits)
@@ -199,6 +205,24 @@ GRAPH&\\
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetesseract__kinematics_ad071f516596c9a983b661f60e4511ac3}\label{namespacetesseract__kinematics_ad071f516596c9a983b661f60e4511ac3}} 
+\index{tesseract\_kinematics@{tesseract\_kinematics}!calcManipulability@{calcManipulability}}
+\index{calcManipulability@{calcManipulability}!tesseract\_kinematics@{tesseract\_kinematics}}
+\doxysubsubsection{\texorpdfstring{calcManipulability()}{calcManipulability()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtesseract__kinematics_1_1Manipulability}{Manipulability}} tesseract\+\_\+kinematics\+::calc\+Manipulability (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+Xd $>$ \&}]{jacobian }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculate manipulability data about the provided jacobian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jacobian} & The jacobian used to calculate manipulability \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The manipulability data 
+\end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__kinematics_a2c175ae7eb98643c57e58df0d3825d18}\label{namespacetesseract__kinematics_a2c175ae7eb98643c57e58df0d3825d18}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!checkKinematics@{checkKinematics}}
 \index{checkKinematics@{checkKinematics}!tesseract\_kinematics@{tesseract\_kinematics}}

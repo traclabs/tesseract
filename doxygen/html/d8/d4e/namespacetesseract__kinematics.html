@@ -102,6 +102,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da6/structtesseract__kinematics_1_1URParameters.html">URParameters</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Universal Robot kinematic parameters.  <a href="../../d9/da6/structtesseract__kinematics_1_1URParameters.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3e/structtesseract__kinematics_1_1ManipulabilityEllipsoid.html">ManipulabilityEllipsoid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store <a class="el" href="../../df/da0/structtesseract__kinematics_1_1Manipulability.html" title="Contains both manipulability ellipsoid and force ellipsoid data.">Manipulability</a> and Force Ellipsoid data.  <a href="../../d2/d3e/structtesseract__kinematics_1_1ManipulabilityEllipsoid.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da0/structtesseract__kinematics_1_1Manipulability.html">Manipulability</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains both manipulability ellipsoid and force ellipsoid data.  <a href="../../df/da0/structtesseract__kinematics_1_1Manipulability.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df5/classtesseract__kinematics_1_1IKFastInvKin.html">IKFastInvKin</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IKFast Inverse Kinematics Implmentation.  <a href="../../d5/df5/classtesseract__kinematics_1_1IKFastInvKin.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +195,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae2bebd951f959b4c39b06dc7b38c8159"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#ae2bebd951f959b4c39b06dc7b38c8159">isNearSingularity</a> (const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;jacobian, double threshold=0.01)</td></tr>
 <tr class="memdesc:ae2bebd951f959b4c39b06dc7b38c8159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the provided jacobian is near a singularity.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#ae2bebd951f959b4c39b06dc7b38c8159">More...</a><br /></td></tr>
 <tr class="separator:ae2bebd951f959b4c39b06dc7b38c8159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad071f516596c9a983b661f60e4511ac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/da0/structtesseract__kinematics_1_1Manipulability.html">Manipulability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#ad071f516596c9a983b661f60e4511ac3">calcManipulability</a> (const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;jacobian)</td></tr>
+<tr class="memdesc:ad071f516596c9a983b661f60e4511ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate manipulability data about the provided jacobian.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#ad071f516596c9a983b661f60e4511ac3">More...</a><br /></td></tr>
+<tr class="separator:ad071f516596c9a983b661f60e4511ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memTemplParams" colspan="2">template&lt;class Chain_T , class Tree_T &gt; </td></tr>
 <tr class="memitem:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a881ff48bb24f8ac4e92de3f1e5c0bfb5">ForwardKinematicsConstPtrMap</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">createKinematicsMap</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> &amp;scene_graph, const <a class="el" href="../../de/d55/structtesseract__scene__graph_1_1KinematicsInformation.html">tesseract_scene_graph::KinematicsInformation</a> &amp;kinematics_information)</td></tr>
 <tr class="memdesc:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kinematics map from the srdf model.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">More...</a><br /></td></tr>
@@ -360,6 +369,41 @@ template&lt;typename FloatType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad071f516596c9a983b661f60e4511ac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad071f516596c9a983b661f60e4511ac3">&#9670;&nbsp;</a></span>calcManipulability()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/da0/structtesseract__kinematics_1_1Manipulability.html">Manipulability</a> tesseract_kinematics::calcManipulability </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>jacobian</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate manipulability data about the provided jacobian. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jacobian</td><td>The jacobian used to calculate manipulability </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The manipulability data </dd></dl>
+
+</div>
+</div>
 <a id="a2c175ae7eb98643c57e58df0d3825d18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c175ae7eb98643c57e58df0d3825d18">&#9670;&nbsp;</a></span>checkKinematics() <span class="overload">[1/2]</span></h2>
 
@@ -1677,7 +1721,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 18 2021 03:06:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Mar 20 2021 20:37:30 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
