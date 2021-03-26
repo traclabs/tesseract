@@ -291,52 +291,74 @@ $(function() {
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <span class="keywordflow">return</span> status;</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">  354</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">almostEqualRelativeAndAbs</a>(<span class="keywordtype">double</span> a,</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                      <span class="keywordtype">double</span> b,</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                      <span class="keywordtype">double</span> max_diff,</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                      <span class="keywordtype">double</span> max_rel_diff = std::numeric_limits&lt;double&gt;::epsilon())</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;{</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keywordtype">double</span> diff = std::fabs(a - b);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keywordflow">if</span> (diff &lt;= max_diff)</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  a = std::fabs(a);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  b = std::fabs(b);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordtype">double</span> largest = (b &gt; a) ? b : a;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <span class="keywordflow">return</span> (diff &lt;= largest * max_rel_diff);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#a894fe5ec6ecf17efd1eb129291bdcf60">  382</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">almostEqualRelativeAndAbs</a>(<span class="keyword">const</span> Eigen::Ref&lt;const Eigen::VectorXd&gt;&amp; v1,</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                                      <span class="keyword">const</span> Eigen::Ref&lt;const Eigen::VectorXd&gt;&amp; v2,</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                                      <span class="keywordtype">double</span> max_diff,</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                                      <span class="keywordtype">double</span> max_rel_diff = std::numeric_limits&lt;double&gt;::epsilon())</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;{</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="keywordflow">if</span> (v1.size() == 0 &amp;&amp; v2.size() == 0)</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordflow">if</span> (v1.size() != v2.size())</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  Eigen::ArrayWrapper&lt;const Eigen::Ref&lt;const Eigen::VectorXd&gt;&gt; a1 = v1.array();</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  Eigen::ArrayWrapper&lt;const Eigen::Ref&lt;const Eigen::VectorXd&gt;&gt; a2 = v2.array();</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <span class="keyword">auto</span> diff_abs = (a1 - a2).abs();</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keywordtype">double</span> diff = diff_abs.maxCoeff();</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  <span class="keywordflow">if</span> (diff &lt;= max_diff)</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keywordflow">return</span> (diff_abs &lt;= (max_rel_diff * a1.abs().max(a2.abs()))).all();</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;}  <span class="comment">// namespace tesseract_common</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_COMMON_UTILS_H</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#ad9a12946985d34fc3b1fcfb61b473f8b">  356</a></span>&#160;<span class="keyword">inline</span> tinyxml2::XMLError <a class="code" href="../../df/da9/namespacetesseract__common.html#ad9a12946985d34fc3b1fcfb61b473f8b">QueryIntAttributeRequired</a>(<span class="keyword">const</span> tinyxml2::XMLElement* xml_element,</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                                    <span class="keyword">const</span> <span class="keywordtype">char</span>* name,</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                                    <span class="keywordtype">int</span>&amp; value)</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;{</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  tinyxml2::XMLError status = xml_element-&gt;QueryIntAttribute(name, &amp;value);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keywordflow">if</span> (status != tinyxml2::XML_NO_ATTRIBUTE &amp;&amp; status != tinyxml2::XML_SUCCESS)</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), name);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (status == tinyxml2::XML_NO_ATTRIBUTE)</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Missing %s required attribute &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), name);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  }</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (status == tinyxml2::XML_WRONG_ATTRIBUTE_TYPE)</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;Invalid %s attribute type &#39;%s&#39;&quot;</span>, xml_element-&gt;Name(), name);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keywordflow">return</span> status;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;}</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">  388</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">almostEqualRelativeAndAbs</a>(<span class="keywordtype">double</span> a,</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                                      <span class="keywordtype">double</span> b,</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                                      <span class="keywordtype">double</span> max_diff,</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                                      <span class="keywordtype">double</span> max_rel_diff = std::numeric_limits&lt;double&gt;::epsilon())</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;{</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordtype">double</span> diff = std::fabs(a - b);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="keywordflow">if</span> (diff &lt;= max_diff)</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  a = std::fabs(a);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  b = std::fabs(b);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  <span class="keywordtype">double</span> largest = (b &gt; a) ? b : a;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="keywordflow">return</span> (diff &lt;= largest * max_rel_diff);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;}</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="../../df/da9/namespacetesseract__common.html#a894fe5ec6ecf17efd1eb129291bdcf60">  416</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">almostEqualRelativeAndAbs</a>(<span class="keyword">const</span> Eigen::Ref&lt;const Eigen::VectorXd&gt;&amp; v1,</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                                      <span class="keyword">const</span> Eigen::Ref&lt;const Eigen::VectorXd&gt;&amp; v2,</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                                      <span class="keywordtype">double</span> max_diff,</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                      <span class="keywordtype">double</span> max_rel_diff = std::numeric_limits&lt;double&gt;::epsilon())</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;{</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <span class="keywordflow">if</span> (v1.size() == 0 &amp;&amp; v2.size() == 0)</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <span class="keywordflow">if</span> (v1.size() != v2.size())</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  Eigen::ArrayWrapper&lt;const Eigen::Ref&lt;const Eigen::VectorXd&gt;&gt; a1 = v1.array();</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  Eigen::ArrayWrapper&lt;const Eigen::Ref&lt;const Eigen::VectorXd&gt;&gt; a2 = v2.array();</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  <span class="keyword">auto</span> diff_abs = (a1 - a2).abs();</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="keywordtype">double</span> diff = diff_abs.maxCoeff();</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="keywordflow">if</span> (diff &lt;= max_diff)</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keywordflow">return</span> (diff_abs &lt;= (max_rel_diff * a1.abs().max(a2.abs()))).all();</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;}</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;}  <span class="comment">// namespace tesseract_common</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_COMMON_UTILS_H</span></div>
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="../../de/d3c/macros_8h.html">macros.h</a></div><div class="ttdoc">Common Tesseract Macros.</div></div>
 <div class="ttc" id="amacros_8h_html_a8cc0e3c6a3382c5c0b19eb9e676fc2db"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div><div class="ttdeci">#define TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</div><div class="ttdef"><b>Definition:</b> macros.h:65</div></div>
 <div class="ttc" id="anamespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP_html"><div class="ttname"><a href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div><div class="ttdef"><b>Definition:</b> create_convex_hull.cpp:35</div></div>
 <div class="ttc" id="anamespacetesseract__common_html"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html">tesseract_common</a></div><div class="ttdef"><b>Definition:</b> any.h:44</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_a00bc131acfeba0eba8fe7ff7cd944860"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a00bc131acfeba0eba8fe7ff7cd944860">tesseract_common::toNumeric</a></div><div class="ttdeci">bool toNumeric(const std::string &amp;s, FloatType &amp;value)</div><div class="ttdoc">Convert a string to a numeric value type.</div><div class="ttdef"><b>Definition:</b> utils.h:105</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_a1077809c98ad8bf5262e426cff6e63a3"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a1077809c98ad8bf5262e426cff6e63a3">tesseract_common::getTimestampString</a></div><div class="ttdeci">std::string getTimestampString()</div><div class="ttdoc">Get Timestamp string.</div><div class="ttdef"><b>Definition:</b> utils.h:186</div></div>
-<div class="ttc" id="anamespacetesseract__common_html_a1ce86f1e809df1ac04fef0b5cf396fe2"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">tesseract_common::almostEqualRelativeAndAbs</a></div><div class="ttdeci">bool almostEqualRelativeAndAbs(double a, double b, double max_diff, double max_rel_diff=std::numeric_limits&lt; double &gt;::epsilon())</div><div class="ttdoc">Check if two double are relatively equal.</div><div class="ttdef"><b>Definition:</b> utils.h:354</div></div>
+<div class="ttc" id="anamespacetesseract__common_html_a1ce86f1e809df1ac04fef0b5cf396fe2"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">tesseract_common::almostEqualRelativeAndAbs</a></div><div class="ttdeci">bool almostEqualRelativeAndAbs(double a, double b, double max_diff, double max_rel_diff=std::numeric_limits&lt; double &gt;::epsilon())</div><div class="ttdoc">Check if two double are relatively equal.</div><div class="ttdef"><b>Definition:</b> utils.h:388</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_a1dc3a9525efbe582991edd4eedc26079"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a1dc3a9525efbe582991edd4eedc26079">tesseract_common::isNumeric</a></div><div class="ttdeci">bool isNumeric(const std::string &amp;s)</div><div class="ttdoc">Determine if a string is a number.</div><div class="ttdef"><b>Definition:</b> utils.h:71</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_a22a4a1b896230ca84cce7aae2e21673a"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a22a4a1b896230ca84cce7aae2e21673a">tesseract_common::QueryStringAttribute</a></div><div class="ttdeci">tinyxml2::XMLError QueryStringAttribute(const tinyxml2::XMLElement *xml_element, const char *name, std::string &amp;value)</div><div class="ttdoc">Query a string attribute from an xml element.</div><div class="ttdef"><b>Definition:</b> utils.h:251</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_a58ecad04db85855fa9e4de21084598ca"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a58ecad04db85855fa9e4de21084598ca">tesseract_common::getTempPath</a></div><div class="ttdeci">std::string getTempPath()</div><div class="ttdoc">Get the host temp directory path.</div><div class="ttdef"><b>Definition:</b> utils.h:61</div></div>
@@ -347,6 +369,7 @@ $(function() {
 <div class="ttc" id="anamespacetesseract__common_html_aaedf0e7043da047ab5a970a5669cf5d0"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#aaedf0e7043da047ab5a970a5669cf5d0">tesseract_common::isIdentical</a></div><div class="ttdeci">bool isIdentical(const std::vector&lt; std::string &gt; &amp;vec1, const std::vector&lt; std::string &gt; &amp;vec2, bool ordered=true)</div><div class="ttdoc">Check if two vector of strings are identical.</div><div class="ttdef"><b>Definition:</b> utils.h:170</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_ab5ec94b62bea51b6e40598e0f8e7a6c3"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">tesseract_common::QueryDoubleAttributeRequired</a></div><div class="ttdeci">tinyxml2::XMLError QueryDoubleAttributeRequired(const tinyxml2::XMLElement *xml_element, const char *name, double &amp;value)</div><div class="ttdoc">Query a double attribute from an xml element and print error log.</div><div class="ttdef"><b>Definition:</b> utils.h:322</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_ab95676b5418063a1d7c84fbba4ff1fe0"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#ab95676b5418063a1d7c84fbba4ff1fe0">tesseract_common::QueryStringText</a></div><div class="ttdeci">tinyxml2::XMLError QueryStringText(const tinyxml2::XMLElement *xml_element, std::string &amp;text)</div><div class="ttdoc">Query a string Text from xml element.</div><div class="ttdef"><b>Definition:</b> utils.h:217</div></div>
+<div class="ttc" id="anamespacetesseract__common_html_ad9a12946985d34fc3b1fcfb61b473f8b"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#ad9a12946985d34fc3b1fcfb61b473f8b">tesseract_common::QueryIntAttributeRequired</a></div><div class="ttdeci">tinyxml2::XMLError QueryIntAttributeRequired(const tinyxml2::XMLElement *xml_element, const char *name, int &amp;value)</div><div class="ttdoc">Query a int attribute from an xml element and print error log.</div><div class="ttdef"><b>Definition:</b> utils.h:356</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_ae1a3ebd3610dce6d24cc7569606fd9ab"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#ae1a3ebd3610dce6d24cc7569606fd9ab">tesseract_common::QueryStringValue</a></div><div class="ttdeci">tinyxml2::XMLError QueryStringValue(const tinyxml2::XMLElement *xml_element, std::string &amp;value)</div><div class="ttdoc">Query a string value from xml element.</div><div class="ttdef"><b>Definition:</b> utils.h:201</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_aeacd629bcf585286917aafa7b8e603bb"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#aeacd629bcf585286917aafa7b8e603bb">tesseract_common::trim</a></div><div class="ttdeci">void trim(std::string &amp;s)</div><div class="ttdoc">Trim left and right of string.</div><div class="ttdef"><b>Definition:</b> utils.h:158</div></div>
 <div class="ttc" id="anamespacetesseract__common_html_aef65970d6ccc97d88621f27e7c35b32a"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#aef65970d6ccc97d88621f27e7c35b32a">tesseract_common::mersenne</a></div><div class="ttdeci">static std::mt19937 mersenne</div><div class="ttdoc">Random number generator.</div><div class="ttdef"><b>Definition:</b> utils.h:51</div></div>
@@ -355,7 +378,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 20 2021 20:37:27 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 26 2021 02:09:58 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

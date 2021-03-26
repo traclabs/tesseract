@@ -128,6 +128,8 @@ tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_a609734264f8b
 \begin{DoxyCompactList}\small\item\em Query a string attribute from an xml element and print error log. \end{DoxyCompactList}\item 
 tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ab5ec94b62bea51b6e40598e0f8e7a6c3}{Query\+Double\+Attribute\+Required}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, double \&value)
 \begin{DoxyCompactList}\small\item\em Query a double attribute from an xml element and print error log. \end{DoxyCompactList}\item 
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ad9a12946985d34fc3b1fcfb61b473f8b}{Query\+Int\+Attribute\+Required}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, int \&value)
+\begin{DoxyCompactList}\small\item\em Query a int attribute from an xml element and print error log. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__common_a1ce86f1e809df1ac04fef0b5cf396fe2}{almost\+Equal\+Relative\+And\+Abs}} (double a, double b, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
 \begin{DoxyCompactList}\small\item\em Check if two double are relatively equal. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}{almost\+Equal\+Relative\+And\+Abs}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v1, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v2, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
@@ -448,6 +450,30 @@ Link\+Names\+Pair a lexicographically sorted pair of strings
 Query a double attribute from an xml element and print error log. 
 
 This is the same Query\+Double\+Attribute but it will print out error messages for the failure conditions so the user only needs to check for the tinyxml2\+::\+XML\+\_\+\+SUCCESS since it is a required attribute.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml\+\_\+element} & The xml attribute to query attribute \\
+\hline
+{\em name} & The name of the attribute to query \\
+\hline
+{\em value} & The value to update from the xml attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+XML\+\_\+\+NO\+\_\+\+ATTRIBUTE or tinyxml2\+::\+XML\+\_\+\+WRONG\+\_\+\+ATTRIBUTE\+\_\+\+TYPE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__common_ad9a12946985d34fc3b1fcfb61b473f8b}\label{namespacetesseract__common_ad9a12946985d34fc3b1fcfb61b473f8b}} 
+\index{tesseract\_common@{tesseract\_common}!QueryIntAttributeRequired@{QueryIntAttributeRequired}}
+\index{QueryIntAttributeRequired@{QueryIntAttributeRequired}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{QueryIntAttributeRequired()}{QueryIntAttributeRequired()}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+Int\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{int \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Query a int attribute from an xml element and print error log. 
+
+This is the same Query\+Int\+Attribute but it will print out error messages for the failure conditions so the user only needs to check for the tinyxml2\+::\+XML\+\_\+\+SUCCESS since it is a required attribute.
 
 
 \begin{DoxyParams}{Parameters}

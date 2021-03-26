@@ -236,6 +236,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab5ec94b62bea51b6e40598e0f8e7a6c3"><td class="memItemLeft" align="right" valign="top">tinyxml2::XMLError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">QueryDoubleAttributeRequired</a> (const tinyxml2::XMLElement *xml_element, const char *name, double &amp;value)</td></tr>
 <tr class="memdesc:ab5ec94b62bea51b6e40598e0f8e7a6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query a double attribute from an xml element and print error log.  <a href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">More...</a><br /></td></tr>
 <tr class="separator:ab5ec94b62bea51b6e40598e0f8e7a6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a12946985d34fc3b1fcfb61b473f8b"><td class="memItemLeft" align="right" valign="top">tinyxml2::XMLError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#ad9a12946985d34fc3b1fcfb61b473f8b">QueryIntAttributeRequired</a> (const tinyxml2::XMLElement *xml_element, const char *name, int &amp;value)</td></tr>
+<tr class="memdesc:ad9a12946985d34fc3b1fcfb61b473f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query a int attribute from an xml element and print error log.  <a href="../../df/da9/namespacetesseract__common.html#ad9a12946985d34fc3b1fcfb61b473f8b">More...</a><br /></td></tr>
+<tr class="separator:ad9a12946985d34fc3b1fcfb61b473f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ce86f1e809df1ac04fef0b5cf396fe2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">almostEqualRelativeAndAbs</a> (double a, double b, double max_diff, double max_rel_diff=std::numeric_limits&lt; double &gt;::epsilon())</td></tr>
 <tr class="memdesc:a1ce86f1e809df1ac04fef0b5cf396fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two double are relatively equal.  <a href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">More...</a><br /></td></tr>
 <tr class="separator:a1ce86f1e809df1ac04fef0b5cf396fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -939,6 +942,60 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ad9a12946985d34fc3b1fcfb61b473f8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9a12946985d34fc3b1fcfb61b473f8b">&#9670;&nbsp;</a></span>QueryIntAttributeRequired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tinyxml2::XMLError tesseract_common::QueryIntAttributeRequired </td>
+          <td>(</td>
+          <td class="paramtype">const tinyxml2::XMLElement *&#160;</td>
+          <td class="paramname"><em>xml_element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Query a int attribute from an xml element and print error log. </p>
+<p>This is the same QueryIntAttribute but it will print out error messages for the failure conditions so the user only needs to check for the tinyxml2::XML_SUCCESS since it is a required attribute.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xml_element</td><td>The xml attribute to query attribute </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the attribute to query </td></tr>
+    <tr><td class="paramname">value</td><td>The value to update from the xml attribute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>tinyxml2::XML_SUCCESS if successful, otherwise returns tinyxml2::XML_NO_ATTRIBUTE or tinyxml2::XML_WRONG_ATTRIBUTE_TYPE </dd></dl>
+
+</div>
+</div>
 <a id="a22a4a1b896230ca84cce7aae2e21673a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22a4a1b896230ca84cce7aae2e21673a">&#9670;&nbsp;</a></span>QueryStringAttribute()</h2>
 
@@ -1381,7 +1438,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 20 2021 20:37:30 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 26 2021 02:10:00 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
