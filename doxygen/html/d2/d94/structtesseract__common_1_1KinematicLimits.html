@@ -83,7 +83,7 @@ $(function() {
 <p>Store kinematic limits.  
  <a href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h_source.html">types.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d9/dc2/kinematic__limits_8h_source.html">kinematic_limits.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for tesseract_common::KinematicLimits:</div>
 <div class="dyncontent">
@@ -102,10 +102,13 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a04641308fcc1e182fca0d85d80d25c68"><td class="memItemLeft" align="right" valign="top">EIGEN_MAKE_ALIGNED_OPERATOR_NEW Eigen::MatrixX2d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html#a04641308fcc1e182fca0d85d80d25c68">joint_limits</a></td></tr>
+<tr class="memdesc:a04641308fcc1e182fca0d85d80d25c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position limits.  <a href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html#a04641308fcc1e182fca0d85d80d25c68">More...</a><br /></td></tr>
 <tr class="separator:a04641308fcc1e182fca0d85d80d25c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6ca9124185f5b366bccbbba3242d6e"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html#aef6ca9124185f5b366bccbbba3242d6e">velocity_limits</a></td></tr>
+<tr class="memdesc:aef6ca9124185f5b366bccbbba3242d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity limits.  <a href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html#aef6ca9124185f5b366bccbbba3242d6e">More...</a><br /></td></tr>
 <tr class="separator:aef6ca9124185f5b366bccbbba3242d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a609b65f616f248719082654c9a8a51c6"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html#a609b65f616f248719082654c9a8a51c6">acceleration_limits</a></td></tr>
+<tr class="memdesc:a609b65f616f248719082654c9a8a51c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The acceleration limits.  <a href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html#a609b65f616f248719082654c9a8a51c6">More...</a><br /></td></tr>
 <tr class="separator:a609b65f616f248719082654c9a8a51c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -127,9 +130,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool tesseract_common::KinematicLimits::operator== </td>
@@ -139,11 +139,6 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -222,6 +217,8 @@ template&lt;class Archive &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>The acceleration limits. </p>
+
 </div>
 </div>
 <a id="a04641308fcc1e182fca0d85d80d25c68"></a>
@@ -235,6 +232,8 @@ template&lt;class Archive &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The position limits. </p>
 
 </div>
 </div>
@@ -250,15 +249,18 @@ template&lt;class Archive &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>The velocity limits. </p>
+
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>tesseract_common/include/tesseract_common/<a class="el" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h_source.html">types.h</a></li>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>tesseract_common/include/tesseract_common/<a class="el" href="../../d9/dc2/kinematic__limits_8h_source.html">kinematic_limits.h</a></li>
+<li>tesseract_common/src/<a class="el" href="../../d2/dc5/kinematic__limits_8cpp.html">kinematic_limits.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 26 2021 02:10:00 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 29 2021 01:13:44 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

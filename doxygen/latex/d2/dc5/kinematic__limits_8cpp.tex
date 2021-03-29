@@ -1,0 +1,23 @@
+\hypertarget{kinematic__limits_8cpp}{}\doxysection{tesseract\+\_\+common/src/kinematic\+\_\+limits.cpp File Reference}
+\label{kinematic__limits_8cpp}\index{tesseract\_common/src/kinematic\_limits.cpp@{tesseract\_common/src/kinematic\_limits.cpp}}
+{\ttfamily \#include $<$tesseract\+\_\+common/kinematic\+\_\+limits.\+h$>$}\newline
+Include dependency graph for kinematic\+\_\+limits.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d6e/kinematic__limits_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacetesseract__common}{tesseract\+\_\+common}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacetesseract__common_a3cdd2d28066e4fc020ad6d1a2499841e}{tesseract\+\_\+common\+::satisfies\+Position\+Limits}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits, double epsilon=std\+::numeric\+\_\+limits$<$ float $>$\+::epsilon())
+\begin{DoxyCompactList}\small\item\em Check if joint position is within bounds provided the given epsilon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetesseract__common_aaea55ba44081a4d90868727a7106f933}{tesseract\+\_\+common\+::enforce\+Position\+Limits}} (Eigen\+::\+Ref$<$ Eigen\+::\+Vector\+Xd $>$ joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits)
+\begin{DoxyCompactList}\small\item\em Enforce position to be within the provided limits. \end{DoxyCompactList}\end{DoxyCompactItemize}

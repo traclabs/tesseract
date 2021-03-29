@@ -18,6 +18,8 @@ class \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData}{Collision\
 \begin{DoxyCompactList}\small\item\em Stores information about how the margins allowed between collision objects. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1JointState}{Joint\+State}}
 \item 
+struct \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}}
+\begin{DoxyCompactList}\small\item\em Store kinematic limits. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}}
 \begin{DoxyCompactList}\small\item\em Manipulator Info Tool Center Point Definition. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo}{Manipulator\+Info}}
@@ -45,9 +47,7 @@ class \mbox{\hyperlink{classtesseract__common_1_1StatusCode}{Status\+Code}}
 class \mbox{\hyperlink{classtesseract__common_1_1Timer}{Timer}}
 \begin{DoxyCompactList}\small\item\em A simple timer class leveraging chrono high resolution clock. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1PairHash}{Pair\+Hash}}
-\item 
-struct \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}}
-\begin{DoxyCompactList}\small\item\em Store kinematic limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
@@ -92,6 +92,10 @@ enum class \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+bool \mbox{\hyperlink{namespacetesseract__common_a3cdd2d28066e4fc020ad6d1a2499841e}{satisfies\+Position\+Limits}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits, double epsilon=std\+::numeric\+\_\+limits$<$ float $>$\+::epsilon())
+\begin{DoxyCompactList}\small\item\em Check if joint position is within bounds provided the given epsilon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetesseract__common_aaea55ba44081a4d90868727a7106f933}{enforce\+Position\+Limits}} (Eigen\+::\+Ref$<$ Eigen\+::\+Vector\+Xd $>$ joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits)
+\begin{DoxyCompactList}\small\item\em Enforce position to be within the provided limits. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{Link\+Names\+Pair}} \mbox{\hyperlink{namespacetesseract__common_a0569af9dd122b26e12ebdc4bb1de2bda}{make\+Ordered\+Link\+Pair}} (const std\+::string \&link\+\_\+name1, const std\+::string \&link\+\_\+name2)
 \begin{DoxyCompactList}\small\item\em Create a pair of strings, where the pair.\+first is always $<$= pair.\+second. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{namespacetesseract__common_a58ecad04db85855fa9e4de21084598ca}{get\+Temp\+Path}} ()
@@ -317,6 +321,23 @@ The max\+\_\+diff is for handling when comparing numbers near zero
 \begin{DoxyReturn}{Returns}
 True if they are relativily equal, otherwise false. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__common_aaea55ba44081a4d90868727a7106f933}\label{namespacetesseract__common_aaea55ba44081a4d90868727a7106f933}} 
+\index{tesseract\_common@{tesseract\_common}!enforcePositionLimits@{enforcePositionLimits}}
+\index{enforcePositionLimits@{enforcePositionLimits}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{enforcePositionLimits()}{enforcePositionLimits()}}
+{\footnotesize\ttfamily void tesseract\+\_\+common\+::enforce\+Position\+Limits (\begin{DoxyParamCaption}\item[{Eigen\+::\+Ref$<$ Eigen\+::\+Vector\+Xd $>$}]{joint\+\_\+positions,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&}]{position\+\_\+limits }\end{DoxyParamCaption})}
+
+
+
+Enforce position to be within the provided limits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+positions} & The joint position to enforce bounds on \\
+\hline
+{\em joint\+\_\+limits} & The limits to perform check \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{namespacetesseract__common_aa14552337385ce1de42da699506f8b03}\label{namespacetesseract__common_aa14552337385ce1de42da699506f8b03}} 
 \index{tesseract\_common@{tesseract\_common}!generateRandomNumber@{generateRandomNumber}}
 \index{generateRandomNumber@{generateRandomNumber}!tesseract\_common@{tesseract\_common}}
@@ -608,6 +629,28 @@ Right trim string.
 {\em s} & The string to right trim \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{namespacetesseract__common_a3cdd2d28066e4fc020ad6d1a2499841e}\label{namespacetesseract__common_a3cdd2d28066e4fc020ad6d1a2499841e}} 
+\index{tesseract\_common@{tesseract\_common}!satisfiesPositionLimits@{satisfiesPositionLimits}}
+\index{satisfiesPositionLimits@{satisfiesPositionLimits}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{satisfiesPositionLimits()}{satisfiesPositionLimits()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::satisfies\+Position\+Limits (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{joint\+\_\+positions,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&}]{position\+\_\+limits,  }\item[{double}]{epsilon = {\ttfamily std\+:\+:numeric\+\_\+limits$<$float$>$\+:\+:epsilon()} }\end{DoxyParamCaption})}
+
+
+
+Check if joint position is within bounds provided the given epsilon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+positions} & The joint position to check \\
+\hline
+{\em joint\+\_\+limits} & The joint limits to perform check \\
+\hline
+{\em epsilon} & The epsilon to leverage for check. Default is float epsilon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if bounds are satisfied, otherwise false 
+\end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_aadfa4845aecc119ae62b37e59c6ee168}\label{namespacetesseract__common_aadfa4845aecc119ae62b37e59c6ee168}} 
 \index{tesseract\_common@{tesseract\_common}!StringAttribute@{StringAttribute}}
 \index{StringAttribute@{StringAttribute}!tesseract\_common@{tesseract\_common}}
