@@ -1,8 +1,7 @@
 <map id="tesseract_visualization/include/tesseract_visualization/visualization.h" name="tesseract_visualization/include/tesseract_visualization/visualization.h">
-<area shape="rect" id="node1" title="Visualization Class." alt="" coords="275,5,478,61"/>
-<area shape="rect" id="node2" href="$d0/de9/tesseract__ignition__visualization_8h.html" title=" " alt="" coords="162,109,365,180"/>
-<area shape="rect" id="node5" href="$da/d93/visualization__loader_8h.html" title="Visualization Loader." alt="" coords="389,117,591,173"/>
-<area shape="rect" id="node3" href="$d6/dbe/tesseract__ignition__visualization_8cpp.html" title=" " alt="" coords="5,235,177,291"/>
-<area shape="rect" id="node4" href="$db/d07/tesseract__ignition__visualization__plugin_8cpp.html" title=" " alt="" coords="202,228,357,299"/>
-<area shape="rect" id="node6" href="$d3/da9/visualization__loader_8cpp.html" title=" " alt="" coords="397,243,583,284"/>
+<area shape="rect" id="node1" title="Visualization Class." alt="" coords="119,5,321,61"/>
+<area shape="rect" id="node2" href="$d0/de9/tesseract__ignition__visualization_8h.html" title=" " alt="" coords="5,109,208,180"/>
+<area shape="rect" id="node4" href="$da/d93/visualization__loader_8h.html" title="Visualization Loader." alt="" coords="232,117,435,173"/>
+<area shape="rect" id="node3" href="$d6/dbe/tesseract__ignition__visualization_8cpp.html" title=" " alt="" coords="21,228,193,284"/>
+<area shape="rect" id="node5" href="$d3/da9/visualization__loader_8cpp.html" title=" " alt="" coords="241,235,426,277"/>
 </map>

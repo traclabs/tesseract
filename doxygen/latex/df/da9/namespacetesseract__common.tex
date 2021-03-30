@@ -12,6 +12,8 @@ class \mbox{\hyperlink{classtesseract__common_1_1NullAny}{Null\+Any}}
 \item 
 class \mbox{\hyperlink{classtesseract__common_1_1Any}{Any}}
 \item 
+struct \mbox{\hyperlink{structtesseract__common_1_1ClassLoader}{Class\+Loader}}
+\begin{DoxyCompactList}\small\item\em This is a wrapper around Boost DLL for loading plugins within Tesseract. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__common_1_1CloneCache}{Clone\+Cache}}
 \begin{DoxyCompactList}\small\item\em Used to create a cache of objects. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData}{Collision\+Margin\+Data}}
@@ -24,6 +26,8 @@ class \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+
 \begin{DoxyCompactList}\small\item\em Manipulator Info Tool Center Point Definition. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1ManipulatorInfo}{Manipulator\+Info}}
 \begin{DoxyCompactList}\small\item\em Contains information about a robot manipulator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classtesseract__common_1_1PluginLoader}{Plugin\+Loader}}
+\begin{DoxyCompactList}\small\item\em This is a utility class for loading plugins within Tesseract. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__common_1_1Resource}{Resource}}
 \begin{DoxyCompactList}\small\item\em Represents resource data available from a file or url. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classtesseract__common_1_1BytesResource}{Bytes\+Resource}}
@@ -47,6 +51,10 @@ class \mbox{\hyperlink{classtesseract__common_1_1StatusCode}{Status\+Code}}
 class \mbox{\hyperlink{classtesseract__common_1_1Timer}{Timer}}
 \begin{DoxyCompactList}\small\item\em A simple timer class leveraging chrono high resolution clock. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__common_1_1PairHash}{Pair\+Hash}}
+\item 
+class \mbox{\hyperlink{classtesseract__common_1_1TestPluginBase}{Test\+Plugin\+Base}}
+\item 
+class \mbox{\hyperlink{classtesseract__common_1_1TestPluginMultiply}{Test\+Plugin\+Multiply}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
@@ -96,6 +104,14 @@ bool \mbox{\hyperlink{namespacetesseract__common_a3cdd2d28066e4fc020ad6d1a249984
 \begin{DoxyCompactList}\small\item\em Check if joint position is within bounds provided the given epsilon. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacetesseract__common_aaea55ba44081a4d90868727a7106f933}{enforce\+Position\+Limits}} (Eigen\+::\+Ref$<$ Eigen\+::\+Vector\+Xd $>$ joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits)
 \begin{DoxyCompactList}\small\item\em Enforce position to be within the provided limits. \end{DoxyCompactList}\item 
+std\+::list$<$ std\+::string $>$ \mbox{\hyperlink{namespacetesseract__common_a0b6d0012d51401bfd898e534ad9c9be9}{parse\+Environment\+Variable\+List}} (const std\+::string \&env\+\_\+variable)
+\item 
+std\+::list$<$ std\+::string $>$ \mbox{\hyperlink{namespacetesseract__common_ad4ee50cb59c0f007847dc0b1ec705948}{get\+All\+Search\+Paths}} (const std\+::string \&search\+\_\+paths\+\_\+env, const std\+::list$<$ std\+::string $>$ \&existing\+\_\+search\+\_\+paths)
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{namespacetesseract__common_a2e05a4098ef0cdb5c01c325b45a1a1fd}{parse\+Environment\+Variable\+Map}} (const std\+::string \&env\+\_\+variable)
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{namespacetesseract__common_a6a03c86a7a2621390889d15ec9783b2b}{get\+All\+Plugins}} (const std\+::string \&plugins\+\_\+env, const std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \&existing\+\_\+plugins)
+\item 
 static \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{Link\+Names\+Pair}} \mbox{\hyperlink{namespacetesseract__common_a0569af9dd122b26e12ebdc4bb1de2bda}{make\+Ordered\+Link\+Pair}} (const std\+::string \&link\+\_\+name1, const std\+::string \&link\+\_\+name2)
 \begin{DoxyCompactList}\small\item\em Create a pair of strings, where the pair.\+first is always $<$= pair.\+second. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{namespacetesseract__common_a58ecad04db85855fa9e4de21084598ca}{get\+Temp\+Path}} ()
@@ -356,6 +372,18 @@ Given a set of limits it will generate a vector of randon numbers between the li
 \begin{DoxyReturn}{Returns}
 A vector of random numbers between the provided limits. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__common_a6a03c86a7a2621390889d15ec9783b2b}\label{namespacetesseract__common_a6a03c86a7a2621390889d15ec9783b2b}} 
+\index{tesseract\_common@{tesseract\_common}!getAllPlugins@{getAllPlugins}}
+\index{getAllPlugins@{getAllPlugins}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{getAllPlugins()}{getAllPlugins()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, std\+::string$>$ tesseract\+\_\+common\+::get\+All\+Plugins (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{plugins\+\_\+env,  }\item[{const std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \&}]{existing\+\_\+plugins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetesseract__common_ad4ee50cb59c0f007847dc0b1ec705948}\label{namespacetesseract__common_ad4ee50cb59c0f007847dc0b1ec705948}} 
+\index{tesseract\_common@{tesseract\_common}!getAllSearchPaths@{getAllSearchPaths}}
+\index{getAllSearchPaths@{getAllSearchPaths}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{getAllSearchPaths()}{getAllSearchPaths()}}
+{\footnotesize\ttfamily std\+::list$<$std\+::string$>$ tesseract\+\_\+common\+::get\+All\+Search\+Paths (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{search\+\_\+paths\+\_\+env,  }\item[{const std\+::list$<$ std\+::string $>$ \&}]{existing\+\_\+search\+\_\+paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{namespacetesseract__common_a58ecad04db85855fa9e4de21084598ca}\label{namespacetesseract__common_a58ecad04db85855fa9e4de21084598ca}} 
 \index{tesseract\_common@{tesseract\_common}!getTempPath@{getTempPath}}
 \index{getTempPath@{getTempPath}!tesseract\_common@{tesseract\_common}}
@@ -460,6 +488,18 @@ This is commonly used along with \mbox{\hyperlink{structtesseract__common_1_1Pai
 \begin{DoxyReturn}{Returns}
 Link\+Names\+Pair a lexicographically sorted pair of strings 
 \end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__common_a0b6d0012d51401bfd898e534ad9c9be9}\label{namespacetesseract__common_a0b6d0012d51401bfd898e534ad9c9be9}} 
+\index{tesseract\_common@{tesseract\_common}!parseEnvironmentVariableList@{parseEnvironmentVariableList}}
+\index{parseEnvironmentVariableList@{parseEnvironmentVariableList}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{parseEnvironmentVariableList()}{parseEnvironmentVariableList()}}
+{\footnotesize\ttfamily std\+::list$<$std\+::string$>$ tesseract\+\_\+common\+::parse\+Environment\+Variable\+List (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{env\+\_\+variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetesseract__common_a2e05a4098ef0cdb5c01c325b45a1a1fd}\label{namespacetesseract__common_a2e05a4098ef0cdb5c01c325b45a1a1fd}} 
+\index{tesseract\_common@{tesseract\_common}!parseEnvironmentVariableMap@{parseEnvironmentVariableMap}}
+\index{parseEnvironmentVariableMap@{parseEnvironmentVariableMap}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{parseEnvironmentVariableMap()}{parseEnvironmentVariableMap()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, std\+::string$>$ tesseract\+\_\+common\+::parse\+Environment\+Variable\+Map (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{env\+\_\+variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{namespacetesseract__common_ab5ec94b62bea51b6e40598e0f8e7a6c3}\label{namespacetesseract__common_ab5ec94b62bea51b6e40598e0f8e7a6c3}} 
 \index{tesseract\_common@{tesseract\_common}!QueryDoubleAttributeRequired@{QueryDoubleAttributeRequired}}
 \index{QueryDoubleAttributeRequired@{QueryDoubleAttributeRequired}!tesseract\_common@{tesseract\_common}}
