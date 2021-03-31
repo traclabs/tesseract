@@ -152,7 +152,7 @@ $(function() {
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">// Check if they are in collision</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  checker-&gt;setActiveCollisionObjects(link_names);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  checker-&gt;setContactDistanceThreshold(0.1);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  checker-&gt;setCollisionMarginData(<a class="code" href="../../d4/d79/namespacetesseract__collision.html#a0717a3c53d08d510257f631ea96cb560">CollisionMarginData</a>(0.1));</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  checker-&gt;setCollisionObjectsTransform(location);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="../../d4/d79/namespacetesseract__collision.html#a96d77f62b7c26962d1090f0a2f00419b">ContactResultVector</a> result_vector;</div>
@@ -240,7 +240,7 @@ $(function() {
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// Check if they are in collision</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  checker-&gt;setActiveCollisionObjects(link_names);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  checker-&gt;setContactDistanceThreshold(0.1);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  checker-&gt;setCollisionMarginData(<a class="code" href="../../d4/d79/namespacetesseract__collision.html#a0717a3c53d08d510257f631ea96cb560">CollisionMarginData</a>(0.1));</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="comment">//  checker-&gt;setCollisionObjectsTransform(location);</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="code" href="../../d4/d79/namespacetesseract__collision.html#a96d77f62b7c26962d1090f0a2f00419b">ContactResultVector</a> result_vector;</div>
@@ -268,6 +268,7 @@ $(function() {
 <div class="ttc" id="anamespacetesseract__collision_1_1test__suite_html_ae31509e0483f6538a77dd1ab719e9551"><div class="ttname"><a href="../../d3/d75/namespacetesseract__collision_1_1test__suite.html#ae31509e0483f6538a77dd1ab719e9551">tesseract_collision::test_suite::BM_LARGE_DATASET_MULTILINK</a></div><div class="ttdeci">static void BM_LARGE_DATASET_MULTILINK(benchmark::State &amp;state, DiscreteContactManager::Ptr checker, int edge_size, tesseract_geometry::GeometryType type)</div><div class="ttdoc">Benchmark that checks collisions between a lot of objects. In this case it is a grid of spheres - eac...</div><div class="ttdef"><b>Definition:</b> large_dataset_benchmarks.hpp:19</div></div>
 <div class="ttc" id="anamespacetesseract__collision_1_1test__suite_html_af0e19e5969df586db37845dc1a735ad8"><div class="ttname"><a href="../../d3/d75/namespacetesseract__collision_1_1test__suite.html#af0e19e5969df586db37845dc1a735ad8">tesseract_collision::test_suite::BM_LARGE_DATASET_SINGLELINK</a></div><div class="ttdeci">static void BM_LARGE_DATASET_SINGLELINK(benchmark::State &amp;state, DiscreteContactManager::Ptr checker, int edge_size, tesseract_geometry::GeometryType type)</div><div class="ttdoc">Benchmark that checks collisions between a lot of objects. In this case it is a grid of spheres in on...</div><div class="ttdef"><b>Definition:</b> large_dataset_benchmarks.hpp:98</div></div>
 <div class="ttc" id="anamespacetesseract__collision_html"><div class="ttname"><a href="../../d4/d79/namespacetesseract__collision.html">tesseract_collision</a></div><div class="ttdef"><b>Definition:</b> bullet_cast_bvh_manager.h:53</div></div>
+<div class="ttc" id="anamespacetesseract__collision_html_a0717a3c53d08d510257f631ea96cb560"><div class="ttname"><a href="../../d4/d79/namespacetesseract__collision.html#a0717a3c53d08d510257f631ea96cb560">tesseract_collision::CollisionMarginData</a></div><div class="ttdeci">tesseract_common::CollisionMarginData CollisionMarginData</div><div class="ttdef"><b>Definition:</b> types.h:55</div></div>
 <div class="ttc" id="anamespacetesseract__collision_html_a0aa5b9a264467e92cd1b9f0cd0c38ee8"><div class="ttname"><a href="../../d4/d79/namespacetesseract__collision.html#a0aa5b9a264467e92cd1b9f0cd0c38ee8">tesseract_collision::CollisionShapePtr</a></div><div class="ttdeci">tesseract_geometry::Geometry::Ptr CollisionShapePtr</div><div class="ttdef"><b>Definition:</b> types.h:54</div></div>
 <div class="ttc" id="anamespacetesseract__collision_html_a1eeace4cc41027dbde8e7dbeb77ca7cf"><div class="ttname"><a href="../../d4/d79/namespacetesseract__collision.html#a1eeace4cc41027dbde8e7dbeb77ca7cf">tesseract_collision::ContactResultMap</a></div><div class="ttdeci">tesseract_common::AlignedMap&lt; std::pair&lt; std::string, std::string &gt;, ContactResultVector &gt; ContactResultMap</div><div class="ttdef"><b>Definition:</b> types.h:165</div></div>
 <div class="ttc" id="anamespacetesseract__collision_html_a2472107aae8174a30873bb0a955c3cb4"><div class="ttname"><a href="../../d4/d79/namespacetesseract__collision.html#a2472107aae8174a30873bb0a955c3cb4">tesseract_collision::CollisionShapesConst</a></div><div class="ttdeci">std::vector&lt; tesseract_geometry::Geometry::ConstPtr &gt; CollisionShapesConst</div><div class="ttdef"><b>Definition:</b> types.h:52</div></div>
@@ -286,7 +287,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 30 2021 04:32:44 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Mar 31 2021 02:50:10 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
