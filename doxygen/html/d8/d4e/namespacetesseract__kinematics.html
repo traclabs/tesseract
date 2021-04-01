@@ -202,10 +202,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a881ff48bb24f8ac4e92de3f1e5c0bfb5">ForwardKinematicsConstPtrMap</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">createKinematicsMap</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> &amp;scene_graph, const <a class="el" href="../../de/d55/structtesseract__scene__graph_1_1KinematicsInformation.html">tesseract_scene_graph::KinematicsInformation</a> &amp;kinematics_information)</td></tr>
 <tr class="memdesc:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kinematics map from the srdf model.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a8c5e79830b1da0e1e83fb6f765e77cd4">More...</a><br /></td></tr>
 <tr class="separator:a8c5e79830b1da0e1e83fb6f765e77cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7bf99d154356876827ff501c21d3432"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:af7bf99d154356876827ff501c21d3432"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#af7bf99d154356876827ff501c21d3432">isWithinLimits</a> (const Eigen::Ref&lt; const <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt;&gt; &amp;joint_values, const Eigen::MatrixX2d &amp;limits)</td></tr>
-<tr class="memdesc:af7bf99d154356876827ff501c21d3432"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will check if the provided joint values are within the privided limits.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#af7bf99d154356876827ff501c21d3432">More...</a><br /></td></tr>
-<tr class="separator:af7bf99d154356876827ff501c21d3432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8b561da8a157f1e3d683bfbe6f39f9"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:a4b8b561da8a157f1e3d683bfbe6f39f9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a4b8b561da8a157f1e3d683bfbe6f39f9">getRedundantSolutionsHelper</a> (std::vector&lt; <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt;&gt; &amp;redundant_sols, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;sol, const Eigen::MatrixX2d &amp;limits, Eigen::Index current_index)</td></tr>
+<tr class="memdesc:a4b8b561da8a157f1e3d683bfbe6f39f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This a recursive function for caculating all permutations of the redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a4b8b561da8a157f1e3d683bfbe6f39f9">More...</a><br /></td></tr>
+<tr class="separator:a4b8b561da8a157f1e3d683bfbe6f39f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a829684b4f8565088734434970937efba"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
 <tr class="memitem:a829684b4f8565088734434970937efba"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a829684b4f8565088734434970937efba">getRedundantSolutions</a> (const Eigen::Ref&lt; const <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt;&gt; &amp;sol, const Eigen::MatrixX2d &amp;limits)</td></tr>
 <tr class="memdesc:a829684b4f8565088734434970937efba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinematics only return solution between PI and -PI. Provided the limits it will append redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a829684b4f8565088734434970937efba">More...</a><br /></td></tr>
@@ -763,6 +763,59 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
+<a id="a4b8b561da8a157f1e3d683bfbe6f39f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8b561da8a157f1e3d683bfbe6f39f9">&#9670;&nbsp;</a></span>getRedundantSolutionsHelper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tesseract_kinematics::getRedundantSolutionsHelper </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>redundant_sols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::MatrixX2d &amp;&#160;</td>
+          <td class="paramname"><em>limits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Index&#160;</td>
+          <td class="paramname"><em>current_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This a recursive function for caculating all permutations of the redundant solutions. </p>
+<p>This should not be used directly, use getRedundantSolutions function. </p>
+
+</div>
+</div>
 <a id="ab50bcc818a12ddc691a8fced83b22585"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab50bcc818a12ddc691a8fced83b22585">&#9670;&nbsp;</a></span>harmonizeTowardZero()</h2>
 
@@ -921,54 +974,6 @@ template&lt;typename FloatType &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the array is valid, otherwise false </dd></dl>
-
-</div>
-</div>
-<a id="af7bf99d154356876827ff501c21d3432"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7bf99d154356876827ff501c21d3432">&#9670;&nbsp;</a></span>isWithinLimits()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename FloatType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool tesseract_kinematics::isWithinLimits </td>
-          <td>(</td>
-          <td class="paramtype">const Eigen::Ref&lt; const <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>joint_values</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Eigen::MatrixX2d &amp;&#160;</td>
-          <td class="paramname"><em>limits</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This will check if the provided joint values are within the privided limits. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">joint_values</td><td>The joint values to check </td></tr>
-    <tr><td class="paramname">limits</td><td>The joint limits </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if joint values are within the joint limits, otherwise false </dd></dl>
 
 </div>
 </div>
@@ -1721,7 +1726,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 31 2021 02:50:12 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Apr 1 2021 20:56:18 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

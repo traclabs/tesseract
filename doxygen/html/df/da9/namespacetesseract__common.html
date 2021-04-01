@@ -192,9 +192,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3cdd2d28066e4fc020ad6d1a2499841e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a3cdd2d28066e4fc020ad6d1a2499841e">satisfiesPositionLimits</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_positions, const Eigen::Ref&lt; const Eigen::MatrixX2d &gt; &amp;position_limits, double epsilon=std::numeric_limits&lt; float &gt;::epsilon())</td></tr>
-<tr class="memdesc:a3cdd2d28066e4fc020ad6d1a2499841e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if joint position is within bounds provided the given epsilon.  <a href="../../df/da9/namespacetesseract__common.html#a3cdd2d28066e4fc020ad6d1a2499841e">More...</a><br /></td></tr>
-<tr class="separator:a3cdd2d28066e4fc020ad6d1a2499841e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eab6bf31cc0eb0089298c5e3e377fe9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a2eab6bf31cc0eb0089298c5e3e377fe9">satisfiesPositionLimits</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_positions, const Eigen::Ref&lt; const Eigen::MatrixX2d &gt; &amp;position_limits, double max_diff=1e-6, double max_rel_diff=std::numeric_limits&lt; double &gt;::epsilon())</td></tr>
+<tr class="memdesc:a2eab6bf31cc0eb0089298c5e3e377fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if joint position is within bounds or relativilty equal to a limit.  <a href="../../df/da9/namespacetesseract__common.html#a2eab6bf31cc0eb0089298c5e3e377fe9">More...</a><br /></td></tr>
+<tr class="separator:a2eab6bf31cc0eb0089298c5e3e377fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea55ba44081a4d90868727a7106f933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#aaea55ba44081a4d90868727a7106f933">enforcePositionLimits</a> (Eigen::Ref&lt; Eigen::VectorXd &gt; joint_positions, const Eigen::Ref&lt; const Eigen::MatrixX2d &gt; &amp;position_limits)</td></tr>
 <tr class="memdesc:aaea55ba44081a4d90868727a7106f933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enforce position to be within the provided limits.  <a href="../../df/da9/namespacetesseract__common.html#aaea55ba44081a4d90868727a7106f933">More...</a><br /></td></tr>
 <tr class="separator:aaea55ba44081a4d90868727a7106f933"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,9 +263,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad9a12946985d34fc3b1fcfb61b473f8b"><td class="memItemLeft" align="right" valign="top">tinyxml2::XMLError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#ad9a12946985d34fc3b1fcfb61b473f8b">QueryIntAttributeRequired</a> (const tinyxml2::XMLElement *xml_element, const char *name, int &amp;value)</td></tr>
 <tr class="memdesc:ad9a12946985d34fc3b1fcfb61b473f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query a int attribute from an xml element and print error log.  <a href="../../df/da9/namespacetesseract__common.html#ad9a12946985d34fc3b1fcfb61b473f8b">More...</a><br /></td></tr>
 <tr class="separator:ad9a12946985d34fc3b1fcfb61b473f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce86f1e809df1ac04fef0b5cf396fe2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">almostEqualRelativeAndAbs</a> (double a, double b, double max_diff, double max_rel_diff=std::numeric_limits&lt; double &gt;::epsilon())</td></tr>
-<tr class="memdesc:a1ce86f1e809df1ac04fef0b5cf396fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two double are relatively equal.  <a href="../../df/da9/namespacetesseract__common.html#a1ce86f1e809df1ac04fef0b5cf396fe2">More...</a><br /></td></tr>
-<tr class="separator:a1ce86f1e809df1ac04fef0b5cf396fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9961ff2a5d322165a817241b7746f64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#ac9961ff2a5d322165a817241b7746f64">almostEqualRelativeAndAbs</a> (double a, double b, double max_diff=1e-6, double max_rel_diff=std::numeric_limits&lt; double &gt;::epsilon())</td></tr>
+<tr class="memdesc:ac9961ff2a5d322165a817241b7746f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two double are relatively equal.  <a href="../../df/da9/namespacetesseract__common.html#ac9961ff2a5d322165a817241b7746f64">More...</a><br /></td></tr>
+<tr class="separator:ac9961ff2a5d322165a817241b7746f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a894fe5ec6ecf17efd1eb129291bdcf60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a894fe5ec6ecf17efd1eb129291bdcf60">almostEqualRelativeAndAbs</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;v1, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;v2, double max_diff, double max_rel_diff=std::numeric_limits&lt; double &gt;::epsilon())</td></tr>
 <tr class="memdesc:a894fe5ec6ecf17efd1eb129291bdcf60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two Eigen VectorXd are relatively and absolute equal.  <a href="../../df/da9/namespacetesseract__common.html#a894fe5ec6ecf17efd1eb129291bdcf60">More...</a><br /></td></tr>
 <tr class="separator:a894fe5ec6ecf17efd1eb129291bdcf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -568,8 +568,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a1ce86f1e809df1ac04fef0b5cf396fe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ce86f1e809df1ac04fef0b5cf396fe2">&#9670;&nbsp;</a></span>almostEqualRelativeAndAbs() <span class="overload">[2/2]</span></h2>
+<a id="ac9961ff2a5d322165a817241b7746f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9961ff2a5d322165a817241b7746f64">&#9670;&nbsp;</a></span>almostEqualRelativeAndAbs() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -593,7 +593,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max_diff</em>, </td>
+          <td class="paramname"><em>max_diff</em> = <code>1e-6</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1460,8 +1460,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a3cdd2d28066e4fc020ad6d1a2499841e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cdd2d28066e4fc020ad6d1a2499841e">&#9670;&nbsp;</a></span>satisfiesPositionLimits()</h2>
+<a id="a2eab6bf31cc0eb0089298c5e3e377fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eab6bf31cc0eb0089298c5e3e377fe9">&#9670;&nbsp;</a></span>satisfiesPositionLimits()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1482,7 +1482,13 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>epsilon</em> = <code>std::numeric_limits&lt;float&gt;::epsilon()</code>&#160;</td>
+          <td class="paramname"><em>max_diff</em> = <code>1e-6</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max_rel_diff</em> = <code>std::numeric_limits&lt;double&gt;::epsilon()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1492,16 +1498,17 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Check if joint position is within bounds provided the given epsilon. </p>
+<p>Check if joint position is within bounds or relativilty equal to a limit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">joint_positions</td><td>The joint position to check </td></tr>
     <tr><td class="paramname">joint_limits</td><td>The joint limits to perform check </td></tr>
-    <tr><td class="paramname">epsilon</td><td>The epsilon to leverage for check. Default is float epsilon </td></tr>
+    <tr><td class="paramname">max_diff</td><td>The max diff when comparing position to limit value max(abs(position - limit)) &lt;= max_diff, if true they are considered equal </td></tr>
+    <tr><td class="paramname">max_rel_diff</td><td>The max relative diff between position and limit abs(position - limit) &lt;= largest * max_rel_diff, if true considered equal. The largest is the largest of the absolute values of position and limit. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if bounds are satisfied, otherwise false </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the all position are within the limits or relativily equal to the limit, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -1668,7 +1675,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 31 2021 02:50:12 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Apr 1 2021 20:56:18 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

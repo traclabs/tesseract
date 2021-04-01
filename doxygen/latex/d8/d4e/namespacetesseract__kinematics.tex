@@ -99,8 +99,8 @@ bool \mbox{\hyperlink{namespacetesseract__kinematics_ae2bebd951f959b4c39b06dc7b3
 \begin{DoxyCompactList}\small\item\em Calculate manipulability data about the provided jacobian. \end{DoxyCompactList}\item 
 {\footnotesize template$<$class Chain\+\_\+T , class Tree\+\_\+T $>$ }\\\mbox{\hyperlink{namespacetesseract__kinematics_a881ff48bb24f8ac4e92de3f1e5c0bfb5}{Forward\+Kinematics\+Const\+Ptr\+Map}} \mbox{\hyperlink{namespacetesseract__kinematics_a8c5e79830b1da0e1e83fb6f765e77cd4}{create\+Kinematics\+Map}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&scene\+\_\+graph, const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \&kinematics\+\_\+information)
 \begin{DoxyCompactList}\small\item\em Create a kinematics map from the srdf model. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__kinematics_af7bf99d154356876827ff501c21d3432}{is\+Within\+Limits}} (const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&joint\+\_\+values, const Eigen\+::\+Matrix\+X2d \&limits)
-\begin{DoxyCompactList}\small\item\em This will check if the provided joint values are within the privided limits. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Float\+Type $>$ }\\void \mbox{\hyperlink{namespacetesseract__kinematics_a4b8b561da8a157f1e3d683bfbe6f39f9}{get\+Redundant\+Solutions\+Helper}} (std\+::vector$<$ \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&redundant\+\_\+sols, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&sol, const Eigen\+::\+Matrix\+X2d \&limits, Eigen\+::\+Index current\+\_\+index)
+\begin{DoxyCompactList}\small\item\em This a recursive function for caculating all permutations of the redundant solutions. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Float\+Type $>$ }\\std\+::vector$<$ \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$ $>$ \mbox{\hyperlink{namespacetesseract__kinematics_a829684b4f8565088734434970937efba}{get\+Redundant\+Solutions}} (const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&sol, const Eigen\+::\+Matrix\+X2d \&limits)
 \begin{DoxyCompactList}\small\item\em Kinematics only return solution between PI and -\/PI. Provided the limits it will append redundant solutions. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__kinematics_a2f74af65eeb166856e00a64254da7ee8}{is\+Valid}} (const std\+::array$<$ Float\+Type, 6 $>$ \&qs)
@@ -378,7 +378,18 @@ Kinematics only return solution between PI and -\/PI. Provided the limits it wil
 {\em limits} & The joint limits of the robot \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{namespacetesseract__kinematics_ab50bcc818a12ddc691a8fced83b22585}\label{namespacetesseract__kinematics_ab50bcc818a12ddc691a8fced83b22585}} 
+\mbox{\Hypertarget{namespacetesseract__kinematics_a4b8b561da8a157f1e3d683bfbe6f39f9}\label{namespacetesseract__kinematics_a4b8b561da8a157f1e3d683bfbe6f39f9}} 
+\index{tesseract\_kinematics@{tesseract\_kinematics}!getRedundantSolutionsHelper@{getRedundantSolutionsHelper}}
+\index{getRedundantSolutionsHelper@{getRedundantSolutionsHelper}!tesseract\_kinematics@{tesseract\_kinematics}}
+\doxysubsubsection{\texorpdfstring{getRedundantSolutionsHelper()}{getRedundantSolutionsHelper()}}
+{\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
+void tesseract\+\_\+kinematics\+::get\+Redundant\+Solutions\+Helper (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&}]{redundant\+\_\+sols,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{sol,  }\item[{const Eigen\+::\+Matrix\+X2d \&}]{limits,  }\item[{Eigen\+::\+Index}]{current\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This a recursive function for caculating all permutations of the redundant solutions. 
+
+This should not be used directly, use get\+Redundant\+Solutions function. \mbox{\Hypertarget{namespacetesseract__kinematics_ab50bcc818a12ddc691a8fced83b22585}\label{namespacetesseract__kinematics_ab50bcc818a12ddc691a8fced83b22585}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!harmonizeTowardZero@{harmonizeTowardZero}}
 \index{harmonizeTowardZero@{harmonizeTowardZero}!tesseract\_kinematics@{tesseract\_kinematics}}
 \doxysubsubsection{\texorpdfstring{harmonizeTowardZero()}{harmonizeTowardZero()}}
@@ -441,27 +452,6 @@ In the case of OPW and IKFast they can return NANS so this is used to check that
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 True if the array is valid, otherwise false 
-\end{DoxyReturn}
-\mbox{\Hypertarget{namespacetesseract__kinematics_af7bf99d154356876827ff501c21d3432}\label{namespacetesseract__kinematics_af7bf99d154356876827ff501c21d3432}} 
-\index{tesseract\_kinematics@{tesseract\_kinematics}!isWithinLimits@{isWithinLimits}}
-\index{isWithinLimits@{isWithinLimits}!tesseract\_kinematics@{tesseract\_kinematics}}
-\doxysubsubsection{\texorpdfstring{isWithinLimits()}{isWithinLimits()}}
-{\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
-bool tesseract\+\_\+kinematics\+::is\+Within\+Limits (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&}]{joint\+\_\+values,  }\item[{const Eigen\+::\+Matrix\+X2d \&}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-This will check if the provided joint values are within the privided limits. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em joint\+\_\+values} & The joint values to check \\
-\hline
-{\em limits} & The joint limits \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if joint values are within the joint limits, otherwise false 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__kinematics_aa818d0b8ef2f027488fd09c1aa7df4e0}\label{namespacetesseract__kinematics_aa818d0b8ef2f027488fd09c1aa7df4e0}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!jacobianChangeBase@{jacobianChangeBase}}

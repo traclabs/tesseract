@@ -100,8 +100,8 @@ enum class \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{namespacetesseract__common_a3cdd2d28066e4fc020ad6d1a2499841e}{satisfies\+Position\+Limits}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits, double epsilon=std\+::numeric\+\_\+limits$<$ float $>$\+::epsilon())
-\begin{DoxyCompactList}\small\item\em Check if joint position is within bounds provided the given epsilon. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacetesseract__common_a2eab6bf31cc0eb0089298c5e3e377fe9}{satisfies\+Position\+Limits}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits, double max\+\_\+diff=1e-\/6, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
+\begin{DoxyCompactList}\small\item\em Check if joint position is within bounds or relativilty equal to a limit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacetesseract__common_aaea55ba44081a4d90868727a7106f933}{enforce\+Position\+Limits}} (Eigen\+::\+Ref$<$ Eigen\+::\+Vector\+Xd $>$ joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits)
 \begin{DoxyCompactList}\small\item\em Enforce position to be within the provided limits. \end{DoxyCompactList}\item 
 std\+::list$<$ std\+::string $>$ \mbox{\hyperlink{namespacetesseract__common_a0b6d0012d51401bfd898e534ad9c9be9}{parse\+Environment\+Variable\+List}} (const std\+::string \&env\+\_\+variable)
@@ -150,7 +150,7 @@ tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ab5ec94b62bea
 \begin{DoxyCompactList}\small\item\em Query a double attribute from an xml element and print error log. \end{DoxyCompactList}\item 
 tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ad9a12946985d34fc3b1fcfb61b473f8b}{Query\+Int\+Attribute\+Required}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, int \&value)
 \begin{DoxyCompactList}\small\item\em Query a int attribute from an xml element and print error log. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespacetesseract__common_a1ce86f1e809df1ac04fef0b5cf396fe2}{almost\+Equal\+Relative\+And\+Abs}} (double a, double b, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
+bool \mbox{\hyperlink{namespacetesseract__common_ac9961ff2a5d322165a817241b7746f64}{almost\+Equal\+Relative\+And\+Abs}} (double a, double b, double max\+\_\+diff=1e-\/6, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
 \begin{DoxyCompactList}\small\item\em Check if two double are relatively equal. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}{almost\+Equal\+Relative\+And\+Abs}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v1, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v2, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
 \begin{DoxyCompactList}\small\item\em Check if two Eigen Vector\+Xd are relatively and absolute equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -313,11 +313,11 @@ This is a vectorized implementation of the function above. The max\+\_\+diff is 
 \begin{DoxyReturn}{Returns}
 True if they are relativily equal, otherwise false. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacetesseract__common_a1ce86f1e809df1ac04fef0b5cf396fe2}\label{namespacetesseract__common_a1ce86f1e809df1ac04fef0b5cf396fe2}} 
+\mbox{\Hypertarget{namespacetesseract__common_ac9961ff2a5d322165a817241b7746f64}\label{namespacetesseract__common_ac9961ff2a5d322165a817241b7746f64}} 
 \index{tesseract\_common@{tesseract\_common}!almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}}
 \index{almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{almostEqualRelativeAndAbs()}{almostEqualRelativeAndAbs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{max\+\_\+diff,  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{max\+\_\+diff = {\ttfamily 1e-\/6},  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -669,15 +669,15 @@ Right trim string.
 {\em s} & The string to right trim \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{namespacetesseract__common_a3cdd2d28066e4fc020ad6d1a2499841e}\label{namespacetesseract__common_a3cdd2d28066e4fc020ad6d1a2499841e}} 
+\mbox{\Hypertarget{namespacetesseract__common_a2eab6bf31cc0eb0089298c5e3e377fe9}\label{namespacetesseract__common_a2eab6bf31cc0eb0089298c5e3e377fe9}} 
 \index{tesseract\_common@{tesseract\_common}!satisfiesPositionLimits@{satisfiesPositionLimits}}
 \index{satisfiesPositionLimits@{satisfiesPositionLimits}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{satisfiesPositionLimits()}{satisfiesPositionLimits()}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::satisfies\+Position\+Limits (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{joint\+\_\+positions,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&}]{position\+\_\+limits,  }\item[{double}]{epsilon = {\ttfamily std\+:\+:numeric\+\_\+limits$<$float$>$\+:\+:epsilon()} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::satisfies\+Position\+Limits (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{joint\+\_\+positions,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&}]{position\+\_\+limits,  }\item[{double}]{max\+\_\+diff = {\ttfamily 1e-\/6},  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})}
 
 
 
-Check if joint position is within bounds provided the given epsilon. 
+Check if joint position is within bounds or relativilty equal to a limit. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -685,11 +685,13 @@ Check if joint position is within bounds provided the given epsilon.
 \hline
 {\em joint\+\_\+limits} & The joint limits to perform check \\
 \hline
-{\em epsilon} & The epsilon to leverage for check. Default is float epsilon \\
+{\em max\+\_\+diff} & The max diff when comparing position to limit value max(abs(position -\/ limit)) $<$= max\+\_\+diff, if true they are considered equal \\
+\hline
+{\em max\+\_\+rel\+\_\+diff} & The max relative diff between position and limit abs(position -\/ limit) $<$= largest $\ast$ max\+\_\+rel\+\_\+diff, if true considered equal. The largest is the largest of the absolute values of position and limit. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-True if bounds are satisfied, otherwise false 
+True if the all position are within the limits or relativily equal to the limit, otherwise false. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_aadfa4845aecc119ae62b37e59c6ee168}\label{namespacetesseract__common_aadfa4845aecc119ae62b37e59c6ee168}} 
 \index{tesseract\_common@{tesseract\_common}!StringAttribute@{StringAttribute}}

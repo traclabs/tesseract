@@ -39,8 +39,8 @@ struct \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{namespacetesseract__common_a3cdd2d28066e4fc020ad6d1a2499841e}{tesseract\+\_\+common\+::satisfies\+Position\+Limits}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits, double epsilon=std\+::numeric\+\_\+limits$<$ float $>$\+::epsilon())
-\begin{DoxyCompactList}\small\item\em Check if joint position is within bounds provided the given epsilon. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacetesseract__common_a2eab6bf31cc0eb0089298c5e3e377fe9}{tesseract\+\_\+common\+::satisfies\+Position\+Limits}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits, double max\+\_\+diff=1e-\/6, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
+\begin{DoxyCompactList}\small\item\em Check if joint position is within bounds or relativilty equal to a limit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacetesseract__common_aaea55ba44081a4d90868727a7106f933}{tesseract\+\_\+common\+::enforce\+Position\+Limits}} (Eigen\+::\+Ref$<$ Eigen\+::\+Vector\+Xd $>$ joint\+\_\+positions, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&position\+\_\+limits)
 \begin{DoxyCompactList}\small\item\em Enforce position to be within the provided limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
