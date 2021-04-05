@@ -119,8 +119,6 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db4/classtesseract__common_1_1NullAny.html">tesseract_common::NullAny</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/structtesseract__common_1_1detail__any_1_1AnyInnerBase.html">tesseract_common::detail_any::AnyInnerBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de7/structtesseract__common_1_1detail__any_1_1AnyInner.html">tesseract_common::detail_any::AnyInner&lt; T &gt;</a></td></tr>
@@ -141,13 +139,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a2e797dbbe4d98ed91b40db9829dd9ca0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/any_8h.html#a2e797dbbe4d98ed91b40db9829dd9ca0">TESSERACT_ANY_EXPORT_KEY</a>(any_t)</td></tr>
+<tr class="memdesc:a2e797dbbe4d98ed91b40db9829dd9ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If shared library, this must go in the header after the class definition.  <a href="../../df/d8d/any_8h.html#a2e797dbbe4d98ed91b40db9829dd9ca0">More...</a><br /></td></tr>
+<tr class="separator:a2e797dbbe4d98ed91b40db9829dd9ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb199b98abe6f8a2b37e8ad0a8738c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/any_8h.html#abfb199b98abe6f8a2b37e8ad0a8738c8">TESSERACT_ANY_EXPORT_IMPLEMENT</a>(any_t)&#160;&#160;&#160;  BOOST_CLASS_EXPORT_IMPLEMENT(<a class="el" href="../../d0/de7/structtesseract__common_1_1detail__any_1_1AnyInner.html">tesseract_common::detail_any::AnyInner</a>&lt;any_t&gt;)</td></tr>
+<tr class="memdesc:abfb199b98abe6f8a2b37e8ad0a8738c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">If shared library, this must go in the cpp after the implicit instantiation of the serialize function.  <a href="../../df/d8d/any_8h.html#abfb199b98abe6f8a2b37e8ad0a8738c8">More...</a><br /></td></tr>
+<tr class="separator:abfb199b98abe6f8a2b37e8ad0a8738c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd44446dca736c7fb7886a3092f13869"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/any_8h.html#acd44446dca736c7fb7886a3092f13869">TESSERACT_ANY_EXPORT</a>(any_t)</td></tr>
+<tr class="memdesc:acd44446dca736c7fb7886a3092f13869"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should not be used within shared libraries use the two above. If not in a shared library it can go in header or cpp.  <a href="../../df/d8d/any_8h.html#acd44446dca736c7fb7886a3092f13869">More...</a><br /></td></tr>
 <tr class="separator:acd44446dca736c7fb7886a3092f13869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a516c6babdea5c7867a65abdf2e41e93c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/any_8h.html#a516c6babdea5c7867a65abdf2e41e93c">TESSERACT_ANY_EXPORT</a> (<a class="el" href="../../df/db4/classtesseract__common_1_1NullAny.html">tesseract_common::NullAny</a>)</td></tr>
-<tr class="separator:a516c6babdea5c7867a65abdf2e41e93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaec163e216269fcdb13a222b14cd4ccf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/any_8h.html#aaec163e216269fcdb13a222b14cd4ccf">BOOST_CLASS_TRACKING</a> (<a class="el" href="../../da/d73/classtesseract__common_1_1Any.html">tesseract_common::Any</a>, boost::serialization::track_never)</td></tr>
 <tr class="separator:aaec163e216269fcdb13a222b14cd4ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -177,10 +180,55 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  BOOST_CLASS_EXPORT_GUID(<a class="code" href="../../d0/de7/structtesseract__common_1_1detail__any_1_1AnyInner.html">tesseract_common::detail_any::AnyInner&lt;any_t&gt;</a>, #any_t)                                       \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="../../df/d8d/any_8h.html#a2e797dbbe4d98ed91b40db9829dd9ca0">TESSERACT_ANY_EXPORT_KEY</a>(any_t)                                                                                      \</div>
+<div class="line">  TESSERACT_ANY_EXPORT_IMPLEMENT(any_t)</div>
+<div class="ttc" id="aany_8h_html_a2e797dbbe4d98ed91b40db9829dd9ca0"><div class="ttname"><a href="../../df/d8d/any_8h.html#a2e797dbbe4d98ed91b40db9829dd9ca0">TESSERACT_ANY_EXPORT_KEY</a></div><div class="ttdeci">#define TESSERACT_ANY_EXPORT_KEY(any_t)</div><div class="ttdoc">If shared library, this must go in the header after the class definition.</div><div class="ttdef"><b>Definition:</b> any.h:40</div></div>
+</div><!-- fragment -->
+<p>This should not be used within shared libraries use the two above. If not in a shared library it can go in header or cpp. </p>
+
+</div>
+</div>
+<a id="abfb199b98abe6f8a2b37e8ad0a8738c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb199b98abe6f8a2b37e8ad0a8738c8">&#9670;&nbsp;</a></span>TESSERACT_ANY_EXPORT_IMPLEMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TESSERACT_ANY_EXPORT_IMPLEMENT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">any_t</td><td>)</td>
+          <td>&#160;&#160;&#160;  BOOST_CLASS_EXPORT_IMPLEMENT(<a class="el" href="../../d0/de7/structtesseract__common_1_1detail__any_1_1AnyInner.html">tesseract_common::detail_any::AnyInner</a>&lt;any_t&gt;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If shared library, this must go in the cpp after the implicit instantiation of the serialize function. </p>
+
+</div>
+</div>
+<a id="a2e797dbbe4d98ed91b40db9829dd9ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e797dbbe4d98ed91b40db9829dd9ca0">&#9670;&nbsp;</a></span>TESSERACT_ANY_EXPORT_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TESSERACT_ANY_EXPORT_KEY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">any_t</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  BOOST_CLASS_EXPORT_KEY2(<a class="code" href="../../d0/de7/structtesseract__common_1_1detail__any_1_1AnyInner.html">tesseract_common::detail_any::AnyInner&lt;any_t&gt;</a>, #any_t)                                       \</div>
 <div class="line">  BOOST_CLASS_TRACKING(<a class="code" href="../../d0/de7/structtesseract__common_1_1detail__any_1_1AnyInner.html">tesseract_common::detail_any::AnyInner&lt;any_t&gt;</a>, boost::serialization::track_never)</div>
 <div class="ttc" id="astructtesseract__common_1_1detail__any_1_1AnyInner_html"><div class="ttname"><a href="../../d0/de7/structtesseract__common_1_1detail__any_1_1AnyInner.html">tesseract_common::detail_any::AnyInner</a></div><div class="ttdef"><b>Definition:</b> any.h:89</div></div>
 </div><!-- fragment -->
+<p>If shared library, this must go in the header after the class definition. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -212,28 +260,10 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a516c6babdea5c7867a65abdf2e41e93c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a516c6babdea5c7867a65abdf2e41e93c">&#9670;&nbsp;</a></span>TESSERACT_ANY_EXPORT()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TESSERACT_ANY_EXPORT </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/db4/classtesseract__common_1_1NullAny.html">tesseract_common::NullAny</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 1 2021 20:56:16 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Apr 5 2021 22:50:40 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

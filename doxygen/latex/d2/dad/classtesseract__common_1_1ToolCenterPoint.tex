@@ -44,14 +44,14 @@ const std\+::string \& \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoin
 \begin{DoxyCompactList}\small\item\em Get the tool center point name. \end{DoxyCompactList}\item 
 const Eigen\+::\+Isometry3d \& \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_ac206b7b243793abe72d4692da7c28c19}{get\+Transform}} () const
 \begin{DoxyCompactList}\small\item\em Get the tool center point transform. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_a26259ffce09c0d505c3300c8600b6788}{operator==}} (const \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}} \&other) const
+bool \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_ab1e75579eb50a127c55c1d96a6bf24e9}{operator==}} (const \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}} \&rhs) const
 \item 
 bool \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_a91cf62c95cbd80801d6045794635ed32}{operator!=}} (const \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}} \&rhs) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_a6b1eac73320241faafcdfd5487b1c647}{serialize}} (Archive \&ar, const unsigned int)
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint_a3fcd6def07b1b5c262d08feb455e024a}{serialize}} (Archive \&ar, const unsigned int version)
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -220,20 +220,20 @@ True if constructed with transform otherwise false
 \index{tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}!operator"!=@{operator"!=}}
 \index{operator"!=@{operator"!=}!tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}}
 \doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::\+Tool\+Center\+Point\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::\+Tool\+Center\+Point\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}} \&}]{rhs }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classtesseract__common_1_1ToolCenterPoint_a26259ffce09c0d505c3300c8600b6788}\label{classtesseract__common_1_1ToolCenterPoint_a26259ffce09c0d505c3300c8600b6788}} 
+\mbox{\Hypertarget{classtesseract__common_1_1ToolCenterPoint_ab1e75579eb50a127c55c1d96a6bf24e9}\label{classtesseract__common_1_1ToolCenterPoint_ab1e75579eb50a127c55c1d96a6bf24e9}} 
 \index{tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}!operator==@{operator==}}
 \index{operator==@{operator==}!tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::\+Tool\+Center\+Point\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::\+Tool\+Center\+Point\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__common_1_1ToolCenterPoint}{Tool\+Center\+Point}} \&}]{rhs }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classtesseract__common_1_1ToolCenterPoint_a6b1eac73320241faafcdfd5487b1c647}\label{classtesseract__common_1_1ToolCenterPoint_a6b1eac73320241faafcdfd5487b1c647}} 
+\mbox{\Hypertarget{classtesseract__common_1_1ToolCenterPoint_a3fcd6def07b1b5c262d08feb455e024a}\label{classtesseract__common_1_1ToolCenterPoint_a3fcd6def07b1b5c262d08feb455e024a}} 
 \index{tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}!serialize@{serialize}}
 \index{serialize@{serialize}!tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}}
 \doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
 {\footnotesize\ttfamily template$<$class Archive $>$ \\
-void tesseract\+\_\+common\+::\+Tool\+Center\+Point\+::serialize (\begin{DoxyParamCaption}\item[{Archive \&}]{ar,  }\item[{const unsigned int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+template void tesseract\+\_\+common\+::\+Tool\+Center\+Point\+::serialize (\begin{DoxyParamCaption}\item[{Archive \&}]{ar,  }\item[{const unsigned int}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classtesseract__common_1_1ToolCenterPoint_a0aad9cad4bcc876cd097beebe8ff1a7a}\label{classtesseract__common_1_1ToolCenterPoint_a0aad9cad4bcc876cd097beebe8ff1a7a}} 
 \index{tesseract\_common::ToolCenterPoint@{tesseract\_common::ToolCenterPoint}!setExternal@{setExternal}}

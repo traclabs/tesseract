@@ -1,52 +1,49 @@
 <map id="tesseract_kinematics/src/ur/ur_inv_kin.cpp" name="tesseract_kinematics/src/ur/ur_inv_kin.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="1772,5,1919,47"/>
-<area shape="rect" id="node2" href="$d3/d8f/ur__inv__kin_8h.html" title=" " alt="" coords="93,273,240,315"/>
-<area shape="rect" id="node21" href="$dc/d8f/tesseract__kinematics_2include_2tesseract__kinematics_2core_2utils_8h.html" title="Kinematics utility functions." alt="" coords="2557,95,2704,136"/>
-<area shape="rect" id="node3" href="$d3/da5/inverse__kinematics_8h.html" title="Inverse kinematics functions." alt="" coords="1746,363,1923,404"/>
-<area shape="rect" id="node20" href="$d1/da8/tesseract__kinematics_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="93,363,240,404"/>
-<area shape="rect" id="node4" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="2682,713,2873,739"/>
-<area shape="rect" id="node5" title=" " alt="" coords="2311,549,2369,575"/>
-<area shape="rect" id="node6" title=" " alt="" coords="1834,549,1889,575"/>
-<area shape="rect" id="node7" title=" " alt="" coords="1855,631,1940,657"/>
-<area shape="rect" id="node8" title=" " alt="" coords="3852,631,3967,657"/>
-<area shape="rect" id="node9" title=" " alt="" coords="1825,459,1897,486"/>
-<area shape="rect" id="node10" title=" " alt="" coords="1058,549,1126,575"/>
-<area shape="rect" id="node11" title=" " alt="" coords="2527,549,2638,575"/>
-<area shape="rect" id="node12" href="$dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="2985,459,3164,486"/>
-<area shape="rect" id="node13" title=" " alt="" coords="2421,549,2467,575"/>
-<area shape="rect" id="node14" title=" " alt="" coords="3033,549,3173,575"/>
-<area shape="rect" id="node15" href="$d9/dc2/kinematic__limits_8h.html" title="Common Tesseract Kinematic Limits and Related Utility Functions." alt="" coords="2815,541,3009,583"/>
-<area shape="rect" id="node16" title=" " alt="" coords="2878,631,2946,657"/>
-<area shape="rect" id="node17" href="$dd/d50/serialization_8h.html" title="Additional Boost serialization wrappers." alt="" coords="4598,631,4813,657"/>
-<area shape="rect" id="node18" title=" " alt="" coords="4725,713,4819,739"/>
-<area shape="rect" id="node19" title=" " alt="" coords="4574,705,4701,747"/>
-<area shape="rect" id="node22" title=" " alt="" coords="2975,191,3103,218"/>
-<area shape="rect" id="node23" title=" " alt="" coords="4253,459,4421,486"/>
-<area shape="rect" id="node24" href="$d0/d42/srdf__model_8h.html" title="Parse srdf xml." alt="" coords="2793,184,2951,225"/>
-<area shape="rect" id="node29" href="$d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="1221,273,1379,315"/>
-<area shape="rect" id="node50" href="$d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="1872,184,2051,225"/>
-<area shape="rect" id="node25" title=" " alt="" coords="3943,281,3995,307"/>
-<area shape="rect" id="node26" title=" " alt="" coords="4150,459,4229,486"/>
-<area shape="rect" id="node27" title=" " alt="" coords="4020,281,4087,307"/>
-<area shape="rect" id="node28" title=" " alt="" coords="4099,370,4149,397"/>
-<area shape="rect" id="node40" href="$d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="2127,363,2303,404"/>
-<area shape="rect" id="node41" href="$d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="3116,273,3287,315"/>
-<area shape="rect" id="node49" href="$d4/da8/collision__margin__data_8h.html" title="This is used to store collision margin information." alt="" coords="2856,273,3040,315"/>
-<area shape="rect" id="node30" title=" " alt="" coords="820,363,972,404"/>
-<area shape="rect" id="node31" title=" " alt="" coords="997,363,1137,404"/>
-<area shape="rect" id="node32" title=" " alt="" coords="1213,370,1387,397"/>
-<area shape="rect" id="node33" title=" " alt="" coords="416,363,571,404"/>
-<area shape="rect" id="node34" title=" " alt="" coords="595,363,733,404"/>
-<area shape="rect" id="node35" title=" " alt="" coords="757,370,795,397"/>
-<area shape="rect" id="node36" href="$d2/d5c/tesseract__scene__graph_2include_2tesseract__scene__graph_2link_8h.html" title=" " alt="" coords="1412,363,1569,404"/>
-<area shape="rect" id="node38" href="$d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="1188,452,1345,493"/>
-<area shape="rect" id="node37" title=" " alt="" coords="1337,549,1428,575"/>
-<area shape="rect" id="node39" href="$d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="927,452,1063,493"/>
-<area shape="rect" id="node42" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="3420,370,3591,397"/>
-<area shape="rect" id="node43" title=" " alt="" coords="3519,459,3588,486"/>
-<area shape="rect" id="node44" title=" " alt="" coords="3613,459,3691,486"/>
-<area shape="rect" id="node45" title=" " alt="" coords="3715,459,3781,486"/>
-<area shape="rect" id="node46" title=" " alt="" coords="3805,459,3872,486"/>
-<area shape="rect" id="node47" title=" " alt="" coords="3341,459,3395,486"/>
-<area shape="rect" id="node48" title=" " alt="" coords="3420,459,3495,486"/>
+<area shape="rect" id="node1" title=" " alt="" coords="119,5,265,47"/>
+<area shape="rect" id="node2" href="$d3/d8f/ur__inv__kin_8h.html" title=" " alt="" coords="195,273,341,315"/>
+<area shape="rect" id="node18" href="$dc/d8f/tesseract__kinematics_2include_2tesseract__kinematics_2core_2utils_8h.html" title="Kinematics utility functions." alt="" coords="704,95,851,136"/>
+<area shape="rect" id="node3" href="$d3/da5/inverse__kinematics_8h.html" title="Inverse kinematics functions." alt="" coords="726,363,903,404"/>
+<area shape="rect" id="node17" href="$d1/da8/tesseract__kinematics_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="195,363,341,404"/>
+<area shape="rect" id="node4" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="2299,638,2490,665"/>
+<area shape="rect" id="node5" title=" " alt="" coords="2951,549,3009,575"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2445,549,2499,575"/>
+<area shape="rect" id="node7" title=" " alt="" coords="424,638,509,665"/>
+<area shape="rect" id="node8" title=" " alt="" coords="740,638,855,665"/>
+<area shape="rect" id="node9" title=" " alt="" coords="893,459,965,486"/>
+<area shape="rect" id="node10" title=" " alt="" coords="3271,549,3339,575"/>
+<area shape="rect" id="node11" title=" " alt="" coords="547,549,658,575"/>
+<area shape="rect" id="node12" href="$dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="1141,459,1320,486"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1623,549,1670,575"/>
+<area shape="rect" id="node14" title=" " alt="" coords="987,549,1127,575"/>
+<area shape="rect" id="node15" href="$d9/dc2/kinematic__limits_8h.html" title="Common Tesseract Kinematic Limits and Related Utility Functions." alt="" coords="1151,541,1345,583"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1185,631,1311,672"/>
+<area shape="rect" id="node19" title=" " alt="" coords="264,191,392,218"/>
+<area shape="rect" id="node20" title=" " alt="" coords="347,459,515,486"/>
+<area shape="rect" id="node21" href="$d0/d42/srdf__model_8h.html" title="Parse srdf xml." alt="" coords="2517,184,2675,225"/>
+<area shape="rect" id="node26" href="$d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="3340,273,3497,315"/>
+<area shape="rect" id="node47" href="$d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="1032,184,1211,225"/>
+<area shape="rect" id="node22" title=" " alt="" coords="2917,281,2969,307"/>
+<area shape="rect" id="node23" title=" " alt="" coords="2458,459,2537,486"/>
+<area shape="rect" id="node24" title=" " alt="" coords="2993,281,3060,307"/>
+<area shape="rect" id="node25" title=" " alt="" coords="2457,370,2508,397"/>
+<area shape="rect" id="node37" href="$d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="2865,363,3041,404"/>
+<area shape="rect" id="node38" href="$d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="1699,273,1869,315"/>
+<area shape="rect" id="node46" href="$d4/da8/collision__margin__data_8h.html" title="This is used to store collision margin information." alt="" coords="1316,273,1500,315"/>
+<area shape="rect" id="node27" title=" " alt="" coords="4167,363,4319,404"/>
+<area shape="rect" id="node28" title=" " alt="" coords="3349,363,3489,404"/>
+<area shape="rect" id="node29" title=" " alt="" coords="3513,370,3687,397"/>
+<area shape="rect" id="node30" title=" " alt="" coords="3712,363,3867,404"/>
+<area shape="rect" id="node31" title=" " alt="" coords="3891,363,4029,404"/>
+<area shape="rect" id="node32" title=" " alt="" coords="4053,370,4091,397"/>
+<area shape="rect" id="node33" href="$d2/d5c/tesseract__scene__graph_2include_2tesseract__scene__graph_2link_8h.html" title=" " alt="" coords="3167,363,3324,404"/>
+<area shape="rect" id="node35" href="$d4/d6d/tesseract__scene__graph_2include_2tesseract__scene__graph_2joint_8h.html" title=" " alt="" coords="3532,452,3689,493"/>
+<area shape="rect" id="node34" title=" " alt="" coords="3681,549,3772,575"/>
+<area shape="rect" id="node36" href="$d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="3372,452,3508,493"/>
+<area shape="rect" id="node39" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1699,370,1869,397"/>
+<area shape="rect" id="node40" title=" " alt="" coords="2111,459,2180,486"/>
+<area shape="rect" id="node41" title=" " alt="" coords="1649,459,1727,486"/>
+<area shape="rect" id="node42" title=" " alt="" coords="1751,459,1817,486"/>
+<area shape="rect" id="node43" title=" " alt="" coords="1841,459,1908,486"/>
+<area shape="rect" id="node44" title=" " alt="" coords="1933,459,1987,486"/>
+<area shape="rect" id="node45" title=" " alt="" coords="2012,459,2087,486"/>
 </map>

@@ -22,7 +22,9 @@ Collaboration diagram for tesseract\+\_\+common\+::Kinematic\+Limits\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_a79272820124db3c50f4a564a5ada30f1}{operator==}} (const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}} \&other) const
+bool \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_ad44ef1fe9ffa93453d7ebeae4f3aef96}{operator==}} (const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_a00dcfeec202e19fb26590209db5cedd8}{operator!=}} (const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}} \&rhs) const
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -36,7 +38,7 @@ Eigen\+::\+Vector\+Xd \mbox{\hyperlink{structtesseract__common_1_1KinematicLimit
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_a3535ccf22c52e35fafd11958fe7acc1d}{serialize}} (Archive \&ar, const unsigned int)
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_a25ce956698db45e8987edf6de618ec38}{serialize}} (Archive \&ar, const unsigned int version)
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -49,18 +51,24 @@ class \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits_ac98d07dd8f7b7
 Store kinematic limits. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{structtesseract__common_1_1KinematicLimits_a79272820124db3c50f4a564a5ada30f1}\label{structtesseract__common_1_1KinematicLimits_a79272820124db3c50f4a564a5ada30f1}} 
+\mbox{\Hypertarget{structtesseract__common_1_1KinematicLimits_a00dcfeec202e19fb26590209db5cedd8}\label{structtesseract__common_1_1KinematicLimits_a00dcfeec202e19fb26590209db5cedd8}} 
+\index{tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::\+Kinematic\+Limits\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structtesseract__common_1_1KinematicLimits_ad44ef1fe9ffa93453d7ebeae4f3aef96}\label{structtesseract__common_1_1KinematicLimits_ad44ef1fe9ffa93453d7ebeae4f3aef96}} 
 \index{tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}!operator==@{operator==}}
 \index{operator==@{operator==}!tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::\+Kinematic\+Limits\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}} \&}]{other }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::\+Kinematic\+Limits\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{Kinematic\+Limits}} \&}]{rhs }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{structtesseract__common_1_1KinematicLimits_a3535ccf22c52e35fafd11958fe7acc1d}\label{structtesseract__common_1_1KinematicLimits_a3535ccf22c52e35fafd11958fe7acc1d}} 
+\mbox{\Hypertarget{structtesseract__common_1_1KinematicLimits_a25ce956698db45e8987edf6de618ec38}\label{structtesseract__common_1_1KinematicLimits_a25ce956698db45e8987edf6de618ec38}} 
 \index{tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}!serialize@{serialize}}
 \index{serialize@{serialize}!tesseract\_common::KinematicLimits@{tesseract\_common::KinematicLimits}}
 \doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
 {\footnotesize\ttfamily template$<$class Archive $>$ \\
-void tesseract\+\_\+common\+::\+Kinematic\+Limits\+::serialize (\begin{DoxyParamCaption}\item[{Archive \&}]{ar,  }\item[{const unsigned int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+template void tesseract\+\_\+common\+::\+Kinematic\+Limits\+::serialize (\begin{DoxyParamCaption}\item[{Archive \&}]{ar,  }\item[{const unsigned int}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
