@@ -107,6 +107,8 @@ void \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bul
 \begin{DoxyCompactList}\small\item\em Add the collision object to broadphase. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_a31e50acd340ac0bf4728dbcae8262742}{update\+Collision\+Object\+Filters}} (const std\+::vector$<$ std\+::string $>$ \&active, const \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}} \&cow, const std\+::unique\+\_\+ptr$<$ bt\+Broadphase\+Interface $>$ \&broadphase, const std\+::unique\+\_\+ptr$<$ bt\+Collision\+Dispatcher $>$ \&dispatcher)
 \begin{DoxyCompactList}\small\item\em Update a collision objects filters for broadphase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_ab00adc9a4c830a572b3ee17e153e88ef}{refresh\+Broadphase\+Proxy}} (const \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}} \&cow, const std\+::unique\+\_\+ptr$<$ bt\+Broadphase\+Interface $>$ \&broadphase, const std\+::unique\+\_\+ptr$<$ bt\+Collision\+Dispatcher $>$ \&dispatcher)
+\begin{DoxyCompactList}\small\item\em Refresh the broadphase data structure. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ bt\+Collision\+Shape $>$ \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_a1dc866fce23347587bfa2226853ac426}{create\+Shape\+Primitive}} (const \mbox{\hyperlink{classtesseract__geometry_1_1Box_aec8152cc23a7ad1b16c135240824d161}{tesseract\+\_\+geometry\+::\+Box\+::\+Const\+Ptr}} \&geom)
 \item 
 std\+::shared\+\_\+ptr$<$ bt\+Collision\+Shape $>$ \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_af57dbf29d1704455f11faf40d4ad792b}{create\+Shape\+Primitive}} (const \mbox{\hyperlink{classtesseract__geometry_1_1Sphere_ac986cb2217d07320a259ba4277af5b31}{tesseract\+\_\+geometry\+::\+Sphere\+::\+Const\+Ptr}} \&geom)
@@ -682,6 +684,25 @@ This is used to check if a collision check is required between the provided two 
 \begin{DoxyReturn}{Returns}
 True if the two collision objects should be checked for collision, otherwise false 
 \end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__collision_1_1tesseract__collision__bullet_ab00adc9a4c830a572b3ee17e153e88ef}\label{namespacetesseract__collision_1_1tesseract__collision__bullet_ab00adc9a4c830a572b3ee17e153e88ef}} 
+\index{tesseract\_collision::tesseract\_collision\_bullet@{tesseract\_collision::tesseract\_collision\_bullet}!refreshBroadphaseProxy@{refreshBroadphaseProxy}}
+\index{refreshBroadphaseProxy@{refreshBroadphaseProxy}!tesseract\_collision::tesseract\_collision\_bullet@{tesseract\_collision::tesseract\_collision\_bullet}}
+\doxysubsubsection{\texorpdfstring{refreshBroadphaseProxy()}{refreshBroadphaseProxy()}}
+{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::refresh\+Broadphase\+Proxy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}} \&}]{cow,  }\item[{const std\+::unique\+\_\+ptr$<$ bt\+Broadphase\+Interface $>$ \&}]{broadphase,  }\item[{const std\+::unique\+\_\+ptr$<$ bt\+Collision\+Dispatcher $>$ \&}]{dispatcher }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Refresh the broadphase data structure. 
+
+When change certain properties of a collision object the broadphase is not aware so this function can be called to trigger an update. For example, when changing active links this changes internal flags which may require moving a collision object from the static BVH to the dynamic BVH so this function must be called. 
+\begin{DoxyParams}{Parameters}
+{\em cow} & The collision object to update. \\
+\hline
+{\em broadphase} & The broadphase to update. \\
+\hline
+{\em dispatcher} & The dispatcher. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{namespacetesseract__collision_1_1tesseract__collision__bullet_acf22e0c89fd2ec0a19a2c54f3c0ec01f}\label{namespacetesseract__collision_1_1tesseract__collision__bullet_acf22e0c89fd2ec0a19a2c54f3c0ec01f}} 
 \index{tesseract\_collision::tesseract\_collision\_bullet@{tesseract\_collision::tesseract\_collision\_bullet}!removeCollisionObjectFromBroadphase@{removeCollisionObjectFromBroadphase}}
 \index{removeCollisionObjectFromBroadphase@{removeCollisionObjectFromBroadphase}!tesseract\_collision::tesseract\_collision\_bullet@{tesseract\_collision::tesseract\_collision\_bullet}}

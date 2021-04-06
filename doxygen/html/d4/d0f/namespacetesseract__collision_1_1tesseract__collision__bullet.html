@@ -209,6 +209,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a31e50acd340ac0bf4728dbcae8262742"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/namespacetesseract__collision_1_1tesseract__collision__bullet.html#a31e50acd340ac0bf4728dbcae8262742">updateCollisionObjectFilters</a> (const std::vector&lt; std::string &gt; &amp;active, const <a class="el" href="../../d0/d1e/classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper.html#a3d926f2c776673c5e9719e010936600a">COW::Ptr</a> &amp;cow, const std::unique_ptr&lt; btBroadphaseInterface &gt; &amp;broadphase, const std::unique_ptr&lt; btCollisionDispatcher &gt; &amp;dispatcher)</td></tr>
 <tr class="memdesc:a31e50acd340ac0bf4728dbcae8262742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a collision objects filters for broadphase.  <a href="../../d4/d0f/namespacetesseract__collision_1_1tesseract__collision__bullet.html#a31e50acd340ac0bf4728dbcae8262742">More...</a><br /></td></tr>
 <tr class="separator:a31e50acd340ac0bf4728dbcae8262742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00adc9a4c830a572b3ee17e153e88ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/namespacetesseract__collision_1_1tesseract__collision__bullet.html#ab00adc9a4c830a572b3ee17e153e88ef">refreshBroadphaseProxy</a> (const <a class="el" href="../../d0/d1e/classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper.html#a3d926f2c776673c5e9719e010936600a">COW::Ptr</a> &amp;cow, const std::unique_ptr&lt; btBroadphaseInterface &gt; &amp;broadphase, const std::unique_ptr&lt; btCollisionDispatcher &gt; &amp;dispatcher)</td></tr>
+<tr class="memdesc:ab00adc9a4c830a572b3ee17e153e88ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the broadphase data structure.  <a href="../../d4/d0f/namespacetesseract__collision_1_1tesseract__collision__bullet.html#ab00adc9a4c830a572b3ee17e153e88ef">More...</a><br /></td></tr>
+<tr class="separator:ab00adc9a4c830a572b3ee17e153e88ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dc866fce23347587bfa2226853ac426"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; btCollisionShape &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/namespacetesseract__collision_1_1tesseract__collision__bullet.html#a1dc866fce23347587bfa2226853ac426">createShapePrimitive</a> (const <a class="el" href="../../d2/d71/classtesseract__geometry_1_1Box.html#aec8152cc23a7ad1b16c135240824d161">tesseract_geometry::Box::ConstPtr</a> &amp;geom)</td></tr>
 <tr class="separator:a1dc866fce23347587bfa2226853ac426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af57dbf29d1704455f11faf40d4ad792b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; btCollisionShape &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/namespacetesseract__collision_1_1tesseract__collision__bullet.html#af57dbf29d1704455f11faf40d4ad792b">createShapePrimitive</a> (const <a class="el" href="../../de/dcb/classtesseract__geometry_1_1Sphere.html#ac986cb2217d07320a259ba4277af5b31">tesseract_geometry::Sphere::ConstPtr</a> &amp;geom)</td></tr>
@@ -2546,6 +2549,58 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ab00adc9a4c830a572b3ee17e153e88ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00adc9a4c830a572b3ee17e153e88ef">&#9670;&nbsp;</a></span>refreshBroadphaseProxy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tesseract_collision::tesseract_collision_bullet::refreshBroadphaseProxy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d1e/classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper.html#a3d926f2c776673c5e9719e010936600a">COW::Ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>cow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unique_ptr&lt; btBroadphaseInterface &gt; &amp;&#160;</td>
+          <td class="paramname"><em>broadphase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unique_ptr&lt; btCollisionDispatcher &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dispatcher</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refresh the broadphase data structure. </p>
+<p>When change certain properties of a collision object the broadphase is not aware so this function can be called to trigger an update. For example, when changing active links this changes internal flags which may require moving a collision object from the static BVH to the dynamic BVH so this function must be called. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cow</td><td>The collision object to update. </td></tr>
+    <tr><td class="paramname">broadphase</td><td>The broadphase to update. </td></tr>
+    <tr><td class="paramname">dispatcher</td><td>The dispatcher. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="acf22e0c89fd2ec0a19a2c54f3c0ec01f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf22e0c89fd2ec0a19a2c54f3c0ec01f">&#9670;&nbsp;</a></span>removeCollisionObjectFromBroadphase()</h2>
 
@@ -3116,7 +3171,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 5 2021 22:50:41 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Apr 6 2021 21:20:19 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
