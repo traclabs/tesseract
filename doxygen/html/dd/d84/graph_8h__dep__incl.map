@@ -1,52 +1,52 @@
 <map id="tesseract_scene_graph/include/tesseract_scene_graph/graph.h" name="tesseract_scene_graph/include/tesseract_scene_graph/graph.h">
-<area shape="rect" id="node1" title="A basic scene graph using boost." alt="" coords="3151,5,3318,61"/>
-<area shape="rect" id="node2" href="$df/ddd/add__scene__graph__command_8h.html" title="Used to add scene graph to the environment." alt="" coords="447,109,673,180"/>
+<area shape="rect" id="node1" title="A basic scene graph using boost." alt="" coords="2829,5,2995,61"/>
+<area shape="rect" id="node2" href="$df/ddd/add__scene__graph__command_8h.html" title="Used to add scene graph to the environment." alt="" coords="523,109,749,180"/>
 <area shape="rect" id="node4" href="$de/d26/environment_8h.html" title=" " alt="" coords="1275,436,1477,492"/>
 <area shape="rect" id="node5" href="$d4/d2d/tesseract__environment_2include_2tesseract__environment_2core_2utils_8h.html" title="Tesseract Environment Utility Functions." alt="" coords="81,540,284,596"/>
 <area shape="rect" id="node6" href="$d2/d87/tesseract__environment_2include_2tesseract__environment_2kdl_2kdl__utils_8h.html" title="Tesseract Environment KDL utility functions." alt="" coords="5,651,208,707"/>
-<area shape="rect" id="node12" href="$d2/d02/visualization_8h.html" title="Visualization Class." alt="" coords="1437,540,1640,596"/>
-<area shape="rect" id="node13" href="$d9/dcf/state__solver_8h.html" title="Tesseract Environment State Solver Interface." alt="" coords="644,332,847,388"/>
-<area shape="rect" id="node16" href="$de/d88/tesseract__environment_2include_2tesseract__environment_2core_2types_8h.html" title="The tesseract_environment package types." alt="" coords="644,228,847,284"/>
-<area shape="rect" id="node17" href="$d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="2789,117,2984,173"/>
-<area shape="rect" id="node18" href="$d8/df8/forward__kinematics__factory_8h.html" title="Forward kinematics Abstract factory." alt="" coords="2399,228,2623,284"/>
-<area shape="rect" id="node19" href="$d0/d12/rep__inverse__kinematics_8h.html" title="Robot with External Positioner Inverse kinematics functions." alt="" coords="2647,228,2849,284"/>
-<area shape="rect" id="node20" href="$d7/dac/rop__inverse__kinematics_8h.html" title="Robot on Positioner Inverse kinematics functions." alt="" coords="2924,228,3127,284"/>
-<area shape="rect" id="node21" href="$dc/d8f/tesseract__kinematics_2include_2tesseract__kinematics_2core_2utils_8h.html" title="Kinematics utility functions." alt="" coords="2180,228,2375,284"/>
-<area shape="rect" id="node22" href="$d3/d67/kdl__fwd__kin__chain_8h.html" title="Tesseract KDL forward kinematics chain implementation." alt="" coords="3387,332,3581,388"/>
-<area shape="rect" id="node23" href="$d8/d3b/kdl__fwd__kin__tree_8h.html" title=" " alt="" coords="3151,228,3345,284"/>
-<area shape="rect" id="node24" href="$db/d0c/inverse__kinematics__factory_8h.html" title="Inverse kinematics Abstract factory." alt="" coords="5121,117,5343,173"/>
-<area shape="rect" id="node25" href="$d4/d12/kdl__inv__kin__chain__lma_8h.html" title="Tesseract KDL Inverse kinematics chain Levenberg&#45;Marquardt implementation." alt="" coords="3641,332,3836,388"/>
-<area shape="rect" id="node26" href="$df/d02/kdl__inv__kin__chain__nr_8h.html" title=" " alt="" coords="3931,332,4125,388"/>
-<area shape="rect" id="node27" href="$dd/dc2/tesseract__kinematics_2include_2tesseract__kinematics_2kdl_2kdl__utils_8h.html" title="Tesseract KDL utility functions." alt="" coords="3521,228,3716,284"/>
-<area shape="rect" id="node28" href="$d5/d7a/build__scene__graph__example_8cpp.html" title=" " alt="" coords="5368,117,5525,173"/>
-<area shape="rect" id="node29" href="$d3/d2e/parse__srdf__example_8cpp.html" title=" " alt="" coords="1684,332,1841,388"/>
-<area shape="rect" id="node30" href="$d0/d45/kdl__parser_8h.html" title=" " alt="" coords="3374,117,3549,173"/>
-<area shape="rect" id="node31" href="$d3/d30/tesseract__scene__graph__unit_8cpp.html" title=" " alt="" coords="2743,332,2900,388"/>
-<area shape="rect" id="node32" href="$d3/d95/resource__locator_8h.html" title="Locate and retrieve resource data." alt="" coords="1439,228,1609,284"/>
-<area shape="rect" id="node33" href="$dd/dc3/tesseract__scene__graph__joint__unit_8cpp.html" title=" " alt="" coords="1865,332,2023,388"/>
-<area shape="rect" id="node34" href="$d3/de4/tesseract__scene__graph__link__unit_8cpp.html" title=" " alt="" coords="2097,332,2255,388"/>
-<area shape="rect" id="node35" href="$dc/d21/tesseract__scene__graph__resource__unit_8cpp.html" title=" " alt="" coords="1489,332,1660,388"/>
-<area shape="rect" id="node36" href="$d4/d62/tesseract__scene__graph__srdf__unit_8cpp.html" title=" " alt="" coords="4320,332,4477,388"/>
-<area shape="rect" id="node37" href="$d8/dec/urdf__parser_8h.html" title="A urdf parser for tesseract." alt="" coords="1023,339,1211,381"/>
-<area shape="rect" id="node38" href="$d2/dbe/load__urdf__example_8cpp.html" title=" " alt="" coords="985,443,1149,485"/>
-<area shape="rect" id="node39" href="$dd/db1/collision__margins_8h.html" title="Parse collision margin data from srdf file." alt="" coords="3777,117,3978,173"/>
-<area shape="rect" id="node40" href="$d3/d68/disabled__collisions_8h.html" title=" " alt="" coords="4151,228,4361,284"/>
-<area shape="rect" id="node41" href="$dd/d9c/group__opw__kinematics_8h.html" title=" " alt="" coords="3740,228,3975,284"/>
-<area shape="rect" id="node42" href="$dc/dd4/group__rep__kinematics_8h.html" title=" " alt="" coords="4054,117,4282,173"/>
-<area shape="rect" id="node43" href="$dd/da3/group__rop__kinematics_8h.html" title=" " alt="" coords="4306,117,4534,173"/>
-<area shape="rect" id="node44" href="$d6/d1e/group__states_8h.html" title=" " alt="" coords="4487,228,4663,284"/>
-<area shape="rect" id="node45" href="$d1/d42/group__tool__center__points_8h.html" title=" " alt="" coords="4609,109,4804,180"/>
-<area shape="rect" id="node46" href="$d5/df9/groups_8h.html" title=" " alt="" coords="4829,117,4995,173"/>
-<area shape="rect" id="node47" href="$d0/d42/srdf__model_8h.html" title="Parse srdf xml." alt="" coords="1837,117,2003,173"/>
-<area shape="rect" id="node48" href="$d9/d07/tesseract__scene__graph_2include_2tesseract__scene__graph_2utils_8h.html" title=" " alt="" coords="1837,228,2003,284"/>
-<area shape="rect" id="node49" href="$d7/d75/graph_8cpp.html" title="A basic scene graph using boost." alt="" coords="5549,124,5707,165"/>
-<area shape="rect" id="node50" href="$da/dd6/conversions_8h.html" title="A set of conversion between Tesseract and Ignition Robotics objects." alt="" coords="5731,117,5933,173"/>
-<area shape="rect" id="node3" href="$d5/d90/commands_8h.html" title="This contains classes for recording operations applied to the environment for tracking changes...." alt="" coords="417,228,620,284"/>
-<area shape="rect" id="node9" href="$d8/da4/tesseract__environment__collision_8cpp.html" title=" " alt="" coords="388,540,572,596"/>
-<area shape="rect" id="node10" href="$d0/d5b/tesseract__environment__unit_8cpp.html" title=" " alt="" coords="855,540,1039,596"/>
+<area shape="rect" id="node12" href="$d2/d02/visualization_8h.html" title="Visualization Class." alt="" coords="1461,540,1664,596"/>
+<area shape="rect" id="node13" href="$d9/dcf/state__solver_8h.html" title="Tesseract Environment State Solver Interface." alt="" coords="540,332,743,388"/>
+<area shape="rect" id="node16" href="$de/d88/tesseract__environment_2include_2tesseract__environment_2core_2types_8h.html" title="The tesseract_environment package types." alt="" coords="679,228,881,284"/>
+<area shape="rect" id="node17" href="$d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="2680,117,2875,173"/>
+<area shape="rect" id="node18" href="$d8/df8/forward__kinematics__factory_8h.html" title="Forward kinematics Abstract factory." alt="" coords="2295,228,2519,284"/>
+<area shape="rect" id="node19" href="$d0/d12/rep__inverse__kinematics_8h.html" title="Robot with External Positioner Inverse kinematics functions." alt="" coords="2543,228,2745,284"/>
+<area shape="rect" id="node20" href="$d7/dac/rop__inverse__kinematics_8h.html" title="Robot on Positioner Inverse kinematics functions." alt="" coords="2820,228,3023,284"/>
+<area shape="rect" id="node21" href="$dc/d8f/tesseract__kinematics_2include_2tesseract__kinematics_2core_2utils_8h.html" title="Kinematics utility functions." alt="" coords="2025,228,2220,284"/>
+<area shape="rect" id="node22" href="$d3/d67/kdl__fwd__kin__chain_8h.html" title="Tesseract KDL forward kinematics chain implementation." alt="" coords="3232,332,3427,388"/>
+<area shape="rect" id="node23" href="$d8/d3b/kdl__fwd__kin__tree_8h.html" title=" " alt="" coords="3047,228,3241,284"/>
+<area shape="rect" id="node24" href="$db/d0c/inverse__kinematics__factory_8h.html" title="Inverse kinematics Abstract factory." alt="" coords="4798,117,5021,173"/>
+<area shape="rect" id="node25" href="$d4/d12/kdl__inv__kin__chain__lma_8h.html" title="Tesseract KDL Inverse kinematics chain Levenberg&#45;Marquardt implementation." alt="" coords="3521,332,3716,388"/>
+<area shape="rect" id="node26" href="$df/d02/kdl__inv__kin__chain__nr_8h.html" title=" " alt="" coords="3776,332,3971,388"/>
+<area shape="rect" id="node27" href="$dd/dc2/tesseract__kinematics_2include_2tesseract__kinematics_2kdl_2kdl__utils_8h.html" title="Tesseract KDL utility functions." alt="" coords="3367,228,3561,284"/>
+<area shape="rect" id="node28" href="$d5/d7a/build__scene__graph__example_8cpp.html" title=" " alt="" coords="5045,117,5203,173"/>
+<area shape="rect" id="node29" href="$d3/d2e/parse__srdf__example_8cpp.html" title=" " alt="" coords="1711,332,1868,388"/>
+<area shape="rect" id="node30" href="$d0/d45/kdl__parser_8h.html" title=" " alt="" coords="3051,117,3226,173"/>
+<area shape="rect" id="node31" href="$d3/d30/tesseract__scene__graph__unit_8cpp.html" title=" " alt="" coords="2152,332,2309,388"/>
+<area shape="rect" id="node32" href="$d3/d95/resource__locator_8h.html" title="Locate and retrieve resource data." alt="" coords="1284,228,1455,284"/>
+<area shape="rect" id="node33" href="$dd/dc3/tesseract__scene__graph__joint__unit_8cpp.html" title=" " alt="" coords="1529,332,1687,388"/>
+<area shape="rect" id="node34" href="$d3/de4/tesseract__scene__graph__link__unit_8cpp.html" title=" " alt="" coords="1892,332,2049,388"/>
+<area shape="rect" id="node35" href="$dc/d21/tesseract__scene__graph__resource__unit_8cpp.html" title=" " alt="" coords="1233,332,1404,388"/>
+<area shape="rect" id="node36" href="$d4/d62/tesseract__scene__graph__srdf__unit_8cpp.html" title=" " alt="" coords="4056,332,4213,388"/>
+<area shape="rect" id="node37" href="$d8/dec/urdf__parser_8h.html" title="A urdf parser for tesseract." alt="" coords="869,339,1057,381"/>
+<area shape="rect" id="node38" href="$d2/dbe/load__urdf__example_8cpp.html" title=" " alt="" coords="278,443,442,485"/>
+<area shape="rect" id="node39" href="$dd/db1/collision__margins_8h.html" title="Parse collision margin data from srdf file." alt="" coords="4471,117,4673,173"/>
+<area shape="rect" id="node40" href="$d3/d68/disabled__collisions_8h.html" title=" " alt="" coords="4513,228,4724,284"/>
+<area shape="rect" id="node41" href="$dd/d9c/group__opw__kinematics_8h.html" title=" " alt="" coords="3585,228,3820,284"/>
+<area shape="rect" id="node42" href="$dc/dd4/group__rep__kinematics_8h.html" title=" " alt="" coords="3454,117,3682,173"/>
+<area shape="rect" id="node43" href="$dd/da3/group__rop__kinematics_8h.html" title=" " alt="" coords="3706,117,3934,173"/>
+<area shape="rect" id="node44" href="$d6/d1e/group__states_8h.html" title=" " alt="" coords="4047,228,4223,284"/>
+<area shape="rect" id="node45" href="$d1/d42/group__tool__center__points_8h.html" title=" " alt="" coords="4009,109,4204,180"/>
+<area shape="rect" id="node46" href="$d5/df9/groups_8h.html" title=" " alt="" coords="4229,117,4395,173"/>
+<area shape="rect" id="node47" href="$d0/d42/srdf__model_8h.html" title="Parse srdf xml." alt="" coords="1642,117,1809,173"/>
+<area shape="rect" id="node48" href="$d9/d07/tesseract__scene__graph_2include_2tesseract__scene__graph_2utils_8h.html" title=" " alt="" coords="1733,228,1899,284"/>
+<area shape="rect" id="node49" href="$d7/d75/graph_8cpp.html" title="A basic scene graph using boost." alt="" coords="5227,124,5384,165"/>
+<area shape="rect" id="node50" href="$da/dd6/conversions_8h.html" title="A set of conversion between Tesseract and Ignition Robotics objects." alt="" coords="5408,117,5611,173"/>
+<area shape="rect" id="node3" href="$d5/d90/commands_8h.html" title="This contains classes for recording operations applied to the environment for tracking changes...." alt="" coords="452,228,655,284"/>
+<area shape="rect" id="node9" href="$d8/da4/tesseract__environment__collision_8cpp.html" title=" " alt="" coords="577,540,761,596"/>
+<area shape="rect" id="node10" href="$d0/d5b/tesseract__environment__unit_8cpp.html" title=" " alt="" coords="929,540,1113,596"/>
 <area shape="rect" id="node7" href="$dc/d82/environment_8cpp.html" title="Tesseract environment interface implementation." alt="" coords="753,659,925,700"/>
-<area shape="rect" id="node8" href="$de/d87/environment__clone__benchmarks_8cpp.html" title=" " alt="" coords="1114,540,1313,596"/>
-<area shape="rect" id="node11" href="$d0/de9/tesseract__ignition__visualization_8h.html" title=" " alt="" coords="1368,644,1571,715"/>
-<area shape="rect" id="node14" href="$dd/d7b/kdl__state__solver_8h.html" title=" " alt="" coords="379,436,581,492"/>
-<area shape="rect" id="node15" href="$d9/dfa/ofkt__state__solver_8h.html" title="A implementation of the Optimized Forward Kinematic Tree as a state solver." alt="" coords="707,436,909,492"/>
+<area shape="rect" id="node8" href="$de/d87/environment__clone__benchmarks_8cpp.html" title=" " alt="" coords="1138,540,1337,596"/>
+<area shape="rect" id="node11" href="$d0/de9/tesseract__ignition__visualization_8h.html" title=" " alt="" coords="1392,644,1595,715"/>
+<area shape="rect" id="node14" href="$dd/d7b/kdl__state__solver_8h.html" title=" " alt="" coords="568,436,771,492"/>
+<area shape="rect" id="node15" href="$d9/dfa/ofkt__state__solver_8h.html" title="A implementation of the Optimized Forward Kinematic Tree as a state solver." alt="" coords="896,436,1099,492"/>
 </map>

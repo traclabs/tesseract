@@ -1,13 +1,15 @@
-\hypertarget{utils_8cpp}{}\doxysection{tesseract\+\_\+command\+\_\+language/src/utils/utils.cpp File Reference}
-\label{utils_8cpp}\index{tesseract\_command\_language/src/utils/utils.cpp@{tesseract\_command\_language/src/utils/utils.cpp}}
+\hypertarget{utils_8cpp}{}\doxysection{tesseract\+\_\+common/src/utils.cpp File Reference}
+\label{utils_8cpp}\index{tesseract\_common/src/utils.cpp@{tesseract\_common/src/utils.cpp}}
+
+
+Common Tesseract Utility Functions.  
+
+
 {\ttfamily \#include $<$tesseract\+\_\+common/macros.\+h$>$}\newline
-{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
 {\ttfamily \#include $<$console\+\_\+bridge/console.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+command\+\_\+language/utils/utils.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+command\+\_\+language/instruction\+\_\+type.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+command\+\_\+language/joint\+\_\+waypoint.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+command\+\_\+language/cartesian\+\_\+waypoint.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+command\+\_\+language/state\+\_\+waypoint.\+h$>$}\newline
+{\ttfamily \#include $<$tesseract\+\_\+common/utils.\+h$>$}\newline
 Include dependency graph for utils.\+cpp\+:
 \nopagebreak
 \begin{figure}[H]
@@ -19,58 +21,75 @@ Include dependency graph for utils.\+cpp\+:
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \mbox{\hyperlink{namespacetesseract__planning}{tesseract\+\_\+planning}}
+ \mbox{\hyperlink{namespacetesseract__common}{tesseract\+\_\+common}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{namespacetesseract__common_a57fa3336d4e5f8655281342a9c94aece}{tesseract\+\_\+common\+::\+Joint\+Trajectory}} \mbox{\hyperlink{namespacetesseract__planning_a4631f1616bd5577e3b1a049553ce557a}{tesseract\+\_\+planning\+::to\+Joint\+Trajectory}} (const Composite\+Instruction \&composite\+\_\+instructions)
-\begin{DoxyCompactList}\small\item\em Convert composite intruction to a joint trajectory. \end{DoxyCompactList}\item 
-const Eigen\+::\+Vector\+Xd \& \mbox{\hyperlink{namespacetesseract__planning_a48d0e84f52079854d947f2f7f058d7ad}{tesseract\+\_\+planning\+::get\+Joint\+Position}} (const Waypoint \&waypoint)
-\begin{DoxyCompactList}\small\item\em Gets joint position from waypoints that contain that information. \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{namespacetesseract__planning_ade7bdd1b295d2f615af3323ce4f1655f}{tesseract\+\_\+planning\+::get\+Joint\+Names}} (const Waypoint \&waypoint)
-\begin{DoxyCompactList}\small\item\em Gets joint names from waypoints that contain that information. \end{DoxyCompactList}\item 
-Eigen\+::\+Vector\+Xd \mbox{\hyperlink{namespacetesseract__planning_a43e737ab30ed989e7114660cc9e70874}{tesseract\+\_\+planning\+::get\+Joint\+Position}} (const std\+::vector$<$ std\+::string $>$ \&joint\+\_\+names, const Waypoint \&waypoint)
-\begin{DoxyCompactList}\small\item\em Get the joint positions ordered by the provided joint names. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespacetesseract__planning_af802d2f455bd7213ae2a7ffeceb7e570}{tesseract\+\_\+planning\+::format\+Joint\+Position}} (const std\+::vector$<$ std\+::string $>$ \&joint\+\_\+names, Waypoint \&waypoint)
-\begin{DoxyCompactList}\small\item\em Format the waypoints joint ordered by the provided joint names. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespacetesseract__planning_aabbbd76f430add29f5caf0582fe6df6e}{tesseract\+\_\+planning\+::check\+Joint\+Position\+Format}} (const std\+::vector$<$ std\+::string $>$ \&joint\+\_\+names, const Waypoint \&waypoint)
-\begin{DoxyCompactList}\small\item\em Check the waypoints joint order against the provided joint names. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespacetesseract__planning_afbee7a7e2aeca68854a8282030d2fbc8}{tesseract\+\_\+planning\+::set\+Joint\+Position}} (Waypoint \&waypoint, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&position)
-\begin{DoxyCompactList}\small\item\em Set the joint position for waypoints that contain that information. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespacetesseract__planning_a006d576ff51dbc06d744c7655d75b94b}{tesseract\+\_\+planning\+::is\+Within\+Joint\+Limits}} (const Waypoint \&wp, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&limits)
-\begin{DoxyCompactList}\small\item\em Checks if a waypoint is. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespacetesseract__planning_a9e7075984c33bb8f40b4fbdfbb02033b}{tesseract\+\_\+planning\+::clamp\+To\+Joint\+Limits}} (Waypoint \&wp, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&limits, double max\+\_\+deviation=std\+::numeric\+\_\+limits$<$ double $>$\+::max())
-\begin{DoxyCompactList}\small\item\em Clamps a waypoint to be within joint limits. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespacetesseract__planning_a4b3d1f786cca3489d07922700cf4fc73}{tesseract\+\_\+planning\+::clamp\+To\+Joint\+Limits}} (Waypoint \&wp, const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&limits, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&max\+\_\+deviation)
-\begin{DoxyCompactList}\small\item\em Clamps a waypoint to be within joint limits. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespacetesseract__planning_a63dfee6d2a2b430c8fb8d17ee2c1db4e}{tesseract\+\_\+planning\+::generate\+Skeleton\+Seed\+Helper}} (Composite\+Instruction \&composite\+\_\+instructions)
+{\footnotesize template$<$typename E $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+polymorphic$<$ E $>$\+::value $>$ \mbox{\hyperlink{namespacetesseract__common_a62810a7ae6f501b0850f65eaebe96f2e}{tesseract\+\_\+common\+::my\+\_\+rethrow\+\_\+if\+\_\+nested}} (const E \&)
 \item 
-Composite\+Instruction \mbox{\hyperlink{namespacetesseract__planning_af96ba7a9b3db3684f21122e62032c0e3}{tesseract\+\_\+planning\+::generate\+Skeleton\+Seed}} (const Composite\+Instruction \&composite\+\_\+instructions)
-\begin{DoxyCompactList}\small\item\em This creates a seed by looping over and replacing every plan instruction with a composite instruction. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Variables}
-\begin{DoxyCompactItemize}
+{\footnotesize template$<$typename E $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+polymorphic$<$ E $>$\+::value $>$ \mbox{\hyperlink{namespacetesseract__common_a1d1a3a2db4c1c945c20e2328cdd84c68}{tesseract\+\_\+common\+::my\+\_\+rethrow\+\_\+if\+\_\+nested}} (const E \&e)
 \item 
-static \mbox{\hyperlink{namespacetesseract__planning_ac008e09ddce5c25c00e2c77ff18929e8}{tesseract\+\_\+planning\+::locate\+Filter\+Fn}} \mbox{\hyperlink{namespacetesseract__planning_a59c5dd86812c7f74ca63a41e2910f4fd}{tesseract\+\_\+planning\+::to\+Joint\+Trajectory\+Move\+Filter}}
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{namespacetesseract__common_ac4e9558332430365cd69cb2eec1784c8}{tesseract\+\_\+common\+::print\+Nested\+Exception}} (const std\+::exception \&e, int level=0)
+\begin{DoxyCompactList}\small\item\em Print a nested exception. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacetesseract__common_a58ecad04db85855fa9e4de21084598ca}{tesseract\+\_\+common\+::get\+Temp\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Get the host temp directory path. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacetesseract__common_a1dc3a9525efbe582991edd4eedc26079}{tesseract\+\_\+common\+::is\+Numeric}} (const std\+::string \&s)
+\begin{DoxyCompactList}\small\item\em Determine if a string is a number. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacetesseract__common_a0db40f06dba7e6be18a2c4f098ad7a00}{tesseract\+\_\+common\+::is\+Numeric}} (const std\+::vector$<$ std\+::string $>$ \&sv)
+\begin{DoxyCompactList}\small\item\em Determine if each string in vector is a number. \end{DoxyCompactList}\item 
+Eigen\+::\+Vector\+Xd \mbox{\hyperlink{namespacetesseract__common_aa14552337385ce1de42da699506f8b03}{tesseract\+\_\+common\+::generate\+Random\+Number}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&limits)
+\begin{DoxyCompactList}\small\item\em Given a set of limits it will generate a vector of randon numbers between the limit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetesseract__common_af46edf9701e45b20e95a5abfac500b8f}{tesseract\+\_\+common\+::ltrim}} (std\+::string \&s)
+\begin{DoxyCompactList}\small\item\em Left trim string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetesseract__common_aa86a4f0e5ca9d2b1f5abc3f34735d85b}{tesseract\+\_\+common\+::rtrim}} (std\+::string \&s)
+\begin{DoxyCompactList}\small\item\em Right trim string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetesseract__common_aeacd629bcf585286917aafa7b8e603bb}{tesseract\+\_\+common\+::trim}} (std\+::string \&s)
+\begin{DoxyCompactList}\small\item\em Trim left and right of string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacetesseract__common_aaedf0e7043da047ab5a970a5669cf5d0}{tesseract\+\_\+common\+::is\+Identical}} (const std\+::vector$<$ std\+::string $>$ \&vec1, const std\+::vector$<$ std\+::string $>$ \&vec2, bool ordered=true)
+\begin{DoxyCompactList}\small\item\em Check if two vector of strings are identical. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacetesseract__common_a1077809c98ad8bf5262e426cff6e63a3}{tesseract\+\_\+common\+::get\+Timestamp\+String}} ()
+\begin{DoxyCompactList}\small\item\em Get Timestamp string. \end{DoxyCompactList}\item 
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ae1a3ebd3610dce6d24cc7569606fd9ab}{tesseract\+\_\+common\+::\+Query\+String\+Value}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Query a string value from xml element. \end{DoxyCompactList}\item 
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ab95676b5418063a1d7c84fbba4ff1fe0}{tesseract\+\_\+common\+::\+Query\+String\+Text}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Query a string Text from xml element. \end{DoxyCompactList}\item 
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ad3e6914a612484e89bf86c60198b6cdc}{tesseract\+\_\+common\+::\+Query\+String\+Value}} (const tinyxml2\+::\+XMLAttribute $\ast$xml\+\_\+attribute, std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Query a string value from xml attribute. \end{DoxyCompactList}\item 
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_a22a4a1b896230ca84cce7aae2e21673a}{tesseract\+\_\+common\+::\+Query\+String\+Attribute}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Query a string attribute from an xml element. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacetesseract__common_aadfa4845aecc119ae62b37e59c6ee168}{tesseract\+\_\+common\+::\+String\+Attribute}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, std\+::string default\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Get string attribute if exist. If it does not exist it returns the default value. \end{DoxyCompactList}\item 
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_a609734264f8b63f5c7815871c40b231f}{tesseract\+\_\+common\+::\+Query\+String\+Attribute\+Required}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Query a string attribute from an xml element and print error log. \end{DoxyCompactList}\item 
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ab5ec94b62bea51b6e40598e0f8e7a6c3}{tesseract\+\_\+common\+::\+Query\+Double\+Attribute\+Required}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, double \&value)
+\begin{DoxyCompactList}\small\item\em Query a double attribute from an xml element and print error log. \end{DoxyCompactList}\item 
+tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ad9a12946985d34fc3b1fcfb61b473f8b}{tesseract\+\_\+common\+::\+Query\+Int\+Attribute\+Required}} (const tinyxml2\+::\+XMLElement $\ast$xml\+\_\+element, const char $\ast$name, int \&value)
+\begin{DoxyCompactList}\small\item\em Query a int attribute from an xml element and print error log. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacetesseract__common_ac9961ff2a5d322165a817241b7746f64}{tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs}} (double a, double b, double max\+\_\+diff=1e-\/6, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
+\begin{DoxyCompactList}\small\item\em Check if two double are relatively equal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}{tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v1, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v2, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
+\begin{DoxyCompactList}\small\item\em Check if two Eigen Vector\+Xd are relatively and absolute equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+Common Tesseract Utility Functions. 
+
 \begin{DoxyAuthor}{Author}
 Levi Armstrong 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
-June 15, 2020 
+January 18, 2018 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
 TODO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000059}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000047}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}
-Copyright (c) 2020, Southwest Research Institute
+Copyright (c) 2017, Southwest Research Institute
 \end{DoxyCopyright}
 \begin{DoxyParagraph}{License}
 Software License Agreement (Apache License) 

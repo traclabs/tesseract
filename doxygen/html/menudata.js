@@ -202,13 +202,7 @@ var menudata={children:[
 {text:"u",url:"functions_type_u.html#index_u"},
 {text:"v",url:"functions_type_v.html#index_v"}]},
 {text:"Enumerations",url:"functions_enum.html"},
-{text:"Enumerator",url:"functions_eval.html",children:[
-{text:"b",url:"functions_eval.html#index_b"},
-{text:"e",url:"functions_eval.html#index_e"},
-{text:"f",url:"functions_eval.html#index_f"},
-{text:"i",url:"functions_eval.html#index_i"},
-{text:"m",url:"functions_eval.html#index_m"},
-{text:"s",url:"functions_eval.html#index_s"}]},
+{text:"Enumerator",url:"functions_eval.html"},
 {text:"Related Functions",url:"functions_rela.html"}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},

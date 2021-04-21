@@ -112,14 +112,14 @@ std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{n
 \item 
 static \mbox{\hyperlink{namespacetesseract__common_a5b28b7ae665b374a7ca166d496f648ce}{Link\+Names\+Pair}} \mbox{\hyperlink{namespacetesseract__common_a0569af9dd122b26e12ebdc4bb1de2bda}{make\+Ordered\+Link\+Pair}} (const std\+::string \&link\+\_\+name1, const std\+::string \&link\+\_\+name2)
 \begin{DoxyCompactList}\small\item\em Create a pair of strings, where the pair.\+first is always $<$= pair.\+second. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacetesseract__common_ac4e9558332430365cd69cb2eec1784c8}{print\+Nested\+Exception}} (const std\+::exception \&e, int level=0)
+\begin{DoxyCompactList}\small\item\em Print a nested exception. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{namespacetesseract__common_a58ecad04db85855fa9e4de21084598ca}{get\+Temp\+Path}} ()
 \begin{DoxyCompactList}\small\item\em Get the host temp directory path. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__common_a1dc3a9525efbe582991edd4eedc26079}{is\+Numeric}} (const std\+::string \&s)
 \begin{DoxyCompactList}\small\item\em Determine if a string is a number. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__common_a0db40f06dba7e6be18a2c4f098ad7a00}{is\+Numeric}} (const std\+::vector$<$ std\+::string $>$ \&sv)
-\item 
-{\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__common_a00bc131acfeba0eba8fe7ff7cd944860}{to\+Numeric}} (const std\+::string \&s, Float\+Type \&value)
-\begin{DoxyCompactList}\small\item\em Convert a string to a numeric value type. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Determine if each string in vector is a number. \end{DoxyCompactList}\item 
 Eigen\+::\+Vector\+Xd \mbox{\hyperlink{namespacetesseract__common_aa14552337385ce1de42da699506f8b03}{generate\+Random\+Number}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&limits)
 \begin{DoxyCompactList}\small\item\em Given a set of limits it will generate a vector of randon numbers between the limit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacetesseract__common_af46edf9701e45b20e95a5abfac500b8f}{ltrim}} (std\+::string \&s)
@@ -151,7 +151,13 @@ tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ad9a12946985d
 bool \mbox{\hyperlink{namespacetesseract__common_ac9961ff2a5d322165a817241b7746f64}{almost\+Equal\+Relative\+And\+Abs}} (double a, double b, double max\+\_\+diff=1e-\/6, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
 \begin{DoxyCompactList}\small\item\em Check if two double are relatively equal. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}{almost\+Equal\+Relative\+And\+Abs}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v1, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v2, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
-\begin{DoxyCompactList}\small\item\em Check if two Eigen Vector\+Xd are relatively and absolute equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Check if two Eigen Vector\+Xd are relatively and absolute equal. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__common_a00bc131acfeba0eba8fe7ff7cd944860}{to\+Numeric}} (const std\+::string \&s, Float\+Type \&value)
+\begin{DoxyCompactList}\small\item\em Convert a string to a numeric value type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename E $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+polymorphic$<$ E $>$\+::value $>$ \mbox{\hyperlink{namespacetesseract__common_a62810a7ae6f501b0850f65eaebe96f2e}{my\+\_\+rethrow\+\_\+if\+\_\+nested}} (const E \&)
+\item 
+{\footnotesize template$<$typename E $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+polymorphic$<$ E $>$\+::value $>$ \mbox{\hyperlink{namespacetesseract__common_a1d1a3a2db4c1c945c20e2328cdd84c68}{my\+\_\+rethrow\+\_\+if\+\_\+nested}} (const E \&e)
+\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -291,7 +297,7 @@ MODIFY\+\_\+\+PAIR\+\_\+\+MARGIN&Modify the contact managers pair margin only. T
 \index{tesseract\_common@{tesseract\_common}!almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}}
 \index{almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{almostEqualRelativeAndAbs()}{almostEqualRelativeAndAbs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v1,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v2,  }\item[{double}]{max\+\_\+diff,  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v1,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v2,  }\item[{double}]{max\+\_\+diff,  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})}
 
 
 
@@ -315,7 +321,7 @@ True if they are relativily equal, otherwise false.
 \index{tesseract\_common@{tesseract\_common}!almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}}
 \index{almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{almostEqualRelativeAndAbs()}{almostEqualRelativeAndAbs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{max\+\_\+diff = {\ttfamily 1e-\/6},  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{max\+\_\+diff = {\ttfamily 1e-\/6},  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})}
 
 
 
@@ -356,7 +362,7 @@ Enforce position to be within the provided limits.
 \index{tesseract\_common@{tesseract\_common}!generateRandomNumber@{generateRandomNumber}}
 \index{generateRandomNumber@{generateRandomNumber}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{generateRandomNumber()}{generateRandomNumber()}}
-{\footnotesize\ttfamily Eigen\+::\+Vector\+Xd tesseract\+\_\+common\+::generate\+Random\+Number (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Eigen\+::\+Vector\+Xd tesseract\+\_\+common\+::generate\+Random\+Number (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+X2d $>$ \&}]{limits }\end{DoxyParamCaption})}
 
 
 
@@ -386,7 +392,7 @@ A vector of random numbers between the provided limits.
 \index{tesseract\_common@{tesseract\_common}!getTempPath@{getTempPath}}
 \index{getTempPath@{getTempPath}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{getTempPath()}{getTempPath()}}
-{\footnotesize\ttfamily std\+::string tesseract\+\_\+common\+::get\+Temp\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::string tesseract\+\_\+common\+::get\+Temp\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -399,7 +405,7 @@ The host temp directory path
 \index{tesseract\_common@{tesseract\_common}!getTimestampString@{getTimestampString}}
 \index{getTimestampString@{getTimestampString}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{getTimestampString()}{getTimestampString()}}
-{\footnotesize\ttfamily std\+::string tesseract\+\_\+common\+::get\+Timestamp\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::string tesseract\+\_\+common\+::get\+Timestamp\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -412,7 +418,7 @@ Timestamp string
 \index{tesseract\_common@{tesseract\_common}!isIdentical@{isIdentical}}
 \index{isIdentical@{isIdentical}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{isIdentical()}{isIdentical()}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::is\+Identical (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{vec1,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{vec2,  }\item[{bool}]{ordered = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::is\+Identical (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{vec1,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{vec2,  }\item[{bool}]{ordered = {\ttfamily true} }\end{DoxyParamCaption})}
 
 
 
@@ -431,7 +437,7 @@ Check if two vector of strings are identical.
 \index{tesseract\_common@{tesseract\_common}!isNumeric@{isNumeric}}
 \index{isNumeric@{isNumeric}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{isNumeric()}{isNumeric()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::is\+Numeric (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::is\+Numeric (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})}
 
 
 
@@ -449,13 +455,25 @@ True if numeric, otherwise false.
 \index{tesseract\_common@{tesseract\_common}!isNumeric@{isNumeric}}
 \index{isNumeric@{isNumeric}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{isNumeric()}{isNumeric()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::is\+Numeric (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{sv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::is\+Numeric (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{sv }\end{DoxyParamCaption})}
 
+
+
+Determine if each string in vector is a number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sv} & The vector of strings to evaluate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if all strings are numeric, otherwise false. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__common_af46edf9701e45b20e95a5abfac500b8f}\label{namespacetesseract__common_af46edf9701e45b20e95a5abfac500b8f}} 
 \index{tesseract\_common@{tesseract\_common}!ltrim@{ltrim}}
 \index{ltrim@{ltrim}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{ltrim()}{ltrim()}}
-{\footnotesize\ttfamily void tesseract\+\_\+common\+::ltrim (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void tesseract\+\_\+common\+::ltrim (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s }\end{DoxyParamCaption})}
 
 
 
@@ -486,6 +504,20 @@ This is commonly used along with \mbox{\hyperlink{structtesseract__common_1_1Pai
 \begin{DoxyReturn}{Returns}
 Link\+Names\+Pair a lexicographically sorted pair of strings 
 \end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__common_a62810a7ae6f501b0850f65eaebe96f2e}\label{namespacetesseract__common_a62810a7ae6f501b0850f65eaebe96f2e}} 
+\index{tesseract\_common@{tesseract\_common}!my\_rethrow\_if\_nested@{my\_rethrow\_if\_nested}}
+\index{my\_rethrow\_if\_nested@{my\_rethrow\_if\_nested}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{my\_rethrow\_if\_nested()}{my\_rethrow\_if\_nested()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename E $>$ \\
+std\+::enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+polymorphic$<$E$>$\+::value$>$ tesseract\+\_\+common\+::my\+\_\+rethrow\+\_\+if\+\_\+nested (\begin{DoxyParamCaption}\item[{const E \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetesseract__common_a1d1a3a2db4c1c945c20e2328cdd84c68}\label{namespacetesseract__common_a1d1a3a2db4c1c945c20e2328cdd84c68}} 
+\index{tesseract\_common@{tesseract\_common}!my\_rethrow\_if\_nested@{my\_rethrow\_if\_nested}}
+\index{my\_rethrow\_if\_nested@{my\_rethrow\_if\_nested}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{my\_rethrow\_if\_nested()}{my\_rethrow\_if\_nested()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename E $>$ \\
+std\+::enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+polymorphic$<$E$>$\+::value$>$ tesseract\+\_\+common\+::my\+\_\+rethrow\+\_\+if\+\_\+nested (\begin{DoxyParamCaption}\item[{const E \&}]{e }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{namespacetesseract__common_a0b6d0012d51401bfd898e534ad9c9be9}\label{namespacetesseract__common_a0b6d0012d51401bfd898e534ad9c9be9}} 
 \index{tesseract\_common@{tesseract\_common}!parseEnvironmentVariableList@{parseEnvironmentVariableList}}
 \index{parseEnvironmentVariableList@{parseEnvironmentVariableList}!tesseract\_common@{tesseract\_common}}
@@ -498,11 +530,28 @@ Link\+Names\+Pair a lexicographically sorted pair of strings
 \doxysubsubsection{\texorpdfstring{parseEnvironmentVariableMap()}{parseEnvironmentVariableMap()}}
 {\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, std\+::string$>$ tesseract\+\_\+common\+::parse\+Environment\+Variable\+Map (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{env\+\_\+variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+\mbox{\Hypertarget{namespacetesseract__common_ac4e9558332430365cd69cb2eec1784c8}\label{namespacetesseract__common_ac4e9558332430365cd69cb2eec1784c8}} 
+\index{tesseract\_common@{tesseract\_common}!printNestedException@{printNestedException}}
+\index{printNestedException@{printNestedException}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{printNestedException()}{printNestedException()}}
+{\footnotesize\ttfamily void tesseract\+\_\+common\+::print\+Nested\+Exception (\begin{DoxyParamCaption}\item[{const std\+::exception \&}]{e,  }\item[{int}]{level = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Print a nested exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The exception to print \\
+\hline
+{\em level} & The exception level which controls the indentation \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{namespacetesseract__common_ab5ec94b62bea51b6e40598e0f8e7a6c3}\label{namespacetesseract__common_ab5ec94b62bea51b6e40598e0f8e7a6c3}} 
 \index{tesseract\_common@{tesseract\_common}!QueryDoubleAttributeRequired@{QueryDoubleAttributeRequired}}
 \index{QueryDoubleAttributeRequired@{QueryDoubleAttributeRequired}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryDoubleAttributeRequired()}{QueryDoubleAttributeRequired()}}
-{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+Double\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{double \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+Double\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{double \&}]{value }\end{DoxyParamCaption})}
 
 
 
@@ -526,7 +575,7 @@ tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+
 \index{tesseract\_common@{tesseract\_common}!QueryIntAttributeRequired@{QueryIntAttributeRequired}}
 \index{QueryIntAttributeRequired@{QueryIntAttributeRequired}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryIntAttributeRequired()}{QueryIntAttributeRequired()}}
-{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+Int\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{int \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+Int\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{int \&}]{value }\end{DoxyParamCaption})}
 
 
 
@@ -550,7 +599,7 @@ tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+
 \index{tesseract\_common@{tesseract\_common}!QueryStringAttribute@{QueryStringAttribute}}
 \index{QueryStringAttribute@{QueryStringAttribute}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringAttribute()}{QueryStringAttribute()}}
-{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Attribute (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Attribute (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})}
 
 
 
@@ -572,7 +621,7 @@ tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+
 \index{tesseract\_common@{tesseract\_common}!QueryStringAttributeRequired@{QueryStringAttributeRequired}}
 \index{QueryStringAttributeRequired@{QueryStringAttributeRequired}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringAttributeRequired()}{QueryStringAttributeRequired()}}
-{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Attribute\+Required (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})}
 
 
 
@@ -596,7 +645,7 @@ tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+
 \index{tesseract\_common@{tesseract\_common}!QueryStringText@{QueryStringText}}
 \index{QueryStringText@{QueryStringText}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringText()}{QueryStringText()}}
-{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Text (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Text (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{std\+::string \&}]{text }\end{DoxyParamCaption})}
 
 
 
@@ -616,7 +665,7 @@ tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+
 \index{tesseract\_common@{tesseract\_common}!QueryStringValue@{QueryStringValue}}
 \index{QueryStringValue@{QueryStringValue}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringValue()}{QueryStringValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Value (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLAttribute $\ast$}]{xml\+\_\+attribute,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Value (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLAttribute $\ast$}]{xml\+\_\+attribute,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})}
 
 
 
@@ -636,7 +685,7 @@ tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+
 \index{tesseract\_common@{tesseract\_common}!QueryStringValue@{QueryStringValue}}
 \index{QueryStringValue@{QueryStringValue}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{QueryStringValue()}{QueryStringValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Value (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily tinyxml2\+::\+XMLError tesseract\+\_\+common\+::\+Query\+String\+Value (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})}
 
 
 
@@ -656,7 +705,7 @@ tinyxml2\+::\+XML\+\_\+\+SUCCESS if successful, otherwise returns tinyxml2\+::\+
 \index{tesseract\_common@{tesseract\_common}!rtrim@{rtrim}}
 \index{rtrim@{rtrim}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{rtrim()}{rtrim()}}
-{\footnotesize\ttfamily void tesseract\+\_\+common\+::rtrim (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void tesseract\+\_\+common\+::rtrim (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s }\end{DoxyParamCaption})}
 
 
 
@@ -695,7 +744,7 @@ True if the all position are within the limits or relativily equal to the limit,
 \index{tesseract\_common@{tesseract\_common}!StringAttribute@{StringAttribute}}
 \index{StringAttribute@{StringAttribute}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{StringAttribute()}{StringAttribute()}}
-{\footnotesize\ttfamily std\+::string tesseract\+\_\+common\+::\+String\+Attribute (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string}]{default\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::string tesseract\+\_\+common\+::\+String\+Attribute (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement $\ast$}]{xml\+\_\+element,  }\item[{const char $\ast$}]{name,  }\item[{std\+::string}]{default\+\_\+value }\end{DoxyParamCaption})}
 
 
 
@@ -738,7 +787,7 @@ True if successful, otherwise false
 \index{tesseract\_common@{tesseract\_common}!trim@{trim}}
 \index{trim@{trim}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{trim()}{trim()}}
-{\footnotesize\ttfamily void tesseract\+\_\+common\+::trim (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void tesseract\+\_\+common\+::trim (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s }\end{DoxyParamCaption})}
 
 
 

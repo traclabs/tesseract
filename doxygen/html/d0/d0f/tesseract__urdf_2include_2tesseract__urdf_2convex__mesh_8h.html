@@ -70,7 +70,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -81,71 +80,17 @@ $(function() {
 <p>Parse convex_mesh from xml string.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="../../de/d3c/macros_8h_source.html">tesseract_common/macros.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dc/d00/status__code_8h_source.html">tesseract_common/status_code.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h_source.html">tesseract_common/utils.h</a>&gt;</code><br />
-<code>#include &lt;Eigen/Geometry&gt;</code><br />
-<code>#include &lt;tinyxml2.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d9/d07/tesseract__scene__graph_2include_2tesseract__scene__graph_2utils_8h_source.html">tesseract_scene_graph/utils.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d3/d95/resource__locator_8h_source.html">tesseract_scene_graph/resource_locator.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d8/dc3/mesh__parser_8h_source.html">tesseract_geometry/mesh_parser.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d5/d93/tesseract__geometry_2include_2tesseract__geometry_2impl_2mesh_8h_source.html">tesseract_geometry/impl/mesh.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../de/dd2/tesseract__geometry_2include_2tesseract__geometry_2impl_2convex__mesh_8h_source.html">tesseract_geometry/impl/convex_mesh.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dc/d54/common_8h_source.html">tesseract_collision/core/common.h</a>&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for convex_mesh.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../de/d1e/tesseract__urdf_2include_2tesseract__urdf_2convex__mesh_8h__incl.png" border="0" usemap="#atesseract__urdf_2include_2tesseract__urdf_2convex__mesh_8h" alt=""/></div>
 <map name="atesseract__urdf_2include_2tesseract__urdf_2convex__mesh_8h" id="atesseract__urdf_2include_2tesseract__urdf_2convex__mesh_8h">
-<area shape="rect" title="Parse convex_mesh from xml string." alt="" coords="2307,5,2461,61"/>
-<area shape="rect" href="../../de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="2698,645,2889,672"/>
-<area shape="rect" href="../../dc/d00/status__code_8h.html" title="A status code class." alt="" coords="1695,377,1868,419"/>
-<area shape="rect" href="../../dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1303,385,1473,411"/>
-<area shape="rect" title=" " alt="" coords="3221,645,3336,672"/>
-<area shape="rect" title=" " alt="" coords="1595,474,1674,501"/>
-<area shape="rect" href="../../d9/d07/tesseract__scene__graph_2include_2tesseract__scene__graph_2utils_8h.html" title=" " alt="" coords="2305,109,2463,151"/>
-<area shape="rect" href="../../d3/d95/resource__locator_8h.html" title="Locate and retrieve resource data." alt="" coords="2857,199,3015,240"/>
-<area shape="rect" href="../../d8/dc3/mesh__parser_8h.html" title=" " alt="" coords="3512,288,3648,329"/>
-<area shape="rect" href="../../d5/d93/tesseract__geometry_2include_2tesseract__geometry_2impl_2mesh_8h.html" title="Tesseract Mesh Geometry." alt="" coords="4465,288,4601,329"/>
-<area shape="rect" href="../../de/dd2/tesseract__geometry_2include_2tesseract__geometry_2impl_2convex__mesh_8h.html" title="Tesseract Convex Mesh Geometry." alt="" coords="3263,288,3407,329"/>
-<area shape="rect" href="../../dc/d54/common_8h.html" title="This is a collection of common methods." alt="" coords="713,288,844,329"/>
-<area shape="rect" title=" " alt="" coords="2338,474,2393,501"/>
-<area shape="rect" title=" " alt="" coords="1890,474,1969,501"/>
-<area shape="rect" title=" " alt="" coords="3317,563,3385,590"/>
-<area shape="rect" title=" " alt="" coords="1801,474,1866,501"/>
-<area shape="rect" title=" " alt="" coords="2596,563,2655,590"/>
-<area shape="rect" title=" " alt="" coords="2503,563,2572,590"/>
-<area shape="rect" title=" " alt="" coords="1301,474,1379,501"/>
-<area shape="rect" title=" " alt="" coords="1403,474,1469,501"/>
-<area shape="rect" title=" " alt="" coords="173,474,240,501"/>
-<area shape="rect" title=" " alt="" coords="1071,474,1126,501"/>
-<area shape="rect" title=" " alt="" coords="332,474,404,501"/>
-<area shape="rect" title=" " alt="" coords="1151,474,1225,501"/>
-<area shape="rect" title=" " alt="" coords="2044,474,2212,501"/>
-<area shape="rect" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="2887,474,3065,501"/>
-<area shape="rect" title=" " alt="" coords="2588,645,2673,672"/>
-<area shape="rect" title=" " alt="" coords="2194,563,2241,590"/>
-<area shape="rect" title=" " alt="" coords="2317,563,2427,590"/>
-<area shape="rect" title=" " alt="" coords="2831,563,2971,590"/>
-<area shape="rect" href="../../d9/dc2/kinematic__limits_8h.html" title="Common Tesseract Kinematic Limits and Related Utility Functions." alt="" coords="3047,556,3241,597"/>
-<area shape="rect" href="../../d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="2817,377,2993,419"/>
-<area shape="rect" href="../../d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="2485,288,2643,329"/>
-<area shape="rect" href="../../d0/d42/srdf__model_8h.html" title="Parse srdf xml." alt="" coords="2171,199,2328,240"/>
-<area shape="rect" title=" " alt="" coords="2721,474,2812,501"/>
-<area shape="rect" title=" " alt="" coords="2439,377,2591,419"/>
-<area shape="rect" title=" " alt="" coords="2044,385,2111,411"/>
-<area shape="rect" href="../../d8/d01/resource_8h.html" title="Class to retrieve data from resources." alt="" coords="3191,474,3388,501"/>
-<area shape="rect" title=" " alt="" coords="3891,385,4005,411"/>
-<area shape="rect" title=" " alt="" coords="4029,385,4169,411"/>
-<area shape="rect" title=" " alt="" coords="4193,385,4343,411"/>
-<area shape="rect" title=" " alt="" coords="4367,385,4420,411"/>
-<area shape="rect" title=" " alt="" coords="3698,385,3867,411"/>
-<area shape="rect" href="../../df/d8e/mesh__material_8h.html" title="Tesseract Mesh Material read from a mesh file." alt="" coords="3423,377,3572,419"/>
-<area shape="rect" href="../../d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="3463,467,3599,508"/>
-<area shape="rect" title=" " alt="" coords="507,385,741,411"/>
-<area shape="rect" title=" " alt="" coords="43,385,101,411"/>
-<area shape="rect" title=" " alt="" coords="227,385,287,411"/>
-<area shape="rect" title=" " alt="" coords="312,385,483,411"/>
-<area shape="rect" href="../../d3/d0c/tesseract__collision_2include_2tesseract__collision_2core_2types_8h.html" title="Tesseracts Collision Common Types." alt="" coords="867,377,997,419"/>
+<area shape="rect" title="Parse convex_mesh from xml string." alt="" coords="177,5,331,61"/>
+<area shape="rect" href="../../de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="5,109,196,136"/>
+<area shape="rect" title=" " alt="" coords="220,109,288,136"/>
+<area shape="rect" title=" " alt="" coords="313,109,371,136"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -153,68 +98,39 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/dad/tesseract__urdf_2include_2tesseract__urdf_2convex__mesh_8h__dep__incl.png" border="0" usemap="#atesseract__urdf_2include_2tesseract__urdf_2convex__mesh_8hdep" alt=""/></div>
 <map name="atesseract__urdf_2include_2tesseract__urdf_2convex__mesh_8hdep" id="atesseract__urdf_2include_2tesseract__urdf_2convex__mesh_8hdep">
-<area shape="rect" title="Parse convex_mesh from xml string." alt="" coords="1830,5,1985,61"/>
-<area shape="rect" href="../../dc/d27/tesseract__urdf_2include_2tesseract__urdf_2geometry_8h.html" title="Parse geometry from xml string." alt="" coords="1725,117,1901,158"/>
-<area shape="rect" href="../../dd/d90/tesseract__urdf__convex__mesh__unit_8cpp.html" title=" " alt="" coords="1925,109,2082,165"/>
-<area shape="rect" href="../../db/d44/collision_8h.html" title="Parse collision from xml string." alt="" coords="1727,221,1898,262"/>
-<area shape="rect" href="../../d9/d6d/visual_8h.html" title="Parse visual from xml string." alt="" coords="1546,221,1703,262"/>
-<area shape="rect" href="../../db/d82/tesseract__urdf__geometry__unit_8cpp.html" title=" " alt="" coords="1923,213,2092,269"/>
-<area shape="rect" href="../../de/d24/tesseract__urdf_2include_2tesseract__urdf_2link_8h.html" title="Parse link from xml string." alt="" coords="1640,325,1791,366"/>
-<area shape="rect" href="../../d3/d63/tesseract__urdf__collision__unit_8cpp.html" title=" " alt="" coords="1815,317,1978,373"/>
-<area shape="rect" href="../../d8/dec/urdf__parser_8h.html" title="A urdf parser for tesseract." alt="" coords="1528,429,1716,470"/>
-<area shape="rect" href="../../d0/d6c/tesseract__urdf__link__unit_8cpp.html" title=" " alt="" coords="1741,421,1877,477"/>
-<area shape="rect" href="../../de/d26/environment_8h.html" title=" " alt="" coords="486,525,689,581"/>
-<area shape="rect" href="../../de/d87/environment__clone__benchmarks_8cpp.html" title=" " alt="" coords="5,629,204,685"/>
-<area shape="rect" href="../../d8/da4/tesseract__environment__collision_8cpp.html" title=" " alt="" coords="782,629,966,685"/>
-<area shape="rect" href="../../d0/d5b/tesseract__environment__unit_8cpp.html" title=" " alt="" coords="990,629,1174,685"/>
-<area shape="rect" href="../../df/ddd/tesseract__environment__manipulator__manager__unit_8cpp.html" title=" " alt="" coords="1265,525,1470,581"/>
-<area shape="rect" href="../../d7/dcb/kinematics__test__utils_8h.html" title=" " alt="" coords="1494,525,1641,581"/>
-<area shape="rect" href="../../d9/dee/rep__kinematics__unit_8cpp.html" title=" " alt="" coords="1921,629,2067,685"/>
-<area shape="rect" href="../../d0/dac/rop__kinematics__unit_8cpp.html" title=" " alt="" coords="2091,629,2238,685"/>
-<area shape="rect" href="../../d2/dbe/load__urdf__example_8cpp.html" title=" " alt="" coords="1767,533,1931,574"/>
-<area shape="rect" href="../../d4/d44/urdf__parser_8cpp.html" title=" " alt="" coords="1955,533,2081,574"/>
-<area shape="rect" href="../../dd/da5/tesseract__urdf__material__unit_8cpp.html" title=" " alt="" coords="2106,525,2269,581"/>
-<area shape="rect" href="../../d0/d71/tesseract__urdf__urdf__unit_8cpp.html" title=" " alt="" coords="2293,525,2431,581"/>
-<area shape="rect" href="../../d4/d2d/tesseract__environment_2include_2tesseract__environment_2core_2utils_8h.html" title="Tesseract Environment Utility Functions." alt="" coords="278,629,481,685"/>
-<area shape="rect" href="../../dc/d82/environment_8cpp.html" title="Tesseract environment interface implementation." alt="" coords="107,748,279,789"/>
-<area shape="rect" href="../../d0/de9/tesseract__ignition__visualization_8h.html" title=" " alt="" coords="530,733,733,804"/>
-<area shape="rect" href="../../d2/d02/visualization_8h.html" title="Visualization Class." alt="" coords="555,629,758,685"/>
-<area shape="rect" href="../../d2/d87/tesseract__environment_2include_2tesseract__environment_2kdl_2kdl__utils_8h.html" title="Tesseract Environment KDL utility functions." alt="" coords="303,741,506,797"/>
-<area shape="rect" href="../../da/dfb/kdl__state__solver_8cpp.html" title="Tesseract environment kdl solver implementation." alt="" coords="311,859,499,901"/>
-<area shape="rect" href="../../d6/dbe/tesseract__ignition__visualization_8cpp.html" title=" " alt="" coords="545,852,717,908"/>
-<area shape="rect" href="../../da/d93/visualization__loader_8h.html" title="Visualization Loader." alt="" coords="757,741,959,797"/>
-<area shape="rect" href="../../d3/da9/visualization__loader_8cpp.html" title=" " alt="" coords="765,859,951,901"/>
-<area shape="rect" href="../../da/d94/kdl__kinematics__unit_8cpp.html" title=" " alt="" coords="1409,629,1555,685"/>
-<area shape="rect" href="../../d4/d0f/kinematics__core__unit_8cpp.html" title=" " alt="" coords="1579,629,1726,685"/>
-<area shape="rect" href="../../d6/d2e/opw__kinematics__unit_8cpp.html" title="Tesseract opw kinematics test." alt="" coords="1750,629,1897,685"/>
-<area shape="rect" href="../../d3/d31/ur__kinematics__unit_8cpp.html" title=" " alt="" coords="1199,637,1384,678"/>
-<area shape="rect" href="../../d1/d04/tesseract__urdf__visual__unit_8cpp.html" title=" " alt="" coords="1465,317,1616,373"/>
+<area shape="rect" title="Parse convex_mesh from xml string." alt="" coords="147,5,301,61"/>
+<area shape="rect" href="../../de/d9a/convex__mesh_8cpp.html" title="Parse convex_mesh from xml string." alt="" coords="5,117,136,158"/>
+<area shape="rect" href="../../d4/d59/geometry_8cpp.html" title="Parse geometry from xml string." alt="" coords="161,117,287,158"/>
+<area shape="rect" href="../../dd/d90/tesseract__urdf__convex__mesh__unit_8cpp.html" title=" " alt="" coords="312,109,469,165"/>
 </map>
 </div>
 </div>
 <p><a href="../../d0/d0f/tesseract__urdf_2include_2tesseract__urdf_2convex__mesh_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6b/classtesseract__urdf_1_1ConvexMeshStatusCategory.html">tesseract_urdf::ConvexMeshStatusCategory</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:da/dce/namespacetinyxml2"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dce/namespacetinyxml2.html">tinyxml2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d9/d42/namespacetesseract__scene__graph"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d42/namespacetesseract__scene__graph.html">tesseract_scene_graph</a></td></tr>
+<tr class="memdesc:d9/d42/namespacetesseract__scene__graph"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d17/namespacetesseract__geometry"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d17/namespacetesseract__geometry.html">tesseract_geometry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d5/d8c/namespacetesseract__urdf"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/namespacetesseract__urdf.html">tesseract_urdf</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a90d10e644540d42ab299c23ff931bc4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d3f/classtesseract__common_1_1StatusCode.html#a2b285106bd9f4963d1696b9696dbaf5f">tesseract_common::StatusCode::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/namespacetesseract__urdf.html#a90d10e644540d42ab299c23ff931bc4a">tesseract_urdf::parse</a> (std::vector&lt; <a class="el" href="../../d9/d63/classtesseract__geometry_1_1ConvexMesh.html#aecd145c5f75117ff7a3bab1fb921e4c0">tesseract_geometry::ConvexMesh::Ptr</a> &gt; &amp;meshes, const tinyxml2::XMLElement *xml_element, const <a class="el" href="../../dc/db5/classtesseract__scene__graph_1_1ResourceLocator.html#a64ddb0339eae8885128e399f1275cf80">tesseract_scene_graph::ResourceLocator::Ptr</a> &amp;locator, const bool visual, const int)</td></tr>
-<tr class="separator:a90d10e644540d42ab299c23ff931bc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc018cb3dc8642f9e9dc3f0ddf5df1e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="../../d9/d63/classtesseract__geometry_1_1ConvexMesh.html">tesseract_geometry::ConvexMesh</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/namespacetesseract__urdf.html#a0dc018cb3dc8642f9e9dc3f0ddf5df1e">tesseract_urdf::parseConvexMesh</a> (const tinyxml2::XMLElement *xml_element, const std::shared_ptr&lt; <a class="el" href="../../dc/db5/classtesseract__scene__graph_1_1ResourceLocator.html">tesseract_scene_graph::ResourceLocator</a> &gt; &amp;locator, bool visual, int version)</td></tr>
+<tr class="memdesc:a0dc018cb3dc8642f9e9dc3f0ddf5df1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse xml element convex_mesh.  <a href="../../d5/d8c/namespacetesseract__urdf.html#a0dc018cb3dc8642f9e9dc3f0ddf5df1e">More...</a><br /></td></tr>
+<tr class="separator:a0dc018cb3dc8642f9e9dc3f0ddf5df1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parse convex_mesh from xml string. </p>
 <dl class="section author"><dt>Author</dt><dd>Levi Armstrong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>September 1, 2019 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>TODO </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000147">Bug:</a></b></dt><dd>No known bugs</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000148">Bug:</a></b></dt><dd>No known bugs</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2019, Southwest Research Institute</dd></dl>
 <dl class="section user"><dt>License</dt><dd>Software License Agreement (Apache License) </dd></dl>
 <dl class="section user"><dt></dt><dd>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a> </dd></dl>
@@ -222,7 +138,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 15 2021 02:30:27 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 21 2021 12:48:08 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

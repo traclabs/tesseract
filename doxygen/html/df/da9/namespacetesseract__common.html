@@ -207,6 +207,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0569af9dd122b26e12ebdc4bb1de2bda"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/da9/namespacetesseract__common.html#a5b28b7ae665b374a7ca166d496f648ce">LinkNamesPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a0569af9dd122b26e12ebdc4bb1de2bda">makeOrderedLinkPair</a> (const std::string &amp;link_name1, const std::string &amp;link_name2)</td></tr>
 <tr class="memdesc:a0569af9dd122b26e12ebdc4bb1de2bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pair of strings, where the pair.first is always &lt;= pair.second.  <a href="../../df/da9/namespacetesseract__common.html#a0569af9dd122b26e12ebdc4bb1de2bda">More...</a><br /></td></tr>
 <tr class="separator:a0569af9dd122b26e12ebdc4bb1de2bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e9558332430365cd69cb2eec1784c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#ac4e9558332430365cd69cb2eec1784c8">printNestedException</a> (const std::exception &amp;e, int level=0)</td></tr>
+<tr class="memdesc:ac4e9558332430365cd69cb2eec1784c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a nested exception.  <a href="../../df/da9/namespacetesseract__common.html#ac4e9558332430365cd69cb2eec1784c8">More...</a><br /></td></tr>
+<tr class="separator:ac4e9558332430365cd69cb2eec1784c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ecad04db85855fa9e4de21084598ca"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a58ecad04db85855fa9e4de21084598ca">getTempPath</a> ()</td></tr>
 <tr class="memdesc:a58ecad04db85855fa9e4de21084598ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the host temp directory path.  <a href="../../df/da9/namespacetesseract__common.html#a58ecad04db85855fa9e4de21084598ca">More...</a><br /></td></tr>
 <tr class="separator:a58ecad04db85855fa9e4de21084598ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,11 +217,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1dc3a9525efbe582991edd4eedc26079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a string is a number.  <a href="../../df/da9/namespacetesseract__common.html#a1dc3a9525efbe582991edd4eedc26079">More...</a><br /></td></tr>
 <tr class="separator:a1dc3a9525efbe582991edd4eedc26079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0db40f06dba7e6be18a2c4f098ad7a00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a0db40f06dba7e6be18a2c4f098ad7a00">isNumeric</a> (const std::vector&lt; std::string &gt; &amp;sv)</td></tr>
+<tr class="memdesc:a0db40f06dba7e6be18a2c4f098ad7a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if each string in vector is a number.  <a href="../../df/da9/namespacetesseract__common.html#a0db40f06dba7e6be18a2c4f098ad7a00">More...</a><br /></td></tr>
 <tr class="separator:a0db40f06dba7e6be18a2c4f098ad7a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00bc131acfeba0eba8fe7ff7cd944860"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:a00bc131acfeba0eba8fe7ff7cd944860"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a00bc131acfeba0eba8fe7ff7cd944860">toNumeric</a> (const std::string &amp;s, FloatType &amp;value)</td></tr>
-<tr class="memdesc:a00bc131acfeba0eba8fe7ff7cd944860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to a numeric value type.  <a href="../../df/da9/namespacetesseract__common.html#a00bc131acfeba0eba8fe7ff7cd944860">More...</a><br /></td></tr>
-<tr class="separator:a00bc131acfeba0eba8fe7ff7cd944860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa14552337385ce1de42da699506f8b03"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#aa14552337385ce1de42da699506f8b03">generateRandomNumber</a> (const Eigen::Ref&lt; const Eigen::MatrixX2d &gt; &amp;limits)</td></tr>
 <tr class="memdesc:aa14552337385ce1de42da699506f8b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a set of limits it will generate a vector of randon numbers between the limit.  <a href="../../df/da9/namespacetesseract__common.html#aa14552337385ce1de42da699506f8b03">More...</a><br /></td></tr>
 <tr class="separator:aa14552337385ce1de42da699506f8b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,6 +267,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a894fe5ec6ecf17efd1eb129291bdcf60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a894fe5ec6ecf17efd1eb129291bdcf60">almostEqualRelativeAndAbs</a> (const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;v1, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;v2, double max_diff, double max_rel_diff=std::numeric_limits&lt; double &gt;::epsilon())</td></tr>
 <tr class="memdesc:a894fe5ec6ecf17efd1eb129291bdcf60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two Eigen VectorXd are relatively and absolute equal.  <a href="../../df/da9/namespacetesseract__common.html#a894fe5ec6ecf17efd1eb129291bdcf60">More...</a><br /></td></tr>
 <tr class="separator:a894fe5ec6ecf17efd1eb129291bdcf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00bc131acfeba0eba8fe7ff7cd944860"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:a00bc131acfeba0eba8fe7ff7cd944860"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a00bc131acfeba0eba8fe7ff7cd944860">toNumeric</a> (const std::string &amp;s, FloatType &amp;value)</td></tr>
+<tr class="memdesc:a00bc131acfeba0eba8fe7ff7cd944860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to a numeric value type.  <a href="../../df/da9/namespacetesseract__common.html#a00bc131acfeba0eba8fe7ff7cd944860">More...</a><br /></td></tr>
+<tr class="separator:a00bc131acfeba0eba8fe7ff7cd944860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62810a7ae6f501b0850f65eaebe96f2e"><td class="memTemplParams" colspan="2">template&lt;typename E &gt; </td></tr>
+<tr class="memitem:a62810a7ae6f501b0850f65eaebe96f2e"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt;!std::is_polymorphic&lt; E &gt;::value &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a62810a7ae6f501b0850f65eaebe96f2e">my_rethrow_if_nested</a> (const E &amp;)</td></tr>
+<tr class="separator:a62810a7ae6f501b0850f65eaebe96f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1a3a2db4c1c945c20e2328cdd84c68"><td class="memTemplParams" colspan="2">template&lt;typename E &gt; </td></tr>
+<tr class="memitem:a1d1a3a2db4c1c945c20e2328cdd84c68"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_polymorphic&lt; E &gt;::value &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/da9/namespacetesseract__common.html#a1d1a3a2db4c1c945c20e2328cdd84c68">my_rethrow_if_nested</a> (const E &amp;e)</td></tr>
+<tr class="separator:a1d1a3a2db4c1c945c20e2328cdd84c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -511,9 +521,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool tesseract_common::almostEqualRelativeAndAbs </td>
@@ -545,11 +552,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Check if two Eigen VectorXd are relatively and absolute equal. </p>
@@ -571,9 +573,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool tesseract_common::almostEqualRelativeAndAbs </td>
@@ -605,11 +604,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Check if two double are relatively equal. </p>
@@ -668,9 +662,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Eigen::VectorXd tesseract_common::generateRandomNumber </td>
@@ -680,11 +671,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Given a set of limits it will generate a vector of randon numbers between the limit. </p>
@@ -775,9 +761,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string tesseract_common::getTempPath </td>
@@ -786,11 +769,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the host temp directory path. </p>
@@ -803,9 +781,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string tesseract_common::getTimestampString </td>
@@ -814,11 +789,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get Timestamp string. </p>
@@ -831,9 +801,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool tesseract_common::isIdentical </td>
@@ -859,11 +826,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Check if two vector of strings are identical. </p>
@@ -883,9 +845,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool tesseract_common::isNumeric </td>
@@ -895,11 +854,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Determine if a string is a number. </p>
@@ -918,9 +872,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool tesseract_common::isNumeric </td>
@@ -930,12 +881,16 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Determine if each string in vector is a number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sv</td><td>The vector of strings to evaluate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all strings are numeric, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -944,9 +899,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void tesseract_common::ltrim </td>
@@ -956,11 +908,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Left trim string. </p>
@@ -1019,6 +966,46 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a62810a7ae6f501b0850f65eaebe96f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62810a7ae6f501b0850f65eaebe96f2e">&#9670;&nbsp;</a></span>my_rethrow_if_nested() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt;!std::is_polymorphic&lt;E&gt;::value&gt; tesseract_common::my_rethrow_if_nested </td>
+          <td>(</td>
+          <td class="paramtype">const E &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d1a3a2db4c1c945c20e2328cdd84c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1a3a2db4c1c945c20e2328cdd84c68">&#9670;&nbsp;</a></span>my_rethrow_if_nested() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt;std::is_polymorphic&lt;E&gt;::value&gt; tesseract_common::my_rethrow_if_nested </td>
+          <td>(</td>
+          <td class="paramtype">const E &amp;&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0b6d0012d51401bfd898e534ad9c9be9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b6d0012d51401bfd898e534ad9c9be9">&#9670;&nbsp;</a></span>parseEnvironmentVariableList()</h2>
 
@@ -1071,14 +1058,48 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ac4e9558332430365cd69cb2eec1784c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e9558332430365cd69cb2eec1784c8">&#9670;&nbsp;</a></span>printNestedException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tesseract_common::printNestedException </td>
+          <td>(</td>
+          <td class="paramtype">const std::exception &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print a nested exception. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>The exception to print </td></tr>
+    <tr><td class="paramname">level</td><td>The exception level which controls the indentation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab5ec94b62bea51b6e40598e0f8e7a6c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5ec94b62bea51b6e40598e0f8e7a6c3">&#9670;&nbsp;</a></span>QueryDoubleAttributeRequired()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tinyxml2::XMLError tesseract_common::QueryDoubleAttributeRequired </td>
@@ -1104,11 +1125,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Query a double attribute from an xml element and print error log. </p>
@@ -1130,9 +1146,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tinyxml2::XMLError tesseract_common::QueryIntAttributeRequired </td>
@@ -1158,11 +1171,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Query a int attribute from an xml element and print error log. </p>
@@ -1184,9 +1192,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tinyxml2::XMLError tesseract_common::QueryStringAttribute </td>
@@ -1212,11 +1217,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Query a string attribute from an xml element. </p>
@@ -1237,9 +1237,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tinyxml2::XMLError tesseract_common::QueryStringAttributeRequired </td>
@@ -1265,11 +1262,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Query a string attribute from an xml element and print error log. </p>
@@ -1291,9 +1283,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tinyxml2::XMLError tesseract_common::QueryStringText </td>
@@ -1313,11 +1302,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Query a string Text from xml element. </p>
@@ -1337,9 +1321,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tinyxml2::XMLError tesseract_common::QueryStringValue </td>
@@ -1359,11 +1340,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Query a string value from xml attribute. </p>
@@ -1383,9 +1359,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tinyxml2::XMLError tesseract_common::QueryStringValue </td>
@@ -1405,11 +1378,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Query a string value from xml element. </p>
@@ -1429,9 +1397,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void tesseract_common::rtrim </td>
@@ -1441,11 +1406,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Right trim string. </p>
@@ -1515,9 +1475,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string tesseract_common::StringAttribute </td>
@@ -1543,11 +1500,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get string attribute if exist. If it does not exist it returns the default value. </p>
@@ -1616,9 +1568,6 @@ template&lt;typename FloatType &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void tesseract_common::trim </td>
@@ -1628,11 +1577,6 @@ template&lt;typename FloatType &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Trim left and right of string. </p>
@@ -1673,7 +1617,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 15 2021 02:30:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 21 2021 12:48:09 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
