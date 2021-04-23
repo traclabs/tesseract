@@ -97,7 +97,7 @@ bool \mbox{\hyperlink{namespacetesseract__kinematics_ae2bebd951f959b4c39b06dc7b3
 \begin{DoxyCompactList}\small\item\em Check if the provided jacobian is near a singularity. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__kinematics_1_1Manipulability}{Manipulability}} \mbox{\hyperlink{namespacetesseract__kinematics_ad071f516596c9a983b661f60e4511ac3}{calc\+Manipulability}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+Xd $>$ \&jacobian)
 \begin{DoxyCompactList}\small\item\em Calculate manipulability data about the provided jacobian. \end{DoxyCompactList}\item 
-{\footnotesize template$<$class Chain\+\_\+T , class Tree\+\_\+T $>$ }\\\mbox{\hyperlink{namespacetesseract__kinematics_a881ff48bb24f8ac4e92de3f1e5c0bfb5}{Forward\+Kinematics\+Const\+Ptr\+Map}} \mbox{\hyperlink{namespacetesseract__kinematics_a8c5e79830b1da0e1e83fb6f765e77cd4}{create\+Kinematics\+Map}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&scene\+\_\+graph, const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \&kinematics\+\_\+information)
+{\footnotesize template$<$class Chain\+\_\+T , class Tree\+\_\+T $>$ }\\\mbox{\hyperlink{namespacetesseract__kinematics_a881ff48bb24f8ac4e92de3f1e5c0bfb5}{Forward\+Kinematics\+Const\+Ptr\+Map}} \mbox{\hyperlink{namespacetesseract__kinematics_a48ccac1b47ffdf3061e9b73724cf1499}{create\+Kinematics\+Map}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&scene\+\_\+graph, const \mbox{\hyperlink{structtesseract__srdf_1_1KinematicsInformation}{tesseract\+\_\+srdf\+::\+Kinematics\+Information}} \&kinematics\+\_\+information)
 \begin{DoxyCompactList}\small\item\em Create a kinematics map from the srdf model. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Float\+Type $>$ }\\void \mbox{\hyperlink{namespacetesseract__kinematics_a4b8b561da8a157f1e3d683bfbe6f39f9}{get\+Redundant\+Solutions\+Helper}} (std\+::vector$<$ \mbox{\hyperlink{namespacetesseract__kinematics_a59d7ac70f855c7d00848b703e6bcfe9a}{VectorX}}$<$ Float\+Type $>$$>$ \&redundant\+\_\+sols, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&sol, const Eigen\+::\+Matrix\+X2d \&limits, Eigen\+::\+Index current\+\_\+index)
 \begin{DoxyCompactList}\small\item\em This a recursive function for caculating all permutations of the redundant solutions. \end{DoxyCompactList}\item 
@@ -281,12 +281,12 @@ It checks that the following are the same\+:
 True it they match, otherwise false. 
 \end{DoxyReturn}
 
-\end{DoxyItemize}\mbox{\Hypertarget{namespacetesseract__kinematics_a8c5e79830b1da0e1e83fb6f765e77cd4}\label{namespacetesseract__kinematics_a8c5e79830b1da0e1e83fb6f765e77cd4}} 
+\end{DoxyItemize}\mbox{\Hypertarget{namespacetesseract__kinematics_a48ccac1b47ffdf3061e9b73724cf1499}\label{namespacetesseract__kinematics_a48ccac1b47ffdf3061e9b73724cf1499}} 
 \index{tesseract\_kinematics@{tesseract\_kinematics}!createKinematicsMap@{createKinematicsMap}}
 \index{createKinematicsMap@{createKinematicsMap}!tesseract\_kinematics@{tesseract\_kinematics}}
 \doxysubsubsection{\texorpdfstring{createKinematicsMap()}{createKinematicsMap()}}
 {\footnotesize\ttfamily template$<$class Chain\+\_\+T , class Tree\+\_\+T $>$ \\
-\mbox{\hyperlink{namespacetesseract__kinematics_a881ff48bb24f8ac4e92de3f1e5c0bfb5}{Forward\+Kinematics\+Const\+Ptr\+Map}} tesseract\+\_\+kinematics\+::create\+Kinematics\+Map (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&}]{scene\+\_\+graph,  }\item[{const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \&}]{kinematics\+\_\+information }\end{DoxyParamCaption})}
+\mbox{\hyperlink{namespacetesseract__kinematics_a881ff48bb24f8ac4e92de3f1e5c0bfb5}{Forward\+Kinematics\+Const\+Ptr\+Map}} tesseract\+\_\+kinematics\+::create\+Kinematics\+Map (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&}]{scene\+\_\+graph,  }\item[{const \mbox{\hyperlink{structtesseract__srdf_1_1KinematicsInformation}{tesseract\+\_\+srdf\+::\+Kinematics\+Information}} \&}]{kinematics\+\_\+information }\end{DoxyParamCaption})}
 
 
 
@@ -296,7 +296,7 @@ Create a kinematics map from the srdf model.
 \begin{DoxyParams}{Parameters}
 {\em scene\+\_\+graph} & Tesseract Scene Graph \\
 \hline
-{\em srdf\+\_\+model} & Tesseract SRDF Model \\
+{\em kinematics\+\_\+information} & Tesseract Kinematics Information \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

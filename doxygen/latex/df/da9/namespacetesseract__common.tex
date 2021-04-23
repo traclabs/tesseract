@@ -150,10 +150,18 @@ tinyxml2\+::\+XMLError \mbox{\hyperlink{namespacetesseract__common_ad9a12946985d
 \begin{DoxyCompactList}\small\item\em Query a int attribute from an xml element and print error log. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__common_ac9961ff2a5d322165a817241b7746f64}{almost\+Equal\+Relative\+And\+Abs}} (double a, double b, double max\+\_\+diff=1e-\/6, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
 \begin{DoxyCompactList}\small\item\em Check if two double are relatively equal. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}{almost\+Equal\+Relative\+And\+Abs}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v1, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v2, double max\+\_\+diff, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
+bool \mbox{\hyperlink{namespacetesseract__common_a12eb899ec3967699e946431730eed959}{almost\+Equal\+Relative\+And\+Abs}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v1, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&v2, double max\+\_\+diff=1e-\/6, double max\+\_\+rel\+\_\+diff=std\+::numeric\+\_\+limits$<$ double $>$\+::epsilon())
 \begin{DoxyCompactList}\small\item\em Check if two Eigen Vector\+Xd are relatively and absolute equal. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Float\+Type $>$ }\\bool \mbox{\hyperlink{namespacetesseract__common_a00bc131acfeba0eba8fe7ff7cd944860}{to\+Numeric}} (const std\+::string \&s, Float\+Type \&value)
 \begin{DoxyCompactList}\small\item\em Convert a string to a numeric value type. \end{DoxyCompactList}\item 
+template bool \mbox{\hyperlink{namespacetesseract__common_af5ca1a2af32cf2aa20666fabebb01ae3}{to\+Numeric$<$ double $>$}} (const std\+::string \&, double \&)
+\item 
+template bool \mbox{\hyperlink{namespacetesseract__common_aa70232725f5f768795d33beb4d783754}{to\+Numeric$<$ float $>$}} (const std\+::string \&, float \&)
+\item 
+template bool \mbox{\hyperlink{namespacetesseract__common_a0b9e402f37e71867b838508147b93ba7}{to\+Numeric$<$ int $>$}} (const std\+::string \&, int \&)
+\item 
+template bool \mbox{\hyperlink{namespacetesseract__common_a4b11049d2f1fe507189aedf890101ce7}{to\+Numeric$<$ long $>$}} (const std\+::string \&, long \&)
+\item 
 {\footnotesize template$<$typename E $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+polymorphic$<$ E $>$\+::value $>$ \mbox{\hyperlink{namespacetesseract__common_a62810a7ae6f501b0850f65eaebe96f2e}{my\+\_\+rethrow\+\_\+if\+\_\+nested}} (const E \&)
 \item 
 {\footnotesize template$<$typename E $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+polymorphic$<$ E $>$\+::value $>$ \mbox{\hyperlink{namespacetesseract__common_a1d1a3a2db4c1c945c20e2328cdd84c68}{my\+\_\+rethrow\+\_\+if\+\_\+nested}} (const E \&e)
@@ -293,11 +301,11 @@ MODIFY\+\_\+\+PAIR\+\_\+\+MARGIN&Modify the contact managers pair margin only. T
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}\label{namespacetesseract__common_a894fe5ec6ecf17efd1eb129291bdcf60}} 
+\mbox{\Hypertarget{namespacetesseract__common_a12eb899ec3967699e946431730eed959}\label{namespacetesseract__common_a12eb899ec3967699e946431730eed959}} 
 \index{tesseract\_common@{tesseract\_common}!almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}}
 \index{almostEqualRelativeAndAbs@{almostEqualRelativeAndAbs}!tesseract\_common@{tesseract\_common}}
 \doxysubsubsection{\texorpdfstring{almostEqualRelativeAndAbs()}{almostEqualRelativeAndAbs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v1,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v2,  }\item[{double}]{max\+\_\+diff,  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool tesseract\+\_\+common\+::almost\+Equal\+Relative\+And\+Abs (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v1,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{v2,  }\item[{double}]{max\+\_\+diff = {\ttfamily 1e-\/6},  }\item[{double}]{max\+\_\+rel\+\_\+diff = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:epsilon()} }\end{DoxyParamCaption})}
 
 
 
@@ -783,6 +791,30 @@ Convert a string to a numeric value type.
 \begin{DoxyReturn}{Returns}
 True if successful, otherwise false 
 \end{DoxyReturn}
+\mbox{\Hypertarget{namespacetesseract__common_af5ca1a2af32cf2aa20666fabebb01ae3}\label{namespacetesseract__common_af5ca1a2af32cf2aa20666fabebb01ae3}} 
+\index{tesseract\_common@{tesseract\_common}!toNumeric$<$ double $>$@{toNumeric$<$ double $>$}}
+\index{toNumeric$<$ double $>$@{toNumeric$<$ double $>$}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{toNumeric$<$ double $>$()}{toNumeric< double >()}}
+{\footnotesize\ttfamily template bool \mbox{\hyperlink{namespacetesseract__common_a00bc131acfeba0eba8fe7ff7cd944860}{tesseract\+\_\+common\+::to\+Numeric}}$<$ double $>$ (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{double \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetesseract__common_aa70232725f5f768795d33beb4d783754}\label{namespacetesseract__common_aa70232725f5f768795d33beb4d783754}} 
+\index{tesseract\_common@{tesseract\_common}!toNumeric$<$ float $>$@{toNumeric$<$ float $>$}}
+\index{toNumeric$<$ float $>$@{toNumeric$<$ float $>$}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{toNumeric$<$ float $>$()}{toNumeric< float >()}}
+{\footnotesize\ttfamily template bool \mbox{\hyperlink{namespacetesseract__common_a00bc131acfeba0eba8fe7ff7cd944860}{tesseract\+\_\+common\+::to\+Numeric}}$<$ float $>$ (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{float \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetesseract__common_a0b9e402f37e71867b838508147b93ba7}\label{namespacetesseract__common_a0b9e402f37e71867b838508147b93ba7}} 
+\index{tesseract\_common@{tesseract\_common}!toNumeric$<$ int $>$@{toNumeric$<$ int $>$}}
+\index{toNumeric$<$ int $>$@{toNumeric$<$ int $>$}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{toNumeric$<$ int $>$()}{toNumeric< int >()}}
+{\footnotesize\ttfamily template bool \mbox{\hyperlink{namespacetesseract__common_a00bc131acfeba0eba8fe7ff7cd944860}{tesseract\+\_\+common\+::to\+Numeric}}$<$ int $>$ (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{int \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetesseract__common_a4b11049d2f1fe507189aedf890101ce7}\label{namespacetesseract__common_a4b11049d2f1fe507189aedf890101ce7}} 
+\index{tesseract\_common@{tesseract\_common}!toNumeric$<$ long $>$@{toNumeric$<$ long $>$}}
+\index{toNumeric$<$ long $>$@{toNumeric$<$ long $>$}!tesseract\_common@{tesseract\_common}}
+\doxysubsubsection{\texorpdfstring{toNumeric$<$ long $>$()}{toNumeric< long >()}}
+{\footnotesize\ttfamily template bool \mbox{\hyperlink{namespacetesseract__common_a00bc131acfeba0eba8fe7ff7cd944860}{tesseract\+\_\+common\+::to\+Numeric}}$<$ long $>$ (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{,  }\item[{long \&}]{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{namespacetesseract__common_aeacd629bcf585286917aafa7b8e603bb}\label{namespacetesseract__common_aeacd629bcf585286917aafa7b8e603bb}} 
 \index{tesseract\_common@{tesseract\_common}!trim@{trim}}
 \index{trim@{trim}!tesseract\_common@{tesseract\_common}}

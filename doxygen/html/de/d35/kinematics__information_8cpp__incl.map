@@ -1,6 +1,6 @@
-<map id="tesseract_scene_graph/src/kinematics_information.cpp" name="tesseract_scene_graph/src/kinematics_information.cpp">
-<area shape="rect" id="node1" title="This hold the kinematics information." alt="" coords="223,5,430,47"/>
-<area shape="rect" id="node2" href="$d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="241,95,412,136"/>
+<map id="tesseract_srdf/src/kinematics_information.cpp" name="tesseract_srdf/src/kinematics_information.cpp">
+<area shape="rect" id="node1" title="This hold the kinematics information." alt="" coords="235,5,419,47"/>
+<area shape="rect" id="node2" href="$d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="241,95,413,136"/>
 <area shape="rect" id="node3" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="291,430,482,457"/>
 <area shape="rect" id="node4" title=" " alt="" coords="218,341,329,367"/>
 <area shape="rect" id="node5" title=" " alt="" coords="50,259,105,285"/>

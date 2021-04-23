@@ -1,5 +1,5 @@
-\hypertarget{collision__margins_8h}{}\doxysection{tesseract\+\_\+scene\+\_\+graph/include/tesseract\+\_\+scene\+\_\+graph/srdf/collision\+\_\+margins.h File Reference}
-\label{collision__margins_8h}\index{tesseract\_scene\_graph/include/tesseract\_scene\_graph/srdf/collision\_margins.h@{tesseract\_scene\_graph/include/tesseract\_scene\_graph/srdf/collision\_margins.h}}
+\hypertarget{collision__margins_8h}{}\doxysection{tesseract\+\_\+srdf/include/tesseract\+\_\+srdf/collision\+\_\+margins.h File Reference}
+\label{collision__margins_8h}\index{tesseract\_srdf/include/tesseract\_srdf/collision\_margins.h@{tesseract\_srdf/include/tesseract\_srdf/collision\_margins.h}}
 
 
 Parse collision margin data from srdf file.  
@@ -7,20 +7,13 @@ Parse collision margin data from srdf file.
 
 {\ttfamily \#include $<$tesseract\+\_\+common/macros.\+h$>$}\newline
 {\ttfamily \#include $<$array$>$}\newline
-{\ttfamily \#include $<$console\+\_\+bridge/console.\+h$>$}\newline
-{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
-{\ttfamily \#include $<$tinyxml2.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+common/collision\+\_\+margin\+\_\+data.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+common/types.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+common/utils.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/graph.\+h$>$}\newline
-{\ttfamily \#include $<$tesseract\+\_\+scene\+\_\+graph/allowed\+\_\+collision\+\_\+matrix.\+h$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
 Include dependency graph for collision\+\_\+margins.\+h\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{d0/df9/collision__margins_8h__incl}
+\includegraphics[width=349pt]{d0/df9/collision__margins_8h__incl}
 \end{center}
 \end{figure}
 This graph shows which files directly or indirectly include this file\+:
@@ -28,25 +21,24 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=334pt]{de/db9/collision__margins_8h__dep__incl}
+\includegraphics[width=350pt]{de/db9/collision__margins_8h__dep__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
+ \mbox{\hyperlink{namespacetinyxml2}{tinyxml2}}
+\item 
  \mbox{\hyperlink{namespacetesseract__scene__graph}{tesseract\+\_\+scene\+\_\+graph}}
+\item 
+ \mbox{\hyperlink{namespacetesseract__common}{tesseract\+\_\+common}}
+\item 
+ \mbox{\hyperlink{namespacetesseract__srdf}{tesseract\+\_\+srdf}}
 \begin{DoxyCompactList}\small\item\em Main namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Typedefs}
-\begin{DoxyCompactItemize}
-\item 
-using \mbox{\hyperlink{namespacetesseract__scene__graph_abd739ec5e6d9255c190928a0f9ddcb7b}{tesseract\+\_\+scene\+\_\+graph\+::\+Collision\+Margin\+Data}} = \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData}{tesseract\+\_\+common\+::\+Collision\+Margin\+Data}}
-\item 
-using \mbox{\hyperlink{namespacetesseract__scene__graph_ac6b7dc80b6bdac1274d136a881ff9c92}{tesseract\+\_\+scene\+\_\+graph\+::\+Pairs\+Collision\+Margin\+Data}} = \mbox{\hyperlink{namespacetesseract__common_a84cc21cc4b384291adbbddaa81fe6447}{tesseract\+\_\+common\+::\+Pairs\+Collision\+Margin\+Data}}
-\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-Collision\+Margin\+Data\+::\+Ptr \mbox{\hyperlink{namespacetesseract__scene__graph_a199e7dc0c28bf7321a1ee85ce736f5fa}{tesseract\+\_\+scene\+\_\+graph\+::parse\+Collision\+Margins}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const tinyxml2\+::\+XMLElement $\ast$srdf\+\_\+xml, const std\+::array$<$ int, 3 $>$ \&)
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtesseract__common_1_1CollisionMarginData}{tesseract\+\_\+common\+::\+Collision\+Margin\+Data}} $>$ \mbox{\hyperlink{namespacetesseract__srdf_aa5ca32390e313ab0fe3507ae8406ff69}{tesseract\+\_\+srdf\+::parse\+Collision\+Margins}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const tinyxml2\+::\+XMLElement $\ast$srdf\+\_\+xml, const std\+::array$<$ int, 3 $>$ \&version)
 \begin{DoxyCompactList}\small\item\em Parse allowed collisions from srdf xml element. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -63,7 +55,7 @@ March 13, 2021
 TODO 
 \end{DoxyVersion}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000137}{Bug}}]No known bugs\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000140}{Bug}}]No known bugs\end{DoxyRefDesc}
 
 
 \begin{DoxyCopyright}{Copyright}

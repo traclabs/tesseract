@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tesseract: tesseract_scene_graph/include/tesseract_scene_graph/srdf/collision_margins.h Source File</title>
+<title>Tesseract: tesseract_srdf/include/tesseract_srdf/collision_margins.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_80ecf6fe8b2ccd2d6af6fe314205f076.html">tesseract_scene_graph</a></li><li class="navelem"><a class="el" href="../../dir_8661b538d50f203c2b5cffbb39cc534e.html">include</a></li><li class="navelem"><a class="el" href="../../dir_6839e4a50e6621ba92f456c993d977d3.html">tesseract_scene_graph</a></li><li class="navelem"><a class="el" href="../../dir_c9f4ee77df77957560c98fd3e92abd8a.html">srdf</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_2f96e717e53b6f43ed86f094687f9234.html">tesseract_srdf</a></li><li class="navelem"><a class="el" href="../../dir_f9bf1399608b40aad79fdd2be1dad095.html">include</a></li><li class="navelem"><a class="el" href="../../dir_fea7a632214e96ce5e8f19cac17aea65.html">tesseract_srdf</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,104 +74,53 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="../../dd/db1/collision__margins_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef TESSERACT_SCENE_GRAPH_SRDF_COLLISION_MARGINS_H</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define TESSERACT_SCENE_GRAPH_SRDF_COLLISION_MARGINS_H</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../de/d3c/macros_8h.html">tesseract_common/macros.h</a>&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<a class="code" href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;console_bridge/console.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;tinyxml2.h&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d4/da8/collision__margin__data_8h.html">tesseract_common/collision_margin_data.h</a>&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html">tesseract_common/types.h</a>&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html">tesseract_common/utils.h</a>&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d6/df3/graph_8h.html">tesseract_scene_graph/graph.h</a>&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d2/d01/allowed__collision__matrix_8h.html">tesseract_scene_graph/allowed_collision_matrix.h</a>&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html">tesseract_scene_graph</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d9/d42/namespacetesseract__scene__graph.html#abd739ec5e6d9255c190928a0f9ddcb7b">   44</a></span>&#160;<span class="keyword">using</span> <a class="code" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html">CollisionMarginData</a> = <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#abd739ec5e6d9255c190928a0f9ddcb7b">tesseract_common::CollisionMarginData</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d9/d42/namespacetesseract__scene__graph.html#ac6b7dc80b6bdac1274d136a881ff9c92">   45</a></span>&#160;<span class="keyword">using</span> <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#ac6b7dc80b6bdac1274d136a881ff9c92">PairsCollisionMarginData</a> = <a class="code" href="../../df/da9/namespacetesseract__common.html#a84cc21cc4b384291adbbddaa81fe6447">tesseract_common::PairsCollisionMarginData</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d9/d42/namespacetesseract__scene__graph.html#a199e7dc0c28bf7321a1ee85ce736f5fa">   54</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html#a9d0116259e8c3b97d61e63a3209ffa7b">CollisionMarginData::Ptr</a> <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#a199e7dc0c28bf7321a1ee85ce736f5fa">parseCollisionMargins</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">tesseract_scene_graph::SceneGraph</a>&amp; scene_graph,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                      <span class="keyword">const</span> tinyxml2::XMLElement* srdf_xml,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                      <span class="keyword">const</span> std::array&lt;int, 3&gt;&amp; <span class="comment">/*version*/</span>)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">double</span> default_margin{ 0 };</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html#ac6b7dc80b6bdac1274d136a881ff9c92">PairsCollisionMarginData</a> pair_margins;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">const</span> tinyxml2::XMLElement* xml_element = srdf_xml-&gt;FirstChildElement(<span class="stringliteral">&quot;collision_margins&quot;</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (xml_element == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  tinyxml2::XMLError status =</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <a class="code" href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">tesseract_common::QueryDoubleAttributeRequired</a>(xml_element, <span class="stringliteral">&quot;default_margin&quot;</span>, default_margin);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">if</span> (status != tinyxml2::XML_SUCCESS)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;parseCollisionMargins: collision_margins missing attribute &#39;default_margin&#39;.&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> tinyxml2::XMLElement* xml_pair_element = xml_element-&gt;FirstChildElement(<span class="stringliteral">&quot;pair_margin&quot;</span>); xml_pair_element;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;       xml_pair_element = xml_pair_element-&gt;NextSiblingElement(<span class="stringliteral">&quot;pair_margin&quot;</span>))</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string link1_name, link2_name;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">double</span> link_pair_margin{ 0 };</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    tinyxml2::XMLError status = <a class="code" href="../../df/da9/namespacetesseract__common.html#a609734264f8b63f5c7815871c40b231f">tesseract_common::QueryStringAttributeRequired</a>(xml_pair_element, <span class="stringliteral">&quot;link1&quot;</span>, link1_name);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (status != tinyxml2::XML_SUCCESS)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;parseCollisionMargins: Missing or failded to parse &#39;link1&#39; attribute.&quot;</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    status = <a class="code" href="../../df/da9/namespacetesseract__common.html#a609734264f8b63f5c7815871c40b231f">tesseract_common::QueryStringAttributeRequired</a>(xml_pair_element, <span class="stringliteral">&quot;link2&quot;</span>, link2_name);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (status != tinyxml2::XML_SUCCESS)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;parseCollisionMargins: Missing or failded to parse &#39;link2&#39; attribute.&quot;</span>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (!scene_graph.<a class="code" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#ad856a3d997c1d029a433df10079219db">getLink</a>(link1_name))</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      CONSOLE_BRIDGE_logWarn(<span class="stringliteral">&quot;parseCollisionMargins: Link &#39;%s&#39; is not known to URDF.&quot;</span>, link1_name.c_str());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (!scene_graph.<a class="code" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#ad856a3d997c1d029a433df10079219db">getLink</a>(link2_name))</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      CONSOLE_BRIDGE_logWarn(<span class="stringliteral">&quot;parseCollisionMargins: Link &#39;%s&#39; is not known to URDF.&quot;</span>, link2_name.c_str());</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    status = <a class="code" href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">tesseract_common::QueryDoubleAttributeRequired</a>(xml_pair_element, <span class="stringliteral">&quot;margin&quot;</span>, link_pair_margin);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (status != tinyxml2::XML_SUCCESS)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;parseCollisionMargins: failed to parse link pair &#39;margin&#39; attribute.&quot;</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">auto</span> key = <a class="code" href="../../df/da9/namespacetesseract__common.html#a0569af9dd122b26e12ebdc4bb1de2bda">tesseract_common::makeOrderedLinkPair</a>(link1_name, link2_name);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    pair_margins[key] = link_pair_margin;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">return</span> std::make_shared&lt;CollisionMarginData&gt;(default_margin, pair_margins);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace tesseract_scene_graph</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_SCENE_GRAPH_SRDF_COLLISION_MARGINS_H</span></div>
-<div class="ttc" id="aallowed__collision__matrix_8h_html"><div class="ttname"><a href="../../d2/d01/allowed__collision__matrix_8h.html">allowed_collision_matrix.h</a></div></div>
-<div class="ttc" id="aclasstesseract__common_1_1CollisionMarginData_html"><div class="ttname"><a href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html">tesseract_common::CollisionMarginData</a></div><div class="ttdoc">Stores information about how the margins allowed between collision objects.</div><div class="ttdef"><b>Definition:</b> collision_margin_data.h:67</div></div>
-<div class="ttc" id="aclasstesseract__common_1_1CollisionMarginData_html_a9d0116259e8c3b97d61e63a3209ffa7b"><div class="ttname"><a href="../../d6/dc7/classtesseract__common_1_1CollisionMarginData.html#a9d0116259e8c3b97d61e63a3209ffa7b">tesseract_common::CollisionMarginData::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; CollisionMarginData &gt; Ptr</div><div class="ttdef"><b>Definition:</b> collision_margin_data.h:71</div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef TESSERACT_SRDF_COLLISION_MARGINS_H</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define TESSERACT_SRDF_COLLISION_MARGINS_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../de/d3c/macros_8h.html">tesseract_common/macros.h</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../da/dce/namespacetinyxml2.html">   35</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../da/dce/namespacetinyxml2.html">tinyxml2</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>XMLElement;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html">tesseract_scene_graph</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>SceneGraph;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../df/da9/namespacetesseract__common.html">tesseract_common</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/d79/namespacetesseract__collision.html#a0717a3c53d08d510257f631ea96cb560">CollisionMarginData</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d9/d6a/namespacetesseract__srdf.html">   48</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d9/d6a/namespacetesseract__srdf.html">tesseract_srdf</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;std::shared_ptr&lt;tesseract_common::CollisionMarginData&gt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="../../d9/d6a/namespacetesseract__srdf.html#aa5ca32390e313ab0fe3507ae8406ff69">parseCollisionMargins</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">tesseract_scene_graph::SceneGraph</a>&amp; scene_graph,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                      <span class="keyword">const</span> tinyxml2::XMLElement* srdf_xml,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                      <span class="keyword">const</span> std::array&lt;int, 3&gt;&amp; <a class="code" href="../../d5/d89/namespaceconf.html#af51f21968ea73bb4391b0d4aed1f7ad2">version</a>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}  <span class="comment">// namespace tesseract_srdf</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_SRDF_COLLISION_MARGINS_H</span></div>
 <div class="ttc" id="aclasstesseract__scene__graph_1_1SceneGraph_html"><div class="ttname"><a href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">tesseract_scene_graph::SceneGraph</a></div><div class="ttdef"><b>Definition:</b> graph.h:120</div></div>
-<div class="ttc" id="aclasstesseract__scene__graph_1_1SceneGraph_html_ad856a3d997c1d029a433df10079219db"><div class="ttname"><a href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#ad856a3d997c1d029a433df10079219db">tesseract_scene_graph::SceneGraph::getLink</a></div><div class="ttdeci">Link::ConstPtr getLink(const std::string &amp;name) const</div><div class="ttdoc">Get a link in the graph.</div><div class="ttdef"><b>Definition:</b> graph.cpp:163</div></div>
-<div class="ttc" id="acollision__margin__data_8h_html"><div class="ttname"><a href="../../d4/da8/collision__margin__data_8h.html">collision_margin_data.h</a></div><div class="ttdoc">This is used to store collision margin information.</div></div>
-<div class="ttc" id="agraph_8h_html"><div class="ttname"><a href="../../d6/df3/graph_8h.html">graph.h</a></div><div class="ttdoc">A basic scene graph using boost.</div></div>
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="../../de/d3c/macros_8h.html">macros.h</a></div><div class="ttdoc">Common Tesseract Macros.</div></div>
 <div class="ttc" id="amacros_8h_html_a8cc0e3c6a3382c5c0b19eb9e676fc2db"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div><div class="ttdeci">#define TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</div><div class="ttdef"><b>Definition:</b> macros.h:65</div></div>
 <div class="ttc" id="anamespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP_html"><div class="ttname"><a href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div><div class="ttdef"><b>Definition:</b> create_convex_hull.cpp:35</div></div>
-<div class="ttc" id="anamespacetesseract__common_html_a0569af9dd122b26e12ebdc4bb1de2bda"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a0569af9dd122b26e12ebdc4bb1de2bda">tesseract_common::makeOrderedLinkPair</a></div><div class="ttdeci">static LinkNamesPair makeOrderedLinkPair(const std::string &amp;link_name1, const std::string &amp;link_name2)</div><div class="ttdoc">Create a pair of strings, where the pair.first is always &lt;= pair.second.</div><div class="ttdef"><b>Definition:</b> types.h:82</div></div>
-<div class="ttc" id="anamespacetesseract__common_html_a609734264f8b63f5c7815871c40b231f"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a609734264f8b63f5c7815871c40b231f">tesseract_common::QueryStringAttributeRequired</a></div><div class="ttdeci">tinyxml2::XMLError QueryStringAttributeRequired(const tinyxml2::XMLElement *xml_element, const char *name, std::string &amp;value)</div><div class="ttdoc">Query a string attribute from an xml element and print error log.</div><div class="ttdef"><b>Definition:</b> utils.cpp:188</div></div>
-<div class="ttc" id="anamespacetesseract__common_html_a84cc21cc4b384291adbbddaa81fe6447"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#a84cc21cc4b384291adbbddaa81fe6447">tesseract_common::PairsCollisionMarginData</a></div><div class="ttdeci">std::unordered_map&lt; tesseract_common::LinkNamesPair, double, tesseract_common::PairHash &gt; PairsCollisionMarginData</div><div class="ttdef"><b>Definition:</b> collision_margin_data.h:63</div></div>
-<div class="ttc" id="anamespacetesseract__common_html_ab5ec94b62bea51b6e40598e0f8e7a6c3"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html#ab5ec94b62bea51b6e40598e0f8e7a6c3">tesseract_common::QueryDoubleAttributeRequired</a></div><div class="ttdeci">tinyxml2::XMLError QueryDoubleAttributeRequired(const tinyxml2::XMLElement *xml_element, const char *name, double &amp;value)</div><div class="ttdoc">Query a double attribute from an xml element and print error log.</div><div class="ttdef"><b>Definition:</b> utils.cpp:210</div></div>
-<div class="ttc" id="anamespacetesseract__scene__graph_html"><div class="ttname"><a href="../../d9/d42/namespacetesseract__scene__graph.html">tesseract_scene_graph</a></div><div class="ttdoc">Main namespace.</div><div class="ttdef"><b>Definition:</b> allowed_collision_matrix.h:22</div></div>
-<div class="ttc" id="anamespacetesseract__scene__graph_html_a199e7dc0c28bf7321a1ee85ce736f5fa"><div class="ttname"><a href="../../d9/d42/namespacetesseract__scene__graph.html#a199e7dc0c28bf7321a1ee85ce736f5fa">tesseract_scene_graph::parseCollisionMargins</a></div><div class="ttdeci">CollisionMarginData::Ptr parseCollisionMargins(const tesseract_scene_graph::SceneGraph &amp;scene_graph, const tinyxml2::XMLElement *srdf_xml, const std::array&lt; int, 3 &gt; &amp;)</div><div class="ttdoc">Parse allowed collisions from srdf xml element.</div><div class="ttdef"><b>Definition:</b> collision_margins.h:54</div></div>
-<div class="ttc" id="anamespacetesseract__scene__graph_html_abd739ec5e6d9255c190928a0f9ddcb7b"><div class="ttname"><a href="../../d9/d42/namespacetesseract__scene__graph.html#abd739ec5e6d9255c190928a0f9ddcb7b">tesseract_scene_graph::CollisionMarginData</a></div><div class="ttdeci">tesseract_common::CollisionMarginData CollisionMarginData</div><div class="ttdef"><b>Definition:</b> collision_margins.h:44</div></div>
-<div class="ttc" id="anamespacetesseract__scene__graph_html_ac6b7dc80b6bdac1274d136a881ff9c92"><div class="ttname"><a href="../../d9/d42/namespacetesseract__scene__graph.html#ac6b7dc80b6bdac1274d136a881ff9c92">tesseract_scene_graph::PairsCollisionMarginData</a></div><div class="ttdeci">tesseract_common::PairsCollisionMarginData PairsCollisionMarginData</div><div class="ttdef"><b>Definition:</b> collision_margins.h:45</div></div>
-<div class="ttc" id="atesseract__common_2include_2tesseract__common_2types_8h_html"><div class="ttname"><a href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html">types.h</a></div><div class="ttdoc">Common Tesseract Types.</div></div>
-<div class="ttc" id="atesseract__common_2include_2tesseract__common_2utils_8h_html"><div class="ttname"><a href="../../dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html">utils.h</a></div><div class="ttdoc">Common Tesseract Utility Functions.</div></div>
+<div class="ttc" id="anamespaceconf_html_af51f21968ea73bb4391b0d4aed1f7ad2"><div class="ttname"><a href="../../d5/d89/namespaceconf.html#af51f21968ea73bb4391b0d4aed1f7ad2">conf.version</a></div><div class="ttdeci">version</div><div class="ttdef"><b>Definition:</b> conf.py:64</div></div>
+<div class="ttc" id="anamespacetesseract__collision_html_a0717a3c53d08d510257f631ea96cb560"><div class="ttname"><a href="../../d4/d79/namespacetesseract__collision.html#a0717a3c53d08d510257f631ea96cb560">tesseract_collision::CollisionMarginData</a></div><div class="ttdeci">tesseract_common::CollisionMarginData CollisionMarginData</div><div class="ttdef"><b>Definition:</b> types.h:55</div></div>
+<div class="ttc" id="anamespacetesseract__common_html"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html">tesseract_common</a></div><div class="ttdef"><b>Definition:</b> any.h:57</div></div>
+<div class="ttc" id="anamespacetesseract__scene__graph_html"><div class="ttname"><a href="../../d9/d42/namespacetesseract__scene__graph.html">tesseract_scene_graph</a></div><div class="ttdef"><b>Definition:</b> allowed_collision_matrix.h:22</div></div>
+<div class="ttc" id="anamespacetesseract__srdf_html"><div class="ttname"><a href="../../d9/d6a/namespacetesseract__srdf.html">tesseract_srdf</a></div><div class="ttdoc">Main namespace.</div><div class="ttdef"><b>Definition:</b> collision_margins.h:49</div></div>
+<div class="ttc" id="anamespacetesseract__srdf_html_aa5ca32390e313ab0fe3507ae8406ff69"><div class="ttname"><a href="../../d9/d6a/namespacetesseract__srdf.html#aa5ca32390e313ab0fe3507ae8406ff69">tesseract_srdf::parseCollisionMargins</a></div><div class="ttdeci">std::shared_ptr&lt; tesseract_common::CollisionMarginData &gt; parseCollisionMargins(const tesseract_scene_graph::SceneGraph &amp;scene_graph, const tinyxml2::XMLElement *srdf_xml, const std::array&lt; int, 3 &gt; &amp;version)</div><div class="ttdoc">Parse allowed collisions from srdf xml element.</div><div class="ttdef"><b>Definition:</b> collision_margins.cpp:42</div></div>
+<div class="ttc" id="anamespacetinyxml2_html"><div class="ttname"><a href="../../da/dce/namespacetinyxml2.html">tinyxml2</a></div><div class="ttdef"><b>Definition:</b> collision_margins.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 21 2021 12:48:08 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 23 2021 15:49:02 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -38,7 +38,7 @@ virtual \mbox{\hyperlink{classtesseract__environment_1_1Environment_a3c2d32d8ab0
 \item 
 {\footnotesize template$<$typename S $>$ }\\bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a00f0407b4c9eecce3aa5a5b8c795516f}{init}} (const \mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} \&commands)
 \begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{classtesseract__environment_1_1Environment}{Environment}}. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename S $>$ }\\bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a24411803baf30936d86938c5504f7ded}{init}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a8f29a2073209f6d445be00acb2f4a13a}{tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::\+Const\+Ptr}} \&srdf\+\_\+model=nullptr)
+{\footnotesize template$<$typename S $>$ }\\bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_ab87d380bcb15bca013b428c3601699d2}{init}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_a6e579a73e63af4e2d66448cdcc0998b5}{tesseract\+\_\+srdf\+::\+SRDFModel\+::\+Const\+Ptr}} \&srdf\+\_\+model=nullptr)
 \begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{classtesseract__environment_1_1Environment}{Environment}}. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename S $>$ }\\bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a06f73717134623d749b28d5a2de3f3b8}{init}} (const std\+::string \&urdf\+\_\+string, const \mbox{\hyperlink{classtesseract__scene__graph_1_1ResourceLocator_a64ddb0339eae8885128e399f1275cf80}{tesseract\+\_\+scene\+\_\+graph\+::\+Resource\+Locator\+::\+Ptr}} \&locator)
 \item 
@@ -150,7 +150,7 @@ bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a0e9bd172384261
 \begin{DoxyCompactList}\small\item\em Set the discrete contact manager. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a5d398aacd2c8574f05edc83e1de31346}{register\+Default\+Contact\+Managers}} ()
 \begin{DoxyCompactList}\small\item\em Register Default Contact Managers. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a058823f55e7743098bf63595ad02ea63}{add\+Kinematics\+Information}} (const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \&kin\+\_\+info)
+virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_aee9daa1cb9abb2b5539f6ff07dc42c2d}{add\+Kinematics\+Information}} (const \mbox{\hyperlink{structtesseract__srdf_1_1KinematicsInformation}{tesseract\+\_\+srdf\+::\+Kinematics\+Information}} \&kin\+\_\+info)
 \begin{DoxyCompactList}\small\item\em Add kinematics information to the environment. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_abcb19220b61b4cd731a7d623cde71863}{add\+Link}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{tesseract\+\_\+scene\+\_\+graph\+::\+Link}} \&link)
 \begin{DoxyCompactList}\small\item\em Adds a link to the environment. \end{DoxyCompactList}\item 
@@ -271,7 +271,7 @@ bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_ac5904ec32e5115
 \item 
 bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a7db65379bfadb980152ea19a3b22d6af}{init\+Helper}} (const \mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} \&commands)
 \item 
-\mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_a77ed388347f257b348dbc6228f4595aa}{get\+Init\+Commands}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a8f29a2073209f6d445be00acb2f4a13a}{tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::\+Const\+Ptr}} \&srdf\+\_\+model=nullptr)
+\mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_a4c2cf7b144f14ce37a5b45b6e08b68af}{get\+Init\+Commands}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_a6e579a73e63af4e2d66448cdcc0998b5}{tesseract\+\_\+srdf\+::\+SRDFModel\+::\+Const\+Ptr}} \&srdf\+\_\+model=nullptr)
 \item 
 bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a17d4969997bc7c15a6880797b448ed86}{apply\+Commands\+Helper}} (const \mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} \&commands)
 \begin{DoxyCompactList}\small\item\em Apply \mbox{\hyperlink{classtesseract__environment_1_1Command}{Command}} Helper which does not lock. \end{DoxyCompactList}\item 
@@ -408,11 +408,11 @@ This allows for user defined callbacks for looking up TCP information.
 {\em fn} & User defind callback function for locating TCP information \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a058823f55e7743098bf63595ad02ea63}\label{classtesseract__environment_1_1Environment_a058823f55e7743098bf63595ad02ea63}} 
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_aee9daa1cb9abb2b5539f6ff07dc42c2d}\label{classtesseract__environment_1_1Environment_aee9daa1cb9abb2b5539f6ff07dc42c2d}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!addKinematicsInformation@{addKinematicsInformation}}
 \index{addKinematicsInformation@{addKinematicsInformation}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
 \doxysubsubsection{\texorpdfstring{addKinematicsInformation()}{addKinematicsInformation()}}
-{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Environment\+::add\+Kinematics\+Information (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__scene__graph_1_1KinematicsInformation}{tesseract\+\_\+scene\+\_\+graph\+::\+Kinematics\+Information}} \&}]{kin\+\_\+info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Environment\+::add\+Kinematics\+Information (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__srdf_1_1KinematicsInformation}{tesseract\+\_\+srdf\+::\+Kinematics\+Information}} \&}]{kin\+\_\+info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -1050,11 +1050,11 @@ This get the current find tcp callbacks stored in the environment.
 \begin{DoxyReturn}{Returns}
 A vector of callback functions 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a77ed388347f257b348dbc6228f4595aa}\label{classtesseract__environment_1_1Environment_a77ed388347f257b348dbc6228f4595aa}} 
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a4c2cf7b144f14ce37a5b45b6e08b68af}\label{classtesseract__environment_1_1Environment_a4c2cf7b144f14ce37a5b45b6e08b68af}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getInitCommands@{getInitCommands}}
 \index{getInitCommands@{getInitCommands}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
 \doxysubsubsection{\texorpdfstring{getInitCommands()}{getInitCommands()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} tesseract\+\_\+environment\+::\+Environment\+::get\+Init\+Commands (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&}]{scene\+\_\+graph,  }\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a8f29a2073209f6d445be00acb2f4a13a}{tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::\+Const\+Ptr}} \&}]{srdf\+\_\+model = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesseract__environment_acb95740502ec41d80a94a7631d4b7a3c}{Commands}} tesseract\+\_\+environment\+::\+Environment\+::get\+Init\+Commands (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&}]{scene\+\_\+graph,  }\item[{const \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_a6e579a73e63af4e2d66448cdcc0998b5}{tesseract\+\_\+srdf\+::\+SRDFModel\+::\+Const\+Ptr}} \&}]{srdf\+\_\+model = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{classtesseract__environment_1_1Environment_ad5ad16cf42dcbc40c20851731e2f221d}\label{classtesseract__environment_1_1Environment_ad5ad16cf42dcbc40c20851731e2f221d}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getJoint@{getJoint}}
@@ -1379,12 +1379,12 @@ bool tesseract\+\_\+environment\+::\+Environment\+::init (\begin{DoxyParamCaptio
 {\footnotesize\ttfamily template$<$typename S $>$ \\
 bool tesseract\+\_\+environment\+::\+Environment\+::init (\begin{DoxyParamCaption}\item[{const tesseract\+\_\+common\+::fs\+::path \&}]{urdf\+\_\+path,  }\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1ResourceLocator_a64ddb0339eae8885128e399f1275cf80}{tesseract\+\_\+scene\+\_\+graph\+::\+Resource\+Locator\+::\+Ptr}} \&}]{locator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a24411803baf30936d86938c5504f7ded}\label{classtesseract__environment_1_1Environment_a24411803baf30936d86938c5504f7ded}} 
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_ab87d380bcb15bca013b428c3601699d2}\label{classtesseract__environment_1_1Environment_ab87d380bcb15bca013b428c3601699d2}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!init@{init}}
 \index{init@{init}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
 {\footnotesize\ttfamily template$<$typename S $>$ \\
-bool tesseract\+\_\+environment\+::\+Environment\+::init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&}]{scene\+\_\+graph,  }\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SRDFModel_a8f29a2073209f6d445be00acb2f4a13a}{tesseract\+\_\+scene\+\_\+graph\+::\+SRDFModel\+::\+Const\+Ptr}} \&}]{srdf\+\_\+model = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+bool tesseract\+\_\+environment\+::\+Environment\+::init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&}]{scene\+\_\+graph,  }\item[{const \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_a6e579a73e63af4e2d66448cdcc0998b5}{tesseract\+\_\+srdf\+::\+SRDFModel\+::\+Const\+Ptr}} \&}]{srdf\+\_\+model = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

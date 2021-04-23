@@ -48,6 +48,12 @@ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structtesseract__common_1_1detail__an
 std\+::type\+\_\+index \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner_ae2f684553aeb177661f6bffd586f195f}{get\+Type}} () const final
 \item 
 void $\ast$ \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner_ad3c36c965176c26453aec9029b99544d}{recover}} () final
+\item 
+const void $\ast$ \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner_a240a56bfc7274bf3283995a0ef5af0cc}{recover}} () const final
+\item 
+bool \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner_a3618c1bf3597fd0991dd06ad7e6962a4}{operator==}} (const \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInnerBase}{Any\+Inner\+Base}} \&rhs) const final
+\item 
+bool \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner_a45e0ee79819ae764c1a3e98a020ef968}{operator!=}} (const \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInnerBase}{Any\+Inner\+Base}} \&rhs) const final
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -134,6 +140,17 @@ std\+::type\+\_\+index \mbox{\hyperlink{structtesseract__common_1_1detail__any_1
 
 Implements \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInnerBase_ad8b08b13e55c39b0de92830bdaaab1e4}{tesseract\+\_\+common\+::detail\+\_\+any\+::\+Any\+Inner\+Base}}.
 
+\mbox{\Hypertarget{structtesseract__common_1_1detail__any_1_1AnyInner_a45e0ee79819ae764c1a3e98a020ef968}\label{structtesseract__common_1_1detail__any_1_1AnyInner_a45e0ee79819ae764c1a3e98a020ef968}} 
+\index{tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner}{tesseract\+\_\+common\+::detail\+\_\+any\+::\+Any\+Inner}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInnerBase}{Any\+Inner\+Base}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInnerBase_a66b7bd115dfcdfd889b5438693c4fa39}{tesseract\+\_\+common\+::detail\+\_\+any\+::\+Any\+Inner\+Base}}.
+
 \mbox{\Hypertarget{structtesseract__common_1_1detail__any_1_1AnyInner_a99e83348ac259a757183b79edda21209}\label{structtesseract__common_1_1detail__any_1_1AnyInner_a99e83348ac259a757183b79edda21209}} 
 \index{tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}!operator=@{operator=}}
 \index{operator=@{operator=}!tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}}
@@ -148,10 +165,32 @@ Implements \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInnerBa
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner}{Any\+Inner}}\& \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner}{tesseract\+\_\+common\+::detail\+\_\+any\+::\+Any\+Inner}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner}{Any\+Inner}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+\mbox{\Hypertarget{structtesseract__common_1_1detail__any_1_1AnyInner_a3618c1bf3597fd0991dd06ad7e6962a4}\label{structtesseract__common_1_1detail__any_1_1AnyInner_a3618c1bf3597fd0991dd06ad7e6962a4}} 
+\index{tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner}{tesseract\+\_\+common\+::detail\+\_\+any\+::\+Any\+Inner}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInnerBase}{Any\+Inner\+Base}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInnerBase_aec7cd036820eb28784ed9e9c615f05d1}{tesseract\+\_\+common\+::detail\+\_\+any\+::\+Any\+Inner\+Base}}.
+
+\mbox{\Hypertarget{structtesseract__common_1_1detail__any_1_1AnyInner_a240a56bfc7274bf3283995a0ef5af0cc}\label{structtesseract__common_1_1detail__any_1_1AnyInner_a240a56bfc7274bf3283995a0ef5af0cc}} 
+\index{tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}!recover@{recover}}
+\index{recover@{recover}!tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{recover()}{recover()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const void$\ast$ \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner}{tesseract\+\_\+common\+::detail\+\_\+any\+::\+Any\+Inner}}$<$ T $>$\+::recover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInnerBase_ac939430e015f6b6ea8f58386a29b8c2f}{tesseract\+\_\+common\+::detail\+\_\+any\+::\+Any\+Inner\+Base}}.
+
 \mbox{\Hypertarget{structtesseract__common_1_1detail__any_1_1AnyInner_ad3c36c965176c26453aec9029b99544d}\label{structtesseract__common_1_1detail__any_1_1AnyInner_ad3c36c965176c26453aec9029b99544d}} 
 \index{tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}!recover@{recover}}
 \index{recover@{recover}!tesseract\_common::detail\_any::AnyInner$<$ T $>$@{tesseract\_common::detail\_any::AnyInner$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{recover()}{recover()}}
+\doxysubsubsection{\texorpdfstring{recover()}{recover()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void$\ast$ \mbox{\hyperlink{structtesseract__common_1_1detail__any_1_1AnyInner}{tesseract\+\_\+common\+::detail\+\_\+any\+::\+Any\+Inner}}$<$ T $>$\+::recover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
 
