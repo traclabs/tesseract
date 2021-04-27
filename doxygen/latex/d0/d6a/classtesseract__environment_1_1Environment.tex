@@ -98,6 +98,8 @@ virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9
 \item 
 virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a670d57a48a695feea60020c81320a851}{Env\+State\+::\+Const\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_aa1ebd6bb7468a311e3502f5df6e5eb51}{get\+Current\+State}} () const
 \begin{DoxyCompactList}\small\item\em Get the current state of the environment. \end{DoxyCompactList}\item 
+virtual std\+::chrono\+::high\+\_\+resolution\+\_\+clock\+::duration \mbox{\hyperlink{classtesseract__environment_1_1Environment_afb66ba4e4bdc13dd4438b090b52f1c84}{get\+Current\+State\+Timestamp}} () const
+\begin{DoxyCompactList}\small\item\em Get the current state timestamp. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classtesseract__scene__graph_1_1Link_afad1873344245e2223664b6b7f846f1c}{tesseract\+\_\+scene\+\_\+graph\+::\+Link\+::\+Const\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_a4c82e08472b33079d232bbe4e9bc8c7f}{get\+Link}} (const std\+::string \&name) const
 \begin{DoxyCompactList}\small\item\em Get a link in the environment. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a705d1f0a066833444550aa0c7f6d16b9}{tesseract\+\_\+scene\+\_\+graph\+::\+Joint\+::\+Const\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_ad5ad16cf42dcbc40c20851731e2f221d}{get\+Joint}} (const std\+::string \&name) const
@@ -217,6 +219,8 @@ int \mbox{\hyperlink{classtesseract__environment_1_1Environment_ad8893d73b2310f6
 \mbox{\hyperlink{classtesseract__environment_1_1ManipulatorManager_a28dfb54dadc0ea11d24bbfd80f7ed2b1}{Manipulator\+Manager\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_ac28f2cf0112c1677b122bdb08d83eae8}{manipulator\+\_\+manager\+\_\+}}
 \item 
 \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_ab0bc53a4051565665903ad563c22ec56}{current\+\_\+state\+\_\+}}
+\item 
+std\+::chrono\+::high\+\_\+resolution\+\_\+clock\+::duration \mbox{\hyperlink{classtesseract__environment_1_1Environment_a7c4176faf5fd8a4ed1dcacdf1b322a99}{current\+\_\+state\+\_\+timestamp\+\_\+}}
 \item 
 \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_aa3ff331ff46017f494dfeccf22ca80b6}{State\+Solver\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_a4d990a83054b1f65658e968143be2780}{state\+\_\+solver\+\_\+}}
 \item 
@@ -1011,6 +1015,16 @@ A vector of joint values
 
 Get the current state of the environment. 
 
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_afb66ba4e4bdc13dd4438b090b52f1c84}\label{classtesseract__environment_1_1Environment_afb66ba4e4bdc13dd4438b090b52f1c84}} 
+\index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getCurrentStateTimestamp@{getCurrentStateTimestamp}}
+\index{getCurrentStateTimestamp@{getCurrentStateTimestamp}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
+\doxysubsubsection{\texorpdfstring{getCurrentStateTimestamp()}{getCurrentStateTimestamp()}}
+{\footnotesize\ttfamily std\+::chrono\+::high\+\_\+resolution\+\_\+clock\+::duration tesseract\+\_\+environment\+::\+Environment\+::get\+Current\+State\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the current state timestamp. 
+
 \mbox{\Hypertarget{classtesseract__environment_1_1Environment_addcd96675266fb00c6b8e861e1f2f5e8}\label{classtesseract__environment_1_1Environment_addcd96675266fb00c6b8e861e1f2f5e8}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getDiscreteContactManager@{getDiscreteContactManager}}
 \index{getDiscreteContactManager@{getDiscreteContactManager}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
@@ -1790,7 +1804,13 @@ Name of active continuous contact manager \mbox{\Hypertarget{classtesseract__env
 \doxysubsubsection{\texorpdfstring{current\_state\_}{current\_state\_}}
 {\footnotesize\ttfamily \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} tesseract\+\_\+environment\+::\+Environment\+::current\+\_\+state\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
 
-Current state of the environment \mbox{\Hypertarget{classtesseract__environment_1_1Environment_a6bbe7dd2c5b39f31179628a68fc2c91f}\label{classtesseract__environment_1_1Environment_a6bbe7dd2c5b39f31179628a68fc2c91f}} 
+Current state of the environment \mbox{\Hypertarget{classtesseract__environment_1_1Environment_a7c4176faf5fd8a4ed1dcacdf1b322a99}\label{classtesseract__environment_1_1Environment_a7c4176faf5fd8a4ed1dcacdf1b322a99}} 
+\index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!current\_state\_timestamp\_@{current\_state\_timestamp\_}}
+\index{current\_state\_timestamp\_@{current\_state\_timestamp\_}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
+\doxysubsubsection{\texorpdfstring{current\_state\_timestamp\_}{current\_state\_timestamp\_}}
+{\footnotesize\ttfamily std\+::chrono\+::high\+\_\+resolution\+\_\+clock\+::duration tesseract\+\_\+environment\+::\+Environment\+::current\+\_\+state\+\_\+timestamp\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Current state timestamp \mbox{\Hypertarget{classtesseract__environment_1_1Environment_a6bbe7dd2c5b39f31179628a68fc2c91f}\label{classtesseract__environment_1_1Environment_a6bbe7dd2c5b39f31179628a68fc2c91f}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!discrete\_factory\_@{discrete\_factory\_}}
 \index{discrete\_factory\_@{discrete\_factory\_}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
 \doxysubsubsection{\texorpdfstring{discrete\_factory\_}{discrete\_factory\_}}
