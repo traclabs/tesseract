@@ -120,7 +120,7 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../d8/def/classtesseract__common_1_1Resource.html#a55b31c2dfa0cf217b976b2e7f2e03a4f">  113</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../d8/def/classtesseract__common_1_1Resource.html#acdba916fa227bef4391c469581844dc6">Resource::Ptr</a> <a class="code" href="../../d8/def/classtesseract__common_1_1Resource.html#a55b31c2dfa0cf217b976b2e7f2e03a4f">locateSubResource</a>(<span class="keyword">const</span> std::string&amp; relative_path)</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="../../de/d3c/macros_8h.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(relative_path);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="../../d7/d02/VHACD_8cpp.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>(relative_path);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
@@ -164,6 +164,7 @@ $(function() {
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}  <span class="comment">// namespace tesseract_common</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_COMMON_RESOURCE_H</span></div>
+<div class="ttc" id="aVHACD_8cpp_html_a86d500a34c624c2cae56bc25a31b12f3"><div class="ttname"><a href="../../d7/d02/VHACD_8cpp.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a></div><div class="ttdeci">#define UNUSED(x)</div><div class="ttdef"><b>Definition:</b> VHACD.cpp:58</div></div>
 <div class="ttc" id="aclasstesseract__common_1_1BytesResource_html"><div class="ttname"><a href="../../d5/dca/classtesseract__common_1_1BytesResource.html">tesseract_common::BytesResource</a></div><div class="ttdef"><b>Definition:</b> resource.h:121</div></div>
 <div class="ttc" id="aclasstesseract__common_1_1BytesResource_html_a0ece459c4b541a3062d9442a3cac9236"><div class="ttname"><a href="../../d5/dca/classtesseract__common_1_1BytesResource.html#a0ece459c4b541a3062d9442a3cac9236">tesseract_common::BytesResource::bytes_</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; bytes_</div><div class="ttdef"><b>Definition:</b> resource.h:154</div></div>
 <div class="ttc" id="aclasstesseract__common_1_1BytesResource_html_a2619956ad4eb3c763fe244ec35338791"><div class="ttname"><a href="../../d5/dca/classtesseract__common_1_1BytesResource.html#a2619956ad4eb3c763fe244ec35338791">tesseract_common::BytesResource::isFile</a></div><div class="ttdeci">bool isFile() override</div><div class="ttdoc">Returns true if the located resource is a local file.</div><div class="ttdef"><b>Definition:</b> resource.h:140</div></div>
@@ -195,14 +196,13 @@ $(function() {
 <div class="ttc" id="aclasstesseract__common_1_1Resource_html_aebfe6f0f7a51428250ae35f35fa37aa4"><div class="ttname"><a href="../../d8/def/classtesseract__common_1_1Resource.html#aebfe6f0f7a51428250ae35f35fa37aa4">tesseract_common::Resource::~Resource</a></div><div class="ttdeci">virtual ~Resource()=default</div></div>
 <div class="ttc" id="aclasstesseract__common_1_1Resource_html_afb6d5142a3f083c86bb389128ecec83a"><div class="ttname"><a href="../../d8/def/classtesseract__common_1_1Resource.html#afb6d5142a3f083c86bb389128ecec83a">tesseract_common::Resource::getUrl</a></div><div class="ttdeci">virtual std::string getUrl()=0</div><div class="ttdoc">Get the original URL used to locate the file.</div></div>
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="../../de/d3c/macros_8h.html">macros.h</a></div><div class="ttdoc">Common Tesseract Macros.</div></div>
-<div class="ttc" id="amacros_8h_html_a86d500a34c624c2cae56bc25a31b12f3"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a></div><div class="ttdeci">#define UNUSED(x)</div><div class="ttdef"><b>Definition:</b> macros.h:69</div></div>
 <div class="ttc" id="amacros_8h_html_a8cc0e3c6a3382c5c0b19eb9e676fc2db"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div><div class="ttdeci">#define TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</div><div class="ttdef"><b>Definition:</b> macros.h:65</div></div>
 <div class="ttc" id="anamespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP_html"><div class="ttname"><a href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div><div class="ttdef"><b>Definition:</b> create_convex_hull.cpp:35</div></div>
 <div class="ttc" id="anamespacetesseract__common_html"><div class="ttname"><a href="../../df/da9/namespacetesseract__common.html">tesseract_common</a></div><div class="ttdef"><b>Definition:</b> any.h:57</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 9 2021 21:02:38 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jun 10 2021 19:17:39 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

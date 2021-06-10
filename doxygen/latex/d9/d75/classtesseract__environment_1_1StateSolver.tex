@@ -40,21 +40,21 @@ virtual bool \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a3e38ca
 \item 
 virtual void \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a8fb58459075f088b79954a5677a8f09d}{set\+State}} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&joints)=0
 \begin{DoxyCompactList}\small\item\em Set the current state of the solver. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a631569cab37ef10fd8f7645e9461d259}{set\+State}} (const std\+::vector$<$ std\+::string $>$ \&joint\+\_\+names, const std\+::vector$<$ double $>$ \&joint\+\_\+values)=0
+virtual void \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a631569cab37ef10fd8f7645e9461d259}{set\+State}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&joint\+\_\+names, const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ double $>$ \&joint\+\_\+values)=0
 \item 
-virtual void \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_ab0c42c90d51e0e0e736a7f4b6635d439}{set\+State}} (const std\+::vector$<$ std\+::string $>$ \&joint\+\_\+names, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+values)=0
+virtual void \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_ab0c42c90d51e0e0e736a7f4b6635d439}{set\+State}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&joint\+\_\+names, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+values)=0
 \item 
 virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a4180351b8bfd2597b4660d0fce5cd9dc}{get\+State}} (const std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \&joints) const =0
 \begin{DoxyCompactList}\small\item\em Get the state of the environment for a given set or subset of joint values. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_ae8bb022f52faa7a8012fe817ce39d352}{get\+State}} (const std\+::vector$<$ std\+::string $>$ \&joint\+\_\+names, const std\+::vector$<$ double $>$ \&joint\+\_\+values) const =0
+virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_ae8bb022f52faa7a8012fe817ce39d352}{get\+State}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&joint\+\_\+names, const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ double $>$ \&joint\+\_\+values) const =0
 \item 
-virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a4d20189ccce383288a2f30132283dd74}{get\+State}} (const std\+::vector$<$ std\+::string $>$ \&joint\+\_\+names, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+values) const =0
+virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a4d20189ccce383288a2f30132283dd74}{get\+State}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&joint\+\_\+names, const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&joint\+\_\+values) const =0
 \item 
 virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a670d57a48a695feea60020c81320a851}{Env\+State\+::\+Const\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a403f2c5b7b8fd3c85a2f04719ce64eed}{get\+Current\+State}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the current state of the environment. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a0c35ca2883218ffe84123c121a907c36}{get\+Random\+State}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the random state of the environment. \end{DoxyCompactList}\item 
-virtual const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a7b17029c568853beef340bed4dc78f0c}{get\+Joint\+Names}} () const =0
+virtual const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_a7b17029c568853beef340bed4dc78f0c}{get\+Joint\+Names}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the vector of joint names which align with the limits. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \& \mbox{\hyperlink{classtesseract__environment_1_1StateSolver_ab3a86d112f60f8d5ccb8f299429c9128}{get\+Limits}} () const =0
 \begin{DoxyCompactList}\small\item\em Getter for kinematic limits. \end{DoxyCompactList}\item 
@@ -153,7 +153,7 @@ Implemented in \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a
 \index{tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}!getJointNames@{getJointNames}}
 \index{getJointNames@{getJointNames}!tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}}
 \doxysubsubsection{\texorpdfstring{getJointNames()}{getJointNames()}}
-{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::string$>$\& tesseract\+\_\+environment\+::\+State\+Solver\+::get\+Joint\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$std\+::string$>$\& tesseract\+\_\+environment\+::\+State\+Solver\+::get\+Joint\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -228,7 +228,7 @@ Implemented in \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a
 \index{tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}!getState@{getState}}
 \index{getState@{getState}!tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}}
 \doxysubsubsection{\texorpdfstring{getState()}{getState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} tesseract\+\_\+environment\+::\+State\+Solver\+::get\+State (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{joint\+\_\+names,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{joint\+\_\+values }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} tesseract\+\_\+environment\+::\+State\+Solver\+::get\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{joint\+\_\+names,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{joint\+\_\+values }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -238,7 +238,7 @@ Implemented in \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a
 \index{tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}!getState@{getState}}
 \index{getState@{getState}!tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}}
 \doxysubsubsection{\texorpdfstring{getState()}{getState()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} tesseract\+\_\+environment\+::\+State\+Solver\+::get\+State (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{joint\+\_\+names,  }\item[{const std\+::vector$<$ double $>$ \&}]{joint\+\_\+values }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structtesseract__environment_1_1EnvState_a6a9f30b8418e9cb943125008c62b1d39}{Env\+State\+::\+Ptr}} tesseract\+\_\+environment\+::\+State\+Solver\+::get\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{joint\+\_\+names,  }\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ double $>$ \&}]{joint\+\_\+values }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -303,7 +303,7 @@ Implemented in \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a
 \index{tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}!setState@{setState}}
 \index{setState@{setState}!tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}}
 \doxysubsubsection{\texorpdfstring{setState()}{setState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily virtual void tesseract\+\_\+environment\+::\+State\+Solver\+::set\+State (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{joint\+\_\+names,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{joint\+\_\+values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void tesseract\+\_\+environment\+::\+State\+Solver\+::set\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{joint\+\_\+names,  }\item[{const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&}]{joint\+\_\+values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -313,7 +313,7 @@ Implemented in \mbox{\hyperlink{classtesseract__environment_1_1OFKTStateSolver_a
 \index{tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}!setState@{setState}}
 \index{setState@{setState}!tesseract\_environment::StateSolver@{tesseract\_environment::StateSolver}}
 \doxysubsubsection{\texorpdfstring{setState()}{setState()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily virtual void tesseract\+\_\+environment\+::\+State\+Solver\+::set\+State (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{joint\+\_\+names,  }\item[{const std\+::vector$<$ double $>$ \&}]{joint\+\_\+values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void tesseract\+\_\+environment\+::\+State\+Solver\+::set\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{joint\+\_\+names,  }\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ double $>$ \&}]{joint\+\_\+values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 

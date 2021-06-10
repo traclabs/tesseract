@@ -61,11 +61,11 @@ bool \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_a13b38c4dcb
 \begin{DoxyCompactList}\small\item\em Calculates joint solutions given a pose for a specific link. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_adbd83f0ab4d2fd4128604dfe1d980fad}{check\+Joints}} (const Eigen\+::\+Ref$<$ const Eigen\+::\+Vector\+Xd $>$ \&vec) const override
 \begin{DoxyCompactList}\small\item\em Check for consistency in \# and limits of joints. \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_a5bcce2eb2ee87aabfaf0fdaa6f7e5d52}{get\+Joint\+Names}} () const override
+const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_a5bcce2eb2ee87aabfaf0fdaa6f7e5d52}{get\+Joint\+Names}} () const override
 \begin{DoxyCompactList}\small\item\em Get list of joint names for kinematic object. \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_a7169474007f03663fd1647929d4e03e5}{get\+Link\+Names}} () const override
+const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_a7169474007f03663fd1647929d4e03e5}{get\+Link\+Names}} () const override
 \begin{DoxyCompactList}\small\item\em Get list of all link names (with and without geometry) for kinematic object. \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_aa6eaaf228736bcc9dca7042837e66575}{get\+Active\+Link\+Names}} () const override
+const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_aa6eaaf228736bcc9dca7042837e66575}{get\+Active\+Link\+Names}} () const override
 \begin{DoxyCompactList}\small\item\em Get list of active link names (with and without geometry) for kinematic object. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_a76176533370fa3ab74b9272b1bd65d07}{get\+Limits}} () const override
 \begin{DoxyCompactList}\small\item\em Getter for kinematic limits (joint, velocity, acceleration, etc.) \end{DoxyCompactList}\item 
@@ -85,7 +85,7 @@ const std\+::string \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinC
 \item 
 bool \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_ae6d1271f2e22e043fc9929ae0599168b}{init}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \&scene\+\_\+graph, const std\+::string \&base\+\_\+link, const std\+::string \&tip\+\_\+link, const std\+::string \&name)
 \begin{DoxyCompactList}\small\item\em Initializes KDL Forward Kinematics Creates KDL\+::\+Chain from tesseract scene graph. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_a3cb8c27e68c46886a54e81051747dc5b}{init}} (\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} scene\+\_\+graph, const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \&chains, std\+::string name)
+bool \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_a3cb8c27e68c46886a54e81051747dc5b}{init}} (\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} scene\+\_\+graph, const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \&chains, std\+::string name)
 \begin{DoxyCompactList}\small\item\em Initializes Inverse Kinematics as chain Creates a inverse kinematic chain object from sequential chains. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_ad3bea2e875796264d592ef92e0173f8d}{check\+Initialized}} () const
 \begin{DoxyCompactList}\small\item\em Checks if kinematics has been initialized. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -276,7 +276,7 @@ Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a451
 \index{tesseract\_kinematics::KDLInvKinChainNR@{tesseract\_kinematics::KDLInvKinChainNR}!getActiveLinkNames@{getActiveLinkNames}}
 \index{getActiveLinkNames@{getActiveLinkNames}!tesseract\_kinematics::KDLInvKinChainNR@{tesseract\_kinematics::KDLInvKinChainNR}}
 \doxysubsubsection{\texorpdfstring{getActiveLinkNames()}{getActiveLinkNames()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& tesseract\+\_\+kinematics\+::\+KDLInv\+Kin\+Chain\+NR\+::get\+Active\+Link\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& tesseract\+\_\+kinematics\+::\+KDLInv\+Kin\+Chain\+NR\+::get\+Active\+Link\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -309,7 +309,7 @@ Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_ae31
 \index{tesseract\_kinematics::KDLInvKinChainNR@{tesseract\_kinematics::KDLInvKinChainNR}!getJointNames@{getJointNames}}
 \index{getJointNames@{getJointNames}!tesseract\_kinematics::KDLInvKinChainNR@{tesseract\_kinematics::KDLInvKinChainNR}}
 \doxysubsubsection{\texorpdfstring{getJointNames()}{getJointNames()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& tesseract\+\_\+kinematics\+::\+KDLInv\+Kin\+Chain\+NR\+::get\+Joint\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& tesseract\+\_\+kinematics\+::\+KDLInv\+Kin\+Chain\+NR\+::get\+Joint\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -343,7 +343,7 @@ Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a659
 \index{tesseract\_kinematics::KDLInvKinChainNR@{tesseract\_kinematics::KDLInvKinChainNR}!getLinkNames@{getLinkNames}}
 \index{getLinkNames@{getLinkNames}!tesseract\_kinematics::KDLInvKinChainNR@{tesseract\_kinematics::KDLInvKinChainNR}}
 \doxysubsubsection{\texorpdfstring{getLinkNames()}{getLinkNames()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& tesseract\+\_\+kinematics\+::\+KDLInv\+Kin\+Chain\+NR\+::get\+Link\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& tesseract\+\_\+kinematics\+::\+KDLInv\+Kin\+Chain\+NR\+::get\+Link\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -445,7 +445,7 @@ True if \mbox{\hyperlink{classtesseract__kinematics_1_1KDLInvKinChainNR_ae6d1271
 \index{tesseract\_kinematics::KDLInvKinChainNR@{tesseract\_kinematics::KDLInvKinChainNR}!init@{init}}
 \index{init@{init}!tesseract\_kinematics::KDLInvKinChainNR@{tesseract\_kinematics::KDLInvKinChainNR}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily bool tesseract\+\_\+kinematics\+::\+KDLInv\+Kin\+Chain\+NR\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}}}]{scene\+\_\+graph,  }\item[{const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \&}]{chains,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool tesseract\+\_\+kinematics\+::\+KDLInv\+Kin\+Chain\+NR\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}}}]{scene\+\_\+graph,  }\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \&}]{chains,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
 
 
 

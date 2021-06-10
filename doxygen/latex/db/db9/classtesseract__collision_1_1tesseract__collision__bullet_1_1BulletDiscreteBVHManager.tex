@@ -69,15 +69,15 @@ bool \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_
 \begin{DoxyCompactList}\small\item\em Disable an object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a3386473144e740823ee8ac53d9d57cec}{set\+Collision\+Objects\+Transform}} (const std\+::string \&\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a7a870c592fedb508bdb6ded73803527a}{name}}, const Eigen\+::\+Isometry3d \&pose) override
 \begin{DoxyCompactList}\small\item\em Set a single collision object\textquotesingle{}s tansforms. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_ae9efdb16ce0bf46539d225e4aa80e330}{set\+Collision\+Objects\+Transform}} (const std\+::vector$<$ std\+::string $>$ \&names, const \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{tesseract\+\_\+common\+::\+Vector\+Isometry3d}} \&poses) override
+void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_ae9efdb16ce0bf46539d225e4aa80e330}{set\+Collision\+Objects\+Transform}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&names, const \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{tesseract\+\_\+common\+::\+Vector\+Isometry3d}} \&poses) override
 \begin{DoxyCompactList}\small\item\em Set a series of collision object\textquotesingle{}s tranforms. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a2b72e38f207e3a66bde2dd604feb385c}{set\+Collision\+Objects\+Transform}} (const \mbox{\hyperlink{namespacetesseract__common_a67bde3cb7bb235f0f61c370ef8bc74d8}{tesseract\+\_\+common\+::\+Transform\+Map}} \&transforms) override
 \begin{DoxyCompactList}\small\item\em Set a series of collision object\textquotesingle{}s tranforms. \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_afa498231aa0ed394b8004b64c299c1c4}{get\+Collision\+Objects}} () const override
+const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_afa498231aa0ed394b8004b64c299c1c4}{get\+Collision\+Objects}} () const override
 \begin{DoxyCompactList}\small\item\em Get all collision objects. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a4451c739d9b4d76a09935ad3718c9e56}{set\+Active\+Collision\+Objects}} (const std\+::vector$<$ std\+::string $>$ \&names) override
+void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a4451c739d9b4d76a09935ad3718c9e56}{set\+Active\+Collision\+Objects}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&names) override
 \begin{DoxyCompactList}\small\item\em Set which collision objects can move. \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_aa4b46f30a5acc3c4979712319132117c}{get\+Active\+Collision\+Objects}} () const override
+const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_aa4b46f30a5acc3c4979712319132117c}{get\+Active\+Collision\+Objects}} () const override
 \begin{DoxyCompactList}\small\item\em Get which collision objects can move. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a04650be9dbcc887b2571d3153840ecee}{set\+Collision\+Margin\+Data}} (\mbox{\hyperlink{namespacetesseract__collision_a0717a3c53d08d510257f631ea96cb560}{Collision\+Margin\+Data}} collision\+\_\+margin\+\_\+data, \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1}{Collision\+Margin\+Override\+Type}} override\+\_\+type=Collision\+Margin\+Override\+Type\+::\+REPLACE) override
 \begin{DoxyCompactList}\small\item\em Set the contact distance thresholds for which collision should be considered on a per pair basis. \end{DoxyCompactList}\item 
@@ -110,9 +110,9 @@ void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a789475f7e9cb58298f286d5f7cb31fa2}{active\+\_\+}}
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a789475f7e9cb58298f286d5f7cb31fa2}{active\+\_\+}}
 \begin{DoxyCompactList}\small\item\em A list of the active collision objects. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a075a9a4be2cd4e4a995213016ae29d13}{collision\+\_\+objects\+\_\+}}
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_a075a9a4be2cd4e4a995213016ae29d13}{collision\+\_\+objects\+\_\+}}
 \begin{DoxyCompactList}\small\item\em A list of the collision objects. \end{DoxyCompactList}\item 
 std\+::unique\+\_\+ptr$<$ bt\+Collision\+Dispatcher $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteBVHManager_abb2497b4e12d123111e764a2dbf6bfff}{dispatcher\+\_\+}}
 \begin{DoxyCompactList}\small\item\em The bullet collision dispatcher used for getting object to object collison algorithm. \end{DoxyCompactList}\item 
@@ -302,7 +302,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}!getActiveCollisionObjects@{getActiveCollisionObjects}}
 \index{getActiveCollisionObjects@{getActiveCollisionObjects}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}}
 \doxysubsubsection{\texorpdfstring{getActiveCollisionObjects()}{getActiveCollisionObjects()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::get\+Active\+Collision\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::get\+Active\+Collision\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -380,7 +380,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}!getCollisionObjects@{getCollisionObjects}}
 \index{getCollisionObjects@{getCollisionObjects}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}}
 \doxysubsubsection{\texorpdfstring{getCollisionObjects()}{getCollisionObjects()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::get\+Collision\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::get\+Collision\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -483,7 +483,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}!setActiveCollisionObjects@{setActiveCollisionObjects}}
 \index{setActiveCollisionObjects@{setActiveCollisionObjects}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}}
 \doxysubsubsection{\texorpdfstring{setActiveCollisionObjects()}{setActiveCollisionObjects()}}
-{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::set\+Active\+Collision\+Objects (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::set\+Active\+Collision\+Objects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -544,7 +544,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}!setCollisionObjectsTransform@{setCollisionObjectsTransform}}
 \index{setCollisionObjectsTransform@{setCollisionObjectsTransform}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}}
 \doxysubsubsection{\texorpdfstring{setCollisionObjectsTransform()}{setCollisionObjectsTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::set\+Collision\+Objects\+Transform (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{names,  }\item[{const \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{tesseract\+\_\+common\+::\+Vector\+Isometry3d}} \&}]{poses }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::set\+Collision\+Objects\+Transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{names,  }\item[{const \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{tesseract\+\_\+common\+::\+Vector\+Isometry3d}} \&}]{poses }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -645,7 +645,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}!active\_@{active\_}}
 \index{active\_@{active\_}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}}
 \doxysubsubsection{\texorpdfstring{active\_}{active\_}}
-{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::active\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$std\+::string$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::active\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -685,7 +685,7 @@ The bullet collision configuration.
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}!collision\_objects\_@{collision\_objects\_}}
 \index{collision\_objects\_@{collision\_objects\_}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteBVHManager}}
 \doxysubsubsection{\texorpdfstring{collision\_objects\_}{collision\_objects\_}}
-{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::collision\+\_\+objects\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$std\+::string$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+BVHManager\+::collision\+\_\+objects\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

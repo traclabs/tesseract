@@ -69,15 +69,15 @@ bool \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_
 \begin{DoxyCompactList}\small\item\em Disable an object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a27ae8ba17ca1d5880597690ba706c58c}{set\+Collision\+Objects\+Transform}} (const std\+::string \&\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a58a58771e659608c46c86199bd61e109}{name}}, const Eigen\+::\+Isometry3d \&pose) override
 \begin{DoxyCompactList}\small\item\em Set a single collision object\textquotesingle{}s tansforms. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a5fd998b13316414d29bb330ecbe44f72}{set\+Collision\+Objects\+Transform}} (const std\+::vector$<$ std\+::string $>$ \&names, const \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{tesseract\+\_\+common\+::\+Vector\+Isometry3d}} \&poses) override
+void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a5fd998b13316414d29bb330ecbe44f72}{set\+Collision\+Objects\+Transform}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&names, const \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{tesseract\+\_\+common\+::\+Vector\+Isometry3d}} \&poses) override
 \begin{DoxyCompactList}\small\item\em Set a series of collision object\textquotesingle{}s tranforms. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_aa3541744a0263d986405dbff5401faa9}{set\+Collision\+Objects\+Transform}} (const \mbox{\hyperlink{namespacetesseract__common_a67bde3cb7bb235f0f61c370ef8bc74d8}{tesseract\+\_\+common\+::\+Transform\+Map}} \&transforms) override
 \begin{DoxyCompactList}\small\item\em Set a series of collision object\textquotesingle{}s tranforms. \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_acf64a837909f054137c09778ed58ebcb}{get\+Collision\+Objects}} () const override
+const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_acf64a837909f054137c09778ed58ebcb}{get\+Collision\+Objects}} () const override
 \begin{DoxyCompactList}\small\item\em Get all collision objects. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a92b0d6fb72b6e773f895304562b578d2}{set\+Active\+Collision\+Objects}} (const std\+::vector$<$ std\+::string $>$ \&names) override
+void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a92b0d6fb72b6e773f895304562b578d2}{set\+Active\+Collision\+Objects}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&names) override
 \begin{DoxyCompactList}\small\item\em Set which collision objects can move. \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_ac76466d1fe8c87fffe68b6a30d773e7b}{get\+Active\+Collision\+Objects}} () const override
+const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_ac76466d1fe8c87fffe68b6a30d773e7b}{get\+Active\+Collision\+Objects}} () const override
 \begin{DoxyCompactList}\small\item\em Get which collision objects can move. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a9a7e5ed13f27f40fc7c88767894b1e8b}{set\+Collision\+Margin\+Data}} (\mbox{\hyperlink{namespacetesseract__collision_a0717a3c53d08d510257f631ea96cb560}{Collision\+Margin\+Data}} collision\+\_\+margin\+\_\+data, \mbox{\hyperlink{namespacetesseract__common_af06d85d024a36d63b58a6031556af8a1}{Collision\+Margin\+Override\+Type}} override\+\_\+type=Collision\+Margin\+Override\+Type\+::\+REPLACE) override
 \begin{DoxyCompactList}\small\item\em Set the contact distance thresholds for which collision should be considered on a per pair basis. \end{DoxyCompactList}\item 
@@ -110,9 +110,9 @@ void \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_ac6e9eb29a9cdbd095e81a4027693eb6c}{active\+\_\+}}
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_ac6e9eb29a9cdbd095e81a4027693eb6c}{active\+\_\+}}
 \begin{DoxyCompactList}\small\item\em A list of the active collision objects. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_af485b5df6af384ff818b135d1e24e8ea}{collision\+\_\+objects\+\_\+}}
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_af485b5df6af384ff818b135d1e24e8ea}{collision\+\_\+objects\+\_\+}}
 \begin{DoxyCompactList}\small\item\em A list of the collision objects. \end{DoxyCompactList}\item 
 std\+::unique\+\_\+ptr$<$ bt\+Collision\+Dispatcher $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_afaaeb926274ef29e80af015604bc26db}{dispatcher\+\_\+}}
 \begin{DoxyCompactList}\small\item\em The bullet collision dispatcher used for getting object to object collison algorithm. \end{DoxyCompactList}\item 
@@ -122,7 +122,7 @@ bt\+Dispatcher\+Info \mbox{\hyperlink{classtesseract__collision_1_1tesseract__co
 \begin{DoxyCompactList}\small\item\em The bullet collision configuration. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacetesseract__collision_1_1tesseract__collision__bullet_a6bdaed18a18bda60c2af7da1a2202bef}{Link2\+Cow}} \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_aef7defa102c8c8dd61ef92d19cd97557}{link2cow\+\_\+}}
 \begin{DoxyCompactList}\small\item\em A map of all (static and active) collision objects being managed. \end{DoxyCompactList}\item 
-std\+::vector$<$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}} $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a11243497edd4e91c3ddde90073996452}{cows\+\_\+}}
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}} $>$ \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a11243497edd4e91c3ddde90073996452}{cows\+\_\+}}
 \begin{DoxyCompactList}\small\item\em A vector of collision objects (active followed by static) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__collision_1_1ContactTestData}{Contact\+Test\+Data}} \mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1BulletDiscreteSimpleManager_a703e9a9848bc914fcf14c5862f66ef12}{contact\+\_\+test\+\_\+data\+\_\+}}
 \begin{DoxyCompactList}\small\item\em This is used when contact\+Test is called. It is also added as a user point to the collsion objects so it can be used to exit collision checking for compound shapes. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -300,7 +300,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!getActiveCollisionObjects@{getActiveCollisionObjects}}
 \index{getActiveCollisionObjects@{getActiveCollisionObjects}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{getActiveCollisionObjects()}{getActiveCollisionObjects()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::get\+Active\+Collision\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::get\+Active\+Collision\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -378,7 +378,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!getCollisionObjects@{getCollisionObjects}}
 \index{getCollisionObjects@{getCollisionObjects}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{getCollisionObjects()}{getCollisionObjects()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::get\+Collision\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \& tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::get\+Collision\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -481,7 +481,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!setActiveCollisionObjects@{setActiveCollisionObjects}}
 \index{setActiveCollisionObjects@{setActiveCollisionObjects}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{setActiveCollisionObjects()}{setActiveCollisionObjects()}}
-{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::set\+Active\+Collision\+Objects (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::set\+Active\+Collision\+Objects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -542,7 +542,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!setCollisionObjectsTransform@{setCollisionObjectsTransform}}
 \index{setCollisionObjectsTransform@{setCollisionObjectsTransform}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{setCollisionObjectsTransform()}{setCollisionObjectsTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::set\+Collision\+Objects\+Transform (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{names,  }\item[{const \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{tesseract\+\_\+common\+::\+Vector\+Isometry3d}} \&}]{poses }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::set\+Collision\+Objects\+Transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{names,  }\item[{const \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{tesseract\+\_\+common\+::\+Vector\+Isometry3d}} \&}]{poses }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -643,7 +643,7 @@ Implements \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager_
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!active\_@{active\_}}
 \index{active\_@{active\_}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{active\_}{active\_}}
-{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::active\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$std\+::string$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::active\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -663,7 +663,7 @@ The bullet collision configuration.
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!collision\_objects\_@{collision\_objects\_}}
 \index{collision\_objects\_@{collision\_objects\_}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{collision\_objects\_}{collision\_objects\_}}
-{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::collision\+\_\+objects\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$std\+::string$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::collision\+\_\+objects\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -683,7 +683,7 @@ This is used when contact\+Test is called. It is also added as a user point to t
 \index{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}!cows\_@{cows\_}}
 \index{cows\_@{cows\_}!tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager@{tesseract\_collision::tesseract\_collision\_bullet::BulletDiscreteSimpleManager}}
 \doxysubsubsection{\texorpdfstring{cows\_}{cows\_}}
-{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}}$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::cows\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$\mbox{\hyperlink{classtesseract__collision_1_1tesseract__collision__bullet_1_1CollisionObjectWrapper_a3d926f2c776673c5e9719e010936600a}{COW\+::\+Ptr}}$>$ tesseract\+\_\+collision\+::tesseract\+\_\+collision\+\_\+bullet\+::\+Bullet\+Discrete\+Simple\+Manager\+::cows\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

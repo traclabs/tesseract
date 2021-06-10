@@ -98,10 +98,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9405530feb49f12f56c3175e7150c66f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a9405530feb49f12f56c3175e7150c66f">GetSolution</a> (T *solution, const T *freevalues) const =0</td></tr>
 <tr class="memdesc:a9405530feb49f12f56c3175e7150c66f"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets a concrete solution  <a href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a9405530feb49f12f56c3175e7150c66f">More...</a><br /></td></tr>
 <tr class="separator:a9405530feb49f12f56c3175e7150c66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8afdc564a90aeed598d276d4f1bd3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a4e8afdc564a90aeed598d276d4f1bd3f">GetSolution</a> (std::vector&lt; T &gt; &amp;solution, const std::vector&lt; T &gt; &amp;freevalues) const</td></tr>
+<tr class="memitem:a4e8afdc564a90aeed598d276d4f1bd3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a4e8afdc564a90aeed598d276d4f1bd3f">GetSolution</a> (<a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; T &gt; &amp;solution, const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; T &gt; &amp;freevalues) const</td></tr>
 <tr class="memdesc:a4e8afdc564a90aeed598d276d4f1bd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::vector version of <a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a9405530feb49f12f56c3175e7150c66f">GetSolution</a>  <a href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a4e8afdc564a90aeed598d276d4f1bd3f">More...</a><br /></td></tr>
 <tr class="separator:a4e8afdc564a90aeed598d276d4f1bd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2693ede66be937b7c4c1c949284282ca"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a2693ede66be937b7c4c1c949284282ca">GetFree</a> () const =0</td></tr>
+<tr class="memitem:a2693ede66be937b7c4c1c949284282ca"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a2693ede66be937b7c4c1c949284282ca">GetFree</a> () const =0</td></tr>
 <tr class="memdesc:a2693ede66be937b7c4c1c949284282ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the indices of the configuration space that have to be preset before a full solution can be returned.  <a href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a2693ede66be937b7c4c1c949284282ca">More...</a><br /></td></tr>
 <tr class="separator:a2693ede66be937b7c4c1c949284282ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94ac1496405343f4c7ad2a3c07b375cc"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html#a94ac1496405343f4c7ad2a3c07b375cc">GetDOF</a> () const =0</td></tr>
@@ -186,7 +186,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const std::vector&lt;int&gt;&amp; <a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html">ikfast::IkSolutionBase</a>&lt; T &gt;::GetFree </td>
+          <td class="memname">virtual const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt;int&gt;&amp; <a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html">ikfast::IkSolutionBase</a>&lt; T &gt;::GetFree </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -220,13 +220,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">virtual void <a class="el" href="../../de/d5a/classikfast_1_1IkSolutionBase.html">ikfast::IkSolutionBase</a>&lt; T &gt;::GetSolution </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>solution</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>freevalues</em>&#160;</td>
         </tr>
         <tr>
@@ -303,7 +303,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 9 2021 21:02:40 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jun 10 2021 19:17:41 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
