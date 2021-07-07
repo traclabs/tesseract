@@ -77,6 +77,8 @@ const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_
 \begin{DoxyCompactList}\small\item\em Getter for kinematic limits (joint, velocity, acceleration, etc.) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinTree_a59238d5e09ca1f83b2cbe9e129711570}{set\+Limits}} (\mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} limits) override
 \begin{DoxyCompactList}\small\item\em Setter for kinematic limits (joint, velocity, acceleration, etc.) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ Eigen\+::\+Index $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinTree_a27e4d15f14e02d4ad30d82a931f1738e}{get\+Redundancy\+Capable\+Joint\+Indices}} () const override
+\begin{DoxyCompactList}\small\item\em Get vector indicating which joints are capable of producing redundant solutions. \end{DoxyCompactList}\item 
 unsigned int \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinTree_a09f7e0c26a7889b63feabc5f01d81d6a}{num\+Joints}} () const override
 \begin{DoxyCompactList}\small\item\em Number of joints in robot. \end{DoxyCompactList}\item 
 const std\+::string \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinTree_ac9aff2bc62fd5661005373b9073e05d4}{get\+Base\+Link\+Name}} () const override
@@ -134,6 +136,8 @@ std\+::unordered\+\_\+map$<$ std\+::string, unsigned int $>$ \mbox{\hyperlink{cl
 \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinTree_ae6ba5d65885073a7d127109d6432cb16}{active\+\_\+link\+\_\+list\+\_\+}}
 \item 
 \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinTree_a4d8381b45f34280b1604a33c4e5efea7}{limits\+\_\+}}
+\item 
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ Eigen\+::\+Index $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinTree_a023ebd56a9eb06f8653eb6b4eb46cdac}{redundancy\+\_\+indices\+\_\+}}
 \item 
 std\+::unique\+\_\+ptr$<$ KDL\+::\+Tree\+Fk\+Solver\+Pos\+\_\+recursive $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinTree_a82801195f8ef7b19f7f683290e974061}{fk\+\_\+solver\+\_\+}}
 \item 
@@ -480,6 +484,23 @@ Name of the maniputlator.
 
 Implements \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_aa9293755f171185ec79a4e258c688df2}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics}}.
 
+\mbox{\Hypertarget{classtesseract__kinematics_1_1KDLFwdKinTree_a27e4d15f14e02d4ad30d82a931f1738e}\label{classtesseract__kinematics_1_1KDLFwdKinTree_a27e4d15f14e02d4ad30d82a931f1738e}} 
+\index{tesseract\_kinematics::KDLFwdKinTree@{tesseract\_kinematics::KDLFwdKinTree}!getRedundancyCapableJointIndices@{getRedundancyCapableJointIndices}}
+\index{getRedundancyCapableJointIndices@{getRedundancyCapableJointIndices}!tesseract\_kinematics::KDLFwdKinTree@{tesseract\_kinematics::KDLFwdKinTree}}
+\doxysubsubsection{\texorpdfstring{getRedundancyCapableJointIndices()}{getRedundancyCapableJointIndices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ Eigen\+::\+Index $>$ tesseract\+\_\+kinematics\+::\+KDLFwd\+Kin\+Tree\+::get\+Redundancy\+Capable\+Joint\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get vector indicating which joints are capable of producing redundant solutions. 
+
+\begin{DoxyReturn}{Returns}
+A vector of joint indicies 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_a80bb728d2bef336a7d86bdb1d6c524ae}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics}}.
+
 \mbox{\Hypertarget{classtesseract__kinematics_1_1KDLFwdKinTree_a158d2021542ed9c36494168c687bb430}\label{classtesseract__kinematics_1_1KDLFwdKinTree_a158d2021542ed9c36494168c687bb430}} 
 \index{tesseract\_kinematics::KDLFwdKinTree@{tesseract\_kinematics::KDLFwdKinTree}!getSceneGraph@{getSceneGraph}}
 \index{getSceneGraph@{getSceneGraph}!tesseract\_kinematics::KDLFwdKinTree@{tesseract\_kinematics::KDLFwdKinTree}}
@@ -701,7 +722,13 @@ List of link names \mbox{\Hypertarget{classtesseract__kinematics_1_1KDLFwdKinTre
 \doxysubsubsection{\texorpdfstring{name\_}{name\_}}
 {\footnotesize\ttfamily std\+::string tesseract\+\_\+kinematics\+::\+KDLFwd\+Kin\+Tree\+::name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-Name of the kinematic chain \mbox{\Hypertarget{classtesseract__kinematics_1_1KDLFwdKinTree_a73eecf55db74885dc2e9040a6f4cbef0}\label{classtesseract__kinematics_1_1KDLFwdKinTree_a73eecf55db74885dc2e9040a6f4cbef0}} 
+Name of the kinematic chain \mbox{\Hypertarget{classtesseract__kinematics_1_1KDLFwdKinTree_a023ebd56a9eb06f8653eb6b4eb46cdac}\label{classtesseract__kinematics_1_1KDLFwdKinTree_a023ebd56a9eb06f8653eb6b4eb46cdac}} 
+\index{tesseract\_kinematics::KDLFwdKinTree@{tesseract\_kinematics::KDLFwdKinTree}!redundancy\_indices\_@{redundancy\_indices\_}}
+\index{redundancy\_indices\_@{redundancy\_indices\_}!tesseract\_kinematics::KDLFwdKinTree@{tesseract\_kinematics::KDLFwdKinTree}}
+\doxysubsubsection{\texorpdfstring{redundancy\_indices\_}{redundancy\_indices\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$Eigen\+::\+Index$>$ tesseract\+\_\+kinematics\+::\+KDLFwd\+Kin\+Tree\+::redundancy\+\_\+indices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Joint indicies that have redundancy (ex. revolute) \mbox{\Hypertarget{classtesseract__kinematics_1_1KDLFwdKinTree_a73eecf55db74885dc2e9040a6f4cbef0}\label{classtesseract__kinematics_1_1KDLFwdKinTree_a73eecf55db74885dc2e9040a6f4cbef0}} 
 \index{tesseract\_kinematics::KDLFwdKinTree@{tesseract\_kinematics::KDLFwdKinTree}!scene\_graph\_@{scene\_graph\_}}
 \index{scene\_graph\_@{scene\_graph\_}!tesseract\_kinematics::KDLFwdKinTree@{tesseract\_kinematics::KDLFwdKinTree}}
 \doxysubsubsection{\texorpdfstring{scene\_graph\_}{scene\_graph\_}}

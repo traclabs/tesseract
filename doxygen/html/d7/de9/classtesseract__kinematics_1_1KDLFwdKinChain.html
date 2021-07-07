@@ -98,19 +98,20 @@ Collaboration diagram for tesseract_kinematics::KDLFwdKinChain:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../da/d44/classtesseract__kinematics_1_1KDLFwdKinChain__coll__graph.png" border="0" usemap="#atesseract__kinematics_1_1KDLFwdKinChain_coll__map" alt="Collaboration graph"/></div>
 <map name="atesseract__kinematics_1_1KDLFwdKinChain_coll__map" id="atesseract__kinematics_1_1KDLFwdKinChain_coll__map">
-<area shape="rect" title="KDL kinematic chain implementation." alt="" coords="1093,275,1240,317"/>
-<area shape="rect" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html" title="Forward kinematics functions." alt="" coords="783,103,930,145"/>
-<area shape="rect" title=" " alt="" coords="775,169,938,210"/>
-<area shape="rect" title=" " alt="" coords="179,249,257,276"/>
-<area shape="rect" href="../../df/d78/structtesseract__kinematics_1_1KDLChainData.html" title="The KDLChainData struct." alt="" coords="783,234,930,275"/>
+<area shape="rect" title="KDL kinematic chain implementation." alt="" coords="1120,341,1267,382"/>
+<area shape="rect" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html" title="Forward kinematics functions." alt="" coords="810,154,957,195"/>
+<area shape="rect" title=" " alt="" coords="802,219,965,261"/>
+<area shape="rect" title=" " alt="" coords="179,315,257,341"/>
+<area shape="rect" href="../../df/d78/structtesseract__kinematics_1_1KDLChainData.html" title="The KDLChainData struct." alt="" coords="810,285,957,326"/>
 <area shape="rect" title=" " alt="" coords="445,79,587,121"/>
-<area shape="rect" title=" " alt="" coords="436,211,596,237"/>
-<area shape="rect" title=" " alt="" coords="5,242,129,283"/>
+<area shape="rect" title=" " alt="" coords="436,276,596,303"/>
+<area shape="rect" title=" " alt="" coords="5,307,129,349"/>
 <area shape="rect" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html" title="Store kinematic limits." alt="" coords="417,14,615,55"/>
 <area shape="rect" title=" " alt="" coords="180,21,256,48"/>
-<area shape="rect" title=" " alt="" coords="429,145,603,186"/>
-<area shape="rect" title=" " alt="" coords="781,390,932,431"/>
-<area shape="rect" title=" " alt="" coords="753,455,960,497"/>
+<area shape="rect" title=" " alt="" coords="453,145,579,186"/>
+<area shape="rect" title=" " alt="" coords="429,210,603,251"/>
+<area shape="rect" title=" " alt="" coords="808,455,959,497"/>
+<area shape="rect" title=" " alt="" coords="780,521,987,562"/>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -179,6 +180,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef485507d80b799bab3d3d24fd84ef4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classtesseract__kinematics_1_1KDLFwdKinChain.html#aef485507d80b799bab3d3d24fd84ef4c">setLimits</a> (<a class="el" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html">tesseract_common::KinematicLimits</a> limits) override</td></tr>
 <tr class="memdesc:aef485507d80b799bab3d3d24fd84ef4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for kinematic limits (joint, velocity, acceleration, etc.)  <a href="../../d7/de9/classtesseract__kinematics_1_1KDLFwdKinChain.html#aef485507d80b799bab3d3d24fd84ef4c">More...</a><br /></td></tr>
 <tr class="separator:aef485507d80b799bab3d3d24fd84ef4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb99a171e218c35f1a4ba2f941c1071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classtesseract__kinematics_1_1KDLFwdKinChain.html#aafb99a171e218c35f1a4ba2f941c1071">getRedundancyCapableJointIndices</a> () const override</td></tr>
+<tr class="memdesc:aafb99a171e218c35f1a4ba2f941c1071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get vector indicating which joints are capable of producing redundant solutions.  <a href="../../d7/de9/classtesseract__kinematics_1_1KDLFwdKinChain.html#aafb99a171e218c35f1a4ba2f941c1071">More...</a><br /></td></tr>
+<tr class="separator:aafb99a171e218c35f1a4ba2f941c1071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd060b1f658d74139b9a0467d7730100"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classtesseract__kinematics_1_1KDLFwdKinChain.html#abd060b1f658d74139b9a0467d7730100">numJoints</a> () const override</td></tr>
 <tr class="memdesc:abd060b1f658d74139b9a0467d7730100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of joints in robot.  <a href="../../d7/de9/classtesseract__kinematics_1_1KDLFwdKinChain.html#abd060b1f658d74139b9a0467d7730100">More...</a><br /></td></tr>
 <tr class="separator:abd060b1f658d74139b9a0467d7730100"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -980,6 +984,36 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aafb99a171e218c35f1a4ba2f941c1071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb99a171e218c35f1a4ba2f941c1071">&#9670;&nbsp;</a></span>getRedundancyCapableJointIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt; tesseract_kinematics::KDLFwdKinChain::getRedundancyCapableJointIndices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get vector indicating which joints are capable of producing redundant solutions. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector of joint indicies </dd></dl>
+
+<p>Implements <a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a80bb728d2bef336a7d86bdb1d6c524ae">tesseract_kinematics::ForwardKinematics</a>.</p>
+
+</div>
+</div>
 <a id="adabc043e7fa6d28e3746f3d1bc7293d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adabc043e7fa6d28e3746f3d1bc7293d3">&#9670;&nbsp;</a></span>getSceneGraph()</h2>
 
@@ -1498,7 +1532,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 14:20:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 19:29:30 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

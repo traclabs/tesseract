@@ -98,13 +98,14 @@ Collaboration diagram for tesseract_kinematics::OPWInvKin:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d63/classtesseract__kinematics_1_1OPWInvKin__coll__graph.png" border="0" usemap="#atesseract__kinematics_1_1OPWInvKin_coll__map" alt="Collaboration graph"/></div>
 <map name="atesseract__kinematics_1_1OPWInvKin_coll__map" id="atesseract__kinematics_1_1OPWInvKin_coll__map">
-<area shape="rect" title="OPW Inverse Kinematics Implmentation." alt="" coords="781,123,928,164"/>
+<area shape="rect" title="OPW Inverse Kinematics Implmentation." alt="" coords="788,136,935,177"/>
 <area shape="rect" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html" title="Inverse kinematics functions." alt="" coords="443,5,589,47"/>
 <area shape="rect" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html" title="Store kinematic limits." alt="" coords="417,71,615,112"/>
 <area shape="rect" title=" " alt="" coords="180,78,256,105"/>
-<area shape="rect" title=" " alt="" coords="179,206,257,233"/>
-<area shape="rect" title=" " alt="" coords="436,245,596,271"/>
-<area shape="rect" title=" " alt="" coords="5,199,129,240"/>
+<area shape="rect" title=" " alt="" coords="453,136,579,177"/>
+<area shape="rect" title=" " alt="" coords="179,271,257,298"/>
+<area shape="rect" title=" " alt="" coords="436,310,596,337"/>
+<area shape="rect" title=" " alt="" coords="5,264,129,305"/>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -167,6 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3639c4b26fe4f24767b6f2f65df13b4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a3639c4b26fe4f24767b6f2f65df13b4e">setLimits</a> (<a class="el" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html">tesseract_common::KinematicLimits</a> limits) override</td></tr>
 <tr class="memdesc:a3639c4b26fe4f24767b6f2f65df13b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for kinematic limits (joint, velocity, acceleration, etc.)  <a href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a3639c4b26fe4f24767b6f2f65df13b4e">More...</a><br /></td></tr>
 <tr class="separator:a3639c4b26fe4f24767b6f2f65df13b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0c9177f508b8a81fcf1846ba23e10b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a0c0c9177f508b8a81fcf1846ba23e10b">getRedundancyCapableJointIndices</a> () const override</td></tr>
+<tr class="memdesc:a0c0c9177f508b8a81fcf1846ba23e10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get vector indicating which joints are capable of producing redundant solutions.  <a href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a0c0c9177f508b8a81fcf1846ba23e10b">More...</a><br /></td></tr>
+<tr class="separator:a0c0c9177f508b8a81fcf1846ba23e10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c03cc33dd02592c62daaf021b2625b"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a33c03cc33dd02592c62daaf021b2625b">getBaseLinkName</a> () const override</td></tr>
 <tr class="memdesc:a33c03cc33dd02592c62daaf021b2625b"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the robot base link name  <a href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a33c03cc33dd02592c62daaf021b2625b">More...</a><br /></td></tr>
 <tr class="separator:a33c03cc33dd02592c62daaf021b2625b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +241,8 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a6f07325f8c3709cb22e2262fef82dac9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a6f07325f8c3709cb22e2262fef82dac9">solver_name_</a> { &quot;OPWInvKin&quot; }</td></tr>
 <tr class="memdesc:a6f07325f8c3709cb22e2262fef82dac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of this solver.  <a href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a6f07325f8c3709cb22e2262fef82dac9">More...</a><br /></td></tr>
 <tr class="separator:a6f07325f8c3709cb22e2262fef82dac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbc0449988799335a76e7996e2fb3ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d52/classtesseract__kinematics_1_1OPWInvKin.html#a4bbc0449988799335a76e7996e2fb3ed">redundancy_indices_</a> { 0, 1, 2, 3, 4, 5 }</td></tr>
+<tr class="separator:a4bbc0449988799335a76e7996e2fb3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>OPW Inverse Kinematics Implmentation. </p>
@@ -408,7 +414,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates joint solutions given a pose. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>If redundant solutions are needed see utility funciton getRedundantSolutions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">solutions</td><td>A vector of solutions, so check the size of the vector to determine the number of solutions </td></tr>
     <tr><td class="paramname">pose</td><td>Transform of end-of-tip relative to root (base link) </td></tr>
@@ -463,7 +469,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates joint solutions given a pose for a specific link. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>If redundant solutions are needed see utility funciton getRedundantSolutions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pose</td><td>Transform of end-of-tip relative to root (base link) </td></tr>
     <tr><td class="paramname">seed</td><td>Vector of seed joint angles (size must match number of joints in robot chain) </td></tr>
@@ -738,6 +744,36 @@ Protected Attributes</h2></td></tr>
 <p>Name of the maniputlator. </p>
 
 <p>Implements <a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a1ab1cc410d1cc2977d0191c3ca755861">tesseract_kinematics::InverseKinematics</a>.</p>
+
+</div>
+</div>
+<a id="a0c0c9177f508b8a81fcf1846ba23e10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0c9177f508b8a81fcf1846ba23e10b">&#9670;&nbsp;</a></span>getRedundancyCapableJointIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt; tesseract_kinematics::OPWInvKin::getRedundancyCapableJointIndices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get vector indicating which joints are capable of producing redundant solutions. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector of joint indicies </dd></dl>
+
+<p>Implements <a class="el" href="../../de/d1c/classtesseract__kinematics_1_1InverseKinematics.html#a2fb78aa632e7394394b5f72139a43bdf">tesseract_kinematics::InverseKinematics</a>.</p>
 
 </div>
 </div>
@@ -1249,6 +1285,29 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4bbc0449988799335a76e7996e2fb3ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bbc0449988799335a76e7996e2fb3ed">&#9670;&nbsp;</a></span>redundancy_indices_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt;Eigen::Index&gt; tesseract_kinematics::OPWInvKin::redundancy_indices_ { 0, 1, 2, 3, 4, 5 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Joint indicies that have redundancy (ex. revolute) </p>
+
+</div>
+</div>
 <a id="a6f07325f8c3709cb22e2262fef82dac9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f07325f8c3709cb22e2262fef82dac9">&#9670;&nbsp;</a></span>solver_name_</h2>
 
@@ -1304,7 +1363,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 14:20:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 19:29:30 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

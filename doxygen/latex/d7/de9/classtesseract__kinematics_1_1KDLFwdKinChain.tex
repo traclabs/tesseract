@@ -77,6 +77,8 @@ const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_
 \begin{DoxyCompactList}\small\item\em Getter for kinematic limits (joint, velocity, acceleration, etc.) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinChain_aef485507d80b799bab3d3d24fd84ef4c}{set\+Limits}} (\mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} limits) override
 \begin{DoxyCompactList}\small\item\em Setter for kinematic limits (joint, velocity, acceleration, etc.) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ Eigen\+::\+Index $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinChain_aafb99a171e218c35f1a4ba2f941c1071}{get\+Redundancy\+Capable\+Joint\+Indices}} () const override
+\begin{DoxyCompactList}\small\item\em Get vector indicating which joints are capable of producing redundant solutions. \end{DoxyCompactList}\item 
 unsigned int \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinChain_abd060b1f658d74139b9a0467d7730100}{num\+Joints}} () const override
 \begin{DoxyCompactList}\small\item\em Number of joints in robot. \end{DoxyCompactList}\item 
 const std\+::string \& \mbox{\hyperlink{classtesseract__kinematics_1_1KDLFwdKinChain_af727553c36673aaabfa37efa69e4ab76}{get\+Base\+Link\+Name}} () const override
@@ -461,6 +463,23 @@ Name of the maniputlator.
 
 
 Implements \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_aa9293755f171185ec79a4e258c688df2}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics}}.
+
+\mbox{\Hypertarget{classtesseract__kinematics_1_1KDLFwdKinChain_aafb99a171e218c35f1a4ba2f941c1071}\label{classtesseract__kinematics_1_1KDLFwdKinChain_aafb99a171e218c35f1a4ba2f941c1071}} 
+\index{tesseract\_kinematics::KDLFwdKinChain@{tesseract\_kinematics::KDLFwdKinChain}!getRedundancyCapableJointIndices@{getRedundancyCapableJointIndices}}
+\index{getRedundancyCapableJointIndices@{getRedundancyCapableJointIndices}!tesseract\_kinematics::KDLFwdKinChain@{tesseract\_kinematics::KDLFwdKinChain}}
+\doxysubsubsection{\texorpdfstring{getRedundancyCapableJointIndices()}{getRedundancyCapableJointIndices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ Eigen\+::\+Index $>$ tesseract\+\_\+kinematics\+::\+KDLFwd\+Kin\+Chain\+::get\+Redundancy\+Capable\+Joint\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get vector indicating which joints are capable of producing redundant solutions. 
+
+\begin{DoxyReturn}{Returns}
+A vector of joint indicies 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classtesseract__kinematics_1_1ForwardKinematics_a80bb728d2bef336a7d86bdb1d6c524ae}{tesseract\+\_\+kinematics\+::\+Forward\+Kinematics}}.
 
 \mbox{\Hypertarget{classtesseract__kinematics_1_1KDLFwdKinChain_adabc043e7fa6d28e3746f3d1bc7293d3}\label{classtesseract__kinematics_1_1KDLFwdKinChain_adabc043e7fa6d28e3746f3d1bc7293d3}} 
 \index{tesseract\_kinematics::KDLFwdKinChain@{tesseract\_kinematics::KDLFwdKinChain}!getSceneGraph@{getSceneGraph}}

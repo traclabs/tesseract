@@ -150,6 +150,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a430e25cbb3fe0a4e9a06c55a9f3763ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a430e25cbb3fe0a4e9a06c55a9f3763ec">setLimits</a> (<a class="el" href="../../d2/d94/structtesseract__common_1_1KinematicLimits.html">tesseract_common::KinematicLimits</a> limits)=0</td></tr>
 <tr class="memdesc:a430e25cbb3fe0a4e9a06c55a9f3763ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for kinematic limits (joint, velocity, acceleration, etc.)  <a href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a430e25cbb3fe0a4e9a06c55a9f3763ec">More...</a><br /></td></tr>
 <tr class="separator:a430e25cbb3fe0a4e9a06c55a9f3763ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80bb728d2bef336a7d86bdb1d6c524ae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a80bb728d2bef336a7d86bdb1d6c524ae">getRedundancyCapableJointIndices</a> () const =0</td></tr>
+<tr class="memdesc:a80bb728d2bef336a7d86bdb1d6c524ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get vector indicating which joints are capable of producing redundant solutions.  <a href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a80bb728d2bef336a7d86bdb1d6c524ae">More...</a><br /></td></tr>
+<tr class="separator:a80bb728d2bef336a7d86bdb1d6c524ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a790909b0173bd6a9a88720f417667"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a31a790909b0173bd6a9a88720f417667">numJoints</a> () const =0</td></tr>
 <tr class="memdesc:a31a790909b0173bd6a9a88720f417667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of joints in robot.  <a href="../../da/d70/classtesseract__kinematics_1_1ForwardKinematics.html#a31a790909b0173bd6a9a88720f417667">More...</a><br /></td></tr>
 <tr class="separator:a31a790909b0173bd6a9a88720f417667"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -757,6 +760,36 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a80bb728d2bef336a7d86bdb1d6c524ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80bb728d2bef336a7d86bdb1d6c524ae">&#9670;&nbsp;</a></span>getRedundancyCapableJointIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt;Eigen::Index&gt; tesseract_kinematics::ForwardKinematics::getRedundancyCapableJointIndices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get vector indicating which joints are capable of producing redundant solutions. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector of joint indicies </dd></dl>
+
+<p>Implemented in <a class="el" href="../../db/db9/classtesseract__kinematics_1_1KDLFwdKinTree.html#a27e4d15f14e02d4ad30d82a931f1738e">tesseract_kinematics::KDLFwdKinTree</a>, and <a class="el" href="../../d7/de9/classtesseract__kinematics_1_1KDLFwdKinChain.html#aafb99a171e218c35f1a4ba2f941c1071">tesseract_kinematics::KDLFwdKinChain</a>.</p>
+
+</div>
+</div>
 <a id="a94e5462f23626e9486f31b12010b94c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94e5462f23626e9486f31b12010b94c9">&#9670;&nbsp;</a></span>getSolverName()</h2>
 
@@ -969,7 +1002,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 14:20:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 19:29:30 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

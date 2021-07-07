@@ -71,6 +71,8 @@ const \mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_
 \begin{DoxyCompactList}\small\item\em Getter for kinematic limits (joint, velocity, acceleration, etc.) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a8d5e96fafb0e5a03d37b65719ea58b34}{set\+Limits}} (\mbox{\hyperlink{structtesseract__common_1_1KinematicLimits}{tesseract\+\_\+common\+::\+Kinematic\+Limits}} limits) override
 \begin{DoxyCompactList}\small\item\em Setter for kinematic limits (joint, velocity, acceleration, etc.) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ Eigen\+::\+Index $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a5bbce72af17c91095cfeb90c88ba61d6}{get\+Redundancy\+Capable\+Joint\+Indices}} () const override
+\begin{DoxyCompactList}\small\item\em Get vector indicating which joints are capable of producing redundant solutions. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ae670126e46e0e0b7eb9509bc22f6a976}{get\+Scene\+Graph}} () const
 \item 
 unsigned int \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_af7e3dbeaa53d4a7a238b49bfcc4958e9}{num\+Joints}} () const override
@@ -128,6 +130,8 @@ unsigned \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositio
 \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a6fd7ff4366b028cc3972e39f41a095d0}{link\+\_\+names\+\_\+}}
 \item 
 \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ae3dec1f06e40dbd5fe1433a39b48a574}{active\+\_\+link\+\_\+names\+\_\+}}
+\item 
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ Eigen\+::\+Index $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_aac8c82c0585c4fba75f1cf7fd2db1ae5}{redundancy\+\_\+indices\+\_\+}}
 \item 
 \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ Eigen\+::\+Vector\+Xd $>$ \mbox{\hyperlink{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a2020b8f292585dea1abbe9eb3005a835}{dof\+\_\+range\+\_\+}}
 \item 
@@ -195,7 +199,7 @@ In this kinematic arrangement the base link is the tip link of the external posi
 
 Calculates joint solutions given a pose. 
 
-
+If redundant solutions are needed see utility funciton get\+Redundant\+Solutions. 
 \begin{DoxyParams}{Parameters}
 {\em solutions} & A vector of solutions, so check the size of the vector to determine the number of solutions \\
 \hline
@@ -221,7 +225,7 @@ Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a672
 
 Calculates joint solutions given a pose for a specific link. 
 
-
+If redundant solutions are needed see utility funciton get\+Redundant\+Solutions. 
 \begin{DoxyParams}{Parameters}
 {\em pose} & Transform of end-\/of-\/tip relative to root (base link) \\
 \hline
@@ -391,6 +395,23 @@ Name of the maniputlator.
 
 
 Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a1ab1cc410d1cc2977d0191c3ca755861}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
+
+\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a5bbce72af17c91095cfeb90c88ba61d6}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a5bbce72af17c91095cfeb90c88ba61d6}} 
+\index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!getRedundancyCapableJointIndices@{getRedundancyCapableJointIndices}}
+\index{getRedundancyCapableJointIndices@{getRedundancyCapableJointIndices}!tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}}
+\doxysubsubsection{\texorpdfstring{getRedundancyCapableJointIndices()}{getRedundancyCapableJointIndices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ Eigen\+::\+Index $>$ tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::get\+Redundancy\+Capable\+Joint\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get vector indicating which joints are capable of producing redundant solutions. 
+
+\begin{DoxyReturn}{Returns}
+A vector of joint indicies 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classtesseract__kinematics_1_1InverseKinematics_a2fb78aa632e7394394b5f72139a43bdf}{tesseract\+\_\+kinematics\+::\+Inverse\+Kinematics}}.
 
 \mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ae670126e46e0e0b7eb9509bc22f6a976}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_ae670126e46e0e0b7eb9509bc22f6a976}} 
 \index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!getSceneGraph@{getSceneGraph}}
@@ -687,7 +708,13 @@ Name of the kinematic chain \mbox{\Hypertarget{classtesseract__kinematics_1_1Rob
 \doxysubsubsection{\texorpdfstring{positioner\_sample\_resolution\_}{positioner\_sample\_resolution\_}}
 {\footnotesize\ttfamily Eigen\+::\+Vector\+Xd tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::positioner\+\_\+sample\+\_\+resolution\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a12c953c6e475d0744c6db1fbf5105fd9}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a12c953c6e475d0744c6db1fbf5105fd9}} 
+\mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_aac8c82c0585c4fba75f1cf7fd2db1ae5}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_aac8c82c0585c4fba75f1cf7fd2db1ae5}} 
+\index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!redundancy\_indices\_@{redundancy\_indices\_}}
+\index{redundancy\_indices\_@{redundancy\_indices\_}!tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}}
+\doxysubsubsection{\texorpdfstring{redundancy\_indices\_}{redundancy\_indices\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$Eigen\+::\+Index$>$ tesseract\+\_\+kinematics\+::\+Robot\+With\+External\+Positioner\+Inv\+Kin\+::redundancy\+\_\+indices\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Joint indicies that have redundancy (ex. revolute) \mbox{\Hypertarget{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a12c953c6e475d0744c6db1fbf5105fd9}\label{classtesseract__kinematics_1_1RobotWithExternalPositionerInvKin_a12c953c6e475d0744c6db1fbf5105fd9}} 
 \index{tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}!scene\_graph\_@{scene\_graph\_}}
 \index{scene\_graph\_@{scene\_graph\_}!tesseract\_kinematics::RobotWithExternalPositionerInvKin@{tesseract\_kinematics::RobotWithExternalPositionerInvKin}}
 \doxysubsubsection{\texorpdfstring{scene\_graph\_}{scene\_graph\_}}

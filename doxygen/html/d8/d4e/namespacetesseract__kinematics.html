@@ -202,17 +202,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a48ccac1b47ffdf3061e9b73724cf1499"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a881ff48bb24f8ac4e92de3f1e5c0bfb5">ForwardKinematicsConstPtrMap</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a48ccac1b47ffdf3061e9b73724cf1499">createKinematicsMap</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> &amp;scene_graph, const <a class="el" href="../../df/d53/structtesseract__srdf_1_1KinematicsInformation.html">tesseract_srdf::KinematicsInformation</a> &amp;kinematics_information)</td></tr>
 <tr class="memdesc:a48ccac1b47ffdf3061e9b73724cf1499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kinematics map from the srdf model.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a48ccac1b47ffdf3061e9b73724cf1499">More...</a><br /></td></tr>
 <tr class="separator:a48ccac1b47ffdf3061e9b73724cf1499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab73092333fadda5e70b89f4b949928fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#ab73092333fadda5e70b89f4b949928fe">getRedundancyCapableJointIndices</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> &amp;scene_graph, const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;joint_names)</td></tr>
-<tr class="memdesc:ab73092333fadda5e70b89f4b949928fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a vector indicating which joints in the input list of joint names are capable of producing redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#ab73092333fadda5e70b89f4b949928fe">More...</a><br /></td></tr>
-<tr class="separator:ab73092333fadda5e70b89f4b949928fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae358b64624d0092f82ec20ec46e339eb"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:ae358b64624d0092f82ec20ec46e339eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#ae358b64624d0092f82ec20ec46e339eb">getRedundantSolutionsHelper</a> (<a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt;&gt; &amp;redundant_sols, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;sol, const Eigen::MatrixX2d &amp;limits, <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;::iterator current_index, const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;::iterator end_index)</td></tr>
-<tr class="memdesc:ae358b64624d0092f82ec20ec46e339eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This a recursive function for caculating all permutations of the redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#ae358b64624d0092f82ec20ec46e339eb">More...</a><br /></td></tr>
-<tr class="separator:ae358b64624d0092f82ec20ec46e339eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af24d0d6a281ad1a75df7ff3a903032ef"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
-<tr class="memitem:af24d0d6a281ad1a75df7ff3a903032ef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#af24d0d6a281ad1a75df7ff3a903032ef">getRedundantSolutions</a> (const Eigen::Ref&lt; const <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt;&gt; &amp;sol, const Eigen::MatrixX2d &amp;limits, <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt; redundancy_capable_joints)</td></tr>
-<tr class="memdesc:af24d0d6a281ad1a75df7ff3a903032ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinematics only return solution between PI and -PI. Provided the limits it will append redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#af24d0d6a281ad1a75df7ff3a903032ef">More...</a><br /></td></tr>
-<tr class="separator:af24d0d6a281ad1a75df7ff3a903032ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd89a194d01da0138a0bec3c3a81e8e"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:affd89a194d01da0138a0bec3c3a81e8e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#affd89a194d01da0138a0bec3c3a81e8e">getRedundantSolutionsHelper</a> (<a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt;&gt; &amp;redundant_sols, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;sol, const Eigen::MatrixX2d &amp;limits, <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;::const_iterator current_index, <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;::const_iterator end_index)</td></tr>
+<tr class="memdesc:affd89a194d01da0138a0bec3c3a81e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This a recursive function for caculating all permutations of the redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#affd89a194d01da0138a0bec3c3a81e8e">More...</a><br /></td></tr>
+<tr class="separator:affd89a194d01da0138a0bec3c3a81e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a64bc43e94b9f3899b80789deb7e463"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:a8a64bc43e94b9f3899b80789deb7e463"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a8a64bc43e94b9f3899b80789deb7e463">getRedundantSolutions</a> (const Eigen::Ref&lt; const <a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a59d7ac70f855c7d00848b703e6bcfe9a">VectorX</a>&lt; FloatType &gt;&gt; &amp;sol, const Eigen::MatrixX2d &amp;limits, const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt; &amp;redundancy_capable_joints)</td></tr>
+<tr class="memdesc:a8a64bc43e94b9f3899b80789deb7e463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinematics only return solution between PI and -PI. Provided the limits it will append redundant solutions.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a8a64bc43e94b9f3899b80789deb7e463">More...</a><br /></td></tr>
+<tr class="separator:a8a64bc43e94b9f3899b80789deb7e463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f74af65eeb166856e00a64254da7ee8"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
 <tr class="memitem:a2f74af65eeb166856e00a64254da7ee8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d4e/namespacetesseract__kinematics.html#a2f74af65eeb166856e00a64254da7ee8">isValid</a> (const std::array&lt; FloatType, 6 &gt; &amp;qs)</td></tr>
 <tr class="memdesc:a2f74af65eeb166856e00a64254da7ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a vector of floats, this check if they are finite.  <a href="../../d8/d4e/namespacetesseract__kinematics.html#a2f74af65eeb166856e00a64254da7ee8">More...</a><br /></td></tr>
@@ -719,46 +716,8 @@ template&lt;class Chain_T , class Tree_T &gt; </div>
 
 </div>
 </div>
-<a id="ab73092333fadda5e70b89f4b949928fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab73092333fadda5e70b89f4b949928fe">&#9670;&nbsp;</a></span>getRedundancyCapableJointIndices()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt;Eigen::Index&gt; tesseract_kinematics::getRedundancyCapableJointIndices </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9ee303b2514bfedd8c914d09551b00ff">tesseract_scene_graph::SceneGraph::ConstPtr</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene_graph</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>joint_names</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a vector indicating which joints in the input list of joint names are capable of producing redundant solutions. </p>
-
-</div>
-</div>
-<a id="af24d0d6a281ad1a75df7ff3a903032ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af24d0d6a281ad1a75df7ff3a903032ef">&#9670;&nbsp;</a></span>getRedundantSolutions()</h2>
+<a id="a8a64bc43e94b9f3899b80789deb7e463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a64bc43e94b9f3899b80789deb7e463">&#9670;&nbsp;</a></span>getRedundantSolutions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -783,7 +742,7 @@ template&lt;typename FloatType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt; &amp;&#160;</td>
           <td class="paramname"><em>redundancy_capable_joints</em>&#160;</td>
         </tr>
         <tr>
@@ -800,18 +759,19 @@ template&lt;typename FloatType &gt; </div>
 </div><div class="memdoc">
 
 <p>Kinematics only return solution between PI and -PI. Provided the limits it will append redundant solutions. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>The list of redundant solutions does not include the provided solutions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sol</td><td>The current solution returned from OPW kinematics </td></tr>
+    <tr><td class="paramname">sol</td><td>The solution to calculate redundant solutions about </td></tr>
     <tr><td class="paramname">limits</td><td>The joint limits of the robot </td></tr>
+    <tr><td class="paramname">redundancy_capable_joints</td><td>The indices of the redundancy capable joints </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ae358b64624d0092f82ec20ec46e339eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae358b64624d0092f82ec20ec46e339eb">&#9670;&nbsp;</a></span>getRedundantSolutionsHelper()</h2>
+<a id="affd89a194d01da0138a0bec3c3a81e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd89a194d01da0138a0bec3c3a81e8e">&#9670;&nbsp;</a></span>getRedundantSolutionsHelper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -842,13 +802,13 @@ template&lt;typename FloatType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;::iterator&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;::const_iterator&#160;</td>
           <td class="paramname"><em>current_index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;::iterator&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; Eigen::Index &gt;::const_iterator&#160;</td>
           <td class="paramname"><em>end_index</em>&#160;</td>
         </tr>
         <tr>
@@ -1779,7 +1739,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 14:20:28 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 19:29:30 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
