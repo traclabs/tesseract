@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['deprecated_5831',['DEPRECATED',['../de/d3c/macros_8h.html#af67a6ff1a54b41b2a6e4bd36bc47b118',1,'macros.h']]],
-  ['dot_5832',['DOT',['../d0/d1b/FloatMath_8inl.html#a6c711cc01fdb7296161accac376e26dc',1,'FloatMath.inl']]]
+  ['deprecated_5770',['DEPRECATED',['../de/d3c/macros_8h.html#af67a6ff1a54b41b2a6e4bd36bc47b118',1,'macros.h']]],
+  ['dot_5771',['DOT',['../d0/d1b/FloatMath_8inl.html#a6c711cc01fdb7296161accac376e26dc',1,'FloatMath.inl']]]
 ];
