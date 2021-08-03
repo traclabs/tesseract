@@ -104,6 +104,8 @@ enum class \mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed
 \item 
 \mbox{\hyperlink{namespacetesseract__collision_af5926355228f0196ddf51e6951dbe491}{Object\+Pair\+Key}} \mbox{\hyperlink{namespacetesseract__collision_a0876bd0182505440236643eb5bade1c7}{get\+Object\+Pair\+Key}} (const std\+::string \&obj1, const std\+::string \&obj2)
 \begin{DoxyCompactList}\small\item\em Get a key for two object to search the collision matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ \mbox{\hyperlink{namespacetesseract__collision_af5926355228f0196ddf51e6951dbe491}{Object\+Pair\+Key}} $>$ \mbox{\hyperlink{namespacetesseract__collision_a40925f442de63b6f51da605b5192621d}{get\+Collision\+Object\+Pairs}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&active\+\_\+links, const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&static\+\_\+links, const \mbox{\hyperlink{namespacetesseract__collision_abe7752ce161fbd1139533ac566fec1cb}{Is\+Contact\+Allowed\+Fn}} \&acm)
+\begin{DoxyCompactList}\small\item\em Get a vector of possible collision object pairs. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__collision_ab6cce1ce95e96f38382f53976bbe9dea}{is\+Link\+Active}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&active, const std\+::string \&name)
 \begin{DoxyCompactList}\small\item\em This will check if a link is active provided a list. If the list is empty the link is considered active. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespacetesseract__collision_a1d5b1daf53ea0152f87f4ab565643478}{is\+Contact\+Allowed}} (const std\+::string \&name1, const std\+::string \&name2, const \mbox{\hyperlink{namespacetesseract__collision_abe7752ce161fbd1139533ac566fec1cb}{Is\+Contact\+Allowed\+Fn}} \&acm, bool verbose=false)
@@ -354,6 +356,30 @@ The number of faces. If less than zero an error occured when trying to create th
 \doxysubsubsection{\texorpdfstring{flattenResults()}{flattenResults()}}
 {\footnotesize\ttfamily std\+::size\+\_\+t tesseract\+\_\+collision\+::flatten\+Results (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetesseract__collision_a1eeace4cc41027dbde8e7dbeb77ca7cf}{Contact\+Result\+Map}} \&\&}]{m,  }\item[{\mbox{\hyperlink{namespacetesseract__collision_a96d77f62b7c26962d1090f0a2f00419b}{Contact\+Result\+Vector}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+\mbox{\Hypertarget{namespacetesseract__collision_a40925f442de63b6f51da605b5192621d}\label{namespacetesseract__collision_a40925f442de63b6f51da605b5192621d}} 
+\index{tesseract\_collision@{tesseract\_collision}!getCollisionObjectPairs@{getCollisionObjectPairs}}
+\index{getCollisionObjectPairs@{getCollisionObjectPairs}!tesseract\_collision@{tesseract\_collision}}
+\doxysubsubsection{\texorpdfstring{getCollisionObjectPairs()}{getCollisionObjectPairs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$\mbox{\hyperlink{namespacetesseract__collision_af5926355228f0196ddf51e6951dbe491}{Object\+Pair\+Key}}$>$ tesseract\+\_\+collision\+::get\+Collision\+Object\+Pairs (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{active\+\_\+links,  }\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{static\+\_\+links,  }\item[{const \mbox{\hyperlink{namespacetesseract__collision_abe7752ce161fbd1139533ac566fec1cb}{Is\+Contact\+Allowed\+Fn}} \&}]{acm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a vector of possible collision object pairs. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Should this also filter out links without geometry? \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em active\+\_\+links} & The active link names \\
+\hline
+{\em static\+\_\+links} & The static link names \\
+\hline
+{\em acm} & The is contact allowed function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of collision object pairs 
+\end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__collision_a0876bd0182505440236643eb5bade1c7}\label{namespacetesseract__collision_a0876bd0182505440236643eb5bade1c7}} 
 \index{tesseract\_collision@{tesseract\_collision}!getObjectPairKey@{getObjectPairKey}}
 \index{getObjectPairKey@{getObjectPairKey}!tesseract\_collision@{tesseract\_collision}}

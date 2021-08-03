@@ -268,6 +268,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a76b212e0e3154df3b9581984d3e6ef"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a4a76b212e0e3154df3b9581984d3e6ef">getActiveLinkNames</a> () const</td></tr>
 <tr class="memdesc:a4a76b212e0e3154df3b9581984d3e6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a vector of active link names in the environment.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a4a76b212e0e3154df3b9581984d3e6ef">More...</a><br /></td></tr>
 <tr class="separator:a4a76b212e0e3154df3b9581984d3e6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ee813220d95e782918c447c4063255"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a92ee813220d95e782918c447c4063255">getActiveLinkNames</a> (const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;joint_names) const</td></tr>
+<tr class="memdesc:a92ee813220d95e782918c447c4063255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a vector of active link names affected by the provided joints in the environment.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a92ee813220d95e782918c447c4063255">More...</a><br /></td></tr>
+<tr class="separator:a92ee813220d95e782918c447c4063255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122af420c63146e4edde242fe65d06a8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a122af420c63146e4edde242fe65d06a8">getStaticLinkNames</a> () const</td></tr>
+<tr class="memdesc:a122af420c63146e4edde242fe65d06a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a vector of static link names in the environment.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a122af420c63146e4edde242fe65d06a8">More...</a><br /></td></tr>
+<tr class="separator:a122af420c63146e4edde242fe65d06a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919d7e0bb90c249c4d11936c034389ed"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a919d7e0bb90c249c4d11936c034389ed">getStaticLinkNames</a> (const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;joint_names) const</td></tr>
+<tr class="memdesc:a919d7e0bb90c249c4d11936c034389ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a vector of static link names not affected by the provided joints in the environment.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a919d7e0bb90c249c4d11936c034389ed">More...</a><br /></td></tr>
+<tr class="separator:a919d7e0bb90c249c4d11936c034389ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad694d0f6ffbd89a68a58c797abc97a6e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/da9/namespacetesseract__common.html#a94d9921fc7ed323609ac57d06f939cb6">tesseract_common::VectorIsometry3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ad694d0f6ffbd89a68a58c797abc97a6e">getLinkTransforms</a> () const</td></tr>
 <tr class="memdesc:ad694d0f6ffbd89a68a58c797abc97a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all of the links transforms.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ad694d0f6ffbd89a68a58c797abc97a6e">More...</a><br /></td></tr>
 <tr class="separator:ad694d0f6ffbd89a68a58c797abc97a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,9 +343,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9ae9c20068281feec5893cfdb2fa4d3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ae9ae9c20068281feec5893cfdb2fa4d3">changeJointPositionLimits</a> (const std::string &amp;joint_name, double lower, double upper)</td></tr>
 <tr class="memdesc:ae9ae9c20068281feec5893cfdb2fa4d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the position limits associated with a joint.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ae9ae9c20068281feec5893cfdb2fa4d3">More...</a><br /></td></tr>
 <tr class="separator:ae9ae9c20068281feec5893cfdb2fa4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a989b07d9a3fb1a9c27b98fd164d833f8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a989b07d9a3fb1a9c27b98fd164d833f8">changeJointPositionLimits</a> (const std::unordered_map&lt; std::string, std::pair&lt; double, double &gt;&gt; &amp;limits)</td></tr>
-<tr class="memdesc:a989b07d9a3fb1a9c27b98fd164d833f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the position limits associated with one or more joints.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a989b07d9a3fb1a9c27b98fd164d833f8">More...</a><br /></td></tr>
-<tr class="separator:a989b07d9a3fb1a9c27b98fd164d833f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae006f94f3825a173eacda19a9c464cb8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ae006f94f3825a173eacda19a9c464cb8">changeJointPositionLimits</a> (const std::unordered_map&lt; std::string, std::pair&lt; double, double &gt;&gt; &amp;limits)</td></tr>
+<tr class="memdesc:ae006f94f3825a173eacda19a9c464cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the position limits associated with one or more joints.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ae006f94f3825a173eacda19a9c464cb8">More...</a><br /></td></tr>
+<tr class="separator:ae006f94f3825a173eacda19a9c464cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0abe21ad3aaa8eeb056b867e0cb7b99"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ad0abe21ad3aaa8eeb056b867e0cb7b99">changeJointVelocityLimits</a> (const std::string &amp;joint_name, double limit)</td></tr>
 <tr class="memdesc:ad0abe21ad3aaa8eeb056b867e0cb7b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the velocity limits associated with a joint.  <a href="../../d0/d6a/classtesseract__environment_1_1Environment.html#ad0abe21ad3aaa8eeb056b867e0cb7b99">More...</a><br /></td></tr>
 <tr class="separator:ad0abe21ad3aaa8eeb056b867e0cb7b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1684,8 +1693,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a989b07d9a3fb1a9c27b98fd164d833f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a989b07d9a3fb1a9c27b98fd164d833f8">&#9670;&nbsp;</a></span>changeJointPositionLimits() <span class="overload">[2/2]</span></h2>
+<a id="ae006f94f3825a173eacda19a9c464cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae006f94f3825a173eacda19a9c464cb8">&#9670;&nbsp;</a></span>changeJointPositionLimits() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1694,7 +1703,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool tesseract_environment::Environment::changeJointPositionLimits </td>
+          <td class="memname">bool tesseract_environment::Environment::changeJointPositionLimits </td>
           <td>(</td>
           <td class="paramtype">const std::unordered_map&lt; std::string, std::pair&lt; double, double &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>limits</em></td><td>)</td>
@@ -1954,7 +1963,7 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4a76b212e0e3154df3b9581984d3e6ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a76b212e0e3154df3b9581984d3e6ef">&#9670;&nbsp;</a></span>getActiveLinkNames()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a76b212e0e3154df3b9581984d3e6ef">&#9670;&nbsp;</a></span>getActiveLinkNames() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1977,6 +1986,41 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a vector of active link names in the environment. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector of active link names </dd></dl>
+
+</div>
+</div>
+<a id="a92ee813220d95e782918c447c4063255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ee813220d95e782918c447c4063255">&#9670;&nbsp;</a></span>getActiveLinkNames() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; tesseract_environment::Environment::getActiveLinkNames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>joint_names</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a vector of active link names affected by the provided joints in the environment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joint_names</td><td>A list of joint names </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of active link names </dd></dl>
 
 </div>
@@ -2730,7 +2774,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the manipulator manager. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000004">Todo:</a></b></dt><dd>This should go away and should expose methods for adding and removing objects from the manager and storing as commands </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000005">Todo:</a></b></dt><dd>This should go away and should expose methods for adding and removing objects from the manager and storing as commands </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Changes made to the manager are not capture in the command history. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The manipulator manager </dd></dl>
 
@@ -3022,6 +3066,69 @@ Private Member Functions</h2></td></tr>
 <p>Returns a clone of the environments state solver. </p>
 <p>The <a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#acf763cd858c17d45dc4696748d09478e" title="Get the state of the environment for a given set or subset of joint values.">Environment::getState</a> contains mutex's which is may not be needed in all motion planners. This allows the user to get snap shot of the environment to calculate the state.</p>
 <dl class="section return"><dt>Returns</dt><dd>A clone of the environments state solver </dd></dl>
+
+</div>
+</div>
+<a id="a122af420c63146e4edde242fe65d06a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122af420c63146e4edde242fe65d06a8">&#9670;&nbsp;</a></span>getStaticLinkNames() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; tesseract_environment::Environment::getStaticLinkNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a vector of static link names in the environment. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector of static link names </dd></dl>
+
+</div>
+</div>
+<a id="a919d7e0bb90c249c4d11936c034389ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a919d7e0bb90c249c4d11936c034389ed">&#9670;&nbsp;</a></span>getStaticLinkNames() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; tesseract_environment::Environment::getStaticLinkNames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>joint_names</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a vector of static link names not affected by the provided joints in the environment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joint_names</td><td>A list of joint names </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of static link names </dd></dl>
 
 </div>
 </div>
@@ -4740,7 +4847,7 @@ template&lt;typename S &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 30 2021 21:05:58 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Aug 3 2021 00:21:39 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

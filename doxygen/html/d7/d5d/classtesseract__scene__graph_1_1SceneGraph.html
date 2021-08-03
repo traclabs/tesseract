@@ -265,8 +265,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9378a9a91b2c00f39ff2169d6b63e560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all children for a given link name.  <a href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a9378a9a91b2c00f39ff2169d6b63e560">More...</a><br /></td></tr>
 <tr class="separator:a9378a9a91b2c00f39ff2169d6b63e560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49181c7620534014b9db93dbb0a1f94a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a49181c7620534014b9db93dbb0a1f94a">getJointChildrenNames</a> (const std::string &amp;name) const</td></tr>
-<tr class="memdesc:a49181c7620534014b9db93dbb0a1f94a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all children for a given link name.  <a href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a49181c7620534014b9db93dbb0a1f94a">More...</a><br /></td></tr>
+<tr class="memdesc:a49181c7620534014b9db93dbb0a1f94a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all children link names for a given joint name.  <a href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a49181c7620534014b9db93dbb0a1f94a">More...</a><br /></td></tr>
 <tr class="separator:a49181c7620534014b9db93dbb0a1f94a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d78ee8fc4abe4542a4d4f5195a972c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a3d78ee8fc4abe4542a4d4f5195a972c5">getJointChildrenNames</a> (const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;names) const</td></tr>
+<tr class="memdesc:a3d78ee8fc4abe4542a4d4f5195a972c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all children link names for the given joint names.  <a href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a3d78ee8fc4abe4542a4d4f5195a972c5">More...</a><br /></td></tr>
+<tr class="separator:a3d78ee8fc4abe4542a4d4f5195a972c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af17eed8edf2055f30506eff82849dba7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#af17eed8edf2055f30506eff82849dba7">saveDOT</a> (const std::string &amp;path) const</td></tr>
 <tr class="memdesc:af17eed8edf2055f30506eff82849dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves Graph as Graph Description Language (DOT)  <a href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#af17eed8edf2055f30506eff82849dba7">More...</a><br /></td></tr>
 <tr class="separator:af17eed8edf2055f30506eff82849dba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1023,7 +1026,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a49181c7620534014b9db93dbb0a1f94a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49181c7620534014b9db93dbb0a1f94a">&#9670;&nbsp;</a></span>getJointChildrenNames()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49181c7620534014b9db93dbb0a1f94a">&#9670;&nbsp;</a></span>getJointChildrenNames() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1038,10 +1041,38 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get all children for a given link name. </p>
+<p>Get all children link names for a given joint name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>Name of <a class="el" href="../../dc/d40/classtesseract__scene__graph_1_1Link.html">Link</a> </td></tr>
+    <tr><td class="paramname">name</td><td>Name of joint </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of child link names </dd></dl>
+
+</div>
+</div>
+<a id="a3d78ee8fc4abe4542a4d4f5195a972c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d78ee8fc4abe4542a4d4f5195a972c5">&#9670;&nbsp;</a></span>getJointChildrenNames() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; tesseract_scene_graph::SceneGraph::getJointChildrenNames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>names</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all children link names for the given joint names. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000027">Todo:</a></b></dt><dd>Need to create custom vistor so already process joint_names do not get processed again. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">names</td><td>Name of joints </td></tr>
   </table>
   </dd>
 </dl>
@@ -2054,7 +2085,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 30 2021 21:05:59 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Aug 3 2021 00:21:40 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

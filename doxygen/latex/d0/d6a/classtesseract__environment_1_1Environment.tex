@@ -126,6 +126,12 @@ virtual \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d
 \begin{DoxyCompactList}\small\item\em Get a vector of link names in the environment. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__environment_1_1Environment_a4a76b212e0e3154df3b9581984d3e6ef}{get\+Active\+Link\+Names}} () const
 \begin{DoxyCompactList}\small\item\em Get a vector of active link names in the environment. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__environment_1_1Environment_a92ee813220d95e782918c447c4063255}{get\+Active\+Link\+Names}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&joint\+\_\+names) const
+\begin{DoxyCompactList}\small\item\em Get a vector of active link names affected by the provided joints in the environment. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__environment_1_1Environment_a122af420c63146e4edde242fe65d06a8}{get\+Static\+Link\+Names}} () const
+\begin{DoxyCompactList}\small\item\em Get a vector of static link names in the environment. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__environment_1_1Environment_a919d7e0bb90c249c4d11936c034389ed}{get\+Static\+Link\+Names}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&joint\+\_\+names) const
+\begin{DoxyCompactList}\small\item\em Get a vector of static link names not affected by the provided joints in the environment. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{namespacetesseract__common_a94d9921fc7ed323609ac57d06f939cb6}{tesseract\+\_\+common\+::\+Vector\+Isometry3d}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_ad694d0f6ffbd89a68a58c797abc97a6e}{get\+Link\+Transforms}} () const
 \begin{DoxyCompactList}\small\item\em Get all of the links transforms. \end{DoxyCompactList}\item 
 virtual Eigen\+::\+Isometry3d \mbox{\hyperlink{classtesseract__environment_1_1Environment_ac1ea45e7b76cfa06d09b9a2d2e25b137}{get\+Link\+Transform}} (const std\+::string \&link\+\_\+name) const
@@ -170,7 +176,7 @@ virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_add1e20
 \begin{DoxyCompactList}\small\item\em Changes the origin associated with the joint. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_ae9ae9c20068281feec5893cfdb2fa4d3}{change\+Joint\+Position\+Limits}} (const std\+::string \&joint\+\_\+name, double lower, double upper)
 \begin{DoxyCompactList}\small\item\em Changes the position limits associated with a joint. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a989b07d9a3fb1a9c27b98fd164d833f8}{change\+Joint\+Position\+Limits}} (const std\+::unordered\+\_\+map$<$ std\+::string, std\+::pair$<$ double, double $>$$>$ \&limits)
+virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_ae006f94f3825a173eacda19a9c464cb8}{change\+Joint\+Position\+Limits}} (const std\+::unordered\+\_\+map$<$ std\+::string, std\+::pair$<$ double, double $>$$>$ \&limits)
 \begin{DoxyCompactList}\small\item\em Changes the position limits associated with one or more joints. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_ad0abe21ad3aaa8eeb056b867e0cb7b99}{change\+Joint\+Velocity\+Limits}} (const std\+::string \&joint\+\_\+name, double limit)
 \begin{DoxyCompactList}\small\item\em Changes the velocity limits associated with a joint. \end{DoxyCompactList}\item 
@@ -747,11 +753,11 @@ Changes the position limits associated with a joint.
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a989b07d9a3fb1a9c27b98fd164d833f8}\label{classtesseract__environment_1_1Environment_a989b07d9a3fb1a9c27b98fd164d833f8}} 
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_ae006f94f3825a173eacda19a9c464cb8}\label{classtesseract__environment_1_1Environment_ae006f94f3825a173eacda19a9c464cb8}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!changeJointPositionLimits@{changeJointPositionLimits}}
 \index{changeJointPositionLimits@{changeJointPositionLimits}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
 \doxysubsubsection{\texorpdfstring{changeJointPositionLimits()}{changeJointPositionLimits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual bool tesseract\+\_\+environment\+::\+Environment\+::change\+Joint\+Position\+Limits (\begin{DoxyParamCaption}\item[{const std\+::unordered\+\_\+map$<$ std\+::string, std\+::pair$<$ double, double $>$$>$ \&}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool tesseract\+\_\+environment\+::\+Environment\+::change\+Joint\+Position\+Limits (\begin{DoxyParamCaption}\item[{const std\+::unordered\+\_\+map$<$ std\+::string, std\+::pair$<$ double, double $>$$>$ \&}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -881,13 +887,31 @@ A vector of active joint names
 \mbox{\Hypertarget{classtesseract__environment_1_1Environment_a4a76b212e0e3154df3b9581984d3e6ef}\label{classtesseract__environment_1_1Environment_a4a76b212e0e3154df3b9581984d3e6ef}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getActiveLinkNames@{getActiveLinkNames}}
 \index{getActiveLinkNames@{getActiveLinkNames}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
-\doxysubsubsection{\texorpdfstring{getActiveLinkNames()}{getActiveLinkNames()}}
+\doxysubsubsection{\texorpdfstring{getActiveLinkNames()}{getActiveLinkNames()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ tesseract\+\_\+environment\+::\+Environment\+::get\+Active\+Link\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
 Get a vector of active link names in the environment. 
 
+\begin{DoxyReturn}{Returns}
+A vector of active link names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a92ee813220d95e782918c447c4063255}\label{classtesseract__environment_1_1Environment_a92ee813220d95e782918c447c4063255}} 
+\index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getActiveLinkNames@{getActiveLinkNames}}
+\index{getActiveLinkNames@{getActiveLinkNames}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
+\doxysubsubsection{\texorpdfstring{getActiveLinkNames()}{getActiveLinkNames()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ tesseract\+\_\+environment\+::\+Environment\+::get\+Active\+Link\+Names (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{joint\+\_\+names }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a vector of active link names affected by the provided joints in the environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+names} & A list of joint names \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A vector of active link names 
 \end{DoxyReturn}
@@ -1199,7 +1223,7 @@ True if should be visible, otherwise false
 Get the manipulator manager. 
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]This should go away and should expose methods for adding and removing objects from the manager and storing as commands \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]This should go away and should expose methods for adding and removing objects from the manager and storing as commands \end{DoxyRefDesc}
 \begin{DoxyWarning}{Warning}
 Changes made to the manager are not capture in the command history. 
 \end{DoxyWarning}
@@ -1327,6 +1351,37 @@ The \mbox{\hyperlink{classtesseract__environment_1_1Environment_acf763cd858c17d4
 
 \begin{DoxyReturn}{Returns}
 A clone of the environments state solver 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a122af420c63146e4edde242fe65d06a8}\label{classtesseract__environment_1_1Environment_a122af420c63146e4edde242fe65d06a8}} 
+\index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getStaticLinkNames@{getStaticLinkNames}}
+\index{getStaticLinkNames@{getStaticLinkNames}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
+\doxysubsubsection{\texorpdfstring{getStaticLinkNames()}{getStaticLinkNames()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ tesseract\+\_\+environment\+::\+Environment\+::get\+Static\+Link\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a vector of static link names in the environment. 
+
+\begin{DoxyReturn}{Returns}
+A vector of static link names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a919d7e0bb90c249c4d11936c034389ed}\label{classtesseract__environment_1_1Environment_a919d7e0bb90c249c4d11936c034389ed}} 
+\index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getStaticLinkNames@{getStaticLinkNames}}
+\index{getStaticLinkNames@{getStaticLinkNames}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
+\doxysubsubsection{\texorpdfstring{getStaticLinkNames()}{getStaticLinkNames()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ tesseract\+\_\+environment\+::\+Environment\+::get\+Static\+Link\+Names (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&}]{joint\+\_\+names }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a vector of static link names not affected by the provided joints in the environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+names} & A list of joint names \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of static link names 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__environment_1_1Environment_a00f0407b4c9eecce3aa5a5b8c795516f}\label{classtesseract__environment_1_1Environment_a00f0407b4c9eecce3aa5a5b8c795516f}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!init@{init}}

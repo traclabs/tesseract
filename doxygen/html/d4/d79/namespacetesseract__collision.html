@@ -188,6 +188,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0876bd0182505440236643eb5bade1c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#af5926355228f0196ddf51e6951dbe491">ObjectPairKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#a0876bd0182505440236643eb5bade1c7">getObjectPairKey</a> (const std::string &amp;obj1, const std::string &amp;obj2)</td></tr>
 <tr class="memdesc:a0876bd0182505440236643eb5bade1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a key for two object to search the collision matrix.  <a href="../../d4/d79/namespacetesseract__collision.html#a0876bd0182505440236643eb5bade1c7">More...</a><br /></td></tr>
 <tr class="separator:a0876bd0182505440236643eb5bade1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40925f442de63b6f51da605b5192621d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; <a class="el" href="../../d4/d79/namespacetesseract__collision.html#af5926355228f0196ddf51e6951dbe491">ObjectPairKey</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#a40925f442de63b6f51da605b5192621d">getCollisionObjectPairs</a> (const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;active_links, const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;static_links, const <a class="el" href="../../d4/d79/namespacetesseract__collision.html#abe7752ce161fbd1139533ac566fec1cb">IsContactAllowedFn</a> &amp;acm)</td></tr>
+<tr class="memdesc:a40925f442de63b6f51da605b5192621d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a vector of possible collision object pairs.  <a href="../../d4/d79/namespacetesseract__collision.html#a40925f442de63b6f51da605b5192621d">More...</a><br /></td></tr>
+<tr class="separator:a40925f442de63b6f51da605b5192621d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6cce1ce95e96f38382f53976bbe9dea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d79/namespacetesseract__collision.html#ab6cce1ce95e96f38382f53976bbe9dea">isLinkActive</a> (const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;active, const std::string &amp;name)</td></tr>
 <tr class="memdesc:ab6cce1ce95e96f38382f53976bbe9dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will check if a link is active provided a list. If the list is empty the link is considered active.  <a href="../../d4/d79/namespacetesseract__collision.html#ab6cce1ce95e96f38382f53976bbe9dea">More...</a><br /></td></tr>
 <tr class="separator:ab6cce1ce95e96f38382f53976bbe9dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -689,6 +692,60 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40925f442de63b6f51da605b5192621d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40925f442de63b6f51da605b5192621d">&#9670;&nbsp;</a></span>getCollisionObjectPairs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt;<a class="el" href="../../d4/d79/namespacetesseract__collision.html#af5926355228f0196ddf51e6951dbe491">ObjectPairKey</a>&gt; tesseract_collision::getCollisionObjectPairs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>active_links</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/dad/vhacdRaycastMesh_8cpp.html#adcf134d50025cc52907d0c8ac798d89d">std::vector</a>&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>static_links</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d79/namespacetesseract__collision.html#abe7752ce161fbd1139533ac566fec1cb">IsContactAllowedFn</a> &amp;&#160;</td>
+          <td class="paramname"><em>acm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a vector of possible collision object pairs. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000001">Todo:</a></b></dt><dd>Should this also filter out links without geometry? </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">active_links</td><td>The active link names </td></tr>
+    <tr><td class="paramname">static_links</td><td>The static link names </td></tr>
+    <tr><td class="paramname">acm</td><td>The is contact allowed function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of collision object pairs </dd></dl>
 
 </div>
 </div>
@@ -1245,7 +1302,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 30 2021 21:05:57 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Aug 3 2021 00:21:38 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
