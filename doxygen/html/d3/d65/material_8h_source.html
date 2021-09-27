@@ -86,33 +86,38 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../da/dce/namespacetinyxml2.html">tinyxml2</a></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>XMLElement;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html">tesseract_scene_graph</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>Material;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d5/d8c/namespacetesseract__urdf.html">tesseract_urdf</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;std::shared_ptr&lt;tesseract_scene_graph::Material&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d5/d8c/namespacetesseract__urdf.html#ac667bc9e9e20f0747279a479cfada4a5">   55</a></span>&#160;<a class="code" href="../../d5/d8c/namespacetesseract__urdf.html#ac667bc9e9e20f0747279a479cfada4a5">parseMaterial</a>(<span class="keyword">const</span> tinyxml2::XMLElement* xml_element,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;              std::unordered_map&lt;std::string, std::shared_ptr&lt;tesseract_scene_graph::Material&gt;&gt;&amp; available_materials,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;              <span class="keywordtype">bool</span> allow_anonymous,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              <span class="keywordtype">int</span> version);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}  <span class="comment">// namespace tesseract_urdf</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_URDF_MATERIAL_H</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>XMLDocument;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}  <span class="comment">// namespace tinyxml2</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d9/d42/namespacetesseract__scene__graph.html">tesseract_scene_graph</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>Material;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d5/d8c/namespacetesseract__urdf.html">tesseract_urdf</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;std::shared_ptr&lt;tesseract_scene_graph::Material&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d5/d8c/namespacetesseract__urdf.html#ac667bc9e9e20f0747279a479cfada4a5">   56</a></span>&#160;<a class="code" href="../../d5/d8c/namespacetesseract__urdf.html#ac667bc9e9e20f0747279a479cfada4a5">parseMaterial</a>(<span class="keyword">const</span> tinyxml2::XMLElement* xml_element,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;              std::unordered_map&lt;std::string, std::shared_ptr&lt;tesseract_scene_graph::Material&gt;&gt;&amp; available_materials,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              <span class="keywordtype">bool</span> allow_anonymous,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              <span class="keywordtype">int</span> version);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;tinyxml2::XMLElement* <a class="code" href="../../d5/d8c/namespacetesseract__urdf.html#ab1fcba4c6fb26d4987068e770c44ea6a">writeMaterial</a>(<span class="keyword">const</span> std::shared_ptr&lt;const tesseract_scene_graph::Material&gt;&amp; material,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                    tinyxml2::XMLDocument&amp; doc);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace tesseract_urdf</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_URDF_MATERIAL_H</span></div>
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="../../de/d3c/macros_8h.html">macros.h</a></div><div class="ttdoc">Common Tesseract Macros.</div></div>
 <div class="ttc" id="amacros_8h_html_a8cc0e3c6a3382c5c0b19eb9e676fc2db"><div class="ttname"><a href="../../de/d3c/macros_8h.html#a8cc0e3c6a3382c5c0b19eb9e676fc2db">TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</a></div><div class="ttdeci">#define TESSERACT_COMMON_IGNORE_WARNINGS_PUSH</div><div class="ttdef"><b>Definition:</b> macros.h:65</div></div>
 <div class="ttc" id="anamespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP_html"><div class="ttname"><a href="../../df/d21/namespaceTESSERACT__COMMON__IGNORE__WARNINGS__POP.html">TESSERACT_COMMON_IGNORE_WARNINGS_POP</a></div><div class="ttdef"><b>Definition:</b> create_convex_hull.cpp:35</div></div>
 <div class="ttc" id="anamespacetesseract__scene__graph_html"><div class="ttname"><a href="../../d9/d42/namespacetesseract__scene__graph.html">tesseract_scene_graph</a></div><div class="ttdef"><b>Definition:</b> allowed_collision_matrix.h:22</div></div>
-<div class="ttc" id="anamespacetesseract__urdf_html"><div class="ttname"><a href="../../d5/d8c/namespacetesseract__urdf.html">tesseract_urdf</a></div><div class="ttdef"><b>Definition:</b> box.h:44</div></div>
+<div class="ttc" id="anamespacetesseract__urdf_html"><div class="ttname"><a href="../../d5/d8c/namespacetesseract__urdf.html">tesseract_urdf</a></div><div class="ttdef"><b>Definition:</b> box.h:45</div></div>
+<div class="ttc" id="anamespacetesseract__urdf_html_ab1fcba4c6fb26d4987068e770c44ea6a"><div class="ttname"><a href="../../d5/d8c/namespacetesseract__urdf.html#ab1fcba4c6fb26d4987068e770c44ea6a">tesseract_urdf::writeMaterial</a></div><div class="ttdeci">tinyxml2::XMLElement * writeMaterial(const std::shared_ptr&lt; const tesseract_scene_graph::Material &gt; &amp;material, tinyxml2::XMLDocument &amp;doc)</div><div class="ttdef"><b>Definition:</b> material.cpp:123</div></div>
 <div class="ttc" id="anamespacetesseract__urdf_html_ac667bc9e9e20f0747279a479cfada4a5"><div class="ttname"><a href="../../d5/d8c/namespacetesseract__urdf.html#ac667bc9e9e20f0747279a479cfada4a5">tesseract_urdf::parseMaterial</a></div><div class="ttdeci">std::shared_ptr&lt; tesseract_scene_graph::Material &gt; parseMaterial(const tinyxml2::XMLElement *xml_element, std::unordered_map&lt; std::string, std::shared_ptr&lt; tesseract_scene_graph::Material &gt;&gt; &amp;available_materials, bool allow_anonymous, int version)</div><div class="ttdoc">Parse xml element material.</div></div>
 <div class="ttc" id="anamespacetinyxml2_html"><div class="ttname"><a href="../../da/dce/namespacetinyxml2.html">tinyxml2</a></div><div class="ttdef"><b>Definition:</b> collision_margins.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 16 2021 20:43:05 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Sep 27 2021 16:29:29 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -30,8 +30,8 @@
 <area shape="rect" id="node25" href="$dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="325,689,503,716"/>
 <area shape="rect" id="node26" href="$d4/da8/collision__margin__data_8h.html" title="This is used to store collision margin information." alt="" coords="269,496,453,537"/>
 <area shape="rect" id="node22" href="$df/d9e/tesseract__geometry_2include_2tesseract__geometry_2impl_2box_8h.html" title="Tesseract Box Geometry." alt="" coords="1775,682,1911,723"/>
-<area shape="rect" id="node23" href="$d8/db6/tesseract__geometry_2include_2tesseract__geometry_2impl_2sphere_8h.html" title="Tesseract Sphere Geometry." alt="" coords="1935,682,2071,723"/>
-<area shape="rect" id="node24" href="$d8/d3b/tesseract__geometry_2include_2tesseract__geometry_2impl_2cylinder_8h.html" title="Tesseract Cylinder Geometry." alt="" coords="2095,682,2231,723"/>
+<area shape="rect" id="node23" href="$d8/d2b/tesseract__geometry_2include_2tesseract__geometry_2impl_2capsule_8h.html" title="Tesseract Capsule Geometry." alt="" coords="1935,682,2071,723"/>
+<area shape="rect" id="node24" href="$dc/df2/tesseract__geometry_2include_2tesseract__geometry_2impl_2cone_8h.html" title="Tesseract Cone Geometry." alt="" coords="2095,682,2231,723"/>
 <area shape="rect" id="node27" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="578,593,749,619"/>
 <area shape="rect" id="node28" title=" " alt="" coords="877,689,943,716"/>
 <area shape="rect" id="node29" title=" " alt="" coords="730,689,802,716"/>
