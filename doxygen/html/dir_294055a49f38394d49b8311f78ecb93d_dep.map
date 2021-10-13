@@ -1,24 +1,27 @@
 <map id="tesseract_kinematics" name="tesseract_kinematics">
-<area shape="rect" id="node2" href="dir_cad717375471040aaea148eab2362f97.html" title="include" alt="" coords="167,123,239,171"/>
-<area shape="rect" id="node5" href="dir_2f96e717e53b6f43ed86f094687f9234.html" title="tesseract_srdf" alt="" coords="151,219,256,267"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000015_000036.html" title="1" alt="" coords="208,193,216,208"/>
-<area shape="rect" id="node6" href="dir_80ecf6fe8b2ccd2d6af6fe314205f076.html" title="tesseract_scene_graph" alt="" coords="215,315,373,363"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000015_000033.html" title="12" alt="" coords="291,288,306,303"/>
-<area shape="rect" id="node7" href="dir_8430b83f3af685b4c96d298a32e9aa37.html" title="tesseract_common" alt="" coords="78,411,211,459"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000015_000007.html" title="18" alt="" coords="135,383,150,398"/>
-<area shape="rect" id="node3" href="dir_ee6eb93300be23d38ffc94d0829554e1.html" title="src" alt="" coords="119,27,191,75"/>
-<area shape="rect" id="edge6-headlabel" href="dir_000064_000015.html" title="16" alt="" coords="183,95,198,110"/>
-<area shape="rect" id="edge4-headlabel" href="dir_000064_000033.html" title="4" alt="" coords="299,289,307,304"/>
-<area shape="rect" id="edge5-headlabel" href="dir_000064_000007.html" title="8" alt="" coords="78,386,86,401"/>
-<area shape="rect" id="node4" href="dir_46f537e945f8f3a3813a9c0d19f25c71.html" title="test" alt="" coords="215,27,287,75"/>
-<area shape="rect" id="edge9-headlabel" href="dir_000069_000015.html" title="30" alt="" coords="223,103,238,118"/>
-<area shape="rect" id="edge8-headlabel" href="dir_000069_000007.html" title="7" alt="" coords="131,383,139,398"/>
-<area shape="rect" id="node8" href="dir_73dd8f3c3376cfb32596795362fe062b.html" title="tesseract_urdf" alt="" coords="383,219,488,267"/>
-<area shape="rect" id="edge7-headlabel" href="dir_000069_000054.html" title="3" alt="" coords="421,191,429,206"/>
-<area shape="rect" id="edge13-headlabel" href="dir_000036_000033.html" title="18" alt="" coords="258,288,272,303"/>
-<area shape="rect" id="edge14-headlabel" href="dir_000036_000007.html" title="35" alt="" coords="158,388,172,403"/>
-<area shape="rect" id="edge12-headlabel" href="dir_000033_000007.html" title="20" alt="" coords="194,401,208,415"/>
-<area shape="rect" id="edge10-headlabel" href="dir_000054_000033.html" title="35" alt="" coords="341,304,356,319"/>
-<area shape="rect" id="edge11-headlabel" href="dir_000054_000007.html" title="99" alt="" coords="223,427,238,442"/>
-<area shape="rect" id="clust1" href="dir_294055a49f38394d49b8311f78ecb93d.html" alt="" coords="109,16,469,181"/>
+<area shape="rect" id="node2" href="dir_cad717375471040aaea148eab2362f97.html" title="include" alt="" coords="149,123,221,171"/>
+<area shape="rect" id="node5" href="dir_80ecf6fe8b2ccd2d6af6fe314205f076.html" title="tesseract_scene_graph" alt="" coords="180,411,337,459"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000011_000032.html" title="14" alt="" coords="249,383,263,398"/>
+<area shape="rect" id="node6" href="dir_8430b83f3af685b4c96d298a32e9aa37.html" title="tesseract_common" alt="" coords="133,507,267,555"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000011_000007.html" title="25" alt="" coords="179,479,194,494"/>
+<area shape="rect" id="node7" href="dir_f9fd38abb6852090848a9f28804f693c.html" title="tesseract_state_solver" alt="" coords="296,219,451,267"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000011_000068.html" title="1" alt="" coords="311,196,319,210"/>
+<area shape="rect" id="node3" href="dir_ee6eb93300be23d38ffc94d0829554e1.html" title="src" alt="" coords="101,27,173,75"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000058_000011.html" title="31" alt="" coords="165,95,180,110"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000058_000032.html" title="5" alt="" coords="270,386,278,401"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000058_000007.html" title="14" alt="" coords="124,483,138,498"/>
+<area shape="rect" id="node4" href="dir_46f537e945f8f3a3813a9c0d19f25c71.html" title="test" alt="" coords="197,27,269,75"/>
+<area shape="rect" id="edge13-headlabel" href="dir_000063_000011.html" title="29" alt="" coords="206,103,220,118"/>
+<area shape="rect" id="edge11-headlabel" href="dir_000063_000032.html" title="1" alt="" coords="236,383,244,398"/>
+<area shape="rect" id="edge12-headlabel" href="dir_000063_000007.html" title="12" alt="" coords="150,481,164,496"/>
+<area shape="rect" id="edge14-headlabel" href="dir_000063_000068.html" title="4" alt="" coords="348,191,356,206"/>
+<area shape="rect" id="node8" href="dir_73dd8f3c3376cfb32596795362fe062b.html" title="tesseract_urdf" alt="" coords="413,315,518,363"/>
+<area shape="rect" id="edge10-headlabel" href="dir_000063_000047.html" title="3" alt="" coords="478,290,486,305"/>
+<area shape="rect" id="edge17-headlabel" href="dir_000032_000007.html" title="20" alt="" coords="224,488,238,503"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000068_000032.html" title="5" alt="" coords="285,392,293,407"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000068_000007.html" title="14" alt="" coords="280,508,294,522"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000068_000047.html" title="1" alt="" coords="432,288,440,303"/>
+<area shape="rect" id="edge15-headlabel" href="dir_000047_000032.html" title="24" alt="" coords="322,403,336,418"/>
+<area shape="rect" id="edge16-headlabel" href="dir_000047_000007.html" title="111" alt="" coords="276,513,297,527"/>
+<area shape="rect" id="clust1" href="dir_294055a49f38394d49b8311f78ecb93d.html" alt="" coords="91,16,451,181"/>
 </map>

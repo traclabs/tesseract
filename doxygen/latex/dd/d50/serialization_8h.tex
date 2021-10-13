@@ -6,6 +6,7 @@ Additional Boost serialization wrappers.
 
 
 {\ttfamily \#include $<$tesseract\+\_\+common/macros.\+h$>$}\newline
+{\ttfamily \#include $<$variant$>$}\newline
 {\ttfamily \#include $<$Eigen/\+Dense$>$}\newline
 {\ttfamily \#include $<$boost/serialization/tracking.\+hpp$>$}\newline
 {\ttfamily \#include $<$boost/serialization/tracking\+\_\+enum.\+hpp$>$}\newline
@@ -52,6 +53,12 @@ This graph shows which files directly or indirectly include this file\+:
 {\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a594198c2e90f0a9eef3a1b3ca33f939f}{boost\+::serialization\+::load}} (Archive \&ar, Eigen\+::\+Matrix\+X2d \&g, const unsigned int version)
 \item 
 {\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_acc2c87e6f21f9f87a5ef38ef10d38d8d}{boost\+::serialization\+::serialize}} (Archive \&ar, Eigen\+::\+Matrix\+X2d \&g, const unsigned int version)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a5cedb22a9f3074c8826d852064662178}{boost\+::serialization\+::save}} (Archive \&ar, const std\+::variant$<$ std\+::string, Eigen\+::\+Isometry3d $>$ \&g, const unsigned int version)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a70b58a18bac429a856c7f6e7bcb527f7}{boost\+::serialization\+::load}} (Archive \&ar, std\+::variant$<$ std\+::string, Eigen\+::\+Isometry3d $>$ \&g, const unsigned int version)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a101eccbce7d00cf44575ef3e5e43e745}{boost\+::serialization\+::serialize}} (Archive \&ar, std\+::variant$<$ std\+::string, Eigen\+::\+Isometry3d $>$ \&g, const unsigned int version)
 \item 
 \mbox{\hyperlink{serialization_8h_a6ce327d54a408162d753adb9cc40e1cd}{BOOST\+\_\+\+CLASS\+\_\+\+TRACKING}} (Eigen\+::\+Vector\+Xd, boost\+::serialization\+::track\+\_\+never)
 \item 

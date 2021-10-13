@@ -41,9 +41,9 @@ virtual \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_ad0a31f46d66793483479
 \item 
 \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel}{SRDFModel}} \& \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_a4de80d6aff38de6a1c0c69d575b1b70b}{operator=}} (\mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel}{SRDFModel}} \&\&)=default
 \item 
-void \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_ab38b514b3d9c6a30d323ebac054a8de2}{init\+File}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const std\+::string \&filename)
+void \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_adf0a949b46216d9823a83661781ac1e6}{init\+File}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const std\+::string \&filename, const \mbox{\hyperlink{classtesseract__common_1_1ResourceLocator}{tesseract\+\_\+common\+::\+Resource\+Locator}} \&locator)
 \begin{DoxyCompactList}\small\item\em Load Model given a filename. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_a100271ff8717425953c31cfd7ac14bd3}{init\+String}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const std\+::string \&xmlstring)
+void \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_ab557f44132eedcfb16d3cbb545ce9863}{init\+String}} (const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&scene\+\_\+graph, const std\+::string \&xmlstring, const \mbox{\hyperlink{classtesseract__common_1_1ResourceLocator}{tesseract\+\_\+common\+::\+Resource\+Locator}} \&locator)
 \begin{DoxyCompactList}\small\item\em Load Model from a XML-\/string. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classtesseract__srdf_1_1SRDFModel_a029ffab3d81e17c436a8162220776dca}{save\+To\+File}} (const std\+::string \&file\+\_\+path) const
 \begin{DoxyCompactList}\small\item\em Save the model to a file. \end{DoxyCompactList}\item 
@@ -120,11 +120,11 @@ Representation of semantic information about the robot.
 
 Clear the model. 
 
-\mbox{\Hypertarget{classtesseract__srdf_1_1SRDFModel_ab38b514b3d9c6a30d323ebac054a8de2}\label{classtesseract__srdf_1_1SRDFModel_ab38b514b3d9c6a30d323ebac054a8de2}} 
+\mbox{\Hypertarget{classtesseract__srdf_1_1SRDFModel_adf0a949b46216d9823a83661781ac1e6}\label{classtesseract__srdf_1_1SRDFModel_adf0a949b46216d9823a83661781ac1e6}} 
 \index{tesseract\_srdf::SRDFModel@{tesseract\_srdf::SRDFModel}!initFile@{initFile}}
 \index{initFile@{initFile}!tesseract\_srdf::SRDFModel@{tesseract\_srdf::SRDFModel}}
 \doxysubsubsection{\texorpdfstring{initFile()}{initFile()}}
-{\footnotesize\ttfamily void tesseract\+\_\+srdf\+::\+SRDFModel\+::init\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&}]{scene\+\_\+graph,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void tesseract\+\_\+srdf\+::\+SRDFModel\+::init\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&}]{scene\+\_\+graph,  }\item[{const std\+::string \&}]{filename,  }\item[{const \mbox{\hyperlink{classtesseract__common_1_1ResourceLocator}{tesseract\+\_\+common\+::\+Resource\+Locator}} \&}]{locator }\end{DoxyParamCaption})}
 
 
 
@@ -135,11 +135,11 @@ Load Model given a filename.
 {\em std\+::nested\+\_\+exception} & if an error occurs during parsing srdf \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classtesseract__srdf_1_1SRDFModel_a100271ff8717425953c31cfd7ac14bd3}\label{classtesseract__srdf_1_1SRDFModel_a100271ff8717425953c31cfd7ac14bd3}} 
+\mbox{\Hypertarget{classtesseract__srdf_1_1SRDFModel_ab557f44132eedcfb16d3cbb545ce9863}\label{classtesseract__srdf_1_1SRDFModel_ab557f44132eedcfb16d3cbb545ce9863}} 
 \index{tesseract\_srdf::SRDFModel@{tesseract\_srdf::SRDFModel}!initString@{initString}}
 \index{initString@{initString}!tesseract\_srdf::SRDFModel@{tesseract\_srdf::SRDFModel}}
 \doxysubsubsection{\texorpdfstring{initString()}{initString()}}
-{\footnotesize\ttfamily void tesseract\+\_\+srdf\+::\+SRDFModel\+::init\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&}]{scene\+\_\+graph,  }\item[{const std\+::string \&}]{xmlstring }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void tesseract\+\_\+srdf\+::\+SRDFModel\+::init\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph}} \&}]{scene\+\_\+graph,  }\item[{const std\+::string \&}]{xmlstring,  }\item[{const \mbox{\hyperlink{classtesseract__common_1_1ResourceLocator}{tesseract\+\_\+common\+::\+Resource\+Locator}} \&}]{locator }\end{DoxyParamCaption})}
 
 
 
