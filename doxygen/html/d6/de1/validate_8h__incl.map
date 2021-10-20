@@ -1,5 +1,5 @@
-<map id="tesseract_kinematics/include/tesseract_kinematics/core/validate.h" name="tesseract_kinematics/include/tesseract_kinematics/core/validate.h">
-<area shape="rect" id="node1" title="This contains utility function validate things like forward kinematics match inverse kinematics." alt="" coords="3765,5,3960,61"/>
+<map id="tesseract_kinematics/core/include/tesseract_kinematics/core/validate.h" name="tesseract_kinematics/core/include/tesseract_kinematics/core/validate.h">
+<area shape="rect" id="node1" title="This contains utility function validate things like forward kinematics match inverse kinematics." alt="" coords="3772,5,3952,61"/>
 <area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="1888,831,2079,858"/>
 <area shape="rect" id="node3" title=" " alt="" coords="3840,831,3954,858"/>
 <area shape="rect" id="node4" title=" " alt="" coords="3666,474,3834,501"/>
@@ -45,5 +45,5 @@
 <area shape="rect" id="node40" title=" " alt="" coords="2613,742,2704,769"/>
 <area shape="rect" id="node42" href="$d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="1896,645,2032,687"/>
 <area shape="rect" id="node45" title=" " alt="" coords="3413,474,3528,501"/>
-<area shape="rect" id="node47" href="$d1/da8/tesseract__kinematics_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="1146,467,1293,508"/>
+<area shape="rect" id="node47" href="$de/d06/tesseract__kinematics_2core_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="1146,467,1293,508"/>
 </map>

@@ -1,12 +1,12 @@
-<map id="tesseract_kinematics/include/tesseract_kinematics/core/rep_inv_kin.h" name="tesseract_kinematics/include/tesseract_kinematics/core/rep_inv_kin.h">
-<area shape="rect" id="node1" title=" " alt="" coords="2481,5,2676,61"/>
+<map id="tesseract_kinematics/core/include/tesseract_kinematics/core/rep_inv_kin.h" name="tesseract_kinematics/core/include/tesseract_kinematics/core/rep_inv_kin.h">
+<area shape="rect" id="node1" title=" " alt="" coords="2478,5,2679,61"/>
 <area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="1641,563,1831,590"/>
 <area shape="rect" id="node3" title=" " alt="" coords="3427,474,3538,501"/>
 <area shape="rect" id="node4" title=" " alt="" coords="2311,117,2479,143"/>
 <area shape="rect" id="node5" href="$d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="949,199,1107,240"/>
 <area shape="rect" id="node28" href="$d7/dea/scene__state_8h.html" title="This holds a state of the scene." alt="" coords="3195,288,3352,329"/>
 <area shape="rect" id="node29" href="$d3/da5/inverse__kinematics_8h.html" title="Inverse kinematics functions." alt="" coords="2782,109,2959,151"/>
-<area shape="rect" id="node31" href="$d1/da8/tesseract__kinematics_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="2324,199,2471,240"/>
+<area shape="rect" id="node31" href="$de/d06/tesseract__kinematics_2core_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="2324,199,2471,240"/>
 <area shape="rect" id="node38" href="$d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="2553,109,2732,151"/>
 <area shape="rect" id="node6" title=" " alt="" coords="325,288,477,329"/>
 <area shape="rect" id="node7" title=" " alt="" coords="502,288,642,329"/>

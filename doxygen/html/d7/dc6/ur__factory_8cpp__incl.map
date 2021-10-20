@@ -1,9 +1,9 @@
-<map id="tesseract_kinematics/src/ur/ur_factory.cpp" name="tesseract_kinematics/src/ur/ur_factory.cpp">
+<map id="tesseract_kinematics/ur/src/ur_factory.cpp" name="tesseract_kinematics/ur/src/ur_factory.cpp">
 <area shape="rect" id="node1" title="Tesseract UR Inverse kinematics Factory." alt="" coords="1491,5,1637,47"/>
 <area shape="rect" id="node2" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="2097,742,2287,769"/>
 <area shape="rect" id="node3" title=" " alt="" coords="3729,653,3783,679"/>
 <area shape="rect" id="node4" href="$d7/dbe/ur__factory_8h.html" title="Tesseract UR Inverse kinematics Factory." alt="" coords="1491,95,1637,136"/>
-<area shape="rect" id="node19" href="$d1/da8/tesseract__kinematics_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="1016,377,1163,419"/>
+<area shape="rect" id="node19" href="$de/d06/tesseract__kinematics_2core_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="1016,377,1163,419"/>
 <area shape="rect" id="node50" href="$d3/d8f/ur__inv__kin_8h.html" title=" " alt="" coords="975,191,1121,233"/>
 <area shape="rect" id="node5" href="$d0/d3c/kinematics__plugin__factory_8h.html" title="Kinematics Plugin Factory." alt="" coords="1485,184,1643,240"/>
 <area shape="rect" id="node6" title=" " alt="" coords="2533,653,2601,679"/>

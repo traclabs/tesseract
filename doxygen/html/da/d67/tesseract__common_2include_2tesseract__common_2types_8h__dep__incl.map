@@ -1,32 +1,32 @@
 <map id="tesseract_common/include/tesseract_common/types.h" name="tesseract_common/include/tesseract_common/types.h">
-<area shape="rect" id="node1" title="Common Tesseract Types." alt="" coords="2842,5,3024,47"/>
+<area shape="rect" id="node1" title="Common Tesseract Types." alt="" coords="2815,5,2998,47"/>
 <area shape="rect" id="node2" href="$dd/dc4/convex__decomposition_8h.html" title="Convex decomposition interface." alt="" coords="600,95,802,165"/>
 <area shape="rect" id="node5" href="$d3/d0c/tesseract__collision_2include_2tesseract__collision_2core_2types_8h.html" title="Tesseracts Collision Common Types." alt="" coords="718,339,897,395"/>
 <area shape="rect" id="node13" href="$de/d26/environment_8h.html" title=" " alt="" coords="2236,569,2438,625"/>
 <area shape="rect" id="node22" href="$d4/da8/collision__margin__data_8h.html" title="This is used to store collision margin information." alt="" coords="928,221,1116,277"/>
 <area shape="rect" id="node25" href="$dc/d80/collision__margins_8cpp.html" title="Parse collision margin data from srdf file." alt="" coords="1148,347,1299,388"/>
 <area shape="rect" id="node26" href="$dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1728,109,1906,151"/>
-<area shape="rect" id="node30" href="$de/df1/tesseract__common__unit_8cpp.html" title=" " alt="" coords="2602,228,2792,269"/>
-<area shape="rect" id="node31" href="$d1/da8/tesseract__kinematics_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="2232,221,2426,277"/>
-<area shape="rect" id="node32" href="$d3/da5/inverse__kinematics_8h.html" title="Inverse kinematics functions." alt="" coords="2360,339,2554,395"/>
-<area shape="rect" id="node33" href="$d0/d3c/kinematics__plugin__factory_8h.html" title="Kinematics Plugin Factory." alt="" coords="2484,458,2699,514"/>
-<area shape="rect" id="node34" href="$da/d97/kdl__utils_8h.html" title="Tesseract KDL utility functions." alt="" coords="2141,339,2336,395"/>
+<area shape="rect" id="node30" href="$de/df1/tesseract__common__unit_8cpp.html" title=" " alt="" coords="2576,228,2765,269"/>
+<area shape="rect" id="node31" href="$de/d06/tesseract__kinematics_2core_2include_2tesseract__kinematics_2core_2types_8h.html" title="Kinematics types." alt="" coords="2232,221,2399,277"/>
+<area shape="rect" id="node32" href="$d3/da5/inverse__kinematics_8h.html" title="Inverse kinematics functions." alt="" coords="2340,332,2507,403"/>
+<area shape="rect" id="node33" href="$d0/d3c/kinematics__plugin__factory_8h.html" title="Kinematics Plugin Factory." alt="" coords="2451,451,2639,521"/>
+<area shape="rect" id="node34" href="$da/d97/kdl__utils_8h.html" title="Tesseract KDL utility functions." alt="" coords="2142,339,2316,395"/>
 <area shape="rect" id="node35" href="$d3/d7a/kinematics__information_8h.html" title="This hold the kinematics information." alt="" coords="1930,221,2106,277"/>
-<area shape="rect" id="node36" href="$d2/db4/yaml__utils_8h.html" title="YAML Type conversions." alt="" coords="2653,102,2832,158"/>
-<area shape="rect" id="node37" href="$d7/d6f/resource__locator_8cpp.html" title="Resource locator functions." alt="" coords="2856,109,3010,151"/>
-<area shape="rect" id="node38" href="$da/ddf/types_8cpp.html" title="Common Tesseract Types." alt="" coords="3034,109,3189,151"/>
-<area shape="rect" id="node39" href="$d1/de7/resource__locator__unit_8cpp.html" title=" " alt="" coords="3214,109,3388,151"/>
-<area shape="rect" id="node40" href="$d5/d93/tesseract__geometry_2include_2tesseract__geometry_2impl_2mesh_8h.html" title="Tesseract Mesh Geometry." alt="" coords="3718,339,3903,395"/>
-<area shape="rect" id="node41" href="$df/d8e/mesh__material_8h.html" title="Tesseract Mesh Material read from a mesh file." alt="" coords="3768,102,3954,158"/>
-<area shape="rect" id="node42" href="$d2/deb/polygon__mesh_8h.html" title="Tesseract Polygon Mesh Geometry." alt="" coords="3718,221,3903,277"/>
-<area shape="rect" id="node43" href="$d8/dc3/mesh__parser_8h.html" title=" " alt="" coords="3979,221,4164,277"/>
-<area shape="rect" id="node44" href="$d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="2681,339,2876,395"/>
-<area shape="rect" id="node45" href="$db/d8d/joint__group_8h.html" title="A joint group with forward kinematics, Jacobian, limits methods." alt="" coords="3572,458,3766,514"/>
-<area shape="rect" id="node46" href="$d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="2138,95,2304,165"/>
-<area shape="rect" id="node47" href="$d7/dea/scene__state_8h.html" title="This holds a state of the scene." alt="" coords="3334,339,3500,395"/>
-<area shape="rect" id="node48" href="$d9/dcf/state__solver_8h.html" title="Tesseract Scene Graph State Solver Interface." alt="" coords="3386,458,3547,514"/>
-<area shape="rect" id="node49" href="$da/dd6/conversions_8h.html" title="A set of conversion between Tesseract and Ignition Robotics objects." alt="" coords="4029,102,4232,158"/>
-<area shape="rect" id="node50" href="$d6/da4/toolpath__marker_8h.html" title=" " alt="" coords="4256,102,4458,158"/>
+<area shape="rect" id="node36" href="$d2/db4/yaml__utils_8h.html" title="YAML Type conversions." alt="" coords="2626,102,2805,158"/>
+<area shape="rect" id="node37" href="$d7/d6f/resource__locator_8cpp.html" title="Resource locator functions." alt="" coords="2829,109,2984,151"/>
+<area shape="rect" id="node38" href="$da/ddf/types_8cpp.html" title="Common Tesseract Types." alt="" coords="3008,109,3162,151"/>
+<area shape="rect" id="node39" href="$d1/de7/resource__locator__unit_8cpp.html" title=" " alt="" coords="3187,109,3362,151"/>
+<area shape="rect" id="node40" href="$d5/d93/tesseract__geometry_2include_2tesseract__geometry_2impl_2mesh_8h.html" title="Tesseract Mesh Geometry." alt="" coords="3691,339,3876,395"/>
+<area shape="rect" id="node41" href="$df/d8e/mesh__material_8h.html" title="Tesseract Mesh Material read from a mesh file." alt="" coords="3742,102,3927,158"/>
+<area shape="rect" id="node42" href="$d2/deb/polygon__mesh_8h.html" title="Tesseract Polygon Mesh Geometry." alt="" coords="3691,221,3876,277"/>
+<area shape="rect" id="node43" href="$d8/dc3/mesh__parser_8h.html" title=" " alt="" coords="3952,221,4138,277"/>
+<area shape="rect" id="node44" href="$d6/d45/forward__kinematics_8h.html" title="Forward kinematics functions." alt="" coords="2650,332,2818,403"/>
+<area shape="rect" id="node45" href="$db/d8d/joint__group_8h.html" title="A joint group with forward kinematics, Jacobian, limits methods." alt="" coords="3530,451,3685,521"/>
+<area shape="rect" id="node46" href="$d2/d01/allowed__collision__matrix_8h.html" title=" " alt="" coords="2128,95,2295,165"/>
+<area shape="rect" id="node47" href="$d7/dea/scene__state_8h.html" title="This holds a state of the scene." alt="" coords="3318,339,3484,395"/>
+<area shape="rect" id="node48" href="$d9/dcf/state__solver_8h.html" title="Tesseract Scene Graph State Solver Interface." alt="" coords="3344,458,3506,514"/>
+<area shape="rect" id="node49" href="$da/dd6/conversions_8h.html" title="A set of conversion between Tesseract and Ignition Robotics objects." alt="" coords="4002,102,4205,158"/>
+<area shape="rect" id="node50" href="$d6/da4/toolpath__marker_8h.html" title=" " alt="" coords="4229,102,4432,158"/>
 <area shape="rect" id="node3" href="$d7/da3/convex__decomposition__hacd_8h.html" title="Convex decomposition HACD implementation." alt="" coords="373,213,576,284"/>
 <area shape="rect" id="node4" href="$d2/df5/convex__decomposition__vhacd_8h.html" title="Convex decomposition VHACD implementation." alt="" coords="600,213,802,284"/>
 <area shape="rect" id="node6" href="$d6/d91/bullet__utils_8h.html" title="Tesseract ROS Bullet environment utility function." alt="" coords="988,569,1166,625"/>
