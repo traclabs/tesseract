@@ -281,7 +281,7 @@ Disable collision between two collision objects.
 \hline
 {\em link\+\_\+name2} & \mbox{\hyperlink{classtesseract__scene__graph_1_1Collision}{Collision}} object name \\
 \hline
-{\em reason} & The reason for disabling collison \\
+{\em reason} & The reason for disabling collision \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classtesseract__scene__graph_1_1SceneGraph_a9e1c6212745a6c8484e63bb0c18955e9}\label{classtesseract__scene__graph_1_1SceneGraph_a9e1c6212745a6c8484e63bb0c18955e9}} 
@@ -694,7 +694,7 @@ A vector of child link names
 Get all children link names for the given joint names. 
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000007}{Todo}}]Need to create custom vistor so already process joint\+\_\+names do not get processed again. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000007}{Todo}}]Need to create custom visitor so already process joint\+\_\+names do not get processed again. \end{DoxyRefDesc}
 
 \begin{DoxyParams}{Parameters}
 {\em names} & Name of joints \\
@@ -814,7 +814,7 @@ A vector of child link names
 Get whether a link should be considered during collision checking. 
 
 \begin{DoxyReturn}{Returns}
-True if should be condisdered during collision checking, otherwise false 
+True if should be considered during collision checking, otherwise false 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__scene__graph_1_1SceneGraph_a6fd542bb79a24631eacccc5190684c82}\label{classtesseract__scene__graph_1_1SceneGraph_a6fd542bb79a24631eacccc5190684c82}} 
 \index{tesseract\_scene\_graph::SceneGraph@{tesseract\_scene\_graph::SceneGraph}!getLinks@{getLinks}}
@@ -978,11 +978,11 @@ Merge a graph into the current graph.
 \begin{DoxyParams}{Parameters}
 {\em scene\+\_\+graph} & Const ref to the graph to be merged (said graph will be copied) \\
 \hline
-{\em prefix} & string Will be prepended to every link and joint of the merged graph \\
+{\em prefix} & string Will prepend to every link and joint of the merged graph \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Return False if any link or joint name collides with current environment, otherwise True Merge a subgraph into the current environment, considering that the root of the merged graph is attached to the root of the environment by a fixed joint and no displacement. Every joint and link of the subgraph will be copied into the environment graph. The prefix argument is meant to allow adding multiple copies of the same subgraph with different names 
+Return False if any link or joint name collides with current environment, otherwise True Merge a sub-\/graph into the current environment, considering that the root of the merged graph is attached to the root of the environment by a fixed joint and no displacement. Every joint and link of the sub-\/graph will be copied into the environment graph. The prefix argument is meant to allow adding multiple copies of the same sub-\/graph with different names 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__scene__graph_1_1SceneGraph_a8422ff984ba3f0bcb7746a1fe370b0a1}\label{classtesseract__scene__graph_1_1SceneGraph_a8422ff984ba3f0bcb7746a1fe370b0a1}} 
 \index{tesseract\_scene\_graph::SceneGraph@{tesseract\_scene\_graph::SceneGraph}!insertSceneGraph@{insertSceneGraph}}
@@ -1000,11 +1000,11 @@ Merge a graph into the current environment.
 \hline
 {\em joint} & The joint that connects current environment with the inserted graph \\
 \hline
-{\em prefix} & string Will be prepended to every link and joint of the merged graph \\
+{\em prefix} & string Will prepend to every link and joint of the merged graph \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Return False if any link or joint name collides with current environment, otherwise True Merge a subgraph into the current environment. Every joint and link of the subgraph will be copied into the environment graph. The prefix argument is meant to allow adding multiple copies of the same subgraph with different names 
+Return False if any link or joint name collides with current environment, otherwise True Merge a sub-\/graph into the current environment. Every joint and link of the sub-\/graph will be copied into the environment graph. The prefix argument is meant to allow adding multiple copies of the same sub-\/graph with different names 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__scene__graph_1_1SceneGraph_a8efe96953d945296b9243ddc3860173c}\label{classtesseract__scene__graph_1_1SceneGraph_a8efe96953d945296b9243ddc3860173c}} 
 \index{tesseract\_scene\_graph::SceneGraph@{tesseract\_scene\_graph::SceneGraph}!isAcyclic@{isAcyclic}}
@@ -1216,7 +1216,7 @@ Set whether a link should be considered during collision checking.
 
 
 \begin{DoxyParams}{Parameters}
-{\em enabled} & True if should be condisdered during collision checking, otherwise false \\
+{\em enabled} & True if should be considered during collision checking, otherwise false \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classtesseract__scene__graph_1_1SceneGraph_a1f20f252bab3ab66a593b3a1c1b25cad}\label{classtesseract__scene__graph_1_1SceneGraph_a1f20f252bab3ab66a593b3a1c1b25cad}} 

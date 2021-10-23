@@ -556,7 +556,7 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">link_name1</td><td><a class="el" href="../../d1/d90/classtesseract__scene__graph_1_1Collision.html">Collision</a> object name </td></tr>
     <tr><td class="paramname">link_name2</td><td><a class="el" href="../../d1/d90/classtesseract__scene__graph_1_1Collision.html">Collision</a> object name </td></tr>
-    <tr><td class="paramname">reason</td><td>The reason for disabling collison </td></tr>
+    <tr><td class="paramname">reason</td><td>The reason for disabling collision </td></tr>
   </table>
   </dd>
 </dl>
@@ -1270,7 +1270,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all children link names for the given joint names. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000007">Todo:</a></b></dt><dd>Need to create custom vistor so already process joint_names do not get processed again. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000007">Todo:</a></b></dt><dd>Need to create custom visitor so already process joint_names do not get processed again. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">names</td><td>Name of joints </td></tr>
@@ -1455,7 +1455,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get whether a link should be considered during collision checking. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if should be condisdered during collision checking, otherwise false </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if should be considered during collision checking, otherwise false </dd></dl>
 
 </div>
 </div>
@@ -1722,11 +1722,11 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scene_graph</td><td>Const ref to the graph to be merged (said graph will be copied) </td></tr>
-    <tr><td class="paramname">prefix</td><td>string Will be prepended to every link and joint of the merged graph </td></tr>
+    <tr><td class="paramname">prefix</td><td>string Will prepend to every link and joint of the merged graph </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return False if any link or joint name collides with current environment, otherwise True Merge a subgraph into the current environment, considering that the root of the merged graph is attached to the root of the environment by a fixed joint and no displacement. Every joint and link of the subgraph will be copied into the environment graph. The prefix argument is meant to allow adding multiple copies of the same subgraph with different names </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return False if any link or joint name collides with current environment, otherwise True Merge a sub-graph into the current environment, considering that the root of the merged graph is attached to the root of the environment by a fixed joint and no displacement. Every joint and link of the sub-graph will be copied into the environment graph. The prefix argument is meant to allow adding multiple copies of the same sub-graph with different names </dd></dl>
 
 </div>
 </div>
@@ -1767,11 +1767,11 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">scene_graph</td><td>Const ref to the graph to be merged (said graph will be copied) </td></tr>
     <tr><td class="paramname">joint</td><td>The joint that connects current environment with the inserted graph </td></tr>
-    <tr><td class="paramname">prefix</td><td>string Will be prepended to every link and joint of the merged graph </td></tr>
+    <tr><td class="paramname">prefix</td><td>string Will prepend to every link and joint of the merged graph </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return False if any link or joint name collides with current environment, otherwise True Merge a subgraph into the current environment. Every joint and link of the subgraph will be copied into the environment graph. The prefix argument is meant to allow adding multiple copies of the same subgraph with different names </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return False if any link or joint name collides with current environment, otherwise True Merge a sub-graph into the current environment. Every joint and link of the sub-graph will be copied into the environment graph. The prefix argument is meant to allow adding multiple copies of the same sub-graph with different names </dd></dl>
 
 </div>
 </div>
@@ -2185,7 +2185,7 @@ Private Attributes</h2></td></tr>
 <p>Set whether a link should be considered during collision checking. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enabled</td><td>True if should be condisdered during collision checking, otherwise false </td></tr>
+    <tr><td class="paramname">enabled</td><td>True if should be considered during collision checking, otherwise false </td></tr>
   </table>
   </dd>
 </dl>
@@ -2355,7 +2355,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 21 2021 03:50:26 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Oct 23 2021 14:58:41 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

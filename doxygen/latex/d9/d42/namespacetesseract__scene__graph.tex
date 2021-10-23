@@ -40,6 +40,8 @@ class \mbox{\hyperlink{classtesseract__scene__graph_1_1Link}{Link}}
 \item 
 struct \mbox{\hyperlink{structtesseract__scene__graph_1_1SceneState}{Scene\+State}}
 \begin{DoxyCompactList}\small\item\em This holds a state of the scene. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__scene__graph_1_1ugraph__vertex__copier}{ugraph\+\_\+vertex\+\_\+copier}}
+\item 
 struct \mbox{\hyperlink{structtesseract__scene__graph_1_1kdl__tree__builder}{kdl\+\_\+tree\+\_\+builder}}
 \begin{DoxyCompactList}\small\item\em Everytime a vertex is visited for the first time add a new segment to the KDL Tree;. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__scene__graph_1_1kdl__sub__tree__builder}{kdl\+\_\+sub\+\_\+tree\+\_\+builder}}
@@ -80,6 +82,8 @@ using \mbox{\hyperlink{namespacetesseract__scene__graph_a87d88949e8773cc1ab1a583
 using \mbox{\hyperlink{namespacetesseract__scene__graph_a9dc21bc544723df21ec27052717c4e1e}{Edge\+Property}} = boost\+::property$<$ \mbox{\hyperlink{namespaceboost_a5bdec37849f299741830b4d2fc9f93aa}{boost\+::edge\+\_\+joint\+\_\+t}}, \mbox{\hyperlink{classtesseract__scene__graph_1_1Joint_a9e557626dd69e69cebfd3ad516cfcd85}{Joint\+::\+Ptr}}, boost\+::property$<$ boost\+::edge\+\_\+weight\+\_\+t, double $>$ $>$
 \begin{DoxyCompactList}\small\item\em Edge\+Property. \end{DoxyCompactList}\item 
 using \mbox{\hyperlink{namespacetesseract__scene__graph_acbaf9f6ad6831a8d42a5ece9f2d611a2}{Graph}} = boost\+::adjacency\+\_\+list$<$ boost\+::listS, boost\+::listS, boost\+::bidirectionalS, \mbox{\hyperlink{namespacetesseract__scene__graph_a87d88949e8773cc1ab1a583b4bc6824f}{Vertex\+Property}}, \mbox{\hyperlink{namespacetesseract__scene__graph_a9dc21bc544723df21ec27052717c4e1e}{Edge\+Property}}, \mbox{\hyperlink{namespacetesseract__scene__graph_a8a54db22a9b9c10174389d74fc6a46bc}{Graph\+Property}} $>$
+\item 
+using \mbox{\hyperlink{namespacetesseract__scene__graph_a9d854d1aefdbcdab3a70f2051ee528f5}{UGraph}} = boost\+::adjacency\+\_\+list$<$ boost\+::listS, boost\+::listS, boost\+::undirectedS, \mbox{\hyperlink{namespacetesseract__scene__graph_a87d88949e8773cc1ab1a583b4bc6824f}{Vertex\+Property}}, \mbox{\hyperlink{namespacetesseract__scene__graph_a9dc21bc544723df21ec27052717c4e1e}{Edge\+Property}}, \mbox{\hyperlink{namespacetesseract__scene__graph_a8a54db22a9b9c10174389d74fc6a46bc}{Graph\+Property}} $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
@@ -165,6 +169,12 @@ The edge\+\_\+weight represents the distance between the two links \mbox{\Hypert
 
 
 Defines the boost graph property. 
+
+\mbox{\Hypertarget{namespacetesseract__scene__graph_a9d854d1aefdbcdab3a70f2051ee528f5}\label{namespacetesseract__scene__graph_a9d854d1aefdbcdab3a70f2051ee528f5}} 
+\index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!UGraph@{UGraph}}
+\index{UGraph@{UGraph}!tesseract\_scene\_graph@{tesseract\_scene\_graph}}
+\doxysubsubsection{\texorpdfstring{UGraph}{UGraph}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacetesseract__scene__graph_a9d854d1aefdbcdab3a70f2051ee528f5}{tesseract\+\_\+scene\+\_\+graph\+::\+UGraph}} = typedef boost\+::adjacency\+\_\+list$<$boost\+::listS, boost\+::listS, boost\+::undirectedS, \mbox{\hyperlink{namespacetesseract__scene__graph_a87d88949e8773cc1ab1a583b4bc6824f}{Vertex\+Property}}, \mbox{\hyperlink{namespacetesseract__scene__graph_a9dc21bc544723df21ec27052717c4e1e}{Edge\+Property}}, \mbox{\hyperlink{namespacetesseract__scene__graph_a8a54db22a9b9c10174389d74fc6a46bc}{Graph\+Property}}$>$}
 
 \mbox{\Hypertarget{namespacetesseract__scene__graph_a87d88949e8773cc1ab1a583b4bc6824f}\label{namespacetesseract__scene__graph_a87d88949e8773cc1ab1a583b4bc6824f}} 
 \index{tesseract\_scene\_graph@{tesseract\_scene\_graph}!VertexProperty@{VertexProperty}}
@@ -451,7 +461,7 @@ Returns KDL tree data representation of the scene graph
 
 Convert a portion of a Tesseract \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph}{Scene\+Graph}} into a KDL Tree. 
 
-This will create a new tree from multple sub tree defined by the provided joint names The values are used to convert non fixed joints that are not listed in joint\+\_\+names to a fixed joint. The first tree found a link is defined attaching world to the base link and all other trees are attached to this link by a fixed joint. 
+This will create a new tree from multiple sub tree defined by the provided joint names The values are used to convert non fixed joints that are not listed in joint\+\_\+names to a fixed joint. The first tree found a link is defined attaching world to the base link and all other trees are attached to this link by a fixed joint. 
 \begin{DoxyExceptions}{Exceptions}
 {\em If} & graph is not a tree it will return false. \\
 \hline

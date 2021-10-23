@@ -70,6 +70,8 @@ bool \mbox{\hyperlink{classtesseract__environment_1_1Environment_a180c9eb3de9ccb
 \begin{DoxyCompactList}\small\item\em Apply command to the environment. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtesseract__scene__graph_1_1SceneGraph_a9ee303b2514bfedd8c914d09551b00ff}{tesseract\+\_\+scene\+\_\+graph\+::\+Scene\+Graph\+::\+Const\+Ptr}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_a832b1b88f248ff86a5031addff4a3760}{get\+Scene\+Graph}} () const
 \begin{DoxyCompactList}\small\item\em Get the Scene Graph. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \mbox{\hyperlink{classtesseract__environment_1_1Environment_a5802d3184e8104b3b8ccef5f42ae6c2c}{get\+Group\+Joint\+Names}} (const std\+::string \&group\+\_\+name) const
+\begin{DoxyCompactList}\small\item\em Get a groups joint names. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtesseract__kinematics_1_1JointGroup_ae671cb8eec7305576666282365c2e011}{tesseract\+\_\+kinematics\+::\+Joint\+Group\+::\+UPtr}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_a9562be4e26c10c103bc4388f317ec0dd}{get\+Joint\+Group}} (const std\+::string \&group\+\_\+name) const
 \begin{DoxyCompactList}\small\item\em Get a joint group by name. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtesseract__kinematics_1_1JointGroup_ae671cb8eec7305576666282365c2e011}{tesseract\+\_\+kinematics\+::\+Joint\+Group\+::\+UPtr}} \mbox{\hyperlink{classtesseract__environment_1_1Environment_af26e92af1424b0769233b8973d925506}{get\+Joint\+Group}} (const std\+::string \&name, const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&joint\+\_\+names) const
@@ -777,6 +779,24 @@ This get the current find tcp callbacks stored in the environment.
 
 \begin{DoxyReturn}{Returns}
 A vector of callback functions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtesseract__environment_1_1Environment_a5802d3184e8104b3b8ccef5f42ae6c2c}\label{classtesseract__environment_1_1Environment_a5802d3184e8104b3b8ccef5f42ae6c2c}} 
+\index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getGroupJointNames@{getGroupJointNames}}
+\index{getGroupJointNames@{getGroupJointNames}!tesseract\_environment::Environment@{tesseract\_environment::Environment}}
+\doxysubsubsection{\texorpdfstring{getGroupJointNames()}{getGroupJointNames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ tesseract\+\_\+environment\+::\+Environment\+::get\+Group\+Joint\+Names (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+\_\+name }\end{DoxyParamCaption}) const}
+
+
+
+Get a groups joint names. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+\_\+name} & The group name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of joint names 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classtesseract__environment_1_1Environment_a6e159713f4b2339d981dac0faead3d09}\label{classtesseract__environment_1_1Environment_a6e159713f4b2339d981dac0faead3d09}} 
 \index{tesseract\_environment::Environment@{tesseract\_environment::Environment}!getGroupNames@{getGroupNames}}
