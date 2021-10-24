@@ -1,4 +1,4 @@
-<map id="tesseract_collision/src/bullet/tesseract_gjk_pair_detector.cpp" name="tesseract_collision/src/bullet/tesseract_gjk_pair_detector.cpp">
+<map id="tesseract_collision/bullet/src/tesseract_gjk_pair_detector.cpp" name="tesseract_collision/bullet/src/tesseract_gjk_pair_detector.cpp">
 <area shape="rect" id="node1" title=" " alt="" coords="2712,5,2864,61"/>
 <area shape="rect" id="node2" href="$d6/ddf/tesseract__gjk__pair__detector_8h.html" title=" " alt="" coords="2457,109,2596,165"/>
 <area shape="rect" id="node6" title=" " alt="" coords="2706,221,2937,262"/>
@@ -7,7 +7,7 @@
 <area shape="rect" id="node3" href="$de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="1334,861,1525,887"/>
 <area shape="rect" id="node4" title=" " alt="" coords="2092,213,2324,269"/>
 <area shape="rect" id="node5" title=" " alt="" coords="2348,221,2527,262"/>
-<area shape="rect" id="node7" href="$d3/d0c/tesseract__collision_2include_2tesseract__collision_2core_2types_8h.html" title="Tesseracts Collision Common Types." alt="" coords="2551,221,2681,262"/>
+<area shape="rect" id="node7" href="$d3/db3/tesseract__collision_2core_2include_2tesseract__collision_2core_2types_8h.html" title="Tesseracts Collision Common Types." alt="" coords="2551,221,2681,262"/>
 <area shape="rect" id="node8" title=" " alt="" coords="3500,861,3585,887"/>
 <area shape="rect" id="node9" title=" " alt="" coords="2204,861,2319,887"/>
 <area shape="rect" id="node10" title=" " alt="" coords="2451,771,2509,798"/>

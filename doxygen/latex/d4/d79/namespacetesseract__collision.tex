@@ -18,19 +18,15 @@
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classtesseract__collision_1_1ConvexDecomposition}{Convex\+Decomposition}}
-\item 
 struct \mbox{\hyperlink{structtesseract__collision_1_1HACDParameters}{HACDParameters}}
 \item 
 class \mbox{\hyperlink{classtesseract__collision_1_1ConvexDecompositionHACD}{Convex\+Decomposition\+HACD}}
 \item 
-struct \mbox{\hyperlink{structtesseract__collision_1_1VHACDParameters}{VHACDParameters}}
-\item 
-class \mbox{\hyperlink{classtesseract__collision_1_1ConvexDecompositionVHACD}{Convex\+Decomposition\+VHACD}}
-\item 
 class \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManager}{Continuous\+Contact\+Manager}}
 \item 
 class \mbox{\hyperlink{classtesseract__collision_1_1ContinuousContactManagerFactory}{Continuous\+Contact\+Manager\+Factory}}
+\item 
+class \mbox{\hyperlink{classtesseract__collision_1_1ConvexDecomposition}{Convex\+Decomposition}}
 \item 
 class \mbox{\hyperlink{classtesseract__collision_1_1DiscreteContactManager}{Discrete\+Contact\+Manager}}
 \item 
@@ -44,6 +40,10 @@ struct \mbox{\hyperlink{structtesseract__collision_1_1ContactTestData}{Contact\+
 \begin{DoxyCompactList}\small\item\em This data is intended only to be used internal to the collision checkers as a container and should not be externally used by other libraries or packages. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtesseract__collision_1_1CollisionCheckConfig}{Collision\+Check\+Config}}
 \begin{DoxyCompactList}\small\item\em This is a high level structure containing common information that collision checking utilities need. The goal of this config is to allow all collision checking utilities and planners to use the same datastructure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtesseract__collision_1_1VHACDParameters}{VHACDParameters}}
+\item 
+class \mbox{\hyperlink{classtesseract__collision_1_1ConvexDecompositionVHACD}{Convex\+Decomposition\+VHACD}}
+\item 
 class \mbox{\hyperlink{classtesseract__collision_1_1ProgressCallback}{Progress\+Callback}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
@@ -102,6 +102,10 @@ enum class \mbox{\hyperlink{namespacetesseract__collision_af17e8ee8632a40cf4b6ed
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+int \mbox{\hyperlink{namespacetesseract__collision_ac97bc1eb96f0aa2e1d3033d7e7758849}{create\+Convex\+Hull}} (\mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&vertices, Eigen\+::\+Vector\+Xi \&faces, const \mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&input, double shrink=-\/1, double shrink\+Clamp=-\/1)
+\begin{DoxyCompactList}\small\item\em Create a convex hull from vertices using Bullet Convex Hull Computer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtesseract__geometry_1_1ConvexMesh_aecd145c5f75117ff7a3bab1fb921e4c0}{tesseract\+\_\+geometry\+::\+Convex\+Mesh\+::\+Ptr}} \mbox{\hyperlink{namespacetesseract__collision_ad17b98123f412bcc30207daa6931cbb2}{make\+Convex\+Mesh}} (const \mbox{\hyperlink{classtesseract__geometry_1_1Mesh}{tesseract\+\_\+geometry\+::\+Mesh}} \&mesh)
+\item 
 \mbox{\hyperlink{namespacetesseract__collision_af5926355228f0196ddf51e6951dbe491}{Object\+Pair\+Key}} \mbox{\hyperlink{namespacetesseract__collision_a0876bd0182505440236643eb5bade1c7}{get\+Object\+Pair\+Key}} (const std\+::string \&obj1, const std\+::string \&obj2)
 \begin{DoxyCompactList}\small\item\em Get a key for two object to search the collision matrix. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ \mbox{\hyperlink{namespacetesseract__collision_af5926355228f0196ddf51e6951dbe491}{Object\+Pair\+Key}} $>$ \mbox{\hyperlink{namespacetesseract__collision_a40925f442de63b6f51da605b5192621d}{get\+Collision\+Object\+Pairs}} (const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&active\+\_\+links, const \mbox{\hyperlink{vhacdRaycastMesh_8cpp_adcf134d50025cc52907d0c8ac798d89d}{std\+::vector}}$<$ std\+::string $>$ \&static\+\_\+links, const \mbox{\hyperlink{namespacetesseract__collision_abe7752ce161fbd1139533ac566fec1cb}{Is\+Contact\+Allowed\+Fn}} \&acm)
@@ -112,10 +116,6 @@ bool \mbox{\hyperlink{namespacetesseract__collision_a1d5b1daf53ea0152f87f4ab5656
 \begin{DoxyCompactList}\small\item\em Determine if contact is allowed between two objects. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtesseract__collision_1_1ContactResult}{Contact\+Result}} $\ast$ \mbox{\hyperlink{namespacetesseract__collision_a6e40c6a2976671ddb907584a16760b6f}{process\+Result}} (\mbox{\hyperlink{structtesseract__collision_1_1ContactTestData}{Contact\+Test\+Data}} \&cdata, \mbox{\hyperlink{structtesseract__collision_1_1ContactResult}{Contact\+Result}} \&contact, const std\+::pair$<$ std\+::string, std\+::string $>$ \&key, bool found)
 \begin{DoxyCompactList}\small\item\em process\+Result Processes the \mbox{\hyperlink{structtesseract__collision_1_1ContactResult}{Contact\+Result}} based on the information in the \mbox{\hyperlink{structtesseract__collision_1_1ContactTestData}{Contact\+Test\+Data}} \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{namespacetesseract__collision_ac97bc1eb96f0aa2e1d3033d7e7758849}{create\+Convex\+Hull}} (\mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&vertices, Eigen\+::\+Vector\+Xi \&faces, const \mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&input, double shrink=-\/1, double shrink\+Clamp=-\/1)
-\begin{DoxyCompactList}\small\item\em Create a convex hull from vertices using Bullet Convex Hull Computer. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classtesseract__geometry_1_1ConvexMesh_aecd145c5f75117ff7a3bab1fb921e4c0}{tesseract\+\_\+geometry\+::\+Convex\+Mesh\+::\+Ptr}} \mbox{\hyperlink{namespacetesseract__collision_ad17b98123f412bcc30207daa6931cbb2}{make\+Convex\+Mesh}} (const \mbox{\hyperlink{classtesseract__geometry_1_1Mesh}{tesseract\+\_\+geometry\+::\+Mesh}} \&mesh)
-\item 
 void \mbox{\hyperlink{namespacetesseract__collision_ab4dd1d697dc897dc95de209f2a4d2df9}{scale\+Vertices}} (\mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&vertices, const Eigen\+::\+Vector3d \&center, const Eigen\+::\+Vector3d \&scale)
 \begin{DoxyCompactList}\small\item\em Apply scaling to the geometry coordinates. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacetesseract__collision_aa56b0690f742ef8f30f818ca562c8b67}{scale\+Vertices}} (\mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&vertices, const Eigen\+::\+Vector3d \&scale)
@@ -316,7 +316,7 @@ CCType\+\_\+\+Between&\\
 \index{tesseract\_collision@{tesseract\_collision}!createConvexHull@{createConvexHull}}
 \index{createConvexHull@{createConvexHull}!tesseract\_collision@{tesseract\_collision}}
 \doxysubsubsection{\texorpdfstring{createConvexHull()}{createConvexHull()}}
-{\footnotesize\ttfamily int tesseract\+\_\+collision\+::create\+Convex\+Hull (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&}]{vertices,  }\item[{Eigen\+::\+Vector\+Xi \&}]{faces,  }\item[{const \mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&}]{input,  }\item[{double}]{shrink = {\ttfamily -\/1},  }\item[{double}]{shrink\+Clamp = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int tesseract\+\_\+collision\+::create\+Convex\+Hull (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&}]{vertices,  }\item[{Eigen\+::\+Vector\+Xi \&}]{faces,  }\item[{const \mbox{\hyperlink{namespacetesseract__common_af89ed6517f4c84bdb2b037bb40f7d9d9}{tesseract\+\_\+common\+::\+Vector\+Vector3d}} \&}]{input,  }\item[{double}]{shrink = {\ttfamily -\/1},  }\item[{double}]{shrink\+Clamp = {\ttfamily -\/1} }\end{DoxyParamCaption})}
 
 
 
@@ -326,7 +326,7 @@ Create a convex hull from vertices using Bullet Convex Hull Computer.
 \begin{DoxyParams}{Parameters}
 {\em (\+Output)} & vertices A vector of vertices \\
 \hline
-{\em (\+Output)} & faces The first values indicates the number of vertices that define the face followed by the vertice index \\
+{\em (\+Output)} & faces The first values indicates the number of vertices that define the face followed by the vertices index \\
 \hline
 {\em (input)} & input A vector of point to create a convex hull from \\
 \hline
@@ -336,7 +336,7 @@ Create a convex hull from vertices using Bullet Convex Hull Computer.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-The number of faces. If less than zero an error occured when trying to create the convex hull 
+The number of faces. If less than zero an error occurred when trying to create the convex hull 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacetesseract__collision_a0249bb2994ca5e8258ea55309467ae4a}\label{namespacetesseract__collision_a0249bb2994ca5e8258ea55309467ae4a}} 
 \index{tesseract\_collision@{tesseract\_collision}!flattenCopyResults@{flattenCopyResults}}
@@ -469,7 +469,7 @@ Number of faces, If returned 0 it failed to load.
 \index{tesseract\_collision@{tesseract\_collision}!makeConvexMesh@{makeConvexMesh}}
 \index{makeConvexMesh@{makeConvexMesh}!tesseract\_collision@{tesseract\_collision}}
 \doxysubsubsection{\texorpdfstring{makeConvexMesh()}{makeConvexMesh()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__geometry_1_1ConvexMesh_aecd145c5f75117ff7a3bab1fb921e4c0}{tesseract\+\_\+geometry\+::\+Convex\+Mesh\+::\+Ptr}} tesseract\+\_\+collision\+::make\+Convex\+Mesh (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__geometry_1_1Mesh}{tesseract\+\_\+geometry\+::\+Mesh}} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesseract__geometry_1_1ConvexMesh_aecd145c5f75117ff7a3bab1fb921e4c0}{tesseract\+\_\+geometry\+::\+Convex\+Mesh\+::\+Ptr}} tesseract\+\_\+collision\+::make\+Convex\+Mesh (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesseract__geometry_1_1Mesh}{tesseract\+\_\+geometry\+::\+Mesh}} \&}]{mesh }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{namespacetesseract__collision_a6e40c6a2976671ddb907584a16760b6f}\label{namespacetesseract__collision_a6e40c6a2976671ddb907584a16760b6f}} 
 \index{tesseract\_collision@{tesseract\_collision}!processResult@{processResult}}
