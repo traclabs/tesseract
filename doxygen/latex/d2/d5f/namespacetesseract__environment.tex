@@ -7,6 +7,8 @@ class \mbox{\hyperlink{classtesseract__environment_1_1Command}{Command}}
 \item 
 class \mbox{\hyperlink{classtesseract__environment_1_1AddAllowedCollisionCommand}{Add\+Allowed\+Collision\+Command}}
 \item 
+class \mbox{\hyperlink{classtesseract__environment_1_1AddContactManagersPluginInfoCommand}{Add\+Contact\+Managers\+Plugin\+Info\+Command}}
+\item 
 class \mbox{\hyperlink{classtesseract__environment_1_1AddKinematicsInformationCommand}{Add\+Kinematics\+Information\+Command}}
 \item 
 class \mbox{\hyperlink{classtesseract__environment_1_1AddLinkCommand}{Add\+Link\+Command}}
@@ -42,6 +44,10 @@ class \mbox{\hyperlink{classtesseract__environment_1_1RemoveJointCommand}{Remove
 class \mbox{\hyperlink{classtesseract__environment_1_1RemoveLinkCommand}{Remove\+Link\+Command}}
 \item 
 class \mbox{\hyperlink{classtesseract__environment_1_1ReplaceJointCommand}{Replace\+Joint\+Command}}
+\item 
+class \mbox{\hyperlink{classtesseract__environment_1_1SetActiveContinuousContactManagerCommand}{Set\+Active\+Continuous\+Contact\+Manager\+Command}}
+\item 
+class \mbox{\hyperlink{classtesseract__environment_1_1SetActiveDiscreteContactManagerCommand}{Set\+Active\+Discrete\+Contact\+Manager\+Command}}
 \item 
 class \mbox{\hyperlink{classtesseract__environment_1_1Environment}{Environment}}
 \end{DoxyCompactItemize}
@@ -85,6 +91,10 @@ enum class \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3a
 \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a6f820e76663d877e0103c6aea1616b1b}{ADD\+\_\+\+KINEMATICS\+\_\+\+INFORMATION}} = 16
 , \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029ae487d29b5345ebdfa13433bc11a99e7c}{REPLACE\+\_\+\+JOINT}} = 17
 , \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029af0867a1a81a0112b16ae983214515c28}{CHANGE\+\_\+\+COLLISION\+\_\+\+MARGINS}} = 18
+, \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a888e6375965550fe9f245043026d8490}{ADD\+\_\+\+CONTACT\+\_\+\+MANAGERS\+\_\+\+PLUGIN\+\_\+\+INFO}} = 19
+, \newline
+\mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a2fdc8f6309f2bdd8cd403be451510841}{SET\+\_\+\+ACTIVE\+\_\+\+DISCRETE\+\_\+\+CONTACT\+\_\+\+MANAGER}} = 20
+, \mbox{\hyperlink{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029af02976086409570e5906a7339e95a026}{SET\+\_\+\+ACTIVE\+\_\+\+CONTINUOUS\+\_\+\+CONTACT\+\_\+\+MANAGER}} = 21
  \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
@@ -225,6 +235,18 @@ REPLACE\+\_\+\+JOINT&\\
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{CHANGE\_COLLISION\_MARGINS@{CHANGE\_COLLISION\_MARGINS}!tesseract\_environment@{tesseract\_environment}}\index{tesseract\_environment@{tesseract\_environment}!CHANGE\_COLLISION\_MARGINS@{CHANGE\_COLLISION\_MARGINS}}}\mbox{\Hypertarget{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029af0867a1a81a0112b16ae983214515c28}\label{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029af0867a1a81a0112b16ae983214515c28}} 
 CHANGE\+\_\+\+COLLISION\+\_\+\+MARGINS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADD\_CONTACT\_MANAGERS\_PLUGIN\_INFO@{ADD\_CONTACT\_MANAGERS\_PLUGIN\_INFO}!tesseract\_environment@{tesseract\_environment}}\index{tesseract\_environment@{tesseract\_environment}!ADD\_CONTACT\_MANAGERS\_PLUGIN\_INFO@{ADD\_CONTACT\_MANAGERS\_PLUGIN\_INFO}}}\mbox{\Hypertarget{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a888e6375965550fe9f245043026d8490}\label{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a888e6375965550fe9f245043026d8490}} 
+ADD\+\_\+\+CONTACT\+\_\+\+MANAGERS\+\_\+\+PLUGIN\+\_\+\+INFO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SET\_ACTIVE\_DISCRETE\_CONTACT\_MANAGER@{SET\_ACTIVE\_DISCRETE\_CONTACT\_MANAGER}!tesseract\_environment@{tesseract\_environment}}\index{tesseract\_environment@{tesseract\_environment}!SET\_ACTIVE\_DISCRETE\_CONTACT\_MANAGER@{SET\_ACTIVE\_DISCRETE\_CONTACT\_MANAGER}}}\mbox{\Hypertarget{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a2fdc8f6309f2bdd8cd403be451510841}\label{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029a2fdc8f6309f2bdd8cd403be451510841}} 
+SET\+\_\+\+ACTIVE\+\_\+\+DISCRETE\+\_\+\+CONTACT\+\_\+\+MANAGER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SET\_ACTIVE\_CONTINUOUS\_CONTACT\_MANAGER@{SET\_ACTIVE\_CONTINUOUS\_CONTACT\_MANAGER}!tesseract\_environment@{tesseract\_environment}}\index{tesseract\_environment@{tesseract\_environment}!SET\_ACTIVE\_CONTINUOUS\_CONTACT\_MANAGER@{SET\_ACTIVE\_CONTINUOUS\_CONTACT\_MANAGER}}}\mbox{\Hypertarget{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029af02976086409570e5906a7339e95a026}\label{namespacetesseract__environment_afc00c1aecb519acba3afc24dbd367029af02976086409570e5906a7339e95a026}} 
+SET\+\_\+\+ACTIVE\+\_\+\+CONTINUOUS\+\_\+\+CONTACT\+\_\+\+MANAGER&\\
 \hline
 
 \end{DoxyEnumFields}
