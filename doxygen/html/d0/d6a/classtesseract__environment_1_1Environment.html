@@ -1429,7 +1429,7 @@ Static Private Member Functions</h2></td></tr>
 <p>Find tool center point provided in the manipulator info. </p>
 <p>If manipulator information tcp is defined as a string it does the following</p><ul>
 <li>First check if manipulator info is empty or already an Isometry3d, if so return identity</li>
-<li>Next if not, it checks if the tcp offset name is a link in the environment if so it return identity</li>
+<li>Next if not, it checks if the tcp offset name is a link in the environment if so throw an exception.</li>
 <li>Next if not found, it looks up the tcp name in the SRDF kinematics information</li>
 <li>Next if not found, it leverages the user defined callbacks to try an locate the tcp information.</li>
 <li>Next throw an exception, because no tcp information was located.</li>
@@ -3521,7 +3521,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 28 2021 01:21:57 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Oct 29 2021 04:13:21 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -70,6 +70,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">tesseract_environment_unit.cpp File Reference</div>  </div>
@@ -88,86 +89,101 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d6/d0f/continuous__contact__manager_8h_source.html">tesseract_collision/core/continuous_contact_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d5/d90/commands_8h_source.html">tesseract_environment/commands.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/d26/environment_8h_source.html">tesseract_environment/environment.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d9/d71/tesseract__environment_2include_2tesseract__environment_2utils_8h_source.html">tesseract_environment/utils.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for tesseract_environment_unit.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d10/tesseract__environment__unit_8cpp__incl.png" border="0" usemap="#atesseract__environment_2test_2tesseract__environment__unit_8cpp" alt=""/></div>
 <map name="atesseract__environment_2test_2tesseract__environment__unit_8cpp" id="atesseract__environment_2test_2tesseract__environment__unit_8cpp">
-<area shape="rect" title=" " alt="" coords="1685,5,1869,61"/>
-<area shape="rect" href="../../de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="2561,525,2751,552"/>
-<area shape="rect" title=" " alt="" coords="331,117,426,143"/>
-<area shape="rect" title=" " alt="" coords="451,117,525,143"/>
-<area shape="rect" title=" " alt="" coords="797,525,856,552"/>
-<area shape="rect" href="../../d8/dec/urdf__parser_8h.html" title="A urdf parser for tesseract." alt="" coords="1559,206,1689,247"/>
-<area shape="rect" href="../../d3/d95/resource__locator_8h.html" title="Locate and retrieve resource data." alt="" coords="1865,317,2052,359"/>
-<area shape="rect" href="../../df/d9e/tesseract__geometry_2include_2tesseract__geometry_2impl_2box_8h.html" title="Tesseract Box Geometry." alt="" coords="2307,317,2443,359"/>
-<area shape="rect" href="../../dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1132,325,1303,351"/>
-<area shape="rect" href="../../dd/d7b/kdl__state__solver_8h.html" title="Tesseract Scene Graph State Solver KDL Implementation." alt="" coords="421,206,576,247"/>
-<area shape="rect" href="../../db/d35/discrete__contact__manager_8h.html" title="This is the discrete contact manager base class." alt="" coords="2026,199,2177,255"/>
-<area shape="rect" href="../../d6/d0f/continuous__contact__manager_8h.html" title="This is the continuous contact manager base class." alt="" coords="2252,199,2420,255"/>
-<area shape="rect" href="../../d5/d90/commands_8h.html" title="This contains classes for recording operations applied to the environment for tracking changes...." alt="" coords="4144,206,4299,247"/>
-<area shape="rect" href="../../de/d26/environment_8h.html" title=" " alt="" coords="1700,109,1855,151"/>
-<area shape="rect" href="../../d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="455,429,612,470"/>
-<area shape="rect" title=" " alt="" coords="506,525,561,552"/>
-<area shape="rect" title=" " alt="" coords="2025,436,2103,463"/>
-<area shape="rect" title=" " alt="" coords="3805,525,3873,552"/>
-<area shape="rect" href="../../d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="2331,429,2467,470"/>
-<area shape="rect" title=" " alt="" coords="1475,436,1544,463"/>
-<area shape="rect" title=" " alt="" coords="991,436,1070,463"/>
-<area shape="rect" title=" " alt="" coords="1094,436,1159,463"/>
-<area shape="rect" title=" " alt="" coords="1184,436,1251,463"/>
-<area shape="rect" title=" " alt="" coords="1339,525,1424,552"/>
-<area shape="rect" title=" " alt="" coords="1275,436,1347,463"/>
-<area shape="rect" title=" " alt="" coords="1371,436,1450,463"/>
-<area shape="rect" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="1720,436,1899,463"/>
-<area shape="rect" title=" " alt="" coords="123,436,213,463"/>
-<area shape="rect" title=" " alt="" coords="336,325,445,351"/>
-<area shape="rect" title=" " alt="" coords="145,325,311,351"/>
-<area shape="rect" href="../../d9/dcf/state__solver_8h.html" title="Tesseract Scene Graph State Solver Interface." alt="" coords="803,317,957,359"/>
-<area shape="rect" href="../../d0/d45/kdl__parser_8h.html" title=" " alt="" coords="469,317,627,359"/>
-<area shape="rect" href="../../d3/db3/tesseract__collision_2core_2include_2tesseract__collision_2core_2types_8h.html" title="Tesseracts Collision Common Types." alt="" coords="2076,317,2207,359"/>
-<area shape="rect" href="../../d4/d04/add__allowed__collision__command_8h.html" title="Used to add an allowed collision to the environment." alt="" coords="2886,421,3053,477"/>
-<area shape="rect" href="../../db/d41/add__contact__managers__plugin__info__command_8h.html" title="Used to add contact managers plugin info to the environment." alt="" coords="3133,303,3299,373"/>
-<area shape="rect" href="../../da/db7/add__link__command_8h.html" title="Used to add link and joint to environment." alt="" coords="4329,429,4545,470"/>
-<area shape="rect" href="../../d6/d07/add__kinematics__information__command_8h.html" title="Used to kinematics information to the environment." alt="" coords="3311,421,3497,477"/>
-<area shape="rect" href="../../df/ddd/add__scene__graph__command_8h.html" title="Used to add scene graph to the environment." alt="" coords="2603,310,2799,366"/>
-<area shape="rect" href="../../da/d98/change__joint__acceleration__limits__command_8h.html" title="Used to change a joints acceleration limits in environment." alt="" coords="3076,421,3287,477"/>
-<area shape="rect" href="../../df/dd7/change__joint__origin__command_8h.html" title="Used to change a joints origin in environment." alt="" coords="4138,421,4305,477"/>
-<area shape="rect" href="../../de/dbe/change__joint__position__limits__command_8h.html" title="Used to change a joints position limits in environment." alt="" coords="3927,421,4113,477"/>
-<area shape="rect" href="../../d8/dcb/change__joint__velocity__limits__command_8h.html" title="Used to change a joints velocity limits in environment." alt="" coords="4983,421,5169,477"/>
-<area shape="rect" href="../../de/d30/change__link__collision__enabled__command_8h.html" title="Used to change a links collision enabled in environment." alt="" coords="4569,421,4772,477"/>
-<area shape="rect" href="../../db/d87/change__link__origin__command_8h.html" title="Used to change a links origin in environment." alt="" coords="4796,421,4959,477"/>
-<area shape="rect" href="../../d8/d76/change__link__visibility__command_8h.html" title="Used to change a links visibility in environment." alt="" coords="5617,421,5780,477"/>
-<area shape="rect" href="../../dd/dbd/move__joint__command_8h.html" title="Used to move joint in environment." alt="" coords="5804,421,5961,477"/>
-<area shape="rect" href="../../db/ddd/move__link__command_8h.html" title="Used to move link in environment." alt="" coords="5985,429,6212,470"/>
-<area shape="rect" href="../../dc/d4e/remove__allowed__collision__command_8h.html" title="Used to remove an allowed collision from the environment." alt="" coords="5193,421,5381,477"/>
-<area shape="rect" href="../../d0/dfb/remove__allowed__collision__link__command_8h.html" title=" " alt="" coords="5405,421,5593,477"/>
-<area shape="rect" href="../../dd/d36/remove__joint__command_8h.html" title="Used to remove joint from environment." alt="" coords="2693,421,2861,477"/>
+<area shape="rect" title=" " alt="" coords="1708,5,1892,61"/>
+<area shape="rect" href="../../de/d3c/macros_8h.html" title="Common Tesseract Macros." alt="" coords="2398,615,2589,641"/>
+<area shape="rect" title=" " alt="" coords="422,117,517,143"/>
+<area shape="rect" title=" " alt="" coords="542,117,616,143"/>
+<area shape="rect" title=" " alt="" coords="642,615,700,641"/>
+<area shape="rect" href="../../d8/dec/urdf__parser_8h.html" title="A urdf parser for tesseract." alt="" coords="1482,295,1612,337"/>
+<area shape="rect" href="../../d3/d95/resource__locator_8h.html" title="Locate and retrieve resource data." alt="" coords="1788,407,1975,448"/>
+<area shape="rect" href="../../df/d9e/tesseract__geometry_2include_2tesseract__geometry_2impl_2box_8h.html" title="Tesseract Box Geometry." alt="" coords="2738,407,2874,448"/>
+<area shape="rect" href="../../dc/d79/tesseract__common_2include_2tesseract__common_2utils_8h.html" title="Common Tesseract Utility Functions." alt="" coords="1086,414,1256,441"/>
+<area shape="rect" href="../../dd/d7b/kdl__state__solver_8h.html" title="Tesseract Scene Graph State Solver KDL Implementation." alt="" coords="460,295,615,337"/>
+<area shape="rect" href="../../db/d35/discrete__contact__manager_8h.html" title="This is the discrete contact manager base class." alt="" coords="2133,288,2284,344"/>
+<area shape="rect" href="../../d6/d0f/continuous__contact__manager_8h.html" title="This is the continuous contact manager base class." alt="" coords="1940,288,2108,344"/>
+<area shape="rect" href="../../d5/d90/commands_8h.html" title="This contains classes for recording operations applied to the environment for tracking changes...." alt="" coords="4035,295,4190,337"/>
+<area shape="rect" href="../../de/d26/environment_8h.html" title=" " alt="" coords="1660,199,1815,240"/>
+<area shape="rect" href="../../d9/d71/tesseract__environment_2include_2tesseract__environment_2utils_8h.html" title="Tesseract Environment Utility Functions." alt="" coords="1863,109,2018,151"/>
+<area shape="rect" href="../../d6/df3/graph_8h.html" title="A basic scene graph using boost." alt="" coords="350,518,507,559"/>
+<area shape="rect" title=" " alt="" coords="401,615,456,641"/>
+<area shape="rect" title=" " alt="" coords="1970,525,2049,552"/>
+<area shape="rect" title=" " alt="" coords="3754,615,3822,641"/>
+<area shape="rect" href="../../d0/da6/tesseract__geometry_2include_2tesseract__geometry_2geometry_8h.html" title="Tesseract Geometries." alt="" coords="2479,518,2615,559"/>
+<area shape="rect" title=" " alt="" coords="1136,525,1206,552"/>
+<area shape="rect" title=" " alt="" coords="1230,525,1309,552"/>
+<area shape="rect" title=" " alt="" coords="1333,525,1398,552"/>
+<area shape="rect" title=" " alt="" coords="1423,525,1490,552"/>
+<area shape="rect" title=" " alt="" coords="1284,615,1370,641"/>
+<area shape="rect" title=" " alt="" coords="936,525,1008,552"/>
+<area shape="rect" title=" " alt="" coords="1033,525,1112,552"/>
+<area shape="rect" href="../../dd/ddb/tesseract__common_2include_2tesseract__common_2types_8h.html" title="Common Tesseract Types." alt="" coords="1666,525,1844,552"/>
+<area shape="rect" title=" " alt="" coords="84,525,173,552"/>
+<area shape="rect" title=" " alt="" coords="326,414,435,441"/>
+<area shape="rect" title=" " alt="" coords="134,414,301,441"/>
+<area shape="rect" href="../../d9/dcf/state__solver_8h.html" title="Tesseract Scene Graph State Solver Interface." alt="" coords="843,407,998,448"/>
+<area shape="rect" href="../../d0/d45/kdl__parser_8h.html" title=" " alt="" coords="459,407,616,448"/>
+<area shape="rect" href="../../d3/db3/tesseract__collision_2core_2include_2tesseract__collision_2core_2types_8h.html" title="Tesseracts Collision Common Types." alt="" coords="1999,407,2130,448"/>
+<area shape="rect" href="../../d4/d04/add__allowed__collision__command_8h.html" title="Used to add an allowed collision to the environment." alt="" coords="2852,511,3018,567"/>
+<area shape="rect" href="../../db/d41/add__contact__managers__plugin__info__command_8h.html" title="Used to add contact managers plugin info to the environment." alt="" coords="2548,392,2714,463"/>
+<area shape="rect" href="../../da/db7/add__link__command_8h.html" title="Used to add link and joint to environment." alt="" coords="3043,518,3259,559"/>
+<area shape="rect" href="../../d6/d07/add__kinematics__information__command_8h.html" title="Used to kinematics information to the environment." alt="" coords="5781,511,5966,567"/>
+<area shape="rect" href="../../df/ddd/add__scene__graph__command_8h.html" title="Used to add scene graph to the environment." alt="" coords="2328,399,2524,455"/>
+<area shape="rect" href="../../da/d98/change__joint__acceleration__limits__command_8h.html" title="Used to change a joints acceleration limits in environment." alt="" coords="3902,511,4112,567"/>
+<area shape="rect" href="../../df/dd7/change__joint__origin__command_8h.html" title="Used to change a joints origin in environment." alt="" coords="4136,511,4302,567"/>
+<area shape="rect" href="../../de/dbe/change__joint__position__limits__command_8h.html" title="Used to change a joints position limits in environment." alt="" coords="4327,511,4514,567"/>
+<area shape="rect" href="../../d8/dcb/change__joint__velocity__limits__command_8h.html" title="Used to change a joints velocity limits in environment." alt="" coords="4538,511,4724,567"/>
+<area shape="rect" href="../../de/d30/change__link__collision__enabled__command_8h.html" title="Used to change a links collision enabled in environment." alt="" coords="4748,511,4951,567"/>
+<area shape="rect" href="../../db/d87/change__link__origin__command_8h.html" title="Used to change a links origin in environment." alt="" coords="4975,511,5138,567"/>
+<area shape="rect" href="../../d8/d76/change__link__visibility__command_8h.html" title="Used to change a links visibility in environment." alt="" coords="5162,511,5324,567"/>
+<area shape="rect" href="../../dd/dbd/move__joint__command_8h.html" title="Used to move joint in environment." alt="" coords="5348,511,5506,567"/>
+<area shape="rect" href="../../db/ddd/move__link__command_8h.html" title="Used to move link in environment." alt="" coords="5530,518,5756,559"/>
+<area shape="rect" href="../../dc/d4e/remove__allowed__collision__command_8h.html" title="Used to remove an allowed collision from the environment." alt="" coords="3284,511,3472,567"/>
+<area shape="rect" href="../../d0/dfb/remove__allowed__collision__link__command_8h.html" title=" " alt="" coords="2640,511,2828,567"/>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a3a32177399531ca863fffa708e0675bb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bb">EnvironmentInitType</a> { <a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bba8eee8e217391199668cbac89472ace53">OBJECT</a>
+, <a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bba63b588d5559f64f89a416e656880b949">STRING</a>
+, <a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bba86e4c917b9ee70e67a68639bd9fcead7">FILEPATH</a>
+ }</td></tr>
+<tr class="separator:a3a32177399531ca863fffa708e0675bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad43b67aac2fb3de014c67c88f9dc4db9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#ad43b67aac2fb3de014c67c88f9dc4db9">locateResource</a> (const std::string &amp;url)</td></tr>
 <tr class="separator:ad43b67aac2fb3de014c67c88f9dc4db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add60d0d7dda4c93bf48bc725d2845fab"><td class="memItemLeft" align="right" valign="top">Eigen::Isometry3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#add60d0d7dda4c93bf48bc725d2845fab">tcpCallback</a> (const <a class="el" href="../../d4/d31/structtesseract__common_1_1ManipulatorInfo.html">tesseract_common::ManipulatorInfo</a> &amp;)</td></tr>
-<tr class="separator:add60d0d7dda4c93bf48bc725d2845fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9edb466c8df58e8053326d072ef15a5"><td class="memItemLeft" align="right" valign="top">Eigen::Isometry3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#aa9edb466c8df58e8053326d072ef15a5">tcpCallback</a> (const <a class="el" href="../../d4/d31/structtesseract__common_1_1ManipulatorInfo.html">tesseract_common::ManipulatorInfo</a> &amp;mi)</td></tr>
+<tr class="separator:aa9edb466c8df58e8053326d072ef15a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1f646b73e8b8753f65d82b9f26e3510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#aacd7acf57071e94cd87fbae62dbaafba">SceneGraph::UPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#ab1f646b73e8b8753f65d82b9f26e3510">getSceneGraph</a> ()</td></tr>
 <tr class="separator:ab1f646b73e8b8753f65d82b9f26e3510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab3daf3bc58287c24ac4be5b9caa8ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d03/classtesseract__srdf_1_1SRDFModel.html#aa774b8f688b3521f25ea1a6d4e16839c">SRDFModel::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#aab3daf3bc58287c24ac4be5b9caa8ab8">getSRDFModel</a> (const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">SceneGraph</a> &amp;scene_graph)</td></tr>
 <tr class="separator:aab3daf3bc58287c24ac4be5b9caa8ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0168f81bbe314ef74df419bbe66569ce"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a0168f81bbe314ef74df419bbe66569ce">getSceneGraphString</a> ()</td></tr>
+<tr class="separator:a0168f81bbe314ef74df419bbe66569ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f520ba70df39d6682585fb30e23f80"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a49f520ba70df39d6682585fb30e23f80">getSRDFModelString</a> ()</td></tr>
+<tr class="separator:a49f520ba70df39d6682585fb30e23f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a832944897415b09bd43d59eae7088c54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html#a4421b8568bd664cf203613a054e1847b">SceneGraph::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a832944897415b09bd43d59eae7088c54">getSubSceneGraph</a> ()</td></tr>
 <tr class="separator:a832944897415b09bd43d59eae7088c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeadb5cb5db368d6835dfd7bf514c393"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#aeeadb5cb5db368d6835dfd7bf514c393">runGetLinkTransformsTest</a> (<a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html">Environment</a> &amp;env)</td></tr>
 <tr class="separator:aeeadb5cb5db368d6835dfd7bf514c393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0ec012682a42a0aa3b6eb246a679678"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a7f9f24116120df888e99fe015803ffc0">Environment::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#ae0ec012682a42a0aa3b6eb246a679678">getEnvironment</a> ()</td></tr>
-<tr class="separator:ae0ec012682a42a0aa3b6eb246a679678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa46320c824270edbeafe6b0356835d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a7f9f24116120df888e99fe015803ffc0">Environment::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a5aa46320c824270edbeafe6b0356835d">getEnvironment</a> (<a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bb">EnvironmentInitType</a> init_type=<a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bba8eee8e217391199668cbac89472ace53">EnvironmentInitType::OBJECT</a>)</td></tr>
+<tr class="separator:a5aa46320c824270edbeafe6b0356835d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1f644bf499cceaf562d43a97e7c8d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a7f9f24116120df888e99fe015803ffc0">Environment::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a5e1f644bf499cceaf562d43a97e7c8d7">getEnvironmentURDFOnly</a> (<a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bb">EnvironmentInitType</a> init_type)</td></tr>
+<tr class="separator:a5e1f644bf499cceaf562d43a97e7c8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c94e70728367d0d016ac1e64dd31ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a11c94e70728367d0d016ac1e64dd31ec">TEST</a> (TesseractEnvironmentUnit, EnvInitURDFOnlyUnit)</td></tr>
+<tr class="separator:a11c94e70728367d0d016ac1e64dd31ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448d00b8af6cb7096c4db424e01c1219"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a448d00b8af6cb7096c4db424e01c1219">TEST</a> (TesseractEnvironmentUnit, EnvInitFailuresUnit)</td></tr>
 <tr class="separator:a448d00b8af6cb7096c4db424e01c1219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c53d32b112511dd619bb728f7cf00d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a4c53d32b112511dd619bb728f7cf00d6">TEST</a> (TesseractEnvironmentUnit, EnvCloneContactManagerUnit)</td></tr>
 <tr class="separator:a4c53d32b112511dd619bb728f7cf00d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069cc0ca28d132c94f21afd52b4cd58d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a069cc0ca28d132c94f21afd52b4cd58d">runFindTCPTest</a> ()</td></tr>
-<tr class="separator:a069cc0ca28d132c94f21afd52b4cd58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5930f64e7cbfcb77aae6eeadc5c5b13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#ab5930f64e7cbfcb77aae6eeadc5c5b13">TEST</a> (TesseractEnvironmentUnit, EnvAddAndRemoveAllowedCollisionCommandUnit)</td></tr>
 <tr class="separator:ab5930f64e7cbfcb77aae6eeadc5c5b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7bda300deadcaea8236c84ec09b949f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#ac7bda300deadcaea8236c84ec09b949f">TEST</a> (TesseractEnvironmentUnit, EnvAddandRemoveLink)</td></tr>
@@ -186,6 +202,10 @@ Functions</h2></td></tr>
 <tr class="separator:a0885de2a8da955b4bb9b9be73de49350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8be7c5729a18846a93f15be668f8d93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#aa8be7c5729a18846a93f15be668f8d93">TEST</a> (TesseractEnvironmentUnit, EnvChangeLinkVisibilityCommandUnit)</td></tr>
 <tr class="separator:aa8be7c5729a18846a93f15be668f8d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e8ba4aff90b6492e3905dc3d9a2686"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a48e8ba4aff90b6492e3905dc3d9a2686">TEST</a> (TesseractEnvironmentUnit, EnvSetActiveContinuousContactManagerCommandUnit)</td></tr>
+<tr class="separator:a48e8ba4aff90b6492e3905dc3d9a2686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac000b39be53683eced961b8e905d5050"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#ac000b39be53683eced961b8e905d5050">TEST</a> (TesseractEnvironmentUnit, EnvSetActiveDiscreteContactManagerCommandUnit)</td></tr>
+<tr class="separator:ac000b39be53683eced961b8e905d5050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab051f25b040d4e0ef2a74f2615a987cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#ab051f25b040d4e0ef2a74f2615a987cb">TEST</a> (TesseractEnvironmentUnit, EnvChangeCollisionMarginsCommandUnit)</td></tr>
 <tr class="separator:ab051f25b040d4e0ef2a74f2615a987cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad07ac718b4139f6fede7d84b31019355"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#ad07ac718b4139f6fede7d84b31019355">TEST</a> (TesseractEnvironmentUnit, EnvMoveJointCommandUnit)</td></tr>
@@ -212,12 +232,46 @@ Functions</h2></td></tr>
 <tr class="separator:a9d0c28c11dac2a40bfd5442e7c6c3a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abca032c576f4be110632df2f6203123d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#abca032c576f4be110632df2f6203123d">TEST</a> (TesseractEnvironmentUnit, EnvSetState2)</td></tr>
 <tr class="separator:abca032c576f4be110632df2f6203123d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de667089c721d24af714cf350b7c4fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a6de667089c721d24af714cf350b7c4fb">TEST</a> (TesseractEnvironmentUnit, EnvFindTCPUnit)</td></tr>
+<tr class="separator:a6de667089c721d24af714cf350b7c4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca0bfe315f2ddb9dc2a3a2be6f71f49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#abca0bfe315f2ddb9dc2a3a2be6f71f49">TEST</a> (TesseractEnvironmentUnit, getActiveLinkNamesRecursiveUnit)</td></tr>
+<tr class="separator:abca0bfe315f2ddb9dc2a3a2be6f71f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0135e86e53fd517ae04252a6fd398c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a0d0135e86e53fd517ae04252a6fd398c">TEST</a> (TesseractEnvironmentUnit, checkTrajectoryUnit)</td></tr>
+<tr class="separator:a0d0135e86e53fd517ae04252a6fd398c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a3a32177399531ca863fffa708e0675bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a32177399531ca863fffa708e0675bb">&#9670;&nbsp;</a></span>EnvironmentInitType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bb">EnvironmentInitType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3a32177399531ca863fffa708e0675bba8eee8e217391199668cbac89472ace53"></a>OBJECT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a32177399531ca863fffa708e0675bba63b588d5559f64f89a416e656880b949"></a>STRING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a32177399531ca863fffa708e0675bba86e4c917b9ee70e67a68639bd9fcead7"></a>FILEPATH&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae0ec012682a42a0aa3b6eb246a679678"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0ec012682a42a0aa3b6eb246a679678">&#9670;&nbsp;</a></span>getEnvironment()</h2>
+<a id="a5aa46320c824270edbeafe6b0356835d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa46320c824270edbeafe6b0356835d">&#9670;&nbsp;</a></span>getEnvironment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +279,26 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a7f9f24116120df888e99fe015803ffc0">Environment::Ptr</a> getEnvironment </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bb">EnvironmentInitType</a>&#160;</td>
+          <td class="paramname"><em>init_type</em> = <code><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bba8eee8e217391199668cbac89472ace53">EnvironmentInitType::OBJECT</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e1f644bf499cceaf562d43a97e7c8d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1f644bf499cceaf562d43a97e7c8d7">&#9670;&nbsp;</a></span>getEnvironmentURDFOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d6a/classtesseract__environment_1_1Environment.html#a7f9f24116120df888e99fe015803ffc0">Environment::Ptr</a> getEnvironmentURDFOnly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d5b/tesseract__environment__unit_8cpp.html#a3a32177399531ca863fffa708e0675bb">EnvironmentInitType</a>&#160;</td>
+          <td class="paramname"><em>init_type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -250,6 +323,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0168f81bbe314ef74df419bbe66569ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0168f81bbe314ef74df419bbe66569ce">&#9670;&nbsp;</a></span>getSceneGraphString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getSceneGraphString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aab3daf3bc58287c24ac4be5b9caa8ab8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab3daf3bc58287c24ac4be5b9caa8ab8">&#9670;&nbsp;</a></span>getSRDFModel()</h2>
 
@@ -261,6 +351,23 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d5d/classtesseract__scene__graph_1_1SceneGraph.html">SceneGraph</a> &amp;&#160;</td>
           <td class="paramname"><em>scene_graph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49f520ba70df39d6682585fb30e23f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f520ba70df39d6682585fb30e23f80">&#9670;&nbsp;</a></span>getSRDFModelString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getSRDFModelString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -387,23 +494,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a069cc0ca28d132c94f21afd52b4cd58d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a069cc0ca28d132c94f21afd52b4cd58d">&#9670;&nbsp;</a></span>runFindTCPTest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void runFindTCPTest </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aeeadb5cb5db368d6835dfd7bf514c393"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeeadb5cb5db368d6835dfd7bf514c393">&#9670;&nbsp;</a></span>runGetLinkTransformsTest()</h2>
 
@@ -422,8 +512,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="add60d0d7dda4c93bf48bc725d2845fab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add60d0d7dda4c93bf48bc725d2845fab">&#9670;&nbsp;</a></span>tcpCallback()</h2>
+<a id="aa9edb466c8df58e8053326d072ef15a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9edb466c8df58e8053326d072ef15a5">&#9670;&nbsp;</a></span>tcpCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +522,7 @@ Functions</h2></td></tr>
           <td class="memname">Eigen::Isometry3d tcpCallback </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d4/d31/structtesseract__common_1_1ManipulatorInfo.html">tesseract_common::ManipulatorInfo</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>mi</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -440,8 +530,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0d0135e86e53fd517ae04252a6fd398c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0135e86e53fd517ae04252a6fd398c">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">TesseractEnvironmentUnit&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">checkTrajectoryUnit&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab5930f64e7cbfcb77aae6eeadc5c5b13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5930f64e7cbfcb77aae6eeadc5c5b13">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5930f64e7cbfcb77aae6eeadc5c5b13">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -469,7 +587,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac7bda300deadcaea8236c84ec09b949f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7bda300deadcaea8236c84ec09b949f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7bda300deadcaea8236c84ec09b949f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,7 +615,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a65b5942ff3c6c80261347bb8518a3316"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b5942ff3c6c80261347bb8518a3316">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b5942ff3c6c80261347bb8518a3316">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -525,7 +643,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab2c1f16a9f35b74069e6a773fac2d4b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2c1f16a9f35b74069e6a773fac2d4b7">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c1f16a9f35b74069e6a773fac2d4b7">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,7 +671,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a70919f1fe3c4b5561ab20eb17cb370b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70919f1fe3c4b5561ab20eb17cb370b0">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a70919f1fe3c4b5561ab20eb17cb370b0">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -581,7 +699,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab051f25b040d4e0ef2a74f2615a987cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab051f25b040d4e0ef2a74f2615a987cb">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab051f25b040d4e0ef2a74f2615a987cb">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,7 +727,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a79dcd2f979798d355358bf60b17ca6bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79dcd2f979798d355358bf60b17ca6bd">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a79dcd2f979798d355358bf60b17ca6bd">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -637,7 +755,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6d8c2992f5b3014f9c7cb40d7eb688d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d8c2992f5b3014f9c7cb40d7eb688d4">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8c2992f5b3014f9c7cb40d7eb688d4">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -665,7 +783,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0885de2a8da955b4bb9b9be73de49350"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0885de2a8da955b4bb9b9be73de49350">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0885de2a8da955b4bb9b9be73de49350">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -694,7 +812,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7f3ebb27b4f5dd34f06bdf234a3ae638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f3ebb27b4f5dd34f06bdf234a3ae638">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3ebb27b4f5dd34f06bdf234a3ae638">&#9670;&nbsp;</a></span>TEST() <span class="overload">[11/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -722,7 +840,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa8be7c5729a18846a93f15be668f8d93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8be7c5729a18846a93f15be668f8d93">&#9670;&nbsp;</a></span>TEST() <span class="overload">[11/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8be7c5729a18846a93f15be668f8d93">&#9670;&nbsp;</a></span>TEST() <span class="overload">[12/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -751,7 +869,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa8afe28c65abed52a6d447c5ce997635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8afe28c65abed52a6d447c5ce997635">&#9670;&nbsp;</a></span>TEST() <span class="overload">[12/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8afe28c65abed52a6d447c5ce997635">&#9670;&nbsp;</a></span>TEST() <span class="overload">[13/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -779,7 +897,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a687c529441df00ae77c294006d35ca92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a687c529441df00ae77c294006d35ca92">&#9670;&nbsp;</a></span>TEST() <span class="overload">[13/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a687c529441df00ae77c294006d35ca92">&#9670;&nbsp;</a></span>TEST() <span class="overload">[14/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -807,7 +925,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4c53d32b112511dd619bb728f7cf00d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c53d32b112511dd619bb728f7cf00d6">&#9670;&nbsp;</a></span>TEST() <span class="overload">[14/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c53d32b112511dd619bb728f7cf00d6">&#9670;&nbsp;</a></span>TEST() <span class="overload">[15/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -835,7 +953,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a873d0311d38bb981397aac233d8bf8b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a873d0311d38bb981397aac233d8bf8b3">&#9670;&nbsp;</a></span>TEST() <span class="overload">[15/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a873d0311d38bb981397aac233d8bf8b3">&#9670;&nbsp;</a></span>TEST() <span class="overload">[16/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -862,8 +980,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6de667089c721d24af714cf350b7c4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de667089c721d24af714cf350b7c4fb">&#9670;&nbsp;</a></span>TEST() <span class="overload">[17/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">TesseractEnvironmentUnit&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EnvFindTCPUnit&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a448d00b8af6cb7096c4db424e01c1219"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a448d00b8af6cb7096c4db424e01c1219">&#9670;&nbsp;</a></span>TEST() <span class="overload">[16/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a448d00b8af6cb7096c4db424e01c1219">&#9670;&nbsp;</a></span>TEST() <span class="overload">[18/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -890,8 +1036,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a11c94e70728367d0d016ac1e64dd31ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c94e70728367d0d016ac1e64dd31ec">&#9670;&nbsp;</a></span>TEST() <span class="overload">[19/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">TesseractEnvironmentUnit&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EnvInitURDFOnlyUnit&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad07ac718b4139f6fede7d84b31019355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad07ac718b4139f6fede7d84b31019355">&#9670;&nbsp;</a></span>TEST() <span class="overload">[17/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07ac718b4139f6fede7d84b31019355">&#9670;&nbsp;</a></span>TEST() <span class="overload">[20/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -919,7 +1093,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aadadc8f71ef06c64e9554f745416938c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadadc8f71ef06c64e9554f745416938c">&#9670;&nbsp;</a></span>TEST() <span class="overload">[18/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aadadc8f71ef06c64e9554f745416938c">&#9670;&nbsp;</a></span>TEST() <span class="overload">[21/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -947,7 +1121,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a64a97fc679c9f640da22494a4ee6984f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64a97fc679c9f640da22494a4ee6984f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[19/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a97fc679c9f640da22494a4ee6984f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[22/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -975,7 +1149,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a30f83c449537b03e8ff03390853ee28e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30f83c449537b03e8ff03390853ee28e">&#9670;&nbsp;</a></span>TEST() <span class="overload">[20/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f83c449537b03e8ff03390853ee28e">&#9670;&nbsp;</a></span>TEST() <span class="overload">[23/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1002,8 +1176,66 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a48e8ba4aff90b6492e3905dc3d9a2686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e8ba4aff90b6492e3905dc3d9a2686">&#9670;&nbsp;</a></span>TEST() <span class="overload">[24/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">TesseractEnvironmentUnit&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EnvSetActiveContinuousContactManagerCommandUnit&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000007">Todo:</a></b></dt><dd>update contact manager to have function to check collision object enabled state </dd></dl>
+
+</div>
+</div>
+<a id="ac000b39be53683eced961b8e905d5050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac000b39be53683eced961b8e905d5050">&#9670;&nbsp;</a></span>TEST() <span class="overload">[25/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">TesseractEnvironmentUnit&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EnvSetActiveDiscreteContactManagerCommandUnit&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000008">Todo:</a></b></dt><dd>update contact manager to have function to check collision object enabled state </dd></dl>
+
+</div>
+</div>
 <a id="a9d0c28c11dac2a40bfd5442e7c6c3a5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d0c28c11dac2a40bfd5442e7c6c3a5f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[21/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d0c28c11dac2a40bfd5442e7c6c3a5f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[26/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1031,7 +1263,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="abca032c576f4be110632df2f6203123d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abca032c576f4be110632df2f6203123d">&#9670;&nbsp;</a></span>TEST() <span class="overload">[22/22]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abca032c576f4be110632df2f6203123d">&#9670;&nbsp;</a></span>TEST() <span class="overload">[27/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1058,10 +1290,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abca0bfe315f2ddb9dc2a3a2be6f71f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca0bfe315f2ddb9dc2a3a2be6f71f49">&#9670;&nbsp;</a></span>TEST() <span class="overload">[28/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">TesseractEnvironmentUnit&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">getActiveLinkNamesRecursiveUnit&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 28 2021 01:21:55 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Oct 29 2021 04:13:20 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
