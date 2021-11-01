@@ -1,9 +1,13 @@
 <map id="tesseract_kinematics/ikfast/include/tesseract_kinematics/ikfast/external/ikfast.h" name="tesseract_kinematics/ikfast/include/tesseract_kinematics/ikfast/external/ikfast.h">
-<area shape="rect" id="node1" title=" " alt="" coords="180,5,357,76"/>
-<area shape="rect" id="node2" href="$db/d22/ikfast__inv__kin_8hpp.html" title="Tesseract IKFast Inverse kinematics Wrapper Implementation." alt="" coords="96,124,257,195"/>
-<area shape="rect" id="node7" href="$df/d1b/abb__irb2400__ikfast__solver_8cpp.html" title=" " alt="" coords="281,131,443,187"/>
-<area shape="rect" id="node3" href="$db/d7f/ikfast__inv__kin_8h.html" title="Tesseract IKFast Inverse kinematics Wrapper." alt="" coords="95,243,259,313"/>
-<area shape="rect" id="node4" href="$d2/d96/abb__irb2400__ikfast__kinematics_8h.html" title=" " alt="" coords="96,361,257,417"/>
+<area shape="rect" id="node1" title=" " alt="" coords="469,5,647,76"/>
+<area shape="rect" id="node2" href="$db/d22/ikfast__inv__kin_8hpp.html" title="Tesseract IKFast Inverse kinematics Wrapper Implementation." alt="" coords="292,124,453,195"/>
+<area shape="rect" id="node10" href="$df/d1b/abb__irb2400__ikfast__solver_8cpp.html" title=" " alt="" coords="477,131,639,187"/>
+<area shape="rect" id="node11" href="$da/db5/iiwa7__ikfast__solver_8cpp.html" title=" " alt="" coords="663,139,850,180"/>
+<area shape="rect" id="node3" href="$db/d7f/ikfast__inv__kin_8h.html" title="Tesseract IKFast Inverse kinematics Wrapper." alt="" coords="291,243,455,313"/>
+<area shape="rect" id="node4" href="$d2/d96/abb__irb2400__ikfast__kinematics_8h.html" title=" " alt="" coords="188,361,349,417"/>
+<area shape="rect" id="node7" href="$d2/d6d/iiwa7__ikfast__kinematics_8h.html" title=" " alt="" coords="377,369,579,410"/>
 <area shape="rect" id="node5" href="$df/d98/abb__irb2400__ikfast__kinematics_8cpp.html" title=" " alt="" coords="5,465,167,521"/>
 <area shape="rect" id="node6" href="$d6/dd6/ikfast__kinematics__unit_8cpp.html" title=" " alt="" coords="191,465,346,521"/>
+<area shape="rect" id="node8" href="$d3/df9/iiwa7__ikfast__kinematics_8cpp.html" title=" " alt="" coords="371,473,585,514"/>
+<area shape="rect" id="node9" href="$d8/db1/ikfast__kinematics__7dof__unit_8cpp.html" title=" " alt="" coords="610,465,765,521"/>
 </map>
