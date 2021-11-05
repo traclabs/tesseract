@@ -94,48 +94,56 @@ $(function() {
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  Eigen::Isometry3d test2;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  Eigen::VectorXd seed_angles(manip.<a class="code" href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a0940b0d49eb8e14b6c8290c832d01a4c">numJoints</a>());</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  Eigen::VectorXd joint_angles2(manip.<a class="code" href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a0940b0d49eb8e14b6c8290c832d01a4c">numJoints</a>());</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::string tip_link = manip.<a class="code" href="../../d9/d67/classtesseract__kinematics_1_1KinematicGroup.html#a15dfeff9c322ae017dea1981c7354bd4">getAllPossibleTipLinkNames</a>().at(0);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::string working_frame = manip.<a class="code" href="../../d9/d67/classtesseract__kinematics_1_1KinematicGroup.html#aabfb7d966a2d4522897fa47f6347dfbf">getAllValidWorkingFrames</a>().at(0);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  seed_angles.setZero();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  joint_angles2.setZero();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nj = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(manip.<a class="code" href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a0940b0d49eb8e14b6c8290c832d01a4c">numJoints</a>());</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> t = 0; t &lt; nj; ++t)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    joint_angles2[t] = M_PI / 2;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">auto</span> poses1 = manip.<a class="code" href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a3579bdbb9feec4ab90101c6c5a729fa2">calcFwdKin</a>(joint_angles2);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    test1 = poses1.at(working_frame).inverse() * poses1.at(tip_link);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../d1/d36/structtesseract__kinematics_1_1KinGroupIKInput.html">KinGroupIKInput</a> ik_input(test1, working_frame, tip_link);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="../../d8/d4e/namespacetesseract__kinematics.html#af12a01d2264e3371dc9bc7db2a7b59ac">IKSolutions</a> sols = manip.<a class="code" href="../../d9/d67/classtesseract__kinematics_1_1KinematicGroup.html#a7c036ae50a4ade99162fccd6c5a23b4f">calcInvKin</a>({ ik_input }, seed_angles);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; sol : sols)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keyword">auto</span> poses2 = manip.<a class="code" href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a3579bdbb9feec4ab90101c6c5a729fa2">calcFwdKin</a>(sol);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      test2 = poses2.at(working_frame).inverse() * poses2.at(tip_link);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">if</span> ((test1.translation() - test2.translation()).norm() &gt; tol)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;checkKinematics: Manipulator translation norm is greater than tolerance %f!&quot;</span>, tol);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">if</span> (Eigen::Quaterniond(test1.linear()).angularDistance(Eigen::Quaterniond(test2.linear())) &gt; tol)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;checkKinematics: Manipulator orientation angular distance is greater than tolerance &quot;</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                <span class="stringliteral">&quot;%f!&quot;</span>,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                tol);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    joint_angles2[t] = 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::vector&lt;std::string&gt; tip_links = manip.<a class="code" href="../../d9/d67/classtesseract__kinematics_1_1KinematicGroup.html#a15dfeff9c322ae017dea1981c7354bd4">getAllPossibleTipLinkNames</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::vector&lt;std::string&gt; working_frames = manip.<a class="code" href="../../d9/d67/classtesseract__kinematics_1_1KinematicGroup.html#aabfb7d966a2d4522897fa47f6347dfbf">getAllValidWorkingFrames</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nj = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(manip.<a class="code" href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a0940b0d49eb8e14b6c8290c832d01a4c">numJoints</a>());</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; tip_link : tip_links)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; working_frame : working_frames)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      seed_angles.setZero();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      joint_angles2.setZero();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> t = 0; t &lt; nj; ++t)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        joint_angles2[t] = M_PI / 2;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">auto</span> poses1 = manip.<a class="code" href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a3579bdbb9feec4ab90101c6c5a729fa2">calcFwdKin</a>(joint_angles2);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        test1 = poses1.at(working_frame).inverse() * poses1.at(tip_link);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="../../d1/d36/structtesseract__kinematics_1_1KinGroupIKInput.html">KinGroupIKInput</a> ik_input(test1, working_frame, tip_link);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="../../d8/d4e/namespacetesseract__kinematics.html#af12a01d2264e3371dc9bc7db2a7b59ac">IKSolutions</a> sols = manip.<a class="code" href="../../d9/d67/classtesseract__kinematics_1_1KinematicGroup.html#a7c036ae50a4ade99162fccd6c5a23b4f">calcInvKin</a>({ ik_input }, seed_angles);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; sol : sols)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          <span class="keyword">auto</span> poses2 = manip.<a class="code" href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a3579bdbb9feec4ab90101c6c5a729fa2">calcFwdKin</a>(sol);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          test2 = poses2.at(working_frame).inverse() * poses2.at(tip_link);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          <span class="keywordflow">if</span> ((test1.translation() - test2.translation()).norm() &gt; tol)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;checkKinematics: Manipulator translation norm is greater than tolerance %f!&quot;</span>, tol);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          <span class="keywordflow">if</span> (Eigen::Quaterniond(test1.linear()).angularDistance(Eigen::Quaterniond(test2.linear())) &gt; tol)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            CONSOLE_BRIDGE_logError(<span class="stringliteral">&quot;checkKinematics: Manipulator orientation angular distance is greater than &quot;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                    <span class="stringliteral">&quot;tolerance &quot;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                    <span class="stringliteral">&quot;%f!&quot;</span>,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                    tol);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}  <span class="comment">// namespace tesseract_kinematics</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_KINEMATICS_VALIDATE_H</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        joint_angles2[t] = 0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}  <span class="comment">// namespace tesseract_kinematics</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// TESSERACT_KINEMATICS_VALIDATE_H</span></div>
 <div class="ttc" id="aclasstesseract__kinematics_1_1JointGroup_html_a0940b0d49eb8e14b6c8290c832d01a4c"><div class="ttname"><a href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a0940b0d49eb8e14b6c8290c832d01a4c">tesseract_kinematics::JointGroup::numJoints</a></div><div class="ttdeci">Eigen::Index numJoints() const</div><div class="ttdoc">Number of joints in robot.</div><div class="ttdef"><b>Definition:</b> joint_group.cpp:285</div></div>
 <div class="ttc" id="aclasstesseract__kinematics_1_1JointGroup_html_a3579bdbb9feec4ab90101c6c5a729fa2"><div class="ttname"><a href="../../db/d9e/classtesseract__kinematics_1_1JointGroup.html#a3579bdbb9feec4ab90101c6c5a729fa2">tesseract_kinematics::JointGroup::calcFwdKin</a></div><div class="ttdeci">tesseract_common::TransformMap calcFwdKin(const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;joint_angles) const</div><div class="ttdoc">Calculates tool pose of robot chain.</div><div class="ttdef"><b>Definition:</b> joint_group.cpp:112</div></div>
 <div class="ttc" id="aclasstesseract__kinematics_1_1KinematicGroup_html"><div class="ttname"><a href="../../d9/d67/classtesseract__kinematics_1_1KinematicGroup.html">tesseract_kinematics::KinematicGroup</a></div><div class="ttdef"><b>Definition:</b> kinematic_group.h:77</div></div>
@@ -154,7 +162,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 4 2021 18:19:29 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Nov 5 2021 03:10:11 for Tesseract by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
